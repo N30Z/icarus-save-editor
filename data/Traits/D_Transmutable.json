@@ -1,0 +1,131 @@
+{
+    "RowStruct": "/Script/Icarus.TransmutableData",
+    "Defaults": {
+        "UnitsProvided": 1000,
+        "ByProductItem": {
+            "RowName": "None",
+            "DataTableName": "D_ItemTemplate"
+        },
+        "DescriptionText": ""
+    },
+    "Rows": [
+        {
+            "Name": "Oxite"
+        },
+        {
+            "Name": "Stick",
+            "UnitsProvided": 10000,
+            "ByProductItem": {
+                "RowName": "Charcoal"
+            }
+        },
+        {
+            "Name": "Wood",
+            "UnitsProvided": 150000,
+            "ByProductItem": {
+                "RowName": "Charcoal_From_Wood"
+            }
+        },
+        {
+            "Name": "Biofuel",
+            "UnitsProvided": 100000
+        },
+        {
+            "Name": "Sulfur",
+            "UnitsProvided": 10000
+        },
+        {
+            "Name": "Fiber",
+            "UnitsProvided": 5000
+        },
+        {
+            "Name": "Coal",
+            "UnitsProvided": 600000
+        },
+        {
+            "Name": "Charcoal",
+            "UnitsProvided": 150000
+        },
+        {
+            "Name": "Ice"
+        },
+        {
+            "Name": "Spoiled_Meat",
+            "UnitsProvided": 900
+        },
+        {
+            "Name": "Spoiled_Plants",
+            "UnitsProvided": 600
+        },
+        {
+            "Name": "Seed_Oil",
+            "UnitsProvided": 50000
+        },
+        {
+            "Name": "Wood_Refined",
+            "UnitsProvided": 14500,
+            "ByProductItem": {
+                "RowName": "Charcoal"
+            }
+        },
+        {
+            "Name": "AnimalFat",
+            "UnitsProvided": 20000
+        },
+        {
+            "Name": "Bee",
+            "UnitsProvided": 180000
+        },
+        {
+            "Name": "Queen_Bee",
+            "UnitsProvided": 360000
+        },
+        {
+            "Name": "Beeswax",
+            "UnitsProvided": 5000
+        },
+        {
+            "Name": "Wool",
+            "UnitsProvided": 15000,
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Laika"
+                }
+            }
+        },
+        {
+            "Name": "Packed_Fuel_Brick",
+            "UnitsProvided": 900000,
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Laika"
+                }
+            }
+        },
+        {
+            "Name": "Lava_Hunter_Magma",
+            "UnitsProvided": 2000000,
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Laika"
+                }
+            }
+        },
+        {
+            "Name": "Condensed_Enzymes",
+            "UnitsProvided": 40000
+        },
+        {
+            "Name": "Synthetic_Enzymes",
+            "UnitsProvided": 4000
+        },
+        {
+            "Name": "Uranium_Rod",
+            "UnitsProvided": 108000
+        },
+        {
+            "Name": "SpiderSilk",
+            "UnitsProvided": 20000
+        }
+    ]
+}

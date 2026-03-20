@@ -1,0 +1,205 @@
+{
+    "RowStruct": "/Script/Icarus.DecayableData",
+    "Defaults": {
+        "DecayTime": 0,
+        "SpoilTime": 0,
+        "SpoiledItem": {
+            "RowName": "None",
+            "DataTableName": "D_ItemTemplate"
+        },
+        "ResourceLeakage": 0,
+        "bEmptyContainer": false
+    },
+    "Rows": [
+        {
+            "Name": "Decay_General",
+            "DecayTime": 300
+        },
+        {
+            "Name": "Decay_02_Minutes",
+            "DecayTime": 120
+        },
+        {
+            "Name": "Decay_03_Minutes",
+            "DecayTime": 180
+        },
+        {
+            "Name": "Decay_10_Minutes",
+            "DecayTime": 600
+        },
+        {
+            "Name": "Decay_60_Minutes",
+            "DecayTime": 3600
+        },
+        {
+            "Name": "Decay_Raw_Meat",
+            "DecayTime": 300,
+            "SpoilTime": 600,
+            "SpoiledItem": {
+                "RowName": "Spoiled_Meat"
+            }
+        },
+        {
+            "Name": "Decay_CookedMeat_Generic",
+            "DecayTime": 300,
+            "SpoilTime": 1600,
+            "SpoiledItem": {
+                "RowName": "Spoiled_Meat"
+            }
+        },
+        {
+            "Name": "Decay_Food_Generic",
+            "DecayTime": 300,
+            "SpoilTime": 800
+        },
+        {
+            "Name": "Decay_Food_OneDay",
+            "DecayTime": 300,
+            "SpoilTime": 3600
+        },
+        {
+            "Name": "Decay_Food_ThreeDay",
+            "DecayTime": 300,
+            "SpoilTime": 10800
+        },
+        {
+            "Name": "Decay_Ice",
+            "DecayTime": 300,
+            "SpoilTime": 2700
+        },
+        {
+            "Name": "Decay_Arrow",
+            "DecayTime": 60
+        },
+        {
+            "Name": "Decay_Coconut_Young",
+            "DecayTime": 600,
+            "SpoilTime": 300,
+            "SpoiledItem": {
+                "RowName": "Coconut_mid"
+            }
+        },
+        {
+            "Name": "Decay_Coconut_Mid",
+            "DecayTime": 600,
+            "SpoilTime": 300,
+            "SpoiledItem": {
+                "RowName": "Coconut_mature"
+            }
+        },
+        {
+            "Name": "Decay_Coconut_Mature",
+            "DecayTime": 600,
+            "SpoilTime": 600,
+            "SpoiledItem": {
+                "RowName": "Spoiled_Plants"
+            }
+        },
+        {
+            "Name": "Decay_Tree_Trunk",
+            "DecayTime": 601
+        },
+        {
+            "Name": "Decay_MetaItem",
+            "DecayTime": 1200
+        },
+        {
+            "Name": "Decay_Delivery_Object",
+            "DecayTime": 10,
+            "SpoilTime": 15
+        },
+        {
+            "Name": "Decay_Bait",
+            "DecayTime": 600,
+            "SpoilTime": 2400
+        },
+        {
+            "Name": "Decay_Fruit_Vegetable",
+            "DecayTime": 300,
+            "SpoilTime": 800,
+            "SpoiledItem": {
+                "RowName": "Spoiled_Plants"
+            }
+        },
+        {
+            "Name": "Decay_Dried_Meat",
+            "DecayTime": 300,
+            "SpoilTime": 5000,
+            "SpoiledItem": {
+                "RowName": "Spoiled_Meat"
+            }
+        },
+        {
+            "Name": "Decay_Quick",
+            "DecayTime": 1
+        },
+        {
+            "Name": "Decay_Advanced_Leather",
+            "DecayTime": 300,
+            "SpoilTime": 60,
+            "SpoiledItem": {
+                "RowName": "Advanced_Leather"
+            }
+        },
+        {
+            "Name": "Decay_NoDecay"
+        },
+        {
+            "Name": "Decay_Dried_Vegetable",
+            "DecayTime": 300,
+            "SpoilTime": 5000,
+            "SpoiledItem": {
+                "RowName": "Spoiled_Plants"
+            }
+        },
+        {
+            "Name": "Decay_Volatile_Substance",
+            "DecayTime": 300,
+            "SpoilTime": 600,
+            "SpoiledItem": {
+                "RowName": "Volatile_Substance_Inert"
+            }
+        },
+        {
+            "Name": "Decay_Smoked_Meat",
+            "DecayTime": 300,
+            "SpoilTime": 6000,
+            "SpoiledItem": {
+                "RowName": "Spoiled_Meat"
+            }
+        },
+        {
+            "Name": "Decay_Raw_Chicken",
+            "DecayTime": 300,
+            "SpoilTime": 1200,
+            "SpoiledItem": {
+                "RowName": "Spoiled_Meat"
+            }
+        },
+        {
+            "Name": "Decay_Frozen_Food",
+            "DecayTime": 200,
+            "SpoilTime": 800
+        },
+        {
+            "Name": "Decay_Milk",
+            "DecayTime": 300,
+            "SpoilTime": 7200,
+            "bEmptyContainer": true
+        },
+        {
+            "Name": "Decay_Cream",
+            "DecayTime": 300,
+            "SpoilTime": 900
+        },
+        {
+            "Name": "Decay_QuestItem",
+            "DecayTime": 1800
+        },
+        {
+            "Name": "Decay_Dried_Fish",
+            "DecayTime": 300,
+            "SpoilTime": 2000
+        }
+    ]
+}

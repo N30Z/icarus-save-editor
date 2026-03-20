@@ -1,0 +1,10 @@
+{
+    "RowStruct": "/Script/Icarus.ItemAttachment",
+    "Defaults": {
+        "GrantedAlteration": {
+            "RowName": "None",
+            "DataTableName": "D_Alterations"
+        }
+    },
+    "Rows": []
+}

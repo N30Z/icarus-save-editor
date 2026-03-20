@@ -1,0 +1,77 @@
+{
+    "RowStruct": "/Script/Icarus.DirtMoundModification",
+    "Defaults": {
+        "CropPlotTier": 0,
+        "MatchingItemTagQuery": {
+            "RowName": "None",
+            "DataTableName": "D_TagQueries"
+        },
+        "Modifier": {
+            "RowName": "None",
+            "DataTableName": "D_ModifierStates"
+        },
+        "ModifierEffectiveness": 100
+    },
+    "Rows": [
+        {
+            "Name": "Invalid"
+        },
+        {
+            "Name": "Shovel_Tier_1",
+            "CropPlotTier": 1,
+            "MatchingItemTagQuery": {
+                "RowName": "Any_Shovel"
+            },
+            "Modifier": {
+                "RowName": "Dirt_Mound_Wood_Shovel"
+            }
+        },
+        {
+            "Name": "Shovel_Tier_2",
+            "CropPlotTier": 2,
+            "MatchingItemTagQuery": {
+                "RowName": "Any_Shovel"
+            },
+            "Modifier": {
+                "RowName": "Dirt_Mound_Iron_Shovel"
+            }
+        },
+        {
+            "Name": "Shovel_Tier_3",
+            "CropPlotTier": 3,
+            "MatchingItemTagQuery": {
+                "RowName": "Any_Shovel"
+            },
+            "Modifier": {
+                "RowName": "Dirt_Mound_Platinum_Shovel"
+            }
+        },
+        {
+            "Name": "Shovel_Tier_4",
+            "CropPlotTier": 4,
+            "MatchingItemTagQuery": {
+                "RowName": "Any_Shovel"
+            },
+            "Modifier": {
+                "RowName": "Dirt_Mound_Titanium_Shovel"
+            }
+        },
+        {
+            "Name": "Shovel_Tier_5",
+            "CropPlotTier": 5,
+            "MatchingItemTagQuery": {
+                "RowName": "Any_Shovel"
+            },
+            "Modifier": {
+                "RowName": "Dirt_Mound_Meta_Shovel"
+            }
+        },
+        {
+            "Name": "Shovel_Tier_6",
+            "CropPlotTier": 6,
+            "MatchingItemTagQuery": {
+                "RowName": "Any_Shovel"
+            }
+        }
+    ]
+}

@@ -1,0 +1,1402 @@
+{
+    "RowStruct": "/Script/Icarus.FocusableData",
+    "Defaults": {
+        "Behaviour": "None",
+        "AttachmentData": {
+            "RowName": "None",
+            "DataTableName": "D_ItemAttachment"
+        },
+        "AttachmentOffset": {
+            "Rotation": {
+                "X": 0,
+                "Y": 0,
+                "Z": 0,
+                "W": 1
+            },
+            "Translation": {
+                "X": 0,
+                "Y": 0,
+                "Z": 0
+            },
+            "Scale3D": {
+                "X": 1,
+                "Y": 1,
+                "Z": 1
+            }
+        },
+        "AnimOverlayType": "Default",
+        "AnimationData": {
+            "RowName": "None",
+            "DataTableName": "D_ItemAnimations"
+        },
+        "bApplyAutomaticSpineBend": true,
+        "FPFocusedMontage": "None",
+        "FPLocoBlendSpaceOverride": "None",
+        "FPIdleAnim": "None",
+        "TPFocusedMontage": "None",
+        "TPUprightIdle": "None",
+        "TPCrouchedIdle": "None",
+        "TPPoses": "None",
+        "ItemFocusedMontage": "None"
+    },
+    "Rows": [
+        {
+            "Name": "Focusable_1H",
+            "Behaviour": "/Game/BP/Behaviours/Focusable/BP_FocusableBehaviour.BP_FocusableBehaviour_C",
+            "AttachmentData": {
+                "RowName": "GeneralRight"
+            },
+            "AnimOverlayType": "OneHanded",
+            "AnimationData": {
+                "RowName": "1HWEP"
+            },
+            "FPFocusedMontage": "/Game/ASS/CHA/1ST/1ST_NewRig/1ST_CHA_1HWEP_Equip_Montage.1ST_CHA_1HWEP_Equip_Montage",
+            "FPIdleAnim": "/Game/ASS/CHA/1ST/1ST_NewRig/1ST_CHA_1HWEPIdle.1ST_CHA_1HWEPIdle",
+            "TPFocusedMontage": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_1HAxeEquip_Montage.3RD_CHA_1HAxeEquip_Montage",
+            "TPUprightIdle": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_MAL_1HWeaponIdle.3RD_CHA_MAL_1HWeaponIdle",
+            "TPCrouchedIdle": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_MAL_1HWEPCrouchIdle.3RD_CHA_MAL_1HWEPCrouchIdle"
+        },
+        {
+            "Name": "Focusable_Gun_2H",
+            "Behaviour": "/Game/BP/Behaviours/Focusable/BP_FocusableBehaviour.BP_FocusableBehaviour_C",
+            "AttachmentData": {
+                "RowName": "GeneralBoth"
+            },
+            "AnimOverlayType": "Firearm",
+            "AnimationData": {
+                "RowName": "2HGun"
+            },
+            "FPFocusedMontage": "/Game/ASS/CHA/1ST/1ST_NewRig/1ST_CHA_2HRifle_Equip_Montage.1ST_CHA_2HRifle_Equip_Montage",
+            "FPIdleAnim": "/Game/ASS/CHA/1ST/1ST_NewRig/1ST_CHA_2HGunIdle.1ST_CHA_2HGunIdle",
+            "TPFocusedMontage": "/Game/ASS/CHA/Human/Prospector/Animations/Montages/Props_RifleBoltAction_Equip_Montage.Props_RifleBoltAction_Equip_Montage",
+            "TPUprightIdle": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_MAL_RifleIdle.3RD_CHA_MAL_RifleIdle",
+            "TPCrouchedIdle": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_MAL_2HGunCrouchIdle.3RD_CHA_MAL_2HGunCrouchIdle"
+        },
+        {
+            "Name": "Focusable_Gun_Pistol",
+            "Behaviour": "/Game/BP/Behaviours/Focusable/BP_FocusableBehaviour.BP_FocusableBehaviour_C",
+            "AttachmentData": {
+                "RowName": "GeneralBoth"
+            },
+            "AttachmentOffset": {
+                "Translation": {
+                    "X": 2,
+                    "Z": 2.5
+                }
+            },
+            "AnimOverlayType": "Firearm",
+            "AnimationData": {
+                "RowName": "Pistol"
+            },
+            "FPFocusedMontage": "/Game/ASS/CHA/1ST/1ST_NewRig/1ST_CHA_Pistol_Equip_Montage.1ST_CHA_Pistol_Equip_Montage",
+            "FPIdleAnim": "/Game/ASS/CHA/1ST/1ST_NewRig/1ST_CHA_SGL_Shot_PistolIdle.1ST_CHA_SGL_Shot_PistolIdle",
+            "TPFocusedMontage": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_PistolEquip_Montage.3RD_CHA_PistolEquip_Montage",
+            "TPUprightIdle": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_MAL_SGL_Shot_PistolIdle.3RD_CHA_MAL_SGL_Shot_PistolIdle",
+            "TPCrouchedIdle": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_MAL_SGL_Shot_Pistol_CrouchIdle.3RD_CHA_MAL_SGL_Shot_Pistol_CrouchIdle"
+        },
+        {
+            "Name": "Focusable_Spear",
+            "Behaviour": "/Game/BP/Behaviours/Focusable/BP_FocusableBehaviour.BP_FocusableBehaviour_C",
+            "AttachmentData": {
+                "RowName": "GeneralBoth"
+            },
+            "AnimOverlayType": "Spear",
+            "AnimationData": {
+                "RowName": "Spear"
+            },
+            "FPFocusedMontage": "/Game/ASS/CHA/1ST/1ST_NewRig/1ST_CHA_SPR_Equip_Montage.1ST_CHA_SPR_Equip_Montage",
+            "FPIdleAnim": "/Game/ASS/CHA/1ST/1ST_NewRig/1ST_CHA_SPRIdle.1ST_CHA_SPRIdle",
+            "TPFocusedMontage": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_SPREquip_Montage.3RD_CHA_SPREquip_Montage",
+            "TPUprightIdle": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_MAL_SPRIdle.3RD_CHA_MAL_SPRIdle",
+            "TPCrouchedIdle": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_MAL_SprCrouchIdle.3RD_CHA_MAL_SprCrouchIdle"
+        },
+        {
+            "Name": "Focusable_Fishing_Rod",
+            "Behaviour": "/Game/BP/Behaviours/Focusable/BP_FocusableBehaviour_Fishing.BP_FocusableBehaviour_Fishing_C",
+            "AttachmentData": {
+                "RowName": "GeneralLeft"
+            },
+            "AnimOverlayType": "Fishing",
+            "AnimationData": {
+                "RowName": "1HWEP"
+            },
+            "FPFocusedMontage": "/Game/ASS/CHA/1ST/1ST_NewRig/1ST_CHA_1HWEP_Equip_Montage.1ST_CHA_1HWEP_Equip_Montage",
+            "FPIdleAnim": "/Game/ASS/CHA/1ST/1ST_NewRig/ANI_1ST_CHA_Fishing_Idle_P.ANI_1ST_CHA_Fishing_Idle_P",
+            "TPFocusedMontage": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_Fishing_Equip_Montage.3RD_CHA_Fishing_Equip_Montage",
+            "TPUprightIdle": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_Fishing_Idle.3RD_CHA_Fishing_Idle",
+            "TPCrouchedIdle": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_MAL_1HWEPCrouchIdle.3RD_CHA_MAL_1HWEPCrouchIdle"
+        },
+        {
+            "Name": "Focusable_Carcass_Shoulders",
+            "Behaviour": "/Game/BP/Behaviours/Focusable/BP_FocusableBehaviour_Corpse.BP_FocusableBehaviour_Corpse_C",
+            "AttachmentData": {
+                "RowName": "Carcass"
+            },
+            "AnimOverlayType": "Carrying",
+            "AnimationData": {
+                "RowName": "Carry_Carcass"
+            },
+            "bApplyAutomaticSpineBend": false,
+            "FPLocoBlendSpaceOverride": "/Game/ASS/CHA/1ST/1ST_NewRig/1ST_CHA_Carry_Loco_BS.1ST_CHA_Carry_Loco_BS",
+            "FPIdleAnim": "/Game/ASS/CHA/1ST/1ST_NewRig/1ST_CHA_CRE_CarryIdle.1ST_CHA_CRE_CarryIdle",
+            "TPUprightIdle": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_MAL_DeerCarry.3RD_CHA_MAL_DeerCarry"
+        },
+        {
+            "Name": "Focusable_Dev_Firearms",
+            "Behaviour": "/Game/BP/Behaviours/Focusable/BP_FocusableBehaviour.BP_FocusableBehaviour_C",
+            "AttachmentData": {
+                "RowName": "Dev_Firearm"
+            },
+            "AnimOverlayType": "TwoHandedRifle",
+            "AnimationData": {
+                "RowName": "2HGun"
+            },
+            "FPFocusedMontage": "/Game/ASS/CHA/1ST/1ST_NewRig/1ST_CHA_2HRifle_Equip_Montage.1ST_CHA_2HRifle_Equip_Montage",
+            "FPIdleAnim": "/Game/ASS/CHA/1ST/1ST_NewRig/1ST_CHA_2HGunIdle.1ST_CHA_2HGunIdle",
+            "TPFocusedMontage": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_RifleEquip_Montage.3RD_CHA_RifleEquip_Montage",
+            "TPUprightIdle": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_MAL_RifleIdle.3RD_CHA_MAL_RifleIdle",
+            "TPCrouchedIdle": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_MAL_2HGunCrouchIdle.3RD_CHA_MAL_2HGunCrouchIdle"
+        },
+        {
+            "Name": "Focusable_1HKnife",
+            "Behaviour": "/Game/BP/Behaviours/Focusable/BP_FocusableBehaviour.BP_FocusableBehaviour_C",
+            "AttachmentData": {
+                "RowName": "GeneralRight"
+            },
+            "AnimOverlayType": "OneHanded",
+            "AnimationData": {
+                "RowName": "1HWEP"
+            },
+            "FPFocusedMontage": "/Game/ASS/CHA/1ST/1ST_NewRig/1ST_CHA_1HKNI_Equip_Montage.1ST_CHA_1HKNI_Equip_Montage",
+            "FPIdleAnim": "/Game/ASS/CHA/1ST/1ST_NewRig/1ST_CHA_1HKNIIdle.1ST_CHA_1HKNIIdle",
+            "TPFocusedMontage": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_1HKNIEquip_Montage.3RD_CHA_1HKNIEquip_Montage",
+            "TPUprightIdle": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_MAL_1HKnifeIdle.3RD_CHA_MAL_1HKnifeIdle",
+            "TPCrouchedIdle": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_MAL_CrouchIdle.3RD_CHA_MAL_CrouchIdle"
+        },
+        {
+            "Name": "Focusable_WoodBow_Firearm",
+            "Behaviour": "/Game/BP/Behaviours/Focusable/BP_FocusableBehaviour.BP_FocusableBehaviour_C",
+            "AttachmentData": {
+                "RowName": "Bow"
+            },
+            "AnimOverlayType": "Firearm",
+            "AnimationData": {
+                "RowName": "Bow"
+            },
+            "FPFocusedMontage": "/Game/ASS/CHA/1ST/1ST_NewRig/1ST_CHA_Bow_Equip_Montage.1ST_CHA_Bow_Equip_Montage",
+            "FPIdleAnim": "/Game/ASS/CHA/1ST/1ST_NewRig/1ST_CHA_BowIdle.1ST_CHA_BowIdle",
+            "TPFocusedMontage": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_BowEquip_Montage.3RD_CHA_BowEquip_Montage",
+            "TPUprightIdle": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_MAL_BowIdle.3RD_CHA_MAL_BowIdle",
+            "TPCrouchedIdle": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_MAL_BowCrouchIdle.3RD_CHA_MAL_BowCrouchIdle",
+            "ItemFocusedMontage": "/Game/ASS/WEP/SK_BOW_Wood/ANI_BOW_WOOD_Equip_Montage.ANI_BOW_WOOD_Equip_Montage"
+        },
+        {
+            "Name": "Focusable_Longbow_Firearm",
+            "Behaviour": "/Game/BP/Behaviours/Focusable/BP_FocusableBehaviour.BP_FocusableBehaviour_C",
+            "AttachmentData": {
+                "RowName": "Bow"
+            },
+            "AnimOverlayType": "Firearm",
+            "AnimationData": {
+                "RowName": "Bow"
+            },
+            "FPFocusedMontage": "/Game/ASS/CHA/1ST/1ST_NewRig/1ST_CHA_Bow_Equip_Montage.1ST_CHA_Bow_Equip_Montage",
+            "FPIdleAnim": "/Game/ASS/CHA/1ST/1ST_NewRig/1ST_CHA_BowIdle.1ST_CHA_BowIdle",
+            "TPFocusedMontage": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_BowEquip_Montage.3RD_CHA_BowEquip_Montage",
+            "TPUprightIdle": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_MAL_BowIdle.3RD_CHA_MAL_BowIdle",
+            "TPCrouchedIdle": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_MAL_BowCrouchIdle.3RD_CHA_MAL_BowCrouchIdle",
+            "ItemFocusedMontage": "/Game/ASS/WEP/SK_BOW_Longbow/1ST_BOW_Longbow_Equip_Montage.1ST_BOW_Longbow_Equip_Montage"
+        },
+        {
+            "Name": "Focusable_RecurveBow_Firearm",
+            "Behaviour": "/Game/BP/Behaviours/Focusable/BP_FocusableBehaviour.BP_FocusableBehaviour_C",
+            "AttachmentData": {
+                "RowName": "Bow"
+            },
+            "AnimOverlayType": "Firearm",
+            "AnimationData": {
+                "RowName": "Bow"
+            },
+            "FPFocusedMontage": "/Game/ASS/CHA/1ST/1ST_NewRig/1ST_CHA_Bow_Equip_Montage.1ST_CHA_Bow_Equip_Montage",
+            "FPIdleAnim": "/Game/ASS/CHA/1ST/1ST_NewRig/1ST_CHA_BowIdle.1ST_CHA_BowIdle",
+            "TPFocusedMontage": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_BowEquip_Montage.3RD_CHA_BowEquip_Montage",
+            "TPUprightIdle": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_MAL_BowIdle.3RD_CHA_MAL_BowIdle",
+            "TPCrouchedIdle": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_MAL_BowCrouchIdle.3RD_CHA_MAL_BowCrouchIdle",
+            "ItemFocusedMontage": "/Game/ASS/WEP/SK_BOW_Recurve/ANI_BOW_Recurve_Equip_Montage.ANI_BOW_Recurve_Equip_Montage"
+        },
+        {
+            "Name": "Focusable_WormBow_Firearm",
+            "Behaviour": "/Game/BP/Behaviours/Focusable/BP_FocusableBehaviour.BP_FocusableBehaviour_C",
+            "AttachmentData": {
+                "RowName": "Bow"
+            },
+            "AnimOverlayType": "Firearm",
+            "AnimationData": {
+                "RowName": "Bow"
+            },
+            "FPFocusedMontage": "/Game/ASS/CHA/1ST/1ST_NewRig/1ST_CHA_Bow_Equip_Montage.1ST_CHA_Bow_Equip_Montage",
+            "FPIdleAnim": "/Game/ASS/CHA/1ST/1ST_NewRig/1ST_CHA_BowIdle.1ST_CHA_BowIdle",
+            "TPFocusedMontage": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_BowEquip_Montage.3RD_CHA_BowEquip_Montage",
+            "TPUprightIdle": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_MAL_BowIdle.3RD_CHA_MAL_BowIdle",
+            "TPCrouchedIdle": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_MAL_BowCrouchIdle.3RD_CHA_MAL_BowCrouchIdle",
+            "ItemFocusedMontage": "/Game/ASS/WEP/SK_BOW_Sandworm/ANI_BOW_Recurve_Sandworm_Equip_Montage.ANI_BOW_Recurve_Sandworm_Equip_Montage"
+        },
+        {
+            "Name": "Focusable_CompoundBow_Firearm",
+            "Behaviour": "/Game/BP/Behaviours/Focusable/BP_FocusableBehaviour.BP_FocusableBehaviour_C",
+            "AttachmentData": {
+                "RowName": "Bow"
+            },
+            "AnimOverlayType": "Firearm",
+            "AnimationData": {
+                "RowName": "Bow"
+            },
+            "FPFocusedMontage": "/Game/ASS/CHA/1ST/1ST_NewRig/1ST_CHA_Bow_Equip_Montage.1ST_CHA_Bow_Equip_Montage",
+            "FPIdleAnim": "/Game/ASS/CHA/1ST/1ST_NewRig/1ST_CHA_BowIdle.1ST_CHA_BowIdle",
+            "TPFocusedMontage": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_BowEquip_Montage.3RD_CHA_BowEquip_Montage",
+            "TPUprightIdle": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_MAL_BowIdle.3RD_CHA_MAL_BowIdle",
+            "TPCrouchedIdle": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_MAL_BowCrouchIdle.3RD_CHA_MAL_BowCrouchIdle",
+            "ItemFocusedMontage": "/Game/ASS/WEP/SK_BOW_Compound/ANI_BOW_Compound_Equip_Montage.ANI_BOW_Compound_Equip_Montage"
+        },
+        {
+            "Name": "Focusable_LarkBow_Firearm",
+            "Behaviour": "/Game/BP/Behaviours/Focusable/BP_FocusableBehaviour.BP_FocusableBehaviour_C",
+            "AttachmentData": {
+                "RowName": "Bow"
+            },
+            "AnimOverlayType": "Firearm",
+            "AnimationData": {
+                "RowName": "Bow"
+            },
+            "FPFocusedMontage": "/Game/ASS/CHA/1ST/1ST_NewRig/1ST_CHA_Bow_Equip_Montage.1ST_CHA_Bow_Equip_Montage",
+            "FPIdleAnim": "/Game/ASS/CHA/1ST/1ST_NewRig/1ST_CHA_BowIdle.1ST_CHA_BowIdle",
+            "TPFocusedMontage": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_BowEquip_Montage.3RD_CHA_BowEquip_Montage",
+            "TPUprightIdle": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_MAL_BowIdle.3RD_CHA_MAL_BowIdle",
+            "TPCrouchedIdle": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_MAL_BowCrouchIdle.3RD_CHA_MAL_BowCrouchIdle",
+            "ItemFocusedMontage": "/Game/ASS/WEP/SK_BOW_Lark/ANI_BOW_Lark_Equip_Montage.ANI_BOW_Lark_Equip_Montage"
+        },
+        {
+            "Name": "Focusable_Meta_Bow_Shengong",
+            "Behaviour": "/Game/BP/Behaviours/Focusable/BP_FocusableBehaviour.BP_FocusableBehaviour_C",
+            "AttachmentData": {
+                "RowName": "Bow"
+            },
+            "AnimOverlayType": "Firearm",
+            "AnimationData": {
+                "RowName": "Bow"
+            },
+            "FPFocusedMontage": "/Game/ASS/CHA/1ST/1ST_NewRig/1ST_CHA_Bow_Equip_Montage.1ST_CHA_Bow_Equip_Montage",
+            "FPIdleAnim": "/Game/ASS/CHA/1ST/1ST_NewRig/1ST_CHA_BowIdle.1ST_CHA_BowIdle",
+            "TPFocusedMontage": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_BowEquip_Montage.3RD_CHA_BowEquip_Montage",
+            "TPUprightIdle": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_MAL_BowIdle.3RD_CHA_MAL_BowIdle",
+            "TPCrouchedIdle": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_MAL_BowCrouchIdle.3RD_CHA_MAL_BowCrouchIdle",
+            "ItemFocusedMontage": "/Game/ASS/WEP/SK_BOW_Compound/ANI_BOW_Compound_Equip_Montage.ANI_BOW_Compound_Equip_Montage"
+        },
+        {
+            "Name": "Focusable_Grenade",
+            "Behaviour": "/Game/BP/Behaviours/Focusable/BP_FocusableBehaviour.BP_FocusableBehaviour_C",
+            "AttachmentData": {
+                "RowName": "GeneralRight"
+            },
+            "AnimOverlayType": "OneHanded",
+            "AnimationData": {
+                "RowName": "1HWEP"
+            },
+            "FPFocusedMontage": "/Game/ASS/CHA/1ST/1ST_NewRig/1ST_CHA_GRE_Equip_Montage.1ST_CHA_GRE_Equip_Montage",
+            "FPIdleAnim": "/Game/ASS/CHA/1ST/1ST_NewRig/1ST_CHA_GRE_Idle.1ST_CHA_GRE_Idle",
+            "TPFocusedMontage": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_GREEquip_Montage.3RD_CHA_GREEquip_Montage",
+            "TPUprightIdle": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_MAL_GreIdle.3RD_CHA_MAL_GreIdle",
+            "TPCrouchedIdle": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_MAL_CrouchIdle.3RD_CHA_MAL_CrouchIdle"
+        },
+        {
+            "Name": "Focusable_Backpack",
+            "Behaviour": "/Game/BP/Behaviours/Focusable/BP_FocusableBehaviour_Backpack.BP_FocusableBehaviour_Backpack_C",
+            "AttachmentData": {
+                "RowName": "GeneralRight"
+            },
+            "AnimOverlayType": "OneHanded",
+            "AnimationData": {
+                "RowName": "1HWEP"
+            },
+            "FPFocusedMontage": "/Game/ASS/CHA/1ST/1ST_NewRig/1ST_CHA_1HWEP_Equip_Montage.1ST_CHA_1HWEP_Equip_Montage",
+            "FPIdleAnim": "/Game/ASS/CHA/1ST/1ST_NewRig/1ST_CHA_1HWEPIdle.1ST_CHA_1HWEPIdle",
+            "TPFocusedMontage": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_1HAxeEquip_Montage.3RD_CHA_1HAxeEquip_Montage",
+            "TPUprightIdle": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_MAL_1HAxeIdle.3RD_CHA_MAL_1HAxeIdle",
+            "TPCrouchedIdle": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_MAL_CrouchIdle.3RD_CHA_MAL_CrouchIdle"
+        },
+        {
+            "Name": "Focusable_Carcass_Hip",
+            "Behaviour": "/Game/BP/Behaviours/Focusable/BP_FocusableBehaviour_Corpse.BP_FocusableBehaviour_Corpse_C",
+            "AttachmentData": {
+                "RowName": "Carcass_Hip"
+            },
+            "bApplyAutomaticSpineBend": false,
+            "FPLocoBlendSpaceOverride": "/Game/ASS/CHA/1ST/1ST_NewRig/1ST_CHA_Hands_Loco_BS.1ST_CHA_Hands_Loco_BS",
+            "FPIdleAnim": "/Game/ASS/CHA/1ST/1ST_NewRig/1ST_CHA_HandsIdle.1ST_CHA_HandsIdle"
+        },
+        {
+            "Name": "Focusable_Extractor",
+            "Behaviour": "/Game/BP/Behaviours/Focusable/BP_FocusableBehaviour_Backpack.BP_FocusableBehaviour_Backpack_C",
+            "AttachmentData": {
+                "RowName": "GeneralBoth"
+            },
+            "AnimOverlayType": "OneHanded",
+            "FPFocusedMontage": "/Game/ASS/CHA/1ST/1ST_NewRig/1ST_CHA_Extractor_Equip_Montage.1ST_CHA_Extractor_Equip_Montage",
+            "FPLocoBlendSpaceOverride": "/Game/ASS/CHA/1ST/1ST_NewRig/1ST_CHA_Extractor_Loco_BS.1ST_CHA_Extractor_Loco_BS",
+            "FPIdleAnim": "/Game/ASS/CHA/1ST/1ST_NewRig/1ST_CHA_DEP_STD_Extractor_CarryIdle.1ST_CHA_DEP_STD_Extractor_CarryIdle"
+        },
+        {
+            "Name": "Focusable_Gun_Rifle",
+            "Behaviour": "/Game/BP/Behaviours/Focusable/BP_FocusableBehaviour.BP_FocusableBehaviour_C",
+            "AttachmentData": {
+                "RowName": "GeneralBoth"
+            },
+            "AnimOverlayType": "Firearm",
+            "AnimationData": {
+                "RowName": "2HGun"
+            },
+            "FPFocusedMontage": "/Game/ASS/CHA/1ST/1ST_NewRig/1ST_CHA_Rifle_Equip_Montage.1ST_CHA_Rifle_Equip_Montage",
+            "FPIdleAnim": "/Game/ASS/CHA/1ST/1ST_NewRig/1ST_CHA_RifleIdle.1ST_CHA_RifleIdle",
+            "TPFocusedMontage": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_RifleEquip_Montage.3RD_CHA_RifleEquip_Montage",
+            "TPUprightIdle": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_MAL_RifleIdle.3RD_CHA_MAL_RifleIdle",
+            "TPCrouchedIdle": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_MAL_2HGunCrouchIdle.3RD_CHA_MAL_2HGunCrouchIdle"
+        },
+        {
+            "Name": "Focusable_Gun_Rifle_Aligned",
+            "Behaviour": "/Game/BP/Behaviours/Focusable/BP_FocusableBehaviour.BP_FocusableBehaviour_C",
+            "AttachmentData": {
+                "RowName": "GeneralBoth_Aligned"
+            },
+            "AnimOverlayType": "Firearm",
+            "AnimationData": {
+                "RowName": "2HGun"
+            },
+            "FPFocusedMontage": "/Game/ASS/CHA/1ST/1ST_NewRig/1ST_CHA_Rifle_Equip_Montage.1ST_CHA_Rifle_Equip_Montage",
+            "FPIdleAnim": "/Game/ASS/CHA/1ST/1ST_NewRig/1ST_CHA_RifleIdle.1ST_CHA_RifleIdle",
+            "TPFocusedMontage": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_RifleEquip_Montage.3RD_CHA_RifleEquip_Montage",
+            "TPUprightIdle": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_MAL_RifleIdle.3RD_CHA_MAL_RifleIdle",
+            "TPCrouchedIdle": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_MAL_2HGunCrouchIdle.3RD_CHA_MAL_2HGunCrouchIdle"
+        },
+        {
+            "Name": "Focusable_Carcass_Wolf",
+            "Behaviour": "/Game/BP/Behaviours/Focusable/BP_FocusableBehaviour_Corpse.BP_FocusableBehaviour_Corpse_C",
+            "AttachmentData": {
+                "RowName": "Carcass_wolf"
+            },
+            "AnimOverlayType": "Carrying",
+            "AnimationData": {
+                "RowName": "Carry_Carcass"
+            },
+            "bApplyAutomaticSpineBend": false,
+            "FPLocoBlendSpaceOverride": "/Game/ASS/CHA/1ST/1ST_NewRig/1ST_CHA_Carry_Loco_BS.1ST_CHA_Carry_Loco_BS",
+            "FPIdleAnim": "/Game/ASS/CHA/1ST/1ST_NewRig/1ST_CHA_CRE_CarryIdle.1ST_CHA_CRE_CarryIdle",
+            "TPUprightIdle": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_CRE_Wolf_Carry_P.3RD_CHA_CRE_Wolf_Carry_P"
+        },
+        {
+            "Name": "Focusable_Carcass_Cougar",
+            "Behaviour": "/Game/BP/Behaviours/Focusable/BP_FocusableBehaviour_Corpse.BP_FocusableBehaviour_Corpse_C",
+            "AttachmentData": {
+                "RowName": "Carcass"
+            },
+            "AnimOverlayType": "Carrying",
+            "AnimationData": {
+                "RowName": "Carry_Carcass"
+            },
+            "bApplyAutomaticSpineBend": false,
+            "FPLocoBlendSpaceOverride": "/Game/ASS/CHA/1ST/1ST_NewRig/1ST_CHA_Carry_Loco_BS.1ST_CHA_Carry_Loco_BS",
+            "FPIdleAnim": "/Game/ASS/CHA/1ST/1ST_NewRig/1ST_CHA_CRE_CarryIdle.1ST_CHA_CRE_CarryIdle",
+            "TPUprightIdle": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_CRE_Wolf_Carry_P.3RD_CHA_CRE_Wolf_Carry_P"
+        },
+        {
+            "Name": "Focusable_Gun_Crossbow",
+            "Behaviour": "/Game/BP/Behaviours/Focusable/BP_FocusableBehaviour.BP_FocusableBehaviour_C",
+            "AttachmentData": {
+                "RowName": "GeneralBoth"
+            },
+            "AnimOverlayType": "Firearm",
+            "AnimationData": {
+                "RowName": "2HGun"
+            },
+            "FPFocusedMontage": "/Game/ASS/CHA/1ST/1ST_NewRig/1ST_CHA_Crossbow_Equip_Montage.1ST_CHA_Crossbow_Equip_Montage",
+            "FPIdleAnim": "/Game/ASS/CHA/1ST/1ST_NewRig/1ST_CHA_CrossbowIdle.1ST_CHA_CrossbowIdle",
+            "TPFocusedMontage": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_CrossbowEquip_Montage.3RD_CHA_CrossbowEquip_Montage",
+            "TPUprightIdle": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_MAL_CrossbowIdle.3RD_CHA_MAL_CrossbowIdle",
+            "TPCrouchedIdle": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_MAL_2HGunCrouchIdle.3RD_CHA_MAL_2HGunCrouchIdle"
+        },
+        {
+            "Name": "Focusable_Gun_Shotgun",
+            "Behaviour": "/Game/BP/Behaviours/Focusable/BP_FocusableBehaviour.BP_FocusableBehaviour_C",
+            "AttachmentData": {
+                "RowName": "GeneralBoth"
+            },
+            "AnimOverlayType": "Firearm",
+            "AnimationData": {
+                "RowName": "2HGun"
+            },
+            "FPFocusedMontage": "/Game/ASS/CHA/1ST/1ST_NewRig/1ST_CHA_Shotgun_Equip_Montage.1ST_CHA_Shotgun_Equip_Montage",
+            "FPIdleAnim": "/Game/ASS/CHA/1ST/1ST_NewRig/1ST_CHA_RifleIdle.1ST_CHA_RifleIdle",
+            "TPFocusedMontage": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_ShotgunEquip_Montage.3RD_CHA_ShotgunEquip_Montage",
+            "TPUprightIdle": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_MAL_ShotgunIdle.3RD_CHA_MAL_ShotgunIdle",
+            "TPCrouchedIdle": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_MAL_2HGunCrouchIdle.3RD_CHA_MAL_2HGunCrouchIdle"
+        },
+        {
+            "Name": "Focusable_OreScanner_Cave",
+            "Behaviour": "/Game/BP/Behaviours/Focusable/BP_FocusableBehaviour.BP_FocusableBehaviour_C",
+            "AttachmentData": {
+                "RowName": "GeneralRight"
+            },
+            "AttachmentOffset": {
+                "Rotation": {
+                    "X": 0.6294096112251282,
+                    "Y": -0.37059032917022705,
+                    "Z": 0.4829629063606262,
+                    "W": 0.4829627275466919
+                },
+                "Translation": {
+                    "X": -2
+                }
+            },
+            "AnimOverlayType": "OneHanded",
+            "AnimationData": {
+                "RowName": "1HWEP"
+            },
+            "FPFocusedMontage": "/Game/ASS/CHA/1ST/1ST_NewRig/1ST_CHA_1HOreScanner_Equip_Montage.1ST_CHA_1HOreScanner_Equip_Montage",
+            "FPIdleAnim": "/Game/ASS/CHA/1ST/1ST_NewRig/1ST_CHA_1HOreScanner_Idle.1ST_CHA_1HOreScanner_Idle",
+            "TPFocusedMontage": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_1HOreScannerEquip_Montage.3RD_CHA_1HOreScannerEquip_Montage",
+            "TPUprightIdle": "/Game/ASS/CHA/Human/3RD/Animations/3ST_CHA_1HOreScanner_Idle.3ST_CHA_1HOreScanner_Idle",
+            "TPCrouchedIdle": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_MAL_CrouchIdle.3RD_CHA_MAL_CrouchIdle"
+        },
+        {
+            "Name": "Focusable_OreScanner_DeepOre",
+            "Behaviour": "/Game/BP/Behaviours/Focusable/BP_FocusableBehaviour.BP_FocusableBehaviour_C",
+            "AttachmentData": {
+                "RowName": "GeneralRight"
+            },
+            "AttachmentOffset": {
+                "Rotation": {
+                    "X": 0.6077443957328796,
+                    "Y": -0.39130380749702454,
+                    "Z": 0.5099575519561768,
+                    "W": 0.4663381576538086
+                },
+                "Translation": {
+                    "X": 2,
+                    "Y": -1
+                }
+            },
+            "AnimOverlayType": "OneHanded",
+            "AnimationData": {
+                "RowName": "1HWEP"
+            },
+            "FPFocusedMontage": "/Game/ASS/CHA/1ST/1ST_NewRig/1ST_CHA_1HOreScanner_Equip_Montage.1ST_CHA_1HOreScanner_Equip_Montage",
+            "FPIdleAnim": "/Game/ASS/CHA/1ST/1ST_NewRig/1ST_CHA_1HOreScanner_Idle.1ST_CHA_1HOreScanner_Idle",
+            "TPFocusedMontage": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_1HOreScannerEquip_Montage.3RD_CHA_1HOreScannerEquip_Montage",
+            "TPUprightIdle": "/Game/ASS/CHA/Human/3RD/Animations/3ST_CHA_1HOreScanner_Idle.3ST_CHA_1HOreScanner_Idle",
+            "TPCrouchedIdle": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_MAL_CrouchIdle.3RD_CHA_MAL_CrouchIdle"
+        },
+        {
+            "Name": "Focusable_Flashlight",
+            "Behaviour": "/Game/BP/Behaviours/Focusable/BP_FocusableBehaviour.BP_FocusableBehaviour_C",
+            "AttachmentData": {
+                "RowName": "GeneralRight"
+            },
+            "AnimOverlayType": "OneHanded",
+            "AnimationData": {
+                "RowName": "FlashLight"
+            },
+            "FPFocusedMontage": "/Game/ASS/CHA/1ST/1ST_NewRig/1ST_CHA_Flashlight_Equip_Montage.1ST_CHA_Flashlight_Equip_Montage",
+            "FPIdleAnim": "/Game/ASS/CHA/1ST/1ST_NewRig/1ST_CHA_Flashlight_Idle.1ST_CHA_Flashlight_Idle",
+            "TPFocusedMontage": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_FlashlightEquip_Montage.3RD_CHA_FlashlightEquip_Montage",
+            "TPUprightIdle": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_MAL_Flashlight_Idle.3RD_CHA_MAL_Flashlight_Idle",
+            "TPCrouchedIdle": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_MAL_CrouchIdle.3RD_CHA_MAL_CrouchIdle"
+        },
+        {
+            "Name": "Focusable_Unarmed",
+            "Behaviour": "/Game/BP/Behaviours/Focusable/BP_FocusableBehaviour.BP_FocusableBehaviour_C",
+            "AttachmentData": {
+                "RowName": "GeneralRight"
+            },
+            "AnimationData": {
+                "RowName": "1HWEP"
+            }
+        },
+        {
+            "Name": "Focusable_1H_Axe",
+            "Behaviour": "/Game/BP/Behaviours/Focusable/BP_FocusableBehaviour.BP_FocusableBehaviour_C",
+            "AttachmentData": {
+                "RowName": "GeneralRight"
+            },
+            "AnimOverlayType": "OneHanded",
+            "AnimationData": {
+                "RowName": "1HWEP"
+            },
+            "FPFocusedMontage": "/Game/ASS/CHA/1ST/1ST_NewRig/1ST_CHA_Axe_Equip_Montage.1ST_CHA_Axe_Equip_Montage",
+            "FPIdleAnim": "/Game/ASS/CHA/1ST/1ST_NewRig/1ST_CHA_1HAxe_Idle.1ST_CHA_1HAxe_Idle",
+            "TPFocusedMontage": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_1HAxeEquip_Montage.3RD_CHA_1HAxeEquip_Montage",
+            "TPUprightIdle": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_MAL_1HWeaponIdle.3RD_CHA_MAL_1HWeaponIdle",
+            "TPCrouchedIdle": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_MAL_1HWEPCrouchIdle.3RD_CHA_MAL_1HWEPCrouchIdle"
+        },
+        {
+            "Name": "Focusable_Shovel",
+            "Behaviour": "/Game/BP/Behaviours/Focusable/BP_FocusableBehaviour.BP_FocusableBehaviour_C",
+            "AttachmentData": {
+                "RowName": "GeneralRight"
+            },
+            "AnimOverlayType": "Spear",
+            "AnimationData": {
+                "RowName": "Shovel"
+            },
+            "bApplyAutomaticSpineBend": false,
+            "FPFocusedMontage": "/Game/ASS/CHA/1ST/1ST_NewRig/1ST_CHA_Shovel_Equip_Montage.1ST_CHA_Shovel_Equip_Montage",
+            "FPIdleAnim": "/Game/ASS/CHA/1ST/1ST_NewRig/1ST_CHA_Shovel_Idle.1ST_CHA_Shovel_Idle",
+            "TPFocusedMontage": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_ShovelEquip_Montage.3RD_CHA_ShovelEquip_Montage",
+            "TPUprightIdle": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_Shovel_Idle.3RD_CHA_Shovel_Idle",
+            "TPCrouchedIdle": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_MAL_Shovel_CrouchIdle.3RD_CHA_MAL_Shovel_CrouchIdle"
+        },
+        {
+            "Name": "Focusable_FireExtinguisher",
+            "Behaviour": "/Game/BP/Behaviours/Focusable/BP_FocusableBehaviour.BP_FocusableBehaviour_C",
+            "AttachmentData": {
+                "RowName": "GeneralRight"
+            },
+            "AnimOverlayType": "Spear",
+            "AnimationData": {
+                "RowName": "FireExtinguisher"
+            },
+            "bApplyAutomaticSpineBend": false,
+            "FPFocusedMontage": "/Game/ASS/CHA/1ST/1ST_NewRig/1ST_CHA_FireExtinguisherEquip_Montage.1ST_CHA_FireExtinguisherEquip_Montage",
+            "FPIdleAnim": "/Game/ASS/CHA/1ST/1ST_NewRig/1ST_CHA_FireExtinguisherIdle.1ST_CHA_FireExtinguisherIdle",
+            "TPFocusedMontage": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_MAL_FireExtinguisherEquip_Montage.3RD_CHA_MAL_FireExtinguisherEquip_Montage",
+            "TPUprightIdle": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_MAL_FireExtinguisherIdle.3RD_CHA_MAL_FireExtinguisherIdle",
+            "TPCrouchedIdle": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_MAL_FireExtinguisher_CrouchIdle.3RD_CHA_MAL_FireExtinguisher_CrouchIdle"
+        },
+        {
+            "Name": "Focusable_Gun_Rifle_BoltAction",
+            "Behaviour": "/Game/BP/Behaviours/Focusable/BP_FocusableBehaviour.BP_FocusableBehaviour_C",
+            "AttachmentData": {
+                "RowName": "GeneralBoth"
+            },
+            "AnimOverlayType": "Firearm",
+            "AnimationData": {
+                "RowName": "2HGun"
+            },
+            "FPFocusedMontage": "/Game/ASS/CHA/1ST/1ST_NewRig/1ST_CHA_Rifle_Equip_Montage.1ST_CHA_Rifle_Equip_Montage",
+            "FPIdleAnim": "/Game/ASS/CHA/1ST/1ST_NewRig/1ST_CHA_RifleIdle.1ST_CHA_RifleIdle",
+            "TPFocusedMontage": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_RifleEquip_Montage.3RD_CHA_RifleEquip_Montage",
+            "TPUprightIdle": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_MAL_RifleIdle.3RD_CHA_MAL_RifleIdle",
+            "TPCrouchedIdle": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_MAL_2HGunCrouchIdle.3RD_CHA_MAL_2HGunCrouchIdle"
+        },
+        {
+            "Name": "Focusable_Lantern",
+            "Behaviour": "/Game/BP/Behaviours/Focusable/BP_FocusableBehaviour.BP_FocusableBehaviour_C",
+            "AttachmentData": {
+                "RowName": "Lantern"
+            },
+            "AnimOverlayType": "OneHanded",
+            "AnimationData": {
+                "RowName": "Lantern"
+            },
+            "FPFocusedMontage": "/Game/ASS/CHA/1ST/1ST_NewRig/1ST_CHA_Lantern_Equip_Montage.1ST_CHA_Lantern_Equip_Montage",
+            "FPIdleAnim": "/Game/ASS/CHA/1ST/1ST_NewRig/1ST_CHA_1HLamp_Idle.1ST_CHA_1HLamp_Idle",
+            "TPFocusedMontage": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_LanternEquip_Montage.3RD_CHA_LanternEquip_Montage",
+            "TPUprightIdle": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_MAL_1HLampIdle.3RD_CHA_MAL_1HLampIdle",
+            "TPCrouchedIdle": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_MAL_1HLamp_CrouchIdle.3RD_CHA_MAL_1HLamp_CrouchIdle"
+        },
+        {
+            "Name": "Focusable_Carcass_Scorpion",
+            "Behaviour": "/Game/BP/Behaviours/Focusable/BP_FocusableBehaviour_Corpse.BP_FocusableBehaviour_Corpse_C",
+            "AttachmentData": {
+                "RowName": "Carcass_Scorpion"
+            },
+            "AnimOverlayType": "Carrying",
+            "AnimationData": {
+                "RowName": "Carry_Carcass"
+            },
+            "bApplyAutomaticSpineBend": false,
+            "FPLocoBlendSpaceOverride": "/Game/ASS/CHA/1ST/1ST_NewRig/1ST_CHA_Carry_Loco_BS.1ST_CHA_Carry_Loco_BS",
+            "FPIdleAnim": "/Game/ASS/CHA/1ST/1ST_NewRig/1ST_CHA_CRE_CarryIdle.1ST_CHA_CRE_CarryIdle",
+            "TPUprightIdle": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_CRE_Wolf_Carry_P.3RD_CHA_CRE_Wolf_Carry_P"
+        },
+        {
+            "Name": "Focusable_Shield",
+            "Behaviour": "/Game/BP/Behaviours/Focusable/BP_FocusableBehaviour.BP_FocusableBehaviour_C",
+            "AttachmentData": {
+                "RowName": "Shield"
+            },
+            "AttachmentOffset": {
+                "Translation": {
+                    "Y": -10
+                }
+            },
+            "AnimOverlayType": "OneHanded",
+            "FPFocusedMontage": "/Game/ASS/CHA/1ST/1ST_NewRig/1ST_CHA_1HWEP_Equip_Montage.1ST_CHA_1HWEP_Equip_Montage",
+            "FPIdleAnim": "/Game/Prototypes/Shield/1ST_CHA_1HShield_Idle_LHand__1_New.1ST_CHA_1HShield_Idle_LHand__1_New",
+            "TPFocusedMontage": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_Shield_EquipMontage.3RD_CHA_Shield_EquipMontage",
+            "TPUprightIdle": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_MAL_1HWeaponIdle.3RD_CHA_MAL_1HWeaponIdle",
+            "TPCrouchedIdle": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_MAL_1HWEPCrouchIdle.3RD_CHA_MAL_1HWEPCrouchIdle"
+        },
+        {
+            "Name": "Focusable_Throwing_Knife",
+            "Behaviour": "/Game/BP/Behaviours/Focusable/BP_FocusableBehaviour.BP_FocusableBehaviour_C",
+            "AttachmentData": {
+                "RowName": "GeneralRight"
+            },
+            "AnimOverlayType": "OneHanded",
+            "AnimationData": {
+                "RowName": "1HWEP"
+            },
+            "FPFocusedMontage": "/Game/ASS/CHA/1ST/1ST_NewRig/1ST_CHA_1HKNI_Equip_Montage.1ST_CHA_1HKNI_Equip_Montage",
+            "FPIdleAnim": "/Game/ASS/CHA/1ST/1ST_NewRig/1ST_CHA_1HKNIIdle.1ST_CHA_1HKNIIdle",
+            "TPFocusedMontage": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_1HKNIEquip_Montage.3RD_CHA_1HKNIEquip_Montage",
+            "TPUprightIdle": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_MAL_1HKnifeIdle.3RD_CHA_MAL_1HKnifeIdle",
+            "TPCrouchedIdle": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_MAL_CrouchIdle.3RD_CHA_MAL_CrouchIdle"
+        },
+        {
+            "Name": "Focusable_Throwing_Spear",
+            "Behaviour": "/Game/BP/Behaviours/Focusable/BP_FocusableBehaviour.BP_FocusableBehaviour_C",
+            "AttachmentData": {
+                "RowName": "GeneralBoth"
+            },
+            "AnimOverlayType": "Spear",
+            "AnimationData": {
+                "RowName": "Spear"
+            },
+            "FPFocusedMontage": "/Game/ASS/CHA/1ST/1ST_NewRig/1ST_CHA_SPR_Equip_Montage.1ST_CHA_SPR_Equip_Montage",
+            "FPIdleAnim": "/Game/ASS/CHA/1ST/1ST_NewRig/1ST_CHA_SPRIdle.1ST_CHA_SPRIdle",
+            "TPFocusedMontage": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_SPREquip_Montage.3RD_CHA_SPREquip_Montage",
+            "TPUprightIdle": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_MAL_SPRIdle.3RD_CHA_MAL_SPRIdle",
+            "TPCrouchedIdle": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_MAL_SprCrouchIdle.3RD_CHA_MAL_SprCrouchIdle"
+        },
+        {
+            "Name": "Focusable_Sledge",
+            "Behaviour": "/Game/BP/Behaviours/Focusable/BP_FocusableBehaviour.BP_FocusableBehaviour_C",
+            "AttachmentData": {
+                "RowName": "Sledge"
+            },
+            "AttachmentOffset": {
+                "Rotation": {
+                    "Z": 0.1736481636762619,
+                    "W": 0.9848077297210693
+                }
+            },
+            "AnimOverlayType": "Spear",
+            "AnimationData": {
+                "RowName": "Spear"
+            },
+            "FPFocusedMontage": "/Game/ASS/CHA/1ST/1ST_NewRig/1ST_CHA_sledgehammer_equip.1ST_CHA_sledgehammer_equip",
+            "FPIdleAnim": "/Game/ASS/CHA/1ST/1ST_NewRig/1ST_CHA_SPRIdle.1ST_CHA_SPRIdle",
+            "TPFocusedMontage": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_SPREquip_Montage.3RD_CHA_SPREquip_Montage",
+            "TPUprightIdle": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_MAL_SPRIdle.3RD_CHA_MAL_SPRIdle",
+            "TPCrouchedIdle": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_MAL_SprCrouchIdle.3RD_CHA_MAL_SprCrouchIdle"
+        },
+        {
+            "Name": "Focusable_Fishfinder",
+            "Behaviour": "/Game/BP/Behaviours/Focusable/BP_FocusableBehaviour.BP_FocusableBehaviour_C",
+            "AttachmentData": {
+                "RowName": "GeneralRight"
+            },
+            "AttachmentOffset": {
+                "Rotation": {
+                    "X": 0.6077443957328796,
+                    "Y": -0.39130380749702454,
+                    "Z": 0.5099575519561768,
+                    "W": 0.4663381576538086
+                },
+                "Translation": {
+                    "X": 2,
+                    "Y": -1
+                }
+            },
+            "AnimOverlayType": "OneHanded",
+            "AnimationData": {
+                "RowName": "1HWEP"
+            },
+            "FPFocusedMontage": "/Game/ASS/CHA/1ST/1ST_NewRig/1ST_CHA_1HOreScanner_Equip_Montage.1ST_CHA_1HOreScanner_Equip_Montage",
+            "FPIdleAnim": "/Game/ASS/CHA/1ST/1ST_NewRig/1ST_CHA_1HOreScanner_Idle.1ST_CHA_1HOreScanner_Idle",
+            "TPFocusedMontage": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_1HOreScannerEquip_Montage.3RD_CHA_1HOreScannerEquip_Montage",
+            "TPUprightIdle": "/Game/ASS/CHA/Human/3RD/Animations/3ST_CHA_1HOreScanner_Idle.3ST_CHA_1HOreScanner_Idle",
+            "TPCrouchedIdle": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_MAL_CrouchIdle.3RD_CHA_MAL_CrouchIdle"
+        },
+        {
+            "Name": "Focusable_Fish",
+            "Behaviour": "/Game/BP/Behaviours/Focusable/BP_FocusableBehaviour.BP_FocusableBehaviour_C",
+            "AttachmentData": {
+                "RowName": "Fish"
+            },
+            "AttachmentOffset": {
+                "Rotation": {
+                    "X": -1.1920928244535389e-07,
+                    "Y": 0.9999998211860657,
+                    "Z": 1.7881390590446244e-07,
+                    "W": -2.1316282072803006e-14
+                }
+            },
+            "AnimOverlayType": "OneHanded",
+            "AnimationData": {
+                "RowName": "Lantern"
+            },
+            "FPFocusedMontage": "/Game/ASS/CHA/1ST/1ST_NewRig/ANI_1ST_CHA_Fishing_EquipFish.ANI_1ST_CHA_Fishing_EquipFish",
+            "FPIdleAnim": "/Game/ASS/CHA/1ST/1ST_NewRig/ANI_1ST_CHA_Fishing_LandFish_Idle.ANI_1ST_CHA_Fishing_LandFish_Idle",
+            "TPFocusedMontage": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_Fishing_EquipFish.3RD_CHA_Fishing_EquipFish",
+            "TPUprightIdle": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_Fishing_LandFish_Idle.3RD_CHA_Fishing_LandFish_Idle",
+            "TPCrouchedIdle": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_MAL_1HLamp_CrouchIdle.3RD_CHA_MAL_1HLamp_CrouchIdle"
+        },
+        {
+            "Name": "Focusable_Watering_Can",
+            "Behaviour": "/Game/BP/Behaviours/Focusable/BP_FocusableBehaviour.BP_FocusableBehaviour_C",
+            "AttachmentData": {
+                "RowName": "WateringCan"
+            },
+            "AnimOverlayType": "OneHanded",
+            "AnimationData": {
+                "RowName": "Lantern"
+            },
+            "FPFocusedMontage": "/Game/ASS/CHA/1ST/1ST_NewRig/1ST_CHA_WaterCan_Equip_Montage.1ST_CHA_WaterCan_Equip_Montage",
+            "FPIdleAnim": "/Game/ASS/CHA/1ST/1ST_NewRig/ANI_1ST_CHA_WaterCan_Idle.ANI_1ST_CHA_WaterCan_Idle",
+            "TPFocusedMontage": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_Watercan_Equip_Montage.3RD_CHA_Watercan_Equip_Montage",
+            "TPUprightIdle": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_Watercan_Idle.3RD_CHA_Watercan_Idle"
+        },
+        {
+            "Name": "Focusable_Shield_Offset",
+            "Behaviour": "/Game/BP/Behaviours/Focusable/BP_FocusableBehaviour.BP_FocusableBehaviour_C",
+            "AttachmentData": {
+                "RowName": "Shield_Offset"
+            },
+            "AttachmentOffset": {
+                "Translation": {
+                    "Y": -10
+                }
+            },
+            "AnimOverlayType": "OneHanded",
+            "FPFocusedMontage": "/Game/ASS/CHA/1ST/1ST_NewRig/1ST_CHA_1HWEP_Equip_Montage.1ST_CHA_1HWEP_Equip_Montage",
+            "FPIdleAnim": "/Game/Prototypes/Shield/1ST_CHA_1HShield_Idle_LHand__1_New.1ST_CHA_1HShield_Idle_LHand__1_New",
+            "TPFocusedMontage": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_Shield_EquipMontage.3RD_CHA_Shield_EquipMontage",
+            "TPUprightIdle": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_MAL_1HWeaponIdle.3RD_CHA_MAL_1HWeaponIdle",
+            "TPCrouchedIdle": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_MAL_1HWEPCrouchIdle.3RD_CHA_MAL_1HWEPCrouchIdle"
+        },
+        {
+            "Name": "Focusable_Throwing_Stick",
+            "Behaviour": "/Game/BP/Behaviours/Focusable/BP_FocusableBehaviour.BP_FocusableBehaviour_C",
+            "AttachmentData": {
+                "RowName": "GeneralRight"
+            },
+            "AttachmentOffset": {
+                "Rotation": {
+                    "X": -0.1413557529449463,
+                    "Y": 0.6747419238090515,
+                    "Z": 0.187062069773674,
+                    "W": 0.6998211741447449
+                },
+                "Translation": {
+                    "X": -0.033629998564720154,
+                    "Y": 0.800029993057251,
+                    "Z": 0.22302299737930298
+                }
+            },
+            "AnimOverlayType": "OneHanded",
+            "AnimationData": {
+                "RowName": "1HWEP"
+            },
+            "FPFocusedMontage": "/Game/ASS/CHA/1ST/1ST_NewRig/1ST_CHA_1HKNI_Equip_Montage.1ST_CHA_1HKNI_Equip_Montage",
+            "FPIdleAnim": "/Game/ASS/CHA/1ST/1ST_NewRig/1ST_CHA_1HKNIIdle.1ST_CHA_1HKNIIdle",
+            "TPFocusedMontage": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_1HSTICKEQUIP.3RD_CHA_1HSTICKEQUIP",
+            "TPUprightIdle": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_MAL_1HKnifeIdle.3RD_CHA_MAL_1HKnifeIdle",
+            "TPCrouchedIdle": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_MAL_CrouchIdle.3RD_CHA_MAL_CrouchIdle"
+        },
+        {
+            "Name": "Focusable_Rope",
+            "Behaviour": "/Game/BP/Behaviours/Focusable/BP_FocusableBehaviour.BP_FocusableBehaviour_C",
+            "AttachmentData": {
+                "RowName": "GeneralRight"
+            },
+            "AttachmentOffset": {
+                "Translation": {
+                    "Z": -20
+                }
+            },
+            "AnimOverlayType": "OneHanded",
+            "AnimationData": {
+                "RowName": "1HWEP"
+            },
+            "FPFocusedMontage": "/Game/ASS/CHA/1ST/1ST_NewRig/1ST_CHA_1HWEP_Equip_Montage.1ST_CHA_1HWEP_Equip_Montage",
+            "FPIdleAnim": "/Game/ASS/CHA/1ST/1ST_NewRig/1ST_CHA_1HWEPIdle.1ST_CHA_1HWEPIdle",
+            "TPFocusedMontage": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_1HAxeEquip_Montage.3RD_CHA_1HAxeEquip_Montage",
+            "TPUprightIdle": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_MAL_1HWeaponIdle.3RD_CHA_MAL_1HWeaponIdle",
+            "TPCrouchedIdle": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_MAL_1HWEPCrouchIdle.3RD_CHA_MAL_1HWEPCrouchIdle"
+        },
+        {
+            "Name": "Focusable_Bandage",
+            "Behaviour": "/Game/BP/Behaviours/Focusable/BP_FocusableBehaviour.BP_FocusableBehaviour_C",
+            "AttachmentData": {
+                "RowName": "RightCanteen"
+            },
+            "AnimOverlayType": "OneHanded",
+            "AnimationData": {
+                "RowName": "1HWEP"
+            },
+            "FPFocusedMontage": "/Game/ASS/CHA/1ST/1ST_NewRig/1ST_CHA_Bandage_Equip_Montage.1ST_CHA_Bandage_Equip_Montage",
+            "FPIdleAnim": "/Game/ASS/CHA/1ST/1ST_NewRig/1ST_CHA_Bandage_Idle.1ST_CHA_Bandage_Idle",
+            "TPFocusedMontage": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_BandageEquip_Montage.3RD_CHA_BandageEquip_Montage",
+            "TPUprightIdle": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_MAL_1HITEM.3RD_CHA_MAL_1HITEM",
+            "TPCrouchedIdle": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_MAL_CrouchIdle.3RD_CHA_MAL_CrouchIdle"
+        },
+        {
+            "Name": "Focusable_SutureKit",
+            "Behaviour": "/Game/BP/Behaviours/Focusable/BP_FocusableBehaviour.BP_FocusableBehaviour_C",
+            "AttachmentData": {
+                "RowName": "GeneralRight"
+            },
+            "AttachmentOffset": {
+                "Rotation": {
+                    "X": -0.7071068286895752,
+                    "W": 0.7071067094802856
+                }
+            },
+            "AnimOverlayType": "OneHanded",
+            "AnimationData": {
+                "RowName": "1HWEP"
+            },
+            "FPFocusedMontage": "/Game/ASS/CHA/1ST/1ST_NewRig/1ST_CHA_Bandage_Equip_Montage.1ST_CHA_Bandage_Equip_Montage",
+            "FPIdleAnim": "/Game/ASS/CHA/1ST/1ST_NewRig/1ST_CHA_Bandage_Idle.1ST_CHA_Bandage_Idle",
+            "TPFocusedMontage": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_BandageEquip_Montage.3RD_CHA_BandageEquip_Montage",
+            "TPUprightIdle": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_1HBandage_Idle.3RD_CHA_1HBandage_Idle",
+            "TPCrouchedIdle": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_MAL_CrouchIdle.3RD_CHA_MAL_CrouchIdle"
+        },
+        {
+            "Name": "Focusable_Workshop_Flashlight",
+            "Behaviour": "/Game/BP/Behaviours/Focusable/BP_FocusableBehaviour.BP_FocusableBehaviour_C",
+            "AttachmentData": {
+                "RowName": "GeneralRight"
+            },
+            "AnimOverlayType": "OneHanded",
+            "AnimationData": {
+                "RowName": "FlashLight"
+            },
+            "FPFocusedMontage": "/Game/ASS/CHA/1ST/1ST_NewRig/1ST_CHA_Flashlight_Equip_Montage.1ST_CHA_Flashlight_Equip_Montage",
+            "FPIdleAnim": "/Game/ASS/CHA/1ST/1ST_NewRig/1ST_CHA_Flashlight_Idle.1ST_CHA_Flashlight_Idle",
+            "TPFocusedMontage": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_FlashlightEquip_Montage.3RD_CHA_FlashlightEquip_Montage",
+            "TPUprightIdle": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_MAL_Flashlight_Idle.3RD_CHA_MAL_Flashlight_Idle",
+            "TPCrouchedIdle": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_MAL_CrouchIdle.3RD_CHA_MAL_CrouchIdle"
+        },
+        {
+            "Name": "Focusable_Bucket",
+            "Behaviour": "/Game/BP/Behaviours/Focusable/BP_FocusableBehaviour.BP_FocusableBehaviour_C",
+            "AttachmentData": {
+                "RowName": "Lantern"
+            },
+            "AnimOverlayType": "OneHanded",
+            "AnimationData": {
+                "RowName": "Lantern"
+            },
+            "FPFocusedMontage": "/Game/ASS/CHA/1ST/1ST_NewRig/1ST_CHA_Lantern_Equip_Montage.1ST_CHA_Lantern_Equip_Montage",
+            "FPIdleAnim": "/Game/ASS/CHA/1ST/1ST_NewRig/1ST_CHA_1HLamp_Idle.1ST_CHA_1HLamp_Idle",
+            "TPFocusedMontage": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_LanternEquip_Montage.3RD_CHA_LanternEquip_Montage",
+            "TPUprightIdle": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_Bucket_Idle.3RD_CHA_Bucket_Idle",
+            "TPCrouchedIdle": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_MAL_1HLamp_CrouchIdle.3RD_CHA_MAL_1HLamp_CrouchIdle"
+        },
+        {
+            "Name": "Focusable_Medical_Scanner",
+            "Behaviour": "/Game/BP/Behaviours/Focusable/BP_FocusableBehaviour.BP_FocusableBehaviour_C",
+            "AttachmentData": {
+                "RowName": "GeneralRight"
+            },
+            "AttachmentOffset": {
+                "Translation": {
+                    "X": 2,
+                    "Y": -1
+                }
+            },
+            "AnimOverlayType": "OneHanded",
+            "AnimationData": {
+                "RowName": "1HWEP"
+            },
+            "FPFocusedMontage": "/Game/ASS/CHA/1ST/1ST_NewRig/1ST_CHA_1HMedicScanner_Equip_Montage1.1ST_CHA_1HMedicScanner_Equip_Montage1",
+            "FPIdleAnim": "/Game/ASS/CHA/1ST/1ST_NewRig/1ST_CHA_1HMedicScanner_Idle.1ST_CHA_1HMedicScanner_Idle",
+            "TPFocusedMontage": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_1HMedicScannerEquip_Montage1.3RD_CHA_1HMedicScannerEquip_Montage1",
+            "TPUprightIdle": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_1HMedicScanner_Idle.3RD_CHA_1HMedicScanner_Idle",
+            "TPCrouchedIdle": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_MAL_CrouchIdle.3RD_CHA_MAL_CrouchIdle"
+        },
+        {
+            "Name": "Focusable_Cave_Scanner",
+            "Behaviour": "/Game/BP/Behaviours/Focusable/BP_FocusableBehaviour.BP_FocusableBehaviour_C",
+            "AttachmentData": {
+                "RowName": "GeneralRight"
+            },
+            "AttachmentOffset": {
+                "Rotation": {
+                    "Z": -0.04361938685178757,
+                    "W": 0.9990482330322266
+                },
+                "Translation": {
+                    "X": 3,
+                    "Y": 1.5,
+                    "Z": -2
+                }
+            },
+            "AnimOverlayType": "OneHanded",
+            "AnimationData": {
+                "RowName": "1HWEP"
+            },
+            "FPFocusedMontage": "/Game/ASS/CHA/1ST/1ST_NewRig/1ST_CHA_1HMedicScanner_Equip_Montage1.1ST_CHA_1HMedicScanner_Equip_Montage1",
+            "FPIdleAnim": "/Game/ASS/CHA/1ST/1ST_NewRig/1ST_CHA_1HMedicScanner_Idle.1ST_CHA_1HMedicScanner_Idle",
+            "TPFocusedMontage": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_1HMedicScannerEquip_Montage1.3RD_CHA_1HMedicScannerEquip_Montage1",
+            "TPUprightIdle": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_1HMedicScanner_Idle.3RD_CHA_1HMedicScanner_Idle",
+            "TPCrouchedIdle": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_MAL_CrouchIdle.3RD_CHA_MAL_CrouchIdle"
+        },
+        {
+            "Name": "Focusable_Torch",
+            "Behaviour": "/Game/BP/Behaviours/Focusable/BP_FocusableBehaviour.BP_FocusableBehaviour_C",
+            "AttachmentData": {
+                "RowName": "GeneralRight"
+            },
+            "AnimOverlayType": "OneHanded",
+            "AnimationData": {
+                "RowName": "1HWEP"
+            },
+            "FPFocusedMontage": "/Game/ASS/CHA/1ST/1ST_NewRig/1ST_CHA_1HWEP_Equip_Montage.1ST_CHA_1HWEP_Equip_Montage",
+            "FPIdleAnim": "/Game/ASS/CHA/1ST/1ST_NewRig/1ST_CHA_1HWEPIdle.1ST_CHA_1HWEPIdle",
+            "TPFocusedMontage": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_1HAxeEquip_Montage.3RD_CHA_1HAxeEquip_Montage",
+            "TPUprightIdle": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_Watercan_Idle.3RD_CHA_Watercan_Idle",
+            "TPCrouchedIdle": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_MAL_1HWEPCrouchIdle.3RD_CHA_MAL_1HWEPCrouchIdle"
+        },
+        {
+            "Name": "Focusable_Canister",
+            "Behaviour": "/Game/BP/Behaviours/Focusable/BP_FocusableBehaviour.BP_FocusableBehaviour_C",
+            "AttachmentData": {
+                "RowName": "GeneralRight"
+            },
+            "AttachmentOffset": {
+                "Rotation": {
+                    "Z": -0.7071066498756409,
+                    "W": 0.70710688829422
+                },
+                "Translation": {
+                    "Z": -63
+                }
+            },
+            "AnimOverlayType": "OneHanded",
+            "AnimationData": {
+                "RowName": "Lantern"
+            },
+            "FPFocusedMontage": "/Game/ASS/CHA/1ST/1ST_NewRig/1ST_CHA_Lantern_Equip_Jerrycan_montage.1ST_CHA_Lantern_Equip_Jerrycan_montage",
+            "FPIdleAnim": "/Game/ASS/CHA/1ST/1ST_NewRig/1ST_CHA_1HJerrycan_Idle.1ST_CHA_1HJerrycan_Idle",
+            "TPFocusedMontage": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_LanternEquip_Montage.3RD_CHA_LanternEquip_Montage",
+            "TPUprightIdle": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_Bucket_Idle.3RD_CHA_Bucket_Idle",
+            "TPCrouchedIdle": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_MAL_1HLamp_CrouchIdle.3RD_CHA_MAL_1HLamp_CrouchIdle"
+        },
+        {
+            "Name": "Focusable_FlameThrower",
+            "Behaviour": "/Game/BP/Behaviours/Focusable/BP_FocusableBehaviour.BP_FocusableBehaviour_C",
+            "AttachmentData": {
+                "RowName": "GeneralRight"
+            },
+            "AnimOverlayType": "TwoHandedRifle",
+            "AnimationData": {
+                "RowName": "FlameThrower"
+            },
+            "bApplyAutomaticSpineBend": false,
+            "FPFocusedMontage": "/Game/ASS/CHA/1ST/1ST_NewRig/1ST_CHA_Flamethrower_EquipMontage.1ST_CHA_Flamethrower_EquipMontage",
+            "FPIdleAnim": "/Game/ASS/CHA/1ST/1ST_NewRig/1ST_CHA_Flamethrower_Idle.1ST_CHA_Flamethrower_Idle",
+            "TPFocusedMontage": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_MAL_FlamethrowerEquip_Montage.3RD_CHA_MAL_FlamethrowerEquip_Montage",
+            "TPUprightIdle": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_MAL_Flamethrower_Idle.3RD_CHA_MAL_Flamethrower_Idle",
+            "TPCrouchedIdle": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_MAL_Flamethrower_CrouchIdle.3RD_CHA_MAL_Flamethrower_CrouchIdle"
+        },
+        {
+            "Name": "Focusable_Gauntlet",
+            "Behaviour": "/Game/BP/Behaviours/Focusable/BP_FocusableBehaviour_FocusableArmour.BP_FocusableBehaviour_FocusableArmour_C",
+            "AttachmentData": {
+                "RowName": "GeneralBoth"
+            },
+            "AnimationData": {
+                "RowName": "1HWEP"
+            },
+            "TPFocusedMontage": "/Game/ASS/CHA/Human/Prospector/Animations/Montages/3RD_CHA_1HAxeEquip_Montage.3RD_CHA_1HAxeEquip_Montage",
+            "TPUprightIdle": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_GolemGauntlet_Idle_Test.3RD_CHA_GolemGauntlet_Idle_Test"
+        },
+        {
+            "Name": "Focusable_Submachine_Gun",
+            "Behaviour": "/Game/BP/Behaviours/Focusable/BP_FocusableBehaviour.BP_FocusableBehaviour_C",
+            "AttachmentData": {
+                "RowName": "GeneralBoth"
+            },
+            "AnimOverlayType": "Firearm",
+            "AnimationData": {
+                "RowName": "Pistol"
+            },
+            "FPFocusedMontage": "/Game/ASS/CHA/1ST/1ST_NewRig/1ST_CHA_Pistol_Equip_Var1_Montage.1ST_CHA_Pistol_Equip_Var1_Montage",
+            "FPIdleAnim": "/Game/ASS/CHA/1ST/1ST_NewRig/1ST_CHA_SGL_Shot_PistolIdle.1ST_CHA_SGL_Shot_PistolIdle",
+            "TPFocusedMontage": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_PistolEquip_Montage.3RD_CHA_PistolEquip_Montage",
+            "TPUprightIdle": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_MAL_SGL_Shot_PistolIdle.3RD_CHA_MAL_SGL_Shot_PistolIdle",
+            "TPCrouchedIdle": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_MAL_SGL_Shot_Pistol_CrouchIdle.3RD_CHA_MAL_SGL_Shot_Pistol_CrouchIdle"
+        },
+        {
+            "Name": "Focusable_StasisBag",
+            "Behaviour": "/Game/BP/Behaviours/Focusable/BP_FocusableBehaviour_Corpse.BP_FocusableBehaviour_Corpse_C",
+            "AttachmentData": {
+                "RowName": "StasisBag"
+            },
+            "AnimOverlayType": "OneHanded",
+            "AnimationData": {
+                "RowName": "Carry_Carcass"
+            },
+            "bApplyAutomaticSpineBend": false,
+            "FPIdleAnim": "/Game/ASS/CHA/1ST/1ST_NewRig/1ST_CHA_StasisBag_Carry_P.1ST_CHA_StasisBag_Carry_P",
+            "TPUprightIdle": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_MAL_BodyBag_Carry_P.3RD_CHA_MAL_BodyBag_Carry_P"
+        },
+        {
+            "Name": "Focusable_LegendaryWeapon_SlugLauncher",
+            "Behaviour": "/Game/BP/Behaviours/Focusable/BP_FocusableBehaviour.BP_FocusableBehaviour_C",
+            "AttachmentData": {
+                "RowName": "GeneralRight"
+            },
+            "AnimOverlayType": "Firearm",
+            "AnimationData": {
+                "RowName": "FlameThrower"
+            },
+            "bApplyAutomaticSpineBend": false,
+            "FPFocusedMontage": "/Game/ASS/CHA/1ST/1ST_NewRig/1ST_CHA_Flamethrower_EquipMontage.1ST_CHA_Flamethrower_EquipMontage",
+            "FPIdleAnim": "/Game/ASS/CHA/1ST/1ST_NewRig/1ST_CHA_Flamethrower_Idle_Higher.1ST_CHA_Flamethrower_Idle_Higher",
+            "TPFocusedMontage": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_MAL_SlugLauncher_Equip_Montage.3RD_CHA_MAL_SlugLauncher_Equip_Montage",
+            "TPUprightIdle": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_SlugLauncher_Idle_Test.3RD_CHA_SlugLauncher_Idle_Test",
+            "TPCrouchedIdle": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_MAL_Flamethrower_CrouchIdle.3RD_CHA_MAL_Flamethrower_CrouchIdle"
+        },
+        {
+            "Name": "Focusable_LegendaryWeapon_GolemGauntlet",
+            "Behaviour": "/Game/BP/Behaviours/Focusable/BP_FocusableBehaviour_FocusableArmour_GolemGauntlet.BP_FocusableBehaviour_FocusableArmour_GolemGauntlet_C",
+            "AttachmentData": {
+                "RowName": "GeneralBoth"
+            },
+            "AnimOverlayType": "OneHanded",
+            "AnimationData": {
+                "RowName": "1HWEP"
+            },
+            "FPFocusedMontage": "/Game/ASS/CHA/1ST/1ST_NewRig/1ST_CHA_1HWEP_Equip_Montage.1ST_CHA_1HWEP_Equip_Montage",
+            "FPIdleAnim": "/Game/ASS/CHA/1ST/1ST_NewRig/1ST_CHA_GolemGauntlet_Idle.1ST_CHA_GolemGauntlet_Idle",
+            "TPFocusedMontage": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_1HAxeEquip_Montage.3RD_CHA_1HAxeEquip_Montage",
+            "TPUprightIdle": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_GolemGauntlet_Idle_Test.3RD_CHA_GolemGauntlet_Idle_Test",
+            "TPCrouchedIdle": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_MAL_1HWEPCrouchIdle.3RD_CHA_MAL_1HWEPCrouchIdle"
+        },
+        {
+            "Name": "Focusable_1H_Item",
+            "Behaviour": "/Game/BP/Behaviours/Focusable/BP_FocusableBehaviour.BP_FocusableBehaviour_C",
+            "AttachmentData": {
+                "RowName": "RightCanteen"
+            },
+            "AnimOverlayType": "OneHanded",
+            "AnimationData": {
+                "RowName": "1HWEP"
+            },
+            "FPFocusedMontage": "/Game/ASS/CHA/1ST/1ST_NewRig/1ST_CHA_Bandage_Equip_Montage.1ST_CHA_Bandage_Equip_Montage",
+            "FPIdleAnim": "/Game/ASS/CHA/1ST/1ST_NewRig/1ST_CHA_Bandage_Idle.1ST_CHA_Bandage_Idle",
+            "TPFocusedMontage": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_1HAxeEquip_Montage.3RD_CHA_1HAxeEquip_Montage",
+            "TPUprightIdle": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_MAL_1HITEM.3RD_CHA_MAL_1HITEM",
+            "TPCrouchedIdle": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_MAL_1HWEPCrouchIdle.3RD_CHA_MAL_1HWEPCrouchIdle"
+        },
+        {
+            "Name": "Focusable_1H_Waterskin",
+            "Behaviour": "/Game/BP/Behaviours/Focusable/BP_FocusableBehaviour.BP_FocusableBehaviour_C",
+            "AttachmentData": {
+                "RowName": "RightWaterskin"
+            },
+            "AnimOverlayType": "OneHanded",
+            "AnimationData": {
+                "RowName": "1HWEP"
+            },
+            "FPFocusedMontage": "/Game/ASS/CHA/1ST/1ST_NewRig/1ST_CHA_Bandage_Equip_Montage.1ST_CHA_Bandage_Equip_Montage",
+            "FPIdleAnim": "/Game/ASS/CHA/1ST/1ST_NewRig/1ST_CHA_Bandage_Idle.1ST_CHA_Bandage_Idle",
+            "TPFocusedMontage": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_1HAxeEquip_Montage.3RD_CHA_1HAxeEquip_Montage",
+            "TPUprightIdle": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_MAL_1HITEM.3RD_CHA_MAL_1HITEM",
+            "TPCrouchedIdle": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_MAL_1HWEPCrouchIdle.3RD_CHA_MAL_1HWEPCrouchIdle"
+        },
+        {
+            "Name": "Focusable_Gun_SandwormCrossbow",
+            "Behaviour": "/Game/BP/Behaviours/Focusable/BP_FocusableBehaviour.BP_FocusableBehaviour_C",
+            "AttachmentData": {
+                "RowName": "GeneralBoth_Crossbow"
+            },
+            "AnimOverlayType": "Firearm",
+            "AnimationData": {
+                "RowName": "2HGun"
+            },
+            "FPFocusedMontage": "/Game/ASS/CHA/1ST/1ST_NewRig/1ST_CHA_Crossbow_Equip_Montage.1ST_CHA_Crossbow_Equip_Montage",
+            "FPIdleAnim": "/Game/ASS/CHA/1ST/1ST_NewRig/1ST_CHA_RifleIdle.1ST_CHA_RifleIdle",
+            "TPFocusedMontage": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_CrossbowEquip_Montage.3RD_CHA_CrossbowEquip_Montage",
+            "TPUprightIdle": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_MAL_CrossbowIdle.3RD_CHA_MAL_CrossbowIdle",
+            "TPCrouchedIdle": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_MAL_2HGunCrouchIdle.3RD_CHA_MAL_2HGunCrouchIdle"
+        },
+        {
+            "Name": "Jackhammer",
+            "Behaviour": "/Game/BP/Behaviours/Focusable/BP_FocusableBehaviour_Jackhammer.BP_FocusableBehaviour_Jackhammer_C",
+            "AttachmentData": {
+                "RowName": "GeneralBoth"
+            },
+            "AnimOverlayType": "TwoHandedRifle",
+            "AnimationData": {
+                "RowName": "Jackhammer"
+            },
+            "FPFocusedMontage": "/Game/ASS/CHA/1ST/1ST_NewRig/1ST_CHA_Jackhammer_On_Montage.1ST_CHA_Jackhammer_On_Montage",
+            "FPLocoBlendSpaceOverride": "/Game/ASS/CHA/1ST/1ST_NewRig/1ST_CHA_Jackhammer_Loco_BS.1ST_CHA_Jackhammer_Loco_BS",
+            "FPIdleAnim": "/Game/ASS/CHA/1ST/1ST_NewRig/1ST_CHA_Jackhammer_IdleOn.1ST_CHA_Jackhammer_IdleOn",
+            "TPFocusedMontage": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_MAL_Jackhammer_Equip_Montage.3RD_CHA_MAL_Jackhammer_Equip_Montage",
+            "TPUprightIdle": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_MAL_Jackhammer_IdleOn.3RD_CHA_MAL_Jackhammer_IdleOn",
+            "TPCrouchedIdle": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_MAL_Jackhammer_CrouchIdle.3RD_CHA_MAL_Jackhammer_CrouchIdle",
+            "ItemFocusedMontage": "/Game/ASS/ITM/ANI_ITM_Jackhammer_Focus_Montage.ANI_ITM_Jackhammer_Focus_Montage"
+        },
+        {
+            "Name": "Chainsaw",
+            "Behaviour": "/Game/BP/Behaviours/Focusable/BP_FocusableBehaviour_Chainsaw.BP_FocusableBehaviour_Chainsaw_C",
+            "AttachmentData": {
+                "RowName": "GeneralBoth"
+            },
+            "AnimOverlayType": "TwoHandedRifle",
+            "AnimationData": {
+                "RowName": "Chainsaw"
+            },
+            "FPFocusedMontage": "/Game/ASS/CHA/1ST/1ST_NewRig/1ST_CHA_Chainsaw_On_Montage.1ST_CHA_Chainsaw_On_Montage",
+            "FPIdleAnim": "/Game/ASS/CHA/1ST/1ST_NewRig/1ST_CHA_Chainsaw_Idle_On.1ST_CHA_Chainsaw_Idle_On",
+            "TPFocusedMontage": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_MAL_Chainsaw_On_Montage.3RD_CHA_MAL_Chainsaw_On_Montage",
+            "TPUprightIdle": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_MAL_Chainsaw_Idle_On.3RD_CHA_MAL_Chainsaw_Idle_On",
+            "TPCrouchedIdle": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_MAL_Chainsaw_Crouch_Idle.3RD_CHA_MAL_Chainsaw_Crouch_Idle",
+            "ItemFocusedMontage": "/Game/ASS/ITM/ANI_ITM_Chainsaw_Turn_On_Montage.ANI_ITM_Chainsaw_Turn_On_Montage"
+        },
+        {
+            "Name": "Focusable_Gun_Rifle_Assault_T4",
+            "Behaviour": "/Game/BP/Behaviours/Focusable/BP_FocusableBehaviour.BP_FocusableBehaviour_C",
+            "AttachmentData": {
+                "RowName": "GeneralBoth"
+            },
+            "AnimOverlayType": "Firearm",
+            "AnimationData": {
+                "RowName": "2HGun"
+            },
+            "FPFocusedMontage": "/Game/ASS/CHA/1ST/1ST_NewRig/1ST_CHA_Rifle_Equip_Montage.1ST_CHA_Rifle_Equip_Montage",
+            "FPIdleAnim": "/Game/ASS/CHA/1ST/1ST_NewRig/1ST_CHA_RifleIdle.1ST_CHA_RifleIdle",
+            "TPFocusedMontage": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_RifleEquip_Montage.3RD_CHA_RifleEquip_Montage",
+            "TPUprightIdle": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_MAL_RifleIdle.3RD_CHA_MAL_RifleIdle",
+            "TPCrouchedIdle": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_MAL_2HGunCrouchIdle.3RD_CHA_MAL_2HGunCrouchIdle"
+        },
+        {
+            "Name": "Focusable_Spear_Offset01",
+            "Behaviour": "/Game/BP/Behaviours/Focusable/BP_FocusableBehaviour.BP_FocusableBehaviour_C",
+            "AttachmentData": {
+                "RowName": "GeneralBoth_Offset01"
+            },
+            "AnimOverlayType": "Spear",
+            "AnimationData": {
+                "RowName": "Spear"
+            },
+            "FPFocusedMontage": "/Game/ASS/CHA/1ST/1ST_NewRig/1ST_CHA_SPR_Equip_Montage.1ST_CHA_SPR_Equip_Montage",
+            "FPIdleAnim": "/Game/ASS/CHA/1ST/1ST_NewRig/1ST_CHA_SPRIdle.1ST_CHA_SPRIdle",
+            "TPFocusedMontage": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_SPREquip_Montage.3RD_CHA_SPREquip_Montage",
+            "TPUprightIdle": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_MAL_SPRIdle.3RD_CHA_MAL_SPRIdle",
+            "TPCrouchedIdle": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_MAL_SprCrouchIdle.3RD_CHA_MAL_SprCrouchIdle"
+        },
+        {
+            "Name": "Focusable_1H_Item_Spline",
+            "Behaviour": "/Game/BP/Behaviours/Focusable/BP_FocusableBehaviour.BP_FocusableBehaviour_C",
+            "AttachmentData": {
+                "RowName": "GeneralRight"
+            },
+            "AttachmentOffset": {
+                "Rotation": {
+                    "Z": -0.7071065306663513,
+                    "W": 0.7071070671081543
+                },
+                "Translation": {
+                    "Y": -11,
+                    "Z": 8
+                }
+            },
+            "AnimOverlayType": "OneHanded",
+            "AnimationData": {
+                "RowName": "1HWEP"
+            },
+            "FPFocusedMontage": "/Game/ASS/CHA/1ST/1ST_NewRig/1ST_CHA_Bandage_Equip_Montage.1ST_CHA_Bandage_Equip_Montage",
+            "FPIdleAnim": "/Game/ASS/CHA/1ST/1ST_NewRig/1ST_CHA_Bandage_Idle.1ST_CHA_Bandage_Idle",
+            "TPFocusedMontage": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_1HAxeEquip_Montage.3RD_CHA_1HAxeEquip_Montage",
+            "TPUprightIdle": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_MAL_1HITEM.3RD_CHA_MAL_1HITEM",
+            "TPCrouchedIdle": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_MAL_1HWEPCrouchIdle.3RD_CHA_MAL_1HWEPCrouchIdle"
+        },
+        {
+            "Name": "Focusable_1H_Item_Tonic",
+            "Behaviour": "/Game/BP/Behaviours/Focusable/BP_FocusableBehaviour.BP_FocusableBehaviour_C",
+            "AttachmentData": {
+                "RowName": "Tonic"
+            },
+            "AttachmentOffset": {
+                "Rotation": {
+                    "Z": -0.7071065306663513,
+                    "W": 0.7071070671081543
+                }
+            },
+            "AnimOverlayType": "OneHanded",
+            "AnimationData": {
+                "RowName": "1HWEP"
+            },
+            "FPFocusedMontage": "/Game/ASS/CHA/1ST/1ST_NewRig/1ST_CHA_Bandage_Equip_Montage.1ST_CHA_Bandage_Equip_Montage",
+            "FPIdleAnim": "/Game/ASS/CHA/1ST/1ST_NewRig/1ST_CHA_Bandage_Idle.1ST_CHA_Bandage_Idle",
+            "TPFocusedMontage": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_1HAxeEquip_Montage.3RD_CHA_1HAxeEquip_Montage",
+            "TPUprightIdle": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_MAL_1HITEM.3RD_CHA_MAL_1HITEM",
+            "TPCrouchedIdle": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_MAL_1HWEPCrouchIdle.3RD_CHA_MAL_1HWEPCrouchIdle"
+        },
+        {
+            "Name": "Focusable_FlameThrower_Legendary",
+            "Behaviour": "/Game/BP/Behaviours/Focusable/BP_FocusableBehaviour.BP_FocusableBehaviour_C",
+            "AttachmentData": {
+                "RowName": "GeneralRight"
+            },
+            "AnimOverlayType": "TwoHandedRifle",
+            "AnimationData": {
+                "RowName": "FlameThrower"
+            },
+            "bApplyAutomaticSpineBend": false,
+            "FPFocusedMontage": "/Game/ASS/CHA/1ST/1ST_NewRig/1ST_CHA_Flamethrower_EquipMontage.1ST_CHA_Flamethrower_EquipMontage",
+            "FPIdleAnim": "/Game/ASS/CHA/1ST/1ST_NewRig/1ST_CHA_Flamethrower_Idle_Higher.1ST_CHA_Flamethrower_Idle_Higher",
+            "TPFocusedMontage": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_MAL_FlamethrowerEquip_Montage.3RD_CHA_MAL_FlamethrowerEquip_Montage",
+            "TPUprightIdle": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_MAL_Flamethrower_Idle.3RD_CHA_MAL_Flamethrower_Idle",
+            "TPCrouchedIdle": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_MAL_Flamethrower_CrouchIdle.3RD_CHA_MAL_Flamethrower_CrouchIdle"
+        },
+        {
+            "Name": "Focusable_Sledge_Legendary",
+            "Behaviour": "/Game/BP/Behaviours/Focusable/BP_FocusableBehaviour.BP_FocusableBehaviour_C",
+            "AttachmentData": {
+                "RowName": "Sledge"
+            },
+            "AttachmentOffset": {
+                "Rotation": {
+                    "Z": 0.1736481636762619,
+                    "W": 0.9848077297210693
+                }
+            },
+            "AnimOverlayType": "Spear",
+            "AnimationData": {
+                "RowName": "Spear"
+            },
+            "FPFocusedMontage": "/Game/ASS/CHA/1ST/1ST_NewRig/1ST_CHA_sledgehammer_equip_Legendary.1ST_CHA_sledgehammer_equip_Legendary",
+            "FPIdleAnim": "/Game/ASS/CHA/1ST/1ST_NewRig/1ST_CHA_SPRIdle.1ST_CHA_SPRIdle",
+            "TPFocusedMontage": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_SPREquip_Montage.3RD_CHA_SPREquip_Montage",
+            "TPUprightIdle": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_MAL_SPRIdle.3RD_CHA_MAL_SPRIdle",
+            "TPCrouchedIdle": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_MAL_SprCrouchIdle.3RD_CHA_MAL_SprCrouchIdle"
+        },
+        {
+            "Name": "Focusable_Nailgun",
+            "Behaviour": "/Game/BP/Behaviours/Focusable/BP_FocusableBehaviour.BP_FocusableBehaviour_C",
+            "AttachmentData": {
+                "RowName": "GeneralBoth"
+            },
+            "AttachmentOffset": {
+                "Translation": {
+                    "Z": 2
+                }
+            },
+            "AnimOverlayType": "Firearm",
+            "AnimationData": {
+                "RowName": "Pistol"
+            },
+            "FPFocusedMontage": "/Game/ASS/CHA/1ST/1ST_NewRig/1ST_CHA_Pistol_Equip_Var1_Montage.1ST_CHA_Pistol_Equip_Var1_Montage",
+            "FPIdleAnim": "/Game/ASS/CHA/1ST/1ST_NewRig/1ST_CHA_SGL_Shot_PistolIdle.1ST_CHA_SGL_Shot_PistolIdle",
+            "TPFocusedMontage": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_PistolEquip_Montage.3RD_CHA_PistolEquip_Montage",
+            "TPUprightIdle": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_MAL_SGL_Shot_PistolIdle.3RD_CHA_MAL_SGL_Shot_PistolIdle",
+            "TPCrouchedIdle": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_MAL_SGL_Shot_Pistol_CrouchIdle.3RD_CHA_MAL_SGL_Shot_Pistol_CrouchIdle"
+        },
+        {
+            "Name": "Focusable_Gun_Revolver",
+            "Behaviour": "/Game/BP/Behaviours/Focusable/BP_FocusableBehaviour.BP_FocusableBehaviour_C",
+            "AttachmentData": {
+                "RowName": "GeneralBoth"
+            },
+            "AnimOverlayType": "Firearm",
+            "AnimationData": {
+                "RowName": "Pistol"
+            },
+            "FPFocusedMontage": "/Game/ASS/CHA/1ST/1ST_NewRig/1ST_CHA_Pistol_Equip_Montage.1ST_CHA_Pistol_Equip_Montage",
+            "FPIdleAnim": "/Game/ASS/CHA/1ST/1ST_NewRig/1ST_CHA_SGL_Shot_PistolIdle.1ST_CHA_SGL_Shot_PistolIdle",
+            "TPFocusedMontage": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_PistolEquip_Montage.3RD_CHA_PistolEquip_Montage",
+            "TPUprightIdle": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_MAL_SGL_Shot_PistolIdle.3RD_CHA_MAL_SGL_Shot_PistolIdle",
+            "TPCrouchedIdle": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_MAL_SGL_Shot_Pistol_CrouchIdle.3RD_CHA_MAL_SGL_Shot_Pistol_CrouchIdle"
+        },
+        {
+            "Name": "Focusable_Flare_Gun",
+            "Behaviour": "/Game/BP/Behaviours/Focusable/BP_FocusableBehaviour.BP_FocusableBehaviour_C",
+            "AttachmentData": {
+                "RowName": "GeneralBoth"
+            },
+            "AttachmentOffset": {
+                "Translation": {
+                    "Y": -0.5,
+                    "Z": -1
+                }
+            },
+            "AnimOverlayType": "Firearm",
+            "AnimationData": {
+                "RowName": "Pistol"
+            },
+            "FPFocusedMontage": "/Game/ASS/CHA/1ST/1ST_NewRig/1ST_CHA_Pistol_Equip_Montage.1ST_CHA_Pistol_Equip_Montage",
+            "FPIdleAnim": "/Game/ASS/CHA/1ST/1ST_NewRig/1ST_CHA_SGL_Shot_PistolIdle.1ST_CHA_SGL_Shot_PistolIdle",
+            "TPFocusedMontage": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_PistolEquip_Montage.3RD_CHA_PistolEquip_Montage",
+            "TPUprightIdle": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_MAL_SGL_Shot_PistolIdle.3RD_CHA_MAL_SGL_Shot_PistolIdle",
+            "TPCrouchedIdle": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_MAL_SGL_Shot_Pistol_CrouchIdle.3RD_CHA_MAL_SGL_Shot_Pistol_CrouchIdle"
+        },
+        {
+            "Name": "Focusable_Laser_Pistol",
+            "Behaviour": "/Game/BP/Behaviours/Focusable/BP_FocusableBehaviour.BP_FocusableBehaviour_C",
+            "AttachmentData": {
+                "RowName": "GeneralBoth"
+            },
+            "AttachmentOffset": {
+                "Translation": {
+                    "Y": -0.5,
+                    "Z": 3
+                }
+            },
+            "AnimOverlayType": "Firearm",
+            "AnimationData": {
+                "RowName": "Pistol"
+            },
+            "FPFocusedMontage": "/Game/ASS/CHA/1ST/1ST_NewRig/1ST_CHA_Pistol_Equip_Montage.1ST_CHA_Pistol_Equip_Montage",
+            "FPIdleAnim": "/Game/ASS/CHA/1ST/1ST_NewRig/1ST_CHA_SGL_Shot_PistolIdle.1ST_CHA_SGL_Shot_PistolIdle",
+            "TPFocusedMontage": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_PistolEquip_Montage.3RD_CHA_PistolEquip_Montage",
+            "TPUprightIdle": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_MAL_SGL_Shot_PistolIdle.3RD_CHA_MAL_SGL_Shot_PistolIdle",
+            "TPCrouchedIdle": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_MAL_SGL_Shot_Pistol_CrouchIdle.3RD_CHA_MAL_SGL_Shot_Pistol_CrouchIdle"
+        },
+        {
+            "Name": "Focusable_Radiation_Tracker",
+            "Behaviour": "/Game/BP/Behaviours/Focusable/BP_FocusableBehaviour.BP_FocusableBehaviour_C",
+            "AttachmentData": {
+                "RowName": "GeneralBoth"
+            },
+            "AttachmentOffset": {
+                "Translation": {
+                    "X": 2,
+                    "Z": 2.5
+                }
+            },
+            "AnimOverlayType": "OneHanded",
+            "AnimationData": {
+                "RowName": "Pistol"
+            },
+            "FPFocusedMontage": "/Game/ASS/CHA/1ST/1ST_NewRig/1ST_CHA_Pistol_Equip_Montage.1ST_CHA_Pistol_Equip_Montage",
+            "FPIdleAnim": "/Game/ASS/CHA/1ST/1ST_NewRig/1ST_CHA_SGL_Shot_PistolIdle_ForceGrip.1ST_CHA_SGL_Shot_PistolIdle_ForceGrip",
+            "TPFocusedMontage": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_PistolEquip_Montage.3RD_CHA_PistolEquip_Montage",
+            "TPUprightIdle": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_MAL_SGL_Shot_PistolIdle.3RD_CHA_MAL_SGL_Shot_PistolIdle",
+            "TPCrouchedIdle": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_MAL_SGL_Shot_Pistol_CrouchIdle.3RD_CHA_MAL_SGL_Shot_Pistol_CrouchIdle"
+        },
+        {
+            "Name": "Focusable_MiningLaser",
+            "Behaviour": "/Game/BP/Behaviours/Focusable/BP_FocusableBehaviour.BP_FocusableBehaviour_C",
+            "AttachmentData": {
+                "RowName": "GeneralRight"
+            },
+            "AnimOverlayType": "TwoHandedRifle",
+            "AnimationData": {
+                "RowName": "FlameThrower"
+            },
+            "bApplyAutomaticSpineBend": false,
+            "FPFocusedMontage": "/Game/ASS/CHA/1ST/1ST_NewRig/1ST_CHA_Flamethrower_EquipMontage.1ST_CHA_Flamethrower_EquipMontage",
+            "FPIdleAnim": "/Game/ASS/CHA/1ST/1ST_NewRig/1ST_CHA_MiningLaserIdle.1ST_CHA_MiningLaserIdle",
+            "TPFocusedMontage": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_MAL_FlamethrowerEquip_Montage.3RD_CHA_MAL_FlamethrowerEquip_Montage",
+            "TPUprightIdle": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_MAL_Flamethrower_Idle.3RD_CHA_MAL_Flamethrower_Idle",
+            "TPCrouchedIdle": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_MAL_Flamethrower_CrouchIdle.3RD_CHA_MAL_Flamethrower_CrouchIdle"
+        }
+    ]
+}

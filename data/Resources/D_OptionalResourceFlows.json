@@ -1,0 +1,34 @@
+{
+    "RowStruct": "/Script/Icarus.OptionalResourceFlowData",
+    "Defaults": {
+        "DisplayedMessage": "",
+        "ShortMessage": ""
+    },
+    "Rows": [
+        {
+            "Name": "Boost",
+            "DisplayedMessage": "NSLOCTEXT(\"D_OptionalResourceFlows\", \"Boost-DisplayedMessage\", \"Connection will provide a boost to production rate / operating speed of the device\")",
+            "ShortMessage": "NSLOCTEXT(\"D_OptionalResourceFlows\", \"Boost-ShortMessage\", \"for boost\")"
+        },
+        {
+            "Name": "PerRecipe",
+            "DisplayedMessage": "NSLOCTEXT(\"D_OptionalResourceFlows\", \"PerRecipe-DisplayedMessage\", \"Connection is only required for recipes that require this resource type\")",
+            "ShortMessage": "NSLOCTEXT(\"D_OptionalResourceFlows\", \"PerRecipe-ShortMessage\", \"per recipe\")"
+        },
+        {
+            "Name": "ReinforcedGlass",
+            "DisplayedMessage": "NSLOCTEXT(\"D_OptionalResourceFlows\", \"ReinforcedGlass-DisplayedMessage\", \"An active water connection will produce Reinforced Glass Building pieces\")",
+            "ShortMessage": "NSLOCTEXT(\"D_OptionalResourceFlows\", \"ReinforcedGlass-ShortMessage\", \"for reinforced glass\")"
+        },
+        {
+            "Name": "BeehiveExtractor",
+            "DisplayedMessage": "NSLOCTEXT(\"D_OptionalResourceFlows\", \"BeehiveExtractor-DisplayedMessage\", \"An active power connection will split Honeycomb into Beeswax and Honey\")",
+            "ShortMessage": "NSLOCTEXT(\"D_OptionalResourceFlows\", \"BeehiveExtractor-ShortMessage\", \"for extractor\")"
+        },
+        {
+            "Name": "Flame_Turret_Fuel",
+            "DisplayedMessage": "INVTEXT(\"[DNT] Can be plumbed to Portable Biofuel Tank\")",
+            "ShortMessage": "INVTEXT(\"[DNT] Plumb Biofuel\")"
+        }
+    ]
+}

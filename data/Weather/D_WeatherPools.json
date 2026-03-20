@@ -1,0 +1,2246 @@
+{
+    "RowStruct": "/Script/Icarus.IcarusWeatherPoolData",
+    "Defaults": {
+        "WeatherEvents": [],
+        "ContainedTiers": []
+    },
+    "Rows": [
+        {
+            "Name": "All_Weather",
+            "WeatherEvents": [
+                {
+                    "Event": {
+                        "RowName": "T0_Volcanic_Ash",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 2
+                },
+                {
+                    "Event": {
+                        "RowName": "T0_Swamp_Wind",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 1
+                },
+                {
+                    "Event": {
+                        "RowName": "T0_Swamp_AcidFog",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 1
+                },
+                {
+                    "Event": {
+                        "RowName": "T0_Conifer_Hail",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 1
+                },
+                {
+                    "Event": {
+                        "RowName": "T0_Arctic_Hail",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 1
+                },
+                {
+                    "Event": {
+                        "RowName": "T0_Conifer_Rain",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 1
+                },
+                {
+                    "Event": {
+                        "RowName": "T0_Arctic_Snow",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 1
+                },
+                {
+                    "Event": {
+                        "RowName": "T1_Volcanic_Ash",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 1
+                },
+                {
+                    "Event": {
+                        "RowName": "T1_Volcanic_SulfurReaction",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 1
+                },
+                {
+                    "Event": {
+                        "RowName": "T1_Swamp_Wind",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 1
+                },
+                {
+                    "Event": {
+                        "RowName": "T1_Swamp_AcidFog",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 1
+                },
+                {
+                    "Event": {
+                        "RowName": "T1_Conifer_Rain",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 1
+                },
+                {
+                    "Event": {
+                        "RowName": "T1_Arctic_Wind",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 1
+                },
+                {
+                    "Event": {
+                        "RowName": "T2_Volcanic_Embers",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 1
+                },
+                {
+                    "Event": {
+                        "RowName": "T2_Volcanic_AcidRain",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 1
+                },
+                {
+                    "Event": {
+                        "RowName": "T2_Swamp_AcidRain",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 1
+                },
+                {
+                    "Event": {
+                        "RowName": "T2_Swamp_Wind",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 1
+                },
+                {
+                    "Event": {
+                        "RowName": "T2_Conifer_Hail",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 1
+                },
+                {
+                    "Event": {
+                        "RowName": "T2_Arctic_Hail",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 1
+                },
+                {
+                    "Event": {
+                        "RowName": "T2_Arctic_Snow",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 1
+                },
+                {
+                    "Event": {
+                        "RowName": "T2_Conifer_Wind",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 1
+                },
+                {
+                    "Event": {
+                        "RowName": "T3_Volcanic_Ash",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 1
+                },
+                {
+                    "Event": {
+                        "RowName": "T3_Volcanic_Heatwave",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 1
+                },
+                {
+                    "Event": {
+                        "RowName": "T3_Swamp_AcidFog",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 1
+                },
+                {
+                    "Event": {
+                        "RowName": "T3_Swamp_ToxicGas",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 1
+                },
+                {
+                    "Event": {
+                        "RowName": "T3_Conifer_Hail",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 1
+                },
+                {
+                    "Event": {
+                        "RowName": "T3_Arctic_Hail",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 1
+                },
+                {
+                    "Event": {
+                        "RowName": "T3_Conifer_Rain",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 1
+                },
+                {
+                    "Event": {
+                        "RowName": "T3_Arctic_Snow",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 1
+                },
+                {
+                    "Event": {
+                        "RowName": "T4_Volcanic_Embers",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 1
+                },
+                {
+                    "Event": {
+                        "RowName": "T4_Volcanic_AcidRain",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 1
+                },
+                {
+                    "Event": {
+                        "RowName": "T4_Volcanic_SulfurReaction",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 1
+                },
+                {
+                    "Event": {
+                        "RowName": "T4_Swamp_AcidRain",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 1
+                },
+                {
+                    "Event": {
+                        "RowName": "T4_Swamp_Wind",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 1
+                },
+                {
+                    "Event": {
+                        "RowName": "T4_Conifer_Hail",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 1
+                },
+                {
+                    "Event": {
+                        "RowName": "T4_Arctic_Hail",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 1
+                },
+                {
+                    "Event": {
+                        "RowName": "T4_Conifer_Rain",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 1
+                },
+                {
+                    "Event": {
+                        "RowName": "T4_Arctic_Snow",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 1
+                },
+                {
+                    "Event": {
+                        "RowName": "T5_Volcanic_Ash",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 1
+                },
+                {
+                    "Event": {
+                        "RowName": "T5_Volcanic_SulfurReaction",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 1
+                },
+                {
+                    "Event": {
+                        "RowName": "T5_Swamp_AcidFog",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 1
+                },
+                {
+                    "Event": {
+                        "RowName": "T5_Swamp_ToxicGas",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 1
+                },
+                {
+                    "Event": {
+                        "RowName": "T5_Arctic_Snow",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 1
+                },
+                {
+                    "Event": {
+                        "RowName": "T5_Conifer_Wind",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 1
+                },
+                {
+                    "Event": {
+                        "RowName": "T5_Conifer_Rain",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 1
+                },
+                {
+                    "Event": {
+                        "RowName": "T5_Arctic_Wind",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 1
+                },
+                {
+                    "Event": {
+                        "RowName": "T6_Volcanic_Embers",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 0.5
+                },
+                {
+                    "Event": {
+                        "RowName": "T6_Volcanic_AcidRain",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 0.5
+                },
+                {
+                    "Event": {
+                        "RowName": "T6_Swamp_AcidRain",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 1
+                },
+                {
+                    "Event": {
+                        "RowName": "T6_Conifer_Rain",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 1
+                },
+                {
+                    "Event": {
+                        "RowName": "T6_Arctic_Snow",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 0.5
+                },
+                {
+                    "Event": {
+                        "RowName": "T6_Arctic_Wind",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 0.5
+                },
+                {
+                    "Event": {
+                        "RowName": "T0_Desert_Sand",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 2
+                },
+                {
+                    "Event": {
+                        "RowName": "T1_Desert_Wind",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 1
+                },
+                {
+                    "Event": {
+                        "RowName": "T2_Desert_Sand",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 1
+                },
+                {
+                    "Event": {
+                        "RowName": "T3_Desert_Heatwave",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 0.5
+                },
+                {
+                    "Event": {
+                        "RowName": "T3_Desert_Wind",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 0.5
+                },
+                {
+                    "Event": {
+                        "RowName": "T4_Desert_Sand",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 1
+                },
+                {
+                    "Event": {
+                        "RowName": "T5_Desert_Sand",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 0.5
+                },
+                {
+                    "Event": {
+                        "RowName": "T5_Desert_Wind",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 0.5
+                },
+                {
+                    "Event": {
+                        "RowName": "T6_Desert_Sand",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 1
+                },
+                {
+                    "Event": {
+                        "RowName": "T0_Volcanic_VolcWinter",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 1
+                },
+                {
+                    "Event": {
+                        "RowName": "T1_Volcanic_VolcWinter",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 1
+                },
+                {
+                    "Event": {
+                        "RowName": "T3_Volcanic_VolcWinter",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 1
+                },
+                {
+                    "Event": {
+                        "RowName": "T5_Volcanic_VolcWinter",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 1
+                },
+                {
+                    "Event": {
+                        "RowName": "T1_Volcanic_ColdFront",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 1
+                },
+                {
+                    "Event": {
+                        "RowName": "T3_Volcanic_ColdFront",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 1
+                },
+                {
+                    "Event": {
+                        "RowName": "T5_Volcanic_ColdFront",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 1
+                },
+                {
+                    "Event": {
+                        "RowName": "T2_Arctic_Whiteout",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 1
+                },
+                {
+                    "Event": {
+                        "RowName": "T3_Arctic_Whiteout",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 1
+                },
+                {
+                    "Event": {
+                        "RowName": "T4_Arctic_Whiteout",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 1
+                },
+                {
+                    "Event": {
+                        "RowName": "T5_Arctic_Whiteout",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 1
+                },
+                {
+                    "Event": {
+                        "RowName": "T6_Arctic_Whiteout",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 1
+                }
+            ],
+            "ContainedTiers": [
+                {
+                    "Tier": 0,
+                    "NumEvents": 9,
+                    "MinEventDurationMinutes": 6,
+                    "BiomesGroupsIncluded": [
+                        "Ely_Desert",
+                        "Ely_Northern_Arctic",
+                        "Ely_Northern_Volcanic",
+                        "Ely_Southern_Arctic",
+                        "Ely_Southern_Volcanic",
+                        "Ely_Swamp",
+                        "Ely_Tundra",
+                        "Olympus_Arctic",
+                        "Olympus_Conifer",
+                        "Olympus_Desert",
+                        "Olympus_DesertCanyons",
+                        "Olympus_Riverlands",
+                        "Olympus_SouthernGlacier",
+                        "Pro_Arctic",
+                        "Pro_Ashlands",
+                        "Pro_Conifer",
+                        "Pro_IceSheet",
+                        "Pro_Swamp",
+                        "Pro_Tundra",
+                        "Pro_Volcanic",
+                        "Styx_Arctic",
+                        "Styx_Desert",
+                        "Styx_Forest"
+                    ]
+                },
+                {
+                    "Tier": 1,
+                    "NumEvents": 9,
+                    "MinEventDurationMinutes": 6,
+                    "BiomesGroupsIncluded": [
+                        "Ely_Desert",
+                        "Ely_Geothermal",
+                        "Ely_Northern_Arctic",
+                        "Ely_Northern_Volcanic",
+                        "Ely_Southern_Arctic",
+                        "Ely_Southern_Volcanic",
+                        "Ely_Swamp",
+                        "Ely_Tundra",
+                        "Olympus_Arctic",
+                        "Olympus_Conifer",
+                        "Olympus_Desert",
+                        "Olympus_DesertCanyons",
+                        "Olympus_Riverlands",
+                        "Olympus_SouthernGlacier",
+                        "Pro_Arctic",
+                        "Pro_Ashlands",
+                        "Pro_Conifer",
+                        "Pro_IceSheet",
+                        "Pro_Swamp",
+                        "Pro_Tundra",
+                        "Pro_Volcanic",
+                        "Styx_Arctic",
+                        "Styx_Desert",
+                        "Styx_Forest"
+                    ]
+                },
+                {
+                    "Tier": 2,
+                    "NumEvents": 10,
+                    "MinEventDurationMinutes": 6,
+                    "BiomesGroupsIncluded": [
+                        "Ely_Desert",
+                        "Ely_Northern_Arctic",
+                        "Ely_Northern_Volcanic",
+                        "Ely_Southern_Arctic",
+                        "Ely_Southern_Volcanic",
+                        "Ely_Swamp",
+                        "Ely_Tundra",
+                        "Olympus_Arctic",
+                        "Olympus_Conifer",
+                        "Olympus_Desert",
+                        "Olympus_DesertCanyons",
+                        "Olympus_Riverlands",
+                        "Olympus_SouthernGlacier",
+                        "Pro_Arctic",
+                        "Pro_Ashlands",
+                        "Pro_Conifer",
+                        "Pro_IceSheet",
+                        "Pro_Swamp",
+                        "Pro_Tundra",
+                        "Pro_Volcanic",
+                        "Styx_Arctic",
+                        "Styx_Desert",
+                        "Styx_Forest"
+                    ]
+                },
+                {
+                    "Tier": 3,
+                    "NumEvents": 14,
+                    "MinEventDurationMinutes": 6,
+                    "BiomesGroupsIncluded": [
+                        "Ely_Desert",
+                        "Ely_Geothermal",
+                        "Ely_Northern_Arctic",
+                        "Ely_Northern_Volcanic",
+                        "Ely_Southern_Arctic",
+                        "Ely_Southern_Volcanic",
+                        "Ely_Swamp",
+                        "Ely_Tundra",
+                        "Olympus_Arctic",
+                        "Olympus_Conifer",
+                        "Olympus_Desert",
+                        "Olympus_DesertCanyons",
+                        "Olympus_Riverlands",
+                        "Olympus_SouthernGlacier",
+                        "Pro_Arctic",
+                        "Pro_Ashlands",
+                        "Pro_Conifer",
+                        "Pro_IceSheet",
+                        "Pro_Swamp",
+                        "Pro_Tundra",
+                        "Pro_Volcanic",
+                        "Styx_Arctic",
+                        "Styx_Desert",
+                        "Styx_Forest"
+                    ]
+                },
+                {
+                    "Tier": 4,
+                    "NumEvents": 10,
+                    "MinEventDurationMinutes": 5,
+                    "BiomesGroupsIncluded": [
+                        "Ely_Desert",
+                        "Ely_Northern_Arctic",
+                        "Ely_Northern_Volcanic",
+                        "Ely_Southern_Arctic",
+                        "Ely_Southern_Volcanic",
+                        "Ely_Swamp",
+                        "Ely_Tundra",
+                        "Olympus_Arctic",
+                        "Olympus_Conifer",
+                        "Olympus_Desert",
+                        "Olympus_DesertCanyons",
+                        "Olympus_Riverlands",
+                        "Olympus_SouthernGlacier",
+                        "Pro_Arctic",
+                        "Pro_Ashlands",
+                        "Pro_Conifer",
+                        "Pro_IceSheet",
+                        "Pro_Swamp",
+                        "Pro_Tundra",
+                        "Pro_Volcanic",
+                        "Styx_Arctic",
+                        "Styx_Desert",
+                        "Styx_Forest"
+                    ]
+                },
+                {
+                    "Tier": 5,
+                    "NumEvents": 13,
+                    "MinEventDurationMinutes": 7,
+                    "BiomesGroupsIncluded": [
+                        "Ely_Desert",
+                        "Ely_Geothermal",
+                        "Ely_Northern_Arctic",
+                        "Ely_Northern_Volcanic",
+                        "Ely_Southern_Arctic",
+                        "Ely_Southern_Volcanic",
+                        "Ely_Swamp",
+                        "Ely_Tundra",
+                        "Olympus_Arctic",
+                        "Olympus_Conifer",
+                        "Olympus_Desert",
+                        "Olympus_DesertCanyons",
+                        "Olympus_Riverlands",
+                        "Olympus_SouthernGlacier",
+                        "Pro_Arctic",
+                        "Pro_Ashlands",
+                        "Pro_Conifer",
+                        "Pro_IceSheet",
+                        "Pro_Swamp",
+                        "Pro_Tundra",
+                        "Pro_Volcanic",
+                        "Styx_Arctic",
+                        "Styx_Desert",
+                        "Styx_Forest"
+                    ]
+                },
+                {
+                    "Tier": 6,
+                    "NumEvents": 8,
+                    "MinEventDurationMinutes": 7,
+                    "BiomesGroupsIncluded": [
+                        "Ely_Desert",
+                        "Ely_Northern_Arctic",
+                        "Ely_Northern_Volcanic",
+                        "Ely_Southern_Arctic",
+                        "Ely_Southern_Volcanic",
+                        "Ely_Swamp",
+                        "Ely_Tundra",
+                        "Olympus_Arctic",
+                        "Olympus_Conifer",
+                        "Olympus_Desert",
+                        "Olympus_DesertCanyons",
+                        "Olympus_Riverlands",
+                        "Olympus_SouthernGlacier",
+                        "Pro_Arctic",
+                        "Pro_Ashlands",
+                        "Pro_Conifer",
+                        "Pro_IceSheet",
+                        "Pro_Swamp",
+                        "Pro_Tundra",
+                        "Pro_Volcanic",
+                        "Styx_Arctic",
+                        "Styx_Desert",
+                        "Styx_Forest"
+                    ]
+                }
+            ]
+        },
+        {
+            "Name": "All_Weather_MoreLight",
+            "WeatherEvents": [
+                {
+                    "Event": {
+                        "RowName": "T0_Volcanic_Ash",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 4
+                },
+                {
+                    "Event": {
+                        "RowName": "T0_Swamp_Wind",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 2
+                },
+                {
+                    "Event": {
+                        "RowName": "T0_Swamp_AcidFog",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 2
+                },
+                {
+                    "Event": {
+                        "RowName": "T0_Conifer_Hail",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 2
+                },
+                {
+                    "Event": {
+                        "RowName": "T0_Arctic_Hail",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 2
+                },
+                {
+                    "Event": {
+                        "RowName": "T0_Conifer_Rain",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 2
+                },
+                {
+                    "Event": {
+                        "RowName": "T0_Arctic_Snow",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 2
+                },
+                {
+                    "Event": {
+                        "RowName": "T1_Volcanic_Ash",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 1
+                },
+                {
+                    "Event": {
+                        "RowName": "T1_Volcanic_SulfurReaction",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 1
+                },
+                {
+                    "Event": {
+                        "RowName": "T1_Swamp_Wind",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 1
+                },
+                {
+                    "Event": {
+                        "RowName": "T1_Swamp_AcidFog",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 1
+                },
+                {
+                    "Event": {
+                        "RowName": "T1_Conifer_Rain",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 1
+                },
+                {
+                    "Event": {
+                        "RowName": "T1_Arctic_Wind",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 1
+                },
+                {
+                    "Event": {
+                        "RowName": "T2_Volcanic_Embers",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 1
+                },
+                {
+                    "Event": {
+                        "RowName": "T2_Volcanic_AcidRain",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 1
+                },
+                {
+                    "Event": {
+                        "RowName": "T2_Swamp_AcidRain",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 1
+                },
+                {
+                    "Event": {
+                        "RowName": "T2_Swamp_Wind",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 1
+                },
+                {
+                    "Event": {
+                        "RowName": "T2_Conifer_Hail",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 1
+                },
+                {
+                    "Event": {
+                        "RowName": "T2_Arctic_Hail",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 1
+                },
+                {
+                    "Event": {
+                        "RowName": "T2_Arctic_Snow",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 1
+                },
+                {
+                    "Event": {
+                        "RowName": "T2_Conifer_Wind",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 1
+                },
+                {
+                    "Event": {
+                        "RowName": "T3_Volcanic_Ash",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 1
+                },
+                {
+                    "Event": {
+                        "RowName": "T3_Volcanic_Heatwave",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 1
+                },
+                {
+                    "Event": {
+                        "RowName": "T3_Swamp_AcidFog",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 1
+                },
+                {
+                    "Event": {
+                        "RowName": "T3_Swamp_ToxicGas",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 1
+                },
+                {
+                    "Event": {
+                        "RowName": "T3_Conifer_Hail",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 1
+                },
+                {
+                    "Event": {
+                        "RowName": "T3_Arctic_Hail",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 1
+                },
+                {
+                    "Event": {
+                        "RowName": "T3_Conifer_Rain",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 1
+                },
+                {
+                    "Event": {
+                        "RowName": "T3_Arctic_Snow",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 1
+                },
+                {
+                    "Event": {
+                        "RowName": "T4_Volcanic_Embers",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 1
+                },
+                {
+                    "Event": {
+                        "RowName": "T4_Volcanic_AcidRain",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 1
+                },
+                {
+                    "Event": {
+                        "RowName": "T4_Volcanic_SulfurReaction",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 1
+                },
+                {
+                    "Event": {
+                        "RowName": "T4_Swamp_AcidRain",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 1
+                },
+                {
+                    "Event": {
+                        "RowName": "T4_Swamp_Wind",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 1
+                },
+                {
+                    "Event": {
+                        "RowName": "T4_Conifer_Hail",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 1
+                },
+                {
+                    "Event": {
+                        "RowName": "T4_Arctic_Hail",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 1
+                },
+                {
+                    "Event": {
+                        "RowName": "T4_Conifer_Rain",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 1
+                },
+                {
+                    "Event": {
+                        "RowName": "T4_Arctic_Snow",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 1
+                },
+                {
+                    "Event": {
+                        "RowName": "T5_Volcanic_Ash",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 1
+                },
+                {
+                    "Event": {
+                        "RowName": "T5_Volcanic_SulfurReaction",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 1
+                },
+                {
+                    "Event": {
+                        "RowName": "T5_Swamp_AcidFog",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 1
+                },
+                {
+                    "Event": {
+                        "RowName": "T5_Swamp_ToxicGas",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 1
+                },
+                {
+                    "Event": {
+                        "RowName": "T5_Arctic_Snow",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 1
+                },
+                {
+                    "Event": {
+                        "RowName": "T5_Conifer_Wind",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 1
+                },
+                {
+                    "Event": {
+                        "RowName": "T5_Conifer_Rain",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 1
+                },
+                {
+                    "Event": {
+                        "RowName": "T5_Arctic_Wind",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 1
+                },
+                {
+                    "Event": {
+                        "RowName": "T6_Volcanic_Embers",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 0.25
+                },
+                {
+                    "Event": {
+                        "RowName": "T6_Volcanic_AcidRain",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 0.25
+                },
+                {
+                    "Event": {
+                        "RowName": "T6_Swamp_AcidRain",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 0.5
+                },
+                {
+                    "Event": {
+                        "RowName": "T6_Conifer_Rain",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 0.5
+                },
+                {
+                    "Event": {
+                        "RowName": "T6_Arctic_Snow",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 0.25
+                },
+                {
+                    "Event": {
+                        "RowName": "T6_Arctic_Wind",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 0.25
+                },
+                {
+                    "Event": {
+                        "RowName": "T0_Desert_Sand",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 4
+                },
+                {
+                    "Event": {
+                        "RowName": "T1_Desert_Wind",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 1
+                },
+                {
+                    "Event": {
+                        "RowName": "T2_Desert_Sand",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 1
+                },
+                {
+                    "Event": {
+                        "RowName": "T3_Desert_Heatwave",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 0.5
+                },
+                {
+                    "Event": {
+                        "RowName": "T3_Desert_Wind",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 0.5
+                },
+                {
+                    "Event": {
+                        "RowName": "T4_Desert_Sand",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 1
+                },
+                {
+                    "Event": {
+                        "RowName": "T5_Desert_Sand",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 0.5
+                },
+                {
+                    "Event": {
+                        "RowName": "T5_Desert_Wind",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 0.5
+                },
+                {
+                    "Event": {
+                        "RowName": "T6_Desert_Sand",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 0.5
+                },
+                {
+                    "Event": {
+                        "RowName": "T0_Volcanic_VolcWinter",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 2
+                },
+                {
+                    "Event": {
+                        "RowName": "T1_Volcanic_VolcWinter",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 1
+                },
+                {
+                    "Event": {
+                        "RowName": "T3_Volcanic_VolcWinter",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 1
+                },
+                {
+                    "Event": {
+                        "RowName": "T5_Volcanic_VolcWinter",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 0.5
+                },
+                {
+                    "Event": {
+                        "RowName": "T1_Volcanic_ColdFront",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 1
+                },
+                {
+                    "Event": {
+                        "RowName": "T3_Volcanic_ColdFront",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 1
+                },
+                {
+                    "Event": {
+                        "RowName": "T5_Volcanic_ColdFront",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 0.5
+                },
+                {
+                    "Event": {
+                        "RowName": "T2_Arctic_Whiteout",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 1
+                },
+                {
+                    "Event": {
+                        "RowName": "T3_Arctic_Whiteout",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 1
+                },
+                {
+                    "Event": {
+                        "RowName": "T4_Arctic_Whiteout",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 1
+                },
+                {
+                    "Event": {
+                        "RowName": "T5_Arctic_Whiteout",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 0.5
+                },
+                {
+                    "Event": {
+                        "RowName": "T6_Arctic_Whiteout",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 0.5
+                }
+            ],
+            "ContainedTiers": [
+                {
+                    "Tier": 0,
+                    "NumEvents": 9,
+                    "MinEventDurationMinutes": 6,
+                    "BiomesGroupsIncluded": [
+                        "Ely_Desert",
+                        "Ely_Northern_Arctic",
+                        "Ely_Northern_Volcanic",
+                        "Ely_Southern_Arctic",
+                        "Ely_Southern_Volcanic",
+                        "Ely_Swamp",
+                        "Ely_Tundra",
+                        "Olympus_Arctic",
+                        "Olympus_Conifer",
+                        "Olympus_Desert",
+                        "Olympus_DesertCanyons",
+                        "Olympus_Riverlands",
+                        "Olympus_SouthernGlacier",
+                        "Pro_Arctic",
+                        "Pro_Ashlands",
+                        "Pro_Conifer",
+                        "Pro_IceSheet",
+                        "Pro_Swamp",
+                        "Pro_Tundra",
+                        "Pro_Volcanic",
+                        "Styx_Arctic",
+                        "Styx_Desert",
+                        "Styx_Forest"
+                    ]
+                },
+                {
+                    "Tier": 1,
+                    "NumEvents": 9,
+                    "MinEventDurationMinutes": 6,
+                    "BiomesGroupsIncluded": [
+                        "Ely_Desert",
+                        "Ely_Geothermal",
+                        "Ely_Northern_Arctic",
+                        "Ely_Northern_Volcanic",
+                        "Ely_Southern_Arctic",
+                        "Ely_Southern_Volcanic",
+                        "Ely_Swamp",
+                        "Ely_Tundra",
+                        "Olympus_Arctic",
+                        "Olympus_Conifer",
+                        "Olympus_Desert",
+                        "Olympus_DesertCanyons",
+                        "Olympus_Riverlands",
+                        "Olympus_SouthernGlacier",
+                        "Pro_Arctic",
+                        "Pro_Ashlands",
+                        "Pro_Conifer",
+                        "Pro_IceSheet",
+                        "Pro_Swamp",
+                        "Pro_Tundra",
+                        "Pro_Volcanic",
+                        "Styx_Arctic",
+                        "Styx_Desert",
+                        "Styx_Forest"
+                    ]
+                },
+                {
+                    "Tier": 2,
+                    "NumEvents": 10,
+                    "MinEventDurationMinutes": 6,
+                    "BiomesGroupsIncluded": [
+                        "Ely_Desert",
+                        "Ely_Northern_Arctic",
+                        "Ely_Northern_Volcanic",
+                        "Ely_Southern_Arctic",
+                        "Ely_Southern_Volcanic",
+                        "Ely_Swamp",
+                        "Ely_Tundra",
+                        "Olympus_Arctic",
+                        "Olympus_Conifer",
+                        "Olympus_Desert",
+                        "Olympus_DesertCanyons",
+                        "Olympus_Riverlands",
+                        "Olympus_SouthernGlacier",
+                        "Pro_Arctic",
+                        "Pro_Ashlands",
+                        "Pro_Conifer",
+                        "Pro_IceSheet",
+                        "Pro_Swamp",
+                        "Pro_Tundra",
+                        "Pro_Volcanic",
+                        "Styx_Arctic",
+                        "Styx_Desert",
+                        "Styx_Forest"
+                    ]
+                },
+                {
+                    "Tier": 3,
+                    "NumEvents": 14,
+                    "MinEventDurationMinutes": 6,
+                    "BiomesGroupsIncluded": [
+                        "Ely_Desert",
+                        "Ely_Geothermal",
+                        "Ely_Northern_Arctic",
+                        "Ely_Northern_Volcanic",
+                        "Ely_Southern_Arctic",
+                        "Ely_Southern_Volcanic",
+                        "Ely_Swamp",
+                        "Ely_Tundra",
+                        "Olympus_Arctic",
+                        "Olympus_Conifer",
+                        "Olympus_Desert",
+                        "Olympus_DesertCanyons",
+                        "Olympus_Riverlands",
+                        "Olympus_SouthernGlacier",
+                        "Pro_Arctic",
+                        "Pro_Ashlands",
+                        "Pro_Conifer",
+                        "Pro_IceSheet",
+                        "Pro_Swamp",
+                        "Pro_Tundra",
+                        "Pro_Volcanic",
+                        "Styx_Arctic",
+                        "Styx_Desert",
+                        "Styx_Forest"
+                    ]
+                },
+                {
+                    "Tier": 4,
+                    "NumEvents": 10,
+                    "MinEventDurationMinutes": 5,
+                    "BiomesGroupsIncluded": [
+                        "Ely_Desert",
+                        "Ely_Northern_Arctic",
+                        "Ely_Northern_Volcanic",
+                        "Ely_Southern_Arctic",
+                        "Ely_Southern_Volcanic",
+                        "Ely_Swamp",
+                        "Ely_Tundra",
+                        "Olympus_Arctic",
+                        "Olympus_Conifer",
+                        "Olympus_Desert",
+                        "Olympus_DesertCanyons",
+                        "Olympus_Riverlands",
+                        "Olympus_SouthernGlacier",
+                        "Pro_Arctic",
+                        "Pro_Ashlands",
+                        "Pro_Conifer",
+                        "Pro_IceSheet",
+                        "Pro_Swamp",
+                        "Pro_Tundra",
+                        "Pro_Volcanic",
+                        "Styx_Arctic",
+                        "Styx_Desert",
+                        "Styx_Forest"
+                    ]
+                },
+                {
+                    "Tier": 5,
+                    "NumEvents": 13,
+                    "MinEventDurationMinutes": 7,
+                    "BiomesGroupsIncluded": [
+                        "Ely_Desert",
+                        "Ely_Geothermal",
+                        "Ely_Northern_Arctic",
+                        "Ely_Northern_Volcanic",
+                        "Ely_Southern_Arctic",
+                        "Ely_Southern_Volcanic",
+                        "Ely_Swamp",
+                        "Ely_Tundra",
+                        "Olympus_Arctic",
+                        "Olympus_Conifer",
+                        "Olympus_Desert",
+                        "Olympus_DesertCanyons",
+                        "Olympus_Riverlands",
+                        "Olympus_SouthernGlacier",
+                        "Pro_Arctic",
+                        "Pro_Ashlands",
+                        "Pro_Conifer",
+                        "Pro_IceSheet",
+                        "Pro_Swamp",
+                        "Pro_Tundra",
+                        "Pro_Volcanic",
+                        "Styx_Arctic",
+                        "Styx_Desert",
+                        "Styx_Forest"
+                    ]
+                },
+                {
+                    "Tier": 6,
+                    "NumEvents": 8,
+                    "MinEventDurationMinutes": 7,
+                    "BiomesGroupsIncluded": [
+                        "Ely_Desert",
+                        "Ely_Northern_Arctic",
+                        "Ely_Northern_Volcanic",
+                        "Ely_Southern_Arctic",
+                        "Ely_Southern_Volcanic",
+                        "Ely_Swamp",
+                        "Ely_Tundra",
+                        "Olympus_Arctic",
+                        "Olympus_Conifer",
+                        "Olympus_Desert",
+                        "Olympus_DesertCanyons",
+                        "Olympus_Riverlands",
+                        "Olympus_SouthernGlacier",
+                        "Pro_Arctic",
+                        "Pro_Ashlands",
+                        "Pro_Conifer",
+                        "Pro_IceSheet",
+                        "Pro_Swamp",
+                        "Pro_Tundra",
+                        "Pro_Volcanic",
+                        "Styx_Arctic",
+                        "Styx_Desert",
+                        "Styx_Forest"
+                    ]
+                }
+            ]
+        },
+        {
+            "Name": "All_Weather_HarshArctic",
+            "WeatherEvents": [
+                {
+                    "Event": {
+                        "RowName": "T0_Volcanic_Ash",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 2
+                },
+                {
+                    "Event": {
+                        "RowName": "T0_Swamp_Wind",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 1
+                },
+                {
+                    "Event": {
+                        "RowName": "T0_Swamp_AcidFog",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 1
+                },
+                {
+                    "Event": {
+                        "RowName": "T0_Conifer_Hail",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 1
+                },
+                {
+                    "Event": {
+                        "RowName": "T0_Arctic_Hail",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 1
+                },
+                {
+                    "Event": {
+                        "RowName": "T0_Conifer_Rain",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 1
+                },
+                {
+                    "Event": {
+                        "RowName": "T0_Arctic_Snow",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 1
+                },
+                {
+                    "Event": {
+                        "RowName": "T1_Volcanic_Ash",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 1
+                },
+                {
+                    "Event": {
+                        "RowName": "T1_Volcanic_SulfurReaction",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 1
+                },
+                {
+                    "Event": {
+                        "RowName": "T1_Swamp_Wind",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 1
+                },
+                {
+                    "Event": {
+                        "RowName": "T1_Swamp_AcidFog",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 1
+                },
+                {
+                    "Event": {
+                        "RowName": "T1_Conifer_Rain",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 1
+                },
+                {
+                    "Event": {
+                        "RowName": "T1_Arctic_Wind",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 1
+                },
+                {
+                    "Event": {
+                        "RowName": "T2_Volcanic_Embers",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 1
+                },
+                {
+                    "Event": {
+                        "RowName": "T2_Volcanic_AcidRain",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 1
+                },
+                {
+                    "Event": {
+                        "RowName": "T2_Swamp_AcidRain",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 1
+                },
+                {
+                    "Event": {
+                        "RowName": "T2_Swamp_Wind",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 1
+                },
+                {
+                    "Event": {
+                        "RowName": "T2_Conifer_Hail",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 1
+                },
+                {
+                    "Event": {
+                        "RowName": "T2_Arctic_Hail",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 2
+                },
+                {
+                    "Event": {
+                        "RowName": "T2_Arctic_Snow",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 2
+                },
+                {
+                    "Event": {
+                        "RowName": "T2_Conifer_Wind",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 1
+                },
+                {
+                    "Event": {
+                        "RowName": "T3_Volcanic_Ash",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 1
+                },
+                {
+                    "Event": {
+                        "RowName": "T3_Volcanic_Heatwave",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 1
+                },
+                {
+                    "Event": {
+                        "RowName": "T3_Swamp_AcidFog",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 1
+                },
+                {
+                    "Event": {
+                        "RowName": "T3_Swamp_ToxicGas",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 1
+                },
+                {
+                    "Event": {
+                        "RowName": "T3_Conifer_Hail",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 1
+                },
+                {
+                    "Event": {
+                        "RowName": "T3_Arctic_Hail",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 3
+                },
+                {
+                    "Event": {
+                        "RowName": "T3_Conifer_Rain",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 1
+                },
+                {
+                    "Event": {
+                        "RowName": "T3_Arctic_Snow",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 3
+                },
+                {
+                    "Event": {
+                        "RowName": "T4_Volcanic_Embers",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 1
+                },
+                {
+                    "Event": {
+                        "RowName": "T4_Volcanic_AcidRain",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 1
+                },
+                {
+                    "Event": {
+                        "RowName": "T4_Volcanic_SulfurReaction",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 1
+                },
+                {
+                    "Event": {
+                        "RowName": "T4_Swamp_AcidRain",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 1
+                },
+                {
+                    "Event": {
+                        "RowName": "T4_Swamp_Wind",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 1
+                },
+                {
+                    "Event": {
+                        "RowName": "T4_Conifer_Hail",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 1
+                },
+                {
+                    "Event": {
+                        "RowName": "T4_Arctic_Hail",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 4
+                },
+                {
+                    "Event": {
+                        "RowName": "T4_Conifer_Rain",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 1
+                },
+                {
+                    "Event": {
+                        "RowName": "T4_Arctic_Snow",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 4
+                },
+                {
+                    "Event": {
+                        "RowName": "T5_Volcanic_Ash",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 1
+                },
+                {
+                    "Event": {
+                        "RowName": "T5_Volcanic_SulfurReaction",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 1
+                },
+                {
+                    "Event": {
+                        "RowName": "T5_Swamp_AcidFog",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 1
+                },
+                {
+                    "Event": {
+                        "RowName": "T5_Swamp_ToxicGas",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 1
+                },
+                {
+                    "Event": {
+                        "RowName": "T5_Arctic_Snow",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 5
+                },
+                {
+                    "Event": {
+                        "RowName": "T5_Conifer_Wind",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 1
+                },
+                {
+                    "Event": {
+                        "RowName": "T5_Conifer_Rain",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 1
+                },
+                {
+                    "Event": {
+                        "RowName": "T5_Arctic_Wind",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 5
+                },
+                {
+                    "Event": {
+                        "RowName": "T6_Volcanic_Embers",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 0.5
+                },
+                {
+                    "Event": {
+                        "RowName": "T6_Volcanic_AcidRain",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 0.5
+                },
+                {
+                    "Event": {
+                        "RowName": "T6_Swamp_AcidRain",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 1
+                },
+                {
+                    "Event": {
+                        "RowName": "T6_Conifer_Rain",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 1
+                },
+                {
+                    "Event": {
+                        "RowName": "T6_Arctic_Snow",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 6
+                },
+                {
+                    "Event": {
+                        "RowName": "T6_Arctic_Wind",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 6
+                },
+                {
+                    "Event": {
+                        "RowName": "T0_Desert_Sand",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 2
+                },
+                {
+                    "Event": {
+                        "RowName": "T1_Desert_Wind",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 1
+                },
+                {
+                    "Event": {
+                        "RowName": "T2_Desert_Sand",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 1
+                },
+                {
+                    "Event": {
+                        "RowName": "T3_Desert_Heatwave",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 0.5
+                },
+                {
+                    "Event": {
+                        "RowName": "T3_Desert_Wind",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 0.5
+                },
+                {
+                    "Event": {
+                        "RowName": "T4_Desert_Sand",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 1
+                },
+                {
+                    "Event": {
+                        "RowName": "T5_Desert_Sand",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 0.5
+                },
+                {
+                    "Event": {
+                        "RowName": "T5_Desert_Wind",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 0.5
+                },
+                {
+                    "Event": {
+                        "RowName": "T6_Desert_Sand",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 1
+                },
+                {
+                    "Event": {
+                        "RowName": "T0_Volcanic_VolcWinter",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 1
+                },
+                {
+                    "Event": {
+                        "RowName": "T1_Volcanic_VolcWinter",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 1
+                },
+                {
+                    "Event": {
+                        "RowName": "T3_Volcanic_VolcWinter",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 1
+                },
+                {
+                    "Event": {
+                        "RowName": "T5_Volcanic_VolcWinter",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 1
+                },
+                {
+                    "Event": {
+                        "RowName": "T1_Volcanic_ColdFront",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 1
+                },
+                {
+                    "Event": {
+                        "RowName": "T3_Volcanic_ColdFront",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 1
+                },
+                {
+                    "Event": {
+                        "RowName": "T5_Volcanic_ColdFront",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 1
+                },
+                {
+                    "Event": {
+                        "RowName": "T2_Arctic_Whiteout",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 2
+                },
+                {
+                    "Event": {
+                        "RowName": "T3_Arctic_Whiteout",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 3
+                },
+                {
+                    "Event": {
+                        "RowName": "T4_Arctic_Whiteout",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 4
+                },
+                {
+                    "Event": {
+                        "RowName": "T5_Arctic_Whiteout",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 5
+                },
+                {
+                    "Event": {
+                        "RowName": "T6_Arctic_Whiteout",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 6
+                }
+            ],
+            "ContainedTiers": [
+                {
+                    "Tier": 0,
+                    "NumEvents": 9,
+                    "MinEventDurationMinutes": 6,
+                    "BiomesGroupsIncluded": [
+                        "Ely_Desert",
+                        "Ely_Northern_Arctic",
+                        "Ely_Northern_Volcanic",
+                        "Ely_Southern_Arctic",
+                        "Ely_Southern_Volcanic",
+                        "Ely_Swamp",
+                        "Ely_Tundra",
+                        "Olympus_Arctic",
+                        "Olympus_Conifer",
+                        "Olympus_Desert",
+                        "Olympus_DesertCanyons",
+                        "Olympus_Riverlands",
+                        "Olympus_SouthernGlacier",
+                        "Pro_Arctic",
+                        "Pro_Ashlands",
+                        "Pro_Conifer",
+                        "Pro_IceSheet",
+                        "Pro_Swamp",
+                        "Pro_Tundra",
+                        "Pro_Volcanic",
+                        "Styx_Arctic",
+                        "Styx_Desert",
+                        "Styx_Forest"
+                    ]
+                },
+                {
+                    "Tier": 1,
+                    "NumEvents": 9,
+                    "MinEventDurationMinutes": 6,
+                    "BiomesGroupsIncluded": [
+                        "Ely_Desert",
+                        "Ely_Geothermal",
+                        "Ely_Northern_Arctic",
+                        "Ely_Northern_Volcanic",
+                        "Ely_Southern_Arctic",
+                        "Ely_Southern_Volcanic",
+                        "Ely_Swamp",
+                        "Ely_Tundra",
+                        "Olympus_Arctic",
+                        "Olympus_Conifer",
+                        "Olympus_Desert",
+                        "Olympus_DesertCanyons",
+                        "Olympus_Riverlands",
+                        "Olympus_SouthernGlacier",
+                        "Pro_Arctic",
+                        "Pro_Ashlands",
+                        "Pro_Conifer",
+                        "Pro_IceSheet",
+                        "Pro_Swamp",
+                        "Pro_Tundra",
+                        "Pro_Volcanic",
+                        "Styx_Arctic",
+                        "Styx_Desert",
+                        "Styx_Forest"
+                    ]
+                },
+                {
+                    "Tier": 2,
+                    "NumEvents": 10,
+                    "MinEventDurationMinutes": 6,
+                    "BiomesGroupsIncluded": [
+                        "Ely_Desert",
+                        "Ely_Northern_Arctic",
+                        "Ely_Northern_Volcanic",
+                        "Ely_Southern_Arctic",
+                        "Ely_Southern_Volcanic",
+                        "Ely_Swamp",
+                        "Ely_Tundra",
+                        "Olympus_Arctic",
+                        "Olympus_Conifer",
+                        "Olympus_Desert",
+                        "Olympus_DesertCanyons",
+                        "Olympus_Riverlands",
+                        "Olympus_SouthernGlacier",
+                        "Pro_Arctic",
+                        "Pro_Ashlands",
+                        "Pro_Conifer",
+                        "Pro_IceSheet",
+                        "Pro_Swamp",
+                        "Pro_Tundra",
+                        "Pro_Volcanic",
+                        "Styx_Arctic",
+                        "Styx_Desert",
+                        "Styx_Forest"
+                    ]
+                },
+                {
+                    "Tier": 3,
+                    "NumEvents": 14,
+                    "MinEventDurationMinutes": 6,
+                    "BiomesGroupsIncluded": [
+                        "Ely_Desert",
+                        "Ely_Geothermal",
+                        "Ely_Northern_Arctic",
+                        "Ely_Northern_Volcanic",
+                        "Ely_Southern_Arctic",
+                        "Ely_Southern_Volcanic",
+                        "Ely_Swamp",
+                        "Ely_Tundra",
+                        "Olympus_Arctic",
+                        "Olympus_Conifer",
+                        "Olympus_Desert",
+                        "Olympus_DesertCanyons",
+                        "Olympus_Riverlands",
+                        "Olympus_SouthernGlacier",
+                        "Pro_Arctic",
+                        "Pro_Ashlands",
+                        "Pro_Conifer",
+                        "Pro_IceSheet",
+                        "Pro_Swamp",
+                        "Pro_Tundra",
+                        "Pro_Volcanic",
+                        "Styx_Arctic",
+                        "Styx_Desert",
+                        "Styx_Forest"
+                    ]
+                },
+                {
+                    "Tier": 4,
+                    "NumEvents": 10,
+                    "MinEventDurationMinutes": 5,
+                    "BiomesGroupsIncluded": [
+                        "Ely_Desert",
+                        "Ely_Northern_Arctic",
+                        "Ely_Northern_Volcanic",
+                        "Ely_Southern_Arctic",
+                        "Ely_Southern_Volcanic",
+                        "Ely_Swamp",
+                        "Ely_Tundra",
+                        "Olympus_Arctic",
+                        "Olympus_Conifer",
+                        "Olympus_Desert",
+                        "Olympus_DesertCanyons",
+                        "Olympus_Riverlands",
+                        "Olympus_SouthernGlacier",
+                        "Pro_Arctic",
+                        "Pro_Ashlands",
+                        "Pro_Conifer",
+                        "Pro_IceSheet",
+                        "Pro_Swamp",
+                        "Pro_Tundra",
+                        "Pro_Volcanic",
+                        "Styx_Arctic",
+                        "Styx_Desert",
+                        "Styx_Forest"
+                    ]
+                },
+                {
+                    "Tier": 5,
+                    "NumEvents": 13,
+                    "MinEventDurationMinutes": 7,
+                    "BiomesGroupsIncluded": [
+                        "Ely_Desert",
+                        "Ely_Geothermal",
+                        "Ely_Northern_Arctic",
+                        "Ely_Northern_Volcanic",
+                        "Ely_Southern_Arctic",
+                        "Ely_Southern_Volcanic",
+                        "Ely_Swamp",
+                        "Ely_Tundra",
+                        "Olympus_Arctic",
+                        "Olympus_Conifer",
+                        "Olympus_Desert",
+                        "Olympus_DesertCanyons",
+                        "Olympus_Riverlands",
+                        "Olympus_SouthernGlacier",
+                        "Pro_Arctic",
+                        "Pro_Ashlands",
+                        "Pro_Conifer",
+                        "Pro_IceSheet",
+                        "Pro_Swamp",
+                        "Pro_Tundra",
+                        "Pro_Volcanic",
+                        "Styx_Arctic",
+                        "Styx_Desert",
+                        "Styx_Forest"
+                    ]
+                },
+                {
+                    "Tier": 6,
+                    "NumEvents": 8,
+                    "MinEventDurationMinutes": 7,
+                    "BiomesGroupsIncluded": [
+                        "Ely_Desert",
+                        "Ely_Northern_Arctic",
+                        "Ely_Northern_Volcanic",
+                        "Ely_Southern_Arctic",
+                        "Ely_Southern_Volcanic",
+                        "Ely_Swamp",
+                        "Ely_Tundra",
+                        "Olympus_Arctic",
+                        "Olympus_Conifer",
+                        "Olympus_Desert",
+                        "Olympus_DesertCanyons",
+                        "Olympus_Riverlands",
+                        "Olympus_SouthernGlacier",
+                        "Pro_Arctic",
+                        "Pro_Ashlands",
+                        "Pro_Conifer",
+                        "Pro_IceSheet",
+                        "Pro_Swamp",
+                        "Pro_Tundra",
+                        "Pro_Volcanic",
+                        "Styx_Arctic",
+                        "Styx_Desert",
+                        "Styx_Forest"
+                    ]
+                }
+            ]
+        },
+        {
+            "Name": "NoWeather",
+            "WeatherEvents": [
+                {
+                    "Event": {
+                        "RowName": "NoWeather",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 1
+                }
+            ],
+            "ContainedTiers": [
+                {
+                    "Tier": 0,
+                    "NumEvents": 1,
+                    "MinEventDurationMinutes": 2,
+                    "BiomesGroupsIncluded": [
+                        "NoBiome"
+                    ]
+                }
+            ]
+        },
+        {
+            "Name": "Ice_Arena_Blizzard",
+            "WeatherEvents": [
+                {
+                    "Event": {
+                        "RowName": "Arctic_Blizzard_Ice_Mammoth",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 1
+                }
+            ],
+            "ContainedTiers": [
+                {
+                    "Tier": 6,
+                    "NumEvents": 1,
+                    "MinEventDurationMinutes": 167,
+                    "BiomesGroupsIncluded": [
+                        "Arena_IceMammoth"
+                    ]
+                }
+            ]
+        }
+    ]
+}

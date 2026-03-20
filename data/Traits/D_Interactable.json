@@ -1,0 +1,3723 @@
+{
+    "RowStruct": "/Script/Icarus.InteractableData",
+    "Defaults": {
+        "WorldPressInteracts": [],
+        "WorldHoldInteracts": [],
+        "WorldAltPressInteracts": [],
+        "WorldAltHoldInteracts": [],
+        "GenericData": []
+    },
+    "Rows": [
+        {
+            "Name": "Item",
+            "WorldPressInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Pickup_Item",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ]
+        },
+        {
+            "Name": "Item_FLOD",
+            "WorldPressInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Pickup_Item_FLOD",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ]
+        },
+        {
+            "Name": "Deployable",
+            "WorldPressInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Interact_Deployable",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                },
+                {
+                    "InteractionRow": {
+                        "RowName": "Pickup_Item",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                },
+                {
+                    "InteractionRow": {
+                        "RowName": "Interact_Deployable",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ],
+            "WorldHoldInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Interact_Toggle_Device_On",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ],
+            "WorldAltHoldInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Pickup_Deployable",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ]
+        },
+        {
+            "Name": "Deployable_Large",
+            "WorldPressInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Interact_Deployable",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ],
+            "WorldHoldInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Detach_Deployable",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ]
+        },
+        {
+            "Name": "Deployable_NoInteract",
+            "WorldPressInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Pickup_Item",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ],
+            "WorldAltHoldInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Pickup_Deployable",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ]
+        },
+        {
+            "Name": "Deployable_NoPickup",
+            "WorldPressInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Interact_Deployable",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                },
+                {
+                    "InteractionRow": {
+                        "RowName": "Pickup_Item",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ],
+            "WorldHoldInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Interact_Toggle_Device_On",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ]
+        },
+        {
+            "Name": "Deployable_ResourceStack",
+            "WorldPressInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Pickup_Item",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ],
+            "WorldHoldInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Interact_Deployable",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ]
+        },
+        {
+            "Name": "Grave",
+            "WorldPressInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Loot_Grave",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ],
+            "WorldHoldInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Revive_Grave",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ]
+        },
+        {
+            "Name": "Rocket_Part",
+            "WorldPressInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Interact_RocketPart",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ]
+        },
+        {
+            "Name": "WorldObject",
+            "WorldPressInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Interact_WorldObject",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ]
+        },
+        {
+            "Name": "Strange_Flora",
+            "WorldPressInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Interact_Strange_Flora",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ]
+        },
+        {
+            "Name": "WorldObject_Corpse",
+            "WorldPressInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Loot_WorldObject",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ]
+        },
+        {
+            "Name": "Seat",
+            "WorldPressInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Enter_Seat",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ]
+        },
+        {
+            "Name": "Resource_Node",
+            "WorldPressInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Harvest_Resource",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ]
+        },
+        {
+            "Name": "ShipEditorTerminal",
+            "WorldPressInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Interact_ShipEditorTerminal",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ]
+        },
+        {
+            "Name": "DropTerminal",
+            "WorldPressInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Interact_DropTerminal",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ]
+        },
+        {
+            "Name": "PlayerDropShip",
+            "WorldPressInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Interact_Dropship",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ]
+        },
+        {
+            "Name": "WaterSource",
+            "WorldPressInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Interact_WaterSource_Refill",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ],
+            "WorldHoldInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Interact_WaterSource",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ]
+        },
+        {
+            "Name": "HuntingClue",
+            "WorldHoldInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Interact_HuntingClue",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ]
+        },
+        {
+            "Name": "ButtonTrigger",
+            "WorldPressInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Interact_ButtonPress",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ],
+            "WorldHoldInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Interact_ButtonHold",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ]
+        },
+        {
+            "Name": "MetaShopTerminal",
+            "WorldPressInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "MetaShop",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ]
+        },
+        {
+            "Name": "Door",
+            "WorldPressInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "OpenClose_Door",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                },
+                {
+                    "InteractionRow": {
+                        "RowName": "Pickup_Item",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ],
+            "WorldAltHoldInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Pickup_Deployable",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ]
+        },
+        {
+            "Name": "AnimalCorpse",
+            "WorldPressInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Loot_Skinned_Animal",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ],
+            "WorldHoldInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Harvest_Corpse",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                },
+                {
+                    "InteractionRow": {
+                        "RowName": "Pickup_Corpse",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ]
+        },
+        {
+            "Name": "Interactable_CropMound",
+            "WorldPressInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Pickup_Item",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                },
+                {
+                    "InteractionRow": {
+                        "RowName": "Interact_Crop_Plot_Harvest",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                },
+                {
+                    "InteractionRow": {
+                        "RowName": "Interact_Crop_Plot_Inspect",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ],
+            "WorldAltHoldInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Interact_Mound_Destroy",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ]
+        },
+        {
+            "Name": "Window",
+            "WorldPressInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "OpenClose_Window",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                },
+                {
+                    "InteractionRow": {
+                        "RowName": "Pickup_Item",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ],
+            "WorldAltHoldInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Pickup_Deployable",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ]
+        },
+        {
+            "Name": "Fish",
+            "WorldPressInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Pickup_Fish",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ]
+        },
+        {
+            "Name": "Slotable_Deployable",
+            "WorldPressInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Slotable_Place",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                },
+                {
+                    "InteractionRow": {
+                        "RowName": "Interact_Deployable",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                },
+                {
+                    "InteractionRow": {
+                        "RowName": "Pickup_Item",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ],
+            "WorldAltHoldInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Pickup_Deployable",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ]
+        },
+        {
+            "Name": "AnimalCorpse_NoCarry",
+            "WorldPressInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Loot_Skinned_Animal",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ],
+            "WorldHoldInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Harvest_Corpse",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ]
+        },
+        {
+            "Name": "TreePrimitive",
+            "WorldPressInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Harvest_Tree_Primitive",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ]
+        },
+        {
+            "Name": "Rain_Reservoir",
+            "WorldPressInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Interact_GeneratorUI",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                },
+                {
+                    "InteractionRow": {
+                        "RowName": "Pickup_Item",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ],
+            "WorldHoldInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Interact_Toggle_Device_On",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ],
+            "WorldAltPressInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Fill_Water_Storage",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                },
+                {
+                    "InteractionRow": {
+                        "RowName": "Rain_Reservoir_Container",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                },
+                {
+                    "InteractionRow": {
+                        "RowName": "Rain_Reservoir_Drink",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ],
+            "WorldAltHoldInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Pickup_Deployable",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ]
+        },
+        {
+            "Name": "SpaceInventoryTerminal",
+            "WorldPressInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "SpaceInventory",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ]
+        },
+        {
+            "Name": "ReadyUpTerminal",
+            "WorldPressInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "ReadyUp",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ]
+        },
+        {
+            "Name": "Loadout",
+            "WorldPressInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Space_Loadout",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ]
+        },
+        {
+            "Name": "Deployable_Torch",
+            "WorldPressInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Interact_TorchUI",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                },
+                {
+                    "InteractionRow": {
+                        "RowName": "Pickup_Item",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ],
+            "WorldHoldInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Interact_Torch_Toggle",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ],
+            "WorldAltHoldInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Pickup_Deployable",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ]
+        },
+        {
+            "Name": "Basic_Oxite_Dissolver",
+            "WorldPressInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Basic_Oxite_Dissolver_AddOxite",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": "Base"
+                },
+                {
+                    "InteractionRow": {
+                        "RowName": "Basic_Oxite_Dissolver_TakeOxygen",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": "Balloon"
+                },
+                {
+                    "InteractionRow": {
+                        "RowName": "Pickup_Item",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ],
+            "WorldAltHoldInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Pickup_Deployable",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ]
+        },
+        {
+            "Name": "Mission_STYX_D_Research2_Bomb",
+            "WorldPressInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Mission_STYX_D_Research2_Bomb",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                },
+                {
+                    "InteractionRow": {
+                        "RowName": "Pickup_Item",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ],
+            "WorldAltHoldInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Pickup_Deployable",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ]
+        },
+        {
+            "Name": "Bed",
+            "WorldPressInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Bed_Sleep",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                },
+                {
+                    "InteractionRow": {
+                        "RowName": "Pickup_Item",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ],
+            "WorldHoldInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Bed_SetSpawn",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ],
+            "WorldAltHoldInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Pickup_Deployable",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ]
+        },
+        {
+            "Name": "Cooking_Station",
+            "WorldPressInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Vacuum_Wood",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": "Fuel"
+                },
+                {
+                    "InteractionRow": {
+                        "RowName": "Interact_Deployable",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                },
+                {
+                    "InteractionRow": {
+                        "RowName": "Pickup_Item",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ],
+            "WorldAltHoldInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Pickup_Deployable",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ]
+        },
+        {
+            "Name": "No_Interaction",
+            "WorldPressInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "No_Interaction",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ]
+        },
+        {
+            "Name": "Dehumidifier",
+            "WorldPressInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Interact_TorchUI",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                },
+                {
+                    "InteractionRow": {
+                        "RowName": "Pickup_Item",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ],
+            "WorldHoldInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Interact_Toggle_Device_On",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ],
+            "WorldAltHoldInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Pickup_Deployable",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ]
+        },
+        {
+            "Name": "Lights_Fire_Base",
+            "WorldPressInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Interact_TorchUI",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                },
+                {
+                    "InteractionRow": {
+                        "RowName": "Pickup_Item",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ],
+            "WorldHoldInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Interact_Light_Fire",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ],
+            "WorldAltHoldInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Pickup_Deployable",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ]
+        },
+        {
+            "Name": "Oxite_Dissolver",
+            "WorldPressInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Add_Oxite_Processor",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": "Oxite"
+                },
+                {
+                    "InteractionRow": {
+                        "RowName": "Add_Sulfur_Fuel",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": "Sulfur"
+                },
+                {
+                    "InteractionRow": {
+                        "RowName": "Slotable_Place",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                },
+                {
+                    "InteractionRow": {
+                        "RowName": "Interact_Deployable",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                },
+                {
+                    "InteractionRow": {
+                        "RowName": "Pickup_Item",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ],
+            "WorldAltHoldInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Pickup_Deployable",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ]
+        },
+        {
+            "Name": "Deployable_Generator",
+            "WorldPressInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Interact_GeneratorUI",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                },
+                {
+                    "InteractionRow": {
+                        "RowName": "Pickup_Item",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ],
+            "WorldAltHoldInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Pickup_Deployable",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ]
+        },
+        {
+            "Name": "Faction_Mission_Laser",
+            "WorldPressInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Faction_Laser_Interact",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                },
+                {
+                    "InteractionRow": {
+                        "RowName": "Pickup_Item",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ],
+            "WorldAltHoldInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Pickup_Deployable",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ]
+        },
+        {
+            "Name": "Strange_Rock_Formation",
+            "WorldPressInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Interact_Rock_Formation",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ]
+        },
+        {
+            "Name": "Biofuel_Radar",
+            "WorldPressInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Interact_GeneratorUI",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                },
+                {
+                    "InteractionRow": {
+                        "RowName": "Pickup_Item",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ],
+            "WorldHoldInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Interact_Toggle_Device_On",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ],
+            "WorldAltHoldInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Pickup_Deployable",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ]
+        },
+        {
+            "Name": "Mission_Prototype_Laser",
+            "WorldPressInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Faction_Prototype_Laser_Interact",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                },
+                {
+                    "InteractionRow": {
+                        "RowName": "Pickup_Item",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ],
+            "WorldAltHoldInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Pickup_Deployable",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ]
+        },
+        {
+            "Name": "Mount",
+            "WorldPressInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Hitching_Post_Attach",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                },
+                {
+                    "InteractionRow": {
+                        "RowName": "Hitching_Post_Release",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                },
+                {
+                    "InteractionRow": {
+                        "RowName": "Mount_Claim_Ownership",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                },
+                {
+                    "InteractionRow": {
+                        "RowName": "Enter_Seat_Mount",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ],
+            "WorldHoldInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Open_Mount_Inventory",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ],
+            "WorldAltPressInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Cart_Toggle_Device",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                },
+                {
+                    "InteractionRow": {
+                        "RowName": "Pet_Tamed_Animal",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ],
+            "WorldAltHoldInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Cart_Siphon_Water",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ]
+        },
+        {
+            "Name": "Vapour_Condenser",
+            "WorldPressInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Pickup_Item",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                },
+                {
+                    "InteractionRow": {
+                        "RowName": "Access_Vapour_Condenser_Inventory",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ],
+            "WorldHoldInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Toggle_Vapour_Condenser",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ],
+            "WorldAltHoldInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Pickup_Deployable",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ]
+        },
+        {
+            "Name": "Alteration_Bench",
+            "WorldPressInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Alter_Item",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": "Alter"
+                },
+                {
+                    "InteractionRow": {
+                        "RowName": "Pickup_Item",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                },
+                {
+                    "InteractionRow": {
+                        "RowName": "Craft_Attachment",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": "Craft"
+                }
+            ],
+            "WorldHoldInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Interact_Toggle_Device_On",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ],
+            "WorldAltHoldInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Pickup_Deployable",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ]
+        },
+        {
+            "Name": "Interact_Target_Range_Start",
+            "WorldPressInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Interact_TargetRange",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ]
+        },
+        {
+            "Name": "Lead_Creature",
+            "WorldPressInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Stop_Leading_Creature",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                },
+                {
+                    "InteractionRow": {
+                        "RowName": "Lead_Creature",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ],
+            "WorldHoldInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Cancel_Taming",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ]
+        },
+        {
+            "Name": "Water_Trough",
+            "WorldPressInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Pickup_Item",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ],
+            "WorldHoldInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Interact_Toggle_Device_On",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ],
+            "WorldAltPressInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Fill_Water_Trough",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                },
+                {
+                    "InteractionRow": {
+                        "RowName": "Rain_Reservoir_Container",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                },
+                {
+                    "InteractionRow": {
+                        "RowName": "Interact_ManageWhitelist",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ],
+            "WorldAltHoldInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Pickup_Deployable",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ]
+        },
+        {
+            "Name": "AnimalCorpse_Mount",
+            "WorldPressInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Loot_Dead_Mount",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                },
+                {
+                    "InteractionRow": {
+                        "RowName": "Loot_Skinned_Animal",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ],
+            "WorldHoldInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Harvest_Corpse",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ]
+        },
+        {
+            "Name": "Sink",
+            "WorldPressInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Interact_Sink_Fill_Container",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                },
+                {
+                    "InteractionRow": {
+                        "RowName": "Interact_Sink",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                },
+                {
+                    "InteractionRow": {
+                        "RowName": "Pickup_Item",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ],
+            "WorldHoldInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Interact_Toggle_Device_On",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ],
+            "WorldAltPressInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Interact_Sink_Inventory",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ],
+            "WorldAltHoldInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Pickup_Deployable",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ]
+        },
+        {
+            "Name": "Landmine",
+            "WorldPressInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Pickup_Item",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ],
+            "WorldAltHoldInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Pickup_Landmine",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ]
+        },
+        {
+            "Name": "Fishing_Bench",
+            "WorldPressInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Fillet_Fish",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": "Fillet"
+                },
+                {
+                    "InteractionRow": {
+                        "RowName": "Pickup_Item",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                },
+                {
+                    "InteractionRow": {
+                        "RowName": "Craft_Fishing",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": "Craft"
+                }
+            ],
+            "WorldAltHoldInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Pickup_Deployable",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ]
+        },
+        {
+            "Name": "Filletting_Station",
+            "WorldPressInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Fillet_Fish",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": "Fillet"
+                }
+            ]
+        },
+        {
+            "Name": "InvestigationClue",
+            "WorldPressInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Interact_Investigate",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ]
+        },
+        {
+            "Name": "InvestigationExamine",
+            "WorldPressInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Interact_Examine",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ]
+        },
+        {
+            "Name": "SpawnBlocker_T3",
+            "WorldPressInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Pickup_Item",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                },
+                {
+                    "InteractionRow": {
+                        "RowName": "Interact_SpawnBlocker_T3_UI",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ],
+            "WorldHoldInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Interact_Toggle_Device_On",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ],
+            "WorldAltHoldInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Pickup_Deployable",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ]
+        },
+        {
+            "Name": "AI_Target_Dummy",
+            "WorldPressInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Dummy_Move",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ],
+            "WorldAltHoldInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Pickup_Deployable",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ]
+        },
+        {
+            "Name": "Interactable_CropPlot_v2",
+            "WorldPressInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Pickup_Item",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                },
+                {
+                    "InteractionRow": {
+                        "RowName": "Interact_Crop_Plot_Harvest",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                },
+                {
+                    "InteractionRow": {
+                        "RowName": "Interact_Crop_Plot_Inspect",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ],
+            "WorldHoldInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Interact_Toggle_Device_On",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ],
+            "WorldAltPressInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Interact_Crop_Plot_Remove_Seed",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ],
+            "WorldAltHoldInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Pickup_Deployable",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ]
+        },
+        {
+            "Name": "Water_Purifier",
+            "WorldPressInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Water_Purifier_Container",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                },
+                {
+                    "InteractionRow": {
+                        "RowName": "Pickup_Item",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ],
+            "WorldHoldInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Interact_GeneratorUI",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ],
+            "WorldAltPressInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Water_Purifier_Drink",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ],
+            "WorldAltHoldInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Pickup_Deployable",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ]
+        },
+        {
+            "Name": "Animal_Trap",
+            "WorldPressInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Pickup_Item",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                },
+                {
+                    "InteractionRow": {
+                        "RowName": "Interact_Release_Animal",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                },
+                {
+                    "InteractionRow": {
+                        "RowName": "Interact_Toggle_Trap",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ],
+            "WorldAltHoldInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Pickup_Deployable",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ]
+        },
+        {
+            "Name": "Item_OwnerOnly",
+            "WorldPressInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Pickup_Item_OwnerOnly",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ]
+        },
+        {
+            "Name": "Deployable_LandingPad",
+            "WorldPressInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Claim_LandingPad",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ],
+            "WorldHoldInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Interact_Toggle_Device_On",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ],
+            "WorldAltPressInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Unclaim_LandingPad",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ],
+            "WorldAltHoldInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Pickup_Deployable",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ]
+        },
+        {
+            "Name": "Deployable_LandingPad_Cargo",
+            "WorldHoldInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Pickup_LandingPad_Cargo",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ]
+        },
+        {
+            "Name": "Deployable_TrailBeacon",
+            "WorldPressInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Link_Beacon",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                },
+                {
+                    "InteractionRow": {
+                        "RowName": "Unlink_Beacon",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                },
+                {
+                    "InteractionRow": {
+                        "RowName": "Pickup_Item",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ],
+            "WorldAltHoldInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Pickup_Deployable",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ]
+        },
+        {
+            "Name": "Flow_Meter",
+            "WorldPressInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Interact_Flow_Meter",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                },
+                {
+                    "InteractionRow": {
+                        "RowName": "Pickup_Item",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                },
+                {
+                    "InteractionRow": {
+                        "RowName": "Interact_Deployable",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ],
+            "WorldHoldInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Switch_Flow_Meter",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ],
+            "WorldAltHoldInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Pickup_Deployable",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ]
+        },
+        {
+            "Name": "Deployable_Snare_Trap",
+            "WorldPressInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Snare_Trap_Release",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                },
+                {
+                    "InteractionRow": {
+                        "RowName": "Pickup_Item",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ],
+            "WorldHoldInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Snare_Trap_Bait",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ],
+            "WorldAltHoldInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Pickup_Deployable",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ]
+        },
+        {
+            "Name": "Deployable_Power_Toggle_Only",
+            "WorldPressInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Pickup_Item",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                },
+                {
+                    "InteractionRow": {
+                        "RowName": "Inspect_Deployable",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ],
+            "WorldHoldInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Interact_Toggle_Device_On",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ],
+            "WorldAltHoldInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Pickup_Deployable",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ]
+        },
+        {
+            "Name": "Sprinkler",
+            "WorldPressInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Pickup_Item",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                },
+                {
+                    "InteractionRow": {
+                        "RowName": "Interact_Deployable",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ],
+            "WorldHoldInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Interact_Toggle_Device_On",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ],
+            "WorldAltHoldInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Pickup_Deployable",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ]
+        },
+        {
+            "Name": "Deployable_No_Power_Toggle",
+            "WorldPressInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Interact_Deployable",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                },
+                {
+                    "InteractionRow": {
+                        "RowName": "Pickup_Item",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                },
+                {
+                    "InteractionRow": {
+                        "RowName": "Interact_Deployable",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ],
+            "WorldAltHoldInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Pickup_Deployable",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ]
+        },
+        {
+            "Name": "Water_Trough_Bowl",
+            "WorldPressInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Pickup_Item",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                },
+                {
+                    "InteractionRow": {
+                        "RowName": "Interact_Deployable",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ],
+            "WorldAltPressInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Fill_Water_Trough",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                },
+                {
+                    "InteractionRow": {
+                        "RowName": "Rain_Reservoir_Container",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                },
+                {
+                    "InteractionRow": {
+                        "RowName": "Interact_ManageWhitelist",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ],
+            "WorldAltHoldInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Pickup_Deployable",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ]
+        },
+        {
+            "Name": "AnimalCorpse_Pet",
+            "WorldPressInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Loot_Pet",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ]
+        },
+        {
+            "Name": "WildCreature",
+            "WorldPressInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Pet_Tamed_Animal",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ]
+        },
+        {
+            "Name": "Deployable_Hitching_Post",
+            "WorldPressInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Hitching_Post_Attach",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                },
+                {
+                    "InteractionRow": {
+                        "RowName": "Hitching_Post_Release",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                },
+                {
+                    "InteractionRow": {
+                        "RowName": "Pickup_Item",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ],
+            "WorldAltHoldInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Pickup_Deployable",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ]
+        },
+        {
+            "Name": "Slotable_Deployable_Electric",
+            "WorldPressInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Slotable_Place",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                },
+                {
+                    "InteractionRow": {
+                        "RowName": "Interact_Deployable",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                },
+                {
+                    "InteractionRow": {
+                        "RowName": "Pickup_Item",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ],
+            "WorldHoldInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Interact_Toggle_Device_On",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ],
+            "WorldAltHoldInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Pickup_Deployable",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ]
+        },
+        {
+            "Name": "Deployable_Food_Trough",
+            "WorldPressInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Interact_Deployable",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                },
+                {
+                    "InteractionRow": {
+                        "RowName": "Pickup_Item",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                },
+                {
+                    "InteractionRow": {
+                        "RowName": "Interact_Deployable",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ],
+            "WorldAltPressInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Interact_ManageWhitelist",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ],
+            "WorldAltHoldInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Pickup_Deployable",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ]
+        },
+        {
+            "Name": "Deployable_Portable_Water_Tank",
+            "WorldPressInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Pickup_Item",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                },
+                {
+                    "InteractionRow": {
+                        "RowName": "Inspect_Deployable",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ],
+            "WorldHoldInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Interact_Toggle_Device_On",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ],
+            "WorldAltPressInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "WaterStorage_FillWater",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                },
+                {
+                    "InteractionRow": {
+                        "RowName": "WaterStorage_DrawWater",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                },
+                {
+                    "InteractionRow": {
+                        "RowName": "WaterStorage_DrinkWater",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ],
+            "WorldAltHoldInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Pickup_Deployable",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ]
+        },
+        {
+            "Name": "Water_Barrel",
+            "WorldPressInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Pickup_Item",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                },
+                {
+                    "InteractionRow": {
+                        "RowName": "Inspect_Deployable",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ],
+            "WorldHoldInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Interact_Toggle_Device_On",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ],
+            "WorldAltPressInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Fill_Water_Storage",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                },
+                {
+                    "InteractionRow": {
+                        "RowName": "Rain_Reservoir_Container",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ],
+            "WorldAltHoldInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Pickup_Deployable",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ]
+        },
+        {
+            "Name": "Fill_Water",
+            "WorldPressInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Fill_Object_Water",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ]
+        },
+        {
+            "Name": "Fill_Fuel",
+            "WorldPressInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Fill_Object_Fuel",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ]
+        },
+        {
+            "Name": "Deployable_Portable_Biofuel_Tank",
+            "WorldPressInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Pickup_Item",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                },
+                {
+                    "InteractionRow": {
+                        "RowName": "Inspect_Deployable",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ],
+            "WorldHoldInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Interact_Toggle_Device_On",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ],
+            "WorldAltPressInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Fill_Object_Fuel",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                },
+                {
+                    "InteractionRow": {
+                        "RowName": "Interact_Fill_Container_Biofuel",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ],
+            "WorldAltHoldInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Pickup_Deployable",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ]
+        },
+        {
+            "Name": "NPC_Interact",
+            "WorldPressInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Interact_NPC_Mission",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                },
+                {
+                    "InteractionRow": {
+                        "RowName": "Interact_NPC",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ],
+            "WorldHoldInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Interact_Medical_Scan",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ]
+        },
+        {
+            "Name": "NPC_Interact_Inventory",
+            "WorldPressInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Interact_NPC",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ],
+            "WorldHoldInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Interact_Medical_Scan",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ],
+            "WorldAltPressInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Interact_NPC_Inventory",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ]
+        },
+        {
+            "Name": "NPC_Recovery",
+            "WorldHoldInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Interact_Stasis_Bag",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ]
+        },
+        {
+            "Name": "NPC_Recovery_Full",
+            "WorldHoldInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Interact_Stasis_Bag_Stabalized",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ]
+        },
+        {
+            "Name": "WorldObject_Read",
+            "WorldPressInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Interact_WorldObject_Read",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ]
+        },
+        {
+            "Name": "Teleport_Interactable",
+            "WorldPressInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Interact_Teleport",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ],
+            "WorldHoldInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Interact_Teleport_RetrieveLoot",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ]
+        },
+        {
+            "Name": "Bed_NoPickup",
+            "WorldPressInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Bed_Sleep",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ],
+            "WorldHoldInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Bed_SetSpawn",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ]
+        },
+        {
+            "Name": "Bunker_ExtinguisherWallMount",
+            "WorldPressInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Pickup_Item",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                },
+                {
+                    "InteractionRow": {
+                        "RowName": "Interact_Place_Extinguisher",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                },
+                {
+                    "InteractionRow": {
+                        "RowName": "Interact_Take_Extinguisher",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ],
+            "WorldAltHoldInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Pickup_Deployable",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ]
+        },
+        {
+            "Name": "DestroyActor",
+            "WorldPressInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Interact_DestroyActor",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ]
+        },
+        {
+            "Name": "Tame_Cow",
+            "WorldPressInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Interact_MilkCow",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                },
+                {
+                    "InteractionRow": {
+                        "RowName": "Hitching_Post_Attach",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                },
+                {
+                    "InteractionRow": {
+                        "RowName": "Hitching_Post_Release",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                },
+                {
+                    "InteractionRow": {
+                        "RowName": "Mount_Claim_Ownership",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                },
+                {
+                    "InteractionRow": {
+                        "RowName": "Enter_Seat_Mount",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ],
+            "WorldHoldInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Open_Mount_Inventory",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ],
+            "WorldAltPressInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Cart_Toggle_Device",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                },
+                {
+                    "InteractionRow": {
+                        "RowName": "Pet_Tamed_Animal",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ],
+            "WorldAltHoldInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Interact_Birth",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                },
+                {
+                    "InteractionRow": {
+                        "RowName": "Cart_Siphon_Water",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ]
+        },
+        {
+            "Name": "Cake",
+            "WorldPressInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Interact_Cake",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                },
+                {
+                    "InteractionRow": {
+                        "RowName": "Pickup_Item",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ]
+        },
+        {
+            "Name": "Loot_Boss",
+            "WorldPressInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Interact_Loot_Boss",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ]
+        },
+        {
+            "Name": "ResearchCrate",
+            "WorldPressInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Pickup_Item",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                },
+                {
+                    "InteractionRow": {
+                        "RowName": "Pickup_Deployable",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ]
+        },
+        {
+            "Name": "SnareTrap",
+            "WorldPressInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Interact_SnareTrap",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                },
+                {
+                    "InteractionRow": {
+                        "RowName": "Pickup_Item",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ],
+            "WorldAltHoldInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Pickup_Deployable",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ]
+        },
+        {
+            "Name": "DestroyActor_AltHold",
+            "WorldAltHoldInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Interact_DestroyActor",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ]
+        },
+        {
+            "Name": "Deployable_NoPickup_Destroyable",
+            "WorldPressInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Interact_Deployable",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                },
+                {
+                    "InteractionRow": {
+                        "RowName": "Pickup_Item",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ],
+            "WorldHoldInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Interact_Toggle_Device_On",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ],
+            "WorldAltHoldInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Interact_DestroyActor",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ]
+        },
+        {
+            "Name": "Teleport_Interactable_Leave",
+            "WorldPressInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Interact_Teleport_Leave",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ]
+        },
+        {
+            "Name": "Deployable_ArmourStand",
+            "WorldPressInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Interact_Place_Armor",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                },
+                {
+                    "InteractionRow": {
+                        "RowName": "Interact_Deployable",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                },
+                {
+                    "InteractionRow": {
+                        "RowName": "Pickup_Item",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                },
+                {
+                    "InteractionRow": {
+                        "RowName": "Interact_Deployable",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ],
+            "WorldHoldInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Interact_SwapArmour",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ],
+            "WorldAltHoldInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Pickup_Deployable",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ]
+        },
+        {
+            "Name": "Downed_Vesper",
+            "WorldPressInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Interact_Vesper_Cage",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ],
+            "WorldHoldInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Interact_Medical_Scan",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ]
+        },
+        {
+            "Name": "Vesper_Cage",
+            "WorldPressInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Pickup_Item",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ],
+            "WorldHoldInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Interact_Infect_Vesper",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                },
+                {
+                    "InteractionRow": {
+                        "RowName": "Interact_Release_Vesper",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ],
+            "WorldAltHoldInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Pickup_Deployable",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ]
+        },
+        {
+            "Name": "Deployable_InteractEditorOnly",
+            "WorldPressInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Interact_Deployable_EditorOnly",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                },
+                {
+                    "InteractionRow": {
+                        "RowName": "Pickup_Item",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ],
+            "WorldHoldInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Interact_Toggle_Device_On",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ],
+            "WorldAltHoldInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Pickup_Deployable_EditorOnly",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ]
+        },
+        {
+            "Name": "Shackle",
+            "WorldPressInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Interact_Shackle",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ]
+        },
+        {
+            "Name": "Deployable_Mission_Extract",
+            "WorldPressInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Pickup_Item",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                },
+                {
+                    "InteractionRow": {
+                        "RowName": "Interact_Mission_DNA_Extract",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ],
+            "WorldAltHoldInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Pickup_Deployable",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ]
+        },
+        {
+            "Name": "Deployable_Mission_Mix",
+            "WorldPressInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Pickup_Item",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                },
+                {
+                    "InteractionRow": {
+                        "RowName": "Interact_Mission_DNA_Mix",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ],
+            "WorldAltHoldInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Pickup_Deployable",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ]
+        },
+        {
+            "Name": "Deployable_Mission_Chemical",
+            "WorldPressInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Pickup_Item",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                },
+                {
+                    "InteractionRow": {
+                        "RowName": "Interact_Mission_DNA_Chemical",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ],
+            "WorldAltHoldInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Pickup_Deployable",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ]
+        },
+        {
+            "Name": "Deployable_Mission_Weigh",
+            "WorldPressInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Pickup_Item",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                },
+                {
+                    "InteractionRow": {
+                        "RowName": "Interact_Mission_DNA_Weigh",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ],
+            "WorldAltHoldInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Pickup_Deployable",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ]
+        },
+        {
+            "Name": "Deployable_Mission_Analyze",
+            "WorldPressInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Pickup_Item",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                },
+                {
+                    "InteractionRow": {
+                        "RowName": "Interact_Mission_DNA_Analyze",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ],
+            "WorldAltHoldInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Pickup_Deployable",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ]
+        },
+        {
+            "Name": "Deployable_Mission_Seperate",
+            "WorldPressInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Pickup_Item",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                },
+                {
+                    "InteractionRow": {
+                        "RowName": "Interact_Mission_DNA_Seperate",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ],
+            "WorldAltHoldInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Pickup_Deployable",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ]
+        },
+        {
+            "Name": "Deployable_Mission_Confirm",
+            "WorldPressInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Pickup_Item",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                },
+                {
+                    "InteractionRow": {
+                        "RowName": "Interact_Mission_DNA_Confirm",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ],
+            "WorldAltHoldInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Pickup_Deployable",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ]
+        },
+        {
+            "Name": "Deployable_Mission_NoPickup",
+            "WorldPressInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Interact_Deployable",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                },
+                {
+                    "InteractionRow": {
+                        "RowName": "Pickup_Item",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ],
+            "WorldHoldInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Interact_Mission_DNA_Gather",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ]
+        },
+        {
+            "Name": "Organic_Extractor",
+            "WorldPressInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Interact_Deployable",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                },
+                {
+                    "InteractionRow": {
+                        "RowName": "Pickup_Item",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ],
+            "WorldHoldInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Interact_Toggle_Device_On",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ],
+            "WorldAltPressInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Fill_Object_Fuel",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                },
+                {
+                    "InteractionRow": {
+                        "RowName": "Interact_Fill_Container_Biofuel",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ],
+            "WorldAltHoldInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Pickup_Deployable",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ]
+        },
+        {
+            "Name": "Deployable_Power_Toggle_Only_NoInspect",
+            "WorldPressInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Pickup_Item",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ],
+            "WorldHoldInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Interact_Toggle_Device_On",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ],
+            "WorldAltHoldInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Pickup_Deployable",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ]
+        },
+        {
+            "Name": "NPC_EDEN_Interact",
+            "WorldPressInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Interact_EDEN_NPC",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ],
+            "WorldHoldInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Interact_Medical_Scan",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ],
+            "WorldAltPressInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Interact_NPC_Inventory_Take",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ]
+        },
+        {
+            "Name": "LockedDoor",
+            "WorldPressInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Interact_LockedDoor",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ]
+        },
+        {
+            "Name": "SecurityDoor",
+            "WorldPressInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Interact_SecurityDoor",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ]
+        },
+        {
+            "Name": "Faction_Satellite",
+            "WorldPressInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Interact_Satellite_Arm",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                },
+                {
+                    "InteractionRow": {
+                        "RowName": "Interact_Satellite_AccessInventory",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ]
+        },
+        {
+            "Name": "Deployable_Interact_Only",
+            "WorldPressInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Interact_Deployable",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ],
+            "WorldHoldInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Interact_Toggle_Device_On",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ]
+        },
+        {
+            "Name": "NPC_EDEN_Reward_Interact",
+            "WorldPressInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Interact_EDEN_NPC_Reward",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ],
+            "WorldHoldInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Interact_Medical_Scan",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ],
+            "WorldAltPressInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Interact_NPC_Inventory_Take",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ]
+        },
+        {
+            "Name": "NPC_EDEN_FishOwner",
+            "WorldPressInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Interact_PresentFish",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ],
+            "WorldHoldInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Interact_Medical_Scan",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ],
+            "WorldAltPressInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Interact_NPC_Inventory_Take",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ],
+            "WorldAltHoldInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Interact_EndContest",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ]
+        },
+        {
+            "Name": "Sign_Gate",
+            "WorldPressInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Interact_Deployable",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                },
+                {
+                    "InteractionRow": {
+                        "RowName": "Pickup_Item",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ],
+            "WorldHoldInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Interact_UpdateSign",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ],
+            "WorldAltHoldInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Pickup_Deployable",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ]
+        },
+        {
+            "Name": "Water_Purifier_T3",
+            "WorldPressInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Interact_Deployable",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                },
+                {
+                    "InteractionRow": {
+                        "RowName": "Pickup_Item",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                },
+                {
+                    "InteractionRow": {
+                        "RowName": "Interact_Deployable",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ],
+            "WorldHoldInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Interact_Toggle_Device_On",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ],
+            "WorldAltPressInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Water_Purifier_Drink_T3",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ],
+            "WorldAltHoldInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Pickup_Deployable",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ]
+        },
+        {
+            "Name": "NPC_Craft_Exchange",
+            "WorldPressInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Interact_NPC_Trade",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                },
+                {
+                    "InteractionRow": {
+                        "RowName": "Pickup_Item",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ],
+            "WorldHoldInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Interact_NPC_MapIcon",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ],
+            "WorldAltHoldInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Interact_NPC_Invite",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ]
+        },
+        {
+            "Name": "NPC_EDEN_Cook",
+            "WorldPressInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Interact_EDEN_NPC_Reward",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                },
+                {
+                    "InteractionRow": {
+                        "RowName": "Interact_NPC_Cook_Shop",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ],
+            "WorldHoldInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Interact_Medical_Scan",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ],
+            "WorldAltPressInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Interact_NPC_Inventory_Take",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ]
+        },
+        {
+            "Name": "WorldObject_NoInteract"
+        },
+        {
+            "Name": "WorldObject_GiveItems",
+            "WorldPressInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Interact_WorldObject_GiveItems",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ]
+        },
+        {
+            "Name": "NPC_NPC_Private_Firing",
+            "WorldPressInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Interact_Private_Firing",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ],
+            "WorldHoldInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Interact_Medical_Scan",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ],
+            "WorldAltPressInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Interact_NPC_Inventory_Take",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ]
+        },
+        {
+            "Name": "Medical_Cot",
+            "WorldPressInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Interact_Cot_Place",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ]
+        },
+        {
+            "Name": "Fill_RefinedOil",
+            "WorldPressInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Fill_Object_RefinedOil",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ]
+        },
+        {
+            "Name": "NPC_Interact_Simple",
+            "WorldPressInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Interact_NPC_SimpleTalk",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ],
+            "WorldHoldInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Interact_Medical_Scan",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ],
+            "WorldAltPressInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Interact_NPC_Inventory_Take",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ]
+        },
+        {
+            "Name": "SpeederBike",
+            "WorldPressInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Mount_Claim_Ownership",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                },
+                {
+                    "InteractionRow": {
+                        "RowName": "Enter_Seat_Vehicle",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ],
+            "WorldHoldInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Open_Mount_Inventory",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ],
+            "WorldAltPressInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Fill_Object_RefinedOil",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ],
+            "WorldAltHoldInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Interact_Pickup_Bike",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,1487 @@
+{
+    "RowStruct": "/Script/Icarus.HighlightableData",
+    "Defaults": {
+        "Behaviour": "None",
+        "DisplayName": "None",
+        "Description": "None",
+        "bDisableMeshOutline": false,
+        "bDisableTooltip": false
+    },
+    "Rows": [
+        {
+            "Name": "Generic",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"Generic-DisplayName\", \"None\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"Generic-Description\", \"None\")"
+        },
+        {
+            "Name": "BerryNode",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"BerryNode-DisplayName\", \"Berry Bush\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"BerryNode-Description\", \"Gives food and a little water.\")"
+        },
+        {
+            "Name": "WaterNode",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"WaterNode-DisplayName\", \"Water Source\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"WaterNode-Description\", \"Consume or fill containers.\")",
+            "bDisableMeshOutline": true
+        },
+        {
+            "Name": "FiberNode",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"FiberNode-DisplayName\", \"Fibrous Plant\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"FiberNode-Description\", \"Harvest for fiber.\")"
+        },
+        {
+            "Name": "Stone",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"Stone-DisplayName\", \"Stone\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"Stone-Description\", \"Basic crafting resource.\")"
+        },
+        {
+            "Name": "Grave",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"Grave-DisplayName\", \"Dead Prospector\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"Grave-Description\", \"A Prospector died here, forgotten.\")"
+        },
+        {
+            "Name": "Switch",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"Switch-DisplayName\", \"Switch\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"Switch-Description\", \"On/off.\")"
+        },
+        {
+            "Name": "InputSlot",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"InputSlot-DisplayName\", \"Input Slot\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"InputSlot-Description\", \"Connect to output or storage slots.\")"
+        },
+        {
+            "Name": "OutputSlot",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"OutputSlot-DisplayName\", \"Output Slot\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"OutputSlot-Description\", \"Connect to input or storage slots.\")"
+        },
+        {
+            "Name": "StorageSlot",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"StorageSlot-DisplayName\", \"Storage Slot\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"StorageSlot-Description\", \"Connect to input or output slots.\")"
+        },
+        {
+            "Name": "SilicaNode",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"SilicaNode-DisplayName\", \"Rocky Outcrop\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"SilicaNode-Description\", \"Harvest for silica.\")"
+        },
+        {
+            "Name": "OxiteNode",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"OxiteNode-DisplayName\", \"Oxite Deposit\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"OxiteNode-Description\", \"Collect for oxite.\")"
+        },
+        {
+            "Name": "Bauxite_Voxel",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"Bauxite_Voxel-DisplayName\", \"Bauxite Deposit\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"Bauxite_Voxel-Description\", \"Harvest with a pickaxe.\")"
+        },
+        {
+            "Name": "Copper_Voxel",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"Copper_Voxel-DisplayName\", \"Copper Deposit\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"Copper_Voxel-Description\", \"Harvest with a pickaxe.\")"
+        },
+        {
+            "Name": "Gold_Voxel",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"Gold_Voxel-DisplayName\", \"Gold Deposit\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"Gold_Voxel-Description\", \"Harvest with a pickaxe.\")"
+        },
+        {
+            "Name": "Metal_Voxel",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"Metal_Voxel-DisplayName\", \"Iron Deposit\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"Metal_Voxel-Description\", \"Harvest with a pickaxe.\")"
+        },
+        {
+            "Name": "Oxite_Voxel",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"Oxite_Voxel-DisplayName\", \"Oxite Deposit\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"Oxite_Voxel-Description\", \"Harvest with a pickaxe.\")"
+        },
+        {
+            "Name": "Silica_Voxel",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"Silica_Voxel-DisplayName\", \"Silica Deposit\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"Silica_Voxel-Description\", \"Harvest with a pickaxe.\")"
+        },
+        {
+            "Name": "Stone_Voxel",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"Stone_Voxel-DisplayName\", \"Stone Deposit\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"Stone_Voxel-Description\", \"Harvest with a pickaxe.\")"
+        },
+        {
+            "Name": "Sulfur_Voxel",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"Sulfur_Voxel-DisplayName\", \"Sulfur Deposit\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"Sulfur_Voxel-Description\", \"Harvest with a pickaxe.\")"
+        },
+        {
+            "Name": "Button",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"Button-DisplayName\", \"Button\")",
+            "Description": ""
+        },
+        {
+            "Name": "Space_Terminal",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"Space_Terminal-DisplayName\", \"Terminal\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"Space_Terminal-Description\", \"Space interface.\")"
+        },
+        {
+            "Name": "Drop_Ship",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"Drop_Ship-DisplayName\", \"Drop Ship\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"Drop_Ship-Description\", \"The only way in. Your only way out.\")"
+        },
+        {
+            "Name": "Stick",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"Stick-DisplayName\", \"Stick\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"Stick-Description\", \"Basic crafting resource.\")"
+        },
+        {
+            "Name": "Footprint",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"Footprint-DisplayName\", \"Footprint\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"Footprint-Description\", \"An animal has passed by recently.\")"
+        },
+        {
+            "Name": "Dead_Roat",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"Dead_Roat-DisplayName\", \"Dead Roat\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"Dead_Roat-Description\", \"Alas, poor roat.\")"
+        },
+        {
+            "Name": "SmallTree",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"SmallTree-DisplayName\", \"Small Tree\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"SmallTree-Description\", \"Harvest for sticks.\")"
+        },
+        {
+            "Name": "ShipEditorTerminal",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"ShipEditorTerminal-DisplayName\", \"Ship Editor\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"ShipEditorTerminal-Description\", \"Access this to move to the ship editor.\")"
+        },
+        {
+            "Name": "Palm_Bush",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"Palm_Bush-DisplayName\", \"Palm Bush\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"Palm_Bush-Description\", \"Harvest for resources.\")"
+        },
+        {
+            "Name": "Fern_Plant",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"Fern_Plant-DisplayName\", \"Fern\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"Fern_Plant-Description\", \"Harvest for fiber.\")"
+        },
+        {
+            "Name": "MetaShopTerminal",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"MetaShopTerminal-DisplayName\", \"Orbital Merchant\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"MetaShopTerminal-Description\", \"Purchase items to be used on the surface.\")"
+        },
+        {
+            "Name": "Equipment_Pod",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"Equipment_Pod-DisplayName\", \"Equipment Pod\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"Equipment_Pod-Description\", \"Manna from heaven.\")"
+        },
+        {
+            "Name": "Item_Battery_Input",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"Item_Battery_Input-DisplayName\", \"Battery Input\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"Item_Battery_Input-Description\", \"Connect a Power Line here to input energy into the battery.\")"
+        },
+        {
+            "Name": "Item_Battery_Output",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"Item_Battery_Output-DisplayName\", \"Battery Output\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"Item_Battery_Output-Description\", \"Connect a Power Line here to draw energy from the battery.\")"
+        },
+        {
+            "Name": "Overflow_Bag",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"Overflow_Bag-DisplayName\", \"Overflow Bag\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"Overflow_Bag-Description\", \"Contains the contents of a deployable device.\")"
+        },
+        {
+            "Name": "Sponge",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"Sponge-DisplayName\", \"Sponge\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"Sponge-Description\", \"Harvest for water storage.\")"
+        },
+        {
+            "Name": "Lily",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"Lily-DisplayName\", \"Lily\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"Lily-Description\", \"Harvest for medicinal resources.\")"
+        },
+        {
+            "Name": "Reed_Flower",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"Reed_Flower-DisplayName\", \"Reed Flower\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"Reed_Flower-Description\", \"Harvest for medicinal resources.\")"
+        },
+        {
+            "Name": "Wheat",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"Wheat-DisplayName\", \"Wheat\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"Wheat-Description\", \"Harvest for resources.\")"
+        },
+        {
+            "Name": "Yeast",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"Yeast-DisplayName\", \"Yeast\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"Yeast-Description\", \"A herb rich in natural yeasts.\")"
+        },
+        {
+            "Name": "Mushroom",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"Mushroom-DisplayName\", \"Mushroom\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"Mushroom-Description\", \"A fungus that heightens awareness.\")"
+        },
+        {
+            "Name": "Cactus",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"Cactus-DisplayName\", \"Cactus\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"Cactus-Description\", \"Harvest for medicinal resources.\")"
+        },
+        {
+            "Name": "Aloe_Vera",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"Aloe_Vera-DisplayName\", \"Aloe\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"Aloe_Vera-Description\", \"Harvest for medicinal resources.\")"
+        },
+        {
+            "Name": "Fish",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"Fish-DisplayName\", \"Fish\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"Fish-Description\", \"Harvest for food.\")"
+        },
+        {
+            "Name": "Creature",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"Creature-DisplayName\", \"Creature\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"Creature-Description\", \"An animate organism.\")"
+        },
+        {
+            "Name": "Ice",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"Ice-DisplayName\", \"Ice\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"Ice-Description\", \"Collect for water.\")"
+        },
+        {
+            "Name": "Corn",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"Corn-DisplayName\", \"Corn\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"Corn-Description\", \"Consume or harvest for planting.\")"
+        },
+        {
+            "Name": "Inaris_Satellite",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"Inaris_Satellite-DisplayName\", \"Terraforming Satellite\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"Inaris_Satellite-Description\", \"An orbital biofactory.\")"
+        },
+        {
+            "Name": "SleepingBody",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"SleepingBody-DisplayName\", \"Sleeping Prospector\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"SleepingBody-Description\", \"Sleep well.\")"
+        },
+        {
+            "Name": "Driftwood",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"Driftwood-DisplayName\", \"Driftwood\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"Driftwood-Description\", \"Harvest for wood.\")"
+        },
+        {
+            "Name": "Faction_Mission_Blocker",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"Faction_Mission_Blocker-DisplayName\", \"Rock Wall\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"Faction_Mission_Blocker-Description\", \"Looks like it can be drilled through.\")"
+        },
+        {
+            "Name": "BloodTrail",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"BloodTrail-DisplayName\", \"Blood Trail\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"BloodTrail-Description\", \"An injured animal has passed by recently.\")"
+        },
+        {
+            "Name": "Mission_Crate",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"Mission_Crate-DisplayName\", \"Supply Crate\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"Mission_Crate-Description\", \"A reinforced supply crate, dropped from orbit.\")"
+        },
+        {
+            "Name": "Crashed_Drone",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"Crashed_Drone-DisplayName\", \"Drone Wreckage\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"Crashed_Drone-Description\", \"Remains of an ACS drone carrying prototype technology.\")"
+        },
+        {
+            "Name": "RadarPlacement",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"RadarPlacement-DisplayName\", \"Deploy Location\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"RadarPlacement-Description\", \"Placement for the Radar.\")"
+        },
+        {
+            "Name": "AlphaWolf_Clue1",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"AlphaWolf_Clue1-DisplayName\", \"Animal Scratch Marks\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"AlphaWolf_Clue1-Description\", \"ANIMAL MARKINGS: The depth, distance and disturbance pattern of markings is consistent with canis lupus.\")"
+        },
+        {
+            "Name": "AlphaWolf_Clue2",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"AlphaWolf_Clue2-DisplayName\", \"Animal Tracks\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"AlphaWolf_Clue2-Description\", \"PACK HUNTERS: The size, arrangement and spacing of tracks indicates several large canine predators moving as a group.\")"
+        },
+        {
+            "Name": "AlphaWolf_Clue3",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"AlphaWolf_Clue3-DisplayName\", \"Hunting Remains\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"AlphaWolf_Clue3-Description\", \"NOCTURNAL HUNTER: These remains of noctural animals suggest a predator that is most active after dark.\")"
+        },
+        {
+            "Name": "AlphaWolf_Den",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"AlphaWolf_Den-DisplayName\", \"Animal Den\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"AlphaWolf_Den-Description\", \"NIGHT WALKER: The wolves appear to be active only at night.\")",
+            "bDisableMeshOutline": true
+        },
+        {
+            "Name": "BW6_Research_1",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"BW6_Research_1-DisplayName\", \"Strange Bloom\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"BW6_Research_1-Description\", \"A highly unusual blossom, possibly from beyond the terrazone.\")"
+        },
+        {
+            "Name": "BW6_Research_2",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"BW6_Research_2-DisplayName\", \"Rotting Deer Corpse\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"BW6_Research_2-Description\", \"A deer corpse being slowly consumed by some kind of invasive, water-borne growth.\")"
+        },
+        {
+            "Name": "BW6_Research_3",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"BW6_Research_3-DisplayName\", \"Damaged Plant\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"BW6_Research_3-Description\", \"How this plant appeared here, and endures sub-zero temperatures, is a mystery Sinotai seeks to answer.\")"
+        },
+        {
+            "Name": "Pumpkin",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"Pumpkin-DisplayName\", \"Pumpkin\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"Pumpkin-Description\", \"A kind of squash.\")"
+        },
+        {
+            "Name": "Beans",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"Beans-DisplayName\", \"Soy Beans\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"Beans-Description\", \"An excellent food source.\")"
+        },
+        {
+            "Name": "Squash",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"Squash-DisplayName\", \"Squash\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"Squash-Description\", \"A herbaceous fruit.\")"
+        },
+        {
+            "Name": "Watermelon",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"Watermelon-DisplayName\", \"Watermelon\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"Watermelon-Description\", \"Good enough to eat.\")"
+        },
+        {
+            "Name": "Cocoa",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"Cocoa-DisplayName\", \"Cocoa\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"Cocoa-Description\", \"A useful ingredient.\")"
+        },
+        {
+            "Name": "Coffee",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"Coffee-DisplayName\", \"Coffee\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"Coffee-Description\", \"Produces a revivifying beverage.\")"
+        },
+        {
+            "Name": "GreenTea",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"GreenTea-DisplayName\", \"Tea Bush\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"GreenTea-Description\", \"Produces a restorative beverage.\")"
+        },
+        {
+            "Name": "WildTea",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"WildTea-DisplayName\", \"Wild Gorse\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"WildTea-Description\", \"Flowers produce a warming, quenching beverage.\")"
+        },
+        {
+            "Name": "Carrot",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"Carrot-DisplayName\", \"Carrot\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"Carrot-Description\", \"An essential root vegetable.\")"
+        },
+        {
+            "Name": "Expedition_CrashSite",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"Expedition_CrashSite-DisplayName\", \"Dropship Debris\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"Expedition_CrashSite-Description\", \"Partial remains of a dropship.\")"
+        },
+        {
+            "Name": "Rock_Formation",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"Rock_Formation-DisplayName\", \"Unusual Rockform\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"Rock_Formation-Description\", \"Inexplicably formed geo-structures.\")"
+        },
+        {
+            "Name": "Sandworm_Clue1",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"Sandworm_Clue1-DisplayName\", \"Mounded tracks\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"Sandworm_Clue1-Description\", \"Indicates subterranean travel by a large creature or entity.\")"
+        },
+        {
+            "Name": "Sandworm_Clue2",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"Sandworm_Clue2-DisplayName\", \"Demolished rock forms\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"Sandworm_Clue2-Description\", \"Rock debris has been violently dismantled, suggesting a creature able to pierce solid rock.\")"
+        },
+        {
+            "Name": "Sandworm_Clue3",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"Sandworm_Clue3-DisplayName\", \"Organic remains\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"Sandworm_Clue3-Description\", \"Appears to be the remains of acid digestion of animal matter ... a large animal.\")"
+        },
+        {
+            "Name": "Stockpile_Ship",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"Stockpile_Ship-DisplayName\", \"Cargo Pod\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"Stockpile_Ship-Description\", \"A reusable, automated launch vehicle for small payloads.\")"
+        },
+        {
+            "Name": "Jaguar_Clue",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"Jaguar_Clue-DisplayName\", \"Hunting Remains\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"Jaguar_Clue-Description\", \"SHY HUNTER: The depth, distance and disturbance pattern of markings is consistent with Panthera onca.\")"
+        },
+        {
+            "Name": "Riverlands_Research_1",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"Riverlands_Research_1-DisplayName\", \"Night Blossom\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"Riverlands_Research_1-Description\", \"A new, nocturnally-flowering bloom, seemingly of non-Earth origin.\")"
+        },
+        {
+            "Name": "Riverlands_Research_2",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"Riverlands_Research_2-DisplayName\", \"Exotic Geode\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"Riverlands_Research_2-Description\", \"A strange crystalline formation with possible inclusions of exotic matter.\")"
+        },
+        {
+            "Name": "Polar_Bear_Den",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"Polar_Bear_Den-DisplayName\", \"Hunting Remains\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"Polar_Bear_Den-Description\", \"An assortment of bones and flesh discarded by a Predator.\")"
+        },
+        {
+            "Name": "Deep_Mining_Ore_Deposit",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"Deep_Mining_Ore_Deposit-DisplayName\", \"Deep Mining Ore Deposit\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"Deep_Mining_Ore_Deposit-Description\", \"An ore deposit that can be drilled with deep mining equipment.\")"
+        },
+        {
+            "Name": "Creature_Corpse_Large",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"Creature_Corpse_Large-DisplayName\", \"Creature Corpse\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"Creature_Corpse_Large-Description\", \"The skeletal remains of a large creature.\")"
+        },
+        {
+            "Name": "Mission_Analyser",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"Mission_Analyser-DisplayName\", \"Analyser\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"Mission_Analyser-Description\", \"Scans biosamples for processing. To determine use.\")"
+        },
+        {
+            "Name": "Broken_Crate",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"Broken_Crate-DisplayName\", \"Broken Crate\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"Broken_Crate-Description\", \"Seems to have fallen quite a distance, may contain essential items.\")"
+        },
+        {
+            "Name": "Broken_Crate_In_Corpse",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"Broken_Crate_In_Corpse-DisplayName\", \"Broken Crate in Corpse Pile\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"Broken_Crate_In_Corpse-Description\", \"A damaged crate between bones and flesh of recently killed creatures.\")"
+        },
+        {
+            "Name": "Mammoth_Carcass",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"Mammoth_Carcass-DisplayName\", \"Mammoth Carcass\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"Mammoth_Carcass-Description\", \"The remains of a once mighty mammoth.\")"
+        },
+        {
+            "Name": "Frozen_Mammoth",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"Frozen_Mammoth-DisplayName\", \"Snap Frozen Mammoth\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"Frozen_Mammoth-Description\", \"A perfectly preserved mammoth snap frozen in ice.\")"
+        },
+        {
+            "Name": "Cave_Worm_Loot",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"Cave_Worm_Loot-DisplayName\", \"Worm Remains\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"Cave_Worm_Loot-Description\", \"A small sack containing the remnants of a worm.\")"
+        },
+        {
+            "Name": "SulfurWorm_Loot",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"SulfurWorm_Loot-DisplayName\", \"Sulfur Worm Remains\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"SulfurWorm_Loot-Description\", \"A sack containing the remnants of a Sulfur Worm.\")"
+        },
+        {
+            "Name": "Mission_Biological_Containment",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"Mission_Biological_Containment-DisplayName\", \"Arachnid Containment Unit\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"Mission_Biological_Containment-Description\", \"There is a faint sound of scratching coming from this case.\")"
+        },
+        {
+            "Name": "Mission_Mining_DropPod",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"Mission_Mining_DropPod-DisplayName\", \"Experimental Mining Equipment Pod\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"Mission_Mining_DropPod-Description\", \"Specially designed pod to hold prototype equipment and raw metal ores.\")"
+        },
+        {
+            "Name": "Caveworm_Egg_Nest",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"Caveworm_Egg_Nest-DisplayName\", \"Caveworm Nest\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"Caveworm_Egg_Nest-Description\", \"A nest Caveworms use to grow their young.\")"
+        },
+        {
+            "Name": "Enzyme_Geyser",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"Enzyme_Geyser-DisplayName\", \"Enzyme Geyser\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"Enzyme_Geyser-Description\", \"Place a Vapor Condenser on top to harvest Exotics and Condensed Enzymes. Place a Water Borer to gather water.\")"
+        },
+        {
+            "Name": "Mission_Central_Scanner",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"Mission_Central_Scanner-DisplayName\", \"Survey Unit\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"Mission_Central_Scanner-Description\", \"An advanced scanner used to scan entire regions of Icarus.\")"
+        },
+        {
+            "Name": "Mission_Broken_Biological_Containment",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"Mission_Broken_Biological_Containment-DisplayName\", \"Damaged Biological Containment\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"Mission_Broken_Biological_Containment-Description\", \"Specially designed pod to hold biological samples in a clean enviroment.\")"
+        },
+        {
+            "Name": "Deep_Mining_Ore_Deposit_Abyssal_Oxite",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"Deep_Mining_Ore_Deposit_Abyssal_Oxite-DisplayName\", \"Deep Mining Ore Deposit: Abyssal Oxite\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"Deep_Mining_Ore_Deposit_Abyssal_Oxite-Description\", \"An ore deposit that can be drilled with deep mining equipment.\")"
+        },
+        {
+            "Name": "Deep_Mining_Ore_Deposit_Iron",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"Deep_Mining_Ore_Deposit_Iron-DisplayName\", \"Deep Mining Ore Deposit: Iron\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"Deep_Mining_Ore_Deposit_Iron-Description\", \"An ore deposit that can be drilled with deep mining equipment.\")"
+        },
+        {
+            "Name": "Deep_Mining_Ore_Deposit_Gold",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"Deep_Mining_Ore_Deposit_Gold-DisplayName\", \"Deep Mining Ore Deposit: Gold\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"Deep_Mining_Ore_Deposit_Gold-Description\", \"An ore deposit that can be drilled with deep mining equipment.\")"
+        },
+        {
+            "Name": "Deep_Mining_Ore_Deposit_Silicon",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"Deep_Mining_Ore_Deposit_Silicon-DisplayName\", \"Deep Mining Ore Deposit: Silica\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"Deep_Mining_Ore_Deposit_Silicon-Description\", \"An ore deposit that can be drilled with deep mining equipment.\")"
+        },
+        {
+            "Name": "Deep_Mining_Ore_Deposit_Sulfur",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"Deep_Mining_Ore_Deposit_Sulfur-DisplayName\", \"Deep Mining Ore Deposit: Sulfur\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"Deep_Mining_Ore_Deposit_Sulfur-Description\", \"An ore deposit that can be drilled with deep mining equipment.\")"
+        },
+        {
+            "Name": "Deep_Mining_Ore_Deposit_Copper",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"Deep_Mining_Ore_Deposit_Copper-DisplayName\", \"Deep Mining Ore Deposit: Copper\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"Deep_Mining_Ore_Deposit_Copper-Description\", \"An ore deposit that can be drilled with deep mining equipment.\")"
+        },
+        {
+            "Name": "Deep_Mining_Ore_Deposit_Aluminium",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"Deep_Mining_Ore_Deposit_Aluminium-DisplayName\", \"Deep Mining Ore Deposit: Aluminium\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"Deep_Mining_Ore_Deposit_Aluminium-Description\", \"An ore deposit that can be drilled with deep mining equipment.\")"
+        },
+        {
+            "Name": "Deep_Mining_Ore_Deposit_Coal",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"Deep_Mining_Ore_Deposit_Coal-DisplayName\", \"Deep Mining Ore Deposit: Coal\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"Deep_Mining_Ore_Deposit_Coal-Description\", \"An ore deposit that can be drilled with deep mining equipment.\")"
+        },
+        {
+            "Name": "Target_Start",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"Target_Start-DisplayName\", \"Start\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"Target_Start-Description\", \"Interact To Start.\")"
+        },
+        {
+            "Name": "Supply_Transport_Pod",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"Supply_Transport_Pod-DisplayName\", \"Sinotai Supply Pod\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"Supply_Transport_Pod-Description\", \"A Hastily Built Drop Pod for Supplying Prospectors with Equipment.\")"
+        },
+        {
+            "Name": "Retrieval_Transport_Pod",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"Retrieval_Transport_Pod-DisplayName\", \"Sinotai Retrieval Pod\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"Retrieval_Transport_Pod-Description\", \"A Hastily Built Drop Pod for Retrieving Items From Icarus.\")"
+        },
+        {
+            "Name": "Reward_Transport_Pod",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"Reward_Transport_Pod-DisplayName\", \"Sinotai Reward Pod\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"Reward_Transport_Pod-Description\", \"A Hastily Built Drop Pod for Delivering Rewards on Mission Complete to Prospectors.\")"
+        },
+        {
+            "Name": "Exotic_Transport_Pod",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"Exotic_Transport_Pod-DisplayName\", \"Exotic Delivery Pod\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"Exotic_Transport_Pod-Description\", \"A Hastily Built Drop Pod for Delivering Prospectors Exotics to the Station For Processing.\")"
+        },
+        {
+            "Name": "Group_15_Agent",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"Group_15_Agent-DisplayName\", \"Dead Group 15 Agent\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"Group_15_Agent-Description\", \"Whatever killed them might still be around.\")"
+        },
+        {
+            "Name": "Sol_Device",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"Sol_Device-DisplayName\", \"Sol\\'s Data Link\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"Sol_Device-Description\", \"An Old Communication Device that Sol Stashed on Planet.\")"
+        },
+        {
+            "Name": "Landmine",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"Landmine-DisplayName\", \"Landmine\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"Landmine-Description\", \"Explodes when movement is detected.\")"
+        },
+        {
+            "Name": "MissionDataDevice",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"MissionDataDevice-DisplayName\", \"Data Storage Communicator\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"MissionDataDevice-Description\", \"A Device that can store and transmit large amounts of data.\")"
+        },
+        {
+            "Name": "Old_Cache",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"Old_Cache-DisplayName\", \"Old Cache\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"Old_Cache-Description\", \"A cache left behind by another prospector.\")"
+        },
+        {
+            "Name": "Downed_Drone",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"Downed_Drone-DisplayName\", \"Downed Drone\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"Downed_Drone-Description\", \"Seems to have been shot down?\")"
+        },
+        {
+            "Name": "Exotic_Plant",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"Exotic_Plant-DisplayName\", \"Strange Plant\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"Exotic_Plant-Description\", \"This plant looks like it has been infused with Exotics.\")"
+        },
+        {
+            "Name": "LaserPlacement",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"LaserPlacement-DisplayName\", \"Deploy Location\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"LaserPlacement-Description\", \"Placement for the Laser.\")"
+        },
+        {
+            "Name": "PlatingPlacement",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"PlatingPlacement-DisplayName\", \"Deploy Location\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"PlatingPlacement-Description\", \"Placement for the Plating.\")"
+        },
+        {
+            "Name": "Tomato",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"Tomato-DisplayName\", \"Tomato\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"Tomato-Description\", \"Hearty and filling.\")"
+        },
+        {
+            "Name": "Super_Cooled_Ice_Deposit",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"Super_Cooled_Ice_Deposit-DisplayName\", \"Super Cooled Ice Deposit\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"Super_Cooled_Ice_Deposit-Description\", \"A deposit of extremely cold Ice. Can be mined with an Ice Borer.\")"
+        },
+        {
+            "Name": "Potato",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"Potato-DisplayName\", \"Potato\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"Potato-Description\", \"A staple food of many generations.\")"
+        },
+        {
+            "Name": "Fern_Withered",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"Fern_Withered-DisplayName\", \"Withered Fern\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"Fern_Withered-Description\", \"Harvest for resources.\")"
+        },
+        {
+            "Name": "Fern_Frosted",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"Fern_Frosted-DisplayName\", \"Frosted Fern\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"Fern_Frosted-Description\", \"Harvest for resources.\")"
+        },
+        {
+            "Name": "SmallTree_Withered",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"SmallTree_Withered-DisplayName\", \"Small Withered Tree\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"SmallTree_Withered-Description\", \"Harvest for sticks.\")"
+        },
+        {
+            "Name": "SmallTree_Frosted",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"SmallTree_Frosted-DisplayName\", \"Small Frosted Tree\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"SmallTree_Frosted-Description\", \"Harvest for sticks.\")"
+        },
+        {
+            "Name": "Tussock",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"Tussock-DisplayName\", \"Tussock\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"Tussock-Description\", \"Harvest for resources.\")"
+        },
+        {
+            "Name": "Fern_Tall",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"Fern_Tall-DisplayName\", \"Tall Fern\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"Fern_Tall-Description\", \"Harvest for resources.\")"
+        },
+        {
+            "Name": "Brambles",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"Brambles-DisplayName\", \"Brambles\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"Brambles-Description\", \"Harvest for resources, requires a sickle.\")"
+        },
+        {
+            "Name": "Brambles_Spiked",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"Brambles_Spiked-DisplayName\", \"Spiked Brambles\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"Brambles_Spiked-Description\", \"Harvest for resources, requires a sickle.\")"
+        },
+        {
+            "Name": "Fern_Creeping",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"Fern_Creeping-DisplayName\", \"Creeping Fern\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"Fern_Creeping-Description\", \"Harvest for resources.\")"
+        },
+        {
+            "Name": "Palm_Bulb",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"Palm_Bulb-DisplayName\", \"Bulbous Palm\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"Palm_Bulb-Description\", \"Harvest for resources.\")"
+        },
+        {
+            "Name": "MediumTree",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"MediumTree-DisplayName\", \"Medium Tree\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"MediumTree-Description\", \"Harvest for sticks or wood. Requires an axe.\")"
+        },
+        {
+            "Name": "Toitoi",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"Toitoi-DisplayName\", \"Toetoe\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"Toitoi-Description\", \"Harvest for resources.\")"
+        },
+        {
+            "Name": "TraitorClue_Blood",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"TraitorClue_Blood-DisplayName\", \"Large Blood Splatter\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"TraitorClue_Blood-Description\", \"You\\'re narrowing down on the traitors whereabouts.\")"
+        },
+        {
+            "Name": "TraitorClue_Scratches",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"TraitorClue_Scratches-DisplayName\", \"Wild Animal Scratchings\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"TraitorClue_Scratches-Description\", \"You\\'re narrowing down on the traitors whereabouts.\")"
+        },
+        {
+            "Name": "TraitorClue_Tracks",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"TraitorClue_Tracks-DisplayName\", \"Animal Tracks\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"TraitorClue_Tracks-Description\", \"You\\'re narrowing down on the traitors whereabouts.\")"
+        },
+        {
+            "Name": "TraitorClue_BloodScratches",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"TraitorClue_BloodScratches-DisplayName\", \"Claw Marks and Blood Splatters\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"TraitorClue_BloodScratches-Description\", \"You\\'re narrowing down on the traitors whereabouts.\")"
+        },
+        {
+            "Name": "G15DataDevice",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"G15DataDevice-DisplayName\", \"Data Storage Device\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"G15DataDevice-Description\", \"A Device that can store and transmit large amounts of data.\")"
+        },
+        {
+            "Name": "GasFlyer_Loot",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"GasFlyer_Loot-DisplayName\", \"Drifter Remains\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"GasFlyer_Loot-Description\", \"A small sack containing the remnants of a drifter.\")"
+        },
+        {
+            "Name": "Deep_Mining_Ore_Deposit_Oxite",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"Deep_Mining_Ore_Deposit_Oxite-DisplayName\", \"Deep Mining Ore Deposit: Oxite\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"Deep_Mining_Ore_Deposit_Oxite-Description\", \"An ore deposit that can be drilled with deep mining equipment.\")"
+        },
+        {
+            "Name": "Deep_Mining_Ore_Deposit_Salt",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"Deep_Mining_Ore_Deposit_Salt-DisplayName\", \"Deep Mining Ore Deposit: Salt\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"Deep_Mining_Ore_Deposit_Salt-Description\", \"An ore deposit that can be drilled with deep mining equipment.\")"
+        },
+        {
+            "Name": "Deep_Mining_Ore_Deposit_Stone",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"Deep_Mining_Ore_Deposit_Stone-DisplayName\", \"Deep Mining Ore Deposit: Stone\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"Deep_Mining_Ore_Deposit_Stone-Description\", \"An ore deposit that can be drilled with deep mining equipment.\")"
+        },
+        {
+            "Name": "Deep_Mining_Ore_Deposit_Titanium",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"Deep_Mining_Ore_Deposit_Titanium-DisplayName\", \"Deep Mining Ore Deposit: Titanium\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"Deep_Mining_Ore_Deposit_Titanium-Description\", \"An ore deposit that can be drilled with deep mining equipment.\")"
+        },
+        {
+            "Name": "Deep_Mining_Ore_Deposit_Platinum",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"Deep_Mining_Ore_Deposit_Platinum-DisplayName\", \"Deep Mining Ore Deposit: Platinum\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"Deep_Mining_Ore_Deposit_Platinum-Description\", \"An ore deposit that can be drilled with deep mining equipment.\")"
+        },
+        {
+            "Name": "Deep_Mining_Ore_Deposit_Clay",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"Deep_Mining_Ore_Deposit_Clay-DisplayName\", \"Deep Mining Ore Deposit: Clay\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"Deep_Mining_Ore_Deposit_Clay-Description\", \"An ore deposit that can be drilled with deep mining equipment.\")"
+        },
+        {
+            "Name": "Deep_Mining_Ore_Deposit_Scoria",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"Deep_Mining_Ore_Deposit_Scoria-DisplayName\", \"Deep Mining Ore Deposit: Scoria\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"Deep_Mining_Ore_Deposit_Scoria-Description\", \"An ore deposit that can be drilled with deep mining equipment.\")"
+        },
+        {
+            "Name": "Deep_Mining_Ore_Deposit_Obsidian",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"Deep_Mining_Ore_Deposit_Obsidian-DisplayName\", \"Deep Mining Ore Deposit: Obsidian\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"Deep_Mining_Ore_Deposit_Obsidian-Description\", \"An ore deposit that can be drilled with deep mining equipment.\")"
+        },
+        {
+            "Name": "Overflow_Bag_Gravestone",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"Overflow_Bag_Gravestone-DisplayName\", \"Lost Equipment\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"Overflow_Bag_Gravestone-Description\", \"Contains the inventory of a fallen prospector.\")"
+        },
+        {
+            "Name": "Batnest_Cave",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"Batnest_Cave-DisplayName\", \"Vesper Nest\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"Batnest_Cave-Description\", \"A rough nest containing a bat-like creature. Destroy to loot its contents.\")"
+        },
+        {
+            "Name": "Batnest_Arctic",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"Batnest_Arctic-DisplayName\", \"Arctic Vesper Nest\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"Batnest_Arctic-Description\", \"A rough nest containing a bat-like creature. Destroy to loot its contents.\")"
+        },
+        {
+            "Name": "WildBeehive",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"WildBeehive-DisplayName\", \"Wild Beehive\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"WildBeehive-Description\", \"Source of honeycomb and bees, which aggressively protect the hive. \")"
+        },
+        {
+            "Name": "Deep_Mining_Ore_Deposit_Limestone",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"Deep_Mining_Ore_Deposit_Limestone-DisplayName\", \"Deep Mining Ore Deposit: Limestone\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"Deep_Mining_Ore_Deposit_Limestone-Description\", \"An ore deposit that can be drilled with deep mining equipment.\")"
+        },
+        {
+            "Name": "Landshark_Loot",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"Landshark_Loot-DisplayName\", \"Landshark Remains\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"Landshark_Loot-Description\", \"A sack containing the remnants of a great worm.\")"
+        },
+        {
+            "Name": "FrozenResearcher",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"FrozenResearcher-DisplayName\", \"Frozen Researcher\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"FrozenResearcher-Description\", \"Out of supplies, out of sanity, searching for the lights.\")"
+        },
+        {
+            "Name": "Strange_Egg_Clutch",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"Strange_Egg_Clutch-DisplayName\", \"Strange Egg Clutch\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"Strange_Egg_Clutch-Description\", \"There might be some undamaged eggs left inside.\")"
+        },
+        {
+            "Name": "Hyena_Den",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"Hyena_Den-DisplayName\", \"Hyena Den\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"Hyena_Den-Description\", \"A den full of Hyenas. Destroy it with a pickaxe before more come out.\")"
+        },
+        {
+            "Name": "Hyena_Den_Alpha",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"Hyena_Den_Alpha-DisplayName\", \"Alpha Hyena Den\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"Hyena_Den_Alpha-Description\", \"A den for a Hyena Alpha.\")"
+        },
+        {
+            "Name": "Wolf_Den",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"Wolf_Den-DisplayName\", \"Wolf Den\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"Wolf_Den-Description\", \"A den full of Wolves. Destroy it with a pickaxe before more come out.\")"
+        },
+        {
+            "Name": "Wild_Kiwi_Nest",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"Wild_Kiwi_Nest-DisplayName\", \"Wild Kiwi Nest\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"Wild_Kiwi_Nest-Description\", \"A small nest in which Kiwis sleep during the day.\")"
+        },
+        {
+            "Name": "Exotic_Deposit",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"Exotic_Deposit-DisplayName\", \"Exotic Deposit\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"Exotic_Deposit-Description\", \"Exotic matter, an impossibility in your hands. Collect with an Extractor.\")"
+        },
+        {
+            "Name": "Exotic_Deposit_Red",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"Exotic_Deposit_Red-DisplayName\", \"Exotic Tree\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"Exotic_Deposit_Red-Description\", \"A tree formed of Volatile Raw Exotics. Collect with a Harvester.\")"
+        },
+        {
+            "Name": "AerosolEmitterPlacement",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"AerosolEmitterPlacement-DisplayName\", \"Deploy Location\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"AerosolEmitterPlacement-Description\", \"Placement for the Aerosol Emitter.\")"
+        },
+        {
+            "Name": "LiquidPlacement",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"LiquidPlacement-DisplayName\", \"Deploy Location\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"LiquidPlacement-Description\", \"Placement for the Liquid Solution.\")"
+        },
+        {
+            "Name": "MonitoringPylon",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"MonitoringPylon-DisplayName\", \"Deploy Location\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"MonitoringPylon-Description\", \"Placement for the Monitoring Pylon.\")"
+        },
+        {
+            "Name": "NPC_1",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"NPC_1-DisplayName\", \"Captain Church\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"NPC_1-Description\", \"Hurt, will not survive without medical attention.\")"
+        },
+        {
+            "Name": "NPC_1_Healed",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"NPC_1_Healed-DisplayName\", \"Captain Church\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"NPC_1_Healed-Description\", \"Leader of the Recovery Crew. A good fella.\")"
+        },
+        {
+            "Name": "NPC_2",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"NPC_2-DisplayName\", \"Private Tucker\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"NPC_2-Description\", \"Hurt, will not survive without medical attention.\")"
+        },
+        {
+            "Name": "NPC_2_Healed",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"NPC_2_Healed-DisplayName\", \"Private Tucker\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"NPC_2_Healed-Description\", \"The youngest member of the crew. Aspires to one day be like Captain Church.\")"
+        },
+        {
+            "Name": "NPC_3",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"NPC_3-DisplayName\", \"Medic Griff\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"NPC_3-Description\", \"Hurt, will not survive without medical attention.\")"
+        },
+        {
+            "Name": "NPC_3_Healed",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"NPC_3_Healed-DisplayName\", \"Medic Griff\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"NPC_3_Healed-Description\", \"They try their best to keep everyone alive.\")"
+        },
+        {
+            "Name": "NPC_4",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"NPC_4-DisplayName\", \"Private Simmons\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"NPC_4-Description\", \"Hurt, will not survive without medical attention.\")"
+        },
+        {
+            "Name": "NPC_4_Healed",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"NPC_4_Healed-DisplayName\", \"Private Simmons\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"NPC_4_Healed-Description\", \"Likes to say I Told You So to Church a lot.\")"
+        },
+        {
+            "Name": "NPC_5",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"NPC_5-DisplayName\", \"Lieutenant Washington\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"NPC_5-Description\", \"Hurt, will not survive without medical attention.\")"
+        },
+        {
+            "Name": "NPC_5_Healed",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"NPC_5_Healed-DisplayName\", \"Lieutenant Washington\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"NPC_5_Healed-Description\", \"Has saved the lives of the rest of the Crew more times than they can count.\")"
+        },
+        {
+            "Name": "Mining_Truck_Engine",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"Mining_Truck_Engine-DisplayName\", \"Mining Truck Engine\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"Mining_Truck_Engine-Description\", \"A Vital Component for Powering the Truck\")"
+        },
+        {
+            "Name": "Mining_Truck_Storage",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"Mining_Truck_Storage-DisplayName\", \"Mining Truck Engine & Storage\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"Mining_Truck_Storage-Description\", \"An Access Hatch for the Engine and Storage to Store Supplies.\")"
+        },
+        {
+            "Name": "Mining_Truck_Fuel",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"Mining_Truck_Fuel-DisplayName\", \"Fuel Tank\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"Mining_Truck_Fuel-Description\", \"A Large Tank for Fuel Storage.\")"
+        },
+        {
+            "Name": "Mining_Truck_Water",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"Mining_Truck_Water-DisplayName\", \"Water Storage\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"Mining_Truck_Water-Description\", \"A Large Tank for Water Storage.\")"
+        },
+        {
+            "Name": "Ashlands_Blocker",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"Ashlands_Blocker-DisplayName\", \"Ashlands Barricade\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"Ashlands_Blocker-Description\", \"DANGER, KEEP OUT\")"
+        },
+        {
+            "Name": "Ashlands_Bunker_Note_1",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"Ashlands_Bunker_Note_1-DisplayName\", \"Ruaumoko Bunker Note #1\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"Ashlands_Bunker_Note_1-Description\", \"A hastily scribbled note that\\'s barely legible.\")"
+        },
+        {
+            "Name": "Ashlands_Bunker_Note_2",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"Ashlands_Bunker_Note_2-DisplayName\", \"Ruaumoko Bunker Note #2\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"Ashlands_Bunker_Note_2-Description\", \"A hastily scribbled note that\\'s barely legible.\")"
+        },
+        {
+            "Name": "Ashlands_Bunker_Note_3",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"Ashlands_Bunker_Note_3-DisplayName\", \"Ruaumoko Bunker Note #3\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"Ashlands_Bunker_Note_3-Description\", \"A hastily scribbled note that\\'s barely legible.\")"
+        },
+        {
+            "Name": "Icesheet_Blocker",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"Icesheet_Blocker-DisplayName\", \"Icesheet Cave-In\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"Icesheet_Blocker-Description\", \"Needs to be removed to continue through the cave.\")"
+        },
+        {
+            "Name": "Icesheet_Outpost_Note_1",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"Icesheet_Outpost_Note_1-DisplayName\", \"Icesheet Outpost Note #1\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"Icesheet_Outpost_Note_1-Description\", \"A hastily scribbled note that\\'s barely legible.\")"
+        },
+        {
+            "Name": "Icesheet_Outpost_Note_2",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"Icesheet_Outpost_Note_2-DisplayName\", \"Icesheet Outpost Note #2\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"Icesheet_Outpost_Note_2-Description\", \"A hastily scribbled note that\\'s barely legible.\")"
+        },
+        {
+            "Name": "Icesheet_Outpost_Note_3",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"Icesheet_Outpost_Note_3-DisplayName\", \"Icesheet Outpost Note #3\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"Icesheet_Outpost_Note_3-Description\", \"A hastily scribbled note that\\'s barely legible.\")"
+        },
+        {
+            "Name": "Teleport_Enter",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"Teleport_Enter-DisplayName\", \"Leave\")",
+            "Description": ""
+        },
+        {
+            "Name": "NoTooltip",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"NoTooltip-DisplayName\", \"None\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"NoTooltip-Description\", \"None\")",
+            "bDisableTooltip": true
+        },
+        {
+            "Name": "TerraformingSiteCrystal",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"TerraformingSiteCrystal-DisplayName\", \"Large Exotic Rock\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"TerraformingSiteCrystal-Description\", \"Too Heavy to carry by hand. If only there was some kind of vehicle.\")",
+            "bDisableTooltip": true
+        },
+        {
+            "Name": "Medevac_Pod",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"Medevac_Pod-DisplayName\", \"UDA Medevac Pod\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"Medevac_Pod-Description\", \"A specialised pod built for the UDA. Allows for the quick retrieval of personnel from the surface of Icarus.\")"
+        },
+        {
+            "Name": "Icesheet_Cave_Blocker",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"Icesheet_Cave_Blocker-DisplayName\", \"Icesheet Cave-In\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"Icesheet_Cave_Blocker-Description\", \"Needs to be removed to continue through the cave.\")"
+        },
+        {
+            "Name": "Scribbled_Note",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"Scribbled_Note-DisplayName\", \"Hastily Scribbled Note\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"Scribbled_Note-Description\", \"A hastily scribbled note that\\'s barely legible.\")"
+        },
+        {
+            "Name": "Mission_Dropped_Flashlight",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"Mission_Dropped_Flashlight-DisplayName\", \"Flashlight\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"Mission_Dropped_Flashlight-Description\", \"Who left this here?\")"
+        },
+        {
+            "Name": "Mining_Truck",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"Mining_Truck-DisplayName\", \"Mining Truck\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"Mining_Truck-Description\", \"A large truck for hauling ore over rugged terrain.\")"
+        },
+        {
+            "Name": "Frozen_Wood_Deposit",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"Frozen_Wood_Deposit-DisplayName\", \"Frozen Trunk Deposit\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"Frozen_Wood_Deposit-Description\", \"A deposit of frozen wood. Can be mined with an Ice Borer\")"
+        },
+        {
+            "Name": "Quarrite_Burrow",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"Quarrite_Burrow-DisplayName\", \"Quarrite Burrow\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"Quarrite_Burrow-Description\", \"The entrance to an underground tunnel network. Damage with a pickaxe to collapse the entrance, preventing more Young Quarrites from reaching the surface.\")"
+        },
+        {
+            "Name": "Mining_Outpost_Log",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"Mining_Outpost_Log-DisplayName\", \"Mining Outpost Logs\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"Mining_Outpost_Log-Description\", \"Logs of the outpost including special orders. \")"
+        },
+        {
+            "Name": "Dead_Miner",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"Dead_Miner-DisplayName\", \"Dead Miner\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"Dead_Miner-Description\", \"Whatever killed them might still be around.\")"
+        },
+        {
+            "Name": "RockGolem_Carcass",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"RockGolem_Carcass-DisplayName\", \"Quarrite Carcass\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"RockGolem_Carcass-Description\", \"An unmoving creature of stone.\")"
+        },
+        {
+            "Name": "Ape_Carcass",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"Ape_Carcass-DisplayName\", \"Garganutan Carcass\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"Ape_Carcass-Description\", \"Highly territorial, will be protecting its lair no more.\")"
+        },
+        {
+            "Name": "Ape_Den_Enter",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"Ape_Den_Enter-DisplayName\", \"Garganutan Prime Lair\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"Ape_Den_Enter-Description\", \"The Lair of the Garganutan Prime. Enter at your own Risk.\")"
+        },
+        {
+            "Name": "Mammoth_Den_Enter",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"Mammoth_Den_Enter-DisplayName\", \"Rimetusk Den\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"Mammoth_Den_Enter-Description\", \"The Den of the Rimetusk. Enter at your own Risk.\")"
+        },
+        {
+            "Name": "RockGolem_Den_Enter",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"RockGolem_Den_Enter-DisplayName\", \"Unstable Quarrite Burrow\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"RockGolem_Den_Enter-Description\", \"The Burrow of the Quarrite. Enter at your own Risk.\")"
+        },
+        {
+            "Name": "Ape_Jr_Den",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"Ape_Jr_Den-DisplayName\", \"Garganutan Lair\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"Ape_Jr_Den-Description\", \"An entrance to a creature\\'s Lair. Damage with a pickaxe to collapse the entrance, preventing more juvenile Garganutan from reaching the surface.\")"
+        },
+        {
+            "Name": "Hammerhead_Carcass",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"Hammerhead_Carcass-DisplayName\", \"Hammerhead Slug Carcass\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"Hammerhead_Carcass-Description\", \"Slime covered rewards, ripe for the taking.\")"
+        },
+        {
+            "Name": "AnimalParts",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"AnimalParts-DisplayName\", \"Animal Parts\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"AnimalParts-Description\", \"A pile of assorted animal parts.\")"
+        },
+        {
+            "Name": "DeadResearcher",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"DeadResearcher-DisplayName\", \"Dead Researcher\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"DeadResearcher-Description\", \"A researcher that has seen better days.\")"
+        },
+        {
+            "Name": "IceMammoth_Carcass",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"IceMammoth_Carcass-DisplayName\", \"Rimetusk Carcass\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"IceMammoth_Carcass-Description\", \"A large frozen beast, soon to melt away.\")"
+        },
+        {
+            "Name": "LavaHunter_Carcass",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"LavaHunter_Carcass-DisplayName\", \"Lava Hunter Carcass\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"LavaHunter_Carcass-Description\", \"Little friend, big carcass.\")"
+        },
+        {
+            "Name": "SandWorm_Carcass",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"SandWorm_Carcass-DisplayName\", \"Sand Worm Carcass\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"SandWorm_Carcass-Description\", \"The remains of the great worm.\")"
+        },
+        {
+            "Name": "ScorpionBoss_Carcass",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"ScorpionBoss_Carcass-DisplayName\", \"Scorpion Carcass\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"ScorpionBoss_Carcass-Description\", \"Hardened Carapace, ripe for the taking.\")"
+        },
+        {
+            "Name": "AlphaWolf_Carcass",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"AlphaWolf_Carcass-DisplayName\", \"Black Wolf Carcass\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"AlphaWolf_Carcass-Description\", \"A mighty beast, felled.\")"
+        },
+        {
+            "Name": "Ape_Experiment",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"Ape_Experiment-DisplayName\", \"Garganutan - Experiment 002\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"Ape_Experiment-Description\", \"The remains of an experiment.\")"
+        },
+        {
+            "Name": "IceM_Experiment",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"IceM_Experiment-DisplayName\", \"Mutated Mammoth\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"IceM_Experiment-Description\", \"The remains of an experiment.\")"
+        },
+        {
+            "Name": "IM_Researcher_A",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"IM_Researcher_A-DisplayName\", \"Senior Researcher Avery\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"IM_Researcher_A-Description\", \"Hurt, will not survive without medical attention.\")"
+        },
+        {
+            "Name": "IM_Researcher_A_Healed",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"IM_Researcher_A_Healed-DisplayName\", \"Senior Researcher Avery\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"IM_Researcher_A_Healed-Description\", \"Worked on the Enzyme Formula which created the EXP-VIS.\")"
+        },
+        {
+            "Name": "IM_Researcher_B",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"IM_Researcher_B-DisplayName\", \"Associate Researcher Felix\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"IM_Researcher_B-Description\", \"Badly hurt by rogue experiments. Will not survive without serious medical attention. Place in Stasis Bag and Evac.\")"
+        },
+        {
+            "Name": "IM_Researcher_C",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"IM_Researcher_C-DisplayName\", \"Research Assistant Eloise\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"IM_Researcher_C-Description\", \"Unfortunately did not Survive their encounter with the Research Subjects.\")"
+        },
+        {
+            "Name": "Ape_EatenRemains",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"Ape_EatenRemains-DisplayName\", \"Eaten Remains\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"Ape_EatenRemains-Description\", \"The devoured remains of an escaped ape.\")"
+        },
+        {
+            "Name": "Ape_OutpostCage",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"Ape_OutpostCage-DisplayName\", \"Caged Experiment\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"Ape_OutpostCage-Description\", \"A trapped experiment, being cared for by a lone scientist.\")"
+        },
+        {
+            "Name": "Exotic_Shards",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"Exotic_Shards-DisplayName\", \"Exotic Shards\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"Exotic_Shards-Description\", \"A large cluster of unearthed Exotic matter.\")"
+        },
+        {
+            "Name": "IM_ArcticVesper",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"IM_ArcticVesper-DisplayName\", \"Incapacitated Vesper\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"IM_ArcticVesper-Description\", \"Badly hurt by a Neurotoxic Aerosol. Will not survive without serious medical attention. Stabilize with a HEAL device.\")"
+        },
+        {
+            "Name": "IM_ArcticVesper_Stabilized",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"IM_ArcticVesper_Stabilized-DisplayName\", \"Stabilized Vesper\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"IM_ArcticVesper_Stabilized-Description\", \"Badly hurt by a Neurotoxic Aerosol. Place in a Vesper Cage to Transport.\")"
+        },
+        {
+            "Name": "APE_Researcher_1",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"APE_Researcher_1-DisplayName\", \"Zoologist Morris\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"APE_Researcher_1-Description\", \"Hurt, will not survive without medical attention.\")"
+        },
+        {
+            "Name": "APE_Researcher_1_Healed",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"APE_Researcher_1_Healed-DisplayName\", \"Zoologist Morris\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"APE_Researcher_1_Healed-Description\", \"Worked on the Garganutan Experiments. Stabilize with a HEAL device.\")"
+        },
+        {
+            "Name": "APE_Researcher_1_PostHeal",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"APE_Researcher_1_PostHeal-DisplayName\", \"Zoologist Morris\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"APE_Researcher_1_PostHeal-Description\", \"Worked on the Garganutan Experiments.\")"
+        },
+        {
+            "Name": "Ape_Experiment03",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"Ape_Experiment03-DisplayName\", \"Garganutan - Experiment 003\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"Ape_Experiment03-Description\", \"The devoured remains of an escaped ape.\")"
+        },
+        {
+            "Name": "Ape_Experiment04",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"Ape_Experiment04-DisplayName\", \"Garganutan - Experiment 004\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"Ape_Experiment04-Description\", \"An Experiment that went wrong.\")"
+        },
+        {
+            "Name": "Ape_Experiment05",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"Ape_Experiment05-DisplayName\", \"Garganutan - Experiment 005\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"Ape_Experiment05-Description\", \"A wounded ape, can be shackled to restrain.\")"
+        },
+        {
+            "Name": "Ape_Experiment05_Shackled",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"Ape_Experiment05_Shackled-DisplayName\", \"Garganutan - Experiment 005\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"Ape_Experiment05_Shackled-Description\", \"A wounded ape, currently shackled.\")"
+        },
+        {
+            "Name": "Ape_Infant",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"Ape_Infant-DisplayName\", \"Infant Ape\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"Ape_Infant-Description\", \"Will not survive without serious medical attention. Stabilize with a HEAL device.\")"
+        },
+        {
+            "Name": "Ape_Infant_Healed",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"Ape_Infant_Healed-DisplayName\", \"Infant Ape\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"Ape_Infant_Healed-Description\", \"Place in Stasis Bag and Evac.\")"
+        },
+        {
+            "Name": "APE_Researcher_2",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"APE_Researcher_2-DisplayName\", \"Zoologist Morris\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"APE_Researcher_2-Description\", \"They didn\\'t survive this time.\")"
+        },
+        {
+            "Name": "Drone_Spawner",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"Drone_Spawner-DisplayName\", \"Drone Defence System\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"Drone_Spawner-Description\", \"Will Periodically Construct and Activate Aggressive Drones if Unregistered Personnel are Nearby.\")"
+        },
+        {
+            "Name": "RG_Miner_1",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"RG_Miner_1-DisplayName\", \"Foreman Voss\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"RG_Miner_1-Description\", \"Badly hurt by the Landshark. Will not survive without serious medical attention. Place in Stasis Bag and Evac.\")"
+        },
+        {
+            "Name": "RG_Miner_2",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"RG_Miner_2-DisplayName\", \"Technician Harken\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"RG_Miner_2-Description\", \"Badly hurt by the Landshark. Will not survive without serious medical attention. Place in Stasis Bag and Evac.\")"
+        },
+        {
+            "Name": "RG_Miner_3",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"RG_Miner_3-DisplayName\", \"Drill Chief Biggs\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"RG_Miner_3-Description\", \"Badly hurt by the Landshark. Will not survive without serious medical attention. Stabilize with HEAL Device then Place in Stasis Bag and Evac.\")"
+        },
+        {
+            "Name": "RG_Miner_4",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"RG_Miner_4-DisplayName\", \"Excavator Wedge\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"RG_Miner_4-Description\", \"Badly hurt by the Landshark. Will not survive without serious medical attention. Stabilize with HEAL Device then Place in Stasis Bag and Evac.\")"
+        },
+        {
+            "Name": "Oil_Geyser",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"Oil_Geyser-DisplayName\", \"Oil Well\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"Oil_Geyser-Description\", \"An entry into a vast underground crude oil reservoir.\")"
+        },
+        {
+            "Name": "IceSlug_Den",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"IceSlug_Den-DisplayName\", \"Glaci Spawning Ground\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"IceSlug_Den-Description\", \"A collection of bones, slime and other materials used in the reproduction of Glaci. Damage with a Pickaxe to prevent further Glaci forming.\")"
+        },
+        {
+            "Name": "Onion",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"Onion-DisplayName\", \"Onion\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"Onion-Description\", \"Responsible for many tears throughout the ages.\")"
+        },
+        {
+            "Name": "Agave",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"Agave-DisplayName\", \"Agave\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"Agave-Description\", \"A desert plant known for its hardy growth and sweet core.\")"
+        },
+        {
+            "Name": "PricklyPear",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"PricklyPear-DisplayName\", \"Prickly Pear\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"PricklyPear-Description\", \"A rather sharp plant.\")"
+        },
+        {
+            "Name": "Garlic",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"Garlic-DisplayName\", \"Garlic\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"Garlic-Description\", \"One word. Delicious.\")"
+        },
+        {
+            "Name": "Truffle",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"Truffle-DisplayName\", \"Truffle\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"Truffle-Description\", \"Hard to find, but worth the search.\")"
+        },
+        {
+            "Name": "Deep_Mining_Ore_Deposit_Lithium",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"Deep_Mining_Ore_Deposit_Lithium-DisplayName\", \"Deep Mining Ore Deposit: Lithium\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"Deep_Mining_Ore_Deposit_Lithium-Description\", \"An ore deposit that can be drilled with deep mining equipment.\")"
+        },
+        {
+            "Name": "Deep_Mining_Ore_Deposit_Ruby",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"Deep_Mining_Ore_Deposit_Ruby-DisplayName\", \"Deep Mining Ore Deposit: Ruby\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"Deep_Mining_Ore_Deposit_Ruby-Description\", \"An ore deposit that can be drilled with deep mining equipment.\")"
+        },
+        {
+            "Name": "Deep_Mining_Ore_Deposit_Cobalt",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"Deep_Mining_Ore_Deposit_Cobalt-DisplayName\", \"Deep Mining Ore Deposit: Cobalt\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"Deep_Mining_Ore_Deposit_Cobalt-Description\", \"An ore deposit that can be drilled with deep mining equipment.\")"
+        },
+        {
+            "Name": "Mo",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"Mo-DisplayName\", \"Mo\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"Mo-Description\", \"Head of the Eris Inquisition, formerly part of the UDA Terraforming team and First Cohort\")"
+        },
+        {
+            "Name": "Iris",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"Iris-DisplayName\", \"Iris\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"Iris-Description\", \"Head Scientist of the Eris Inquisition, formerly part of the UDA Terraforming team with Mo\")"
+        },
+        {
+            "Name": "Victor",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"Victor-DisplayName\", \"Victor\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"Victor-Description\", \"Head of Operations for the Eris Inquisition, formerly stationed back on Earth\")"
+        },
+        {
+            "Name": "Theo",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"Theo-DisplayName\", \"Theo\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"Theo-Description\", \"Lieutenant of the Eris Inquisition, a hired gun added to the team by the UDA\")"
+        },
+        {
+            "Name": "DH_Iris_Injured",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"DH_Iris_Injured-DisplayName\", \"Iris\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"DH_Iris_Injured-Description\", \"Seriously wounded, will not survive without medical attention.\")"
+        },
+        {
+            "Name": "DH_Iris_Healed",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"DH_Iris_Healed-DisplayName\", \"Iris\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"DH_Iris_Healed-Description\", \"Patched up for now.\")"
+        },
+        {
+            "Name": "Lab01_Door",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"Lab01_Door-DisplayName\", \"LAB-01 Door\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"Lab01_Door-Description\", \"Heavy duty security door.\")"
+        },
+        {
+            "Name": "Exotic_Deposit_Yellow",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"Exotic_Deposit_Yellow-DisplayName\", \"Uranium Deposit\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"Exotic_Deposit_Yellow-Description\", \"An unearthed vein of Uranium. Deploy a Uranium Extraction Unit to collect Raw Uranium.\")"
+        },
+        {
+            "Name": "Batnest_Sulfur",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"Batnest_Sulfur-DisplayName\", \"Sulfur Vesper Nest\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"Batnest_Sulfur-Description\", \"A rough nest containing a bat-like creature. Destroy to loot its contents. \")"
+        },
+        {
+            "Name": "Eden_Station_OEI",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"Eden_Station_OEI-DisplayName\", \"Eden Station OEI\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"Eden_Station_OEI-Description\", \"Your only option for sending or receiving goods between Icarus and orbit.\")"
+        },
+        {
+            "Name": "Eden_Station_PlayerLandingPad",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"Eden_Station_PlayerLandingPad-DisplayName\", \"Eden Station Pad\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"Eden_Station_PlayerLandingPad-Description\", \"Quick access between Icarus and the Orbital Station.\")"
+        },
+        {
+            "Name": "Eden_Beacon",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"Eden_Beacon-DisplayName\", \"EDEN Waypoint Beacon\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"Eden_Beacon-Description\", \"Interact to update the ECHO Device\\'s Signal to the next Beacon.\")"
+        },
+        {
+            "Name": "Cave",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"Cave-DisplayName\", \"Cave\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"Cave-Description\", \"An Entrance to a Cave.\")"
+        },
+        {
+            "Name": "NPC_Eden",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"NPC_Eden-DisplayName\", \"Eris Inquisition Agent\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"NPC_Eden-Description\", \"A member of the Eris Inquisition.\")"
+        },
+        {
+            "Name": "DragonFly_Nest",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"DragonFly_Nest-DisplayName\", \"Venomfly Nest\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"DragonFly_Nest-Description\", \"A nest full of Venomflies. Be Careful.\")"
+        },
+        {
+            "Name": "EDEN_Cook",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"EDEN_Cook-DisplayName\", \"Culinary Specialist Charles\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"EDEN_Cook-Description\", \"UDA assigned Specialist who deals in all manner of food cooking and preparation. \")"
+        },
+        {
+            "Name": "EDEN_Logistics",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"EDEN_Logistics-DisplayName\", \"Logistics Officer Lin\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"EDEN_Logistics-Description\", \"UDA assigned Officer who deals with the import and export of resources from EDEN.\")"
+        },
+        {
+            "Name": "EDEN_Crafter",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"EDEN_Crafter-DisplayName\", \"Quartermaster Nev\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"EDEN_Crafter-Description\", \"UDA assigned Officer who deals in the creation and assembly of equipment in EDEN.\")"
+        },
+        {
+            "Name": "Prospector_Pod",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"Prospector_Pod-DisplayName\", \"Prospector Dropship\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"Prospector_Pod-Description\", \"A specialised pod built for the UDA. Allows for the quick retrieval of personnel from the surface of Icarus.\")"
+        },
+        {
+            "Name": "KiwiFruit",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"KiwiFruit-DisplayName\", \"Kiwi Fruit\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"KiwiFruit-Description\", \"Sweet on the inside, fuzzy on the outside.\")"
+        },
+        {
+            "Name": "Avocado",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"Avocado-DisplayName\", \"Avocado\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"Avocado-Description\", \"A tree flush with Avocados.\")"
+        },
+        {
+            "Name": "Rhubarb",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"Rhubarb-DisplayName\", \"Rhubarb\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"Rhubarb-Description\", \"A ripe rhubarb plant ready for picking.\")"
+        },
+        {
+            "Name": "Banana_Tree",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"Banana_Tree-DisplayName\", \"Banana Tree\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"Banana_Tree-Description\", \"A banana tree, full of bananas.\")"
+        },
+        {
+            "Name": "Kumara",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"Kumara-DisplayName\", \"Kumara\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"Kumara-Description\", \"A ripe kumara plant.\")"
+        },
+        {
+            "Name": "ELY4_NPC1",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"ELY4_NPC1-DisplayName\", \"Agent Bob\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"ELY4_NPC1-Description\", \"Badly hurt by the TPS Ambush. Will not survive without serious medical attention. Place in Stasis Bag and Evac.\")"
+        },
+        {
+            "Name": "InquisitionAgent",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"InquisitionAgent-DisplayName\", \"Eris Inquisition Agent\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"InquisitionAgent-Description\", \"An agent killed in the line of duty.\")"
+        },
+        {
+            "Name": "Drone_Remains",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"Drone_Remains-DisplayName\", \"Drone Remains\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"Drone_Remains-Description\", \"The crashed remains of a drone.\")"
+        },
+        {
+            "Name": "SulfurWater",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"SulfurWater-DisplayName\", \"Sulfuric Water Source\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"SulfurWater-Description\", \"Consume or fill containers.\")",
+            "bDisableMeshOutline": true
+        },
+        {
+            "Name": "MoHelmet",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"MoHelmet-DisplayName\", \"Mo\\'s Helmet\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"MoHelmet-Description\", \"Once worn by Mo. Contains her tracking beacon.\")"
+        },
+        {
+            "Name": "Door_Keycard",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"Door_Keycard-DisplayName\", \"Security Door\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"Door_Keycard-Description\", \"Requires a pin code to open.\")"
+        },
+        {
+            "Name": "InquisitionAgent_Alive",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"InquisitionAgent_Alive-DisplayName\", \"Eris Inquisition Agent\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"InquisitionAgent_Alive-Description\", \"An agent contracted to the Eris Inquisiton.\")"
+        },
+        {
+            "Name": "FishOwner",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"FishOwner-DisplayName\", \"Chief Fisheries Officer Dunski\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"FishOwner-Description\", \"Master fisherman who has been fishing longer than you\\'ve been alive.\")"
+        },
+        {
+            "Name": "FishOwner_Injured",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"FishOwner_Injured-DisplayName\", \"Chief Fisheries Officer Dunski\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"FishOwner_Injured-Description\", \"Seriously wounded, will not survive without medical attention.\")"
+        },
+        {
+            "Name": "FishStockpile",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"FishStockpile-DisplayName\", \"Fish Stockpile\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"FishStockpile-Description\", \"Large Cool Storage for Fish.\")"
+        },
+        {
+            "Name": "EDEN_Hunter",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"EDEN_Hunter-DisplayName\", \"Predator Control Specialist Liardet\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"EDEN_Hunter-Description\", \"UDA assigned Specialist who deals in all manner of Creatures within the area. \")"
+        },
+        {
+            "Name": "NPC_Soldier_Carcass",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"NPC_Soldier_Carcass-DisplayName\", \"Dead TPS Soldier\")",
+            "Description": ""
+        },
+        {
+            "Name": "Norex_Pod",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"Norex_Pod-DisplayName\", \"Norex Deployable Station\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"Norex_Pod-Description\", \"A reusable, automated launch vehicle for direct communication with Norex.\")"
+        },
+        {
+            "Name": "NPC_Farmer",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"NPC_Farmer-DisplayName\", \"Cultivation Specialist Henrickson\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"NPC_Farmer-Description\", \"UDA assigned Specialist who deals in all manner of Plants growable on Icarus.\")"
+        },
+        {
+            "Name": "Slug_Nest",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"Slug_Nest-DisplayName\", \"Hammerhead Slug Nest\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"Slug_Nest-Description\", \"Covered in green goo.\")"
+        },
+        {
+            "Name": "Speeder_Damaged",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"Speeder_Damaged-DisplayName\", \"Damaged Prototype Hoverframe\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"Speeder_Damaged-Description\", \"A fast vehicle which runs on refined oil. Requires Repairs to get up and running.\")"
+        },
+        {
+            "Name": "Medical_Cot",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"Medical_Cot-DisplayName\", \"Medical Cot\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"Medical_Cot-Description\", \"Speeds Recovery\")"
+        },
+        {
+            "Name": "Speeder_Empty",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"Speeder_Empty-DisplayName\", \"Drained Prototype Hoverframe\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"Speeder_Empty-Description\", \"A fast vehicle which runs on refined oil. Requires Refined Oil to get up and running.\")"
+        },
+        {
+            "Name": "Speeder_Base",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"Speeder_Base-DisplayName\", \"Partially Repaired Prototype Hoverframe\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"Speeder_Base-Description\", \"A prototype vehicle that has been partially repaired. Still requires additional repairs to get up an running.\")"
+        },
+        {
+            "Name": "Landshark_Carcass",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"Landshark_Carcass-DisplayName\", \"Landshark Carcass\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"Landshark_Carcass-Description\", \"The remains of the great worm.\")"
+        },
+        {
+            "Name": "Mission_Terminal",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"Mission_Terminal-DisplayName\", \"Hoverframe Recording Terminal\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"Mission_Terminal-Description\", \"Tracks and Records Hoverframe Performance.\")"
+        },
+        {
+            "Name": "UDA_Transport_Drone",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"UDA_Transport_Drone-DisplayName\", \"UDA Transport Drone\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"UDA_Transport_Drone-Description\", \"Carrying Supplies for the Scouts\\' Forward Base\")"
+        }
+    ]
+}

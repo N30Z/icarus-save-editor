@@ -1,0 +1,174 @@
+{
+    "RowStruct": "/Script/Icarus.ItemAttachmentData",
+    "Defaults": {
+        "TPAttachmentSocketName": "hand_rSocket",
+        "FPAttachmentSocketName": "hand_rSocket",
+        "BackAttachmentSocketName": "Backpack_Socket",
+        "EquippableHandedness": "Right"
+    },
+    "Rows": [
+        {
+            "Name": "GeneralRight",
+            "TPAttachmentSocketName": "R_prop_00",
+            "FPAttachmentSocketName": "bn_Prop_R_1",
+            "BackAttachmentSocketName": "VB BackpackBone"
+        },
+        {
+            "Name": "Prop",
+            "TPAttachmentSocketName": "VB LHS_ik_hand_gun",
+            "FPAttachmentSocketName": "bn_Prop_R_1",
+            "BackAttachmentSocketName": "VB BackpackBone"
+        },
+        {
+            "Name": "GeneralBoth",
+            "TPAttachmentSocketName": "R_prop_00",
+            "FPAttachmentSocketName": "bn_Prop_R_1",
+            "BackAttachmentSocketName": "VB BackpackBone",
+            "EquippableHandedness": "Both"
+        },
+        {
+            "Name": "Carcass",
+            "TPAttachmentSocketName": "CarrySocket",
+            "FPAttachmentSocketName": "VB bn_Arm_r_wrist_1_bn_Prop_R_1",
+            "BackAttachmentSocketName": "CarrySocket",
+            "EquippableHandedness": "Both"
+        },
+        {
+            "Name": "Dev_Firearm",
+            "TPAttachmentSocketName": "TEMPORARY",
+            "FPAttachmentSocketName": "DEV_FirearmProp",
+            "BackAttachmentSocketName": "TEMPORARY",
+            "EquippableHandedness": "Both"
+        },
+        {
+            "Name": "Bow",
+            "TPAttachmentSocketName": "L_prop_00",
+            "FPAttachmentSocketName": "VB BowAttach",
+            "BackAttachmentSocketName": "VB BackpackBone",
+            "EquippableHandedness": "Both"
+        },
+        {
+            "Name": "Carcass_Hip",
+            "TPAttachmentSocketName": "HipCarrySocket",
+            "FPAttachmentSocketName": "bn_Prop_R_1",
+            "BackAttachmentSocketName": "HipCarrySocket"
+        },
+        {
+            "Name": "Carcass_wolf",
+            "TPAttachmentSocketName": "CarrySocket_Wolf",
+            "FPAttachmentSocketName": "VB bn_Arm_r_wrist_1_bn_Prop_R_1",
+            "BackAttachmentSocketName": "CarrySocket_Wolf",
+            "EquippableHandedness": "Both"
+        },
+        {
+            "Name": "Lantern",
+            "TPAttachmentSocketName": "R_prop_00",
+            "FPAttachmentSocketName": "bn_Prop_R_1",
+            "BackAttachmentSocketName": "VB BackpackBone"
+        },
+        {
+            "Name": "Carcass_Scorpion",
+            "TPAttachmentSocketName": "CarrySocket_Scorpion",
+            "FPAttachmentSocketName": "VB bn_Arm_r_wrist_1_bn_Prop_R_1",
+            "BackAttachmentSocketName": "CarrySocket_Scorpion",
+            "EquippableHandedness": "Both"
+        },
+        {
+            "Name": "Shield",
+            "TPAttachmentSocketName": "shield_01_l",
+            "FPAttachmentSocketName": "hand_lShield_Socket",
+            "BackAttachmentSocketName": "VB BackpackBone",
+            "EquippableHandedness": "Left"
+        },
+        {
+            "Name": "Sledge",
+            "TPAttachmentSocketName": "R_prop_01",
+            "FPAttachmentSocketName": "bn_Prop_R_1",
+            "BackAttachmentSocketName": "VB BackpackBone",
+            "EquippableHandedness": "Both"
+        },
+        {
+            "Name": "GeneralLeft",
+            "TPAttachmentSocketName": "L_prop_00Socket",
+            "FPAttachmentSocketName": "bn_Prop_L_1Socket_0",
+            "BackAttachmentSocketName": "VB BackpackBone",
+            "EquippableHandedness": "Left"
+        },
+        {
+            "Name": "Fish",
+            "TPAttachmentSocketName": "Hand_Socket",
+            "FPAttachmentSocketName": "hand_rLureSocket",
+            "BackAttachmentSocketName": "None"
+        },
+        {
+            "Name": "WateringCan",
+            "TPAttachmentSocketName": "R_prop_00",
+            "FPAttachmentSocketName": "bn_Prop_R_1",
+            "BackAttachmentSocketName": "VB BackpackBone"
+        },
+        {
+            "Name": "Shield_Offset",
+            "TPAttachmentSocketName": "shield_02_l",
+            "FPAttachmentSocketName": "hand_lShield_Socket",
+            "BackAttachmentSocketName": "VB BackpackBone",
+            "EquippableHandedness": "Left"
+        },
+        {
+            "Name": "GeneralBoth_Aligned",
+            "TPAttachmentSocketName": "R_prop_00",
+            "FPAttachmentSocketName": "bn_Prop_R_Aligned",
+            "BackAttachmentSocketName": "VB BackpackBone",
+            "EquippableHandedness": "Both"
+        },
+        {
+            "Name": "StasisBag",
+            "TPAttachmentSocketName": "R_prop_00",
+            "FPAttachmentSocketName": "VB bn_Arm_r_wrist_1_bn_Prop_R_1",
+            "BackAttachmentSocketName": "VB BackpackBone"
+        },
+        {
+            "Name": "GolemGauntlet",
+            "TPAttachmentSocketName": "root",
+            "FPAttachmentSocketName": "bn_Prop_R_1",
+            "BackAttachmentSocketName": "VB BackpackBone"
+        },
+        {
+            "Name": "RightCanteen",
+            "TPAttachmentSocketName": "R_prop_cant",
+            "FPAttachmentSocketName": "bn_canteen_r1",
+            "BackAttachmentSocketName": "VB BackpackBone"
+        },
+        {
+            "Name": "BandageRight",
+            "TPAttachmentSocketName": "R_prop_00",
+            "FPAttachmentSocketName": "bn_canteen_r1",
+            "BackAttachmentSocketName": "VB BackpackBone"
+        },
+        {
+            "Name": "RightWaterskin",
+            "TPAttachmentSocketName": "R_prop_cant",
+            "FPAttachmentSocketName": "bn_waterskin_r1",
+            "BackAttachmentSocketName": "VB BackpackBone"
+        },
+        {
+            "Name": "GeneralBoth_Crossbow",
+            "TPAttachmentSocketName": "prop_large_crossbow",
+            "FPAttachmentSocketName": "prop_large_crossbow",
+            "BackAttachmentSocketName": "VB BackpackBone",
+            "EquippableHandedness": "Both"
+        },
+        {
+            "Name": "GeneralBoth_Offset01",
+            "TPAttachmentSocketName": "R_prop_00",
+            "FPAttachmentSocketName": "spear_offset_rotate",
+            "BackAttachmentSocketName": "VB BackpackBone",
+            "EquippableHandedness": "Both"
+        },
+        {
+            "Name": "Tonic",
+            "TPAttachmentSocketName": "Tonic_3p",
+            "FPAttachmentSocketName": "bn_Prop_R_1",
+            "BackAttachmentSocketName": "VB BackpackBone"
+        }
+    ]
+}

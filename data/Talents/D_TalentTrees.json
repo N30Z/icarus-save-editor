@@ -1,0 +1,950 @@
+{
+    "RowStruct": "/Script/Icarus.TalentTree",
+    "Defaults": {
+        "DisplayName": "",
+        "BackgroundTexture": "None",
+        "Icon": "None",
+        "Archetype": {
+            "RowName": "None",
+            "DataTableName": "D_TalentArchetypes"
+        },
+        "FirstRank": {
+            "RowName": "None",
+            "DataTableName": "D_TalentRanks"
+        },
+        "RequiredLevel": 0
+    },
+    "GenerateEnum": true,
+    "Columns": [
+        {
+            "Name": "Archetype",
+            "Key": true,
+            "Cardinality": "Multiple",
+            "ForwardDeclare": "struct"
+        }
+    ],
+    "Rows": [
+        {
+            "Name": "Survival_Resources",
+            "DisplayName": "NSLOCTEXT(\"D_TalentTrees\", \"Survival_Resources-DisplayName\", \"Resources\")",
+            "BackgroundTexture": "/Game/Assets/2DArt/UI/Talents/Backgrounds/Survival_Resources_Background.Survival_Resources_Background",
+            "Icon": "/Game/Assets/2DArt/UI/Icons/Icon_ContextGrab.Icon_ContextGrab",
+            "Archetype": {
+                "RowName": "Survival"
+            },
+            "FirstRank": {
+                "RowName": "Novice"
+            }
+        },
+        {
+            "Name": "Survival_Exploration",
+            "DisplayName": "NSLOCTEXT(\"D_TalentTrees\", \"Survival_Exploration-DisplayName\", \"Exploration\")",
+            "BackgroundTexture": "/Game/Assets/2DArt/UI/Talents/Backgrounds/Survival_Exploration_Background.Survival_Exploration_Background",
+            "Icon": "/Game/Assets/2DArt/UI/Icons/Icon_Agility.Icon_Agility",
+            "Archetype": {
+                "RowName": "Player_Adventure"
+            },
+            "FirstRank": {
+                "RowName": "Novice"
+            }
+        },
+        {
+            "Name": "Combat_Bows",
+            "DisplayName": "NSLOCTEXT(\"D_TalentTrees\", \"Combat_Bows-DisplayName\", \"Bows / Crossbows\")",
+            "BackgroundTexture": "/Game/Assets/2DArt/UI/Talents/Backgrounds/Combat_Bow_Background.Combat_Bow_Background",
+            "Icon": "/Game/Assets/2DArt/UI/Icons/Icon_Ranged.Icon_Ranged",
+            "Archetype": {
+                "RowName": "Combat"
+            },
+            "FirstRank": {
+                "RowName": "Novice"
+            }
+        },
+        {
+            "Name": "Combat_Spears",
+            "DisplayName": "NSLOCTEXT(\"D_TalentTrees\", \"Combat_Spears-DisplayName\", \"Spears\")",
+            "BackgroundTexture": "/Game/Assets/2DArt/UI/Talents/Backgrounds/Combat_Spear_Background.Combat_Spear_Background",
+            "Icon": "/Game/Assets/2DArt/UI/Icons/Icon_ContextSkin.Icon_ContextSkin",
+            "Archetype": {
+                "RowName": "Combat"
+            },
+            "FirstRank": {
+                "RowName": "Novice"
+            }
+        },
+        {
+            "Name": "Combat_Blades",
+            "DisplayName": "NSLOCTEXT(\"D_TalentTrees\", \"Combat_Blades-DisplayName\", \"Blades\")",
+            "BackgroundTexture": "/Game/Assets/2DArt/UI/Talents/Backgrounds/Combat_Blades_Background.Combat_Blades_Background",
+            "Icon": "/Game/Assets/2DArt/UI/Icons/Icon_Bleeding.Icon_Bleeding",
+            "Archetype": {
+                "RowName": "Combat"
+            },
+            "FirstRank": {
+                "RowName": "Novice"
+            }
+        },
+        {
+            "Name": "Construction_Repairing",
+            "DisplayName": "NSLOCTEXT(\"D_TalentTrees\", \"Construction_Repairing-DisplayName\", \"Repairing\")",
+            "BackgroundTexture": "/Game/Assets/2DArt/UI/Talents/Backgrounds/Construction_Repairing_Background.Construction_Repairing_Background",
+            "Icon": "/Game/Assets/2DArt/UI/Icons/Icon_Fuel.Icon_Fuel",
+            "Archetype": {
+                "RowName": "Construction"
+            },
+            "FirstRank": {
+                "RowName": "Novice"
+            }
+        },
+        {
+            "Name": "Construction_Tools",
+            "DisplayName": "NSLOCTEXT(\"D_TalentTrees\", \"Construction_Tools-DisplayName\", \"Tools\")",
+            "BackgroundTexture": "/Game/Assets/2DArt/UI/Talents/Backgrounds/Construction_Tools_Background.Construction_Tools_Background",
+            "Icon": "/Game/Assets/2DArt/UI/Icons/Icon_ContextChop.Icon_ContextChop",
+            "Archetype": {
+                "RowName": "Construction"
+            },
+            "FirstRank": {
+                "RowName": "Novice"
+            }
+        },
+        {
+            "Name": "Construction_Building",
+            "DisplayName": "NSLOCTEXT(\"D_TalentTrees\", \"Construction_Building-DisplayName\", \"Building\")",
+            "BackgroundTexture": "/Game/Assets/2DArt/UI/Talents/Backgrounds/Construction_Building_Background.Construction_Building_Background",
+            "Icon": "/Game/Assets/2DArt/UI/Icons/Icon_ContextMine.Icon_ContextMine",
+            "Archetype": {
+                "RowName": "Construction"
+            },
+            "FirstRank": {
+                "RowName": "Novice"
+            }
+        },
+        {
+            "Name": "Combat_Firearms",
+            "DisplayName": "NSLOCTEXT(\"D_TalentTrees\", \"Combat_Firearms-DisplayName\", \"Firearms\")",
+            "BackgroundTexture": "/Game/Assets/2DArt/UI/Talents/Backgrounds/Combat_Firearms_Background.Combat_Firearms_Background",
+            "Icon": "/Game/Assets/2DArt/UI/Icons/Icon_ClassGun.Icon_ClassGun",
+            "Archetype": {
+                "RowName": "Combat"
+            },
+            "FirstRank": {
+                "RowName": "Novice"
+            }
+        },
+        {
+            "Name": "Blueprint_T1_Player",
+            "BackgroundTexture": "/Game/Assets/2DArt/UI/Windows/EmptyAsset.EmptyAsset",
+            "Icon": "/Game/Assets/2DArt/UI/Icons/Icon_TechTier_Personal.Icon_TechTier_Personal",
+            "Archetype": {
+                "RowName": "Blueprint_Player"
+            }
+        },
+        {
+            "Name": "Blueprint_T2_Crafting",
+            "BackgroundTexture": "/Game/Assets/2DArt/UI/Windows/EmptyAsset.EmptyAsset",
+            "Icon": "/Game/Assets/2DArt/UI/Icons/Icon_TechTier_CraftingBench.Icon_TechTier_CraftingBench",
+            "Archetype": {
+                "RowName": "Blueprint_Crafting"
+            }
+        },
+        {
+            "Name": "Blueprint_T3_Machine",
+            "BackgroundTexture": "/Game/Assets/2DArt/UI/Windows/EmptyAsset.EmptyAsset",
+            "Icon": "/Game/Assets/2DArt/UI/Icons/Icon_TechTier_MachineBench.Icon_TechTier_MachineBench",
+            "Archetype": {
+                "RowName": "Blueprint_Machine"
+            }
+        },
+        {
+            "Name": "Blueprint_T4_Fabricator",
+            "BackgroundTexture": "/Game/Assets/2DArt/UI/Windows/EmptyAsset.EmptyAsset",
+            "Icon": "/Game/Assets/2DArt/UI/Icons/Icon_TechTier_Fabricator.Icon_TechTier_Fabricator",
+            "Archetype": {
+                "RowName": "Blueprint_Fabricator"
+            }
+        },
+        {
+            "Name": "Survival_Hunting",
+            "DisplayName": "NSLOCTEXT(\"D_TalentTrees\", \"Survival_Hunting-DisplayName\", \"Hunting\")",
+            "BackgroundTexture": "/Game/Assets/2DArt/UI/Talents/Backgrounds/Construction_Hunting_Background.Construction_Hunting_Background",
+            "Icon": "/Game/Assets/2DArt/UI/Icons/Icon_ContextSkin.Icon_ContextSkin",
+            "Archetype": {
+                "RowName": "Survival"
+            },
+            "FirstRank": {
+                "RowName": "Novice"
+            }
+        },
+        {
+            "Name": "Survival_Produce",
+            "DisplayName": "NSLOCTEXT(\"D_TalentTrees\", \"Survival_Produce-DisplayName\", \"Cooking / Farming\")",
+            "BackgroundTexture": "/Game/Assets/2DArt/UI/Talents/Backgrounds/Survival_CookingFarming_Background.Survival_CookingFarming_Background",
+            "Icon": "/Game/Assets/2DArt/UI/Icons/Icon_ContextGrab.Icon_ContextGrab",
+            "Archetype": {
+                "RowName": "Survival"
+            },
+            "FirstRank": {
+                "RowName": "Novice"
+            }
+        },
+        {
+            "Name": "Solo_Player",
+            "DisplayName": "NSLOCTEXT(\"D_TalentTrees\", \"Solo_Player-DisplayName\", \"Solo\")",
+            "BackgroundTexture": "/Game/Assets/2DArt/UI/Talents/Backgrounds/Solo_Background.Solo_Background",
+            "Icon": "/Game/Assets/2DArt/UI/Icons/Icon_Radar.Icon_Radar",
+            "Archetype": {
+                "RowName": "Solo"
+            },
+            "FirstRank": {
+                "RowName": "Novice"
+            }
+        },
+        {
+            "Name": "Prospect_Olympus",
+            "BackgroundTexture": "/Game/Assets/2DArt/UI/Windows/EmptyAsset.EmptyAsset",
+            "Icon": "/Game/Assets/2DArt/UI/Icons/Icon_Perception.Icon_Perception",
+            "Archetype": {
+                "RowName": "Prospect_Olympus"
+            }
+        },
+        {
+            "Name": "Prospect_Styx",
+            "BackgroundTexture": "/Game/Assets/2DArt/UI/Windows/EmptyAsset.EmptyAsset",
+            "Icon": "/Game/Assets/2DArt/UI/Icons/Icon_Perception.Icon_Perception",
+            "Archetype": {
+                "RowName": "Prospect_Styx"
+            }
+        },
+        {
+            "Name": "Prospect_Dev",
+            "BackgroundTexture": "/Game/Assets/2DArt/UI/Windows/EmptyAsset.EmptyAsset",
+            "Icon": "/Game/Assets/2DArt/UI/Icons/Icon_Perception.Icon_Perception",
+            "Archetype": {
+                "RowName": "Prospect_Dev"
+            }
+        },
+        {
+            "Name": "Outpost",
+            "BackgroundTexture": "/Game/Assets/2DArt/UI/Windows/EmptyAsset.EmptyAsset",
+            "Icon": "/Game/Assets/2DArt/UI/Icons/Icon_Perception.Icon_Perception",
+            "Archetype": {
+                "RowName": "Outpost"
+            }
+        },
+        {
+            "Name": "Prospect_Prometheus",
+            "BackgroundTexture": "/Game/Assets/2DArt/UI/Windows/EmptyAsset.EmptyAsset",
+            "Icon": "/Game/Assets/2DArt/UI/Icons/Icon_Perception.Icon_Perception",
+            "Archetype": {
+                "RowName": "Prospect_Prometheus"
+            }
+        },
+        {
+            "Name": "Construction_Husbandry",
+            "DisplayName": "NSLOCTEXT(\"D_TalentTrees\", \"Construction_Husbandry-DisplayName\", \"Husbandry\")",
+            "BackgroundTexture": "/Game/Assets/2DArt/UI/Talents/Backgrounds/Construction_Husbandry_Background.Construction_Husbandry_Background",
+            "Icon": "/Game/Assets/2DArt/UI/Icons/MountTameIcons/ICON_MountStay.ICON_MountStay",
+            "Archetype": {
+                "RowName": "Player_Adventure"
+            },
+            "FirstRank": {
+                "RowName": "Novice"
+            }
+        },
+        {
+            "Name": "Construction_Genetics",
+            "DisplayName": "NSLOCTEXT(\"D_TalentTrees\", \"Construction_Genetics-DisplayName\", \"Genetics\")",
+            "BackgroundTexture": "/Game/Assets/2DArt/UI/Talents/Backgrounds/Construction_Husbandry_Background.Construction_Husbandry_Background",
+            "Icon": "/Game/Assets/2DArt/UI/Icons/MountTameIcons/ICON_MountStay.ICON_MountStay",
+            "Archetype": {
+                "RowName": "Player_Adventure"
+            },
+            "FirstRank": {
+                "RowName": "Novice"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Homestead"
+                }
+            }
+        },
+        {
+            "Name": "Adventure_Fishing",
+            "DisplayName": "NSLOCTEXT(\"D_TalentTrees\", \"Adventure_Fishing-DisplayName\", \"Fishing\")",
+            "BackgroundTexture": "/Game/Assets/2DArt/UI/Talents/Backgrounds/Adventure_Fishing_Background.Adventure_Fishing_Background",
+            "Icon": "/Game/Assets/2DArt/UI/FieldGuide/Icons/Icon_FishHook.Icon_FishHook",
+            "Archetype": {
+                "RowName": "Player_Adventure"
+            },
+            "FirstRank": {
+                "RowName": "Novice"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Galileo"
+                }
+            }
+        },
+        {
+            "Name": "Workshop_Envirosuits",
+            "BackgroundTexture": "/Game/Assets/2DArt/UI/Windows/EmptyAsset.EmptyAsset",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Tools/ITEM_Meta_Pickaxe.ITEM_Meta_Pickaxe",
+            "Archetype": {
+                "RowName": "Workshop_Envirosuits"
+            }
+        },
+        {
+            "Name": "Workshop_Armors",
+            "BackgroundTexture": "/Game/Assets/2DArt/UI/Windows/EmptyAsset.EmptyAsset",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Tools/ITEM_Meta_Pickaxe.ITEM_Meta_Pickaxe",
+            "Archetype": {
+                "RowName": "Workshop_Armor"
+            }
+        },
+        {
+            "Name": "Workshop_Backpacks",
+            "BackgroundTexture": "/Game/Assets/2DArt/UI/Windows/EmptyAsset.EmptyAsset",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Tools/ITEM_Meta_Pickaxe.ITEM_Meta_Pickaxe",
+            "Archetype": {
+                "RowName": "Workshop_Backpacks"
+            }
+        },
+        {
+            "Name": "Workshop_Modules",
+            "BackgroundTexture": "/Game/Assets/2DArt/UI/Windows/EmptyAsset.EmptyAsset",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Tools/ITEM_Meta_Pickaxe.ITEM_Meta_Pickaxe",
+            "Archetype": {
+                "RowName": "Workshop_Modules"
+            }
+        },
+        {
+            "Name": "Workshop_Gadgets",
+            "BackgroundTexture": "/Game/Assets/2DArt/UI/Windows/EmptyAsset.EmptyAsset",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Tools/ITEM_Meta_Pickaxe.ITEM_Meta_Pickaxe",
+            "Archetype": {
+                "RowName": "Workshop_Gadgets"
+            }
+        },
+        {
+            "Name": "Workshop_Axes",
+            "BackgroundTexture": "/Game/Assets/2DArt/UI/Windows/EmptyAsset.EmptyAsset",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Tools/ITEM_Meta_Pickaxe.ITEM_Meta_Pickaxe",
+            "Archetype": {
+                "RowName": "Workshop_Axes"
+            }
+        },
+        {
+            "Name": "Workshop_Pickaxes",
+            "BackgroundTexture": "/Game/Assets/2DArt/UI/Windows/EmptyAsset.EmptyAsset",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Tools/ITEM_Meta_Pickaxe.ITEM_Meta_Pickaxe",
+            "Archetype": {
+                "RowName": "Workshop_Pickaxes"
+            }
+        },
+        {
+            "Name": "Workshop_Knives",
+            "BackgroundTexture": "/Game/Assets/2DArt/UI/Windows/EmptyAsset.EmptyAsset",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Tools/ITEM_Meta_Pickaxe.ITEM_Meta_Pickaxe",
+            "Archetype": {
+                "RowName": "Workshop_Knives"
+            }
+        },
+        {
+            "Name": "Workshop_Sickles",
+            "BackgroundTexture": "/Game/Assets/2DArt/UI/Windows/EmptyAsset.EmptyAsset",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Tools/ITEM_Meta_Pickaxe.ITEM_Meta_Pickaxe",
+            "Archetype": {
+                "RowName": "Workshop_Sickles"
+            }
+        },
+        {
+            "Name": "Workshop_Spears",
+            "BackgroundTexture": "/Game/Assets/2DArt/UI/Windows/EmptyAsset.EmptyAsset",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Tools/ITEM_Meta_Pickaxe.ITEM_Meta_Pickaxe",
+            "Archetype": {
+                "RowName": "Workshop_Spears"
+            }
+        },
+        {
+            "Name": "Workshop_Hammers",
+            "BackgroundTexture": "/Game/Assets/2DArt/UI/Windows/EmptyAsset.EmptyAsset",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Tools/ITEM_Meta_Pickaxe.ITEM_Meta_Pickaxe",
+            "Archetype": {
+                "RowName": "Workshop_Hammers"
+            }
+        },
+        {
+            "Name": "Workshop_Bows",
+            "BackgroundTexture": "/Game/Assets/2DArt/UI/Windows/EmptyAsset.EmptyAsset",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Tools/ITEM_Meta_Pickaxe.ITEM_Meta_Pickaxe",
+            "Archetype": {
+                "RowName": "Workshop_Bows"
+            }
+        },
+        {
+            "Name": "Workshop_Crossbows",
+            "BackgroundTexture": "/Game/Assets/2DArt/UI/Windows/EmptyAsset.EmptyAsset",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Tools/ITEM_Meta_Pickaxe.ITEM_Meta_Pickaxe",
+            "Archetype": {
+                "RowName": "Workshop_Crossbows"
+            }
+        },
+        {
+            "Name": "Workshop_Firearms",
+            "BackgroundTexture": "/Game/Assets/2DArt/UI/Windows/EmptyAsset.EmptyAsset",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Tools/ITEM_Meta_Pickaxe.ITEM_Meta_Pickaxe",
+            "Archetype": {
+                "RowName": "Workshop_Firearms"
+            }
+        },
+        {
+            "Name": "Workshop_Deployables",
+            "BackgroundTexture": "/Game/Assets/2DArt/UI/Windows/EmptyAsset.EmptyAsset",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Tools/ITEM_Meta_Pickaxe.ITEM_Meta_Pickaxe",
+            "Archetype": {
+                "RowName": "Workshop_Deployables"
+            }
+        },
+        {
+            "Name": "Workshop_Extraction",
+            "BackgroundTexture": "/Game/Assets/2DArt/UI/Windows/EmptyAsset.EmptyAsset",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Tools/ITEM_Meta_Pickaxe.ITEM_Meta_Pickaxe",
+            "Archetype": {
+                "RowName": "Workshop_Extraction"
+            }
+        },
+        {
+            "Name": "Workshop_Consumables",
+            "BackgroundTexture": "/Game/Assets/2DArt/UI/Windows/EmptyAsset.EmptyAsset",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Tools/ITEM_Meta_Pickaxe.ITEM_Meta_Pickaxe",
+            "Archetype": {
+                "RowName": "Workshop_Consumables"
+            }
+        },
+        {
+            "Name": "Workshop_Farming",
+            "BackgroundTexture": "/Game/Assets/2DArt/UI/Windows/EmptyAsset.EmptyAsset",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Tools/ITEM_Meta_Pickaxe.ITEM_Meta_Pickaxe",
+            "Archetype": {
+                "RowName": "Workshop_Farming"
+            }
+        },
+        {
+            "Name": "Workshop_Resources",
+            "BackgroundTexture": "/Game/Assets/2DArt/UI/Windows/EmptyAsset.EmptyAsset",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Tools/ITEM_Meta_Pickaxe.ITEM_Meta_Pickaxe",
+            "Archetype": {
+                "RowName": "Workshop_Resources"
+            }
+        },
+        {
+            "Name": "Workshop_Resources_Refined",
+            "BackgroundTexture": "/Game/Assets/2DArt/UI/Windows/EmptyAsset.EmptyAsset",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Tools/ITEM_Meta_Pickaxe.ITEM_Meta_Pickaxe",
+            "Archetype": {
+                "RowName": "Workshop_Resources_Refined"
+            }
+        },
+        {
+            "Name": "Workshop_Creatures",
+            "BackgroundTexture": "/Game/Assets/2DArt/UI/Windows/EmptyAsset.EmptyAsset",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Tools/ITEM_Meta_Pickaxe.ITEM_Meta_Pickaxe",
+            "Archetype": {
+                "RowName": "Workshop_Creatures"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Laika"
+                }
+            }
+        },
+        {
+            "Name": "Workshop_Creature_Equipment",
+            "BackgroundTexture": "/Game/Assets/2DArt/UI/Windows/EmptyAsset.EmptyAsset",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Tools/ITEM_Meta_Pickaxe.ITEM_Meta_Pickaxe",
+            "Archetype": {
+                "RowName": "Workshop_Creature_Equipment"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Creature_Mount_Base",
+            "DisplayName": "NSLOCTEXT(\"D_TalentTrees\", \"Creature_Mount_Base-DisplayName\", \"Creature/Mount Base Tree\")",
+            "Icon": "/Game/Assets/2DArt/UI/Icons/Icon_ShipThrust.Icon_ShipThrust",
+            "Archetype": {
+                "RowName": "Creature_Mount_Base"
+            },
+            "FirstRank": {
+                "RowName": "Novice"
+            }
+        },
+        {
+            "Name": "Creature_Moa",
+            "DisplayName": "NSLOCTEXT(\"D_TalentTrees\", \"Creature_Moa-DisplayName\", \"Moa\")",
+            "Icon": "/Game/Assets/2DArt/UI/Icons/Icon_ShipThrust.Icon_ShipThrust",
+            "Archetype": {
+                "RowName": "Creature_Moa"
+            },
+            "FirstRank": {
+                "RowName": "Novice"
+            }
+        },
+        {
+            "Name": "Creature_Buffalo",
+            "DisplayName": "NSLOCTEXT(\"D_TalentTrees\", \"Creature_Buffalo-DisplayName\", \"Buffalo\")",
+            "Icon": "/Game/Assets/2DArt/UI/Icons/Icon_ShipThrust.Icon_ShipThrust",
+            "Archetype": {
+                "RowName": "Creature_Buffalo"
+            },
+            "FirstRank": {
+                "RowName": "Novice"
+            }
+        },
+        {
+            "Name": "Creature_Tusker",
+            "DisplayName": "NSLOCTEXT(\"D_TalentTrees\", \"Creature_Tusker-DisplayName\", \"Tusker\")",
+            "Icon": "/Game/Assets/2DArt/UI/Icons/Icon_ShipThrust.Icon_ShipThrust",
+            "Archetype": {
+                "RowName": "Creature_Tusker"
+            },
+            "FirstRank": {
+                "RowName": "Novice"
+            }
+        },
+        {
+            "Name": "Creature_Terrenus",
+            "DisplayName": "NSLOCTEXT(\"D_TalentTrees\", \"Creature_Terrenus-DisplayName\", \"Terrenus\")",
+            "Icon": "/Game/Assets/2DArt/UI/Icons/Icon_ShipThrust.Icon_ShipThrust",
+            "Archetype": {
+                "RowName": "Creature_Terrenus"
+            },
+            "FirstRank": {
+                "RowName": "Novice"
+            }
+        },
+        {
+            "Name": "Creature_Wolf",
+            "DisplayName": "NSLOCTEXT(\"D_TalentTrees\", \"Creature_Wolf-DisplayName\", \"Wolf\")",
+            "Icon": "/Game/Assets/2DArt/UI/Icons/Icon_ShipThrust.Icon_ShipThrust",
+            "Archetype": {
+                "RowName": "Creature_Wolf"
+            },
+            "FirstRank": {
+                "RowName": "Novice"
+            }
+        },
+        {
+            "Name": "Creature_Snow_Wolf",
+            "DisplayName": "NSLOCTEXT(\"D_TalentTrees\", \"Creature_Snow_Wolf-DisplayName\", \"Snow Wolf\")",
+            "Icon": "/Game/Assets/2DArt/UI/Icons/Icon_ShipThrust.Icon_ShipThrust",
+            "Archetype": {
+                "RowName": "Creature_Snow_Wolf"
+            },
+            "FirstRank": {
+                "RowName": "Novice"
+            }
+        },
+        {
+            "Name": "Creature_Boar",
+            "DisplayName": "NSLOCTEXT(\"D_TalentTrees\", \"Creature_Boar-DisplayName\", \"Boar\")",
+            "Icon": "/Game/Assets/2DArt/UI/Icons/Icon_ShipThrust.Icon_ShipThrust",
+            "Archetype": {
+                "RowName": "Creature_Boar"
+            },
+            "FirstRank": {
+                "RowName": "Novice"
+            }
+        },
+        {
+            "Name": "Creature_Sheep",
+            "DisplayName": "NSLOCTEXT(\"D_TalentTrees\", \"Creature_Sheep-DisplayName\", \"Sheep\")",
+            "Icon": "/Game/Assets/2DArt/UI/Icons/Icon_ShipThrust.Icon_ShipThrust",
+            "Archetype": {
+                "RowName": "Creature_Sheep"
+            },
+            "FirstRank": {
+                "RowName": "Novice"
+            }
+        },
+        {
+            "Name": "Creature_Chicken",
+            "DisplayName": "NSLOCTEXT(\"D_TalentTrees\", \"Creature_Chicken-DisplayName\", \"Chicken\")",
+            "Icon": "/Game/Assets/2DArt/UI/Icons/Icon_ShipThrust.Icon_ShipThrust",
+            "Archetype": {
+                "RowName": "Creature_Chicken"
+            },
+            "FirstRank": {
+                "RowName": "Novice"
+            }
+        },
+        {
+            "Name": "Creature_Rooster",
+            "DisplayName": "NSLOCTEXT(\"D_TalentTrees\", \"Creature_Rooster-DisplayName\", \"Rooster\")",
+            "Icon": "/Game/Assets/2DArt/UI/Icons/Icon_ShipThrust.Icon_ShipThrust",
+            "Archetype": {
+                "RowName": "Creature_Rooster"
+            },
+            "FirstRank": {
+                "RowName": "Novice"
+            }
+        },
+        {
+            "Name": "Creature_Swamp_Quadruped",
+            "DisplayName": "NSLOCTEXT(\"D_TalentTrees\", \"Creature_Swamp_Quadruped-DisplayName\", \"Stryder\")",
+            "Icon": "/Game/Assets/2DArt/UI/Icons/Icon_ShipThrust.Icon_ShipThrust",
+            "Archetype": {
+                "RowName": "Creature_Swamp_Quadruped"
+            },
+            "FirstRank": {
+                "RowName": "Novice"
+            }
+        },
+        {
+            "Name": "Creature_Horse",
+            "DisplayName": "NSLOCTEXT(\"D_TalentTrees\", \"Creature_Horse-DisplayName\", \"Horse\")",
+            "Icon": "/Game/Assets/2DArt/UI/Icons/Icon_ShipThrust.Icon_ShipThrust",
+            "Archetype": {
+                "RowName": "Creature_Horse"
+            },
+            "FirstRank": {
+                "RowName": "Novice"
+            }
+        },
+        {
+            "Name": "Creature_Cat",
+            "DisplayName": "NSLOCTEXT(\"D_TalentTrees\", \"Creature_Cat-DisplayName\", \"Cat\")",
+            "Icon": "/Game/Assets/2DArt/UI/Icons/Icon_ShipThrust.Icon_ShipThrust",
+            "Archetype": {
+                "RowName": "Creature_Cat"
+            },
+            "FirstRank": {
+                "RowName": "Novice"
+            }
+        },
+        {
+            "Name": "Creature_Dog",
+            "DisplayName": "NSLOCTEXT(\"D_TalentTrees\", \"Creature_Dog-DisplayName\", \"Dog\")",
+            "Icon": "/Game/Assets/2DArt/UI/Icons/Icon_ShipThrust.Icon_ShipThrust",
+            "Archetype": {
+                "RowName": "Creature_Dog"
+            },
+            "FirstRank": {
+                "RowName": "Novice"
+            }
+        },
+        {
+            "Name": "Creature_Zebra",
+            "DisplayName": "NSLOCTEXT(\"D_TalentTrees\", \"Creature_Zebra-DisplayName\", \"Zebra\")",
+            "Icon": "/Game/Assets/2DArt/UI/Icons/Icon_ShipThrust.Icon_ShipThrust",
+            "Archetype": {
+                "RowName": "Creature_Zebra"
+            },
+            "FirstRank": {
+                "RowName": "Novice"
+            }
+        },
+        {
+            "Name": "Creature_Blueback",
+            "DisplayName": "NSLOCTEXT(\"D_TalentTrees\", \"Creature_Blueback-DisplayName\", \"Blueback\")",
+            "Icon": "/Game/Assets/2DArt/UI/Icons/Icon_ShipThrust.Icon_ShipThrust",
+            "Archetype": {
+                "RowName": "Creature_Blueback"
+            },
+            "FirstRank": {
+                "RowName": "Novice"
+            }
+        },
+        {
+            "Name": "Creature_WoolyZebra",
+            "DisplayName": "NSLOCTEXT(\"D_TalentTrees\", \"Creature_WoolyZebra-DisplayName\", \"Shaggy Zebra\")",
+            "Icon": "/Game/Assets/2DArt/UI/Icons/Icon_ShipThrust.Icon_ShipThrust",
+            "Archetype": {
+                "RowName": "Creature_WoolyZebra"
+            },
+            "FirstRank": {
+                "RowName": "Novice"
+            }
+        },
+        {
+            "Name": "Creature_Desert_Wolf",
+            "DisplayName": "NSLOCTEXT(\"D_TalentTrees\", \"Creature_Desert_Wolf-DisplayName\", \"Hyena\")",
+            "Icon": "/Game/Assets/2DArt/UI/Icons/Icon_ShipThrust.Icon_ShipThrust",
+            "Archetype": {
+                "RowName": "Creature_Desert_Wolf"
+            },
+            "FirstRank": {
+                "RowName": "Novice"
+            }
+        },
+        {
+            "Name": "Creature_ArcticMoa",
+            "DisplayName": "NSLOCTEXT(\"D_TalentTrees\", \"Creature_ArcticMoa-DisplayName\", \"Arctic Moa\")",
+            "Icon": "/Game/Assets/2DArt/UI/Icons/Icon_ShipThrust.Icon_ShipThrust",
+            "Archetype": {
+                "RowName": "Creature_ArcticMoa"
+            },
+            "FirstRank": {
+                "RowName": "Novice"
+            }
+        },
+        {
+            "Name": "Blueprint_T5_Manufacturer",
+            "BackgroundTexture": "/Game/Assets/2DArt/UI/Windows/EmptyAsset.EmptyAsset",
+            "Icon": "/Game/Assets/2DArt/UI/Icons/MapIcons/Icon_Map_Satelite.Icon_Map_Satelite",
+            "Archetype": {
+                "RowName": "Blueprint_Tier5_Manufacturer"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "GreatHunt_RockGolem",
+            "DisplayName": "NSLOCTEXT(\"D_TalentTrees\", \"GreatHunt_RockGolem-DisplayName\", \"Quarrite\")",
+            "Icon": "/Game/Assets/2DArt/UI/Icons/Icon_ShipThrust.Icon_ShipThrust",
+            "Archetype": {
+                "RowName": "GreatHunt_RockGolem"
+            },
+            "FirstRank": {
+                "RowName": "Novice"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "GreatHunt_IceMammoth",
+            "DisplayName": "NSLOCTEXT(\"D_TalentTrees\", \"GreatHunt_IceMammoth-DisplayName\", \"Ice Mammoth\")",
+            "Icon": "/Game/Assets/2DArt/UI/Icons/Icon_ShipThrust.Icon_ShipThrust",
+            "Archetype": {
+                "RowName": "GreatHunt_IceMammoth"
+            },
+            "FirstRank": {
+                "RowName": "Novice"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "Prospect_Elysium",
+            "BackgroundTexture": "/Game/Assets/2DArt/UI/Windows/EmptyAsset.EmptyAsset",
+            "Icon": "/Game/Assets/2DArt/UI/Icons/Icon_Perception.Icon_Perception",
+            "Archetype": {
+                "RowName": "Prospect_Elysium"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Workshop_Biolab",
+            "BackgroundTexture": "/Game/Assets/2DArt/UI/Windows/EmptyAsset.EmptyAsset",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Tools/ITEM_Meta_Pickaxe.ITEM_Meta_Pickaxe",
+            "Archetype": {
+                "RowName": "Workshop_Biolab"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "GreatHunt_Ape",
+            "DisplayName": "NSLOCTEXT(\"D_TalentTrees\", \"GreatHunt_Ape-DisplayName\", \"Garganutan\")",
+            "Icon": "/Game/Assets/2DArt/UI/Icons/Icon_ShipThrust.Icon_ShipThrust",
+            "Archetype": {
+                "RowName": "GreatHunt_Ape"
+            },
+            "FirstRank": {
+                "RowName": "Novice"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "Creature_Cow",
+            "DisplayName": "NSLOCTEXT(\"D_TalentTrees\", \"Creature_Cow-DisplayName\", \"Cow\")",
+            "Icon": "/Game/Assets/2DArt/UI/Icons/Icon_ShipThrust.Icon_ShipThrust",
+            "Archetype": {
+                "RowName": "Creature_Cow"
+            },
+            "FirstRank": {
+                "RowName": "Novice"
+            }
+        },
+        {
+            "Name": "Creature_SwampBird",
+            "DisplayName": "NSLOCTEXT(\"D_TalentTrees\", \"Creature_SwampBird-DisplayName\", \"Ubis\")",
+            "Icon": "/Game/Assets/2DArt/UI/Icons/Icon_ShipThrust.Icon_ShipThrust",
+            "Archetype": {
+                "RowName": "Creature_SwampBird"
+            },
+            "FirstRank": {
+                "RowName": "Novice"
+            }
+        },
+        {
+            "Name": "Creature_Raptor",
+            "DisplayName": "NSLOCTEXT(\"D_TalentTrees\", \"Creature_Raptor-DisplayName\", \"Raptor\")",
+            "Icon": "/Game/Assets/2DArt/UI/Icons/Icon_ShipThrust.Icon_ShipThrust",
+            "Archetype": {
+                "RowName": "Creature_Raptor"
+            },
+            "FirstRank": {
+                "RowName": "Novice"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Creature_Raptor_Desert",
+            "DisplayName": "NSLOCTEXT(\"D_TalentTrees\", \"Creature_Raptor_Desert-DisplayName\", \"Dune Raptor\")",
+            "Icon": "/Game/Assets/2DArt/UI/Icons/Icon_ShipThrust.Icon_ShipThrust",
+            "Archetype": {
+                "RowName": "Creature_Raptor_Desert"
+            },
+            "FirstRank": {
+                "RowName": "Novice"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Creature_Chew",
+            "DisplayName": "NSLOCTEXT(\"D_TalentTrees\", \"Creature_Chew-DisplayName\", \"Draven\")",
+            "Icon": "/Game/Assets/2DArt/UI/Icons/Icon_ShipThrust.Icon_ShipThrust",
+            "Archetype": {
+                "RowName": "Creature_Chew"
+            },
+            "FirstRank": {
+                "RowName": "Novice"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Creature_Slinker",
+            "DisplayName": "NSLOCTEXT(\"D_TalentTrees\", \"Creature_Slinker-DisplayName\", \"Slinker\")",
+            "Icon": "/Game/Assets/2DArt/UI/Icons/Icon_ShipThrust.Icon_ShipThrust",
+            "Archetype": {
+                "RowName": "Creature_Slinker"
+            },
+            "FirstRank": {
+                "RowName": "Novice"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Creature_Orka",
+            "DisplayName": "NSLOCTEXT(\"D_TalentTrees\", \"Creature_Orka-DisplayName\", \"Skulk\")",
+            "Icon": "/Game/Assets/2DArt/UI/Icons/Icon_ShipThrust.Icon_ShipThrust",
+            "Archetype": {
+                "RowName": "Creature_Orka"
+            },
+            "FirstRank": {
+                "RowName": "Novice"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Creature_Storca",
+            "DisplayName": "NSLOCTEXT(\"D_TalentTrees\", \"Creature_Storca-DisplayName\", \"Storca\")",
+            "Icon": "/Game/Assets/2DArt/UI/Icons/Icon_ShipThrust.Icon_ShipThrust",
+            "Archetype": {
+                "RowName": "Creature_Storca"
+            },
+            "FirstRank": {
+                "RowName": "Novice"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Creature_Tundra_Monkey",
+            "DisplayName": "NSLOCTEXT(\"D_TalentTrees\", \"Creature_Tundra_Monkey-DisplayName\", \"Gribbler\")",
+            "Icon": "/Game/Assets/2DArt/UI/Icons/Icon_ShipThrust.Icon_ShipThrust",
+            "Archetype": {
+                "RowName": "Creature_Tundra_Monkey"
+            },
+            "FirstRank": {
+                "RowName": "Novice"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Creature_WoollyMammoth",
+            "DisplayName": "NSLOCTEXT(\"D_TalentTrees\", \"Creature_WoollyMammoth-DisplayName\", \"Woolly Mammoth\")",
+            "Icon": "/Game/Assets/2DArt/UI/Icons/Icon_ShipThrust.Icon_ShipThrust",
+            "Archetype": {
+                "RowName": "Creature_WoollyMammoth"
+            },
+            "FirstRank": {
+                "RowName": "Novice"
+            }
+        },
+        {
+            "Name": "Creature_Bull",
+            "DisplayName": "NSLOCTEXT(\"D_TalentTrees\", \"Creature_Bull-DisplayName\", \"Bull\")",
+            "Icon": "/Game/Assets/2DArt/UI/Icons/MapIcons/T_Icon_Map_Bull.T_Icon_Map_Bull",
+            "Archetype": {
+                "RowName": "Creature_Bull"
+            },
+            "FirstRank": {
+                "RowName": "Novice"
+            }
+        },
+        {
+            "Name": "Creature_Pig",
+            "DisplayName": "NSLOCTEXT(\"D_TalentTrees\", \"Creature_Pig-DisplayName\", \"Pig\")",
+            "Icon": "/Game/Assets/2DArt/UI/Icons/MapIcons/T_Icon_Map_Boar.T_Icon_Map_Boar",
+            "Archetype": {
+                "RowName": "Creature_Pig"
+            },
+            "FirstRank": {
+                "RowName": "Novice"
+            }
+        }
+    ]
+}

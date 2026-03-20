@@ -1,0 +1,1463 @@
+{
+    "RowStruct": "/Script/Icarus.FirearmAudioData",
+    "Defaults": {
+        "FireSounds": [],
+        "PersistentSounds": [],
+        "NoFireSounds": []
+    },
+    "Rows": [
+        {
+            "Name": "Bow",
+            "FireSounds": [
+                {
+                    "Event": "/Game/FMOD/Events/SFX/Weapons/Bows/SFX_WEP_WOOD_BOW_FIRE.SFX_WEP_WOOD_BOW_FIRE",
+                    "AttachPoint": "None",
+                    "bUseChargeParameter": true,
+                    "bUseChargingParameter": false,
+                    "bUseAmmoCountParameter": false,
+                    "bUseReloadingParameter": false,
+                    "bUseAimingParameter": false
+                }
+            ],
+            "PersistentSounds": [
+                {
+                    "Event": "/Game/FMOD/Events/SFX/Weapons/Bows/SFX_WEP_BOW_DRAW.SFX_WEP_BOW_DRAW",
+                    "AttachPoint": "ArrowSocket",
+                    "bUseChargeParameter": true,
+                    "bUseChargingParameter": true,
+                    "bUseAmmoCountParameter": false,
+                    "bUseReloadingParameter": false,
+                    "bUseAimingParameter": false
+                },
+                {
+                    "Event": "/Game/FMOD/Events/SFX/Weapons/Bows/SFX_WEP_BOW_SHAFT.SFX_WEP_BOW_SHAFT",
+                    "AttachPoint": "None",
+                    "bUseChargeParameter": true,
+                    "bUseChargingParameter": true,
+                    "bUseAmmoCountParameter": false,
+                    "bUseReloadingParameter": false,
+                    "bUseAimingParameter": false
+                }
+            ],
+            "NoFireSounds": [
+                {
+                    "Event": "/Game/FMOD/Events/SFX/Weapons/Bows/SFX_WEP_BOW_DRY_FIRE.SFX_WEP_BOW_DRY_FIRE",
+                    "AttachPoint": "None",
+                    "bUseChargeParameter": false,
+                    "bUseChargingParameter": false,
+                    "bUseAmmoCountParameter": true,
+                    "bUseReloadingParameter": true,
+                    "bUseAimingParameter": false
+                }
+            ]
+        },
+        {
+            "Name": "HuntingRifle",
+            "FireSounds": [
+                {
+                    "Event": "/Game/FMOD/Events/SFX/Weapons/Guns/Rifle/SFX_RIFLE_FIRE.SFX_RIFLE_FIRE",
+                    "AttachPoint": "None",
+                    "bUseChargeParameter": false,
+                    "bUseChargingParameter": false,
+                    "bUseAmmoCountParameter": true,
+                    "bUseReloadingParameter": false,
+                    "bUseAimingParameter": false
+                }
+            ],
+            "PersistentSounds": [
+                {
+                    "Event": "/Game/FMOD/Events/SFX/Weapons/Guns/Aiming/SFX_SHOTGUN_AIM_UP.SFX_SHOTGUN_AIM_UP",
+                    "AttachPoint": "bn_Root_1",
+                    "bUseChargeParameter": false,
+                    "bUseChargingParameter": false,
+                    "bUseAmmoCountParameter": false,
+                    "bUseReloadingParameter": false,
+                    "bUseAimingParameter": true
+                }
+            ],
+            "NoFireSounds": [
+                {
+                    "Event": "/Game/FMOD/Events/SFX/Weapons/Guns/Rifle/SFX_RIFLE_DRYFIRE.SFX_RIFLE_DRYFIRE",
+                    "AttachPoint": "None",
+                    "bUseChargeParameter": false,
+                    "bUseChargingParameter": false,
+                    "bUseAmmoCountParameter": true,
+                    "bUseReloadingParameter": true,
+                    "bUseAimingParameter": false
+                }
+            ]
+        },
+        {
+            "Name": "Minigun",
+            "FireSounds": [
+                {
+                    "Event": "/Game/FMOD/Events/Testing/FirearmTest.FirearmTest",
+                    "AttachPoint": "None",
+                    "bUseChargeParameter": false,
+                    "bUseChargingParameter": false,
+                    "bUseAmmoCountParameter": false,
+                    "bUseReloadingParameter": false,
+                    "bUseAimingParameter": false
+                }
+            ],
+            "PersistentSounds": [
+                {
+                    "Event": "/Game/FMOD/Events/Testing/FirearmChargeTest.FirearmChargeTest",
+                    "AttachPoint": "None",
+                    "bUseChargeParameter": true,
+                    "bUseChargingParameter": true,
+                    "bUseAmmoCountParameter": false,
+                    "bUseReloadingParameter": false,
+                    "bUseAimingParameter": false
+                }
+            ]
+        },
+        {
+            "Name": "Shotgun",
+            "FireSounds": [
+                {
+                    "Event": "/Game/FMOD/Events/SFX/Weapons/Guns/Shotgun/SFX_SHOTGUN_V3_FIRE.SFX_SHOTGUN_V3_FIRE",
+                    "AttachPoint": "Muzzle",
+                    "bUseChargeParameter": false,
+                    "bUseChargingParameter": false,
+                    "bUseAmmoCountParameter": true,
+                    "bUseReloadingParameter": false,
+                    "bUseAimingParameter": false
+                }
+            ],
+            "PersistentSounds": [
+                {
+                    "Event": "/Game/FMOD/Events/SFX/Weapons/Guns/Aiming/SFX_SHOTGUN_AIM_UP.SFX_SHOTGUN_AIM_UP",
+                    "AttachPoint": "Trigger",
+                    "bUseChargeParameter": false,
+                    "bUseChargingParameter": false,
+                    "bUseAmmoCountParameter": false,
+                    "bUseReloadingParameter": false,
+                    "bUseAimingParameter": true
+                }
+            ],
+            "NoFireSounds": [
+                {
+                    "Event": "/Game/FMOD/Events/SFX/Weapons/Guns/Shotgun/SFX_SHOTGUN_DRYFIRE.SFX_SHOTGUN_DRYFIRE",
+                    "AttachPoint": "Muzzle",
+                    "bUseChargeParameter": false,
+                    "bUseChargingParameter": false,
+                    "bUseAmmoCountParameter": true,
+                    "bUseReloadingParameter": true,
+                    "bUseAimingParameter": false
+                }
+            ]
+        },
+        {
+            "Name": "ShotgunRusty",
+            "FireSounds": [
+                {
+                    "Event": "/Game/FMOD/Events/SFX/Weapons/Guns/Shotgun/SFX_SHOTGUN_RUSTY_FIRE.SFX_SHOTGUN_RUSTY_FIRE",
+                    "AttachPoint": "Muzzle",
+                    "bUseChargeParameter": false,
+                    "bUseChargingParameter": false,
+                    "bUseAmmoCountParameter": true,
+                    "bUseReloadingParameter": false,
+                    "bUseAimingParameter": false
+                }
+            ],
+            "PersistentSounds": [
+                {
+                    "Event": "/Game/FMOD/Events/SFX/Weapons/Guns/Aiming/SFX_SHOTGUN_AIM_UP.SFX_SHOTGUN_AIM_UP",
+                    "AttachPoint": "Trigger",
+                    "bUseChargeParameter": false,
+                    "bUseChargingParameter": false,
+                    "bUseAmmoCountParameter": false,
+                    "bUseReloadingParameter": false,
+                    "bUseAimingParameter": true
+                }
+            ],
+            "NoFireSounds": [
+                {
+                    "Event": "/Game/FMOD/Events/SFX/Weapons/Guns/Shotgun/SFX_SHOTGUN_RUSTY_DRYFIRE.SFX_SHOTGUN_RUSTY_DRYFIRE",
+                    "AttachPoint": "Muzzle",
+                    "bUseChargeParameter": false,
+                    "bUseChargingParameter": false,
+                    "bUseAmmoCountParameter": true,
+                    "bUseReloadingParameter": true,
+                    "bUseAimingParameter": false
+                }
+            ]
+        },
+        {
+            "Name": "FireExtinguisher",
+            "FireSounds": [
+                {
+                    "Event": "/Game/FMOD/Events/SFX/D_Items/FireExtinguisher/SFX_FIREEXTINGUISHER_FIRE.SFX_FIREEXTINGUISHER_FIRE",
+                    "AttachPoint": "None",
+                    "bUseChargeParameter": false,
+                    "bUseChargingParameter": false,
+                    "bUseAmmoCountParameter": false,
+                    "bUseReloadingParameter": false,
+                    "bUseAimingParameter": false
+                }
+            ]
+        },
+        {
+            "Name": "Crossbow",
+            "FireSounds": [
+                {
+                    "Event": "/Game/FMOD/Events/SFX/Weapons/Crossbow/SFX_WEP_CBOW_FIRE.SFX_WEP_CBOW_FIRE",
+                    "AttachPoint": "SK_CSB_Srossbow_JNT_DRAW",
+                    "bUseChargeParameter": false,
+                    "bUseChargingParameter": false,
+                    "bUseAmmoCountParameter": false,
+                    "bUseReloadingParameter": false,
+                    "bUseAimingParameter": false
+                }
+            ],
+            "PersistentSounds": [
+                {
+                    "Event": "/Game/FMOD/Events/SFX/Weapons/Guns/Aiming/SFX_SHOTGUN_AIM_UP.SFX_SHOTGUN_AIM_UP",
+                    "AttachPoint": "Trigger",
+                    "bUseChargeParameter": false,
+                    "bUseChargingParameter": false,
+                    "bUseAmmoCountParameter": false,
+                    "bUseReloadingParameter": false,
+                    "bUseAimingParameter": true
+                }
+            ]
+        },
+        {
+            "Name": "CrossbowInaris",
+            "FireSounds": [
+                {
+                    "Event": "/Game/FMOD/Events/SFX/Weapons/Crossbow/SFX_WEP_CROSSBOW_INARIS_FIRE.SFX_WEP_CROSSBOW_INARIS_FIRE",
+                    "AttachPoint": "SK_CSB_Srossbow_JNT_DRAW",
+                    "bUseChargeParameter": false,
+                    "bUseChargingParameter": false,
+                    "bUseAmmoCountParameter": false,
+                    "bUseReloadingParameter": false,
+                    "bUseAimingParameter": false
+                }
+            ],
+            "PersistentSounds": [
+                {
+                    "Event": "/Game/FMOD/Events/SFX/Weapons/Guns/Aiming/SFX_SHOTGUN_AIM_UP.SFX_SHOTGUN_AIM_UP",
+                    "AttachPoint": "Trigger",
+                    "bUseChargeParameter": false,
+                    "bUseChargingParameter": false,
+                    "bUseAmmoCountParameter": false,
+                    "bUseReloadingParameter": false,
+                    "bUseAimingParameter": true
+                }
+            ]
+        },
+        {
+            "Name": "CrossbowT3",
+            "FireSounds": [
+                {
+                    "Event": "/Game/FMOD/Events/SFX/Weapons/Crossbow/SFX_WEP_CROSSBOW_T3.SFX_WEP_CROSSBOW_T3",
+                    "AttachPoint": "SK_CSB_Srossbow_JNT_DRAW",
+                    "bUseChargeParameter": false,
+                    "bUseChargingParameter": false,
+                    "bUseAmmoCountParameter": false,
+                    "bUseReloadingParameter": false,
+                    "bUseAimingParameter": false
+                }
+            ],
+            "PersistentSounds": [
+                {
+                    "Event": "/Game/FMOD/Events/SFX/Weapons/Guns/Aiming/SFX_SHOTGUN_AIM_UP.SFX_SHOTGUN_AIM_UP",
+                    "AttachPoint": "Trigger",
+                    "bUseChargeParameter": false,
+                    "bUseChargingParameter": false,
+                    "bUseAmmoCountParameter": false,
+                    "bUseReloadingParameter": false,
+                    "bUseAimingParameter": true
+                }
+            ]
+        },
+        {
+            "Name": "CrossbowT4",
+            "FireSounds": [
+                {
+                    "Event": "/Game/FMOD/Events/SFX/Weapons/Crossbow/SFX_WEP_CROSSBOW_T4.SFX_WEP_CROSSBOW_T4",
+                    "AttachPoint": "SK_CSB_Srossbow_JNT_DRAW",
+                    "bUseChargeParameter": false,
+                    "bUseChargingParameter": false,
+                    "bUseAmmoCountParameter": false,
+                    "bUseReloadingParameter": false,
+                    "bUseAimingParameter": false
+                }
+            ],
+            "PersistentSounds": [
+                {
+                    "Event": "/Game/FMOD/Events/SFX/Weapons/Guns/Aiming/SFX_SHOTGUN_AIM_UP.SFX_SHOTGUN_AIM_UP",
+                    "AttachPoint": "Trigger",
+                    "bUseChargeParameter": false,
+                    "bUseChargingParameter": false,
+                    "bUseAmmoCountParameter": false,
+                    "bUseReloadingParameter": false,
+                    "bUseAimingParameter": true
+                }
+            ]
+        },
+        {
+            "Name": "Longbow",
+            "FireSounds": [
+                {
+                    "Event": "/Game/FMOD/Events/SFX/Weapons/Bows/SFX_WEP_LONG_BOW_FIRE.SFX_WEP_LONG_BOW_FIRE",
+                    "AttachPoint": "None",
+                    "bUseChargeParameter": true,
+                    "bUseChargingParameter": false,
+                    "bUseAmmoCountParameter": false,
+                    "bUseReloadingParameter": false,
+                    "bUseAimingParameter": false
+                }
+            ],
+            "PersistentSounds": [
+                {
+                    "Event": "/Game/FMOD/Events/SFX/Weapons/Bows/SFX_WEP_LONG_BOW_DRAW.SFX_WEP_LONG_BOW_DRAW",
+                    "AttachPoint": "ArrowSocket",
+                    "bUseChargeParameter": true,
+                    "bUseChargingParameter": true,
+                    "bUseAmmoCountParameter": false,
+                    "bUseReloadingParameter": false,
+                    "bUseAimingParameter": false
+                },
+                {
+                    "Event": "/Game/FMOD/Events/SFX/Weapons/Bows/SFX_WEP_LONGBOW_SHAFT.SFX_WEP_LONGBOW_SHAFT",
+                    "AttachPoint": "None",
+                    "bUseChargeParameter": true,
+                    "bUseChargingParameter": true,
+                    "bUseAmmoCountParameter": false,
+                    "bUseReloadingParameter": false,
+                    "bUseAimingParameter": false
+                }
+            ],
+            "NoFireSounds": [
+                {
+                    "Event": "/Game/FMOD/Events/SFX/Weapons/Bows/SFX_WEP_BOW_DRY_FIRE.SFX_WEP_BOW_DRY_FIRE",
+                    "AttachPoint": "None",
+                    "bUseChargeParameter": false,
+                    "bUseChargingParameter": false,
+                    "bUseAmmoCountParameter": true,
+                    "bUseReloadingParameter": true,
+                    "bUseAimingParameter": false
+                }
+            ]
+        },
+        {
+            "Name": "RecurveBow",
+            "FireSounds": [
+                {
+                    "Event": "/Game/FMOD/Events/SFX/Weapons/Bows/SFX_WEP_RECURVE_BOW_FIRE.SFX_WEP_RECURVE_BOW_FIRE",
+                    "AttachPoint": "None",
+                    "bUseChargeParameter": true,
+                    "bUseChargingParameter": false,
+                    "bUseAmmoCountParameter": false,
+                    "bUseReloadingParameter": false,
+                    "bUseAimingParameter": false
+                }
+            ],
+            "PersistentSounds": [
+                {
+                    "Event": "/Game/FMOD/Events/SFX/Weapons/Bows/SFX_WEP_RECURVE_DRAW.SFX_WEP_RECURVE_DRAW",
+                    "AttachPoint": "ArrowSocket",
+                    "bUseChargeParameter": true,
+                    "bUseChargingParameter": true,
+                    "bUseAmmoCountParameter": false,
+                    "bUseReloadingParameter": false,
+                    "bUseAimingParameter": false
+                },
+                {
+                    "Event": "/Game/FMOD/Events/SFX/Weapons/Bows/SFX_WEP_RECURVE_BOW_SHAFT.SFX_WEP_RECURVE_BOW_SHAFT",
+                    "AttachPoint": "None",
+                    "bUseChargeParameter": true,
+                    "bUseChargingParameter": true,
+                    "bUseAmmoCountParameter": false,
+                    "bUseReloadingParameter": false,
+                    "bUseAimingParameter": false
+                }
+            ],
+            "NoFireSounds": [
+                {
+                    "Event": "/Game/FMOD/Events/SFX/Weapons/Bows/SFX_WEP_BOW_DRY_FIRE.SFX_WEP_BOW_DRY_FIRE",
+                    "AttachPoint": "None",
+                    "bUseChargeParameter": false,
+                    "bUseChargingParameter": false,
+                    "bUseAmmoCountParameter": true,
+                    "bUseReloadingParameter": true,
+                    "bUseAimingParameter": false
+                }
+            ]
+        },
+        {
+            "Name": "CompoundBow",
+            "FireSounds": [
+                {
+                    "Event": "/Game/FMOD/Events/SFX/Weapons/Bows/SFX_WEP_COMPOUND_BOW_FIRE.SFX_WEP_COMPOUND_BOW_FIRE",
+                    "AttachPoint": "None",
+                    "bUseChargeParameter": true,
+                    "bUseChargingParameter": false,
+                    "bUseAmmoCountParameter": false,
+                    "bUseReloadingParameter": false,
+                    "bUseAimingParameter": false
+                }
+            ],
+            "PersistentSounds": [
+                {
+                    "Event": "/Game/FMOD/Events/SFX/Weapons/Bows/SFX_WEP_COMPOUND_BOW_DRAW.SFX_WEP_COMPOUND_BOW_DRAW",
+                    "AttachPoint": "ArrowSocket",
+                    "bUseChargeParameter": true,
+                    "bUseChargingParameter": true,
+                    "bUseAmmoCountParameter": false,
+                    "bUseReloadingParameter": false,
+                    "bUseAimingParameter": false
+                },
+                {
+                    "Event": "/Game/FMOD/Events/SFX/Weapons/Bows/SFX_WEP_COMPOUND_BOW_SHAFT.SFX_WEP_COMPOUND_BOW_SHAFT",
+                    "AttachPoint": "None",
+                    "bUseChargeParameter": true,
+                    "bUseChargingParameter": true,
+                    "bUseAmmoCountParameter": false,
+                    "bUseReloadingParameter": false,
+                    "bUseAimingParameter": false
+                },
+                {
+                    "Event": "None",
+                    "AttachPoint": "None",
+                    "bUseChargeParameter": false,
+                    "bUseChargingParameter": false,
+                    "bUseAmmoCountParameter": false,
+                    "bUseReloadingParameter": false,
+                    "bUseAimingParameter": false
+                }
+            ],
+            "NoFireSounds": [
+                {
+                    "Event": "/Game/FMOD/Events/SFX/Weapons/Bows/SFX_WEP_BOW_DRY_FIRE.SFX_WEP_BOW_DRY_FIRE",
+                    "AttachPoint": "None",
+                    "bUseChargeParameter": false,
+                    "bUseChargingParameter": false,
+                    "bUseAmmoCountParameter": true,
+                    "bUseReloadingParameter": true,
+                    "bUseAimingParameter": false
+                }
+            ]
+        },
+        {
+            "Name": "BoltActionRifle",
+            "FireSounds": [
+                {
+                    "Event": "/Game/FMOD/Events/SFX/Weapons/Guns/BoltAction/SFX_BOLTACTION_FIRE.SFX_BOLTACTION_FIRE",
+                    "AttachPoint": "None",
+                    "bUseChargeParameter": false,
+                    "bUseChargingParameter": false,
+                    "bUseAmmoCountParameter": true,
+                    "bUseReloadingParameter": false,
+                    "bUseAimingParameter": false
+                }
+            ],
+            "PersistentSounds": [
+                {
+                    "Event": "/Game/FMOD/Events/SFX/Weapons/Guns/Aiming/SFX_SHOTGUN_AIM_UP.SFX_SHOTGUN_AIM_UP",
+                    "AttachPoint": "Trigger",
+                    "bUseChargeParameter": false,
+                    "bUseChargingParameter": false,
+                    "bUseAmmoCountParameter": false,
+                    "bUseReloadingParameter": false,
+                    "bUseAimingParameter": true
+                }
+            ],
+            "NoFireSounds": [
+                {
+                    "Event": "/Game/FMOD/Events/SFX/Weapons/Guns/Rifle/SFX_RIFLE_DRYFIRE.SFX_RIFLE_DRYFIRE",
+                    "AttachPoint": "None",
+                    "bUseChargeParameter": false,
+                    "bUseChargingParameter": false,
+                    "bUseAmmoCountParameter": true,
+                    "bUseReloadingParameter": true,
+                    "bUseAimingParameter": false
+                }
+            ]
+        },
+        {
+            "Name": "Pistol",
+            "FireSounds": [
+                {
+                    "Event": "/Game/FMOD/Events/SFX/Weapons/Guns/Pistol/SFX_PISTOL_FIRE.SFX_PISTOL_FIRE",
+                    "AttachPoint": "Trigger",
+                    "bUseChargeParameter": false,
+                    "bUseChargingParameter": false,
+                    "bUseAmmoCountParameter": false,
+                    "bUseReloadingParameter": false,
+                    "bUseAimingParameter": false
+                }
+            ],
+            "PersistentSounds": [
+                {
+                    "Event": "/Game/FMOD/Events/SFX/Weapons/Guns/Aiming/SFX_SHOTGUN_AIM_UP.SFX_SHOTGUN_AIM_UP",
+                    "AttachPoint": "Trigger",
+                    "bUseChargeParameter": false,
+                    "bUseChargingParameter": false,
+                    "bUseAmmoCountParameter": false,
+                    "bUseReloadingParameter": false,
+                    "bUseAimingParameter": true
+                }
+            ],
+            "NoFireSounds": [
+                {
+                    "Event": "/Game/FMOD/Events/SFX/Weapons/Guns/Pistol/SFX_PISTOL_DRY_FIRE.SFX_PISTOL_DRY_FIRE",
+                    "AttachPoint": "Trigger",
+                    "bUseChargeParameter": false,
+                    "bUseChargingParameter": false,
+                    "bUseAmmoCountParameter": true,
+                    "bUseReloadingParameter": true,
+                    "bUseAimingParameter": false
+                }
+            ]
+        },
+        {
+            "Name": "CrossbowScorpion",
+            "FireSounds": [
+                {
+                    "Event": "/Game/FMOD/Events/SFX/Weapons/Crossbow/SFX_WEP_CROSSBOW_SCORPION.SFX_WEP_CROSSBOW_SCORPION",
+                    "AttachPoint": "SK_CSB_Srossbow_JNT_DRAW",
+                    "bUseChargeParameter": false,
+                    "bUseChargingParameter": false,
+                    "bUseAmmoCountParameter": false,
+                    "bUseReloadingParameter": false,
+                    "bUseAimingParameter": false
+                }
+            ],
+            "PersistentSounds": [
+                {
+                    "Event": "/Game/FMOD/Events/SFX/Weapons/Guns/Aiming/SFX_SHOTGUN_AIM_UP.SFX_SHOTGUN_AIM_UP",
+                    "AttachPoint": "Trigger",
+                    "bUseChargeParameter": false,
+                    "bUseChargingParameter": false,
+                    "bUseAmmoCountParameter": false,
+                    "bUseReloadingParameter": false,
+                    "bUseAimingParameter": true
+                }
+            ]
+        },
+        {
+            "Name": "ScorpionRifle",
+            "FireSounds": [
+                {
+                    "Event": "/Game/FMOD/Events/SFX/Weapons/Guns/Rifle/SFX_SCORPION_RIFLE_FIRE.SFX_SCORPION_RIFLE_FIRE",
+                    "AttachPoint": "None",
+                    "bUseChargeParameter": false,
+                    "bUseChargingParameter": false,
+                    "bUseAmmoCountParameter": true,
+                    "bUseReloadingParameter": false,
+                    "bUseAimingParameter": false
+                }
+            ],
+            "PersistentSounds": [
+                {
+                    "Event": "/Game/FMOD/Events/SFX/Weapons/Guns/Aiming/SFX_SHOTGUN_AIM_UP.SFX_SHOTGUN_AIM_UP",
+                    "AttachPoint": "bn_Root_1",
+                    "bUseChargeParameter": false,
+                    "bUseChargingParameter": false,
+                    "bUseAmmoCountParameter": false,
+                    "bUseReloadingParameter": false,
+                    "bUseAimingParameter": true
+                }
+            ],
+            "NoFireSounds": [
+                {
+                    "Event": "/Game/FMOD/Events/SFX/Weapons/Guns/Rifle/SFX_RIFLE_DRYFIRE.SFX_RIFLE_DRYFIRE",
+                    "AttachPoint": "None",
+                    "bUseChargeParameter": false,
+                    "bUseChargingParameter": false,
+                    "bUseAmmoCountParameter": true,
+                    "bUseReloadingParameter": true,
+                    "bUseAimingParameter": false
+                }
+            ]
+        },
+        {
+            "Name": "Revolver",
+            "FireSounds": [
+                {
+                    "Event": "/Game/FMOD/Events/SFX/Weapons/Guns/Revolver/SFX_REVOLVER_PISTOL_FIRE.SFX_REVOLVER_PISTOL_FIRE",
+                    "AttachPoint": "Trigger1",
+                    "bUseChargeParameter": false,
+                    "bUseChargingParameter": false,
+                    "bUseAmmoCountParameter": true,
+                    "bUseReloadingParameter": false,
+                    "bUseAimingParameter": false
+                }
+            ],
+            "PersistentSounds": [
+                {
+                    "Event": "/Game/FMOD/Events/SFX/Weapons/Guns/Aiming/SFX_SHOTGUN_AIM_UP.SFX_SHOTGUN_AIM_UP",
+                    "AttachPoint": "Trigger",
+                    "bUseChargeParameter": false,
+                    "bUseChargingParameter": false,
+                    "bUseAmmoCountParameter": false,
+                    "bUseReloadingParameter": false,
+                    "bUseAimingParameter": true
+                }
+            ],
+            "NoFireSounds": [
+                {
+                    "Event": "/Game/FMOD/Events/SFX/Weapons/Guns/Pistol/SFX_PISTOL_DRY_FIRE.SFX_PISTOL_DRY_FIRE",
+                    "AttachPoint": "Trigger1",
+                    "bUseChargeParameter": false,
+                    "bUseChargingParameter": false,
+                    "bUseAmmoCountParameter": true,
+                    "bUseReloadingParameter": true,
+                    "bUseAimingParameter": false
+                }
+            ]
+        },
+        {
+            "Name": "CHAC_Pistol",
+            "FireSounds": [
+                {
+                    "Event": "/Game/FMOD/Events/SFX/Weapons/Guns/Pistol/SFX_CHAC_PISTOL_FIRE.SFX_CHAC_PISTOL_FIRE",
+                    "AttachPoint": "Trigger1",
+                    "bUseChargeParameter": false,
+                    "bUseChargingParameter": false,
+                    "bUseAmmoCountParameter": true,
+                    "bUseReloadingParameter": false,
+                    "bUseAimingParameter": false
+                }
+            ],
+            "PersistentSounds": [
+                {
+                    "Event": "/Game/FMOD/Events/SFX/Weapons/Guns/Aiming/SFX_SHOTGUN_AIM_UP.SFX_SHOTGUN_AIM_UP",
+                    "AttachPoint": "Trigger",
+                    "bUseChargeParameter": false,
+                    "bUseChargingParameter": false,
+                    "bUseAmmoCountParameter": false,
+                    "bUseReloadingParameter": false,
+                    "bUseAimingParameter": true
+                }
+            ],
+            "NoFireSounds": [
+                {
+                    "Event": "/Game/FMOD/Events/SFX/Weapons/Guns/Pistol/SFX_PISTOL_DRY_FIRE.SFX_PISTOL_DRY_FIRE",
+                    "AttachPoint": "Trigger1",
+                    "bUseChargeParameter": false,
+                    "bUseChargingParameter": false,
+                    "bUseAmmoCountParameter": true,
+                    "bUseReloadingParameter": true,
+                    "bUseAimingParameter": false
+                }
+            ]
+        },
+        {
+            "Name": "Pistol_T3",
+            "FireSounds": [
+                {
+                    "Event": "/Game/FMOD/Events/SFX/Weapons/Guns/Pistol/SFX_PISTOL_T3_FIRE.SFX_PISTOL_T3_FIRE",
+                    "AttachPoint": "Trigger1",
+                    "bUseChargeParameter": false,
+                    "bUseChargingParameter": false,
+                    "bUseAmmoCountParameter": true,
+                    "bUseReloadingParameter": false,
+                    "bUseAimingParameter": false
+                }
+            ],
+            "PersistentSounds": [
+                {
+                    "Event": "/Game/FMOD/Events/SFX/Weapons/Guns/Aiming/SFX_SHOTGUN_AIM_UP.SFX_SHOTGUN_AIM_UP",
+                    "AttachPoint": "Trigger",
+                    "bUseChargeParameter": false,
+                    "bUseChargingParameter": false,
+                    "bUseAmmoCountParameter": false,
+                    "bUseReloadingParameter": false,
+                    "bUseAimingParameter": true
+                }
+            ],
+            "NoFireSounds": [
+                {
+                    "Event": "/Game/FMOD/Events/SFX/Weapons/Guns/Pistol/SFX_PISTOL_DRY_FIRE.SFX_PISTOL_DRY_FIRE",
+                    "AttachPoint": "Trigger1",
+                    "bUseChargeParameter": false,
+                    "bUseChargingParameter": false,
+                    "bUseAmmoCountParameter": true,
+                    "bUseReloadingParameter": true,
+                    "bUseAimingParameter": false
+                }
+            ]
+        },
+        {
+            "Name": "CrossbowSandworm",
+            "FireSounds": [
+                {
+                    "Event": "/Game/FMOD/Events/SFX/Weapons/Crossbow/SFX_WEP_CROSSBOW_SANDWORM_FIRE.SFX_WEP_CROSSBOW_SANDWORM_FIRE",
+                    "AttachPoint": "SK_CSB_Srossbow_JNT_DRAW",
+                    "bUseChargeParameter": false,
+                    "bUseChargingParameter": false,
+                    "bUseAmmoCountParameter": false,
+                    "bUseReloadingParameter": false,
+                    "bUseAimingParameter": false
+                }
+            ],
+            "PersistentSounds": [
+                {
+                    "Event": "/Game/FMOD/Events/SFX/Weapons/Guns/Aiming/SFX_SHOTGUN_AIM_UP.SFX_SHOTGUN_AIM_UP",
+                    "AttachPoint": "Trigger",
+                    "bUseChargeParameter": false,
+                    "bUseChargingParameter": false,
+                    "bUseAmmoCountParameter": false,
+                    "bUseReloadingParameter": false,
+                    "bUseAimingParameter": true
+                }
+            ]
+        },
+        {
+            "Name": "TurretGeneric",
+            "FireSounds": [
+                {
+                    "Event": "/Game/FMOD/Events/SFX/Weapons/Guns/Turrets/SFX_TURRET_FIRE_GENERIC.SFX_TURRET_FIRE_GENERIC",
+                    "AttachPoint": "None",
+                    "bUseChargeParameter": false,
+                    "bUseChargingParameter": false,
+                    "bUseAmmoCountParameter": false,
+                    "bUseReloadingParameter": false,
+                    "bUseAimingParameter": false
+                }
+            ]
+        },
+        {
+            "Name": "TurretShotgun",
+            "FireSounds": [
+                {
+                    "Event": "/Game/FMOD/Events/SFX/Weapons/Guns/Turrets/SFX_TURRET_FIRE_SHOTGUN.SFX_TURRET_FIRE_SHOTGUN",
+                    "AttachPoint": "None",
+                    "bUseChargeParameter": false,
+                    "bUseChargingParameter": false,
+                    "bUseAmmoCountParameter": false,
+                    "bUseReloadingParameter": false,
+                    "bUseAimingParameter": false
+                }
+            ]
+        },
+        {
+            "Name": "TurretRifle",
+            "FireSounds": [
+                {
+                    "Event": "/Game/FMOD/Events/SFX/Weapons/Guns/Turrets/SFX_TURRET_FIRE_RIFLE.SFX_TURRET_FIRE_RIFLE",
+                    "AttachPoint": "None",
+                    "bUseChargeParameter": false,
+                    "bUseChargingParameter": false,
+                    "bUseAmmoCountParameter": false,
+                    "bUseReloadingParameter": false,
+                    "bUseAimingParameter": false
+                }
+            ]
+        },
+        {
+            "Name": "ShotgunT4",
+            "FireSounds": [
+                {
+                    "Event": "/Game/FMOD/Events/SFX/Weapons/Guns/Shotgun/SFX_SHOTGUN_T4_FIRE.SFX_SHOTGUN_T4_FIRE",
+                    "AttachPoint": "Trigger",
+                    "bUseChargeParameter": false,
+                    "bUseChargingParameter": false,
+                    "bUseAmmoCountParameter": true,
+                    "bUseReloadingParameter": false,
+                    "bUseAimingParameter": false
+                }
+            ],
+            "PersistentSounds": [
+                {
+                    "Event": "/Game/FMOD/Events/SFX/Weapons/Guns/Aiming/SFX_SHOTGUN_AIM_UP.SFX_SHOTGUN_AIM_UP",
+                    "AttachPoint": "Trigger",
+                    "bUseChargeParameter": false,
+                    "bUseChargingParameter": false,
+                    "bUseAmmoCountParameter": false,
+                    "bUseReloadingParameter": false,
+                    "bUseAimingParameter": true
+                }
+            ],
+            "NoFireSounds": [
+                {
+                    "Event": "/Game/FMOD/Events/SFX/Weapons/Guns/Shotgun/SFX_SHOTGUN_T4_DRYFIRE.SFX_SHOTGUN_T4_DRYFIRE",
+                    "AttachPoint": "Trigger",
+                    "bUseChargeParameter": false,
+                    "bUseChargingParameter": false,
+                    "bUseAmmoCountParameter": true,
+                    "bUseReloadingParameter": true,
+                    "bUseAimingParameter": false
+                }
+            ]
+        },
+        {
+            "Name": "ShotgunChac",
+            "FireSounds": [
+                {
+                    "Event": "/Game/FMOD/Events/SFX/Weapons/Guns/Shotgun/SFX_SHOTGUN_CHAC_FIRE.SFX_SHOTGUN_CHAC_FIRE",
+                    "AttachPoint": "Trigger",
+                    "bUseChargeParameter": false,
+                    "bUseChargingParameter": false,
+                    "bUseAmmoCountParameter": true,
+                    "bUseReloadingParameter": false,
+                    "bUseAimingParameter": false
+                }
+            ],
+            "PersistentSounds": [
+                {
+                    "Event": "/Game/FMOD/Events/SFX/Weapons/Guns/Aiming/SFX_SHOTGUN_AIM_UP.SFX_SHOTGUN_AIM_UP",
+                    "AttachPoint": "Trigger",
+                    "bUseChargeParameter": false,
+                    "bUseChargingParameter": false,
+                    "bUseAmmoCountParameter": false,
+                    "bUseReloadingParameter": false,
+                    "bUseAimingParameter": true
+                }
+            ],
+            "NoFireSounds": [
+                {
+                    "Event": "/Game/FMOD/Events/SFX/Weapons/Guns/Shotgun/SFX_SHOTGUN_T4_DRYFIRE.SFX_SHOTGUN_T4_DRYFIRE",
+                    "AttachPoint": "Trigger",
+                    "bUseChargeParameter": false,
+                    "bUseChargingParameter": false,
+                    "bUseAmmoCountParameter": true,
+                    "bUseReloadingParameter": true,
+                    "bUseAimingParameter": false
+                }
+            ]
+        },
+        {
+            "Name": "CHACRifle",
+            "FireSounds": [
+                {
+                    "Event": "/Game/FMOD/Events/SFX/Weapons/Guns/Rifle/SFX_CHAC_RIFLE_FIRE.SFX_CHAC_RIFLE_FIRE",
+                    "AttachPoint": "None",
+                    "bUseChargeParameter": false,
+                    "bUseChargingParameter": false,
+                    "bUseAmmoCountParameter": true,
+                    "bUseReloadingParameter": false,
+                    "bUseAimingParameter": false
+                }
+            ],
+            "PersistentSounds": [
+                {
+                    "Event": "/Game/FMOD/Events/SFX/Weapons/Guns/Aiming/SFX_SHOTGUN_AIM_UP.SFX_SHOTGUN_AIM_UP",
+                    "AttachPoint": "bn_Root_1",
+                    "bUseChargeParameter": false,
+                    "bUseChargingParameter": false,
+                    "bUseAmmoCountParameter": false,
+                    "bUseReloadingParameter": false,
+                    "bUseAimingParameter": true
+                }
+            ],
+            "NoFireSounds": [
+                {
+                    "Event": "/Game/FMOD/Events/SFX/Weapons/Guns/Rifle/SFX_RIFLE_DRYFIRE.SFX_RIFLE_DRYFIRE",
+                    "AttachPoint": "None",
+                    "bUseChargeParameter": false,
+                    "bUseChargingParameter": false,
+                    "bUseAmmoCountParameter": true,
+                    "bUseReloadingParameter": true,
+                    "bUseAimingParameter": false
+                }
+            ]
+        },
+        {
+            "Name": "Assault_Rifle",
+            "FireSounds": [
+                {
+                    "Event": "/Game/FMOD/Events/SFX/Weapons/Guns/Assault_Rifle/SFX_ASSAULT_RIFLE_FIRE_V2.SFX_ASSAULT_RIFLE_FIRE_V2",
+                    "AttachPoint": "None",
+                    "bUseChargeParameter": false,
+                    "bUseChargingParameter": false,
+                    "bUseAmmoCountParameter": true,
+                    "bUseReloadingParameter": false,
+                    "bUseAimingParameter": false
+                }
+            ],
+            "PersistentSounds": [
+                {
+                    "Event": "/Game/FMOD/Events/SFX/Weapons/Guns/Aiming/SFX_SHOTGUN_AIM_UP.SFX_SHOTGUN_AIM_UP",
+                    "AttachPoint": "bn_Root_1",
+                    "bUseChargeParameter": false,
+                    "bUseChargingParameter": false,
+                    "bUseAmmoCountParameter": false,
+                    "bUseReloadingParameter": false,
+                    "bUseAimingParameter": true
+                }
+            ],
+            "NoFireSounds": [
+                {
+                    "Event": "/Game/FMOD/Events/SFX/Weapons/Guns/Rifle/SFX_RIFLE_DRYFIRE.SFX_RIFLE_DRYFIRE",
+                    "AttachPoint": "None",
+                    "bUseChargeParameter": false,
+                    "bUseChargingParameter": false,
+                    "bUseAmmoCountParameter": true,
+                    "bUseReloadingParameter": true,
+                    "bUseAimingParameter": false
+                }
+            ]
+        },
+        {
+            "Name": "PistolT4",
+            "FireSounds": [
+                {
+                    "Event": "/Game/FMOD/Events/SFX/Weapons/Guns/Pistol/SFX_T4_PISTOL_FIRE.SFX_T4_PISTOL_FIRE",
+                    "AttachPoint": "Trigger1",
+                    "bUseChargeParameter": false,
+                    "bUseChargingParameter": false,
+                    "bUseAmmoCountParameter": true,
+                    "bUseReloadingParameter": false,
+                    "bUseAimingParameter": false
+                }
+            ],
+            "PersistentSounds": [
+                {
+                    "Event": "/Game/FMOD/Events/SFX/Weapons/Guns/Aiming/SFX_SHOTGUN_AIM_UP.SFX_SHOTGUN_AIM_UP",
+                    "AttachPoint": "Trigger",
+                    "bUseChargeParameter": false,
+                    "bUseChargingParameter": false,
+                    "bUseAmmoCountParameter": false,
+                    "bUseReloadingParameter": false,
+                    "bUseAimingParameter": true
+                }
+            ],
+            "NoFireSounds": [
+                {
+                    "Event": "/Game/FMOD/Events/SFX/Weapons/Guns/Pistol/SFX_PISTOL_DRY_FIRE.SFX_PISTOL_DRY_FIRE",
+                    "AttachPoint": "Trigger1",
+                    "bUseChargeParameter": false,
+                    "bUseChargingParameter": false,
+                    "bUseAmmoCountParameter": true,
+                    "bUseReloadingParameter": true,
+                    "bUseAimingParameter": false
+                }
+            ]
+        },
+        {
+            "Name": "RockGolemGun",
+            "FireSounds": [
+                {
+                    "Event": "/Game/FMOD/Events/SFX/Weapons/Guns/Rifle/SFX_ROCK_GOLEM_GUN.SFX_ROCK_GOLEM_GUN",
+                    "AttachPoint": "None",
+                    "bUseChargeParameter": false,
+                    "bUseChargingParameter": false,
+                    "bUseAmmoCountParameter": true,
+                    "bUseReloadingParameter": false,
+                    "bUseAimingParameter": false
+                }
+            ],
+            "PersistentSounds": [
+                {
+                    "Event": "/Game/FMOD/Events/SFX/Weapons/Guns/Aiming/SFX_SHOTGUN_AIM_UP.SFX_SHOTGUN_AIM_UP",
+                    "AttachPoint": "bn_Root_1",
+                    "bUseChargeParameter": false,
+                    "bUseChargingParameter": false,
+                    "bUseAmmoCountParameter": false,
+                    "bUseReloadingParameter": false,
+                    "bUseAimingParameter": true
+                }
+            ],
+            "NoFireSounds": [
+                {
+                    "Event": "/Game/FMOD/Events/SFX/Weapons/Guns/Rifle/SFX_RIFLE_DRYFIRE.SFX_RIFLE_DRYFIRE",
+                    "AttachPoint": "None",
+                    "bUseChargeParameter": false,
+                    "bUseChargingParameter": false,
+                    "bUseAmmoCountParameter": true,
+                    "bUseReloadingParameter": true,
+                    "bUseAimingParameter": false
+                }
+            ]
+        },
+        {
+            "Name": "SlugGun",
+            "FireSounds": [
+                {
+                    "Event": "/Game/FMOD/Events/SFX/Weapons/Guns/Pistol/SFX_SLUG_GRENADE_LAUNCHER_FIRE.SFX_SLUG_GRENADE_LAUNCHER_FIRE",
+                    "AttachPoint": "None",
+                    "bUseChargeParameter": false,
+                    "bUseChargingParameter": false,
+                    "bUseAmmoCountParameter": true,
+                    "bUseReloadingParameter": false,
+                    "bUseAimingParameter": false
+                }
+            ],
+            "PersistentSounds": [
+                {
+                    "Event": "/Game/FMOD/Events/SFX/Weapons/Guns/Aiming/SFX_SHOTGUN_AIM_UP.SFX_SHOTGUN_AIM_UP",
+                    "AttachPoint": "bn_Root_1",
+                    "bUseChargeParameter": false,
+                    "bUseChargingParameter": false,
+                    "bUseAmmoCountParameter": false,
+                    "bUseReloadingParameter": false,
+                    "bUseAimingParameter": true
+                }
+            ],
+            "NoFireSounds": [
+                {
+                    "Event": "/Game/FMOD/Events/SFX/Weapons/Guns/Shotgun/SFX_SHOTGUN_RUSTY_DRYFIRE.SFX_SHOTGUN_RUSTY_DRYFIRE",
+                    "AttachPoint": "None",
+                    "bUseChargeParameter": false,
+                    "bUseChargingParameter": false,
+                    "bUseAmmoCountParameter": true,
+                    "bUseReloadingParameter": true,
+                    "bUseAimingParameter": false
+                }
+            ]
+        },
+        {
+            "Name": "Flamethrower",
+            "FireSounds": [
+                {
+                    "Event": "/Game/FMOD/Events/SFX/D_Items/FireExtinguisher/SFX_FLAMETHROWER_FIREBALL.SFX_FLAMETHROWER_FIREBALL",
+                    "AttachPoint": "None",
+                    "bUseChargeParameter": false,
+                    "bUseChargingParameter": false,
+                    "bUseAmmoCountParameter": true,
+                    "bUseReloadingParameter": false,
+                    "bUseAimingParameter": false
+                }
+            ],
+            "PersistentSounds": [
+                {
+                    "Event": "/Game/FMOD/Events/SFX/Weapons/Guns/Aiming/SFX_SHOTGUN_AIM_UP.SFX_SHOTGUN_AIM_UP",
+                    "AttachPoint": "bn_Root_1",
+                    "bUseChargeParameter": false,
+                    "bUseChargingParameter": false,
+                    "bUseAmmoCountParameter": false,
+                    "bUseReloadingParameter": false,
+                    "bUseAimingParameter": true
+                }
+            ],
+            "NoFireSounds": [
+                {
+                    "Event": "/Game/FMOD/Events/SFX/Weapons/Guns/Shotgun/SFX_SHOTGUN_RUSTY_DRYFIRE.SFX_SHOTGUN_RUSTY_DRYFIRE",
+                    "AttachPoint": "None",
+                    "bUseChargeParameter": false,
+                    "bUseChargingParameter": false,
+                    "bUseAmmoCountParameter": true,
+                    "bUseReloadingParameter": true,
+                    "bUseAimingParameter": false
+                }
+            ]
+        },
+        {
+            "Name": "SMG_Rifle",
+            "FireSounds": [
+                {
+                    "Event": "/Game/FMOD/Events/SFX/Weapons/Guns/Submachine_Gun/SFX_SUBMACHINE_GUN_FIRE.SFX_SUBMACHINE_GUN_FIRE",
+                    "AttachPoint": "None",
+                    "bUseChargeParameter": false,
+                    "bUseChargingParameter": false,
+                    "bUseAmmoCountParameter": true,
+                    "bUseReloadingParameter": false,
+                    "bUseAimingParameter": false
+                }
+            ],
+            "PersistentSounds": [
+                {
+                    "Event": "/Game/FMOD/Events/SFX/Weapons/Guns/Aiming/SFX_SHOTGUN_AIM_UP.SFX_SHOTGUN_AIM_UP",
+                    "AttachPoint": "bn_Root_1",
+                    "bUseChargeParameter": false,
+                    "bUseChargingParameter": false,
+                    "bUseAmmoCountParameter": false,
+                    "bUseReloadingParameter": false,
+                    "bUseAimingParameter": true
+                }
+            ],
+            "NoFireSounds": [
+                {
+                    "Event": "/Game/FMOD/Events/SFX/Weapons/Guns/Rifle/SFX_RIFLE_DRYFIRE.SFX_RIFLE_DRYFIRE",
+                    "AttachPoint": "None",
+                    "bUseChargeParameter": false,
+                    "bUseChargingParameter": false,
+                    "bUseAmmoCountParameter": true,
+                    "bUseReloadingParameter": true,
+                    "bUseAimingParameter": false
+                }
+            ]
+        },
+        {
+            "Name": "SniperRifle",
+            "FireSounds": [
+                {
+                    "Event": "/Game/FMOD/Events/SFX/Weapons/Guns/Rifle/SFX_SNIPER_RIFLE_MASTER.SFX_SNIPER_RIFLE_MASTER",
+                    "AttachPoint": "None",
+                    "bUseChargeParameter": false,
+                    "bUseChargingParameter": false,
+                    "bUseAmmoCountParameter": true,
+                    "bUseReloadingParameter": false,
+                    "bUseAimingParameter": false
+                }
+            ],
+            "PersistentSounds": [
+                {
+                    "Event": "/Game/FMOD/Events/SFX/Weapons/Guns/Aiming/SFX_SHOTGUN_AIM_UP.SFX_SHOTGUN_AIM_UP",
+                    "AttachPoint": "Trigger",
+                    "bUseChargeParameter": false,
+                    "bUseChargingParameter": false,
+                    "bUseAmmoCountParameter": false,
+                    "bUseReloadingParameter": false,
+                    "bUseAimingParameter": true
+                }
+            ],
+            "NoFireSounds": [
+                {
+                    "Event": "/Game/FMOD/Events/SFX/Weapons/Guns/Rifle/SFX_RIFLE_DRYFIRE.SFX_RIFLE_DRYFIRE",
+                    "AttachPoint": "None",
+                    "bUseChargeParameter": false,
+                    "bUseChargingParameter": false,
+                    "bUseAmmoCountParameter": true,
+                    "bUseReloadingParameter": true,
+                    "bUseAimingParameter": false
+                }
+            ]
+        },
+        {
+            "Name": "LegendaryBow",
+            "FireSounds": [
+                {
+                    "Event": "/Game/FMOD/Events/SFX/Weapons/Bows/SFX_WEP_LEGENDARY_BOW_FIRE.SFX_WEP_LEGENDARY_BOW_FIRE",
+                    "AttachPoint": "None",
+                    "bUseChargeParameter": true,
+                    "bUseChargingParameter": false,
+                    "bUseAmmoCountParameter": false,
+                    "bUseReloadingParameter": false,
+                    "bUseAimingParameter": false
+                }
+            ],
+            "PersistentSounds": [
+                {
+                    "Event": "/Game/FMOD/Events/SFX/Weapons/Bows/SFX_WEP_LEGENDARY_BOW_DRAW.SFX_WEP_LEGENDARY_BOW_DRAW",
+                    "AttachPoint": "ArrowSocket",
+                    "bUseChargeParameter": true,
+                    "bUseChargingParameter": true,
+                    "bUseAmmoCountParameter": false,
+                    "bUseReloadingParameter": false,
+                    "bUseAimingParameter": false
+                },
+                {
+                    "Event": "/Game/FMOD/Events/SFX/Weapons/Bows/SFX_WEP_LEGENDARY_BOW_SHAFT.SFX_WEP_LEGENDARY_BOW_SHAFT",
+                    "AttachPoint": "None",
+                    "bUseChargeParameter": true,
+                    "bUseChargingParameter": true,
+                    "bUseAmmoCountParameter": false,
+                    "bUseReloadingParameter": false,
+                    "bUseAimingParameter": false
+                }
+            ],
+            "NoFireSounds": [
+                {
+                    "Event": "/Game/FMOD/Events/SFX/Weapons/Bows/SFX_WEP_BOW_DRY_FIRE.SFX_WEP_BOW_DRY_FIRE",
+                    "AttachPoint": "None",
+                    "bUseChargeParameter": false,
+                    "bUseChargingParameter": false,
+                    "bUseAmmoCountParameter": true,
+                    "bUseReloadingParameter": true,
+                    "bUseAimingParameter": false
+                }
+            ]
+        },
+        {
+            "Name": "Nailgun",
+            "FireSounds": [
+                {
+                    "Event": "/Game/FMOD/Events/SFX/D_Items/SFX_TOOL_NAILGUN_FIRE.SFX_TOOL_NAILGUN_FIRE",
+                    "AttachPoint": "Trigger",
+                    "bUseChargeParameter": false,
+                    "bUseChargingParameter": false,
+                    "bUseAmmoCountParameter": false,
+                    "bUseReloadingParameter": false,
+                    "bUseAimingParameter": false
+                }
+            ],
+            "PersistentSounds": [
+                {
+                    "Event": "/Game/FMOD/Events/SFX/Weapons/Guns/Aiming/SFX_SHOTGUN_AIM_UP.SFX_SHOTGUN_AIM_UP",
+                    "AttachPoint": "Trigger",
+                    "bUseChargeParameter": false,
+                    "bUseChargingParameter": false,
+                    "bUseAmmoCountParameter": false,
+                    "bUseReloadingParameter": false,
+                    "bUseAimingParameter": true
+                }
+            ],
+            "NoFireSounds": [
+                {
+                    "Event": "/Game/FMOD/Events/SFX/Weapons/Guns/Pistol/SFX_PISTOL_DRY_FIRE.SFX_PISTOL_DRY_FIRE",
+                    "AttachPoint": "Trigger",
+                    "bUseChargeParameter": false,
+                    "bUseChargingParameter": false,
+                    "bUseAmmoCountParameter": true,
+                    "bUseReloadingParameter": true,
+                    "bUseAimingParameter": false
+                }
+            ]
+        },
+        {
+            "Name": "LithiumBow",
+            "FireSounds": [
+                {
+                    "Event": "/Game/FMOD/Events/SFX/Weapons/Bows/SFX_WEP_LITHIUM_BOW_FIRE.SFX_WEP_LITHIUM_BOW_FIRE",
+                    "AttachPoint": "None",
+                    "bUseChargeParameter": true,
+                    "bUseChargingParameter": false,
+                    "bUseAmmoCountParameter": false,
+                    "bUseReloadingParameter": false,
+                    "bUseAimingParameter": false
+                }
+            ],
+            "PersistentSounds": [
+                {
+                    "Event": "/Game/FMOD/Events/SFX/Weapons/Bows/SFX_WEP_COMPOUND_BOW_DRAW.SFX_WEP_COMPOUND_BOW_DRAW",
+                    "AttachPoint": "ArrowSocket",
+                    "bUseChargeParameter": true,
+                    "bUseChargingParameter": true,
+                    "bUseAmmoCountParameter": false,
+                    "bUseReloadingParameter": false,
+                    "bUseAimingParameter": false
+                },
+                {
+                    "Event": "/Game/FMOD/Events/SFX/Weapons/Bows/SFX_WEP_LITHIUM_BOW_CHARGE.SFX_WEP_LITHIUM_BOW_CHARGE",
+                    "AttachPoint": "None",
+                    "bUseChargeParameter": true,
+                    "bUseChargingParameter": true,
+                    "bUseAmmoCountParameter": false,
+                    "bUseReloadingParameter": false,
+                    "bUseAimingParameter": false
+                },
+                {
+                    "Event": "None",
+                    "AttachPoint": "None",
+                    "bUseChargeParameter": false,
+                    "bUseChargingParameter": false,
+                    "bUseAmmoCountParameter": false,
+                    "bUseReloadingParameter": false,
+                    "bUseAimingParameter": false
+                }
+            ],
+            "NoFireSounds": [
+                {
+                    "Event": "/Game/FMOD/Events/SFX/Weapons/Bows/SFX_WEP_BOW_DRY_FIRE.SFX_WEP_BOW_DRY_FIRE",
+                    "AttachPoint": "None",
+                    "bUseChargeParameter": false,
+                    "bUseChargingParameter": false,
+                    "bUseAmmoCountParameter": true,
+                    "bUseReloadingParameter": true,
+                    "bUseAimingParameter": false
+                }
+            ]
+        },
+        {
+            "Name": "CrossbowLithium",
+            "FireSounds": [
+                {
+                    "Event": "/Game/FMOD/Events/SFX/Weapons/Crossbow/SFX_WEP_CROSSBOW_LITHIUM_FIRE.SFX_WEP_CROSSBOW_LITHIUM_FIRE",
+                    "AttachPoint": "Trigger",
+                    "bUseChargeParameter": false,
+                    "bUseChargingParameter": false,
+                    "bUseAmmoCountParameter": false,
+                    "bUseReloadingParameter": false,
+                    "bUseAimingParameter": false
+                }
+            ],
+            "PersistentSounds": [
+                {
+                    "Event": "/Game/FMOD/Events/SFX/Weapons/Guns/Aiming/SFX_SHOTGUN_AIM_UP.SFX_SHOTGUN_AIM_UP",
+                    "AttachPoint": "Trigger",
+                    "bUseChargeParameter": false,
+                    "bUseChargingParameter": false,
+                    "bUseAmmoCountParameter": false,
+                    "bUseReloadingParameter": false,
+                    "bUseAimingParameter": true
+                }
+            ]
+        },
+        {
+            "Name": "FlareGun",
+            "FireSounds": [
+                {
+                    "Event": "/Game/FMOD/Events/SFX/Weapons/Guns/Pistol/SFX_PISTOL_FLAREGUN_FIRE.SFX_PISTOL_FLAREGUN_FIRE",
+                    "AttachPoint": "Trigger1",
+                    "bUseChargeParameter": false,
+                    "bUseChargingParameter": false,
+                    "bUseAmmoCountParameter": true,
+                    "bUseReloadingParameter": false,
+                    "bUseAimingParameter": false
+                }
+            ],
+            "PersistentSounds": [
+                {
+                    "Event": "/Game/FMOD/Events/SFX/Weapons/Guns/Aiming/SFX_SHOTGUN_AIM_UP.SFX_SHOTGUN_AIM_UP",
+                    "AttachPoint": "Trigger",
+                    "bUseChargeParameter": false,
+                    "bUseChargingParameter": false,
+                    "bUseAmmoCountParameter": false,
+                    "bUseReloadingParameter": false,
+                    "bUseAimingParameter": true
+                }
+            ],
+            "NoFireSounds": [
+                {
+                    "Event": "/Game/FMOD/Events/SFX/Weapons/Guns/Pistol/SFX_PISTOL_DRY_FIRE.SFX_PISTOL_DRY_FIRE",
+                    "AttachPoint": "Trigger1",
+                    "bUseChargeParameter": false,
+                    "bUseChargingParameter": false,
+                    "bUseAmmoCountParameter": true,
+                    "bUseReloadingParameter": true,
+                    "bUseAimingParameter": false
+                }
+            ]
+        },
+        {
+            "Name": "LaserPistol",
+            "FireSounds": [
+                {
+                    "Event": "/Game/FMOD/Events/SFX/Weapons/Guns/Pistol/SFX_WEP_LASER_PISTOL.SFX_WEP_LASER_PISTOL",
+                    "AttachPoint": "Trigger1",
+                    "bUseChargeParameter": false,
+                    "bUseChargingParameter": false,
+                    "bUseAmmoCountParameter": true,
+                    "bUseReloadingParameter": false,
+                    "bUseAimingParameter": false
+                }
+            ],
+            "PersistentSounds": [
+                {
+                    "Event": "/Game/FMOD/Events/SFX/Weapons/Guns/Aiming/SFX_SHOTGUN_AIM_UP.SFX_SHOTGUN_AIM_UP",
+                    "AttachPoint": "Trigger",
+                    "bUseChargeParameter": false,
+                    "bUseChargingParameter": false,
+                    "bUseAmmoCountParameter": false,
+                    "bUseReloadingParameter": false,
+                    "bUseAimingParameter": true
+                }
+            ],
+            "NoFireSounds": [
+                {
+                    "Event": "/Game/FMOD/Events/SFX/Weapons/Guns/Shotgun/SFX_SHOTGUN_RUSTY_DRYFIRE.SFX_SHOTGUN_RUSTY_DRYFIRE",
+                    "AttachPoint": "Trigger1",
+                    "bUseChargeParameter": false,
+                    "bUseChargingParameter": false,
+                    "bUseAmmoCountParameter": true,
+                    "bUseReloadingParameter": true,
+                    "bUseAimingParameter": false
+                }
+            ]
+        },
+        {
+            "Name": "SMG_SWQ",
+            "FireSounds": [
+                {
+                    "Event": "/Game/FMOD/Events/SFX/Weapons/Guns/Submachine_Gun/SFX_SMG_SANDWYRM_FIRE.SFX_SMG_SANDWYRM_FIRE",
+                    "AttachPoint": "None",
+                    "bUseChargeParameter": false,
+                    "bUseChargingParameter": false,
+                    "bUseAmmoCountParameter": true,
+                    "bUseReloadingParameter": false,
+                    "bUseAimingParameter": false
+                }
+            ],
+            "PersistentSounds": [
+                {
+                    "Event": "/Game/FMOD/Events/SFX/Weapons/Guns/Aiming/SFX_SHOTGUN_AIM_UP.SFX_SHOTGUN_AIM_UP",
+                    "AttachPoint": "bn_Root_1",
+                    "bUseChargeParameter": false,
+                    "bUseChargingParameter": false,
+                    "bUseAmmoCountParameter": false,
+                    "bUseReloadingParameter": false,
+                    "bUseAimingParameter": true
+                }
+            ],
+            "NoFireSounds": [
+                {
+                    "Event": "/Game/FMOD/Events/SFX/Weapons/Guns/Rifle/SFX_RIFLE_DRYFIRE.SFX_RIFLE_DRYFIRE",
+                    "AttachPoint": "None",
+                    "bUseChargeParameter": false,
+                    "bUseChargingParameter": false,
+                    "bUseAmmoCountParameter": true,
+                    "bUseReloadingParameter": true,
+                    "bUseAimingParameter": false
+                }
+            ]
+        },
+        {
+            "Name": "SMG_SCOUT",
+            "FireSounds": [
+                {
+                    "Event": "/Game/FMOD/Events/SFX/Weapons/Guns/Submachine_Gun/SFX_SMG_SANDWYRM_FIRE_V2.SFX_SMG_SANDWYRM_FIRE_V2",
+                    "AttachPoint": "None",
+                    "bUseChargeParameter": false,
+                    "bUseChargingParameter": false,
+                    "bUseAmmoCountParameter": true,
+                    "bUseReloadingParameter": false,
+                    "bUseAimingParameter": false
+                }
+            ],
+            "PersistentSounds": [
+                {
+                    "Event": "/Game/FMOD/Events/SFX/Weapons/Guns/Aiming/SFX_SHOTGUN_AIM_UP.SFX_SHOTGUN_AIM_UP",
+                    "AttachPoint": "bn_Root_1",
+                    "bUseChargeParameter": false,
+                    "bUseChargingParameter": false,
+                    "bUseAmmoCountParameter": false,
+                    "bUseReloadingParameter": false,
+                    "bUseAimingParameter": true
+                }
+            ],
+            "NoFireSounds": [
+                {
+                    "Event": "/Game/FMOD/Events/SFX/Weapons/Guns/Rifle/SFX_RIFLE_DRYFIRE.SFX_RIFLE_DRYFIRE",
+                    "AttachPoint": "None",
+                    "bUseChargeParameter": false,
+                    "bUseChargingParameter": false,
+                    "bUseAmmoCountParameter": true,
+                    "bUseReloadingParameter": true,
+                    "bUseAimingParameter": false
+                }
+            ]
+        },
+        {
+            "Name": "SandwyrmQueenBow",
+            "FireSounds": [
+                {
+                    "Event": "/Game/FMOD/Events/SFX/Weapons/Bows/SFX_WEP_SWQ_BOW_FIRE.SFX_WEP_SWQ_BOW_FIRE",
+                    "AttachPoint": "None",
+                    "bUseChargeParameter": true,
+                    "bUseChargingParameter": false,
+                    "bUseAmmoCountParameter": false,
+                    "bUseReloadingParameter": false,
+                    "bUseAimingParameter": false
+                }
+            ],
+            "PersistentSounds": [
+                {
+                    "Event": "/Game/FMOD/Events/SFX/Weapons/Bows/SFX_WEP_RECURVE_DRAW.SFX_WEP_RECURVE_DRAW",
+                    "AttachPoint": "ArrowSocket",
+                    "bUseChargeParameter": true,
+                    "bUseChargingParameter": true,
+                    "bUseAmmoCountParameter": false,
+                    "bUseReloadingParameter": false,
+                    "bUseAimingParameter": false
+                },
+                {
+                    "Event": "/Game/FMOD/Events/SFX/Weapons/Bows/SFX_WEP_RECURVE_BOW_SHAFT.SFX_WEP_RECURVE_BOW_SHAFT",
+                    "AttachPoint": "None",
+                    "bUseChargeParameter": true,
+                    "bUseChargingParameter": true,
+                    "bUseAmmoCountParameter": false,
+                    "bUseReloadingParameter": false,
+                    "bUseAimingParameter": false
+                }
+            ],
+            "NoFireSounds": [
+                {
+                    "Event": "/Game/FMOD/Events/SFX/Weapons/Bows/SFX_WEP_BOW_DRY_FIRE.SFX_WEP_BOW_DRY_FIRE",
+                    "AttachPoint": "None",
+                    "bUseChargeParameter": false,
+                    "bUseChargingParameter": false,
+                    "bUseAmmoCountParameter": true,
+                    "bUseReloadingParameter": true,
+                    "bUseAimingParameter": false
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,56 @@
+{
+    "RowStruct": "/Script/Icarus.Challenge",
+    "Defaults": {
+        "ChallengeName": "",
+        "ChallengeDescription": "",
+        "Type": "KillCreature",
+        "RequiredCount": 0,
+        "OptionalRequiredTags": {
+            "GameplayTags": []
+        }
+    },
+    "Rows": [
+        {
+            "Name": "LivingItem1_Slot2",
+            "ChallengeName": "INVTEXT(\"[DNT] Deer Hunter\")",
+            "ChallengeDescription": "INVTEXT(\"[DNT] Kill some deer\")",
+            "RequiredCount": 10,
+            "OptionalRequiredTags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "NPC.Deer"
+                    },
+                    {
+                        "TagName": "NPC.DeerVarient"
+                    },
+                    {
+                        "TagName": "NPC.MediumDeer"
+                    },
+                    {
+                        "TagName": "NPC.LargeDeer"
+                    },
+                    {
+                        "TagName": "NPC.BabyDeer"
+                    }
+                ]
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "LivingItem1_Slot3",
+            "ChallengeName": "INVTEXT(\"[DNT] Stealth Hunter\")",
+            "ChallengeDescription": "INVTEXT(\"[DNT] Land stealth attacks\")",
+            "Type": "StealthAttack",
+            "RequiredCount": 5,
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        }
+    ]
+}

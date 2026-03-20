@@ -1,0 +1,51 @@
+{
+    "RowStruct": "/Script/Icarus.CharacterGrowth",
+    "Defaults": {
+        "ExperienceCurve": "None",
+        "AttributeCurve": "None",
+        "BlueprintPointsPerLevel": "None",
+        "TalentPointsPerLevel": "None",
+        "SoloPointsPerLevel": "None",
+        "MaxDisplayLevel": 50,
+        "MaxLevel": 50
+    },
+    "GenerateEnum": true,
+    "Rows": [
+        {
+            "Name": "Player",
+            "ExperienceCurve": "CurveFloat'/Game/Data/Character/C_PlayerExperienceGrowth.C_PlayerExperienceGrowth'",
+            "AttributeCurve": "CurveFloat'/Game/Data/Character/C_PlayerAttributeGrowth.C_PlayerAttributeGrowth'",
+            "BlueprintPointsPerLevel": "CurveFloat'/Game/Data/Character/C_PlayerBlueprintGrowth.C_PlayerBlueprintGrowth'",
+            "TalentPointsPerLevel": "CurveFloat'/Game/Data/Character/C_PlayerTalentGrowth.C_PlayerTalentGrowth'",
+            "SoloPointsPerLevel": "CurveFloat'/Game/Data/Character/C_SoloTalentGrowth.C_SoloTalentGrowth'",
+            "MaxDisplayLevel": 60,
+            "MaxLevel": 1000
+        },
+        {
+            "Name": "AI",
+            "ExperienceCurve": "CurveFloat'/Game/Data/Character/C_PlayerExperienceGrowth.C_PlayerExperienceGrowth'",
+            "AttributeCurve": "CurveFloat'/Game/Data/Character/C_PlayerAttributeGrowth.C_PlayerAttributeGrowth'",
+            "MaxDisplayLevel": 120,
+            "MaxLevel": 120
+        },
+        {
+            "Name": "AI_Mounts",
+            "ExperienceCurve": "CurveFloat'/Game/Data/Character/C_MountExperienceGrowth.C_MountExperienceGrowth'",
+            "AttributeCurve": "CurveFloat'/Game/Data/Character/C_PlayerAttributeGrowth.C_PlayerAttributeGrowth'",
+            "TalentPointsPerLevel": "CurveFloat'/Game/Data/Character/C_MountTalentGrowth.C_MountTalentGrowth'"
+        },
+        {
+            "Name": "AI_Pets",
+            "ExperienceCurve": "CurveFloat'/Game/Data/Character/C_PetExperienceGrowth.C_PetExperienceGrowth'",
+            "AttributeCurve": "CurveFloat'/Game/Data/Character/C_PlayerAttributeGrowth.C_PlayerAttributeGrowth'",
+            "TalentPointsPerLevel": "CurveFloat'/Game/Data/Character/C_PetTalentGrowth.C_PetTalentGrowth'",
+            "MaxDisplayLevel": 25,
+            "MaxLevel": 25
+        },
+        {
+            "Name": "AI_SpeederBike",
+            "MaxDisplayLevel": 1,
+            "MaxLevel": 1
+        }
+    ]
+}

@@ -1,0 +1,848 @@
+{
+    "RowStruct": "/Script/Icarus.ValidAmmoTypes",
+    "Defaults": {
+        "DisplayName": "",
+        "AmmoTypes": [],
+        "Description": ""
+    },
+    "Rows": [
+        {
+            "Name": "AllArrows",
+            "DisplayName": "NSLOCTEXT(\"D_ValidAmmoTypes\", \"AllArrows-DisplayName\", \"Bows\")",
+            "AmmoTypes": [
+                {
+                    "RowName": "Aluminium_Arrow",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Black_Wolf_Arrow",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Bone_Arrow",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Carbon_Arrow",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Caveworm_Arrow",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Composite_Arrow",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Fire_Arrow",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Flare_Arrow",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Flint_Arrow",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Meta_Arrow_Inaris_Alpha",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Meta_Arrow_Inaris_Bravo",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Meta_Arrow_Inaris_Charlie",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Meta_Arrow_Inaris_Delta",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Meta_Arrow_Larkwell_Bait",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Meta_Arrow_Larkwell_Ballistic",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Meta_Arrow_Larkwell_Bleed",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Meta_Arrow_Larkwell_Standard",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Meta_Arrow_Larkwell_Tazer",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Meta_Arrow_Larkwell_Whistling",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Meta_Arrow_Printed_Alpha",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Meta_Arrow_Printed_Beta",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Meta_Arrow_Printed_Charlie",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Meta_Arrow_Shengong",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Poison_Arrow",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Sandworm_Arrow",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Steel_Arrow",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Stone_Arrow",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Titanium_Arrow",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Obsidian_Arrow",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Cold_Steel_Arrow",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Iron_Wood_Arrow",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Scyther_Arrow",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Drill_Arrow",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Lithium_Arrow",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Uranium_Arrow",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Metal_Alloy_Arrow",
+                    "DataTableName": "D_ItemsStatic"
+                }
+            ],
+            "Description": "NSLOCTEXT(\"D_ValidAmmoTypes\", \"AllArrows-Description\", \"Arrows\")"
+        },
+        {
+            "Name": "AllBolts",
+            "DisplayName": "NSLOCTEXT(\"D_ValidAmmoTypes\", \"AllBolts-DisplayName\", \"Crossbows\")",
+            "AmmoTypes": [
+                {
+                    "RowName": "Copper_Bolt",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Meta_Bolt_Larkwell_Standard",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Meta_Bolt_Larkwell_Whistling",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Metal_Bolt",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Platinum_Bolt",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Steel_Bolt",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Titanium_Bolt",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Tranquilizer_Bolt",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Obsidian_Bolt",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Cold_Steel_Bolt",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Iron_Wood_Bolt",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Meta_Bolt_Larkwell_Electroshock",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Meta_Bolt_Larkwell_Explosive",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Meta_Bolt_Larkwell_Piercing",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Scyther_Bolt",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Lithium_Bolt",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Uranium_Bolt",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Metal_Alloy_Bolt",
+                    "DataTableName": "D_ItemsStatic"
+                }
+            ],
+            "Description": "NSLOCTEXT(\"D_ValidAmmoTypes\", \"AllBolts-Description\", \"Bolts\")"
+        },
+        {
+            "Name": "AllRifle",
+            "DisplayName": "NSLOCTEXT(\"D_ValidAmmoTypes\", \"AllRifle-DisplayName\", \"Rifles\")",
+            "AmmoTypes": [
+                {
+                    "RowName": "Ammo_Rifle_Round",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Ammo_Rifle_Round_Incendiary",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Ammo_Rifle_Round_Explosive",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Ammo_Rifle_Round_Armor_Piercing",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Ammo_Rifle_Round_Obsidian",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Ammo_Rifle_Round_Iron_Wood",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Ammo_Rifle_Round_Cold_Steel",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Ammo_EDS",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Ammo_Rifle_Round_Workshop",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Ammo_Rifle_Round_Uranium",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Ammo_Rifle_Round_Lithium",
+                    "DataTableName": "D_ItemsStatic"
+                }
+            ],
+            "Description": "NSLOCTEXT(\"D_ValidAmmoTypes\", \"AllRifle-Description\", \"7.62mm Rounds\")"
+        },
+        {
+            "Name": "AllPistol",
+            "DisplayName": "NSLOCTEXT(\"D_ValidAmmoTypes\", \"AllPistol-DisplayName\", \"Pistols\")",
+            "AmmoTypes": [
+                {
+                    "RowName": "Ammo_Pistol_Round",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Ammo_Pistol_Round_Explosive",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Ammo_Pistol_Round_Incendiary",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Ammo_Pistol_Round_Armor_Piercing",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Ammo_Pistol_Round_Obsidian",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Ammo_Pistol_Round_Cold_Steel",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Ammo_Pistol_Round_Iron_Wood",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Ammo_Pistol_Round_Workshop",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Ammo_EDS",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Ammo_Pistol_Round_Uranium",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Ammo_Pistol_Round_Lithium",
+                    "DataTableName": "D_ItemsStatic"
+                }
+            ],
+            "Description": "NSLOCTEXT(\"D_ValidAmmoTypes\", \"AllPistol-Description\", \"9mm Rounds\")"
+        },
+        {
+            "Name": "AllSubmachineGuns",
+            "DisplayName": "NSLOCTEXT(\"D_ValidAmmoTypes\", \"AllSubmachineGuns-DisplayName\", \"SMGs\")",
+            "AmmoTypes": [
+                {
+                    "RowName": "Ammo_Pistol_Round",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Ammo_Pistol_Round_Explosive",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Ammo_Pistol_Round_Incendiary",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Ammo_Pistol_Round_Armor_Piercing",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Ammo_Pistol_Round_Obsidian",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Ammo_Pistol_Round_Cold_Steel",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Ammo_Pistol_Round_Iron_Wood",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Ammo_Pistol_Round_Workshop",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Ammo_EDS",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Ammo_Pistol_Round_Uranium",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Ammo_Pistol_Round_Lithium",
+                    "DataTableName": "D_ItemsStatic"
+                }
+            ],
+            "Description": "NSLOCTEXT(\"D_ValidAmmoTypes\", \"AllSubmachineGuns-Description\", \"9mm Rounds\")"
+        },
+        {
+            "Name": "AllShotgun",
+            "DisplayName": "NSLOCTEXT(\"D_ValidAmmoTypes\", \"AllShotgun-DisplayName\", \"Shotguns\")",
+            "AmmoTypes": [
+                {
+                    "RowName": "Ammo_Shell_Buckshot",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Ammo_Shell_Explosive",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Ammo_Shell_Slug",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Ammo_Shell_Ironwood",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Ammo_Shell_Obsidian",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Ammo_Shell_ColdSteel",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Ammo_EDS",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Ammo_Shell_Workshop",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Ammo_Shell_Lithium",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Ammo_Shell_Uranium",
+                    "DataTableName": "D_ItemsStatic"
+                }
+            ],
+            "Description": "NSLOCTEXT(\"D_ValidAmmoTypes\", \"AllShotgun-Description\", \"12-Gauge Shells\")"
+        },
+        {
+            "Name": "AllLures",
+            "DisplayName": "NSLOCTEXT(\"D_ValidAmmoTypes\", \"AllLures-DisplayName\", \"Rods\")",
+            "AmmoTypes": [
+                {
+                    "RowName": "Advanced_Iron_Lure",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Bark_Lure",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Black_Wolf_Lure",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Blue_Reed_Lure",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Bone_Lure",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Cured_Leather_Lure",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Dogtags_Lure",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Feather_Lure",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Fiber_Lure",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Gold_Ore_Lure",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Gorse_Flower_Lure",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Iron_Lure",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Poison_Sack_Lure",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Reed_Flower_Lure",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Refined_Wood_Lure",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Rotten_Meat_Lure",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Rubber_Lure",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Scorpion_Lure",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "White_Jelly_Lure",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Wolf_Lure",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Wood_Lure",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Yeast_Lure",
+                    "DataTableName": "D_ItemsStatic"
+                }
+            ],
+            "Description": "NSLOCTEXT(\"D_ValidAmmoTypes\", \"AllLures-Description\", \"Lure\")"
+        },
+        {
+            "Name": "Rock_Golem_Gun",
+            "DisplayName": "NSLOCTEXT(\"D_ValidAmmoTypes\", \"Rock_Golem_Gun-DisplayName\", \"Quarrite Gun\")",
+            "AmmoTypes": [
+                {
+                    "RowName": "Stone",
+                    "DataTableName": "D_ItemsStatic"
+                }
+            ],
+            "Description": "NSLOCTEXT(\"D_ValidAmmoTypes\", \"Rock_Golem_Gun-Description\", \"Stone\")"
+        },
+        {
+            "Name": "AllJavelins",
+            "DisplayName": "NSLOCTEXT(\"D_ValidAmmoTypes\", \"AllJavelins-DisplayName\", \"The Sand Slinger\")",
+            "AmmoTypes": [
+                {
+                    "RowName": "Bone_Throwing_Spear",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Caveworm_Throwing_Spear",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Carbon_Throwing_Spear",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Composite_Throwing_Spear",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "IceMammoth_Throwing_Spear",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Iron_Wood_Throwing_Spear",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Metal_Throwing_Spear",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Obsidian_Throwing_Spear",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Platinum_Throwing_Spear",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Sandworm_Throwing_Spear",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Scyther_Throwing_Spear",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Steel_Throwing_Spear",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Titanium_Throwing_Spear",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Wood_Throwing_Spear",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Cold_Steel_Throwing_Spear",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Lithium_Throwing_Spear",
+                    "DataTableName": "D_ItemsStatic"
+                }
+            ],
+            "Description": "NSLOCTEXT(\"D_ValidAmmoTypes\", \"AllJavelins-Description\", \"Javelins\")"
+        },
+        {
+            "Name": "AllAssaultRifle",
+            "DisplayName": "NSLOCTEXT(\"D_ValidAmmoTypes\", \"AllAssaultRifle-DisplayName\", \"Assault Rifles\")",
+            "AmmoTypes": [
+                {
+                    "RowName": "Ammo_AssaultRifle_Round",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Ammo_AssaultRifle_Round_Incendiary",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Ammo_AssaultRifle_Round_Explosive",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Ammo_AssaultRifle_Round_Armor_Piercing",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Ammo_AssaultRifle_Round_Obsidian",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Ammo_AssaultRifle_Round_Iron_Wood",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Ammo_AssaultRifle_Round_Cold_Steel",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Ammo_EDS",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Ammo_AssaultRifle_Round_Uranium",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Ammo_AssaultRifle_Round_Lithium",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Ammo_AssaultRifle_Round_Workshop",
+                    "DataTableName": "D_ItemsStatic"
+                }
+            ],
+            "Description": "NSLOCTEXT(\"D_ValidAmmoTypes\", \"AllAssaultRifle-Description\", \"5.56mm Rounds\")"
+        },
+        {
+            "Name": "Slug_Launcher_Gun",
+            "DisplayName": "NSLOCTEXT(\"D_ValidAmmoTypes\", \"Slug_Launcher_Gun-DisplayName\", \"The Slugger\")",
+            "AmmoTypes": [
+                {
+                    "RowName": "SlugLauncher_Ammo",
+                    "DataTableName": "D_ItemsStatic"
+                }
+            ],
+            "Description": "NSLOCTEXT(\"D_ValidAmmoTypes\", \"Slug_Launcher_Gun-Description\", \"Water\")"
+        },
+        {
+            "Name": "AllPistolAndCrude",
+            "DisplayName": "NSLOCTEXT(\"D_ValidAmmoTypes\", \"AllPistolAndCrude-DisplayName\", \"Pistol Turrets\")",
+            "AmmoTypes": [
+                {
+                    "RowName": "Ammo_Pistol_Round",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Ammo_Pistol_Round_Explosive",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Ammo_Pistol_Round_Incendiary",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Ammo_Pistol_Round_Armor_Piercing",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Ammo_Pistol_Round_Obsidian",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Ammo_Pistol_Round_Cold_Steel",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Ammo_Pistol_Round_Iron_Wood",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Ammo_Pistol_Round_Workshop",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Ammo_Crude",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Ammo_EDS",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Ammo_Pistol_Round_Lithium",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Ammo_Pistol_Round_Uranium",
+                    "DataTableName": "D_ItemsStatic"
+                }
+            ],
+            "Description": "NSLOCTEXT(\"D_ValidAmmoTypes\", \"AllPistolAndCrude-Description\", \"Crude Ammo & 9mm Rounds\")"
+        },
+        {
+            "Name": "AllSnipers",
+            "DisplayName": "NSLOCTEXT(\"D_ValidAmmoTypes\", \"AllSnipers-DisplayName\", \"Sniper Rifles\")",
+            "AmmoTypes": [
+                {
+                    "RowName": "Ammo_Sniper_Round",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Ammo_Sniper_Round_Explosive",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Ammo_Sniper_Round_Incendiary",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Ammo_Sniper_Round_Illumination",
+                    "DataTableName": "D_ItemsStatic"
+                }
+            ],
+            "Description": "NSLOCTEXT(\"D_ValidAmmoTypes\", \"AllSnipers-Description\", \"12.7mm Rounds\")"
+        },
+        {
+            "Name": "AllNails",
+            "DisplayName": "NSLOCTEXT(\"D_ValidAmmoTypes\", \"AllNails-DisplayName\", \"Nailguns\")",
+            "AmmoTypes": [
+                {
+                    "RowName": "Iron_Nail",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Copper_Nail",
+                    "DataTableName": "D_ItemsStatic"
+                }
+            ],
+            "Description": "NSLOCTEXT(\"D_ValidAmmoTypes\", \"AllNails-Description\", \"Nails\")",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "BioFuel",
+            "DisplayName": "NSLOCTEXT(\"D_ValidAmmoTypes\", \"BioFuel-DisplayName\", \"Biofuel Turrets\")",
+            "Description": "NSLOCTEXT(\"D_ValidAmmoTypes\", \"BioFuel-Description\", \"Consumes Biofuel\")"
+        },
+        {
+            "Name": "AllFlares",
+            "DisplayName": "NSLOCTEXT(\"D_ValidAmmoTypes\", \"AllFlares-DisplayName\", \"Flare Guns\")",
+            "AmmoTypes": [
+                {
+                    "RowName": "Flare_Green",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Flare_Red",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Flare_Blue",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Flare_Yellow",
+                    "DataTableName": "D_ItemsStatic"
+                }
+            ],
+            "Description": "NSLOCTEXT(\"D_ValidAmmoTypes\", \"AllFlares-Description\", \"Flares\")",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Laser_Pistol",
+            "DisplayName": "NSLOCTEXT(\"D_ValidAmmoTypes\", \"Laser_Pistol-DisplayName\", \"Laser Weapons\")",
+            "AmmoTypes": [
+                {
+                    "RowName": "Laser_Pistol_Ammo",
+                    "DataTableName": "D_ItemsStatic"
+                }
+            ],
+            "Description": "NSLOCTEXT(\"D_ValidAmmoTypes\", \"Laser_Pistol-Description\", \"Energy\")",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "NPC_Rifle",
+            "DisplayName": "NSLOCTEXT(\"D_ValidAmmoTypes\", \"NPC_Rifle-DisplayName\", \"NPC Rifles\")",
+            "AmmoTypes": [
+                {
+                    "RowName": "Soldier_Rifle_Round",
+                    "DataTableName": "D_ItemsStatic"
+                }
+            ],
+            "Description": "NSLOCTEXT(\"D_ValidAmmoTypes\", \"NPC_Rifle-Description\", \"Soldier Rifle Rounds\")"
+        },
+        {
+            "Name": "NPC_Mammoth_Ice",
+            "DisplayName": "NSLOCTEXT(\"D_ValidAmmoTypes\", \"NPC_Mammoth_Ice-DisplayName\", \"Ice Mammoth Projectiles\")",
+            "AmmoTypes": [
+                {
+                    "RowName": "IceMammoth_Fractured_Ice",
+                    "DataTableName": "D_ItemsStatic"
+                }
+            ],
+            "Description": "NSLOCTEXT(\"D_ValidAmmoTypes\", \"NPC_Mammoth_Ice-Description\", \"Ice Mammoth Projectile\")"
+        }
+    ]
+}

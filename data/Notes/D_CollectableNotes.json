@@ -1,0 +1,827 @@
+{
+    "RowStruct": "/Script/Icarus.CollectableNote",
+    "Defaults": {
+        "Item": {
+            "RowName": "None",
+            "DataTableName": "D_Itemable"
+        },
+        "Text": "",
+        "Image": "None",
+        "Dialogue": {
+            "RowName": "None",
+            "DataTableName": "D_Dialogue"
+        }
+    },
+    "Rows": [
+        {
+            "Name": "Invalid"
+        },
+        {
+            "Name": "Ashlands_Bunker_Note_1",
+            "Item": {
+                "RowName": "Item_Ashlands_Bunker_Note_1"
+            },
+            "Text": "NSLOCTEXT(\"D_CollectableNotes\", \"Ashlands_Bunker_Note_1-Text\", \"The comms are shot, nothing in or out. The new guy who arrived yesterday is completely unstable. I caught him draining his canteen outside this morning. He said he doesn\\'t need water out here. He\\'s crazy, I\\'m leaving this note in case something happens to us, I don\\'t trust him.\")"
+        },
+        {
+            "Name": "Ashlands_Bunker_Note_2",
+            "Item": {
+                "RowName": "Item_Ashlands_Bunker_Note_2"
+            },
+            "Text": "NSLOCTEXT(\"D_CollectableNotes\", \"Ashlands_Bunker_Note_2-Text\", \"Brenda, this may never reach you back home but if it does please know that I love you. I fear for my life in this place. You were right, I never should have left Earth. Give my love to the children. Yours, Gerald.\")"
+        },
+        {
+            "Name": "Ashlands_Bunker_Note_3",
+            "Item": {
+                "RowName": "Item_Ashlands_Bunker_Note_3"
+            },
+            "Text": "NSLOCTEXT(\"D_CollectableNotes\", \"Ashlands_Bunker_Note_3-Text\", \"Screw the UDA, they don\\'t pay me enough to deal with this crap. Note to self: negotiate higher fees for the next drop.\")"
+        },
+        {
+            "Name": "Icesheet_Outpost_Note_1",
+            "Item": {
+                "RowName": "Item_Icesheet_Outpost_Note_1"
+            },
+            "Text": "NSLOCTEXT(\"D_CollectableNotes\", \"Icesheet_Outpost_Note_1-Text\", \"I\\'ve never seen anything like it, huge, with big angry horns and hooves the size of a car. Norex\\'ll be all over this later.\")"
+        },
+        {
+            "Name": "Icesheet_Outpost_Note_2",
+            "Item": {
+                "RowName": "Item_Icesheet_Outpost_Note_2"
+            },
+            "Text": "NSLOCTEXT(\"D_CollectableNotes\", \"Icesheet_Outpost_Note_2-Text\", \"We\\'re down to three of us out here. Mike and Joe turned tail and left us but they won\\'t last five minutes out there by themselves. It\\'s only me and Jason now, I\\'m pretty sure Hans is a lost cause. He has lost his mind, keeps talking about lights. Refuses to eat or drink anything. He\\'s a goner.\")"
+        },
+        {
+            "Name": "Icesheet_Outpost_Note_3",
+            "Item": {
+                "RowName": "Item_Icesheet_Cave_Note_3"
+            },
+            "Text": "NSLOCTEXT(\"D_CollectableNotes\", \"Icesheet_Outpost_Note_3-Text\", \"I found your nasty note about me, WILLIAM. Let\\'s see how well you survive with a nice big hole in your suit, OR YOUR HEAD.\")"
+        },
+        {
+            "Name": "Icesheet_Cave_Note_1",
+            "Item": {
+                "RowName": "Item_Icesheet_Cave_Note_1"
+            },
+            "Text": "NSLOCTEXT(\"D_CollectableNotes\", \"Icesheet_Cave_Note_1-Text\", \"Jason D: Preliminary exploration has shown the presence of some sort of crystalline structure towards the rear of the cave. I\\'ve urged the team to keep their distance as it seems to emit some kind of vibration, like a resonating frequency. Note: Hans appears to be deteriorating more each time he enters. Could be prudent to have him exit the sector and catch an evac pod out for evaluation.\")"
+        },
+        {
+            "Name": "Icesheet_Cave_Note_2",
+            "Item": {
+                "RowName": "Item_Icesheet_Cave_Note_2"
+            },
+            "Text": "NSLOCTEXT(\"D_CollectableNotes\", \"Icesheet_Cave_Note_2-Text\", \"\\\"Hans has completely lost it. He\\'s threatening to cave in the entrance to the tunnels. We\\'ve been told to evac... Until we figure out what to do with him. Unfortunately, we have been using the cave as storage... All our food is there... I\\'m not sure what\\'s worse, being stuck outside to starve or being trapped in there with whatever\\'s taken over his brain. I\\'m scared.\\\"\")"
+        },
+        {
+            "Name": "Icesheet_Cave_Note_3",
+            "Item": {
+                "RowName": "Item_Icesheet_Cave_Note_3"
+            },
+            "Text": "NSLOCTEXT(\"D_CollectableNotes\", \"Icesheet_Cave_Note_3-Text\", \"Oh god, what have I become? The lights, they turned on me. They aren\\'t beautiful at all, they burn and hurt and bleed. The cave is dark but it\\'s also so BRIGHT. It hurts but I can\\'t help myself, I have to get closer. I need it. The others don\\'t understand, they hate me.\")"
+        },
+        {
+            "Name": "GH_RG_MiningCamp_1",
+            "Item": {
+                "RowName": "Item_GH_RG_MiningCamp_1"
+            },
+            "Text": "NSLOCTEXT(\"D_CollectableNotes\", \"GH_RG_MiningCamp_1-Text\", \"Buddy got too close to the drill today, we held a little ceremony and built him a little grave. He was the best cryogenically defrosted dog a man could hope for.\")"
+        },
+        {
+            "Name": "GH_RG_MiningCamp_2",
+            "Item": {
+                "RowName": "Item_GH_RG_MiningCamp_2"
+            },
+            "Text": "NSLOCTEXT(\"D_CollectableNotes\", \"GH_RG_MiningCamp_2-Text\", \"We weren\\'t paid... AGAIN! UDA thinks they can just expect us to keep working just because they have the only way off this rock. I\\'m going to contact Sol, my crew needs to be paid.\")"
+        },
+        {
+            "Name": "GH_RG_MiningCamp_3",
+            "Item": {
+                "RowName": "Item_GH_RG_MiningCamp_3"
+            },
+            "Text": "INVTEXT(\"01010111 01100101 00100000 01101000 01100001 01110110 01100101 00100000 01100100 01100101 01110100 01100101 01100011 01110100 01100101 01100100 00100000 01101101 01101111 01110110 01100101 01101101 01100101 01101110 01110100 01110011 00100000 01100110 01101111 01110010 01101101 00100000 01110101 01101110 01100100 01100101 01110010 01101110 01100101 01100001 01110100 01101000 00100000 01110100 01101000 01100101 00100000 01100100 01100101 01110011 01100101 01110010 01110100 00100000 01100001 01101110 01100100 00100000 01110011 01101111 01101101 01100101 00100000 01101011 01101001 01101110 01100100 00100000 01101111 01100110 00100000 01110100 01110101 01101110 01101110 01100101 01101100 00100000 01101110 01100101 01110100 01110111 01101111 01110010 01101011 00101110 00100000 01010000 01101111 01110011 01110011 01101001 01100010 01101100 01111001 00100000 01100011 01110010 01100101 01100001 01110100 01100101 01100100 00100000 01100010 01111001 00100000 01100001 00100000 01110011 01100001 01101110 01100100 01110111 01101111 01110010 01101101 00101110 00100000 01001110 01101111 01110010 01100101 01111000 00100000 01101000 01100001 01110011 00100000 01110000 01110010 01101111 01110110 01101001 01100100 01100101 01100100 00100000 01110011 01110000 01100101 01100011 01101001 01100001 01101100 00100000 01101111 01110010 01100100 01100101 01110010 01110011 00100000 01110100 01101111 00100000 01100100 01110010 01101001 01101100 01101100 00100000 01101001 01101110 01110100 01101111 00100000 01110100 01101000 01101001 01110011 00100000 01110100 01110101 01101110 01101110 01100101 01101100 00100000 01100001 01101110 01100100 00100000 01100101 01111000 01110000 01101100 01101111 01110010 01100101 00101110 00100000\")"
+        },
+        {
+            "Name": "GH_RG_MiningOutpost_1",
+            "Item": {
+                "RowName": "Item_Note_GH_RG_MiningOutpost_1"
+            },
+            "Text": "NSLOCTEXT(\"D_CollectableNotes\", \"GH_RG_MiningOutpost_1-Text\", \"Message from Site Alpha - WARNING - The Caveworms seem irritated, like something is occupying their tunnels - Report any strange behaviour to the UDA immediately.\")"
+        },
+        {
+            "Name": "GH_Ape_LaboratoryNote_1",
+            "Item": {
+                "RowName": "Item_GH_Ape_LaboratoryNote_1"
+            },
+            "Text": "NSLOCTEXT(\"D_CollectableNotes\", \"GH_Ape_LaboratoryNote_1-Text\", \"1.2.5 - Subjects appear to be tolerating the new apparatus, hopeful for expansion to other clinics in the next quarter.\")"
+        },
+        {
+            "Name": "GH_Ape_LaboratoryNote_2",
+            "Item": {
+                "RowName": "Item_GH_Ape_LaboratoryNote_2"
+            },
+            "Text": "NSLOCTEXT(\"D_CollectableNotes\", \"GH_Ape_LaboratoryNote_2-Text\", \"1.3.4 - Subjects have broken the current apparatus. Requesting reinforced equipment - estimated to arrive in approx 14 days.\")"
+        },
+        {
+            "Name": "GH_Ape_LaboratoryNote_3",
+            "Item": {
+                "RowName": "Item_GH_Ape_LaboratoryNote_3"
+            },
+            "Text": "NSLOCTEXT(\"D_CollectableNotes\", \"GH_Ape_LaboratoryNote_3-Text\", \"1.5.6 - Subjects have been observed dismantling the equipment for use as tools. Requesting reinforcement to the enclosure - estimated to arrive in approx 21 days.\")"
+        },
+        {
+            "Name": "GH_Ape_LaboratoryNote_4",
+            "Item": {
+                "RowName": "Item_GH_Ape_LaboratoryNote_4"
+            },
+            "Text": "NSLOCTEXT(\"D_CollectableNotes\", \"GH_Ape_LaboratoryNote_4-Text\", \"1.6.4 - Reinforcement still not delivered. Subjects have created a crack in the main panel. Evacuating junior staff as a precaution.\")"
+        },
+        {
+            "Name": "GH_Ape_LaboratoryNote_5",
+            "Item": {
+                "RowName": "Item_GH_Ape_LaboratoryNote_5"
+            },
+            "Text": "NSLOCTEXT(\"D_CollectableNotes\", \"GH_Ape_LaboratoryNote_5-Text\", \"1.6.5 - Subject loose in the lab. Many casualties. Requesting personnel reinforcement immediately... It\\'s... It\\'s trying to release the others.\")"
+        },
+        {
+            "Name": "GH_IM_ResearcherNote_1",
+            "Item": {
+                "RowName": "Item_GH_IM_HintNote"
+            },
+            "Text": "NSLOCTEXT(\"D_CollectableNotes\", \"GH_IM_ResearcherNote_1-Text\", \"Something about the enzymes has been causing the surrounding ice and arctic matter to cling to the creatures.Terry wouldn\\'t tell us where he got the vats from, he\\'s always worked like that.I guess learning from Dr Lee would do that to anyone... He told me I\\'d get fast tracked to IntSec if I joined his team. I should have known better, now I\\'m going to die out here.\")"
+        },
+        {
+            "Name": "GH_IM_O1",
+            "Item": {
+                "RowName": "Item_GH_IM_O1_Note"
+            },
+            "Text": "NSLOCTEXT(\"D_CollectableNotes\", \"GH_IM_O1-Text\", \"The enzyme-induced mutation weakens the creatures\\' ability to withstand environmental stresses, particularly high heat. Controlled exposure to flame significantly disrupts their biology, suggesting fire as a potential method for neutralization.\")"
+        },
+        {
+            "Name": "GH_RG_MiningCamp_Log",
+            "Item": {
+                "RowName": "Item_GH_RG_MiningCamp_4"
+            },
+            "Text": "NSLOCTEXT(\"D_CollectableNotes\", \"GH_RG_MiningCamp_Log-Text\", \"<Corrupted Data>\")"
+        },
+        {
+            "Name": "GH_IM_O1_StorageNote",
+            "Item": {
+                "RowName": "Item_GH_IM_O1_StorageNote"
+            },
+            "Text": "NSLOCTEXT(\"D_CollectableNotes\", \"GH_IM_O1_StorageNote-Text\", \"Research Directive:\\r\\nEnzyme Experimentation & Enhancement\\r\\nStudy the effects of surplus terraforming enzymes on the introduced and evolved species in the Prometheus region. Investigate uses for human enhancement and potential weapon applications for THE COMPANY.\")"
+        },
+        {
+            "Name": "GH_Ape_OutpostNote_1",
+            "Item": {
+                "RowName": "Item_GH_Ape_OutpostNote_1"
+            },
+            "Text": "NSLOCTEXT(\"D_CollectableNotes\", \"GH_Ape_OutpostNote_1-Text\", \"1.1.24 - Captured subjects transported to new facility. I don\\'t know why anyone would want to work in a desert.\")"
+        },
+        {
+            "Name": "GH_Ape_OutpostNote_2",
+            "Item": {
+                "RowName": "Item_GH_Ape_OutpostNote_2"
+            },
+            "Text": "NSLOCTEXT(\"D_CollectableNotes\", \"GH_Ape_OutpostNote_2-Text\", \"1.3.8 - Desert facility reported problems with their experiment. Too bad they wouldn\\'t listen to me.\")"
+        },
+        {
+            "Name": "GH_Ape_OutpostNote_3",
+            "Item": {
+                "RowName": "Item_GH_Ape_OutpostNote_3"
+            },
+            "Text": "NSLOCTEXT(\"D_CollectableNotes\", \"GH_Ape_OutpostNote_3-Text\", \"1.5.12 - Received new enclosure materials today. Glad I can finally continue my research.\")"
+        },
+        {
+            "Name": "GH_Ape_OutpostNote_4",
+            "Item": {
+                "RowName": "Item_GH_Ape_OutpostNote_4"
+            },
+            "Text": "NSLOCTEXT(\"D_CollectableNotes\", \"GH_Ape_OutpostNote_4-Text\", \"1.5.16 - New test subject responding positively to local food, requires high quantities to satisfy.\")"
+        },
+        {
+            "Name": "GH_Ape_OutpostNote_5",
+            "Item": {
+                "RowName": "Item_GH_Ape_OutpostNote_5"
+            },
+            "Text": "NSLOCTEXT(\"D_CollectableNotes\", \"GH_Ape_OutpostNote_5-Text\", \"1.6.2 - I\\'ve been ordered to assist the desert facility. I\\'ve fed Fluffy, he\\'ll be okay for a few days. I\\'ll be back soon.\")"
+        },
+        {
+            "Name": "GH_IM_O1_Notice",
+            "Item": {
+                "RowName": "Item_GH_IM_O1_Notice"
+            },
+            "Text": "NSLOCTEXT(\"D_CollectableNotes\", \"GH_IM_O1_Notice-Text\", \"Attention\\r\\nResearchers of Lab (LAB-12)\\r\\n\\r\\nIf you find yourself in trouble and can\\'t make it back to the LAB-12, head to STR-X34.\\r\\nIt is located in a cave nearby and contains supplies, field equipment and backup data.\\r\\nUse an ECHO Device.\\r\\n\\r\\n- Senior Researcher Avery\")"
+        },
+        {
+            "Name": "GH_IM_B_Note",
+            "Item": {
+                "RowName": "Item_GH_IM_B_Note"
+            },
+            "Text": "NSLOCTEXT(\"D_CollectableNotes\", \"GH_IM_B_Note-Text\", \"Experimental 1:\\r\\nSplicing Enzymes into Viscids\\r\\n- Raw Aggression\\r\\n- Rapid Deterioration\\r\\n- Not Viable Test Subject\\r\\n\\r\\nExperiment 2: \\r\\nSplicing Enzyme into Columbian Mammoth\\r\\n- Increased Aggression\\r\\n- Slow Deterioration\\r\\n- Enzyme Decreased Core Temperature\\r\\n- Not Viable Test Subject\\r\\n\\r\\n(Scribbled at Bottom)\\r\\nWoolly variety could possibly provide stable environment.\")"
+        },
+        {
+            "Name": "GH_Ape_O1_Note",
+            "Item": {
+                "RowName": "Item_GH_APE_O1"
+            },
+            "Text": "NSLOCTEXT(\"D_CollectableNotes\", \"GH_Ape_O1_Note-Text\", \"I refuse to leave my research in the hands of NOREX.\\r\\n\\r\\nScrew the company, screw this job and screw the UDA while we\\'re at it.\\r\\n\\r\\nAs soon as I\\'ve demolished this last section of dens, I am OUTTA HERE.\\r\\n\\r\\nMan, I can\\'t wait to eat a real steak again.\")"
+        },
+        {
+            "Name": "GH_Ape_C_Procedure_A",
+            "Item": {
+                "RowName": "Item_GH_APE_C_A"
+            },
+            "Text": "NSLOCTEXT(\"D_CollectableNotes\", \"GH_Ape_C_Procedure_A-Text\", \"1. Gather A Sample - you need something to extract DNA from\\r\\n2. Homogenize the Sample - this breaks open the cells to release the cell contents. \\r\\n3. Add Tris-EDTA - this helps to protect the DNA\\r\\n4. Stir the Sample - This helps to dissolve the elements for uniform distribution\\r\\n5. Heat the Sample - this helps with dissolution\\r\\n6. Seperate the Solids and Liquids - This is easier for the next steps\\r\\n7. Add Ethanol - this clumps the DNA together\\r\\n8. Seperate the Solid from Liquids - this is so it can be easily examined\\r\\n9. Examine with the Microscope to Confirm\")"
+        },
+        {
+            "Name": "GH_Ape_C_Procedure_B",
+            "Item": {
+                "RowName": "Item_GH_APE_C_B"
+            },
+            "Text": "NSLOCTEXT(\"D_CollectableNotes\", \"GH_Ape_C_Procedure_B-Text\", \"Scalpels are sharp, and they can be found in the Surgical Equipment. Please be careful the UDA does not cover injuries to self while on planet.\")"
+        },
+        {
+            "Name": "GH_Ape_C_Procedure_C",
+            "Item": {
+                "RowName": "Item_GH_APE_C_C"
+            },
+            "Text": "NSLOCTEXT(\"D_CollectableNotes\", \"GH_Ape_C_Procedure_C-Text\", \"- Always clean up after yourself\\r\\n- Store all equipment in the upper storage area next to the battery\\r\\n- Repair the Turbines on the roof, there is a hammer in the nearby cupboard\\r\\n- Always wash your hands when entering and leaving the lab\\r\\n- Disposed of failed samples, burn them if you need to\\r\\n- Watch out for Group 15 and Norex they will try and impersonate lab members \\r\\n- Have Fun (Safely)\\r\\n\\r\\n(Handwritten) Watch for the Garganutan - they have setup Lairs nearby\")"
+        },
+        {
+            "Name": "Mission_ELY1_Towers_Map",
+            "Item": {
+                "RowName": "Item_Mission_ELY1_Towers_Map"
+            },
+            "Image": "/Game/Assets/2DArt/UI/Maps/T_MAP_TOWER.T_MAP_TOWER",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Mission_ELY2_Swamp_Map",
+            "Item": {
+                "RowName": "Item_Mission_ELY2_Swamp_Map"
+            },
+            "Image": "/Game/Assets/2DArt/UI/Maps/T_MAP_SWAMP.T_MAP_SWAMP",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Mission_ELY2_Epsilon",
+            "Item": {
+                "RowName": "Item_Mission_ELY2_Epsilon"
+            },
+            "Text": "NSLOCTEXT(\"D_CollectableNotes\", \"Mission_ELY2_Epsilon-Text\", \"The data in this file is encrypted - please refer to your direct report within the Group for access.\")",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Mission_ELY2_Delta",
+            "Item": {
+                "RowName": "Item_Mission_ELY2_Delta"
+            },
+            "Text": "NSLOCTEXT(\"D_CollectableNotes\", \"Mission_ELY2_Delta-Text\", \"The data in this file is encrypted - please refer to your direct report within the Group for access.\")",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Mission_ELY2_Laptop",
+            "Item": {
+                "RowName": "Item_Mission_ELY2_Laptop"
+            },
+            "Text": "NSLOCTEXT(\"D_CollectableNotes\", \"Mission_ELY2_Laptop-Text\", \"The data in this file is encrypted - please refer to your direct report within the Group for access.\")",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Mission_ELY3_Terraforming",
+            "Item": {
+                "RowName": "Item_Mission_ELY3_Terraforming"
+            },
+            "Text": "NSLOCTEXT(\"D_CollectableNotes\", \"Mission_ELY3_Terraforming-Text\", \"Top Secret - Eyes Only (Level: Black)\\r\\nPlanetary Designation: WOLF-1061ca\\r\\nReport ID: UDA-STRAT/2025-0918\\r\\nPrepared by: Directorate of Resource Valuation & Contingency Affairs\\r\\nDate: REDACTED\\r\\n\\r\\nExecutive Summary\\r\\n\\r\\nPreliminary environmental and geochemical modelling indicates that the ongoing terraforming initiative on WOLF-1061ca carries a 98% probability of technical success within projected implementation windows. While this outcome fulfills the stated colonization mandate, it will irreversibly eliminate the currently observed deposits of so-called \\\"exotic material\\\"-a class of substrates exhibiting physical properties and market valuation far exceeding conventional resource classes.\\r\\n\\r\\nIndependent valuation models and market simulations estimate the in-situ value of these exotics at multiple quadrillions of USD (nominal) at current commodity and derivative pricing assumptions. The removal of these deposits through successful ecological engineering therefore represents a multi-trillion (and, more precisely, multi-quadrillion) dollar opportunity cost to the United Development Agency (UDA) and its private partners.\\r\\n\\r\\nGiven the magnitude of the latent value, the Directorate recommends that the UDA consider deliberately preserving access to exotic deposits through managed narrative control and the presentation of a credible-albeit falsified-terraforming failure. This preserves the resource base while maintaining plausible deniability and commercial exclusivity for the UDA consortium.\\r\\n\\r\\nKey Findings\\r\\n\\r\\nTerraforming Success Probability: Current technical assessment yields P(success) = 0.98 based on thermal, hydrological, and atmospheric intervention models. Confidence interval: 0.7% (model variance).\\r\\n\\r\\nExotic Material Status: Geochemical surveys, remote spectrometry, and limited-core sampling confirm concentrated deposits across several basins. Laboratory assays reveal energy-coupled crystalline lattices and anomalous isotopic ratios consistent with high-value industrial and speculative applications.\\r\\n\\r\\nEstimated Economic Value: Conservative market models place the material\\'s extractable value in the quadrillions of dollars (nominal). This figure accounts for scarcity premiums, strategic premiums for non-replicable materials, and derivative market multiplier effects.\\r\\n\\r\\nStrategic Uniqueness: WOLF-1061ca is the only planetary candidate within the system meeting simultaneous habitability and deposit accessibility criteria. Alternative colony candidates will require additional transit and terraforming investment, but such alternatives exist and are considered tractable if allowed.\\r\\n\\r\\nStrategic Recommendation (Summary)\\r\\n\\r\\nPublic/Official Track: Continue visible terraforming operations to satisfy political stakeholders and maintain operational cover.\\r\\n\\r\\nCommercial/Covert Track: Prepare a controlled information campaign and contingency narrative that can be deployed to credibly portray the terraforming effort as failed or irreparably compromised, should it become strategically advantageous to preserve the deposits.\\r\\n\\r\\nResource Preservation: Retain sampling, staking, and covert claim mechanisms to ensure UDA commercial control of exotic deposits should a public withdrawal be enacted.\\r\\n\\r\\nAlternative Colonization: Initiate immediate scouting and low-cost preparatory work on secondary candidates within the sector to ensure human expansion proceeds without forfeiting the exotic yield.\\r\\n\\r\\nNote: Recommendation 2 (narrative management) is proposed as a strategic, non-kinetic toolset. Operational specifics for execution must remain compartmentalized and handled by the Directorate of Information and Plausible Contingency (DIPC). No tactical sabotage or unlawful endangerment of personnel is advised or implied.\\r\\n\\r\\nRisk Assessment\\r\\n\\r\\nReputational Risk: Any revelation of deliberate misrepresentation would incur severe political and legal consequences, domestically and across allied systems.\\r\\n\\r\\nOperational Risk: Maintaining a deception requires sustained effort and introduces long-term intelligence burdens.\\r\\n\\r\\nMoral/Political Risk: Preserving exotics at the cost of colonization for existing human migratory needs may fuel intra-governmental dissent.\\r\\n\\r\\nMitigant: Rapid development of alternative colony options and a rigorous, compartmentalized communications plan will reduce exposure.\\r\\n\\r\\nFinancial Overview\\r\\n\\r\\nValue at Stake (Extractable): Multiple quadrillions USD (nominal).\\r\\n\\r\\nEstimated Present Value to UDA (if preserved & monetized under exclusive control): Substantially greater than combined near-term gains from colonization allowances and standard resource extraction. Precise monetization projections available on request under separate fiscal modelling addendum (Black-vaulted).\\r\\n\\r\\nEthical & Legal Notice\\r\\n\\r\\nThe contents of this document are extremely sensitive. Disclosure beyond pre-authorized senior UDA channels is prohibited. This recommendation contemplates strategic communications posture rather than operational harm; however, any course of action involving intentional public misstatement shall be reviewed by the Office of Legal Counsel to assess statutory exposure and political consequences.\\r\\n\\r\\nConclusion\\r\\n\\r\\nThe terraforming project on WOLF-1061ca is, by all measurable criteria, poised to succeed. Success, however, will annihilate an asset of unparalleled value. The UDA faces a starkly binary choice: proceed with colonization and forfeit quadrillions in exotic returns, or preserve the deposits by means of a controlled narrative and pursue colonization elsewhere. For reasons of long-term strategic wealth and sovereign advantage, the Directorate advises that the latter path be prepared and reserved - executed with the utmost secrecy and by the narrowest possible circle of trust.\\r\\n\\r\\nClassification: BLACK - STRICTLY CONFIDENTIAL.\\r\\nDistribution: Prime Director, Chief Economic Strategist, Head of DIPC, Legal Counsel (on a strictly need-to-know basis).\\r\\n\\r\\nPrepared with full awareness of the gravity of recommendation. The calculus is clear: some fortunes are too vast to surrender in the name of sentiment.\")",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Mission_ELY3_Experiments",
+            "Item": {
+                "RowName": "Item_Mission_ELY3_Experiments"
+            },
+            "Text": "NSLOCTEXT(\"D_CollectableNotes\", \"Mission_ELY3_Experiments-Text\", \"Subspecies 1341 testing complete - no viable subjects remain. \\r\\nOperations halted until further funding is secured.\")",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Mission_ELY3_Laser",
+            "Item": {
+                "RowName": "Item_Mission_ELY3_Laser"
+            },
+            "Text": "NSLOCTEXT(\"D_CollectableNotes\", \"Mission_ELY3_Laser-Text\", \"UDA - Group 15\\r\\nOrbital Laser Activation Log\\r\\nClassification: RESTRICTED - Need-to-Know\\r\\n\\r\\nLog entries (no dates). Each entry corresponds to a discrete activation event.\\r\\n\\r\\nLOG-001 - Operation: Borealis Sweep\\r\\nActivation ID: G15-AL/001\\r\\nDuration: 00:00:45 (firing window)\\r\\nTarget Vector: Sector 7B - Unmanned infrastructure cluster\\r\\nAuthorization: Code GREY-SHIELD (Commanded)\\r\\nResult: Target neutralized; collateral within projected bounds.\\r\\nRemarks: Routine engagement under direct operational orders.\\r\\n\\r\\nLOG-002 - Operation: Silent Harbor\\r\\nActivation ID: G15-AL/002\\r\\nDuration: 00:01:12\\r\\nTarget Vector: Approach corridor - hostile reconnaissance package\\r\\nAuthorization: Code IRON-VEIL (Field)\\r\\nResult: Hostile asset disabled.\\r\\nRemarks: Post-shot telemetry nominal.\\r\\n\\r\\nLOG-003 - Operation: Iron Canticle\\r\\nActivation ID: G15-AL/003\\r\\nDuration: 00:00:30\\r\\nTarget Vector: Surface-automated mining node\\r\\nAuthorization: Code BLACK-KEEP (Commanded)\\r\\nResult: Node incinerated to prevent capture.\\r\\nRemarks: Scorched perimeter confirmed.\\r\\n\\r\\nLOG-004 - Operation: Dusk Curtain\\r\\nActivation ID: G15-AL/004\\r\\nDuration: 00:02:05\\r\\nTarget Vector: Orbital debris field (precision carve)\\r\\nAuthorization: Code SILVER-LATCH (Field)\\r\\nResult: Debris dispersal successful; two secondary fragments catalogued.\\r\\nRemarks: Debris catalog forwarded to Logistics.\\r\\n\\r\\nLOG-005 - Operation: Echo Bastion\\r\\nActivation ID: G15-AL/005\\r\\nDuration: 00:00:55\\r\\nTarget Vector: Ground-based artillery emplacements (hostile)\\r\\nAuthorization: Code RED-ANCHOR (Commanded)\\r\\nResult: Emplacements neutralized.\\r\\nRemarks: Brief comms blackout observed during engagement.\\r\\n\\r\\nLOG-006 - Operation: Hollow Mercy\\r\\nActivation ID: G15-AL/006\\r\\nDuration: 00:01:40\\r\\nTarget Vector: Supply convoy (armored)\\r\\nAuthorization: Code LONE-PIER (Field)\\r\\nResult: Convoy disabled; salvage teams dispatched.\\r\\nRemarks: Salvage yielded classified components; inventory pending.\\r\\n\\r\\nLOG-007 - Operation: Glass Harbor\\r\\nActivation ID: G15-AL/007\\r\\nDuration: 00:00:20\\r\\nTarget Vector: Coastal radio array (denial strike)\\r\\nAuthorization: Code OATH-BIND (Commanded)\\r\\nResult: Array destroyed.\\r\\nRemarks: Communications on local band suppressed for 18 cycles.\\r\\n\\r\\nLOG-008 - Operation: Nightfall Accord\\r\\nActivation ID: G15-AL/008\\r\\nDuration: 00:01:05\\r\\nTarget Vector: Mobile siege platform\\r\\nAuthorization: Code STEEL-VERGE (Field)\\r\\nResult: Platform disabled.\\r\\nRemarks: One operative reported minor exposure to pulse echo.\\r\\n\\r\\nLOG-009 - Operation: Quiet Ledger\\r\\nActivation ID: G15-AL/009\\r\\nDuration: 00:00:35\\r\\nTarget Vector: Extraction staging area (denial)\\r\\nAuthorization: Code CIPHER-FOIL (Commanded)\\r\\nResult: Staging infrastructure neutralized.\\r\\nRemarks: Evidence of unauthorized access to UDA manifests discovered.\\r\\n\\r\\nLOG-010 - Operation: Meridian Scour\\r\\nActivation ID: G15-AL/010\\r\\nDuration: 00:02:30\\r\\nTarget Vector: High-yield processing facility (hostile)\\r\\nAuthorization: Code FALCON-CLAUSE (Commanded)\\r\\nResult: Facility rendered inoperable.\\r\\nRemarks: Significant thermal signature; remediation teams required.\\r\\n\\r\\nLOG-011 - Operation: Last Ledger\\r\\nActivation ID: G15-AL/011\\r\\nDuration: 00:00:50\\r\\nTarget Vector: Secured cache compound (covert deny)\\r\\nAuthorization: Code NIGHT-TRUSS (Compartmented)\\r\\nResult: Cache neutralized; inventory destroyed as per directive.\\r\\nRemarks: Personnel transfer logged post-engagement. Internal audit flagged.\\r\\n\\r\\nLOG-012 - Operation: Shadow Allowance (Compartmented)\\r\\nActivation ID: G15-AL/012\\r\\nDuration: 00:00:10\\r\\nTarget Vector: Personnel transit node - precision interdiction\\r\\nAuthorization: Code VELLUM-NULL (Black-circuited)\\r\\nResult: Transit node temporarily incapacitated; target extraction prevented.\\r\\nRemarks: After-action: evidence of misappropriated classified goods. Subject identified: Mo Chou - thief. Internal referral to DIPC and Legal for containment and recovery actions.\\r\\n\\r\\nEnd of log.\\r\\nPrepared by: Operational Records - Group 15\\r\\nDistribution: Group 15 Command; Directorate Audit Cell (on request)\\r\\nIntegrity Hash: UDA-G15-LOG-INT/7F3A (do not alter)\")",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Mission_ELY3_AccessCard",
+            "Item": {
+                "RowName": "Item_Mission_ELY3_Laser"
+            },
+            "Text": "INVTEXT(\"[DNT] RFID Access\")",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Mission_ELY1_Mo_1",
+            "Item": {
+                "RowName": "Mo_area_note_1"
+            },
+            "Text": "NSLOCTEXT(\"D_CollectableNotes\", \"Mission_ELY1_Mo_1-Text\", \"Dossier on TEI members\\r\\nDr Iris Blake - Checked in. Critical to success.\\r\\nVictor Flynn - Checked in. Will provide valuable intel regarding TPS and their methods.\\r\\nTheo Carter - Checked in. UDA mandatory hire from ACS. Word things cautiously around him.\\r\\nOld friend - Not checked in. Identity withheld for security reasons. Note: Remember to apologize for that Lava Hunter incident.\")",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Mission_ELY1_Mo_2",
+            "Item": {
+                "RowName": "Mo_area_note_2"
+            },
+            "Text": "NSLOCTEXT(\"D_CollectableNotes\", \"Mission_ELY1_Mo_2-Text\", \"Thanks for the hire, M. Not many know my background, but I trust you not to share it with the group. We wouldn\\'t want anyone going overboard. -V\")",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Mission_ELY1_Mo_3",
+            "Item": {
+                "RowName": "Mo_area_note_3"
+            },
+            "Text": "NSLOCTEXT(\"D_CollectableNotes\", \"Mission_ELY1_Mo_3-Text\", \"Question everything, do not trust the UDA\\r\\nJoin TPS and FIGHT for your RIGHTS\\r\\nWe will burn the UDA from the inside - JOIN US TODAY \")",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Mission_ELY1_Iris_1",
+            "Item": {
+                "RowName": "Iris_area_note_1"
+            },
+            "Text": "NSLOCTEXT(\"D_CollectableNotes\", \"Mission_ELY1_Iris_1-Text\", \"POSTCARD FROM EARTH\\r\\nHi darling, we miss you so much already, come back for a holiday soon when you\\'ve finished that investigation of yours! \\r\\nYour father and I are so proud of you for going back out there after all that fuss with the terraforming last time.\\r\\nRemember to stay hydrated, you never know what nasty bugs are out there.\\r\\nLove you, Mumsie xx\")",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Mission_ELY1_Iris_2",
+            "Item": {
+                "RowName": "Iris_area_note_2"
+            },
+            "Text": "NSLOCTEXT(\"D_CollectableNotes\", \"Mission_ELY1_Iris_2-Text\", \"Day 12\\r\\nWe still haven\\'t been able to locate many Group members yet, but Victor has reported finding a strange powder-like substance on the suits of fallen TPS members. \\r\\nI asked him to get me a sample but apparently, that big lump Theo decided to give the body a kick when they found it and it all flew off. A floundering bear of a man! Goodness, he\\'s so annoying.\")",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Mission_ELY1_Victor_1",
+            "Item": {
+                "RowName": "Vic_area_note_1"
+            },
+            "Text": "INVTEXT(\"01011001 01101111 01110101 01110010 00100000 01100011 01101111 01101110 01110100 01100001 01100011 01110100 00100000 01100001 01110100 00100000 01010100 01010000 01010011 00100000 01101000 01100001 01110011 01101110 00100111 01110100 00100000 01110010 01100101 01110011 01110000 01101111 01101110 01100100 01100101 01100100 00100000 01110011 01101111 00100000 01110111 01100101 00100000 01100011 01100001 01101110 00100000 01101111 01101110 01101100 01111001 00100000 01100001 01110011 01110011 01110101 01101101 01100101 00100000 01101000 01100101 00100111 01110011 00100000 01100010 01100101 01100101 01101110 00100000 01100011 01100001 01110011 01110100 00100000 01101111 01110101 01110100 00101100 00100000 01111001 01101111 01110101 00100000 01110111 01101001 01101100 01101100 00100000 01101000 01100001 01110110 01100101 00100000 01110100 01101111 00100000 01110100 01100001 01101011 01100101 00100000 01101101 01100001 01110100 01110100 01100101 01110010 01110011 00100000 01101001 01101110 01110100 01101111 00100000 01111001 01101111 01110101 01110010 00100000 01101111 01110111 01101110 00100000 01101000 01100001 01101110 01100100 01110011 00101110\")",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Mission_ELY1_Victor_2",
+            "Item": {
+                "RowName": "Vic_area_note_2"
+            },
+            "Text": "NSLOCTEXT(\"D_CollectableNotes\", \"Mission_ELY1_Victor_2-Text\", \"Intercepted a memo from TPS HQ - they\\'re moving most operations to remote drone operators down here. Something has them spooked, but they\\'re still a pain in my ass. They always seem to be one step ahead, I\\'ll have the location of a base figured out and then... nothing but drones. It\\'s like they\\'re ghosts.\")",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Mission_ELY1_Theo_1",
+            "Item": {
+                "RowName": "Theo_area_note_1"
+            },
+            "Text": "NSLOCTEXT(\"D_CollectableNotes\", \"Mission_ELY1_Theo_1-Text\", \"Anti-Hangover Elixir:\\r\\nUranium + water + flour + sugar\\r\\nYou won\\'t be hungover anymore, but you will be dead.\")",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Mission_ELY1_Theo_2",
+            "Item": {
+                "RowName": "Theo_area_note_2"
+            },
+            "Text": "NSLOCTEXT(\"D_CollectableNotes\", \"Mission_ELY1_Theo_2-Text\", \"Does Group 15 mean there are 14 other groups we also have to find...?\")",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Mission_ELY2_Hut_1",
+            "Item": {
+                "RowName": "Mission_ELY2_note_1"
+            },
+            "Text": "NSLOCTEXT(\"D_CollectableNotes\", \"Mission_ELY2_Hut_1-Text\", \"As per incident protocol I\\'ve evacuated all personnel with no traceable radiation contact, and discharged those who were deemed too high-risk to return to orbit.\")",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Mission_ELY2_Hut_2",
+            "Item": {
+                "RowName": "Mission_ELY2_note_2"
+            },
+            "Text": "NSLOCTEXT(\"D_CollectableNotes\", \"Mission_ELY2_Hut_2-Text\", \"INCIDENT REPORT G15-0054:\\r\\nALL GROUP PERSONNEL ARE TO EVACUATE THE SECTOR IMMEDIATELY.\\r\\nDISPOSE OF ALL RESEARCH BEFORE LEAVING BY ANY MEANS NECESSARY.\\r\\nFAILURE TO DESTROY EVIDENCE OF GROUP OCCUPATION WILL RESULT IN TERMINATION.\\r\\n- SPECIAL AGENT CLARKE\")",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Mission_ELY3_Lab_1",
+            "Item": {
+                "RowName": "Transfer_papers_note"
+            },
+            "Text": "NSLOCTEXT(\"D_CollectableNotes\", \"Mission_ELY3_Lab_1-Text\", \"TRANSFER PAPERS FOR MR C L RIORNON\\r\\nSubject shows great promise in human trials, dishonorably discharged for aiding a fugitive.\\r\\nNo rights remain.\")",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Mission_ELY3_Lab_2",
+            "Item": {
+                "RowName": "G15_Blacklist_note"
+            },
+            "Text": "NSLOCTEXT(\"D_CollectableNotes\", \"Mission_ELY3_Lab_2-Text\", \"BLACKLIST: \\r\\nMo Chou - Terraforming Cohort Alpha\\r\\nSol Berlinski - First Cohort\\r\\nUnknown faction member (suspected ACS involvement)\\r\\nIris Blake - Terraforming Cohort Alpha\\r\\nUnknown Faction Member - (suspected TPS involvement)\\r\\nTheodore Carter - ACS Barracks.  \\r\\nAvoid contact with anyone listed in this document - suspects are considered a threat to the Group.\")",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Mission_ELY3_Lab_3",
+            "Item": {
+                "RowName": "Note_field_readings"
+            },
+            "Text": "NSLOCTEXT(\"D_CollectableNotes\", \"Mission_ELY3_Lab_3-Text\", \"Field readings near Site D exceeded 250 units/hr.\\r\\nRecommend immediate evacuation of unshielded personnel.\\r\\nRequesting replacement Geiger counters-two melted.\\r\\n-Dr. Veska\")",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Mission_ELY3_Lab_4",
+            "Item": {
+                "RowName": "Internal_email_note"
+            },
+            "Text": "NSLOCTEXT(\"D_CollectableNotes\", \"Mission_ELY3_Lab_4-Text\", \"Effective immediately, five staff from the Oversight Board have been dismissed.\\r\\nThe leak was traced to internal recordings sent offworld by a known dissident.\\r\\nDamage control is underway-media access denied.\\r\\nDO NOT speak to press.\")",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Mission_ELY3_Lab_5",
+            "Item": {
+                "RowName": "Incident_report_g15_note"
+            },
+            "Text": "NSLOCTEXT(\"D_CollectableNotes\", \"Mission_ELY3_Lab_5-Text\", \"Containment breach in Cold Lab 3.\\r\\nUnknown compound reacted with atmospheric nitrogen.\\r\\nTechnician Flores exposed-no vitals on retrieval.\\r\\nDisciplinary hearing postponed pending autopsy results.\")",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Mission_ELY3_Lab_6",
+            "Item": {
+                "RowName": "Performance_review_note"
+            },
+            "Text": "NSLOCTEXT(\"D_CollectableNotes\", \"Mission_ELY3_Lab_6-Text\", \"Heller continues to object during trials despite prior warnings.\\r\\nFails to meet psychological resilience thresholds.\\r\\nRecommend reassignment to sanitation or termination.\\r\\nNot suitable for high-pressure ethical zones.\")",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Mission_ELY3_Lab_7",
+            "Item": {
+                "RowName": "Scrawled_message_note"
+            },
+            "Text": "NSLOCTEXT(\"D_CollectableNotes\", \"Mission_ELY3_Lab_7-Text\", \"Don\\'t drink the water.\\r\\nIt glows at night now.\\r\\nIf you find Keller\\'s boots, don\\'t touch them.\\r\\n-C.\")",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Mission_ELY3_Lab_8",
+            "Item": {
+                "RowName": "Transcript_note"
+            },
+            "Text": "NSLOCTEXT(\"D_CollectableNotes\", \"Mission_ELY3_Lab_8-Text\", \"\\\"...not enough shielding, not enough time. We said it wasn\\'t ready.\\\"\\r\\n\\\"We\\'re dying, and they\\'re still pushing for results.\\\"\\r\\nstatic\\r\\n\\\"They called it a \\'cost of progress\\'.\\\"\")",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Mission_ELY3_Lab_9",
+            "Item": {
+                "RowName": "Security_memo_note"
+            },
+            "Text": "NSLOCTEXT(\"D_CollectableNotes\", \"Mission_ELY3_Lab_9-Text\", \"Access to Vault Theta is now by request only.\\r\\nFollowing the incident, no interns are permitted below Floor -3.\\r\\nHazmat suits are mandatory until radiation decays below threshold.\\r\\nDo not disturb the pods.\")",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "TPS_Flavour_Note_1",
+            "Item": {
+                "RowName": "TPS_note"
+            },
+            "Text": "NSLOCTEXT(\"D_CollectableNotes\", \"TPS_Flavour_Note_1-Text\", \"Ration drop\\'s late again.\\r\\nTinned beans and vitamin paste, that\\'s it?\\r\\nTPS Command says \\\"adapt.\\\"\\r\\nBet they\\'re not eating this shit in orbit.\")",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "TPS_Flavour_Note_2",
+            "Item": {
+                "RowName": "TPS_note"
+            },
+            "Text": "NSLOCTEXT(\"D_CollectableNotes\", \"TPS_Flavour_Note_2-Text\", \"Torn Page from a Journal:\\r\\nSometimes I dream of coffee and traffic lights.\\r\\nWoke up today thinking I was back on Earth.\\r\\nThen Hasko screamed about another patrol and I remembered.\\r\\nWe chose this-but hell, did we?\")",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "TPS_Flavour_Note_3",
+            "Item": {
+                "RowName": "TPS_note"
+            },
+            "Text": "NSLOCTEXT(\"D_CollectableNotes\", \"TPS_Flavour_Note_3-Text\", \"Handwritten Letter (Never Sent):\\r\\nI miss your laugh. I miss quiet.\\r\\nHere it\\'s all drills, static, and shouting.\\r\\nThey say we fight for the future, but it feels like we\\'re killing the past.\\r\\nI hope you don\\'t see what I\\'ve become.\")",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "TPS_Flavour_Note_4",
+            "Item": {
+                "RowName": "TPS_note"
+            },
+            "Text": "NSLOCTEXT(\"D_CollectableNotes\", \"TPS_Flavour_Note_4-Text\", \"Personal Log - Dario H.\\r\\nUDA doesn\\'t see us as people. Just stats.\\r\\nStill, burning that ACS prospector alive didn\\'t sit right.\\r\\nThe radicals call it justice-I call it revenge.\\r\\nMaybe we\\'re becoming what we hated.\")",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "TPS_Flavour_Note_5",
+            "Item": {
+                "RowName": "TPS_note"
+            },
+            "Text": "NSLOCTEXT(\"D_CollectableNotes\", \"TPS_Flavour_Note_5-Text\", \"TPS cooks are either sadists or out of salt.\\r\\nIf I eat one more protein brick, I\\'ll riot.\\r\\nNote: avoid the green ones.\\r\\nEven the dreadwings wouldn\\'t touch them.\")",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "TPS_Flavour_Note_6",
+            "Item": {
+                "RowName": "TPS_note"
+            },
+            "Text": "NSLOCTEXT(\"D_CollectableNotes\", \"TPS_Flavour_Note_6-Text\", \"TPS Internal Message Log:\\r\\nCommand says we\\'ll push south next week.\\r\\nNot all of us are ready-we lost three to a whiteout yesterday.\\r\\nThey ignore it. \\\"Glory to the cause,\\\" right?\\r\\nI didn\\'t sign up to die of bad logistics.\")",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "TPS_Flavour_Note_7",
+            "Item": {
+                "RowName": "TPS_note"
+            },
+            "Text": "NSLOCTEXT(\"D_CollectableNotes\", \"TPS_Flavour_Note_7-Text\", \"\\\"UDA stole our homes.\\r\\nTPS stole our peace.\\r\\nNo heroes here.\\r\\nJust people too angry to sleep.\\\"\")",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "TPS_Flavour_Note_8",
+            "Item": {
+                "RowName": "TPS_note"
+            },
+            "Text": "NSLOCTEXT(\"D_CollectableNotes\", \"TPS_Flavour_Note_8-Text\", \"They keep calling this a revolution.\\r\\nFeels more like a slow collapse.\\r\\nHasko said we\\'ll be legends.\\r\\nI just want to go home.\")",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Post_Story_Note_1",
+            "Item": {
+                "RowName": "Letter_to_Sol"
+            },
+            "Text": "NSLOCTEXT(\"D_CollectableNotes\", \"Post_Story_Note_1-Text\", \"Letter adressed to Mr Berlinski:\\r\\n\\r\\nDear Sol,\\r\\n\\r\\nI write with a weight I can hardly bear. Mo is gone. She fell in the line of duty, and though they\\'ll dress it in the language of reports and commendations, I can\\'t bring myself to speak of her in such cold terms with you.\\r\\n\\r\\nShe fought until her last breath, not for orders or objectives, but for us - for the people beside her and the future she still believed in. There was no fear in her, only that quiet strength you know so well. Even in her final moments, she carried herself with a steadiness that reminded us all who we were following.\\r\\n\\r\\nYou were her anchor beyond the battlefield, her reminder of home and of who she was outside the uniform. She spoke of you often, sometimes in small ways, sometimes with a softness that Icarus could never strip from her. I thought you should know that when the end came, she was not alone - she was surrounded by those who cared, and her name was carried with reverence.\\r\\n\\r\\nI\\'m so sorry, Sol. For the world\\'s loss, and for yours.\\r\\n\\r\\nWith respect and grief,\\r\\nDr Iris Blake\")",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Post_Story_Note_2",
+            "Item": {
+                "RowName": "Incident_report_note"
+            },
+            "Text": "NSLOCTEXT(\"D_CollectableNotes\", \"Post_Story_Note_2-Text\", \"Incident Report to Command\\r\\n\\r\\nClassification: Confidential - For Command Review Only\\r\\n\\r\\nSubject: After-Action Report - Fatality of Commander Mo Chou\\r\\n\\r\\nOn [date redacted], during an assault against TPS, Commander Mo Chou sustained fatal injuries as a result of hostile engagement in Sector Elysium. Despite immediate application of field medical protocols, she was unfortunately declared deceased on site.\\r\\n\\r\\nCommander Chou conducted herself with exemplary composure and fulfilled her operational duties in full. Her actions directly contributed to the survival and extraction of her unit. She met her end honorably, in accordance with the highest traditions of service.\\r\\n\\r\\nCommand has been informed. Further details pertaining to enemy disposition and situational context have been logged separately under File Ref. [redacted].\\r\\n\\r\\nSubmitted respectfully,\\r\\nVictor Flynn\")",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Post_Story_Note_3",
+            "Item": {
+                "RowName": "Journal_entry"
+            },
+            "Text": "NSLOCTEXT(\"D_CollectableNotes\", \"Post_Story_Note_3-Text\", \"Journal belonging to Iris Blake:\\r\\n\\r\\nAnother day without her, the first time I thought she was dead was hard enough.\\r\\nBut finding out she was alive after all that time only to lose her again a few weeks later? \\r\\nI don\\'t know if I\\'ll ever recover from this heartbreak. I miss you Mo. And I\\'m so so sorry for what we did to you.\\r\\n- The remainder of this entry is smudged with tears -\")",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Mission_ELY5_Note_1",
+            "Item": {
+                "RowName": "Mission_ELY5_note_1"
+            },
+            "Text": "NSLOCTEXT(\"D_CollectableNotes\", \"Mission_ELY5_Note_1-Text\", \"The data must be wrong, there\\'s no way the UDA would do this to us.\\r\\nI can\\'t sleep, I keep running the numbers, reading the files...\\r\\nAll this time, after years of research... wasted. How many have died back on Earth due to this cover up?\\r\\nOur one chance at colonizing a new planet, properly...\\r\\nPeople back home are dying of hunger, while the UDA line their pockets.\")",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Mission_ELY5_Note_2",
+            "Item": {
+                "RowName": "Mission_ELY5_note_2"
+            },
+            "Text": "NSLOCTEXT(\"D_CollectableNotes\", \"Mission_ELY5_Note_2-Text\", \"I should have known they\\'d betray us, all they care about is money!\\r\\nBillions of us, stuck back on Earth, hoping for a better life. And they squandered it to balance their books?!\\r\\nI never fully trusted the UDA, and after seeing what the Group is capable of...\\r\\nI was a fool to return to Icarus.\\r\\nBut THEY were fools to bring me back.\")",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Mission_ELY5_Note_3",
+            "Item": {
+                "RowName": "Mission_ELY5_note_3"
+            },
+            "Text": "NSLOCTEXT(\"D_CollectableNotes\", \"Mission_ELY5_Note_3-Text\", \"There must be a way to fix this, this can\\'t be a coincidence.\\r\\nI\\'ve found this data for a reason. I owe it to humanity to save them.\\r\\nI still can\\'t sleep, I can\\'t get this idea out of my head.\\r\\nWhat if there was a way to restart it? Those enzymes back at the lab...\\r\\nIt must be fate, they\\'ve been left there for me to use.\")",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Mission_ELY5_Note_4",
+            "Item": {
+                "RowName": "Mission_ELY5_note_4"
+            },
+            "Text": "NSLOCTEXT(\"D_CollectableNotes\", \"Mission_ELY5_Note_4-Text\", \"I thought I was past this pain, it would appear that I can trust no one.\\r\\nThe lies, the manipulations of those right at the top. It\\'s insanity.\\r\\nHow do I know my team aren\\'t in on it? I can\\'t tell them, they\\'ll try to stop me.\\r\\nThey\\'ll brush it off as a trauma response, they\\'ll call me crazy.\\r\\nMaybe I am. I don\\'t care about anything but revenge right now.\")",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Mission_ELY5_Note_5",
+            "Item": {
+                "RowName": "Mission_ELY5_note_5"
+            },
+            "Text": "NSLOCTEXT(\"D_CollectableNotes\", \"Mission_ELY5_Note_5-Text\", \"I must do what needs to be done. Humanity is owed it. The UDA must pay.\\r\\nThere\\'s no way around this, I\\'ll be branded as a lunatic for even trying it.\\r\\nNo one will understand, not even Iris. I\\'m sorry, but I have to make this right.\\r\\nNo matter who gets in my way, I WILL terraform Icarus and SAVE MY PEOPLE.\\r\\nAnd I don\\'t care who has to die to make it happen.\")",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Mission_ELY6_Code",
+            "Item": {
+                "RowName": "Item_Mission_ELY6_Code"
+            },
+            "Text": "NSLOCTEXT(\"D_CollectableNotes\", \"Mission_ELY6_Code-Text\", \"Tower Door Code\\r\\n4 2 5 5\")",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Mission_ELY6_Code_2",
+            "Item": {
+                "RowName": "Item_Mission_ELY6_Code_2"
+            },
+            "Text": "NSLOCTEXT(\"D_CollectableNotes\", \"Mission_ELY6_Code_2-Text\", \"TPS Compound Entry Code\\r\\n3 3 2 6\")",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Post_Story_Note_4",
+            "Item": {
+                "RowName": "Journal_entry"
+            },
+            "Text": "NSLOCTEXT(\"D_CollectableNotes\", \"Post_Story_Note_4-Text\", \"Journal Entry - Victor\\r\\n\\r\\nThe blast was significant, but not instantaneous. There may have been time. She has surprised us before. I would not rule it out. If anyone could improvise an exit under pressure, it would be her. Stranger things have happened in orbit. She knew that satellite better than anyone. If there was a way off, she would have found it. Am I only seeking to assuage my own guilt? Perhaps, but still. There\\'s a chance. A tiny, miniscule chance.\")",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        }
+    ]
+}

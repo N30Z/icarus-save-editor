@@ -1,0 +1,896 @@
+{
+    "RowStruct": "/Script/Icarus.IcarusTamingData",
+    "Defaults": {
+        "Behaviour": "/Game/BP/AI/Taming/BP_TamingComponent.BP_TamingComponent_C",
+        "TameDurationInSeconds": 300,
+        "DesiredTemperatureRange": {
+            "X": 10,
+            "Y": 40
+        },
+        "DesiredShelterPercentage": 75,
+        "DesiredNutritionPercentage": 50,
+        "RequiredTamingModifiers": [],
+        "ProhibitedTamingModifiers": [],
+        "TamedAI": {
+            "RowName": "None",
+            "DataTableName": "D_AISetup"
+        },
+        "TamedAIOverride": {},
+        "MatureCreatureType": {
+            "RowName": "None",
+            "DataTableName": "D_AISetup"
+        },
+        "JuvenileCreatureType": {
+            "RowName": "None",
+            "DataTableName": "D_AISetup"
+        },
+        "bAutomaticallySpawnJuvenileWithParent": false,
+        "PercentChanceToSpawnJuvenile": 33,
+        "MaxNearbyAutoSpawnedJuveniles": 2,
+        "TimeToSpawnDynamicCharacter": 300,
+        "TimeToSpawnDynamicCharacterRandomDeviation": 120,
+        "TrappingSupportedAtmospheres": [],
+        "GestationPeriodSeconds": 1500
+    },
+    "Rows": [
+        {
+            "Name": "Moa",
+            "TameDurationInSeconds": 900,
+            "DesiredTemperatureRange": {
+                "X": 15,
+                "Y": 45
+            },
+            "DesiredShelterPercentage": 0,
+            "DesiredNutritionPercentage": 25,
+            "ProhibitedTamingModifiers": [
+                {
+                    "RowName": "Wet",
+                    "DataTableName": "D_ModifierStates"
+                },
+                {
+                    "RowName": "Sleepy",
+                    "DataTableName": "D_ModifierStates"
+                }
+            ],
+            "TamedAI": {
+                "RowName": "Mount_Moa"
+            },
+            "MatureCreatureType": {
+                "RowName": "Moa"
+            },
+            "JuvenileCreatureType": {
+                "RowName": "Juvenile_Moa"
+            },
+            "bAutomaticallySpawnJuvenileWithParent": true,
+            "PercentChanceToSpawnJuvenile": 75,
+            "MaxNearbyAutoSpawnedJuveniles": 5,
+            "GestationPeriodSeconds": 3000
+        },
+        {
+            "Name": "Buffalo",
+            "TameDurationInSeconds": 900,
+            "DesiredTemperatureRange": {
+                "X": 15,
+                "Y": 45
+            },
+            "DesiredShelterPercentage": 0,
+            "DesiredNutritionPercentage": 25,
+            "ProhibitedTamingModifiers": [
+                {
+                    "RowName": "Wet",
+                    "DataTableName": "D_ModifierStates"
+                },
+                {
+                    "RowName": "Sleepy",
+                    "DataTableName": "D_ModifierStates"
+                }
+            ],
+            "TamedAI": {
+                "RowName": "Mount_Buffalo"
+            },
+            "MatureCreatureType": {
+                "RowName": "Buffalo"
+            },
+            "JuvenileCreatureType": {
+                "RowName": "Juvenile_Buffalo"
+            },
+            "bAutomaticallySpawnJuvenileWithParent": true,
+            "PercentChanceToSpawnJuvenile": 75,
+            "MaxNearbyAutoSpawnedJuveniles": 5,
+            "GestationPeriodSeconds": 3000
+        },
+        {
+            "Name": "Horse",
+            "TameDurationInSeconds": 900,
+            "DesiredShelterPercentage": 0,
+            "DesiredNutritionPercentage": 25,
+            "ProhibitedTamingModifiers": [
+                {
+                    "RowName": "Wet",
+                    "DataTableName": "D_ModifierStates"
+                },
+                {
+                    "RowName": "Sleepy",
+                    "DataTableName": "D_ModifierStates"
+                }
+            ],
+            "TamedAI": {
+                "RowName": "Mount_Horse"
+            },
+            "MatureCreatureType": {
+                "RowName": "Horse"
+            },
+            "JuvenileCreatureType": {
+                "RowName": "Juvenile_Horse"
+            },
+            "bAutomaticallySpawnJuvenileWithParent": true,
+            "PercentChanceToSpawnJuvenile": 50
+        },
+        {
+            "Name": "Tusker",
+            "TameDurationInSeconds": 900,
+            "DesiredTemperatureRange": {
+                "X": -10,
+                "Y": 25
+            },
+            "DesiredShelterPercentage": 0,
+            "DesiredNutritionPercentage": 25,
+            "ProhibitedTamingModifiers": [
+                {
+                    "RowName": "Wet",
+                    "DataTableName": "D_ModifierStates"
+                },
+                {
+                    "RowName": "Sleepy",
+                    "DataTableName": "D_ModifierStates"
+                }
+            ],
+            "TamedAI": {
+                "RowName": "Mount_Tusker"
+            },
+            "MatureCreatureType": {
+                "RowName": "Tusker"
+            },
+            "JuvenileCreatureType": {
+                "RowName": "Juvenile_Tusker"
+            },
+            "bAutomaticallySpawnJuvenileWithParent": true,
+            "PercentChanceToSpawnJuvenile": 30,
+            "MaxNearbyAutoSpawnedJuveniles": 5
+        },
+        {
+            "Name": "Forest_Wolf",
+            "TameDurationInSeconds": 600,
+            "DesiredShelterPercentage": 0,
+            "DesiredNutritionPercentage": 25,
+            "TamedAI": {
+                "RowName": "Tamed_Forest_Wolf"
+            },
+            "MatureCreatureType": {
+                "RowName": "Conifer_Wolf"
+            },
+            "JuvenileCreatureType": {
+                "RowName": "Juvenile_Forest_Wolf"
+            },
+            "PercentChanceToSpawnJuvenile": 0,
+            "MaxNearbyAutoSpawnedJuveniles": 0,
+            "TrappingSupportedAtmospheres": [
+                {
+                    "Value": "Conifer"
+                },
+                {
+                    "Value": "Grasslands"
+                }
+            ]
+        },
+        {
+            "Name": "Snow_Wolf",
+            "TameDurationInSeconds": 600,
+            "DesiredTemperatureRange": {
+                "X": -10,
+                "Y": 25
+            },
+            "DesiredShelterPercentage": 0,
+            "DesiredNutritionPercentage": 25,
+            "TamedAI": {
+                "RowName": "Tamed_Snow_Wolf"
+            },
+            "MatureCreatureType": {
+                "RowName": "Snow_Wolf"
+            },
+            "PercentChanceToSpawnJuvenile": 0,
+            "MaxNearbyAutoSpawnedJuveniles": 0,
+            "TrappingSupportedAtmospheres": [
+                {
+                    "Value": "Arctic"
+                }
+            ]
+        },
+        {
+            "Name": "Desert_Wolf",
+            "TameDurationInSeconds": 600,
+            "DesiredTemperatureRange": {
+                "X": 15,
+                "Y": 45
+            },
+            "DesiredShelterPercentage": 0,
+            "DesiredNutritionPercentage": 25,
+            "TamedAI": {
+                "RowName": "Tamed_Desert_Wolf"
+            },
+            "MatureCreatureType": {
+                "RowName": "Desert_Wolf"
+            },
+            "PercentChanceToSpawnJuvenile": 0,
+            "MaxNearbyAutoSpawnedJuveniles": 0,
+            "TrappingSupportedAtmospheres": [
+                {
+                    "Value": "Desert"
+                },
+                {
+                    "Value": "Volcanic"
+                }
+            ]
+        },
+        {
+            "Name": "Blueback",
+            "TameDurationInSeconds": 900,
+            "DesiredShelterPercentage": 0,
+            "ProhibitedTamingModifiers": [
+                {
+                    "RowName": "Wet",
+                    "DataTableName": "D_ModifierStates"
+                },
+                {
+                    "RowName": "Sleepy",
+                    "DataTableName": "D_ModifierStates"
+                }
+            ],
+            "TamedAI": {
+                "RowName": "Mount_BlueBack"
+            },
+            "MatureCreatureType": {
+                "RowName": "BlueBack"
+            },
+            "JuvenileCreatureType": {
+                "RowName": "Juvenile_Blueback"
+            },
+            "bAutomaticallySpawnJuvenileWithParent": true
+        },
+        {
+            "Name": "Blueback_Lava",
+            "TameDurationInSeconds": 900,
+            "DesiredTemperatureRange": {
+                "X": 15,
+                "Y": 45
+            },
+            "DesiredShelterPercentage": 0,
+            "TamedAI": {
+                "RowName": "BlueBack_Lava"
+            },
+            "MatureCreatureType": {
+                "RowName": "BlueBack_Lava"
+            },
+            "JuvenileCreatureType": {
+                "RowName": "Juvenile_Blueback_Lava"
+            },
+            "bAutomaticallySpawnJuvenileWithParent": true
+        },
+        {
+            "Name": "Wild_Boar",
+            "TameDurationInSeconds": 600,
+            "DesiredShelterPercentage": 0,
+            "DesiredNutritionPercentage": 25,
+            "TamedAI": {
+                "RowName": "Tamed_Wild_Boar"
+            },
+            "MatureCreatureType": {
+                "RowName": "Wild_Boar"
+            },
+            "PercentChanceToSpawnJuvenile": 0,
+            "MaxNearbyAutoSpawnedJuveniles": 0,
+            "TrappingSupportedAtmospheres": [
+                {
+                    "Value": "Conifer"
+                },
+                {
+                    "Value": "Grasslands"
+                }
+            ]
+        },
+        {
+            "Name": "Dog",
+            "TameDurationInSeconds": 600,
+            "DesiredShelterPercentage": 0,
+            "DesiredNutritionPercentage": 25,
+            "TamedAI": {
+                "RowName": "Tame_Dog_A1"
+            },
+            "PercentChanceToSpawnJuvenile": 0,
+            "MaxNearbyAutoSpawnedJuveniles": 0
+        },
+        {
+            "Name": "Cat",
+            "TameDurationInSeconds": 600,
+            "DesiredShelterPercentage": 0,
+            "DesiredNutritionPercentage": 25,
+            "TamedAI": {
+                "RowName": "Tame_Cat_A1"
+            },
+            "PercentChanceToSpawnJuvenile": 0,
+            "MaxNearbyAutoSpawnedJuveniles": 0
+        },
+        {
+            "Name": "ArcticMoa",
+            "TameDurationInSeconds": 900,
+            "DesiredTemperatureRange": {
+                "X": -10,
+                "Y": 25
+            },
+            "DesiredShelterPercentage": 0,
+            "DesiredNutritionPercentage": 25,
+            "ProhibitedTamingModifiers": [
+                {
+                    "RowName": "Wet",
+                    "DataTableName": "D_ModifierStates"
+                },
+                {
+                    "RowName": "Sleepy",
+                    "DataTableName": "D_ModifierStates"
+                }
+            ],
+            "TamedAI": {
+                "RowName": "Mount_Arctic_Moa"
+            },
+            "MatureCreatureType": {
+                "RowName": "Arctic_Moa"
+            },
+            "JuvenileCreatureType": {
+                "RowName": "Juvenile_Arctic_Moa"
+            },
+            "bAutomaticallySpawnJuvenileWithParent": true,
+            "PercentChanceToSpawnJuvenile": 50
+        },
+        {
+            "Name": "Calf",
+            "TameDurationInSeconds": 900,
+            "DesiredShelterPercentage": 0,
+            "DesiredNutritionPercentage": 25,
+            "ProhibitedTamingModifiers": [
+                {
+                    "RowName": "Wet",
+                    "DataTableName": "D_ModifierStates"
+                },
+                {
+                    "RowName": "Sleepy",
+                    "DataTableName": "D_ModifierStates"
+                }
+            ],
+            "TamedAI": {
+                "RowName": "Cow"
+            },
+            "TamedAIOverride": {
+                "(RowName=\"Mount_Bull\",DataTableName=\"D_AISetup\")": {
+                    "Stat": {
+                        "Value": "CreatureIsMale_?"
+                    },
+                    "Value": 1
+                }
+            },
+            "MatureCreatureType": {
+                "RowName": "Cow"
+            },
+            "JuvenileCreatureType": {
+                "RowName": "Calf"
+            },
+            "PercentChanceToSpawnJuvenile": 0,
+            "MaxNearbyAutoSpawnedJuveniles": 0,
+            "GestationPeriodSeconds": 3500
+        },
+        {
+            "Name": "Chick",
+            "TameDurationInSeconds": 900,
+            "DesiredShelterPercentage": 0,
+            "DesiredNutritionPercentage": 25,
+            "ProhibitedTamingModifiers": [
+                {
+                    "RowName": "Wet",
+                    "DataTableName": "D_ModifierStates"
+                },
+                {
+                    "RowName": "Sleepy",
+                    "DataTableName": "D_ModifierStates"
+                }
+            ],
+            "TamedAI": {
+                "RowName": "Chicken"
+            },
+            "TamedAIOverride": {
+                "(RowName=\"Rooster\",DataTableName=\"D_AISetup\")": {
+                    "Stat": {
+                        "Value": "CreatureIsMale_?"
+                    },
+                    "Value": 1
+                }
+            },
+            "MatureCreatureType": {
+                "RowName": "Chicken"
+            },
+            "JuvenileCreatureType": {
+                "RowName": "Chick"
+            },
+            "PercentChanceToSpawnJuvenile": 0,
+            "MaxNearbyAutoSpawnedJuveniles": 0,
+            "GestationPeriodSeconds": 1000
+        },
+        {
+            "Name": "Chick1",
+            "TameDurationInSeconds": 900,
+            "DesiredShelterPercentage": 0,
+            "DesiredNutritionPercentage": 25,
+            "ProhibitedTamingModifiers": [
+                {
+                    "RowName": "Wet",
+                    "DataTableName": "D_ModifierStates"
+                },
+                {
+                    "RowName": "Sleepy",
+                    "DataTableName": "D_ModifierStates"
+                }
+            ],
+            "TamedAI": {
+                "RowName": "Chicken_A2"
+            },
+            "TamedAIOverride": {
+                "(RowName=\"Rooster\",DataTableName=\"D_AISetup\")": {
+                    "Stat": {
+                        "Value": "CreatureIsMale_?"
+                    },
+                    "Value": 1
+                }
+            },
+            "MatureCreatureType": {
+                "RowName": "Chicken_A2"
+            },
+            "JuvenileCreatureType": {
+                "RowName": "Chick"
+            },
+            "PercentChanceToSpawnJuvenile": 0,
+            "MaxNearbyAutoSpawnedJuveniles": 0,
+            "GestationPeriodSeconds": 1000
+        },
+        {
+            "Name": "Chick2",
+            "TameDurationInSeconds": 900,
+            "DesiredShelterPercentage": 0,
+            "DesiredNutritionPercentage": 25,
+            "ProhibitedTamingModifiers": [
+                {
+                    "RowName": "Wet",
+                    "DataTableName": "D_ModifierStates"
+                },
+                {
+                    "RowName": "Sleepy",
+                    "DataTableName": "D_ModifierStates"
+                }
+            ],
+            "TamedAI": {
+                "RowName": "Chicken_A3"
+            },
+            "TamedAIOverride": {
+                "(RowName=\"Rooster\",DataTableName=\"D_AISetup\")": {
+                    "Stat": {
+                        "Value": "CreatureIsMale_?"
+                    },
+                    "Value": 1
+                }
+            },
+            "MatureCreatureType": {
+                "RowName": "Chicken_A3"
+            },
+            "JuvenileCreatureType": {
+                "RowName": "Chick"
+            },
+            "PercentChanceToSpawnJuvenile": 0,
+            "MaxNearbyAutoSpawnedJuveniles": 0,
+            "GestationPeriodSeconds": 1000
+        },
+        {
+            "Name": "Lamb",
+            "TameDurationInSeconds": 900,
+            "DesiredShelterPercentage": 0,
+            "DesiredNutritionPercentage": 25,
+            "ProhibitedTamingModifiers": [
+                {
+                    "RowName": "Wet",
+                    "DataTableName": "D_ModifierStates"
+                },
+                {
+                    "RowName": "Sleepy",
+                    "DataTableName": "D_ModifierStates"
+                }
+            ],
+            "TamedAI": {
+                "RowName": "Sheep"
+            },
+            "TamedAIOverride": {
+                "(RowName=\"Ram\",DataTableName=\"D_AISetup\")": {
+                    "Stat": {
+                        "Value": "CreatureIsMale_?"
+                    },
+                    "Value": 1
+                }
+            },
+            "MatureCreatureType": {
+                "RowName": "Sheep"
+            },
+            "JuvenileCreatureType": {
+                "RowName": "Lamb"
+            },
+            "PercentChanceToSpawnJuvenile": 0,
+            "MaxNearbyAutoSpawnedJuveniles": 0,
+            "GestationPeriodSeconds": 2000
+        },
+        {
+            "Name": "WoolyZebra",
+            "TameDurationInSeconds": 900,
+            "DesiredTemperatureRange": {
+                "X": -10,
+                "Y": 25
+            },
+            "DesiredShelterPercentage": 0,
+            "DesiredNutritionPercentage": 25,
+            "ProhibitedTamingModifiers": [
+                {
+                    "RowName": "Wet",
+                    "DataTableName": "D_ModifierStates"
+                },
+                {
+                    "RowName": "Sleepy",
+                    "DataTableName": "D_ModifierStates"
+                }
+            ],
+            "TamedAI": {
+                "RowName": "Mount_WoolyZebra"
+            },
+            "MatureCreatureType": {
+                "RowName": "Wooly_Zebra"
+            },
+            "JuvenileCreatureType": {
+                "RowName": "Juvenile_Wooly_Zebra"
+            },
+            "bAutomaticallySpawnJuvenileWithParent": true
+        },
+        {
+            "Name": "SwampBird",
+            "TameDurationInSeconds": 900,
+            "DesiredTemperatureRange": {
+                "X": 8,
+                "Y": 35
+            },
+            "DesiredShelterPercentage": 0,
+            "DesiredNutritionPercentage": 25,
+            "ProhibitedTamingModifiers": [
+                {
+                    "RowName": "Wet",
+                    "DataTableName": "D_ModifierStates"
+                },
+                {
+                    "RowName": "Sleepy",
+                    "DataTableName": "D_ModifierStates"
+                }
+            ],
+            "TamedAI": {
+                "RowName": "Mount_SwampBird"
+            },
+            "MatureCreatureType": {
+                "RowName": "Swamp_Bird"
+            },
+            "JuvenileCreatureType": {
+                "RowName": "Juvenile_SwampBird"
+            },
+            "bAutomaticallySpawnJuvenileWithParent": true,
+            "PercentChanceToSpawnJuvenile": 50,
+            "MaxNearbyAutoSpawnedJuveniles": 3
+        },
+        {
+            "Name": "Raptor_Desert",
+            "TameDurationInSeconds": 1800,
+            "DesiredTemperatureRange": {
+                "Y": 50
+            },
+            "DesiredShelterPercentage": 0,
+            "ProhibitedTamingModifiers": [
+                {
+                    "RowName": "Wet",
+                    "DataTableName": "D_ModifierStates"
+                },
+                {
+                    "RowName": "Sleepy",
+                    "DataTableName": "D_ModifierStates"
+                }
+            ],
+            "TamedAI": {
+                "RowName": "Mount_Raptor_Desert"
+            },
+            "MatureCreatureType": {
+                "RowName": "Raptor_Desert"
+            },
+            "JuvenileCreatureType": {
+                "RowName": "Juvenile_Raptor_Desert"
+            },
+            "bAutomaticallySpawnJuvenileWithParent": true,
+            "PercentChanceToSpawnJuvenile": 10,
+            "MaxNearbyAutoSpawnedJuveniles": 1,
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Raptor_Geothermal",
+            "TameDurationInSeconds": 1800,
+            "DesiredTemperatureRange": {
+                "Y": 50
+            },
+            "DesiredShelterPercentage": 0,
+            "ProhibitedTamingModifiers": [
+                {
+                    "RowName": "Wet",
+                    "DataTableName": "D_ModifierStates"
+                },
+                {
+                    "RowName": "Sleepy",
+                    "DataTableName": "D_ModifierStates"
+                }
+            ],
+            "TamedAI": {
+                "RowName": "Mount_Raptor"
+            },
+            "MatureCreatureType": {
+                "RowName": "Raptor"
+            },
+            "JuvenileCreatureType": {
+                "RowName": "Juvenile_Raptor"
+            },
+            "bAutomaticallySpawnJuvenileWithParent": true,
+            "PercentChanceToSpawnJuvenile": 10,
+            "MaxNearbyAutoSpawnedJuveniles": 1,
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Chew",
+            "TameDurationInSeconds": 1200,
+            "DesiredTemperatureRange": {
+                "Y": 50
+            },
+            "DesiredShelterPercentage": 25,
+            "ProhibitedTamingModifiers": [
+                {
+                    "RowName": "Wet",
+                    "DataTableName": "D_ModifierStates"
+                },
+                {
+                    "RowName": "Sleepy",
+                    "DataTableName": "D_ModifierStates"
+                }
+            ],
+            "TamedAI": {
+                "RowName": "Mount_Chew"
+            },
+            "MatureCreatureType": {
+                "RowName": "Chew"
+            },
+            "JuvenileCreatureType": {
+                "RowName": "Juvenile_Chew"
+            },
+            "bAutomaticallySpawnJuvenileWithParent": true,
+            "PercentChanceToSpawnJuvenile": 15,
+            "MaxNearbyAutoSpawnedJuveniles": 1,
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Slinker",
+            "TameDurationInSeconds": 1800,
+            "DesiredTemperatureRange": {
+                "X": -10,
+                "Y": 25
+            },
+            "DesiredShelterPercentage": 0,
+            "DesiredNutritionPercentage": 25,
+            "ProhibitedTamingModifiers": [
+                {
+                    "RowName": "Wet",
+                    "DataTableName": "D_ModifierStates"
+                },
+                {
+                    "RowName": "Sleepy",
+                    "DataTableName": "D_ModifierStates"
+                }
+            ],
+            "TamedAI": {
+                "RowName": "Mount_Slinker"
+            },
+            "MatureCreatureType": {
+                "RowName": "Slinker"
+            },
+            "JuvenileCreatureType": {
+                "RowName": "Juvenile_Slinker"
+            },
+            "bAutomaticallySpawnJuvenileWithParent": true,
+            "PercentChanceToSpawnJuvenile": 10,
+            "MaxNearbyAutoSpawnedJuveniles": 1,
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Orka",
+            "TameDurationInSeconds": 600,
+            "DesiredTemperatureRange": {
+                "X": -10,
+                "Y": 25
+            },
+            "DesiredShelterPercentage": 0,
+            "DesiredNutritionPercentage": 25,
+            "TamedAI": {
+                "RowName": "Tamed_Orka"
+            },
+            "MatureCreatureType": {
+                "RowName": "Orka_Arctic"
+            },
+            "PercentChanceToSpawnJuvenile": 0,
+            "MaxNearbyAutoSpawnedJuveniles": 0,
+            "TrappingSupportedAtmospheres": [
+                {
+                    "Value": "Tundra"
+                },
+                {
+                    "Value": "Arctic"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Storca",
+            "TameDurationInSeconds": 600,
+            "DesiredTemperatureRange": {
+                "X": -10,
+                "Y": 25
+            },
+            "DesiredShelterPercentage": 0,
+            "DesiredNutritionPercentage": 25,
+            "TamedAI": {
+                "RowName": "Tamed_Storca"
+            },
+            "MatureCreatureType": {
+                "RowName": "Storca"
+            },
+            "PercentChanceToSpawnJuvenile": 0,
+            "MaxNearbyAutoSpawnedJuveniles": 0,
+            "TrappingSupportedAtmospheres": [
+                {
+                    "Value": "Tundra"
+                },
+                {
+                    "Value": "Arctic"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Tundra_Monkey",
+            "TameDurationInSeconds": 600,
+            "DesiredTemperatureRange": {
+                "X": -10,
+                "Y": 25
+            },
+            "DesiredShelterPercentage": 0,
+            "DesiredNutritionPercentage": 25,
+            "TamedAI": {
+                "RowName": "Tamed_Tundra_Monkey"
+            },
+            "MatureCreatureType": {
+                "RowName": "Tundra_Monkey"
+            },
+            "PercentChanceToSpawnJuvenile": 0,
+            "MaxNearbyAutoSpawnedJuveniles": 0,
+            "TrappingSupportedAtmospheres": [
+                {
+                    "Value": "Tundra"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "WoollyMammoth",
+            "TameDurationInSeconds": 1800,
+            "DesiredTemperatureRange": {
+                "X": -20,
+                "Y": 45
+            },
+            "DesiredShelterPercentage": 0,
+            "DesiredNutritionPercentage": 25,
+            "ProhibitedTamingModifiers": [
+                {
+                    "RowName": "Wet",
+                    "DataTableName": "D_ModifierStates"
+                },
+                {
+                    "RowName": "Sleepy",
+                    "DataTableName": "D_ModifierStates"
+                }
+            ],
+            "TamedAI": {
+                "RowName": "Mount_WoollyMammoth"
+            },
+            "MatureCreatureType": {
+                "RowName": "Mammoth_Arctic"
+            },
+            "JuvenileCreatureType": {
+                "RowName": "Juvenile_WoollyMammoth"
+            },
+            "bAutomaticallySpawnJuvenileWithParent": true,
+            "PercentChanceToSpawnJuvenile": 25,
+            "MaxNearbyAutoSpawnedJuveniles": 5
+        },
+        {
+            "Name": "Piglet",
+            "TameDurationInSeconds": 1800,
+            "DesiredTemperatureRange": {
+                "Y": 50
+            },
+            "DesiredShelterPercentage": 0,
+            "ProhibitedTamingModifiers": [
+                {
+                    "RowName": "Wet",
+                    "DataTableName": "D_ModifierStates"
+                },
+                {
+                    "RowName": "Sleepy",
+                    "DataTableName": "D_ModifierStates"
+                }
+            ],
+            "TamedAI": {
+                "RowName": "Pig"
+            },
+            "MatureCreatureType": {
+                "RowName": "Pig"
+            },
+            "JuvenileCreatureType": {
+                "RowName": "Piglet"
+            },
+            "bAutomaticallySpawnJuvenileWithParent": true,
+            "PercentChanceToSpawnJuvenile": 10,
+            "MaxNearbyAutoSpawnedJuveniles": 1,
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Homestead"
+                }
+            }
+        }
+    ]
+}

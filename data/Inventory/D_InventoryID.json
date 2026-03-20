@@ -1,0 +1,96 @@
+{
+    "RowStruct": "/Script/Icarus.InventoryID",
+    "Defaults": {
+        "PlayerInventory": false
+    },
+    "GenerateEnum": true,
+    "Rows": [
+        {
+            "Name": "Undefined"
+        },
+        {
+            "Name": "General"
+        },
+        {
+            "Name": "Quickbar",
+            "PlayerInventory": true
+        },
+        {
+            "Name": "Backpack",
+            "PlayerInventory": true
+        },
+        {
+            "Name": "Suit",
+            "PlayerInventory": true
+        },
+        {
+            "Name": "Equipment",
+            "PlayerInventory": true
+        },
+        {
+            "Name": "Processor"
+        },
+        {
+            "Name": "Fuel"
+        },
+        {
+            "Name": "Habitat",
+            "PlayerInventory": true
+        },
+        {
+            "Name": "Loadout",
+            "PlayerInventory": true
+        },
+        {
+            "Name": "Slotable"
+        },
+        {
+            "Name": "Upgrade",
+            "PlayerInventory": true
+        },
+        {
+            "Name": "Vision",
+            "PlayerInventory": true
+        },
+        {
+            "Name": "Corpse"
+        },
+        {
+            "Name": "Hands",
+            "PlayerInventory": true
+        },
+        {
+            "Name": "Seed"
+        },
+        {
+            "Name": "Fertilizer"
+        },
+        {
+            "Name": "Saddle"
+        },
+        {
+            "Name": "Alteration"
+        },
+        {
+            "Name": "Mount_Cargo"
+        },
+        {
+            "Name": "Heavy_Cargo"
+        },
+        {
+            "Name": "On_Prospect_Habitat"
+        },
+        {
+            "Name": "On_Prospect_Loadout"
+        },
+        {
+            "Name": "Device_Upgrade"
+        },
+        {
+            "Name": "Turret"
+        },
+        {
+            "Name": "BeehiveUpgrades"
+        }
+    ]
+}

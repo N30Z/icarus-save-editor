@@ -1,0 +1,151 @@
+{
+    "RowStruct": "/Script/Icarus.TurretData",
+    "Defaults": {
+        "MuzzlePitchExtents": {
+            "X": -15,
+            "Y": 45
+        },
+        "MuzzleYawExtents": 175,
+        "MuzzleMoveSpeed": {
+            "X": 5,
+            "Y": 0.5
+        },
+        "MuzzleSpread": {
+            "X": 0.6000000238418579,
+            "Y": 0.4000000059604645
+        },
+        "PermitBeginFireAngle": 5,
+        "MaxRange": 2000,
+        "BurstFireRate": 0.25,
+        "BurstFireShots": 3,
+        "LaunchForce": 650,
+        "CheckTargetPeriod": 2,
+        "CoolDownPeriod": 3,
+        "FireParticle": "None",
+        "FireSound": "None",
+        "ValidAmmoTypes": {
+            "RowName": "None",
+            "DataTableName": "D_ValidAmmoTypes"
+        }
+    },
+    "Rows": [
+        {
+            "Name": "Basic_Pistol_Turret",
+            "MuzzlePitchExtents": {
+                "X": -50,
+                "Y": 50
+            },
+            "MuzzleYawExtents": 120,
+            "MaxRange": 5000,
+            "BurstFireShots": 1,
+            "CheckTargetPeriod": 1.5,
+            "CoolDownPeriod": 2,
+            "FireParticle": "/Game/ASS/VFX/WEP/NS_PistolHandgunMuzzle_V2.NS_PistolHandgunMuzzle_V2",
+            "FireSound": "/Game/FMOD/Events/SFX/Weapons/Guns/Turrets/SFX_TURRET_FIRE_GENERIC.SFX_TURRET_FIRE_GENERIC",
+            "ValidAmmoTypes": {
+                "RowName": "AllPistolAndCrude"
+            }
+        },
+        {
+            "Name": "Basic_Rifle_Turret",
+            "MuzzlePitchExtents": {
+                "X": -50,
+                "Y": 50
+            },
+            "MuzzleYawExtents": 75,
+            "MuzzleMoveSpeed": {
+                "X": 4
+            },
+            "MaxRange": 6000,
+            "CheckTargetPeriod": 3,
+            "CoolDownPeriod": 6,
+            "FireParticle": "/Game/ASS/VFX/WEP/NS_BoltActionMuzzle_2.NS_BoltActionMuzzle_2",
+            "FireSound": "/Game/FMOD/Events/SFX/Weapons/Guns/Turrets/SFX_TURRET_FIRE_RIFLE.SFX_TURRET_FIRE_RIFLE",
+            "ValidAmmoTypes": {
+                "RowName": "AllRifle"
+            }
+        },
+        {
+            "Name": "Basic_Rifle_Turret_Precision",
+            "MuzzlePitchExtents": {
+                "X": -50,
+                "Y": 50
+            },
+            "MuzzleYawExtents": 50,
+            "MuzzleMoveSpeed": {
+                "X": 3
+            },
+            "MaxRange": 7500,
+            "BurstFireShots": 1,
+            "CheckTargetPeriod": 3,
+            "CoolDownPeriod": 4,
+            "FireParticle": "/Game/ASS/VFX/WEP/NS_PistolHandgunMuzzle.NS_PistolHandgunMuzzle",
+            "FireSound": "/Game/FMOD/Events/SFX/Weapons/Guns/Turrets/SFX_TURRET_FIRE_RIFLE.SFX_TURRET_FIRE_RIFLE",
+            "ValidAmmoTypes": {
+                "RowName": "AllRifle"
+            }
+        },
+        {
+            "Name": "Basic_Shotgun_Turret",
+            "MuzzlePitchExtents": {
+                "X": -50,
+                "Y": 50
+            },
+            "MuzzleYawExtents": 150,
+            "MuzzleMoveSpeed": {
+                "X": 6
+            },
+            "MuzzleSpread": {
+                "X": 3,
+                "Y": 3
+            },
+            "MaxRange": 3000,
+            "BurstFireShots": 1,
+            "CheckTargetPeriod": 1,
+            "CoolDownPeriod": 1.5,
+            "FireParticle": "/Game/ASS/VFX/WEP/NS_ShotgunMuzzle_V2.NS_ShotgunMuzzle_V2",
+            "FireSound": "/Game/FMOD/Events/SFX/Weapons/Guns/Turrets/SFX_TURRET_FIRE_SHOTGUN.SFX_TURRET_FIRE_SHOTGUN",
+            "ValidAmmoTypes": {
+                "RowName": "AllShotgun"
+            }
+        },
+        {
+            "Name": "Enemy_Pistol_Turret",
+            "MuzzlePitchExtents": {
+                "X": -50,
+                "Y": 50
+            },
+            "MuzzleYawExtents": 120,
+            "MaxRange": 5000,
+            "BurstFireShots": 2,
+            "CheckTargetPeriod": 1.5,
+            "CoolDownPeriod": 2,
+            "FireParticle": "/Game/ASS/VFX/WEP/NS_PistolHandgunMuzzle.NS_PistolHandgunMuzzle",
+            "FireSound": "/Game/FMOD/Events/SFX/Weapons/Guns/Turrets/SFX_TURRET_FIRE_GENERIC.SFX_TURRET_FIRE_GENERIC",
+            "ValidAmmoTypes": {
+                "RowName": "AllPistolAndCrude"
+            }
+        },
+        {
+            "Name": "FlameThrower_Turret",
+            "MuzzlePitchExtents": {
+                "X": -50,
+                "Y": 50
+            },
+            "MuzzleYawExtents": 120,
+            "MuzzleSpread": {
+                "X": 0
+            },
+            "PermitBeginFireAngle": 10,
+            "MaxRange": 1200,
+            "BurstFireRate": 0.10000000149011612,
+            "BurstFireShots": 30,
+            "LaunchForce": 0,
+            "CheckTargetPeriod": 1.5,
+            "CoolDownPeriod": 2,
+            "ValidAmmoTypes": {
+                "RowName": "BioFuel"
+            }
+        }
+    ]
+}

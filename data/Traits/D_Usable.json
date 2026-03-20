@@ -1,0 +1,479 @@
+{
+    "RowStruct": "/Script/Icarus.UsableData",
+    "Defaults": {
+        "Uses": [],
+        "bAlwaysShowContextMenu": false
+    },
+    "Rows": [
+        {
+            "Name": "Consume",
+            "Uses": [
+                {
+                    "Use": {
+                        "RowName": "Consume",
+                        "DataTableName": "D_Uses"
+                    },
+                    "RequiredTags": {
+                        "GameplayTags": []
+                    },
+                    "RequiredStats": [],
+                    "bMustOwnInventory": false
+                }
+            ]
+        },
+        {
+            "Name": "Place",
+            "Uses": [
+                {
+                    "Use": {
+                        "RowName": "Place",
+                        "DataTableName": "D_Uses"
+                    },
+                    "RequiredTags": {
+                        "GameplayTags": []
+                    },
+                    "RequiredStats": [],
+                    "bMustOwnInventory": true
+                }
+            ]
+        },
+        {
+            "Name": "Repair",
+            "Uses": [
+                {
+                    "Use": {
+                        "RowName": "Repair",
+                        "DataTableName": "D_Uses"
+                    },
+                    "RequiredTags": {
+                        "GameplayTags": []
+                    },
+                    "RequiredStats": [],
+                    "bMustOwnInventory": false
+                }
+            ],
+            "bAlwaysShowContextMenu": true
+        },
+        {
+            "Name": "Repairable_Deployable",
+            "Uses": [
+                {
+                    "Use": {
+                        "RowName": "Repair",
+                        "DataTableName": "D_Uses"
+                    },
+                    "RequiredTags": {
+                        "GameplayTags": []
+                    },
+                    "RequiredStats": [],
+                    "bMustOwnInventory": false
+                },
+                {
+                    "Use": {
+                        "RowName": "Consume",
+                        "DataTableName": "D_Uses"
+                    },
+                    "RequiredTags": {
+                        "GameplayTags": []
+                    },
+                    "RequiredStats": [],
+                    "bMustOwnInventory": false
+                }
+            ]
+        },
+        {
+            "Name": "Consume_Stack",
+            "Uses": [
+                {
+                    "Use": {
+                        "RowName": "Consume",
+                        "DataTableName": "D_Uses"
+                    },
+                    "RequiredTags": {
+                        "GameplayTags": []
+                    },
+                    "RequiredStats": [],
+                    "bMustOwnInventory": false
+                },
+                {
+                    "Use": {
+                        "RowName": "Consume_Stack",
+                        "DataTableName": "D_Uses"
+                    },
+                    "RequiredTags": {
+                        "GameplayTags": []
+                    },
+                    "RequiredStats": [],
+                    "bMustOwnInventory": false
+                }
+            ]
+        },
+        {
+            "Name": "Apply_Bandage",
+            "Uses": [
+                {
+                    "Use": {
+                        "RowName": "Consume_From_Menu",
+                        "DataTableName": "D_Uses"
+                    },
+                    "RequiredTags": {
+                        "GameplayTags": []
+                    },
+                    "RequiredStats": [],
+                    "bMustOwnInventory": true
+                }
+            ]
+        },
+        {
+            "Name": "Consume_Stack_Spoiled",
+            "Uses": [
+                {
+                    "Use": {
+                        "RowName": "Consume",
+                        "DataTableName": "D_Uses"
+                    },
+                    "RequiredTags": {
+                        "GameplayTags": []
+                    },
+                    "RequiredStats": [
+                        {
+                            "Stat": {
+                                "Value": "CanEatSpoiledFood_?"
+                            },
+                            "ComparisonType": "Equals",
+                            "Value": 1
+                        }
+                    ],
+                    "bMustOwnInventory": false
+                },
+                {
+                    "Use": {
+                        "RowName": "Consume_Stack",
+                        "DataTableName": "D_Uses"
+                    },
+                    "RequiredTags": {
+                        "GameplayTags": []
+                    },
+                    "RequiredStats": [
+                        {
+                            "Stat": {
+                                "Value": "CanEatSpoiledFood_?"
+                            },
+                            "ComparisonType": "Equals",
+                            "Value": 1
+                        }
+                    ],
+                    "bMustOwnInventory": false
+                }
+            ]
+        },
+        {
+            "Name": "Consume_Stack_Food",
+            "Uses": [
+                {
+                    "Use": {
+                        "RowName": "Consume",
+                        "DataTableName": "D_Uses"
+                    },
+                    "RequiredTags": {
+                        "GameplayTags": []
+                    },
+                    "RequiredStats": [],
+                    "bMustOwnInventory": false
+                },
+                {
+                    "Use": {
+                        "RowName": "Consume_Stack_Food",
+                        "DataTableName": "D_Uses"
+                    },
+                    "RequiredTags": {
+                        "GameplayTags": []
+                    },
+                    "RequiredStats": [],
+                    "bMustOwnInventory": false
+                }
+            ]
+        },
+        {
+            "Name": "Consume_Stack_Water",
+            "Uses": [
+                {
+                    "Use": {
+                        "RowName": "Consume",
+                        "DataTableName": "D_Uses"
+                    },
+                    "RequiredTags": {
+                        "GameplayTags": []
+                    },
+                    "RequiredStats": [],
+                    "bMustOwnInventory": false
+                },
+                {
+                    "Use": {
+                        "RowName": "Consume_Stack_Water",
+                        "DataTableName": "D_Uses"
+                    },
+                    "RequiredTags": {
+                        "GameplayTags": []
+                    },
+                    "RequiredStats": [],
+                    "bMustOwnInventory": false
+                }
+            ]
+        },
+        {
+            "Name": "Consume_Stack_Oxygen",
+            "Uses": [
+                {
+                    "Use": {
+                        "RowName": "Consume",
+                        "DataTableName": "D_Uses"
+                    },
+                    "RequiredTags": {
+                        "GameplayTags": []
+                    },
+                    "RequiredStats": [],
+                    "bMustOwnInventory": false
+                },
+                {
+                    "Use": {
+                        "RowName": "Consume_Stack_Oxygen",
+                        "DataTableName": "D_Uses"
+                    },
+                    "RequiredTags": {
+                        "GameplayTags": []
+                    },
+                    "RequiredStats": [],
+                    "bMustOwnInventory": false
+                }
+            ]
+        },
+        {
+            "Name": "Consume_Stack_FoodWater",
+            "Uses": [
+                {
+                    "Use": {
+                        "RowName": "Consume",
+                        "DataTableName": "D_Uses"
+                    },
+                    "RequiredTags": {
+                        "GameplayTags": []
+                    },
+                    "RequiredStats": [],
+                    "bMustOwnInventory": false
+                },
+                {
+                    "Use": {
+                        "RowName": "Consume_Stack_FoodWater",
+                        "DataTableName": "D_Uses"
+                    },
+                    "RequiredTags": {
+                        "GameplayTags": []
+                    },
+                    "RequiredStats": [],
+                    "bMustOwnInventory": false
+                }
+            ]
+        },
+        {
+            "Name": "Consume_Tonic",
+            "Uses": [
+                {
+                    "Use": {
+                        "RowName": "Consume_From_Menu",
+                        "DataTableName": "D_Uses"
+                    },
+                    "RequiredTags": {
+                        "GameplayTags": []
+                    },
+                    "RequiredStats": [],
+                    "bMustOwnInventory": true
+                }
+            ]
+        },
+        {
+            "Name": "Convert_Fish_To_Chunks",
+            "Uses": [
+                {
+                    "Use": {
+                        "RowName": "Convert_Fish",
+                        "DataTableName": "D_Uses"
+                    },
+                    "RequiredTags": {
+                        "GameplayTags": []
+                    },
+                    "RequiredStats": [],
+                    "bMustOwnInventory": true
+                }
+            ]
+        },
+        {
+            "Name": "Open_Inventory",
+            "Uses": [
+                {
+                    "Use": {
+                        "RowName": "Open_Inventory",
+                        "DataTableName": "D_Uses"
+                    },
+                    "RequiredTags": {
+                        "GameplayTags": []
+                    },
+                    "RequiredStats": [],
+                    "bMustOwnInventory": true
+                }
+            ]
+        },
+        {
+            "Name": "Consume_Empty",
+            "Uses": [
+                {
+                    "Use": {
+                        "RowName": "Consume",
+                        "DataTableName": "D_Uses"
+                    },
+                    "RequiredTags": {
+                        "GameplayTags": []
+                    },
+                    "RequiredStats": [],
+                    "bMustOwnInventory": false
+                },
+                {
+                    "Use": {
+                        "RowName": "Empty_Container",
+                        "DataTableName": "D_Uses"
+                    },
+                    "RequiredTags": {
+                        "GameplayTags": []
+                    },
+                    "RequiredStats": [],
+                    "bMustOwnInventory": false
+                }
+            ]
+        },
+        {
+            "Name": "Consume_Empty_Deploy",
+            "Uses": [
+                {
+                    "Use": {
+                        "RowName": "Consume",
+                        "DataTableName": "D_Uses"
+                    },
+                    "RequiredTags": {
+                        "GameplayTags": []
+                    },
+                    "RequiredStats": [],
+                    "bMustOwnInventory": false
+                },
+                {
+                    "Use": {
+                        "RowName": "Empty_Container",
+                        "DataTableName": "D_Uses"
+                    },
+                    "RequiredTags": {
+                        "GameplayTags": []
+                    },
+                    "RequiredStats": [],
+                    "bMustOwnInventory": false
+                },
+                {
+                    "Use": {
+                        "RowName": "Place",
+                        "DataTableName": "D_Uses"
+                    },
+                    "RequiredTags": {
+                        "GameplayTags": []
+                    },
+                    "RequiredStats": [],
+                    "bMustOwnInventory": false
+                }
+            ]
+        },
+        {
+            "Name": "Place_Read",
+            "Uses": [
+                {
+                    "Use": {
+                        "RowName": "Place",
+                        "DataTableName": "D_Uses"
+                    },
+                    "RequiredTags": {
+                        "GameplayTags": []
+                    },
+                    "RequiredStats": [],
+                    "bMustOwnInventory": true
+                },
+                {
+                    "Use": {
+                        "RowName": "Read",
+                        "DataTableName": "D_Uses"
+                    },
+                    "RequiredTags": {
+                        "GameplayTags": []
+                    },
+                    "RequiredStats": [],
+                    "bMustOwnInventory": false
+                }
+            ]
+        },
+        {
+            "Name": "Read",
+            "Uses": [
+                {
+                    "Use": {
+                        "RowName": "Read",
+                        "DataTableName": "D_Uses"
+                    },
+                    "RequiredTags": {
+                        "GameplayTags": []
+                    },
+                    "RequiredStats": [],
+                    "bMustOwnInventory": false
+                }
+            ]
+        },
+        {
+            "Name": "Transfer_Resource",
+            "Uses": [
+                {
+                    "Use": {
+                        "RowName": "Empty_Container",
+                        "DataTableName": "D_Uses"
+                    },
+                    "RequiredTags": {
+                        "GameplayTags": []
+                    },
+                    "RequiredStats": [],
+                    "bMustOwnInventory": false
+                }
+            ],
+            "bAlwaysShowContextMenu": true
+        },
+        {
+            "Name": "Repairable_Place",
+            "Uses": [
+                {
+                    "Use": {
+                        "RowName": "Repair",
+                        "DataTableName": "D_Uses"
+                    },
+                    "RequiredTags": {
+                        "GameplayTags": []
+                    },
+                    "RequiredStats": [],
+                    "bMustOwnInventory": false
+                },
+                {
+                    "Use": {
+                        "RowName": "Place",
+                        "DataTableName": "D_Uses"
+                    },
+                    "RequiredTags": {
+                        "GameplayTags": []
+                    },
+                    "RequiredStats": [],
+                    "bMustOwnInventory": false
+                }
+            ]
+        }
+    ]
+}

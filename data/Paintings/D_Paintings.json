@@ -1,0 +1,411 @@
+{
+    "RowStruct": "/Script/Icarus.PaintingData",
+    "Defaults": {
+        "SmallPaintingImage": "None",
+        "LargePaintingImage": "None",
+        "bIsMonitor": false,
+        "MonitorMaterial": "None"
+    },
+    "Rows": [
+        {
+            "Name": "BearBow",
+            "SmallPaintingImage": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Arctic_BearBow01_Small.T_Prospect_Arctic_BearBow01_Small",
+            "LargePaintingImage": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Arctic_BearBow01_Large.T_Prospect_Arctic_BearBow01_Large"
+        },
+        {
+            "Name": "ArcticBuilding",
+            "SmallPaintingImage": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Arctic_Building01_Small.T_Prospect_Arctic_Building01_Small",
+            "LargePaintingImage": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Arctic_Building01_Large.T_Prospect_Arctic_Building01_Large"
+        },
+        {
+            "Name": "ArcticDelivery",
+            "SmallPaintingImage": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Arctic_Delivery01_Small.T_Prospect_Arctic_Delivery01_Small",
+            "LargePaintingImage": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Arctic_Delivery01_Large.T_Prospect_Arctic_Delivery01_Large"
+        },
+        {
+            "Name": "ArcticExpedition",
+            "SmallPaintingImage": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Arctic_Expedition01_Small.T_Prospect_Arctic_Expedition01_Small",
+            "LargePaintingImage": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Arctic_Expedition01_Large.T_Prospect_Arctic_Expedition01_Large"
+        },
+        {
+            "Name": "ArcticHeavyFog",
+            "SmallPaintingImage": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Arctic_HeavyFog01_Small.T_Prospect_Arctic_HeavyFog01_Small",
+            "LargePaintingImage": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Arctic_HeavyFog01_Large.T_Prospect_Arctic_HeavyFog01_Large"
+        },
+        {
+            "Name": "ArcticLantern",
+            "SmallPaintingImage": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Arctic_Lantern01_Small.T_Prospect_Arctic_Lantern01_Small",
+            "LargePaintingImage": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Arctic_Lantern01_Large.T_Prospect_Arctic_Lantern01_Large"
+        },
+        {
+            "Name": "ArcticPickaxe",
+            "SmallPaintingImage": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Arctic_Pickaxe01_Small.T_Prospect_Arctic_Pickaxe01_Small",
+            "LargePaintingImage": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Arctic_Pickaxe01_Large.T_Prospect_Arctic_Pickaxe01_Large"
+        },
+        {
+            "Name": "ArcticPolarbearCombat",
+            "SmallPaintingImage": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Arctic_PolarbearCombat01_Small.T_Prospect_Arctic_PolarbearCombat01_Small",
+            "LargePaintingImage": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Arctic_PolarbearCombat01_Large.T_Prospect_Arctic_PolarbearCombat01_Large"
+        },
+        {
+            "Name": "ArcticPolarbearDeath",
+            "SmallPaintingImage": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Arctic_PolarbearDeath01_Small.T_Prospect_Arctic_PolarbearDeath01_Small",
+            "LargePaintingImage": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Arctic_PolarbearDeath01_Large.T_Prospect_Arctic_PolarbearDeath01_Large"
+        },
+        {
+            "Name": "ArcticRecovery",
+            "SmallPaintingImage": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Arctic_Recovery01_Small.T_Prospect_Arctic_Recovery01_Small",
+            "LargePaintingImage": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Arctic_Recovery01_Large.T_Prospect_Arctic_Recovery01_Large"
+        },
+        {
+            "Name": "ArcticSnowWolf",
+            "SmallPaintingImage": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Arctic_SnowWolf01_Small.T_Prospect_Arctic_SnowWolf01_Small",
+            "LargePaintingImage": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Arctic_SnowWolf01_Large.T_Prospect_Arctic_SnowWolf01_Large"
+        },
+        {
+            "Name": "ArcticStorm",
+            "SmallPaintingImage": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Arctic_Storm01_Small.T_Prospect_Arctic_Storm01_Small",
+            "LargePaintingImage": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Arctic_Storm01_Large.T_Prospect_Arctic_Storm01_Large"
+        },
+        {
+            "Name": "BaseChill",
+            "SmallPaintingImage": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Base_Chill01_Small.T_Prospect_Base_Chill01_Small",
+            "LargePaintingImage": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Base_Chill01_Large.T_Prospect_Base_Chill01_Large"
+        },
+        {
+            "Name": "CaveLantern",
+            "SmallPaintingImage": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Cave_Lantern01_Small.T_Prospect_Cave_Lantern01_Small",
+            "LargePaintingImage": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Cave_Lantern01_Large.T_Prospect_Cave_Lantern01_Large"
+        },
+        {
+            "Name": "CaveWorm",
+            "SmallPaintingImage": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Cave_WormRifle01_Small.T_Prospect_Cave_WormRifle01_Small",
+            "LargePaintingImage": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Cave_WormRifle01_Large.T_Prospect_Cave_WormRifle01_Large"
+        },
+        {
+            "Name": "DesertAngler",
+            "SmallPaintingImage": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Desert_Angler01_Small.T_Prospect_Desert_Angler01_Small",
+            "LargePaintingImage": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Desert_Angler01_Large.T_Prospect_Desert_Angler01_Large"
+        },
+        {
+            "Name": "DesertArmor",
+            "SmallPaintingImage": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Desert_ArmorScorpion01_Small.T_Prospect_Desert_ArmorScorpion01_Small",
+            "LargePaintingImage": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Desert_ArmorScorpion01_Large.T_Prospect_Desert_ArmorScorpion01_Large"
+        },
+        {
+            "Name": "DesertBuilding",
+            "SmallPaintingImage": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Desert_Building01_Small.T_Prospect_Desert_Building01_Small",
+            "LargePaintingImage": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Desert_Building01_Large.T_Prospect_Desert_Building01_Large"
+        },
+        {
+            "Name": "DesertDelivery",
+            "SmallPaintingImage": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Desert_Delivery01_Small.T_Prospect_Desert_Delivery01_Small",
+            "LargePaintingImage": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Desert_Delivery01_Large.T_Prospect_Desert_Delivery01_Large"
+        },
+        {
+            "Name": "DesertExpedition1",
+            "SmallPaintingImage": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Desert_Expedition01_Small.T_Prospect_Desert_Expedition01_Small",
+            "LargePaintingImage": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Desert_Expedition01_Large.T_Prospect_Desert_Expedition01_Large"
+        },
+        {
+            "Name": "DesertExpedition2",
+            "SmallPaintingImage": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Desert_Expedition02_Small.T_Prospect_Desert_Expedition02_Small",
+            "LargePaintingImage": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Desert_Expedition02_Large.T_Prospect_Desert_Expedition02_Large"
+        },
+        {
+            "Name": "DesertGroupBase",
+            "SmallPaintingImage": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Desert_GroupBase01_Small.T_Prospect_Desert_GroupBase01_Small",
+            "LargePaintingImage": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Desert_GroupBase01_Large.T_Prospect_Desert_GroupBase01_Large"
+        },
+        {
+            "Name": "DesertLurker",
+            "SmallPaintingImage": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Desert_Lurker01_Small.T_Prospect_Desert_Lurker01_Small",
+            "LargePaintingImage": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Desert_Lurker01_Large.T_Prospect_Desert_Lurker01_Large"
+        },
+        {
+            "Name": "DesertSandworm",
+            "SmallPaintingImage": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Desert_Sandworm01_Small.T_Prospect_Desert_Sandworm01_Small",
+            "LargePaintingImage": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Desert_Sandworm01_Large.T_Prospect_Desert_Sandworm01_Large"
+        },
+        {
+            "Name": "DesertScorpionBoss",
+            "SmallPaintingImage": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Desert_ScorpionBoss01_Small.T_Prospect_Desert_ScorpionBoss01_Small",
+            "LargePaintingImage": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Desert_ScorpionBoss01_Large.T_Prospect_Desert_ScorpionBoss01_Large"
+        },
+        {
+            "Name": "DesertScorpionSpear",
+            "SmallPaintingImage": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Desert_ScorpionSpear01_Small.T_Prospect_Desert_ScorpionSpear01_Small",
+            "LargePaintingImage": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Desert_ScorpionSpear01_Large.T_Prospect_Desert_ScorpionSpear01_Large"
+        },
+        {
+            "Name": "DesertScorpionSummon",
+            "SmallPaintingImage": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Desert_ScorpionSummon01_Small.T_Prospect_Desert_ScorpionSummon01_Small",
+            "LargePaintingImage": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Desert_ScorpionSummon01_Large.T_Prospect_Desert_ScorpionSummon01_Large"
+        },
+        {
+            "Name": "ForestBuilding",
+            "SmallPaintingImage": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Forest_Building01_Small.T_Prospect_Forest_Building01_Small",
+            "LargePaintingImage": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Forest_Building01_Large.T_Prospect_Forest_Building01_Large"
+        },
+        {
+            "Name": "ForestConstruction",
+            "SmallPaintingImage": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Forest_Construction01_Small.T_Prospect_Forest_Construction01_Small",
+            "LargePaintingImage": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Forest_Construction01_Large.T_Prospect_Forest_Construction01_Large"
+        },
+        {
+            "Name": "ForestCrash",
+            "SmallPaintingImage": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Forest_CrashSatellite01_Small.T_Prospect_Forest_CrashSatellite01_Small",
+            "LargePaintingImage": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Forest_CrashSatellite01_Large.T_Prospect_Forest_CrashSatellite01_Large"
+        },
+        {
+            "Name": "ForestCrossbow",
+            "SmallPaintingImage": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Forest_Crossbow01_Small.T_Prospect_Forest_Crossbow01_Small",
+            "LargePaintingImage": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Forest_Crossbow01_Large.T_Prospect_Forest_Crossbow01_Large"
+        },
+        {
+            "Name": "ForestDefenseSpear",
+            "SmallPaintingImage": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Forest_DefenseSpear01_Small.T_Prospect_Forest_DefenseSpear01_Small",
+            "LargePaintingImage": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Forest_DefenseSpear01_Large.T_Prospect_Forest_DefenseSpear01_Large"
+        },
+        {
+            "Name": "ForestDelivery",
+            "SmallPaintingImage": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Forest_Delivery01_Small.T_Prospect_Forest_Delivery01_Small",
+            "LargePaintingImage": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Forest_Delivery01_Large.T_Prospect_Forest_Delivery01_Large"
+        },
+        {
+            "Name": "ForestDropship",
+            "SmallPaintingImage": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Forest_Dropship01_Small.T_Prospect_Forest_Dropship01_Small",
+            "LargePaintingImage": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Forest_Dropship01_Large.T_Prospect_Forest_Dropship01_Large"
+        },
+        {
+            "Name": "ForestExpedition",
+            "SmallPaintingImage": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Forest_ExpeditionSpear01_Small.T_Prospect_Forest_ExpeditionSpear01_Small",
+            "LargePaintingImage": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Forest_ExpeditionSpear01_Large.T_Prospect_Forest_ExpeditionSpear01_Large"
+        },
+        {
+            "Name": "ForestExtermination",
+            "SmallPaintingImage": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Forest_Extermination01_Small.T_Prospect_Forest_Extermination01_Small",
+            "LargePaintingImage": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Forest_Extermination01_Large.T_Prospect_Forest_Extermination01_Large"
+        },
+        {
+            "Name": "ForestExtractor",
+            "SmallPaintingImage": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Forest_ExtractorExpedition01_Small.T_Prospect_Forest_ExtractorExpedition01_Small",
+            "LargePaintingImage": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Forest_ExtractorExpedition01_Large.T_Prospect_Forest_ExtractorExpedition01_Large"
+        },
+        {
+            "Name": "ForestFarming",
+            "SmallPaintingImage": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Forest_Farming01_Small.T_Prospect_Forest_Farming01_Small",
+            "LargePaintingImage": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Forest_Farming01_Large.T_Prospect_Forest_Farming01_Large"
+        },
+        {
+            "Name": "ForestKnifeWolf",
+            "SmallPaintingImage": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Forest_KnifeWolf01_Small.T_Prospect_Forest_KnifeWolf01_Small",
+            "LargePaintingImage": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Forest_KnifeWolf01_Large.T_Prospect_Forest_KnifeWolf01_Large"
+        },
+        {
+            "Name": "ForestLumberjack",
+            "SmallPaintingImage": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Forest_Lumberjack01_Small.T_Prospect_Forest_Lumberjack01_Small",
+            "LargePaintingImage": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Forest_Lumberjack01_Large.T_Prospect_Forest_Lumberjack01_Large"
+        },
+        {
+            "Name": "ForestResearch",
+            "SmallPaintingImage": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Forest_ResearchPlant01_Small.T_Prospect_Forest_ResearchPlant01_Small",
+            "LargePaintingImage": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Forest_ResearchPlant01_Large.T_Prospect_Forest_ResearchPlant01_Large"
+        },
+        {
+            "Name": "ForestSwamp",
+            "SmallPaintingImage": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Forest_SwampSpearDeer01_Small.T_Prospect_Forest_SwampSpearDeer01_Small",
+            "LargePaintingImage": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Forest_SwampSpearDeer01_Large.T_Prospect_Forest_SwampSpearDeer01_Large"
+        },
+        {
+            "Name": "ForestTransmitter1",
+            "SmallPaintingImage": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Forest_TransmitterDefense01_Small.T_Prospect_Forest_TransmitterDefense01_Small",
+            "LargePaintingImage": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Forest_TransmitterDefense01_Large.T_Prospect_Forest_TransmitterDefense01_Large"
+        },
+        {
+            "Name": "ForestTransmitter2",
+            "SmallPaintingImage": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Forest_TransmitterWolves01_Small.T_Prospect_Forest_TransmitterWolves01_Small",
+            "LargePaintingImage": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Forest_TransmitterWolves01_Large.T_Prospect_Forest_TransmitterWolves01_Large"
+        },
+        {
+            "Name": "ForestTransport",
+            "SmallPaintingImage": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Forest_Transport01_Small.T_Prospect_Forest_Transport01_Small",
+            "LargePaintingImage": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Forest_Transport01_Large.T_Prospect_Forest_Transport01_Large"
+        },
+        {
+            "Name": "Pro_Story1",
+            "SmallPaintingImage": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_PROSTORY_1_Small.T_Prospect_PROSTORY_1_Small",
+            "LargePaintingImage": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_PROSTORY_1_Large.T_Prospect_PROSTORY_1_Large"
+        },
+        {
+            "Name": "Pro_Story2",
+            "SmallPaintingImage": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_PROSTORY_2_Small.T_Prospect_PROSTORY_2_Small",
+            "LargePaintingImage": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_PROSTORY_2_Large.T_Prospect_PROSTORY_2_Large"
+        },
+        {
+            "Name": "Pro_Story3",
+            "SmallPaintingImage": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_PROSTORY_3_Small.T_Prospect_PROSTORY_3_Small",
+            "LargePaintingImage": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_PROSTORY_3_Large.T_Prospect_PROSTORY_3_Large"
+        },
+        {
+            "Name": "Pro_Story4",
+            "SmallPaintingImage": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_PROSTORY_4_Small.T_Prospect_PROSTORY_4_Small",
+            "LargePaintingImage": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_PROSTORY_4_Large.T_Prospect_PROSTORY_4_Large"
+        },
+        {
+            "Name": "Pro_Story5",
+            "SmallPaintingImage": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_PROSTORY_5_Small.T_Prospect_PROSTORY_5_Small",
+            "LargePaintingImage": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_PROSTORY_5_Large.T_Prospect_PROSTORY_5_Large"
+        },
+        {
+            "Name": "Pro_Story6",
+            "SmallPaintingImage": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_PROSTORY_6_Small.T_Prospect_PROSTORY_6_Small",
+            "LargePaintingImage": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_PROSTORY_6_Large.T_Prospect_PROSTORY_6_Large"
+        },
+        {
+            "Name": "SMPL3_Lost",
+            "SmallPaintingImage": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_SMPL3_Lost_Small.T_SMPL3_Lost_Small",
+            "LargePaintingImage": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_SMPL3_Lost_Large.T_SMPL3_Lost_Large"
+        },
+        {
+            "Name": "Screen_Mo_A",
+            "SmallPaintingImage": "/Game/ASS/PRP/PRP_Laptop/T_PRP_Screen_Mo_01_A.T_PRP_Screen_Mo_01_A",
+            "LargePaintingImage": "/Game/ASS/PRP/PRP_Laptop/T_PRP_Screen_Mo_01_A.T_PRP_Screen_Mo_01_A",
+            "bIsMonitor": true,
+            "MonitorMaterial": "/Game/ASS/PRP/PRP_Laptop/M_PRP_Screen_Mo_A.M_PRP_Screen_Mo_A"
+        },
+        {
+            "Name": "Screen_Mo_B",
+            "SmallPaintingImage": "/Game/ASS/PRP/PRP_Laptop/T_PRP_Screen_Mo_02_A.T_PRP_Screen_Mo_02_A",
+            "LargePaintingImage": "/Game/ASS/PRP/PRP_Laptop/T_PRP_Screen_Mo_02_A.T_PRP_Screen_Mo_02_A",
+            "bIsMonitor": true,
+            "MonitorMaterial": "/Game/ASS/PRP/PRP_Laptop/M_PRP_Screen_Mo_B.M_PRP_Screen_Mo_B"
+        },
+        {
+            "Name": "Screen_Mo_C",
+            "SmallPaintingImage": "/Game/ASS/PRP/PRP_Laptop/T_PRP_Screen_Mo_03_A.T_PRP_Screen_Mo_03_A",
+            "LargePaintingImage": "/Game/ASS/PRP/PRP_Laptop/T_PRP_Screen_Mo_03_A.T_PRP_Screen_Mo_03_A",
+            "bIsMonitor": true,
+            "MonitorMaterial": "/Game/ASS/PRP/PRP_Laptop/M_PRP_Screen_Mo_C.M_PRP_Screen_Mo_C"
+        },
+        {
+            "Name": "Screen_Mo_D",
+            "SmallPaintingImage": "/Game/ASS/PRP/PRP_Laptop/T_PRP_Screen_Mo_04_A.T_PRP_Screen_Mo_04_A",
+            "LargePaintingImage": "/Game/ASS/PRP/PRP_Laptop/T_PRP_Screen_Mo_04_A.T_PRP_Screen_Mo_04_A",
+            "bIsMonitor": true,
+            "MonitorMaterial": "/Game/ASS/PRP/PRP_Laptop/M_PRP_Screen_Mo_D.M_PRP_Screen_Mo_D"
+        },
+        {
+            "Name": "Screen_Reactor_A",
+            "SmallPaintingImage": "/Game/ASS/PRP/PRP_Laptop/T_PRP_Screen_Reactor_01_A.T_PRP_Screen_Reactor_01_A",
+            "LargePaintingImage": "/Game/ASS/PRP/PRP_Laptop/T_PRP_Screen_Reactor_01_A.T_PRP_Screen_Reactor_01_A",
+            "bIsMonitor": true,
+            "MonitorMaterial": "/Game/ASS/PRP/PRP_Laptop/M_PRP_Screen_Reactor_A.M_PRP_Screen_Reactor_A"
+        },
+        {
+            "Name": "Screen_Reactor_B",
+            "SmallPaintingImage": "/Game/ASS/PRP/PRP_Laptop/T_PRP_Screen_Reactor_02_A.T_PRP_Screen_Reactor_02_A",
+            "LargePaintingImage": "/Game/ASS/PRP/PRP_Laptop/T_PRP_Screen_Reactor_02_A.T_PRP_Screen_Reactor_02_A",
+            "bIsMonitor": true,
+            "MonitorMaterial": "/Game/ASS/PRP/PRP_Laptop/M_PRP_Screen_Reactor_B.M_PRP_Screen_Reactor_B"
+        },
+        {
+            "Name": "Screen_Satellite_A",
+            "SmallPaintingImage": "/Game/ASS/PRP/PRP_Laptop/T_PRP_Screen_Satellite_01_A.T_PRP_Screen_Satellite_01_A",
+            "LargePaintingImage": "/Game/ASS/PRP/PRP_Laptop/T_PRP_Screen_Satellite_01_A.T_PRP_Screen_Satellite_01_A",
+            "bIsMonitor": true,
+            "MonitorMaterial": "/Game/ASS/PRP/PRP_Laptop/M_PRP_Screen_Satellite_A.M_PRP_Screen_Satellite_A"
+        },
+        {
+            "Name": "Screen_Satellite_B",
+            "SmallPaintingImage": "/Game/ASS/PRP/PRP_Laptop/T_PRP_Screen_Satellite_02_A.T_PRP_Screen_Satellite_02_A",
+            "LargePaintingImage": "/Game/ASS/PRP/PRP_Laptop/T_PRP_Screen_Satellite_02_A.T_PRP_Screen_Satellite_02_A",
+            "bIsMonitor": true,
+            "MonitorMaterial": "/Game/ASS/PRP/PRP_Laptop/M_PRP_Screen_Satellite_B.M_PRP_Screen_Satellite_B"
+        },
+        {
+            "Name": "Screen_Theo_A",
+            "SmallPaintingImage": "/Game/ASS/PRP/PRP_Laptop/T_PRP_Screen_Theo_01_A.T_PRP_Screen_Theo_01_A",
+            "LargePaintingImage": "/Game/ASS/PRP/PRP_Laptop/T_PRP_Screen_Theo_01_A.T_PRP_Screen_Theo_01_A",
+            "bIsMonitor": true,
+            "MonitorMaterial": "/Game/ASS/PRP/PRP_Laptop/M_PRP_Screen_Theo_A.M_PRP_Screen_Theo_A"
+        },
+        {
+            "Name": "Screen_Theo_B",
+            "SmallPaintingImage": "/Game/ASS/PRP/PRP_Laptop/T_PRP_Screen_Theo_02_A.T_PRP_Screen_Theo_02_A",
+            "LargePaintingImage": "/Game/ASS/PRP/PRP_Laptop/T_PRP_Screen_Theo_02_A.T_PRP_Screen_Theo_02_A",
+            "bIsMonitor": true,
+            "MonitorMaterial": "/Game/ASS/PRP/PRP_Laptop/M_PRP_Screen_Theo_B.M_PRP_Screen_Theo_B"
+        },
+        {
+            "Name": "Screen_Victor_A",
+            "SmallPaintingImage": "/Game/ASS/PRP/PRP_Laptop/T_PRP_Screen_Victor_01_A.T_PRP_Screen_Victor_01_A",
+            "LargePaintingImage": "/Game/ASS/PRP/PRP_Laptop/T_PRP_Screen_Victor_01_A.T_PRP_Screen_Victor_01_A",
+            "bIsMonitor": true,
+            "MonitorMaterial": "/Game/ASS/PRP/PRP_Laptop/M_PRP_Screen_Victor_A.M_PRP_Screen_Victor_A"
+        },
+        {
+            "Name": "Screen_Victor_B",
+            "SmallPaintingImage": "/Game/ASS/PRP/PRP_Laptop/T_PRP_Screen_Victor_02_A.T_PRP_Screen_Victor_02_A",
+            "LargePaintingImage": "/Game/ASS/PRP/PRP_Laptop/T_PRP_Screen_Victor_02_A.T_PRP_Screen_Victor_02_A",
+            "bIsMonitor": true,
+            "MonitorMaterial": "/Game/ASS/PRP/PRP_Laptop/M_PRP_Screen_Victor_B.M_PRP_Screen_Victor_B"
+        },
+        {
+            "Name": "Screen_Victor_C",
+            "SmallPaintingImage": "/Game/ASS/PRP/PRP_Laptop/T_PRP_Screen_Victor_03_A.T_PRP_Screen_Victor_03_A",
+            "LargePaintingImage": "/Game/ASS/PRP/PRP_Laptop/T_PRP_Screen_Victor_03_A.T_PRP_Screen_Victor_03_A",
+            "bIsMonitor": true,
+            "MonitorMaterial": "/Game/ASS/PRP/PRP_Laptop/M_PRP_Screen_Victor_C.M_PRP_Screen_Victor_C"
+        },
+        {
+            "Name": "Screen_Victor_D",
+            "SmallPaintingImage": "/Game/ASS/PRP/PRP_Laptop/T_PRP_Screen_Victor_04_A.T_PRP_Screen_Victor_04_A",
+            "LargePaintingImage": "/Game/ASS/PRP/PRP_Laptop/T_PRP_Screen_Victor_04_A.T_PRP_Screen_Victor_04_A",
+            "bIsMonitor": true,
+            "MonitorMaterial": "/Game/ASS/PRP/PRP_Laptop/M_PRP_Screen_Victor_D.M_PRP_Screen_Victor_D"
+        },
+        {
+            "Name": "Screen_Laser_A",
+            "SmallPaintingImage": "/Game/ASS/PRP/PRP_Laptop/T_PRP_Screen_laser_01_A.T_PRP_Screen_laser_01_A",
+            "LargePaintingImage": "/Game/ASS/PRP/PRP_Laptop/T_PRP_Screen_laser_01_A.T_PRP_Screen_laser_01_A",
+            "bIsMonitor": true,
+            "MonitorMaterial": "/Game/ASS/PRP/PRP_Laptop/M_PRP_Screen_Laser_A.M_PRP_Screen_Laser_A"
+        },
+        {
+            "Name": "Screen_Laser_B",
+            "SmallPaintingImage": "/Game/ASS/PRP/PRP_Laptop/T_PRP_Screen_laser_02_A.T_PRP_Screen_laser_02_A",
+            "LargePaintingImage": "/Game/ASS/PRP/PRP_Laptop/T_PRP_Screen_laser_02_A.T_PRP_Screen_laser_02_A",
+            "bIsMonitor": true,
+            "MonitorMaterial": "/Game/ASS/PRP/PRP_Laptop/M_PRP_Screen_Laser_B.M_PRP_Screen_Laser_B"
+        },
+        {
+            "Name": "Screen_Laser_C",
+            "SmallPaintingImage": "/Game/ASS/PRP/PRP_Laptop/T_PRP_Screen_laser_03_A.T_PRP_Screen_laser_03_A",
+            "LargePaintingImage": "/Game/ASS/PRP/PRP_Laptop/T_PRP_Screen_laser_03_A.T_PRP_Screen_laser_03_A",
+            "bIsMonitor": true,
+            "MonitorMaterial": "/Game/ASS/PRP/PRP_Laptop/M_PRP_Screen_Laser_C.M_PRP_Screen_Laser_C"
+        },
+        {
+            "Name": "Screen_Laser_D",
+            "SmallPaintingImage": "/Game/ASS/PRP/PRP_Laptop/T_PRP_Screen_laser_04_A.T_PRP_Screen_laser_04_A",
+            "LargePaintingImage": "/Game/ASS/PRP/PRP_Laptop/T_PRP_Screen_laser_04_A.T_PRP_Screen_laser_04_A",
+            "bIsMonitor": true,
+            "MonitorMaterial": "/Game/ASS/PRP/PRP_Laptop/M_PRP_Screen_Laser_D.M_PRP_Screen_Laser_D"
+        },
+        {
+            "Name": "Screen_Laser_E",
+            "SmallPaintingImage": "/Game/ASS/PRP/PRP_Laptop/T_PRP_Screen_laser_05_A.T_PRP_Screen_laser_05_A",
+            "LargePaintingImage": "/Game/ASS/PRP/PRP_Laptop/T_PRP_Screen_laser_05_A.T_PRP_Screen_laser_05_A",
+            "bIsMonitor": true,
+            "MonitorMaterial": "/Game/ASS/PRP/PRP_Laptop/M_PRP_Screen_Laser_E.M_PRP_Screen_Laser_E"
+        },
+        {
+            "Name": "Screen_Laser_F",
+            "SmallPaintingImage": "/Game/ASS/PRP/PRP_Laptop/T_PRP_Screen_laser_06_A.T_PRP_Screen_laser_06_A",
+            "LargePaintingImage": "/Game/ASS/PRP/PRP_Laptop/T_PRP_Screen_laser_06_A.T_PRP_Screen_laser_06_A",
+            "bIsMonitor": true,
+            "MonitorMaterial": "/Game/ASS/PRP/PRP_Laptop/M_PRP_Screen_Laser_F.M_PRP_Screen_Laser_F"
+        }
+    ]
+}

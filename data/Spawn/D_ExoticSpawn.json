@@ -1,0 +1,1024 @@
+{
+    "RowStruct": "/Script/Icarus.ExoticSpawn",
+    "Defaults": {},
+    "GenerateEnum": true,
+    "Rows": [
+        {
+            "Name": "OLY_C2"
+        },
+        {
+            "Name": "OLY_C4"
+        },
+        {
+            "Name": "OLY_C13"
+        },
+        {
+            "Name": "OLY_D14"
+        },
+        {
+            "Name": "OLY_E6"
+        },
+        {
+            "Name": "OLY_E6_2"
+        },
+        {
+            "Name": "OLY_E6_3"
+        },
+        {
+            "Name": "OLY_F4"
+        },
+        {
+            "Name": "OLY_G5"
+        },
+        {
+            "Name": "OLY_G14"
+        },
+        {
+            "Name": "OLY_I5"
+        },
+        {
+            "Name": "OLY_I6"
+        },
+        {
+            "Name": "OLY_I6_2"
+        },
+        {
+            "Name": "OLY_I6_3"
+        },
+        {
+            "Name": "OLY_I7"
+        },
+        {
+            "Name": "OLY_I8"
+        },
+        {
+            "Name": "OLY_I8_2"
+        },
+        {
+            "Name": "OLY_I10"
+        },
+        {
+            "Name": "OLY_I11"
+        },
+        {
+            "Name": "OLY_I13"
+        },
+        {
+            "Name": "OLY_I14"
+        },
+        {
+            "Name": "OLY_I16"
+        },
+        {
+            "Name": "OLY_J10"
+        },
+        {
+            "Name": "OLY_J11"
+        },
+        {
+            "Name": "OLY_J11_2"
+        },
+        {
+            "Name": "OLY_J14"
+        },
+        {
+            "Name": "OLY_J14_2"
+        },
+        {
+            "Name": "OLY_J14_3"
+        },
+        {
+            "Name": "OLY_J15"
+        },
+        {
+            "Name": "OLY_K4"
+        },
+        {
+            "Name": "OLY_L6"
+        },
+        {
+            "Name": "OLY_L7"
+        },
+        {
+            "Name": "OLY_L10_2"
+        },
+        {
+            "Name": "OLY_L10_3"
+        },
+        {
+            "Name": "OLY_L10"
+        },
+        {
+            "Name": "OLY_L11"
+        },
+        {
+            "Name": "OLY_L11_2"
+        },
+        {
+            "Name": "OLY_L12"
+        },
+        {
+            "Name": "OLY_L13"
+        },
+        {
+            "Name": "OLY_M3"
+        },
+        {
+            "Name": "OLY_M4"
+        },
+        {
+            "Name": "OLY_M4_2"
+        },
+        {
+            "Name": "OLY_M6"
+        },
+        {
+            "Name": "OLY_M7"
+        },
+        {
+            "Name": "OLY_M7_2"
+        },
+        {
+            "Name": "OLY_M8"
+        },
+        {
+            "Name": "OLY_M8_2"
+        },
+        {
+            "Name": "OLY_M10"
+        },
+        {
+            "Name": "OLY_M10_2"
+        },
+        {
+            "Name": "OLY_M11"
+        },
+        {
+            "Name": "OLY_M11_2"
+        },
+        {
+            "Name": "OLY_M14"
+        },
+        {
+            "Name": "OLY_M14_2"
+        },
+        {
+            "Name": "OLY_M15"
+        },
+        {
+            "Name": "OLY_N4"
+        },
+        {
+            "Name": "OLY_N4_2"
+        },
+        {
+            "Name": "OLY_N4_3"
+        },
+        {
+            "Name": "OLY_N4_4"
+        },
+        {
+            "Name": "OLY_N5"
+        },
+        {
+            "Name": "OLY_N5_2"
+        },
+        {
+            "Name": "OLY_N7"
+        },
+        {
+            "Name": "OLY_N7_2"
+        },
+        {
+            "Name": "OLY_N10"
+        },
+        {
+            "Name": "OLY_N12"
+        },
+        {
+            "Name": "OLY_O6"
+        },
+        {
+            "Name": "OLY_O6_2"
+        },
+        {
+            "Name": "OLY_O6_3"
+        },
+        {
+            "Name": "OLY_O10"
+        },
+        {
+            "Name": "OLY_O11"
+        },
+        {
+            "Name": "OLY_O11_2"
+        },
+        {
+            "Name": "OLY_O11_3"
+        },
+        {
+            "Name": "OLY_O12"
+        },
+        {
+            "Name": "OLY_O14"
+        },
+        {
+            "Name": "OLY_O14_2"
+        },
+        {
+            "Name": "STYX_B03"
+        },
+        {
+            "Name": "STYX_B04"
+        },
+        {
+            "Name": "STYX_B05"
+        },
+        {
+            "Name": "STYX_B05_2"
+        },
+        {
+            "Name": "STYX_B07"
+        },
+        {
+            "Name": "STYX_B07_2"
+        },
+        {
+            "Name": "STYX_B07_3"
+        },
+        {
+            "Name": "STYX_B09"
+        },
+        {
+            "Name": "STYX_B11"
+        },
+        {
+            "Name": "STYX_B13"
+        },
+        {
+            "Name": "STYX_C02"
+        },
+        {
+            "Name": "STYX_D07"
+        },
+        {
+            "Name": "STYX_D07_2"
+        },
+        {
+            "Name": "STYX_D08"
+        },
+        {
+            "Name": "STYX_E03"
+        },
+        {
+            "Name": "STYX_E04"
+        },
+        {
+            "Name": "STYX_E06"
+        },
+        {
+            "Name": "STYX_E09"
+        },
+        {
+            "Name": "STYX_E12"
+        },
+        {
+            "Name": "STYX_E13"
+        },
+        {
+            "Name": "STYX_E15"
+        },
+        {
+            "Name": "STYX_F02"
+        },
+        {
+            "Name": "STYX_F03"
+        },
+        {
+            "Name": "STYX_F10"
+        },
+        {
+            "Name": "STYX_F11"
+        },
+        {
+            "Name": "STYX_F13"
+        },
+        {
+            "Name": "STYX_F13_2"
+        },
+        {
+            "Name": "STYX_F14"
+        },
+        {
+            "Name": "STYX_G02"
+        },
+        {
+            "Name": "STYX_G04"
+        },
+        {
+            "Name": "STYX_G05"
+        },
+        {
+            "Name": "STYX_G06"
+        },
+        {
+            "Name": "STYX_G08"
+        },
+        {
+            "Name": "STYX_G11"
+        },
+        {
+            "Name": "STYX_G11_2"
+        },
+        {
+            "Name": "STYX_H06"
+        },
+        {
+            "Name": "STYX_H10"
+        },
+        {
+            "Name": "STYX_H13"
+        },
+        {
+            "Name": "STYX_H15"
+        },
+        {
+            "Name": "STYX_I03"
+        },
+        {
+            "Name": "STYX_I11"
+        },
+        {
+            "Name": "STYX_I11_2"
+        },
+        {
+            "Name": "STYX_J05"
+        },
+        {
+            "Name": "STYX_J06"
+        },
+        {
+            "Name": "STYX_J07"
+        },
+        {
+            "Name": "STYX_J12"
+        },
+        {
+            "Name": "STYX_J13"
+        },
+        {
+            "Name": "STYX_K04"
+        },
+        {
+            "Name": "STYX_K05"
+        },
+        {
+            "Name": "STYX_K09"
+        },
+        {
+            "Name": "STYX_K14"
+        },
+        {
+            "Name": "STYX_L02"
+        },
+        {
+            "Name": "STYX_L03"
+        },
+        {
+            "Name": "STYX_L06"
+        },
+        {
+            "Name": "STYX_L11"
+        },
+        {
+            "Name": "STYX_L13"
+        },
+        {
+            "Name": "STYX_M06"
+        },
+        {
+            "Name": "STYX_M09"
+        },
+        {
+            "Name": "STYX_M09_2"
+        },
+        {
+            "Name": "STYX_M14"
+        },
+        {
+            "Name": "STYX_N05"
+        },
+        {
+            "Name": "STYX_N08"
+        },
+        {
+            "Name": "STYX_N11"
+        },
+        {
+            "Name": "STYX_N13"
+        },
+        {
+            "Name": "STYX_N13_2"
+        },
+        {
+            "Name": "STYX_N15"
+        },
+        {
+            "Name": "STYX_O07"
+        },
+        {
+            "Name": "STYX_O08"
+        },
+        {
+            "Name": "STYX_P10"
+        },
+        {
+            "Name": "PRO_F3"
+        },
+        {
+            "Name": "PRO_G3"
+        },
+        {
+            "Name": "PRO_D5"
+        },
+        {
+            "Name": "PRO_C5"
+        },
+        {
+            "Name": "PRO_B4"
+        },
+        {
+            "Name": "PRO_D4"
+        },
+        {
+            "Name": "PRO_D2"
+        },
+        {
+            "Name": "PRO_D2_2"
+        },
+        {
+            "Name": "PRO_D3"
+        },
+        {
+            "Name": "PRO_D3_2"
+        },
+        {
+            "Name": "PRO_E3"
+        },
+        {
+            "Name": "PRO_E4"
+        },
+        {
+            "Name": "PRO_E10"
+        },
+        {
+            "Name": "PRO_E9"
+        },
+        {
+            "Name": "PRO_E9_2"
+        },
+        {
+            "Name": "PRO_E9_3"
+        },
+        {
+            "Name": "PRO_G9"
+        },
+        {
+            "Name": "PRO_G10"
+        },
+        {
+            "Name": "PRO_H10"
+        },
+        {
+            "Name": "PRO_H10_2"
+        },
+        {
+            "Name": "PRO_G10_2"
+        },
+        {
+            "Name": "PRO_F9"
+        },
+        {
+            "Name": "PRO_H6"
+        },
+        {
+            "Name": "PRO_I5"
+        },
+        {
+            "Name": "PRO_J7"
+        },
+        {
+            "Name": "PRO_J9"
+        },
+        {
+            "Name": "PRO_H8"
+        },
+        {
+            "Name": "PRO_F5"
+        },
+        {
+            "Name": "PRO_F5_2"
+        },
+        {
+            "Name": "PRO_H5"
+        },
+        {
+            "Name": "PRO_G5"
+        },
+        {
+            "Name": "PRO_H4"
+        },
+        {
+            "Name": "PRO_H7"
+        },
+        {
+            "Name": "PRO_M4"
+        },
+        {
+            "Name": "PRO_K1"
+        },
+        {
+            "Name": "PRO_K2"
+        },
+        {
+            "Name": "PRO_N2"
+        },
+        {
+            "Name": "PRO_N2_2"
+        },
+        {
+            "Name": "PRO_N2_3"
+        },
+        {
+            "Name": "PRO_N2_4"
+        },
+        {
+            "Name": "PRO_N3"
+        },
+        {
+            "Name": "PRO_N4"
+        },
+        {
+            "Name": "PRO_N4_2"
+        },
+        {
+            "Name": "PRO_N5"
+        },
+        {
+            "Name": "PRO_O6"
+        },
+        {
+            "Name": "PRO_O6_2"
+        },
+        {
+            "Name": "PRO_P5"
+        },
+        {
+            "Name": "PRO_P4"
+        },
+        {
+            "Name": "PRO_O4"
+        },
+        {
+            "Name": "PRO_O3"
+        },
+        {
+            "Name": "PRO_L2"
+        },
+        {
+            "Name": "PRO_L1"
+        },
+        {
+            "Name": "PRO_K2_2"
+        },
+        {
+            "Name": "PRO_D7"
+        },
+        {
+            "Name": "PRO_D6"
+        },
+        {
+            "Name": "PRO_C7"
+        },
+        {
+            "Name": "PRO_D8"
+        },
+        {
+            "Name": "PRO_E8"
+        },
+        {
+            "Name": "PRO_C6"
+        },
+        {
+            "Name": "PRO_C8"
+        },
+        {
+            "Name": "PRO_B8"
+        },
+        {
+            "Name": "PRO_E10_2"
+        },
+        {
+            "Name": "PRO_E6"
+        },
+        {
+            "Name": "PRO_K7"
+        },
+        {
+            "Name": "PRO_K7_2"
+        },
+        {
+            "Name": "PRO_K7_3"
+        },
+        {
+            "Name": "PRO_K7_4"
+        },
+        {
+            "Name": "PRO_K7_5"
+        },
+        {
+            "Name": "PRO_K6"
+        },
+        {
+            "Name": "PRO_L4"
+        },
+        {
+            "Name": "PRO_L4_2"
+        },
+        {
+            "Name": "PRO_K4"
+        },
+        {
+            "Name": "PRO_L5"
+        },
+        {
+            "Name": "ELY_B7"
+        },
+        {
+            "Name": "ELY_B8"
+        },
+        {
+            "Name": "ELY_B9"
+        },
+        {
+            "Name": "ELY_B11"
+        },
+        {
+            "Name": "ELY_B12_1"
+        },
+        {
+            "Name": "ELY_B12_2"
+        },
+        {
+            "Name": "ELY_C6"
+        },
+        {
+            "Name": "ELY_C7_1"
+        },
+        {
+            "Name": "ELY_C7_2"
+        },
+        {
+            "Name": "ELY_C7_3"
+        },
+        {
+            "Name": "ELY_C7_4"
+        },
+        {
+            "Name": "ELY_C7_5"
+        },
+        {
+            "Name": "ELY_C8"
+        },
+        {
+            "Name": "ELY_C10"
+        },
+        {
+            "Name": "ELY_D1"
+        },
+        {
+            "Name": "ELY_D6"
+        },
+        {
+            "Name": "ELY_D10"
+        },
+        {
+            "Name": "ELY_D12"
+        },
+        {
+            "Name": "ELY_D1_2"
+        },
+        {
+            "Name": "ELY_E2"
+        },
+        {
+            "Name": "ELY_E8"
+        },
+        {
+            "Name": "ELY_E9_1"
+        },
+        {
+            "Name": "ELY_E9_2"
+        },
+        {
+            "Name": "ELY_E12"
+        },
+        {
+            "Name": "ELY_E13_1"
+        },
+        {
+            "Name": "ELY_E13_2"
+        },
+        {
+            "Name": "ELY_F3"
+        },
+        {
+            "Name": "ELY_F4"
+        },
+        {
+            "Name": "ELY_F5"
+        },
+        {
+            "Name": "ELY_F7"
+        },
+        {
+            "Name": "ELY_F9_1"
+        },
+        {
+            "Name": "ELY_F9_2"
+        },
+        {
+            "Name": "ELY_F9_3"
+        },
+        {
+            "Name": "ELY_F10"
+        },
+        {
+            "Name": "ELY_F12"
+        },
+        {
+            "Name": "ELY_F13_1"
+        },
+        {
+            "Name": "ELY_F13_2"
+        },
+        {
+            "Name": "ELY_F13_3"
+        },
+        {
+            "Name": "ELY_G3"
+        },
+        {
+            "Name": "ELY_G4_1"
+        },
+        {
+            "Name": "ELY_G4_2"
+        },
+        {
+            "Name": "ELY_G5"
+        },
+        {
+            "Name": "ELY_G7"
+        },
+        {
+            "Name": "ELY_G9"
+        },
+        {
+            "Name": "ELY_G11"
+        },
+        {
+            "Name": "ELY_G13"
+        },
+        {
+            "Name": "ELY_G14"
+        },
+        {
+            "Name": "ELY_G15_1"
+        },
+        {
+            "Name": "ELY_G15_2"
+        },
+        {
+            "Name": "ELY_G15_3"
+        },
+        {
+            "Name": "ELY_H2"
+        },
+        {
+            "Name": "ELY_H9"
+        },
+        {
+            "Name": "ELY_H11_1"
+        },
+        {
+            "Name": "ELY_H11_2"
+        },
+        {
+            "Name": "ELY_H15_1"
+        },
+        {
+            "Name": "ELY_H15_2"
+        },
+        {
+            "Name": "ELY_I2"
+        },
+        {
+            "Name": "ELY_I4"
+        },
+        {
+            "Name": "ELY_I8"
+        },
+        {
+            "Name": "ELY_I13"
+        },
+        {
+            "Name": "ELY_I15"
+        },
+        {
+            "Name": "ELY_J3"
+        },
+        {
+            "Name": "ELY_J4"
+        },
+        {
+            "Name": "ELY_J7"
+        },
+        {
+            "Name": "ELY_J11"
+        },
+        {
+            "Name": "ELY_J14"
+        },
+        {
+            "Name": "ELY_J15"
+        },
+        {
+            "Name": "ELY_K4_1"
+        },
+        {
+            "Name": "ELY_K4_2"
+        },
+        {
+            "Name": "ELY_K6"
+        },
+        {
+            "Name": "ELY_K6_2"
+        },
+        {
+            "Name": "ELY_K7"
+        },
+        {
+            "Name": "ELY_K9_1"
+        },
+        {
+            "Name": "ELY_K9_2"
+        },
+        {
+            "Name": "ELY_K12"
+        },
+        {
+            "Name": "ELY_K13"
+        },
+        {
+            "Name": "ELY_K14_1"
+        },
+        {
+            "Name": "ELY_K14_2"
+        },
+        {
+            "Name": "ELY_K14_3"
+        },
+        {
+            "Name": "ELY_K14_4"
+        },
+        {
+            "Name": "ELY_L4_1"
+        },
+        {
+            "Name": "ELY_L4_2"
+        },
+        {
+            "Name": "ELY_L5"
+        },
+        {
+            "Name": "ELY_L7"
+        },
+        {
+            "Name": "ELY_L8"
+        },
+        {
+            "Name": "ELY_L9"
+        },
+        {
+            "Name": "ELY_L12"
+        },
+        {
+            "Name": "ELY_L15"
+        },
+        {
+            "Name": "ELY_M5_1"
+        },
+        {
+            "Name": "ELY_M5_2"
+        },
+        {
+            "Name": "ELY_M5_3"
+        },
+        {
+            "Name": "ELY_M6"
+        },
+        {
+            "Name": "ELY_M10_1"
+        },
+        {
+            "Name": "ELY_M10_2"
+        },
+        {
+            "Name": "ELY_M11_1"
+        },
+        {
+            "Name": "ELY_M11_2"
+        },
+        {
+            "Name": "ELY_M11_3"
+        },
+        {
+            "Name": "ELY_M12"
+        },
+        {
+            "Name": "ELY_M14"
+        },
+        {
+            "Name": "ELY_M15_1"
+        },
+        {
+            "Name": "ELY_M15_2"
+        },
+        {
+            "Name": "ELY_N6_1"
+        },
+        {
+            "Name": "ELY_N6_2"
+        },
+        {
+            "Name": "ELY_N7"
+        },
+        {
+            "Name": "ELY_N10_1"
+        },
+        {
+            "Name": "ELY_N10_2"
+        },
+        {
+            "Name": "ELY_N11"
+        },
+        {
+            "Name": "ELY_N12"
+        },
+        {
+            "Name": "ELY_N13_1"
+        },
+        {
+            "Name": "ELY_N13_2"
+        },
+        {
+            "Name": "ELY_N13_3"
+        },
+        {
+            "Name": "ELY_N14"
+        },
+        {
+            "Name": "ELY_N15"
+        },
+        {
+            "Name": "ELY_O7"
+        },
+        {
+            "Name": "ELY_O9"
+        },
+        {
+            "Name": "ELY_O10_1"
+        },
+        {
+            "Name": "ELY_O10_2"
+        },
+        {
+            "Name": "ELY_O10_3"
+        },
+        {
+            "Name": "ELY_O10_4"
+        },
+        {
+            "Name": "ELY_O11"
+        },
+        {
+            "Name": "ELY_O14_1"
+        },
+        {
+            "Name": "ELY_O14_2"
+        },
+        {
+            "Name": "ELY_O15"
+        }
+    ]
+}

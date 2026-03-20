@@ -1,0 +1,165 @@
+{
+    "RowStruct": "/Script/Icarus.AISpawnRuleData",
+    "Defaults": {
+        "SpawnFilter": "None",
+        "InverseCondition": false,
+        "FilterParams": {}
+    },
+    "Rows": [
+        {
+            "Name": "Away_From_Dropships",
+            "SpawnFilter": "/Game/BP/AI/SpawnFilters/BP_SpawnFilter_DropshipWithinDistance.BP_SpawnFilter_DropshipWithinDistance_C",
+            "InverseCondition": true,
+            "FilterParams": {
+                "Distance": 20000
+            }
+        },
+        {
+            "Name": "Bear_Population",
+            "SpawnFilter": "/Game/BP/AI/SpawnFilters/BP_SpawnFilter_PopulationCheck_Bear.BP_SpawnFilter_PopulationCheck_Bear_C",
+            "FilterParams": {
+                "Population": 1
+            }
+        },
+        {
+            "Name": "PolarBear_Population",
+            "SpawnFilter": "/Game/BP/AI/SpawnFilters/BP_SpawnFilter_PopulationCheck_PolarBear.BP_SpawnFilter_PopulationCheck_PolarBear_C",
+            "FilterParams": {
+                "Population": 1
+            }
+        },
+        {
+            "Name": "MammothArctic_Population",
+            "SpawnFilter": "/Game/BP/AI/SpawnFilters/BP_SpawnFilter_PopulationCheck_MammothArctic.BP_SpawnFilter_PopulationCheck_MammothArctic_C",
+            "FilterParams": {
+                "Population": 1
+            }
+        },
+        {
+            "Name": "MammothDesert_Population",
+            "SpawnFilter": "/Game/BP/AI/SpawnFilters/BP_SpawnFilter_PopulationCheck_MammothDesert.BP_SpawnFilter_PopulationCheck_MammothDesert_C",
+            "FilterParams": {
+                "Population": 1
+            }
+        },
+        {
+            "Name": "ScorpionArctic_Population",
+            "SpawnFilter": "/Game/BP/AI/SpawnFilters/BP_SpawnFilter_PopulationCheck_ScorpionArctic.BP_SpawnFilter_PopulationCheck_ScorpionArctic_C",
+            "FilterParams": {
+                "Population": 2
+            }
+        },
+        {
+            "Name": "SnowStriker_Population",
+            "SpawnFilter": "/Game/BP/AI/SpawnFilters/BP_SpawnFilter_PopulationCheck_ArcticStriker.BP_SpawnFilter_PopulationCheck_ArcticStriker_C",
+            "FilterParams": {
+                "Population": 1
+            }
+        },
+        {
+            "Name": "DesertStriker_Population",
+            "SpawnFilter": "/Game/BP/AI/SpawnFilters/BP_SpawnFilter_PopulationCheck_DesertStriker.BP_SpawnFilter_PopulationCheck_DesertStriker_C",
+            "FilterParams": {
+                "Population": 2
+            }
+        },
+        {
+            "Name": "PRO_Croc_Population",
+            "SpawnFilter": "/Game/BP/AI/SpawnFilters/BP_SpawnFilter_PopulationCheck_Crocodile.BP_SpawnFilter_PopulationCheck_Crocodile_C",
+            "FilterParams": {
+                "Population": 2
+            }
+        },
+        {
+            "Name": "SwampSlug_Population",
+            "SpawnFilter": "/Game/BP/AI/SpawnFilters/BP_SpawnFilter_PopulationCheck_SwampSlug.BP_SpawnFilter_PopulationCheck_SwampSlug_C",
+            "FilterParams": {
+                "Population": 2
+            }
+        },
+        {
+            "Name": "GrasslandsSlug_Population",
+            "SpawnFilter": "/Game/BP/AI/SpawnFilters/BP_SpawnFilter_PopulationCheck_GrasslandsSlug.BP_SpawnFilter_PopulationCheck_GrasslandsSlug_C",
+            "FilterParams": {
+                "Population": 1
+            }
+        },
+        {
+            "Name": "RockDog_Population",
+            "SpawnFilter": "/Game/BP/AI/SpawnFilters/BP_SpawnFilter_PopulationCheck_RockDog.BP_SpawnFilter_PopulationCheck_RockDog_C",
+            "FilterParams": {
+                "Population": 1
+            }
+        },
+        {
+            "Name": "Needler_Population",
+            "SpawnFilter": "/Game/BP/AI/SpawnFilters/BP_SpawnFilter_PopulationCheck_Needler.BP_SpawnFilter_PopulationCheck_Needler_C",
+            "FilterParams": {
+                "Population": 2
+            }
+        },
+        {
+            "Name": "NearWater",
+            "SpawnFilter": "/Game/BP/AI/SpawnFilters/BP_SpawnFilter_WaterWithinDistance.BP_SpawnFilter_WaterWithinDistance_C",
+            "FilterParams": {
+                "Distance": 3000
+            }
+        },
+        {
+            "Name": "PRO_Croc_Population_Grasslands",
+            "SpawnFilter": "/Game/BP/AI/SpawnFilters/BP_SpawnFilter_PopulationCheck_Crocodile_Grasslands.BP_SpawnFilter_PopulationCheck_Crocodile_Grasslands_C",
+            "FilterParams": {
+                "Population": 1
+            }
+        },
+        {
+            "Name": "Rimetusk_Population",
+            "SpawnFilter": "/Game/BP/AI/SpawnFilters/BP_SpawnFilter_PopulationCheck_Rimetusk.BP_SpawnFilter_PopulationCheck_Rimetusk_C",
+            "FilterParams": {
+                "Population": 2
+            }
+        },
+        {
+            "Name": "Quarrite_Population",
+            "SpawnFilter": "/Game/BP/AI/SpawnFilters/BP_SpawnFilter_PopulationCheck_Quarrite.BP_SpawnFilter_PopulationCheck_Quarrite_C",
+            "FilterParams": {
+                "Population": 1
+            }
+        },
+        {
+            "Name": "QuarriteArctic__Population",
+            "SpawnFilter": "/Game/BP/AI/SpawnFilters/BP_SpawnFilter_PopulationCheck_QuarriteArctic.BP_SpawnFilter_PopulationCheck_QuarriteArctic_C",
+            "FilterParams": {
+                "Population": 1
+            }
+        },
+        {
+            "Name": "Slinker_Population",
+            "SpawnFilter": "/Game/BP/AI/SpawnFilters/BP_SpawnFilter_PopulationCheck_Slinker.BP_SpawnFilter_PopulationCheck_Slinker_C",
+            "FilterParams": {
+                "Population": 1
+            }
+        },
+        {
+            "Name": "Yeti_Population",
+            "SpawnFilter": "/Game/BP/AI/SpawnFilters/BP_SpawnFilter_PopulationCheck_Yeti.BP_SpawnFilter_PopulationCheck_Yeti_C",
+            "FilterParams": {
+                "Population": 1
+            }
+        },
+        {
+            "Name": "GhostCroc_Population",
+            "SpawnFilter": "/Game/BP/AI/SpawnFilters/BP_SpawnFilter_PopulationCheck_GhostCroc.BP_SpawnFilter_PopulationCheck_GhostCroc_C",
+            "FilterParams": {
+                "Population": 1
+            }
+        },
+        {
+            "Name": "Drone_Scout_Population",
+            "SpawnFilter": "/Game/BP/AI/SpawnFilters/BP_SpawnFilter_PopulationCheck_DroneScout.BP_SpawnFilter_PopulationCheck_DroneScout_C",
+            "FilterParams": {
+                "Population": 2
+            }
+        }
+    ]
+}

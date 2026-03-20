@@ -1,0 +1,309 @@
+{
+    "RowStruct": "/Script/Icarus.TamedCreatureModifier",
+    "Defaults": {
+        "StatRequirement": {
+            "Value": "None"
+        },
+        "GrantedStat": {
+            "Value": "None"
+        },
+        "Effects": "TamedCreature"
+    },
+    "Rows": [
+        {
+            "Name": "Food_Consumption",
+            "StatRequirement": {
+                "Value": "TamedCreatureFoodConsumption_+%"
+            },
+            "GrantedStat": {
+                "Value": "BaseFoodConsumption_+%"
+            }
+        },
+        {
+            "Name": "Water_Consumption",
+            "StatRequirement": {
+                "Value": "TamedCreatureWaterConsumption_+%"
+            },
+            "GrantedStat": {
+                "Value": "BaseWaterConsumption_+%"
+            }
+        },
+        {
+            "Name": "Health",
+            "StatRequirement": {
+                "Value": "TamedCreatureMaximumHealth_+%"
+            },
+            "GrantedStat": {
+                "Value": "BaseMaximumHealth_+%"
+            }
+        },
+        {
+            "Name": "Stamina",
+            "StatRequirement": {
+                "Value": "TamedCreatureMaximumStamina_+%"
+            },
+            "GrantedStat": {
+                "Value": "BaseMaximumStamina_+%"
+            }
+        },
+        {
+            "Name": "Health_Regen",
+            "StatRequirement": {
+                "Value": "TamedCreatureHealthRegen_+%"
+            },
+            "GrantedStat": {
+                "Value": "BaseHealthRegen_+%"
+            }
+        },
+        {
+            "Name": "Stamina_Regen",
+            "StatRequirement": {
+                "Value": "TamedCreatureStaminaRegen_+%"
+            },
+            "GrantedStat": {
+                "Value": "BaseStaminaRegen_+%"
+            }
+        },
+        {
+            "Name": "Threat",
+            "StatRequirement": {
+                "Value": "TamedCreatureThreatModifier_+%"
+            },
+            "GrantedStat": {
+                "Value": "BaseAnimalThreatModifier_+%"
+            }
+        },
+        {
+            "Name": "Weight",
+            "StatRequirement": {
+                "Value": "TamedCreatureWeightCapacity_+%"
+            },
+            "GrantedStat": {
+                "Value": "BaseWeightCapacity_+%"
+            }
+        },
+        {
+            "Name": "Damage",
+            "StatRequirement": {
+                "Value": "TamedCreatureMeleeDamage_+%"
+            },
+            "GrantedStat": {
+                "Value": "BaseMeleeDamage_+%"
+            }
+        },
+        {
+            "Name": "Speed",
+            "StatRequirement": {
+                "Value": "TamedCreatureMovementSpeed_+%"
+            },
+            "GrantedStat": {
+                "Value": "BaseMovementSpeed_+%"
+            }
+        },
+        {
+            "Name": "Resistance",
+            "StatRequirement": {
+                "Value": "TamedCreaturePhysicalResistance_%"
+            },
+            "GrantedStat": {
+                "Value": "BasePhysicalDamageResistance_%"
+            }
+        },
+        {
+            "Name": "JuvenileMinTempPercent",
+            "StatRequirement": {
+                "Value": "JuvenileCreatureMinimumTemperatureRequirement_+%"
+            },
+            "GrantedStat": {
+                "Value": "BaseTameMinimumDesiredTemperature_+%"
+            },
+            "Effects": "Juvenile"
+        },
+        {
+            "Name": "JuvenileMaxTempPercent",
+            "StatRequirement": {
+                "Value": "JuvenileCreatureMaximumTemperatureRequirement_+%"
+            },
+            "GrantedStat": {
+                "Value": "BaseTameMaximumDesiredTemperature_+%"
+            },
+            "Effects": "Juvenile"
+        },
+        {
+            "Name": "JuvenileSleep",
+            "StatRequirement": {
+                "Value": "JuvenileCreatureSleepRequirement_+%"
+            },
+            "GrantedStat": {
+                "Value": "BaseTameSleepRequirement_+%"
+            },
+            "Effects": "Juvenile"
+        },
+        {
+            "Name": "JuvenileFriendly",
+            "StatRequirement": {
+                "Value": "JuvenileCreatureFriendlyToPredators_?"
+            },
+            "GrantedStat": {
+                "Value": "JuvenileCreatureFriendlyToPredators_?"
+            },
+            "Effects": "Juvenile"
+        },
+        {
+            "Name": "JuvenileMinTempPlus",
+            "StatRequirement": {
+                "Value": "TameMinimumDesiredTemperature_+"
+            },
+            "GrantedStat": {
+                "Value": "BaseTameMinimumDesiredTemperature_+"
+            },
+            "Effects": "Juvenile"
+        },
+        {
+            "Name": "JuvenileMaxTempPlus",
+            "StatRequirement": {
+                "Value": "TameMaximumDesiredTemperature_+"
+            },
+            "GrantedStat": {
+                "Value": "BaseTameMaximumDesiredTemperature_+"
+            },
+            "Effects": "Juvenile"
+        },
+        {
+            "Name": "JuvenileTamingDurationDecrease",
+            "StatRequirement": {
+                "Value": "TamingSpeedSaddleBoost_%"
+            },
+            "GrantedStat": {
+                "Value": "BaseTamingSpeedSaddleBoost_%"
+            },
+            "Effects": "Juvenile"
+        },
+        {
+            "Name": "Gestation_Speed",
+            "StatRequirement": {
+                "Value": "TamedCreatureGestationSpeed_+%"
+            },
+            "GrantedStat": {
+                "Value": "BaseGestationSpeed_+%"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Homestead"
+                }
+            }
+        },
+        {
+            "Name": "Genotype_Mutation",
+            "StatRequirement": {
+                "Value": "TamedCreatureGeneticsMutationChance_%"
+            },
+            "GrantedStat": {
+                "Value": "BaseGeneticsMutationChance_%"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Homestead"
+                }
+            }
+        },
+        {
+            "Name": "Phenotype_Mutation",
+            "StatRequirement": {
+                "Value": "TamedCreatureCosmeticMutationChance_%"
+            },
+            "GrantedStat": {
+                "Value": "BaseCosmeticMutationChance_%"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Homestead"
+                }
+            }
+        },
+        {
+            "Name": "Recovery_Speed",
+            "StatRequirement": {
+                "Value": "TamedCreatureFertilizationRecoverySpeed_+%"
+            },
+            "GrantedStat": {
+                "Value": "BaseFertilizationRecoverySpeed_+%"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Homestead"
+                }
+            }
+        },
+        {
+            "Name": "Twins",
+            "StatRequirement": {
+                "Value": "TamedCreatureTwinBirthChance_%"
+            },
+            "GrantedStat": {
+                "Value": "BaseTwinBirthChance_%"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Homestead"
+                }
+            }
+        },
+        {
+            "Name": "StrongerWhileGestating",
+            "StatRequirement": {
+                "Value": "TamedCreatureStrongerWhileGestating_?"
+            },
+            "GrantedStat": {
+                "Value": "BaseStrongerWhileGestating_?"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Homestead"
+                }
+            }
+        },
+        {
+            "Name": "Bloodline_Mutation",
+            "StatRequirement": {
+                "Value": "TamedCreatureLineageMutationChance_%"
+            },
+            "GrantedStat": {
+                "Value": "BaseLineageMutationChance_%"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Homestead"
+                }
+            }
+        },
+        {
+            "Name": "SireVigor",
+            "StatRequirement": {
+                "Value": "TamedCreatureHasSireVigor_?"
+            },
+            "GrantedStat": {
+                "Value": "HasSireVigor_?"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Homestead"
+                }
+            }
+        },
+        {
+            "Name": "MaternalInstincts",
+            "StatRequirement": {
+                "Value": "TamedCreatureHasMaternalInstincts_?"
+            },
+            "GrantedStat": {
+                "Value": "HasMaternalInstincts_?"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Homestead"
+                }
+            }
+        }
+    ]
+}

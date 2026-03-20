@@ -1,0 +1,32 @@
+{
+    "RowStruct": "/Script/Icarus.CriticalHitAreaAudioData",
+    "Defaults": {
+        "PlayerFeedbackSound": "None",
+        "bShouldCritZoneSuppressHitAudio": false
+    },
+    "Rows": [
+        {
+            "Name": "CriticalHit",
+            "PlayerFeedbackSound": "/Game/FMOD/Events/UI/Generic/UI_CRITICAL_HIT.UI_CRITICAL_HIT"
+        },
+        {
+            "Name": "LowDamageHit",
+            "PlayerFeedbackSound": "/Game/FMOD/Events/UI/Generic/UI_HITINDICATOR_LOWDAMAGE.UI_HITINDICATOR_LOWDAMAGE",
+            "bShouldCritZoneSuppressHitAudio": true
+        },
+        {
+            "Name": "NoDamageRicochet",
+            "PlayerFeedbackSound": "/Game/FMOD/Events/UI/Generic/UI_HITINDICATOR_RICCOCHET.UI_HITINDICATOR_RICCOCHET",
+            "bShouldCritZoneSuppressHitAudio": true
+        },
+        {
+            "Name": "CriticalHitDrone",
+            "PlayerFeedbackSound": "/Game/FMOD/Events/UI/Generic/UI_CRITICAL_HIT_METAL.UI_CRITICAL_HIT_METAL"
+        },
+        {
+            "Name": "LowDamageHitDrone",
+            "PlayerFeedbackSound": "/Game/FMOD/Events/UI/Generic/UI_CRITICAL_HIT_METAL_STRONGPOINT.UI_CRITICAL_HIT_METAL_STRONGPOINT",
+            "bShouldCritZoneSuppressHitAudio": true
+        }
+    ]
+}

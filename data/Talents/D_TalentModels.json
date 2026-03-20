@@ -1,0 +1,46 @@
+{
+    "RowStruct": "/Script/Icarus.TalentModel",
+    "Defaults": {
+        "ModelClass": "None"
+    },
+    "GenerateEnum": true,
+    "Rows": [
+        {
+            "Name": "Player",
+            "ModelClass": "/Script/Icarus.PlayerTalentModel"
+        },
+        {
+            "Name": "Blueprint",
+            "ModelClass": "/Script/Icarus.BlueprintTalentModel"
+        },
+        {
+            "Name": "Prospect",
+            "ModelClass": "/Script/Icarus.ProspectTalentModel"
+        },
+        {
+            "Name": "Workshop",
+            "ModelClass": "/Script/Icarus.WorkshopTalentModel"
+        },
+        {
+            "Name": "Outpost",
+            "ModelClass": "/Script/Icarus.OutpostTalentModel"
+        },
+        {
+            "Name": "Solo",
+            "ModelClass": "/Script/Icarus.SoloTalentModel"
+        },
+        {
+            "Name": "Creature",
+            "ModelClass": "/Script/Icarus.CreatureTalentModel"
+        },
+        {
+            "Name": "Great_Hunt",
+            "ModelClass": "/Script/Icarus.GreatHuntTalentModel",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        }
+    ]
+}

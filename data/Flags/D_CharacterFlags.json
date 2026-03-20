@@ -1,0 +1,200 @@
+{
+    "RowStruct": "/Script/Icarus.CharacterFlag",
+    "Defaults": {
+        "Description": ""
+    },
+    "GenerateEnum": true,
+    "Rows": [
+        {
+            "Name": "TestDataFlag"
+        },
+        {
+            "Name": "TutorialTestFlag"
+        },
+        {
+            "Name": "FirstScanComplete"
+        },
+        {
+            "Name": "Talent_RepairBench"
+        },
+        {
+            "Name": "Talent_WaterBomb"
+        },
+        {
+            "Name": "Talent_Ghillie_Armor"
+        },
+        {
+            "Name": "Talent_Trophy_Bench"
+        },
+        {
+            "Name": "Talent_Solo_Blueprints1"
+        },
+        {
+            "Name": "Talent_Solo_Blueprints2"
+        },
+        {
+            "Name": "Talent_SkinningBench"
+        },
+        {
+            "Name": "Talent_Wood_Sticks"
+        },
+        {
+            "Name": "Talent_Polarbear_Armor"
+        },
+        {
+            "Name": "Talent_Leather_Rope"
+        },
+        {
+            "Name": "Talent_CropPlot"
+        },
+        {
+            "Name": "Talent_Rifle_Bulk_Ammo"
+        },
+        {
+            "Name": "Talent_Shotgun_Bulk_Ammo"
+        },
+        {
+            "Name": "Talent_Pistol_Bulk_Ammo"
+        },
+        {
+            "Name": "Voxel_Meta_Resources_Visible",
+            "Description": "NSLOCTEXT(\"D_CharacterFlags\", \"Voxel_Meta_Resources_Visible-Description\", \"Pickaxe Mineable Exotics to Appear on All Missions\")",
+            "Metadata": {
+                "bIsDeprecated": true
+            }
+        },
+        {
+            "Name": "Deposit_Meta_Resources_Visible",
+            "Description": "NSLOCTEXT(\"D_CharacterFlags\", \"Deposit_Meta_Resources_Visible-Description\", \"Access to Workshop Radar and Extractor\")",
+            "Metadata": {
+                "bIsDeprecated": true
+            }
+        },
+        {
+            "Name": "Unlocked_Bait",
+            "Description": "NSLOCTEXT(\"D_CharacterFlags\", \"Unlocked_Bait-Description\", \"Unlocks Bait & Poison Bait (Character Only)\")",
+            "Metadata": {
+                "bIsDeprecated": true
+            }
+        },
+        {
+            "Name": "Talent_GunpowderRecipe",
+            "Description": "NSLOCTEXT(\"D_CharacterFlags\", \"Talent_GunpowderRecipe-Description\", \"Character flag for the fertilizer to gunpowder recipe\")"
+        },
+        {
+            "Name": "Talent_ShotgunRecipe",
+            "Description": "NSLOCTEXT(\"D_CharacterFlags\", \"Talent_ShotgunRecipe-Description\", \"Character flag to make the Farmers Shotgun\")"
+        },
+        {
+            "Name": "Mission_Cave_Worm_Analyser",
+            "Description": "NSLOCTEXT(\"D_CharacterFlags\", \"Mission_Cave_Worm_Analyser-Description\", \"Unlocks Caveworm Weapons & Tools (Character Only)\")",
+            "Metadata": {
+                "bIsDeprecated": true
+            }
+        },
+        {
+            "Name": "Mission_Handheld_Scanners",
+            "Description": "NSLOCTEXT(\"D_CharacterFlags\", \"Mission_Handheld_Scanners-Description\", \"New Scanning Equipment\")",
+            "Metadata": {
+                "bIsDeprecated": true
+            }
+        },
+        {
+            "Name": "Mission_Scorpion_Item_Analyzer",
+            "Description": "NSLOCTEXT(\"D_CharacterFlags\", \"Mission_Scorpion_Item_Analyzer-Description\", \"Unlock Scorpion Traps (Character Only)\")",
+            "Metadata": {
+                "bIsDeprecated": true
+            }
+        },
+        {
+            "Name": "Mission_Sandworm_Items",
+            "Description": "NSLOCTEXT(\"D_CharacterFlags\", \"Mission_Sandworm_Items-Description\", \"Unlocks Sandworm Weapons, Tools & Armor (Character Only)\")",
+            "Metadata": {
+                "bIsDeprecated": true
+            }
+        },
+        {
+            "Name": "Mission_Scorpion_Armor_Items",
+            "Description": "NSLOCTEXT(\"D_CharacterFlags\", \"Mission_Scorpion_Armor_Items-Description\", \"Unlocks Scorpion Armor (Character Only)\")",
+            "Metadata": {
+                "bIsDeprecated": true
+            }
+        },
+        {
+            "Name": "Mission_Olympus_Unlock",
+            "Description": "NSLOCTEXT(\"D_CharacterFlags\", \"Mission_Olympus_Unlock-Description\", \"New Olympus Wide Outpost\")"
+        },
+        {
+            "Name": "Mission_BlackWolf_Items",
+            "Description": "NSLOCTEXT(\"D_CharacterFlags\", \"Mission_BlackWolf_Items-Description\", \"Unlocks Black Wolf Arrow & Knife (Character Only)\")",
+            "Metadata": {
+                "bIsDeprecated": true
+            }
+        },
+        {
+            "Name": "Mission_Targets",
+            "Description": "NSLOCTEXT(\"D_CharacterFlags\", \"Mission_Targets-Description\", \"Unlocks Target Dummy Items (Character Only)\")",
+            "Metadata": {
+                "bIsDeprecated": true
+            }
+        },
+        {
+            "Name": "Communicator_T2"
+        },
+        {
+            "Name": "Communicator_T3"
+        },
+        {
+            "Name": "Communicator_T4"
+        },
+        {
+            "Name": "Mission_AlienFossil",
+            "Description": "NSLOCTEXT(\"D_CharacterFlags\", \"Mission_AlienFossil-Description\", \"Unlocks Alien Decorations (Character Only)\")",
+            "Metadata": {
+                "bIsDeprecated": true
+            }
+        },
+        {
+            "Name": "StyxBlocker_B_TooltipOnly",
+            "Description": "NSLOCTEXT(\"D_CharacterFlags\", \"StyxBlocker_B_TooltipOnly-Description\", \"Unlocks Shortcut between The Wall and Dry Ridge\")"
+        },
+        {
+            "Name": "StyxBlocker_C_TooltipOnly",
+            "Description": "NSLOCTEXT(\"D_CharacterFlags\", \"StyxBlocker_C_TooltipOnly-Description\", \"Unlocks Shortcut between Enclosed Wood and Oasis \")"
+        },
+        {
+            "Name": "StyxBlocker_D_TooltipOnly",
+            "Description": "NSLOCTEXT(\"D_CharacterFlags\", \"StyxBlocker_D_TooltipOnly-Description\", \"Unlocks Shortcut between Frozen Traverse and Ring Lake\")"
+        },
+        {
+            "Name": "StyxBlocker_E_TooltipOnly",
+            "Description": "NSLOCTEXT(\"D_CharacterFlags\", \"StyxBlocker_E_TooltipOnly-Description\", \"Unlocks Shortcut between The Great River and Dry Ridge\")"
+        },
+        {
+            "Name": "RefundOnly_Repairable"
+        },
+        {
+            "Name": "GreatHunt_IntroPlayed"
+        },
+        {
+            "Name": "NPC_Farmer_TooltipOnly",
+            "Description": "NSLOCTEXT(\"D_CharacterFlags\", \"NPC_Farmer_TooltipOnly-Description\", \"Unlocks the Cultivation Specialist in this Open World region, allowing Crops to be traded for Ren.\")"
+        },
+        {
+            "Name": "NPC_Norex_TooltipOnly",
+            "Description": "NSLOCTEXT(\"D_CharacterFlags\", \"NPC_Norex_TooltipOnly-Description\", \"Unlocks the Norex Liason in this Open World region, allowing Biomass to be traded for Creature Parts.\")"
+        },
+        {
+            "Name": "NPC_Hunter_TooltipOnly",
+            "Description": "NSLOCTEXT(\"D_CharacterFlags\", \"NPC_Hunter_TooltipOnly-Description\", \"Unlocks the Predator Control Specialist in this Open World region, allowing Vestiges to be traded for Ren.\")"
+        },
+        {
+            "Name": "NPC_Fisher_TooltipOnly",
+            "Description": "NSLOCTEXT(\"D_CharacterFlags\", \"NPC_Fisher_TooltipOnly-Description\", \"Unlocks the Fisheries Officer in this Open World region, allowing Fish to be traded for Ren.\")"
+        },
+        {
+            "Name": "Sandwyrm_Queen_TooltipOnly",
+            "Description": "NSLOCTEXT(\"D_CharacterFlags\", \"Sandwyrm_Queen_TooltipOnly-Description\", \"Unlocks the Sandwyrm Queen. A new World Boss who Appears on Elysium.\")"
+        }
+    ]
+}

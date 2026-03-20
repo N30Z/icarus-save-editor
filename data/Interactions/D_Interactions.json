@@ -1,0 +1,913 @@
+{
+    "RowStruct": "/Script/Icarus.InteractData",
+    "Defaults": {
+        "Behaviour": "None",
+        "AuthorityType": "ServerOnly",
+        "InteractCooldown": 0.5,
+        "InteractionText": "",
+        "InteractStaminaCost": {
+            "RowName": "None",
+            "DataTableName": "D_StaminaActionCosts"
+        },
+        "bShowInteractionWhenUnavailable": false,
+        "bCanPerformInteractionWhileSeated": false
+    },
+    "Rows": [
+        {
+            "Name": "Pickup_Item",
+            "Behaviour": "/Game/BP/Behaviours/Interactable/BP_Interactable_Pickup_Item.BP_Interactable_Pickup_Item_C",
+            "InteractionText": "NSLOCTEXT(\"D_Interactions\", \"Pickup_Item-InteractionText\", \"Pickup\")"
+        },
+        {
+            "Name": "Interact_WorldObject",
+            "Behaviour": "/Game/BP/Behaviours/Interactable/BP_Interactable_WorldObject.BP_Interactable_WorldObject_C",
+            "InteractionText": "NSLOCTEXT(\"D_Interactions\", \"Interact_WorldObject-InteractionText\", \"Interact\")"
+        },
+        {
+            "Name": "Loot_WorldObject",
+            "Behaviour": "/Game/BP/Behaviours/Interactable/BP_Interactable_WorldObject.BP_Interactable_WorldObject_C",
+            "InteractionText": "NSLOCTEXT(\"D_Interactions\", \"Loot_WorldObject-InteractionText\", \"Loot\")"
+        },
+        {
+            "Name": "Interact_Deployable",
+            "Behaviour": "/Game/BP/Behaviours/Interactable/BP_Interactable_Interact_Deployable.BP_Interactable_Interact_Deployable_C",
+            "InteractionText": "NSLOCTEXT(\"D_Interactions\", \"Interact_Deployable-InteractionText\", \"Interact\")"
+        },
+        {
+            "Name": "Pickup_Deployable",
+            "Behaviour": "/Game/BP/Behaviours/Interactable/BP_Interactable_Pickup_Deployable.BP_Interactable_Pickup_Deployable_C",
+            "InteractionText": "NSLOCTEXT(\"D_Interactions\", \"Pickup_Deployable-InteractionText\", \"Pickup\")"
+        },
+        {
+            "Name": "Interact_RocketPart",
+            "Behaviour": "/Game/BP/Behaviours/Interactable/BP_Interactable_Interact_RocketPart.BP_Interactable_Interact_RocketPart_C",
+            "InteractionText": "NSLOCTEXT(\"D_Interactions\", \"Interact_RocketPart-InteractionText\", \"Interact\")"
+        },
+        {
+            "Name": "Loot_Grave",
+            "Behaviour": "/Game/BP/Behaviours/Interactable/BP_Interactable_Loot_Grave.BP_Interactable_Loot_Grave_C",
+            "InteractionText": "NSLOCTEXT(\"D_Interactions\", \"Loot_Grave-InteractionText\", \"Loot\")"
+        },
+        {
+            "Name": "Revive_Grave",
+            "Behaviour": "/Game/BP/Behaviours/Interactable/BP_Interactable_Revive_Grave.BP_Interactable_Revive_Grave_C",
+            "InteractionText": "NSLOCTEXT(\"D_Interactions\", \"Revive_Grave-InteractionText\", \"Revive\")"
+        },
+        {
+            "Name": "Enter_Seat",
+            "Behaviour": "/Game/BP/Behaviours/Interactable/BP_Interactable_Enter_Seat.BP_Interactable_Enter_Seat_C",
+            "InteractionText": "NSLOCTEXT(\"D_Interactions\", \"Enter_Seat-InteractionText\", \"Enter\")"
+        },
+        {
+            "Name": "Harvest_Resource",
+            "Behaviour": "/Game/BP/Behaviours/Interactable/BP_Interactable_Harvest_Resource.BP_Interactable_Harvest_Resource_C",
+            "AuthorityType": "Both",
+            "InteractionText": "NSLOCTEXT(\"D_Interactions\", \"Harvest_Resource-InteractionText\", \"Harvest\")"
+        },
+        {
+            "Name": "Pickup_Item_FLOD",
+            "Behaviour": "/Game/BP/Behaviours/Interactable/BP_Interactable_Pickup_Item_FLOD.BP_Interactable_Pickup_Item_FLOD_C",
+            "InteractionText": "NSLOCTEXT(\"D_Interactions\", \"Pickup_Item_FLOD-InteractionText\", \"Pickup\")"
+        },
+        {
+            "Name": "Interact_ShipEditorTerminal",
+            "Behaviour": "/Game/BP/Behaviours/Interactable/BP_Interactable_Interact_ShipEditorTerminal.BP_Interactable_Interact_ShipEditorTerminal_C",
+            "AuthorityType": "ClientOnly",
+            "InteractionText": "NSLOCTEXT(\"D_Interactions\", \"Interact_ShipEditorTerminal-InteractionText\", \"Interact\")"
+        },
+        {
+            "Name": "Interact_DropTerminal",
+            "Behaviour": "/Game/BP/Behaviours/Interactable/BP_Interactable_Interact_DropTerminal.BP_Interactable_Interact_DropTerminal_C",
+            "AuthorityType": "ClientOnly",
+            "InteractionText": "NSLOCTEXT(\"D_Interactions\", \"Interact_DropTerminal-InteractionText\", \"Interact\")"
+        },
+        {
+            "Name": "Interact_Dropship",
+            "Behaviour": "/Game/BP/Behaviours/Interactable/BP_Interactable_DropShip.BP_Interactable_DropShip_C",
+            "InteractionText": "NSLOCTEXT(\"D_Interactions\", \"Interact_Dropship-InteractionText\", \"Interact\")"
+        },
+        {
+            "Name": "Interact_WaterSource",
+            "Behaviour": "/Game/BP/Behaviours/Interactable/BP_Interactable_Drink_WaterSource.BP_Interactable_Drink_WaterSource_C",
+            "AuthorityType": "ClientOnly",
+            "InteractionText": "NSLOCTEXT(\"D_Interactions\", \"Interact_WaterSource-InteractionText\", \"Drink\")"
+        },
+        {
+            "Name": "Interact_WaterSource_Refill",
+            "Behaviour": "/Game/BP/Behaviours/Interactable/BP_Interactable_Refill_WaterSource.BP_Interactable_Refill_WaterSource_C",
+            "AuthorityType": "ClientOnly",
+            "InteractionText": "NSLOCTEXT(\"D_Interactions\", \"Interact_WaterSource_Refill-InteractionText\", \"Fill Container\")"
+        },
+        {
+            "Name": "Interact_HuntingClue",
+            "Behaviour": "/Game/BP/Behaviours/Interactable/BP_Interactable_HuntingClue.BP_Interactable_HuntingClue_C",
+            "InteractionText": "NSLOCTEXT(\"D_Interactions\", \"Interact_HuntingClue-InteractionText\", \"Examine\")"
+        },
+        {
+            "Name": "Detach_Deployable",
+            "Behaviour": "/Game/BP/Behaviours/Interactable/BP_Interactable_DetachDeploy_LargeDeployable.BP_Interactable_DetachDeploy_LargeDeployable_C",
+            "InteractionText": "NSLOCTEXT(\"D_Interactions\", \"Detach_Deployable-InteractionText\", \"Detach/Deploy\")"
+        },
+        {
+            "Name": "Interact_ButtonPress",
+            "Behaviour": "/Game/BP/Behaviours/Interactable/BP_Interactable_ButtonTrigger.BP_Interactable_ButtonTrigger_C"
+        },
+        {
+            "Name": "Interact_ButtonHold",
+            "Behaviour": "/Game/BP/Behaviours/Interactable/BP_Interactable_ButtonTrigger.BP_Interactable_ButtonTrigger_C",
+            "InteractionText": "NSLOCTEXT(\"D_Interactions\", \"Interact_ButtonHold-InteractionText\", \"Hold\")"
+        },
+        {
+            "Name": "MetaShop",
+            "Behaviour": "/Game/BP/Behaviours/Interactable/BP_Interactable_MetaShop.BP_Interactable_MetaShop_C",
+            "AuthorityType": "ClientOnly",
+            "InteractionText": "NSLOCTEXT(\"D_Interactions\", \"MetaShop-InteractionText\", \"Interact\")"
+        },
+        {
+            "Name": "OpenClose_Door",
+            "Behaviour": "/Game/BP/Behaviours/Interactable/BP_Interactable_OpenClose_Door.BP_Interactable_OpenClose_Door_C",
+            "InteractionText": "NSLOCTEXT(\"D_Interactions\", \"OpenClose_Door-InteractionText\", \"Open/Close\")",
+            "bCanPerformInteractionWhileSeated": true
+        },
+        {
+            "Name": "Harvest_Corpse",
+            "Behaviour": "/Game/BP/Behaviours/Interactable/BP_Interactable_Harvest_Animal.BP_Interactable_Harvest_Animal_C",
+            "InteractionText": "NSLOCTEXT(\"D_Interactions\", \"Harvest_Corpse-InteractionText\", \"Skin\")"
+        },
+        {
+            "Name": "Loot_Skinned_Animal",
+            "Behaviour": "/Game/BP/Behaviours/Interactable/BP_Interactable_Loot_Skinned_Animal.BP_Interactable_Loot_Skinned_Animal_C",
+            "InteractionText": "NSLOCTEXT(\"D_Interactions\", \"Loot_Skinned_Animal-InteractionText\", \"Harvest\")"
+        },
+        {
+            "Name": "Pickup_Corpse",
+            "Behaviour": "/Game/BP/Behaviours/Interactable/BP_Interactable_Pickup_Corpse.BP_Interactable_Pickup_Corpse_C",
+            "InteractionText": "NSLOCTEXT(\"D_Interactions\", \"Pickup_Corpse-InteractionText\", \"Carry\")"
+        },
+        {
+            "Name": "OpenClose_Window",
+            "Behaviour": "/Game/BP/Behaviours/Interactable/BP_Interactable_OpenClose_Window.BP_Interactable_OpenClose_Window_C",
+            "InteractionText": "NSLOCTEXT(\"D_Interactions\", \"OpenClose_Window-InteractionText\", \"Open/Close\")"
+        },
+        {
+            "Name": "Pickup_Fish",
+            "Behaviour": "/Game/BP/Behaviours/Interactable/BP_Interactable_Pickup_Fish.BP_Interactable_Pickup_Fish_C",
+            "InteractionText": "NSLOCTEXT(\"D_Interactions\", \"Pickup_Fish-InteractionText\", \"Pickup\")"
+        },
+        {
+            "Name": "Slotable_Place",
+            "Behaviour": "/Game/BP/Behaviours/Interactable/BP_Interactable_Slotable_place.BP_Interactable_Slotable_place_C",
+            "InteractionText": "NSLOCTEXT(\"D_Interactions\", \"Slotable_Place-InteractionText\", \"Place\")"
+        },
+        {
+            "Name": "Harvest_Tree_Primitive",
+            "Behaviour": "/Game/BP/Behaviours/Interactable/BP_Interactable_Harvest_Tree_Primitive.BP_Interactable_Harvest_Tree_Primitive_C",
+            "InteractionText": "NSLOCTEXT(\"D_Interactions\", \"Harvest_Tree_Primitive-InteractionText\", \"Gather Wood\")"
+        },
+        {
+            "Name": "Radial_Deployable",
+            "Behaviour": "/Game/BP/Behaviours/Interactable/BP_Interactable_RadialMenu_Deployable.BP_Interactable_RadialMenu_Deployable_C",
+            "InteractionText": "NSLOCTEXT(\"D_Interactions\", \"Radial_Deployable-InteractionText\", \"Open Radial Menu\")"
+        },
+        {
+            "Name": "Rain_Reservoir_Container",
+            "Behaviour": "/Game/BP/Behaviours/Interactable/BP_Interactable_Rain_Reservior.BP_Interactable_Rain_Reservior_C",
+            "InteractionText": "NSLOCTEXT(\"D_Interactions\", \"Rain_Reservoir_Container-InteractionText\", \"Fill Container\")"
+        },
+        {
+            "Name": "Rain_Reservoir_Drink",
+            "Behaviour": "/Game/BP/Behaviours/Interactable/BP_Interactable_Rain_Reservior_Drink.BP_Interactable_Rain_Reservior_Drink_C",
+            "InteractionText": "NSLOCTEXT(\"D_Interactions\", \"Rain_Reservoir_Drink-InteractionText\", \"Drink From Reservoir\")"
+        },
+        {
+            "Name": "SpaceInventory",
+            "Behaviour": "/Game/BP/Behaviours/Interactable/BP_Interactable_SpaceInventory.BP_Interactable_SpaceInventory_C",
+            "AuthorityType": "ClientOnly",
+            "InteractionText": "NSLOCTEXT(\"D_Interactions\", \"SpaceInventory-InteractionText\", \"Interact\")"
+        },
+        {
+            "Name": "ReadyUp",
+            "Behaviour": "/Game/BP/Behaviours/Interactable/BP_Interactable_ReadyUp.BP_Interactable_ReadyUp_C",
+            "AuthorityType": "ClientOnly",
+            "InteractionText": "NSLOCTEXT(\"D_Interactions\", \"ReadyUp-InteractionText\", \"Interact\")"
+        },
+        {
+            "Name": "Space_Loadout",
+            "Behaviour": "/Game/BP/Behaviours/Interactable/BP_Interactable_Interact_Loadout.BP_Interactable_Interact_Loadout_C",
+            "AuthorityType": "ClientOnly",
+            "InteractionText": "NSLOCTEXT(\"D_Interactions\", \"Space_Loadout-InteractionText\", \"Interact\")"
+        },
+        {
+            "Name": "Interact_TorchUI",
+            "Behaviour": "/Game/BP/Behaviours/Interactable/BP_Interactable_Interact_TorchUI.BP_Interactable_Interact_TorchUI_C",
+            "InteractionText": "NSLOCTEXT(\"D_Interactions\", \"Interact_TorchUI-InteractionText\", \"Access Fuel\")"
+        },
+        {
+            "Name": "Interact_Torch_Toggle",
+            "Behaviour": "/Game/BP/Behaviours/Interactable/BP_Interactable_Interact_ToggleGenerator.BP_Interactable_Interact_ToggleGenerator_C",
+            "InteractionText": "NSLOCTEXT(\"D_Interactions\", \"Interact_Torch_Toggle-InteractionText\", \"Toggle Torch\")"
+        },
+        {
+            "Name": "Basic_Oxite_Dissolver_TakeOxygen",
+            "Behaviour": "/Game/BP/Behaviours/Interactable/BP_Interactable_Interact_Basic_Oxite_Dissolver.BP_Interactable_Interact_Basic_Oxite_Dissolver_C",
+            "InteractionText": "NSLOCTEXT(\"D_Interactions\", \"Basic_Oxite_Dissolver_TakeOxygen-InteractionText\", \"Consume Oxygen\")"
+        },
+        {
+            "Name": "Basic_Oxite_Dissolver_AddOxite",
+            "Behaviour": "/Game/BP/Behaviours/Interactable/BP_Interactable_Vacuum_Oxite.BP_Interactable_Vacuum_Oxite_C",
+            "InteractCooldown": 0.10000000149011612,
+            "InteractionText": "NSLOCTEXT(\"D_Interactions\", \"Basic_Oxite_Dissolver_AddOxite-InteractionText\", \"Add 1 Oxite\")"
+        },
+        {
+            "Name": "Bed_SetSpawn",
+            "Behaviour": "/Game/BP/Behaviours/Interactable/BP_Interactable_Interact_BedSetSpawn.BP_Interactable_Interact_BedSetSpawn_C",
+            "InteractCooldown": 0,
+            "InteractionText": "NSLOCTEXT(\"D_Interactions\", \"Bed_SetSpawn-InteractionText\", \"Set Spawn Point\")"
+        },
+        {
+            "Name": "Bed_Sleep",
+            "Behaviour": "/Game/BP/Behaviours/Interactable/BP_Interactable_Interact_BedSleep.BP_Interactable_Interact_BedSleep_C",
+            "InteractCooldown": 0,
+            "InteractionText": "NSLOCTEXT(\"D_Interactions\", \"Bed_Sleep-InteractionText\", \"Enter Bed\")"
+        },
+        {
+            "Name": "Vacuum_Wood",
+            "Behaviour": "/Game/BP/Behaviours/Interactable/BP_Interactable_Vacuum_Wood.BP_Interactable_Vacuum_Wood_C",
+            "InteractionText": "NSLOCTEXT(\"D_Interactions\", \"Vacuum_Wood-InteractionText\", \"Add Wood\")"
+        },
+        {
+            "Name": "No_Interaction",
+            "Behaviour": "/Game/BP/Behaviours/Interactable/BP_Interactable_NoInteraction.BP_Interactable_NoInteraction_C",
+            "InteractCooldown": 0.10000000149011612,
+            "InteractionText": "NSLOCTEXT(\"D_Interactions\", \"No_Interaction-InteractionText\", \"NO INTERACTION\")"
+        },
+        {
+            "Name": "Interact_Light_Fire",
+            "Behaviour": "/Game/BP/Behaviours/Interactable/BP_Interactable_Interact_ToggleGenerator.BP_Interactable_Interact_ToggleGenerator_C",
+            "InteractionText": "NSLOCTEXT(\"D_Interactions\", \"Interact_Light_Fire-InteractionText\", \"Toggle Flame\")"
+        },
+        {
+            "Name": "Add_Sulfur_Fuel",
+            "Behaviour": "/Game/BP/Behaviours/Interactable/BP_Interactable_Vacuum_Sulfur_Fuel.BP_Interactable_Vacuum_Sulfur_Fuel_C",
+            "InteractCooldown": 0.10000000149011612,
+            "InteractionText": "NSLOCTEXT(\"D_Interactions\", \"Add_Sulfur_Fuel-InteractionText\", \"Add 1 Sulfur\")"
+        },
+        {
+            "Name": "Add_Oxite_Processor",
+            "Behaviour": "/Game/BP/Behaviours/Interactable/BP_Interactable_Vacuum_Oxite_Processor.BP_Interactable_Vacuum_Oxite_Processor_C",
+            "InteractCooldown": 0.10000000149011612,
+            "InteractionText": "NSLOCTEXT(\"D_Interactions\", \"Add_Oxite_Processor-InteractionText\", \"Add 1 Oxite\")"
+        },
+        {
+            "Name": "Faction_Laser_Interact",
+            "Behaviour": "/Game/BP/Behaviours/Interactable/BP_Interactable_Interact_Activate_Laser.BP_Interactable_Interact_Activate_Laser_C",
+            "InteractionText": "NSLOCTEXT(\"D_Interactions\", \"Faction_Laser_Interact-InteractionText\", \"Toggle Laser\")"
+        },
+        {
+            "Name": "Interact_GeneratorUI",
+            "Behaviour": "/Game/BP/Behaviours/Interactable/BP_Interactable_Interact_GeneratorUI.BP_Interactable_Interact_GeneratorUI_C",
+            "InteractionText": "NSLOCTEXT(\"D_Interactions\", \"Interact_GeneratorUI-InteractionText\", \"Access\")"
+        },
+        {
+            "Name": "Interact_Strange_Flora",
+            "Behaviour": "/Game/BP/Behaviours/Interactable/BP_Interactable_WorldObject.BP_Interactable_WorldObject_C",
+            "InteractionText": "NSLOCTEXT(\"D_Interactions\", \"Interact_Strange_Flora-InteractionText\", \"Try and Touch\")"
+        },
+        {
+            "Name": "Interact_Rock_Formation",
+            "Behaviour": "/Game/BP/Behaviours/Interactable/BP_Interactable_WorldObject.BP_Interactable_WorldObject_C",
+            "InteractionText": "NSLOCTEXT(\"D_Interactions\", \"Interact_Rock_Formation-InteractionText\", \"Try and Touch\")"
+        },
+        {
+            "Name": "Faction_Prototype_Laser_Interact",
+            "Behaviour": "/Game/BP/Behaviours/Interactable/BP_Interactable_Interact_Activate_Prototype_Laser.BP_Interactable_Interact_Activate_Prototype_Laser_C",
+            "InteractionText": "NSLOCTEXT(\"D_Interactions\", \"Faction_Prototype_Laser_Interact-InteractionText\", \"Toggle Laser\")"
+        },
+        {
+            "Name": "Enter_Seat_Mount",
+            "Behaviour": "/Game/BP/Behaviours/Interactable/BP_Interactable_Enter_Seat_Mount.BP_Interactable_Enter_Seat_Mount_C",
+            "AuthorityType": "Both",
+            "InteractionText": "NSLOCTEXT(\"D_Interactions\", \"Enter_Seat_Mount-InteractionText\", \"Ride Mount\")"
+        },
+        {
+            "Name": "Open_Mount_Inventory",
+            "Behaviour": "/Game/BP/Behaviours/Interactable/BP_Interactable_OpenMountInventory.BP_Interactable_OpenMountInventory_C",
+            "AuthorityType": "Both",
+            "InteractionText": "NSLOCTEXT(\"D_Interactions\", \"Open_Mount_Inventory-InteractionText\", \"Examine\")"
+        },
+        {
+            "Name": "Toggle_Vapour_Condenser",
+            "Behaviour": "/Game/BP/Behaviours/Interactable/BP_Interactable_Interact_Deployable.BP_Interactable_Interact_Deployable_C",
+            "InteractionText": "NSLOCTEXT(\"D_Interactions\", \"Toggle_Vapour_Condenser-InteractionText\", \"Toggle Active\")"
+        },
+        {
+            "Name": "Access_Vapour_Condenser_Inventory",
+            "Behaviour": "/Game/BP/Behaviours/Interactable/BP_Interactable_Interact_Vapour_Condenser.BP_Interactable_Interact_Vapour_Condenser_C",
+            "InteractionText": "NSLOCTEXT(\"D_Interactions\", \"Access_Vapour_Condenser_Inventory-InteractionText\", \"Access\")"
+        },
+        {
+            "Name": "Mission_STYX_D_Research2_Bomb",
+            "Behaviour": "/Game/BP/Behaviours/Interactable/BP_Interactable_Mission_STYX_D_Research2_Vacuum_Abyssal_Oxite.BP_Interactable_Mission_STYX_D_Research2_Vacuum_Abyssal_Oxite_C",
+            "InteractCooldown": 0.10000000149011612,
+            "InteractionText": "NSLOCTEXT(\"D_Interactions\", \"Mission_STYX_D_Research2_Bomb-InteractionText\", \"Add 1 Abyssal Oxite\")"
+        },
+        {
+            "Name": "Update_Mount_Behaviour",
+            "Behaviour": "/Game/BP/Behaviours/Interactable/BP_Interactable_MountBehaviour.BP_Interactable_MountBehaviour_C",
+            "AuthorityType": "ClientOnly",
+            "InteractionText": "NSLOCTEXT(\"D_Interactions\", \"Update_Mount_Behaviour-InteractionText\", \"Set Behavior\")"
+        },
+        {
+            "Name": "Alter_Item",
+            "Behaviour": "/Game/BP/Behaviours/Interactable/BP_Interactable_AlterItem.BP_Interactable_AlterItem_C",
+            "InteractionText": "NSLOCTEXT(\"D_Interactions\", \"Alter_Item-InteractionText\", \"Alter Item\")"
+        },
+        {
+            "Name": "Craft_Attachment",
+            "Behaviour": "/Game/BP/Behaviours/Interactable/BP_Interactable_CraftAttachment.BP_Interactable_CraftAttachment_C",
+            "InteractionText": "NSLOCTEXT(\"D_Interactions\", \"Craft_Attachment-InteractionText\", \"Craft Attachment\")"
+        },
+        {
+            "Name": "Interact_TargetRange",
+            "Behaviour": "/Game/BP/Behaviours/Interactable/BP_Interactable_TargetRange_Start.BP_Interactable_TargetRange_Start_C",
+            "InteractionText": "NSLOCTEXT(\"D_Interactions\", \"Interact_TargetRange-InteractionText\", \"Interact\")"
+        },
+        {
+            "Name": "Lead_Creature",
+            "Behaviour": "/Game/BP/Behaviours/Interactable/BP_Interactable_Lead_Creature.BP_Interactable_Lead_Creature_C",
+            "InteractionText": "NSLOCTEXT(\"D_Interactions\", \"Lead_Creature-InteractionText\", \"Lead Creature\")"
+        },
+        {
+            "Name": "Stop_Leading_Creature",
+            "Behaviour": "/Game/BP/Behaviours/Interactable/BP_Interactable_Stop_Leading_Creature.BP_Interactable_Stop_Leading_Creature_C",
+            "InteractionText": "NSLOCTEXT(\"D_Interactions\", \"Stop_Leading_Creature-InteractionText\", \"Stop Leading\")"
+        },
+        {
+            "Name": "Mount_Claim_Ownership",
+            "Behaviour": "/Game/BP/Behaviours/Interactable/BP_Interactable_Claim_Tameable.BP_Interactable_Claim_Tameable_C",
+            "AuthorityType": "Both",
+            "InteractionText": "NSLOCTEXT(\"D_Interactions\", \"Mount_Claim_Ownership-InteractionText\", \"Claim Ownership\")"
+        },
+        {
+            "Name": "Cancel_Taming",
+            "Behaviour": "/Game/BP/Behaviours/Interactable/BP_Interactable_Cancel_Taming.BP_Interactable_Cancel_Taming_C",
+            "InteractionText": "NSLOCTEXT(\"D_Interactions\", \"Cancel_Taming-InteractionText\", \"Stop Taming\")"
+        },
+        {
+            "Name": "Fill_Water_Trough",
+            "Behaviour": "/Game/BP/Behaviours/Interactable/BP_Interactable_Fill_Water_Trough.BP_Interactable_Fill_Water_Trough_C",
+            "InteractionText": "NSLOCTEXT(\"D_Interactions\", \"Fill_Water_Trough-InteractionText\", \"Fill Trough\")"
+        },
+        {
+            "Name": "Loot_Dead_Mount",
+            "Behaviour": "/Game/BP/Behaviours/Interactable/BP_Interactable_Loot_Dead_Mount.BP_Interactable_Loot_Dead_Mount_C",
+            "InteractionText": "NSLOCTEXT(\"D_Interactions\", \"Loot_Dead_Mount-InteractionText\", \"Loot\")"
+        },
+        {
+            "Name": "Interact_Sink_Inventory",
+            "Behaviour": "/Game/BP/Behaviours/Interactable/BP_Interactable_Interact_Deployable.BP_Interactable_Interact_Deployable_C",
+            "InteractionText": "NSLOCTEXT(\"D_Interactions\", \"Interact_Sink_Inventory-InteractionText\", \"Access Inventory\")"
+        },
+        {
+            "Name": "Interact_Sink",
+            "Behaviour": "/Game/BP/Behaviours/Interactable/BP_Interactable_Sink.BP_Interactable_Sink_C",
+            "InteractionText": "NSLOCTEXT(\"D_Interactions\", \"Interact_Sink-InteractionText\", \"Wash\")"
+        },
+        {
+            "Name": "Fillet_Fish",
+            "Behaviour": "/Game/BP/Behaviours/Interactable/BP_Interactable_Fillet_Fish.BP_Interactable_Fillet_Fish_C",
+            "InteractionText": "NSLOCTEXT(\"D_Interactions\", \"Fillet_Fish-InteractionText\", \"Fillet Fish\")"
+        },
+        {
+            "Name": "Craft_Fishing",
+            "Behaviour": "/Game/BP/Behaviours/Interactable/BP_Interactable_Craft_Fishing.BP_Interactable_Craft_Fishing_C",
+            "InteractionText": "NSLOCTEXT(\"D_Interactions\", \"Craft_Fishing-InteractionText\", \"Craft Rod / Lures\")"
+        },
+        {
+            "Name": "Interact_Investigate",
+            "Behaviour": "/Game/BP/Behaviours/Interactable/BP_Interactable_WorldObject.BP_Interactable_WorldObject_C",
+            "InteractionText": "NSLOCTEXT(\"D_Interactions\", \"Interact_Investigate-InteractionText\", \"Investigate\")"
+        },
+        {
+            "Name": "Interact_Examine",
+            "Behaviour": "/Game/BP/Behaviours/Interactable/BP_Interactable_WorldObject.BP_Interactable_WorldObject_C",
+            "InteractionText": "NSLOCTEXT(\"D_Interactions\", \"Interact_Examine-InteractionText\", \"Examine\")"
+        },
+        {
+            "Name": "Interact_SpawnBlocker_T3_UI",
+            "Behaviour": "/Game/BP/Behaviours/Interactable/BP_Interactable_Interact_SpawnBlockerT3UI.BP_Interactable_Interact_SpawnBlockerT3UI_C",
+            "InteractionText": "NSLOCTEXT(\"D_Interactions\", \"Interact_SpawnBlocker_T3_UI-InteractionText\", \"Access Fuel\")"
+        },
+        {
+            "Name": "Interact_SpawnBlocker_T3_Toggle",
+            "Behaviour": "/Game/BP/Behaviours/Interactable/BP_Interactable_Interact_ToggleGenerator.BP_Interactable_Interact_ToggleGenerator_C",
+            "InteractionText": "NSLOCTEXT(\"D_Interactions\", \"Interact_SpawnBlocker_T3_Toggle-InteractionText\", \"Toggle\")"
+        },
+        {
+            "Name": "Pickup_Landmine",
+            "Behaviour": "/Game/BP/Behaviours/Interactable/BP_Interactable_Pickup_Deployable.BP_Interactable_Pickup_Deployable_C",
+            "InteractionText": "NSLOCTEXT(\"D_Interactions\", \"Pickup_Landmine-InteractionText\", \"Disarm And Pickup\")"
+        },
+        {
+            "Name": "Dummy_Move",
+            "Behaviour": "/Game/BP/Behaviours/Interactable/BP_Interactable_DummyMove.BP_Interactable_DummyMove_C"
+        },
+        {
+            "Name": "Interact_Crop_Plot_Plant",
+            "Behaviour": "/Game/BP/Behaviours/Interactable/BP_Interactable_Plant_CropPlot.BP_Interactable_Plant_CropPlot_C",
+            "InteractionText": "NSLOCTEXT(\"D_Interactions\", \"Interact_Crop_Plot_Plant-InteractionText\", \"Plant Seed\")"
+        },
+        {
+            "Name": "Interact_Crop_Plot_Harvest",
+            "Behaviour": "/Game/BP/Behaviours/Interactable/BP_Interactable_Harvest_Plant_CropPlot.BP_Interactable_Harvest_Plant_CropPlot_C",
+            "InteractionText": "NSLOCTEXT(\"D_Interactions\", \"Interact_Crop_Plot_Harvest-InteractionText\", \"Harvest\")"
+        },
+        {
+            "Name": "Interact_Crop_Plot_Fertalize",
+            "Behaviour": "/Game/BP/Behaviours/Interactable/BP_Interactable_Fertalize_CropPlot.BP_Interactable_Fertalize_CropPlot_C",
+            "InteractionText": "NSLOCTEXT(\"D_Interactions\", \"Interact_Crop_Plot_Fertalize-InteractionText\", \"Fertilize\")"
+        },
+        {
+            "Name": "Interact_Crop_Plot_Remove_Seed",
+            "Behaviour": "/Game/BP/Behaviours/Interactable/BP_Interactable_Remove_Plant.BP_Interactable_Remove_Plant_C",
+            "InteractionText": "NSLOCTEXT(\"D_Interactions\", \"Interact_Crop_Plot_Remove_Seed-InteractionText\", \"Remove Plant\")"
+        },
+        {
+            "Name": "Interact_Mound_Destroy",
+            "Behaviour": "/Game/BP/Behaviours/Interactable/BP_Interactable_Destory_CropMound.BP_Interactable_Destory_CropMound_C",
+            "InteractionText": "NSLOCTEXT(\"D_Interactions\", \"Interact_Mound_Destroy-InteractionText\", \"Remove\")"
+        },
+        {
+            "Name": "Interact_Crop_Plot_Inspect",
+            "Behaviour": "/Game/BP/Behaviours/Interactable/BP_Interactable_Interact_CropPlot.BP_Interactable_Interact_CropPlot_C",
+            "InteractionText": "NSLOCTEXT(\"D_Interactions\", \"Interact_Crop_Plot_Inspect-InteractionText\", \"Inspect\")"
+        },
+        {
+            "Name": "Water_Purifier_Container",
+            "Behaviour": "/Game/BP/Behaviours/Interactable/BP_Interactable_Water_Purifier_Container.BP_Interactable_Water_Purifier_Container_C",
+            "InteractionText": "NSLOCTEXT(\"D_Interactions\", \"Water_Purifier_Container-InteractionText\", \"Fill Container\")"
+        },
+        {
+            "Name": "Water_Purifier_Drink",
+            "Behaviour": "/Game/BP/Behaviours/Interactable/BP_Interactable_Water_Purifier_Drink.BP_Interactable_Water_Purifier_Drink_C",
+            "InteractionText": "NSLOCTEXT(\"D_Interactions\", \"Water_Purifier_Drink-InteractionText\", \"Drink From Purifier\")"
+        },
+        {
+            "Name": "Interact_Release_Animal",
+            "Behaviour": "/Game/BP/Behaviours/Interactable/BP_Interactable_Interact_Trap_Release_Creature.BP_Interactable_Interact_Trap_Release_Creature_C",
+            "InteractionText": "NSLOCTEXT(\"D_Interactions\", \"Interact_Release_Animal-InteractionText\", \"Release Creature\")"
+        },
+        {
+            "Name": "Interact_Toggle_Trap",
+            "Behaviour": "/Game/BP/Behaviours/Interactable/BP_Interactable_Interact_Trap_Toggle.BP_Interactable_Interact_Trap_Toggle_C",
+            "InteractionText": "NSLOCTEXT(\"D_Interactions\", \"Interact_Toggle_Trap-InteractionText\", \"Toggle Trap\")"
+        },
+        {
+            "Name": "Pickup_Item_OwnerOnly",
+            "Behaviour": "/Game/BP/Behaviours/Interactable/BP_Interactable_Pickup_Item_OwnerOnly.BP_Interactable_Pickup_Item_OwnerOnly_C",
+            "InteractionText": "NSLOCTEXT(\"D_Interactions\", \"Pickup_Item_OwnerOnly-InteractionText\", \"Pickup\")"
+        },
+        {
+            "Name": "Pet_Tamed_Animal",
+            "Behaviour": "/Game/BP/Behaviours/Interactable/BP_Interactable_Pet_Tame.BP_Interactable_Pet_Tame_C",
+            "AuthorityType": "Both",
+            "InteractionText": "NSLOCTEXT(\"D_Interactions\", \"Pet_Tamed_Animal-InteractionText\", \"Pet\")"
+        },
+        {
+            "Name": "Pickup_LandingPad",
+            "Behaviour": "/Game/BP/Behaviours/Interactable/BP_Interactable_Pickup_Deployable_LandingPad.BP_Interactable_Pickup_Deployable_LandingPad_C",
+            "InteractCooldown": 1,
+            "InteractionText": "NSLOCTEXT(\"D_Interactions\", \"Pickup_LandingPad-InteractionText\", \"Pickup\")"
+        },
+        {
+            "Name": "Pickup_LandingPad_Cargo",
+            "Behaviour": "/Game/BP/Behaviours/Interactable/BP_Interactable_Pickup_Deployable_LandingPad_Cargo.BP_Interactable_Pickup_Deployable_LandingPad_Cargo_C",
+            "InteractCooldown": 1,
+            "InteractionText": "NSLOCTEXT(\"D_Interactions\", \"Pickup_LandingPad_Cargo-InteractionText\", \"Pickup\")"
+        },
+        {
+            "Name": "Link_Beacon",
+            "Behaviour": "/Game/BP/Behaviours/Interactable/BP_Interactable_LinkBeacon.BP_Interactable_LinkBeacon_C",
+            "InteractionText": "NSLOCTEXT(\"D_Interactions\", \"Link_Beacon-InteractionText\", \"Link Beacon\")"
+        },
+        {
+            "Name": "Unlink_Beacon",
+            "Behaviour": "/Game/BP/Behaviours/Interactable/BP_Interactable_UnlinkBeacon.BP_Interactable_UnlinkBeacon_C",
+            "InteractionText": "NSLOCTEXT(\"D_Interactions\", \"Unlink_Beacon-InteractionText\", \"Unlink Beacon\")"
+        },
+        {
+            "Name": "Switch_Flow_Meter",
+            "Behaviour": "/Game/BP/Behaviours/Interactable/BP_Interactable_Interact_FlowMeter.BP_Interactable_Interact_FlowMeter_C",
+            "InteractionText": "NSLOCTEXT(\"D_Interactions\", \"Switch_Flow_Meter-InteractionText\", \"Switch Network Type\")"
+        },
+        {
+            "Name": "Interact_Flow_Meter",
+            "Behaviour": "/Game/BP/Behaviours/Interactable/BP_Interactable_Interact_Deployable.BP_Interactable_Interact_Deployable_C",
+            "InteractionText": "NSLOCTEXT(\"D_Interactions\", \"Interact_Flow_Meter-InteractionText\", \"View Detailed Information\")"
+        },
+        {
+            "Name": "Snare_Trap_Release",
+            "Behaviour": "/Game/BP/Behaviours/Interactable/BP_Interactable_SnareTrapRelease.BP_Interactable_SnareTrapRelease_C",
+            "InteractionText": "NSLOCTEXT(\"D_Interactions\", \"Snare_Trap_Release-InteractionText\", \"Release\")"
+        },
+        {
+            "Name": "Hitching_Post_Release",
+            "Behaviour": "/Game/BP/Behaviours/Interactable/BP_Interactable_HitchingPostRelease.BP_Interactable_HitchingPostRelease_C",
+            "InteractionText": "NSLOCTEXT(\"D_Interactions\", \"Hitching_Post_Release-InteractionText\", \"Release\")"
+        },
+        {
+            "Name": "Snare_Trap_Bait",
+            "Behaviour": "/Game/BP/Behaviours/Interactable/BP_Interactable_BaitSnareTrap.BP_Interactable_BaitSnareTrap_C",
+            "InteractionText": "NSLOCTEXT(\"D_Interactions\", \"Snare_Trap_Bait-InteractionText\", \"Place Bait\")"
+        },
+        {
+            "Name": "Hitching_Post_Attach",
+            "Behaviour": "/Game/BP/Behaviours/Interactable/BP_Interactable_AttachToPost.BP_Interactable_AttachToPost_C",
+            "InteractionText": "NSLOCTEXT(\"D_Interactions\", \"Hitching_Post_Attach-InteractionText\", \"Attach\")"
+        },
+        {
+            "Name": "Interact_Toggle_Device_On",
+            "Behaviour": "/Game/BP/Behaviours/Interactable/BP_Interactable_Interact_Toggle_Device_On.BP_Interactable_Interact_Toggle_Device_On_C",
+            "InteractionText": "NSLOCTEXT(\"D_Interactions\", \"Interact_Toggle_Device_On-InteractionText\", \"Toggle Device On/Off\")"
+        },
+        {
+            "Name": "Interact_Sink_Fill_Container",
+            "Behaviour": "/Game/BP/Behaviours/Interactable/BP_Interactable_Sink_Fill_Container.BP_Interactable_Sink_Fill_Container_C",
+            "InteractionText": "NSLOCTEXT(\"D_Interactions\", \"Interact_Sink_Fill_Container-InteractionText\", \"Fill Container\")"
+        },
+        {
+            "Name": "Inspect_Deployable",
+            "Behaviour": "/Game/BP/Behaviours/Interactable/BP_Interactable_InspectOnly_Deployable.BP_Interactable_InspectOnly_Deployable_C",
+            "InteractionText": "NSLOCTEXT(\"D_Interactions\", \"Inspect_Deployable-InteractionText\", \"Inspect\")"
+        },
+        {
+            "Name": "Loot_Pet",
+            "Behaviour": "/Game/BP/Behaviours/Interactable/BP_Interactable_Loot_Skinned_Pet.BP_Interactable_Loot_Skinned_Pet_C",
+            "InteractionText": "NSLOCTEXT(\"D_Interactions\", \"Loot_Pet-InteractionText\", \"Collect\")"
+        },
+        {
+            "Name": "Cart_Siphon_Water",
+            "Behaviour": "/Game/BP/Behaviours/Interactable/BP_Interactable_Cart_Interaction.BP_Interactable_Cart_Interaction_C",
+            "InteractionText": "NSLOCTEXT(\"D_Interactions\", \"Cart_Siphon_Water-InteractionText\", \"Fill From Nearby Deployables\")"
+        },
+        {
+            "Name": "Cart_Toggle_Device",
+            "Behaviour": "/Game/BP/Behaviours/Interactable/BP_Interactable_Cart_Toggle.BP_Interactable_Cart_Toggle_C",
+            "InteractionText": "NSLOCTEXT(\"D_Interactions\", \"Cart_Toggle_Device-InteractionText\", \"Toggle Device On/Off\")"
+        },
+        {
+            "Name": "Interact_ManageWhitelist",
+            "Behaviour": "/Game/BP/Behaviours/Interactable/BP_Interactable_ManageWhitelist.BP_Interactable_ManageWhitelist_C",
+            "InteractionText": "NSLOCTEXT(\"D_Interactions\", \"Interact_ManageWhitelist-InteractionText\", \"Manage Allowlist\")"
+        },
+        {
+            "Name": "Water_Source_Drink",
+            "Behaviour": "/Game/BP/Behaviours/Interactable/BP_Interactable_Water_Purifier_Drink.BP_Interactable_Water_Purifier_Drink_C",
+            "InteractionText": "NSLOCTEXT(\"D_Interactions\", \"Water_Source_Drink-InteractionText\", \"Drink\")"
+        },
+        {
+            "Name": "Fill_Water_Storage",
+            "Behaviour": "/Game/BP/Behaviours/Interactable/BP_Interactable_Fill_Water_Trough.BP_Interactable_Fill_Water_Trough_C",
+            "InteractionText": "NSLOCTEXT(\"D_Interactions\", \"Fill_Water_Storage-InteractionText\", \"Fill Water Storage\")"
+        },
+        {
+            "Name": "Fill_Object_Water",
+            "Behaviour": "/Game/BP/Behaviours/Interactable/BP_Interactable_Fill_Water.BP_Interactable_Fill_Water_C",
+            "InteractionText": "NSLOCTEXT(\"D_Interactions\", \"Fill_Object_Water-InteractionText\", \"Fill with Water\")"
+        },
+        {
+            "Name": "Fill_Object_Fuel",
+            "Behaviour": "/Game/BP/Behaviours/Interactable/BP_Interactable_Fill_Fuel.BP_Interactable_Fill_Fuel_C",
+            "InteractionText": "NSLOCTEXT(\"D_Interactions\", \"Fill_Object_Fuel-InteractionText\", \"Fill with Biofuel\")"
+        },
+        {
+            "Name": "Collect_Object_Fuel",
+            "Behaviour": "/Game/BP/Behaviours/Interactable/BP_Interactable_Fill_Fuel.BP_Interactable_Fill_Fuel_C",
+            "InteractionText": "NSLOCTEXT(\"D_Interactions\", \"Collect_Object_Fuel-InteractionText\", \"Fill Container\")"
+        },
+        {
+            "Name": "Interact_NPC",
+            "Behaviour": "/Game/BP/Behaviours/Interactable/BP_Interactable_NPC.BP_Interactable_NPC_C",
+            "InteractionText": "NSLOCTEXT(\"D_Interactions\", \"Interact_NPC-InteractionText\", \"Speak\")"
+        },
+        {
+            "Name": "Interact_Medical_Scan",
+            "Behaviour": "/Game/BP/Behaviours/Interactable/BP_Interactable_HEALScan.BP_Interactable_HEALScan_C",
+            "InteractionText": "NSLOCTEXT(\"D_Interactions\", \"Interact_Medical_Scan-InteractionText\", \"Scan\")"
+        },
+        {
+            "Name": "Interact_Stasis_Bag",
+            "Behaviour": "/Game/BP/Behaviours/Interactable/BP_Interactable_Stasis_Bag.BP_Interactable_Stasis_Bag_C",
+            "InteractionText": "NSLOCTEXT(\"D_Interactions\", \"Interact_Stasis_Bag-InteractionText\", \"Place In Stasis Bag\")"
+        },
+        {
+            "Name": "Interact_Stasis_Bag_Stabalized",
+            "Behaviour": "/Game/BP/Behaviours/Interactable/BP_Interactable_Stasis_Bag_Stabalized.BP_Interactable_Stasis_Bag_Stabalized_C",
+            "InteractionText": "NSLOCTEXT(\"D_Interactions\", \"Interact_Stasis_Bag_Stabalized-InteractionText\", \"Place In Stasis Bag\")"
+        },
+        {
+            "Name": "Interact_WorldObject_Read",
+            "Behaviour": "/Game/BP/Behaviours/Interactable/BP_Interactable_WorldObject.BP_Interactable_WorldObject_C",
+            "InteractionText": "NSLOCTEXT(\"D_Interactions\", \"Interact_WorldObject_Read-InteractionText\", \"Read\")"
+        },
+        {
+            "Name": "Interact_Teleport",
+            "Behaviour": "/Game/BP/Behaviours/Interactable/BP_Interactable_Teleport.BP_Interactable_Teleport_C",
+            "InteractCooldown": 2,
+            "InteractionText": "NSLOCTEXT(\"D_Interactions\", \"Interact_Teleport-InteractionText\", \"Enter\")",
+            "bShowInteractionWhenUnavailable": true
+        },
+        {
+            "Name": "Interact_NPC_Mission",
+            "Behaviour": "/Game/BP/Behaviours/Interactable/BP_Interactable_NPC_Mission.BP_Interactable_NPC_Mission_C",
+            "InteractionText": "NSLOCTEXT(\"D_Interactions\", \"Interact_NPC_Mission-InteractionText\", \"Ask about Missions\")"
+        },
+        {
+            "Name": "Interact_Place_Extinguisher",
+            "Behaviour": "/Game/BP/Behaviours/Interactable/BP_Interactable_Add_Extinguisher.BP_Interactable_Add_Extinguisher_C",
+            "InteractionText": "NSLOCTEXT(\"D_Interactions\", \"Interact_Place_Extinguisher-InteractionText\", \"Place Fire Extinguisher\")"
+        },
+        {
+            "Name": "Interact_Take_Extinguisher",
+            "Behaviour": "/Game/BP/Behaviours/Interactable/BP_Interactable_Take_Extinguisher.BP_Interactable_Take_Extinguisher_C",
+            "InteractionText": "NSLOCTEXT(\"D_Interactions\", \"Interact_Take_Extinguisher-InteractionText\", \"Take Fire Extinguisher\")"
+        },
+        {
+            "Name": "Interact_DestroyActor",
+            "Behaviour": "/Game/BP/Behaviours/Interactable/BP_Interactable_DestroyActor.BP_Interactable_DestroyActor_C",
+            "InteractionText": "NSLOCTEXT(\"D_Interactions\", \"Interact_DestroyActor-InteractionText\", \"Destroy Object\")"
+        },
+        {
+            "Name": "Interact_Fill_Container_Biofuel",
+            "Behaviour": "/Game/BP/Behaviours/Interactable/BP_Interactable_Fill_Container_Biofuel.BP_Interactable_Fill_Container_Biofuel_C",
+            "InteractionText": "NSLOCTEXT(\"D_Interactions\", \"Interact_Fill_Container_Biofuel-InteractionText\", \"Fill Container\")"
+        },
+        {
+            "Name": "Interact_Birth",
+            "Behaviour": "/Game/BP/Behaviours/Interactable/BP_Interactable_Birth.BP_Interactable_Birth_C",
+            "InteractionText": "NSLOCTEXT(\"D_Interactions\", \"Interact_Birth-InteractionText\", \"Help Give Birth\")"
+        },
+        {
+            "Name": "Interact_Cake",
+            "Behaviour": "/Game/BP/Behaviours/Interactable/BP_Interactable_Interact_Cake.BP_Interactable_Interact_Cake_C",
+            "InteractionText": "NSLOCTEXT(\"D_Interactions\", \"Interact_Cake-InteractionText\", \"Take Piece\")"
+        },
+        {
+            "Name": "Interact_Loot_Boss",
+            "Behaviour": "/Game/BP/Behaviours/Interactable/BP_Interactable_Loot_Boss.BP_Interactable_Loot_Boss_C",
+            "InteractionText": "NSLOCTEXT(\"D_Interactions\", \"Interact_Loot_Boss-InteractionText\", \"Loot Carcass\")"
+        },
+        {
+            "Name": "Interact_MilkCow",
+            "Behaviour": "/Game/BP/Behaviours/Interactable/BP_Interactable_Milk.BP_Interactable_Milk_C",
+            "InteractionText": "NSLOCTEXT(\"D_Interactions\", \"Interact_MilkCow-InteractionText\", \"Milk\")"
+        },
+        {
+            "Name": "Interact_SnareTrap",
+            "Behaviour": "/Game/BP/Behaviours/Interactable/BP_Interactable_SnareTrap_Reset.BP_Interactable_SnareTrap_Reset_C",
+            "InteractionText": "NSLOCTEXT(\"D_Interactions\", \"Interact_SnareTrap-InteractionText\", \"Reset Trap\")"
+        },
+        {
+            "Name": "Interact_WorldObject_Destroy",
+            "Behaviour": "/Game/BP/Behaviours/Interactable/BP_Interactable_WorldObject.BP_Interactable_WorldObject_C",
+            "InteractionText": "NSLOCTEXT(\"D_Interactions\", \"Interact_WorldObject_Destroy-InteractionText\", \"Interact\")"
+        },
+        {
+            "Name": "Interact_Teleport_Leave",
+            "Behaviour": "/Game/BP/Behaviours/Interactable/BP_Interactable_Teleport.BP_Interactable_Teleport_C",
+            "InteractCooldown": 2,
+            "InteractionText": "NSLOCTEXT(\"D_Interactions\", \"Interact_Teleport_Leave-InteractionText\", \"Leave\")",
+            "bShowInteractionWhenUnavailable": true
+        },
+        {
+            "Name": "Interact_SwapArmour",
+            "Behaviour": "/Game/BP/Behaviours/Interactable/BP_Interactable_SwapArmour.BP_Interactable_SwapArmour_C",
+            "InteractionText": "NSLOCTEXT(\"D_Interactions\", \"Interact_SwapArmour-InteractionText\", \"Swap Armor\")"
+        },
+        {
+            "Name": "Interact_Vesper_Cage",
+            "Behaviour": "/Game/BP/Behaviours/Interactable/BP_Interactable_Vesper_Cage.BP_Interactable_Vesper_Cage_C",
+            "InteractionText": "NSLOCTEXT(\"D_Interactions\", \"Interact_Vesper_Cage-InteractionText\", \"Place In Vesper Cage\")"
+        },
+        {
+            "Name": "Interact_Infect_Vesper",
+            "Behaviour": "/Game/BP/Behaviours/Interactable/BP_Interactable_Interact_Trap_InfectVesper.BP_Interactable_Interact_Trap_InfectVesper_C",
+            "InteractionText": "NSLOCTEXT(\"D_Interactions\", \"Interact_Infect_Vesper-InteractionText\", \"Infect Vesper\")"
+        },
+        {
+            "Name": "Interact_Release_Vesper",
+            "Behaviour": "/Game/BP/Behaviours/Interactable/BP_Interactable_Interact_Trap_Release_Vesper.BP_Interactable_Interact_Trap_Release_Vesper_C",
+            "InteractionText": "NSLOCTEXT(\"D_Interactions\", \"Interact_Release_Vesper-InteractionText\", \"Release Vesper\")"
+        },
+        {
+            "Name": "Interact_Deployable_EditorOnly",
+            "Behaviour": "/Game/BP/Behaviours/Interactable/BP_Interactable_Interact_Deployable_EditorOnly.BP_Interactable_Interact_Deployable_EditorOnly_C",
+            "InteractionText": "NSLOCTEXT(\"D_Interactions\", \"Interact_Deployable_EditorOnly-InteractionText\", \"Interact\")"
+        },
+        {
+            "Name": "Pickup_Deployable_EditorOnly",
+            "Behaviour": "/Game/BP/Behaviours/Interactable/BP_Interactable_Pickup_Deployable_EditoryOnly.BP_Interactable_Pickup_Deployable_EditoryOnly_C",
+            "InteractionText": "NSLOCTEXT(\"D_Interactions\", \"Pickup_Deployable_EditorOnly-InteractionText\", \"Pickup\")"
+        },
+        {
+            "Name": "Interact_NPC_Inventory",
+            "Behaviour": "/Game/BP/Behaviours/Interactable/BP_Interactable_NPC_Inventory.BP_Interactable_NPC_Inventory_C",
+            "InteractionText": "NSLOCTEXT(\"D_Interactions\", \"Interact_NPC_Inventory-InteractionText\", \"Take Items\")"
+        },
+        {
+            "Name": "Interact_Shackle",
+            "Behaviour": "/Game/BP/Behaviours/Interactable/BP_Interactable_Shackle.BP_Interactable_Shackle_C",
+            "InteractionText": "NSLOCTEXT(\"D_Interactions\", \"Interact_Shackle-InteractionText\", \"Shackle\")"
+        },
+        {
+            "Name": "Interact_Mission_DNA_Extract",
+            "Behaviour": "/Game/BP/Behaviours/Interactable/BP_Interactable_Interact_Mission_DNA_Extraction.BP_Interactable_Interact_Mission_DNA_Extraction_C",
+            "InteractionText": "NSLOCTEXT(\"D_Interactions\", \"Interact_Mission_DNA_Extract-InteractionText\", \"Extract Sample\")"
+        },
+        {
+            "Name": "Interact_Mission_DNA_Chemical",
+            "Behaviour": "/Game/BP/Behaviours/Interactable/BP_Interactable_Interact_Mission_DNA_Extraction.BP_Interactable_Interact_Mission_DNA_Extraction_C",
+            "InteractionText": "NSLOCTEXT(\"D_Interactions\", \"Interact_Mission_DNA_Chemical-InteractionText\", \"Add Chemical\")"
+        },
+        {
+            "Name": "Interact_Mission_DNA_Weigh",
+            "Behaviour": "/Game/BP/Behaviours/Interactable/BP_Interactable_Interact_Mission_DNA_Extraction.BP_Interactable_Interact_Mission_DNA_Extraction_C",
+            "InteractionText": "NSLOCTEXT(\"D_Interactions\", \"Interact_Mission_DNA_Weigh-InteractionText\", \"Weigh\")"
+        },
+        {
+            "Name": "Interact_Mission_DNA_Analyze",
+            "Behaviour": "/Game/BP/Behaviours/Interactable/BP_Interactable_Interact_Mission_DNA_Extraction.BP_Interactable_Interact_Mission_DNA_Extraction_C",
+            "InteractionText": "NSLOCTEXT(\"D_Interactions\", \"Interact_Mission_DNA_Analyze-InteractionText\", \"Analyse\")"
+        },
+        {
+            "Name": "Interact_Mission_DNA_Mix",
+            "Behaviour": "/Game/BP/Behaviours/Interactable/BP_Interactable_Interact_Mission_DNA_Extraction.BP_Interactable_Interact_Mission_DNA_Extraction_C",
+            "InteractionText": "NSLOCTEXT(\"D_Interactions\", \"Interact_Mission_DNA_Mix-InteractionText\", \"Mix\")"
+        },
+        {
+            "Name": "Interact_Mission_DNA_Seperate",
+            "Behaviour": "/Game/BP/Behaviours/Interactable/BP_Interactable_Interact_Mission_DNA_Extraction.BP_Interactable_Interact_Mission_DNA_Extraction_C",
+            "InteractionText": "NSLOCTEXT(\"D_Interactions\", \"Interact_Mission_DNA_Seperate-InteractionText\", \"Seperate Components\")"
+        },
+        {
+            "Name": "Interact_Mission_DNA_Confirm",
+            "Behaviour": "/Game/BP/Behaviours/Interactable/BP_Interactable_Interact_Mission_DNA_Extraction.BP_Interactable_Interact_Mission_DNA_Extraction_C",
+            "InteractionText": "NSLOCTEXT(\"D_Interactions\", \"Interact_Mission_DNA_Confirm-InteractionText\", \"Confirm Sample\")"
+        },
+        {
+            "Name": "Interact_Mission_DNA_Gather",
+            "Behaviour": "/Game/BP/Behaviours/Interactable/BP_Interactable_Interact_Mission_DNA_Extract.BP_Interactable_Interact_Mission_DNA_Extract_C",
+            "InteractionText": "NSLOCTEXT(\"D_Interactions\", \"Interact_Mission_DNA_Gather-InteractionText\", \"Extract Tissue Sample\")"
+        },
+        {
+            "Name": "Interact_Teleport_RetrieveLoot",
+            "Behaviour": "/Game/BP/Behaviours/Interactable/BP_Interactable_Teleport_RetrieveLoot.BP_Interactable_Teleport_RetrieveLoot_C",
+            "AuthorityType": "ClientOnly",
+            "InteractCooldown": 2,
+            "InteractionText": "NSLOCTEXT(\"D_Interactions\", \"Interact_Teleport_RetrieveLoot-InteractionText\", \"Retrieve Loot\")"
+        },
+        {
+            "Name": "Interact_EDEN_NPC",
+            "Behaviour": "/Game/BP/Behaviours/Interactable/BP_Interactable_EDEN_NPC.BP_Interactable_EDEN_NPC_C",
+            "InteractionText": "NSLOCTEXT(\"D_Interactions\", \"Interact_EDEN_NPC-InteractionText\", \"Speak\")"
+        },
+        {
+            "Name": "Interact_NPC_Inventory_Take",
+            "Behaviour": "/Game/BP/Behaviours/Interactable/BP_Interactable_NPC_Inventory_Take.BP_Interactable_NPC_Inventory_Take_C",
+            "InteractionText": "NSLOCTEXT(\"D_Interactions\", \"Interact_NPC_Inventory_Take-InteractionText\", \"Take Items\")"
+        },
+        {
+            "Name": "Interact_LockedDoor",
+            "Behaviour": "/Game/BP/Behaviours/Interactable/BP_Interactable_Locked_Door.BP_Interactable_Locked_Door_C",
+            "InteractionText": "NSLOCTEXT(\"D_Interactions\", \"Interact_LockedDoor-InteractionText\", \"Open Door\")"
+        },
+        {
+            "Name": "Interact_SecurityDoor",
+            "Behaviour": "/Game/BP/Behaviours/Interactable/BP_Interactable_Security_Door.BP_Interactable_Security_Door_C",
+            "InteractionText": "NSLOCTEXT(\"D_Interactions\", \"Interact_SecurityDoor-InteractionText\", \"Enter Pin\")"
+        },
+        {
+            "Name": "Interact_Satellite_Arm",
+            "Behaviour": "/Game/BP/Behaviours/Interactable/BP_Interactable_Interact_ArmSatellite.BP_Interactable_Interact_ArmSatellite_C",
+            "InteractionText": "NSLOCTEXT(\"D_Interactions\", \"Interact_Satellite_Arm-InteractionText\", \"Arm\")"
+        },
+        {
+            "Name": "Interact_Satellite_AccessInventory",
+            "Behaviour": "/Game/BP/Behaviours/Interactable/BP_Interactable_Interact_SatelliteAccessInventory.BP_Interactable_Interact_SatelliteAccessInventory_C",
+            "InteractionText": "NSLOCTEXT(\"D_Interactions\", \"Interact_Satellite_AccessInventory-InteractionText\", \"Access Inventory\")"
+        },
+        {
+            "Name": "Claim_LandingPad",
+            "Behaviour": "/Game/BP/Behaviours/Interactable/BP_Interactable_ClaimPad.BP_Interactable_ClaimPad_C",
+            "InteractCooldown": 0.10000000149011612,
+            "InteractionText": "NSLOCTEXT(\"D_Interactions\", \"Claim_LandingPad-InteractionText\", \"Claim Landing Pad\")"
+        },
+        {
+            "Name": "Unclaim_LandingPad",
+            "Behaviour": "/Game/BP/Behaviours/Interactable/BP_Interactable_UnClaimPad.BP_Interactable_UnClaimPad_C",
+            "InteractCooldown": 0.10000000149011612,
+            "InteractionText": "NSLOCTEXT(\"D_Interactions\", \"Unclaim_LandingPad-InteractionText\", \"Unclaim Landing Pad\")"
+        },
+        {
+            "Name": "Interact_EDEN_NPC_Reward",
+            "Behaviour": "/Game/BP/Behaviours/Interactable/BP_Interactable_EDEN_NPC_Reward.BP_Interactable_EDEN_NPC_Reward_C",
+            "InteractionText": "NSLOCTEXT(\"D_Interactions\", \"Interact_EDEN_NPC_Reward-InteractionText\", \"Claim Reward\")"
+        },
+        {
+            "Name": "Interact_PresentFish",
+            "Behaviour": "/Game/BP/Behaviours/Interactable/BP_Interactable_PresentFish.BP_Interactable_PresentFish_C",
+            "InteractionText": "NSLOCTEXT(\"D_Interactions\", \"Interact_PresentFish-InteractionText\", \"Present Fish\")"
+        },
+        {
+            "Name": "Interact_EndContest",
+            "Behaviour": "/Game/BP/Behaviours/Interactable/BP_Interactable_EndContest.BP_Interactable_EndContest_C",
+            "InteractionText": "NSLOCTEXT(\"D_Interactions\", \"Interact_EndContest-InteractionText\", \"End Fishing Contest\")"
+        },
+        {
+            "Name": "Interact_UpdateSign",
+            "Behaviour": "/Game/BP/Behaviours/Interactable/BP_Interactable_UpdateSign.BP_Interactable_UpdateSign_C",
+            "InteractionText": "NSLOCTEXT(\"D_Interactions\", \"Interact_UpdateSign-InteractionText\", \"Update Sign\")"
+        },
+        {
+            "Name": "Water_Purifier_Drink_T3",
+            "Behaviour": "/Game/BP/Behaviours/Interactable/BP_Interactable_Water_Purifier_Drink.BP_Interactable_Water_Purifier_Drink_C",
+            "InteractionText": "NSLOCTEXT(\"D_Interactions\", \"Water_Purifier_Drink_T3-InteractionText\", \"Drink From Purifier\")"
+        },
+        {
+            "Name": "Interact_NPC_Cook_Shop",
+            "Behaviour": "/Game/BP/Behaviours/Interactable/BP_Interactable_Interact_Cook_Shop.BP_Interactable_Interact_Cook_Shop_C",
+            "InteractionText": "NSLOCTEXT(\"D_Interactions\", \"Interact_NPC_Cook_Shop-InteractionText\", \"Trade\")"
+        },
+        {
+            "Name": "WaterStorage_DrawWater",
+            "Behaviour": "/Game/BP/Behaviours/Interactable/BP_Interactable_WaterStorage_DrawStats.BP_Interactable_WaterStorage_DrawStats_C",
+            "InteractionText": "NSLOCTEXT(\"D_Interactions\", \"WaterStorage_DrawWater-InteractionText\", \"Fill Container\")"
+        },
+        {
+            "Name": "WaterStorage_DrinkWater",
+            "Behaviour": "/Game/BP/Behaviours/Interactable/BP_Interactable_WaterStorage_DrinkStats.BP_Interactable_WaterStorage_DrinkStats_C",
+            "InteractionText": "NSLOCTEXT(\"D_Interactions\", \"WaterStorage_DrinkWater-InteractionText\", \"Drink\")"
+        },
+        {
+            "Name": "WaterStorage_FillWater",
+            "Behaviour": "/Game/BP/Behaviours/Interactable/BP_Interactable_WaterStorage_FillStats.BP_Interactable_WaterStorage_FillStats_C",
+            "InteractionText": "NSLOCTEXT(\"D_Interactions\", \"WaterStorage_FillWater-InteractionText\", \"Fill Water Storage\")"
+        },
+        {
+            "Name": "Interact_WorldObject_GiveItems",
+            "Behaviour": "/Game/BP/Behaviours/Interactable/BP_Interactable_WorldObject.BP_Interactable_WorldObject_C",
+            "InteractionText": "NSLOCTEXT(\"D_Interactions\", \"Interact_WorldObject_GiveItems-InteractionText\", \"Give Items\")"
+        },
+        {
+            "Name": "Interact_NPC_Trade",
+            "Behaviour": "/Game/BP/Behaviours/Interactable/BP_Interactable_Interact_Deployable.BP_Interactable_Interact_Deployable_C",
+            "InteractionText": "NSLOCTEXT(\"D_Interactions\", \"Interact_NPC_Trade-InteractionText\", \"Trade\")"
+        },
+        {
+            "Name": "Interact_NPC_MapIcon",
+            "Behaviour": "/Game/BP/Behaviours/Interactable/BP_Interactable_Interact_NPC_MapIcon.BP_Interactable_Interact_NPC_MapIcon_C",
+            "InteractionText": "NSLOCTEXT(\"D_Interactions\", \"Interact_NPC_MapIcon-InteractionText\", \"Toggle Map Icon\")"
+        },
+        {
+            "Name": "Interact_NPC_Invite",
+            "Behaviour": "/Game/BP/Behaviours/Interactable/BP_Interactable_Interact_NPC_Invite.BP_Interactable_Interact_NPC_Invite_C",
+            "InteractionText": "NSLOCTEXT(\"D_Interactions\", \"Interact_NPC_Invite-InteractionText\", \"Invite to EDEN\")"
+        },
+        {
+            "Name": "Interact_Place_Armor",
+            "Behaviour": "/Game/BP/Behaviours/Interactable/BP_Interactable_Add_Armor.BP_Interactable_Add_Armor_C",
+            "InteractionText": "NSLOCTEXT(\"D_Interactions\", \"Interact_Place_Armor-InteractionText\", \"Place Armor Piece\")"
+        },
+        {
+            "Name": "Interact_Private_Firing",
+            "Behaviour": "/Game/BP/Behaviours/Interactable/BP_Interactable_Tucker_Firing_Interact.BP_Interactable_Tucker_Firing_Interact_C",
+            "InteractionText": "NSLOCTEXT(\"D_Interactions\", \"Interact_Private_Firing-InteractionText\", \"Speak\")"
+        },
+        {
+            "Name": "Interact_Cot_Place",
+            "Behaviour": "/Game/BP/Behaviours/Interactable/BP_Interactable_Cot_Place.BP_Interactable_Cot_Place_C",
+            "InteractionText": "NSLOCTEXT(\"D_Interactions\", \"Interact_Cot_Place-InteractionText\", \"Place Stasis Bag\")"
+        },
+        {
+            "Name": "Fill_Object_RefinedOil",
+            "Behaviour": "/Game/BP/Behaviours/Interactable/BP_Interactable_Fill_RefinedOil.BP_Interactable_Fill_RefinedOil_C",
+            "InteractionText": "NSLOCTEXT(\"D_Interactions\", \"Fill_Object_RefinedOil-InteractionText\", \"Fill with Refined Oil\")"
+        },
+        {
+            "Name": "Interact_NPC_SimpleTalk",
+            "Behaviour": "/Game/BP/Behaviours/Interactable/BP_Interactable_NPC_SimpleTalk.BP_Interactable_NPC_SimpleTalk_C",
+            "InteractionText": "NSLOCTEXT(\"D_Interactions\", \"Interact_NPC_SimpleTalk-InteractionText\", \"Speak\")"
+        },
+        {
+            "Name": "Interact_Pickup_Bike",
+            "Behaviour": "/Game/BP/Behaviours/Interactable/BP_Interactable_NPC_Pickup_Vehicle.BP_Interactable_NPC_Pickup_Vehicle_C",
+            "InteractionText": "NSLOCTEXT(\"D_Interactions\", \"Interact_Pickup_Bike-InteractionText\", \"Pick Up\")"
+        },
+        {
+            "Name": "Enter_Seat_Vehicle",
+            "Behaviour": "/Game/BP/Behaviours/Interactable/BP_Interactable_Enter_Seat_Mount.BP_Interactable_Enter_Seat_Mount_C",
+            "AuthorityType": "Both",
+            "InteractionText": "NSLOCTEXT(\"D_Interactions\", \"Enter_Seat_Vehicle-InteractionText\", \"Ride\")"
+        }
+    ]
+}

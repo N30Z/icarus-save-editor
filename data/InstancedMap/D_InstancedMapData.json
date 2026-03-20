@@ -1,0 +1,202 @@
+{
+    "RowStruct": "/Script/Icarus.InstancedMapData",
+    "Defaults": {
+        "MapAsset": "None",
+        "MapBounds": {
+            "Min": {
+                "X": 0,
+                "Y": 0,
+                "Z": 0
+            },
+            "Max": {
+                "X": 0,
+                "Y": 0,
+                "Z": 0
+            },
+            "IsValid": 0
+        },
+        "CaveID": -1,
+        "NumEntrances": -1,
+        "RVTBounds": {
+            "Min": {
+                "X": 0,
+                "Y": 0,
+                "Z": 0
+            },
+            "Max": {
+                "X": 0,
+                "Y": 0,
+                "Z": 0
+            },
+            "IsValid": 0
+        }
+    },
+    "Rows": [
+        {
+            "Name": "TestCave1",
+            "MapAsset": "/Game/Maps/InstancedMaps/TestInstancedMaps/CAVE_AC_MED_002_instanced.CAVE_AC_MED_002_instanced",
+            "MapBounds": {
+                "Min": {
+                    "X": -21731.111328125,
+                    "Y": -8512.09375,
+                    "Z": -9894.421875
+                },
+                "Max": {
+                    "X": 2268.888671875,
+                    "Y": 15487.90625,
+                    "Z": 5535.248046875
+                },
+                "IsValid": 1
+            },
+            "CaveID": 1,
+            "NumEntrances": 2
+        },
+        {
+            "Name": "TestCave2",
+            "MapAsset": "/Game/Maps/InstancedMaps/TestInstancedMaps/CAVE_AC_MED_011_instanced.CAVE_AC_MED_011_instanced",
+            "MapBounds": {
+                "Min": {
+                    "X": -23976.015625,
+                    "Y": -311562.1875,
+                    "Z": -30578.345703125
+                },
+                "Max": {
+                    "X": 2842.3154296875,
+                    "Y": 3733.1484375,
+                    "Z": 830.7073974609375
+                },
+                "IsValid": 1
+            },
+            "CaveID": 2,
+            "NumEntrances": 3
+        },
+        {
+            "Name": "TestCave3",
+            "MapAsset": "/Game/Maps/InstancedMaps/TestInstancedMaps/CAVE_CF_MED_005_instanced.CAVE_CF_MED_005_instanced",
+            "MapBounds": {
+                "Min": {
+                    "X": -7896.1767578125,
+                    "Y": -10229.666015625,
+                    "Z": -2803.565185546875
+                },
+                "Max": {
+                    "X": 8103.8232421875,
+                    "Y": 5770.33349609375,
+                    "Z": 3687.028076171875
+                },
+                "IsValid": 1
+            },
+            "CaveID": 3,
+            "NumEntrances": 3
+        },
+        {
+            "Name": "LeCube_instanced",
+            "MapAsset": "/Game/Maps/InstancedMaps/TestInstancedMaps/LeCube_instanced.LeCube_instanced",
+            "MapBounds": {
+                "Min": {
+                    "X": -7778.07421875,
+                    "Y": -7597.08642578125,
+                    "Z": -1381.984375
+                },
+                "Max": {
+                    "X": 8221.92578125,
+                    "Y": 8402.9130859375,
+                    "Z": 598.1141357421875
+                },
+                "IsValid": 1
+            },
+            "CaveID": 4,
+            "NumEntrances": 2
+        },
+        {
+            "Name": "Arena_RockGolem",
+            "MapAsset": "/Game/Maps/GreatHunt/Arena_RockGolem/Arena_RockGolem.Arena_RockGolem",
+            "MapBounds": {
+                "Min": {
+                    "X": -10000,
+                    "Y": -60000,
+                    "Z": -24519.482421875
+                },
+                "Max": {
+                    "X": 60000,
+                    "Y": 10000,
+                    "Z": 29675.505859375
+                },
+                "IsValid": 1
+            },
+            "CaveID": 5,
+            "NumEntrances": 1,
+            "RVTBounds": {
+                "Min": {
+                    "Y": -50400,
+                    "Z": -4527.34375
+                },
+                "Max": {
+                    "X": 50400,
+                    "Z": -3807.8125
+                },
+                "IsValid": 1
+            }
+        },
+        {
+            "Name": "Arena_IceMammoth",
+            "MapAsset": "/Game/Maps/GreatHunt/Arena_IceMammoth/Arena_IceMammoth.Arena_IceMammoth",
+            "MapBounds": {
+                "Min": {
+                    "X": -108673.7734375,
+                    "Y": -100800,
+                    "Z": -56193.6640625
+                },
+                "Max": {
+                    "X": 155638.71875,
+                    "Y": 100800,
+                    "Z": 56193.6640625
+                },
+                "IsValid": 1
+            },
+            "CaveID": 6,
+            "NumEntrances": 1,
+            "RVTBounds": {
+                "Min": {
+                    "Y": -50400,
+                    "Z": -1502.34375
+                },
+                "Max": {
+                    "X": 50400,
+                    "Z": 10569.53125
+                },
+                "IsValid": 1
+            }
+        },
+        {
+            "Name": "Arena_SwampApe",
+            "MapAsset": "/Game/Maps/GreatHunt/Arena_SwampApe/Arena_SwampApe.Arena_SwampApe",
+            "MapBounds": {
+                "Min": {
+                    "X": -7700,
+                    "Y": -63410,
+                    "Z": -28030
+                },
+                "Max": {
+                    "X": 56300,
+                    "Y": 8590,
+                    "Z": 23127.134765625
+                },
+                "IsValid": 1
+            },
+            "CaveID": 7,
+            "NumEntrances": 1,
+            "RVTBounds": {
+                "Min": {
+                    "Y": -50400,
+                    "Z": -4671.09375
+                },
+                "Max": {
+                    "X": 50400,
+                    "Z": -999.21875
+                },
+                "IsValid": 1
+            }
+        }
+    ]
+}

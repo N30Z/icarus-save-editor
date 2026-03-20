@@ -1,0 +1,67 @@
+{
+    "RowStruct": "/Script/Icarus.CustomGameStat",
+    "Defaults": {
+        "DisplayName": "",
+        "Description": "",
+        "bHidden": false,
+        "Category": "Misc",
+        "StatChangeability": "OnProspectCreation",
+        "StatType": "Bool",
+        "DefaultValue": 0,
+        "Stat": {
+            "RowName": "None",
+            "DataTableName": "D_Stats"
+        },
+        "MinIntValue": 0,
+        "MaxIntValue": 100,
+        "DropDownOptions": []
+    },
+    "GenerateEnum": true,
+    "Rows": [
+        {
+            "Name": "SettingsVersion",
+            "bHidden": true,
+            "StatChangeability": "Anytime",
+            "StatType": "Int",
+            "DefaultValue": 1,
+            "MaxIntValue": 0
+        },
+        {
+            "Name": "Arachnophobia",
+            "DisplayName": "NSLOCTEXT(\"D_CustomGameStats\", \"Arachnophobia-DisplayName\", \"Arachnophobia Mode\")",
+            "Description": "NSLOCTEXT(\"D_CustomGameStats\", \"Arachnophobia-Description\", \"Disables Spider spawning in world\")",
+            "Category": "Creatures",
+            "StatChangeability": "Anytime",
+            "Stat": {
+                "RowName": "WorldIsSpiderSpawningDisabled_?"
+            },
+            "MaxIntValue": 1
+        },
+        {
+            "Name": "PrebuiltCleanup",
+            "DisplayName": "NSLOCTEXT(\"D_CustomGameStats\", \"PrebuiltCleanup-DisplayName\", \"Mission Structure Cleanup\")",
+            "Description": "NSLOCTEXT(\"D_CustomGameStats\", \"PrebuiltCleanup-Description\", \"Removes mission structures after mission completes.\")",
+            "StatChangeability": "Anytime",
+            "Stat": {
+                "RowName": "WorldPrebuiltStructuresDestroyed_?"
+            },
+            "MaxIntValue": 1,
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "OwnerUnclaimMountsOnly",
+            "DisplayName": "NSLOCTEXT(\"D_CustomGameStats\", \"OwnerUnclaimMountsOnly-DisplayName\", \"Mount Unclaim Requires Ownership\")",
+            "Description": "NSLOCTEXT(\"D_CustomGameStats\", \"OwnerUnclaimMountsOnly-Description\", \"Disables the \\'Unclaim\\' button on Tames/Mounts for non-owning players\")",
+            "Category": "Creatures",
+            "StatChangeability": "Anytime",
+            "Stat": {
+                "RowName": "WorldUnclaimRequiresOwnership_?"
+            },
+            "MaxIntValue": 1
+        }
+    ]
+}

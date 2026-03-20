@@ -1,0 +1,57 @@
+{
+    "RowStruct": "/Script/Icarus.MetaResourceNodeInfo",
+    "Defaults": {
+        "ResourceBP": "None",
+        "Resource": {
+            "RowName": "None",
+            "DataTableName": "D_OreDeposit"
+        }
+    },
+    "Rows": [
+        {
+            "Name": "MetaDeposit_Arctic",
+            "ResourceBP": "/Game/BP/Objects/World/Resources/Meta/BP_MetaDeposit_Arctic.BP_MetaDeposit_Arctic_C",
+            "Resource": {
+                "RowName": "Exotic"
+            }
+        },
+        {
+            "Name": "MetaDeposit_Conifer",
+            "ResourceBP": "/Game/BP/Objects/World/Resources/Meta/BP_MetaDeposit_Conifer.BP_MetaDeposit_Conifer_C",
+            "Resource": {
+                "RowName": "Exotic"
+            }
+        },
+        {
+            "Name": "MetaDeposit_Desert",
+            "ResourceBP": "/Game/BP/Objects/World/Resources/Meta/BP_MetaDeposit_Desert.BP_MetaDeposit_Desert_C",
+            "Resource": {
+                "RowName": "Exotic"
+            }
+        },
+        {
+            "Name": "MetaDeposit_Volcanic",
+            "ResourceBP": "/Game/BP/Objects/World/Resources/Meta/BP_MetaDeposit_Volcanic.BP_MetaDeposit_Volcanic_C",
+            "Resource": {
+                "RowName": "Exotic_Red_Raw"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "NewFrontiers"
+                }
+            }
+        },
+        {
+            "Name": "MetaDeposit_Uranium",
+            "ResourceBP": "/Game/BP/Objects/World/Resources/Meta/BP_MetaDeposit_Uranium_Node.BP_MetaDeposit_Uranium_Node_C",
+            "Resource": {
+                "RowName": "Exotic_Raw_Uranium"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        }
+    ]
+}

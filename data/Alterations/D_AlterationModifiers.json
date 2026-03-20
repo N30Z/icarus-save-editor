@@ -1,0 +1,251 @@
+{
+    "RowStruct": "/Script/Icarus.AlterationModifiers",
+    "Defaults": {
+        "Alteration": {
+            "Value": "None"
+        },
+        "ModifierDuration": 0,
+        "Modifier": {
+            "RowName": "None",
+            "DataTableName": "D_ModifierStates"
+        },
+        "Priority": 0,
+        "bIsCrafted": true,
+        "bCannotBeFurtherAltered": false,
+        "ModifierEffectiveness": 100
+    },
+    "GenerateEnum": true,
+    "Rows": [
+        {
+            "Name": "Dirty_Water_Lava",
+            "Alteration": {
+                "Value": "Dirty_Water_Lava"
+            },
+            "ModifierDuration": 300,
+            "Modifier": {
+                "RowName": "Dirty_Water_Lava"
+            },
+            "bIsCrafted": false
+        },
+        {
+            "Name": "Dirty_Water_Swamp",
+            "Alteration": {
+                "Value": "Dirty_Water_Swamp"
+            },
+            "ModifierDuration": 300,
+            "Modifier": {
+                "RowName": "Dirty_Water_Swamp"
+            },
+            "Priority": 1,
+            "bIsCrafted": false
+        },
+        {
+            "Name": "Dirty_Water",
+            "Alteration": {
+                "Value": "Dirty_Water"
+            },
+            "ModifierDuration": 300,
+            "Modifier": {
+                "RowName": "Dirty_Water"
+            },
+            "Priority": 2,
+            "bIsCrafted": false
+        },
+        {
+            "Name": "Rain_Water",
+            "Alteration": {
+                "Value": "Rain_Water"
+            },
+            "ModifierDuration": 300,
+            "Modifier": {
+                "RowName": "Rain_Water"
+            },
+            "Priority": 3,
+            "bIsCrafted": false
+        },
+        {
+            "Name": "Filtered_Water",
+            "Alteration": {
+                "Value": "Filtered_Water"
+            },
+            "ModifierDuration": 300,
+            "Modifier": {
+                "RowName": "Filtered_Water"
+            },
+            "Priority": 4,
+            "bIsCrafted": false
+        },
+        {
+            "Name": "Treated_Water",
+            "Alteration": {
+                "Value": "Treated_Water"
+            },
+            "ModifierDuration": 300,
+            "Modifier": {
+                "RowName": "Treated_Water"
+            },
+            "Priority": 5,
+            "bIsCrafted": false
+        },
+        {
+            "Name": "Purified_Water",
+            "Alteration": {
+                "Value": "Purified_Water"
+            },
+            "ModifierDuration": 300,
+            "Modifier": {
+                "RowName": "Purified_Water"
+            },
+            "Priority": 6,
+            "bIsCrafted": false
+        },
+        {
+            "Name": "Tea_Green",
+            "Alteration": {
+                "Value": "Green_Tea"
+            },
+            "ModifierDuration": 300,
+            "Modifier": {
+                "RowName": "Thermos_GreenTea_Modifier"
+            },
+            "Priority": -1,
+            "bCannotBeFurtherAltered": true
+        },
+        {
+            "Name": "Tea_Wild",
+            "Alteration": {
+                "Value": "Wild_Tea"
+            },
+            "ModifierDuration": 300,
+            "Modifier": {
+                "RowName": "Thermos_WildTea_Modifier"
+            },
+            "Priority": -1,
+            "bCannotBeFurtherAltered": true
+        },
+        {
+            "Name": "Coffee",
+            "Alteration": {
+                "Value": "Coffee"
+            },
+            "ModifierDuration": 300,
+            "Modifier": {
+                "RowName": "Thermos_Coffee_Modifier"
+            },
+            "Priority": -1,
+            "bCannotBeFurtherAltered": true
+        },
+        {
+            "Name": "Coffee_With_Cream",
+            "Alteration": {
+                "Value": "Coffee_With_Cream"
+            },
+            "ModifierDuration": 300,
+            "Modifier": {
+                "RowName": "Thermos_Coffee_With_Cream"
+            },
+            "Priority": -1,
+            "bCannotBeFurtherAltered": true
+        },
+        {
+            "Name": "Cocoa",
+            "Alteration": {
+                "Value": "Cocoa"
+            },
+            "ModifierDuration": 300,
+            "Modifier": {
+                "RowName": "Thermos_Cocoa_Modifier"
+            },
+            "Priority": -1,
+            "bCannotBeFurtherAltered": true
+        },
+        {
+            "Name": "Ice_Water",
+            "Alteration": {
+                "Value": "Ice_Water"
+            },
+            "ModifierDuration": 300,
+            "Modifier": {
+                "RowName": "Thermos_IceWater"
+            },
+            "Priority": -1
+        },
+        {
+            "Name": "Honey_Tea",
+            "Alteration": {
+                "Value": "Honey_Tea"
+            },
+            "ModifierDuration": 300,
+            "Modifier": {
+                "RowName": "Thermos_HoneyTea"
+            },
+            "Priority": -1,
+            "bCannotBeFurtherAltered": true
+        },
+        {
+            "Name": "Cooling",
+            "Alteration": {
+                "Value": "Cooling"
+            },
+            "ModifierDuration": 300,
+            "Modifier": {
+                "RowName": "Drink_Cooling"
+            },
+            "Priority": -1,
+            "bIsCrafted": false
+        },
+        {
+            "Name": "Warming",
+            "Alteration": {
+                "Value": "Warming"
+            },
+            "ModifierDuration": 300,
+            "Modifier": {
+                "RowName": "Drink_Heated"
+            },
+            "Priority": -1,
+            "bIsCrafted": false
+        },
+        {
+            "Name": "Fruit_Smoothie",
+            "Alteration": {
+                "Value": "Fruit_Smoothie"
+            },
+            "ModifierDuration": 300,
+            "Modifier": {
+                "RowName": "Fruit_Smoothie"
+            },
+            "Priority": -1
+        },
+        {
+            "Name": "Milk_Fresh",
+            "Alteration": {
+                "Value": "Milk_Fresh"
+            },
+            "ModifierDuration": 300,
+            "Priority": 1,
+            "bIsCrafted": false
+        },
+        {
+            "Name": "Milk_Spoiled",
+            "Alteration": {
+                "Value": "Milk_Spoiled"
+            },
+            "ModifierDuration": 300,
+            "bIsCrafted": false,
+            "bCannotBeFurtherAltered": true
+        },
+        {
+            "Name": "Corrosive_Water",
+            "Alteration": {
+                "Value": "Corrosive_Water"
+            },
+            "ModifierDuration": 120,
+            "Modifier": {
+                "RowName": "Corrosive_DOT"
+            },
+            "Priority": 1,
+            "bIsCrafted": false
+        }
+    ]
+}

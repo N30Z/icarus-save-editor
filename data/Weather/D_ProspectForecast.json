@@ -1,0 +1,437 @@
+{
+    "RowStruct": "/Script/Icarus.ProspectForecast",
+    "Defaults": {
+        "WeatherPool": {
+            "RowName": "None",
+            "DataTableName": "D_WeatherPools"
+        },
+        "Pattern": []
+    },
+    "GenerateEnum": true,
+    "Rows": [
+        {
+            "Name": "ClearSky60",
+            "WeatherPool": {
+                "RowName": "NoWeather"
+            },
+            "Pattern": [
+                {
+                    "Tier": 0,
+                    "DurationMinutes": 66
+                },
+                {
+                    "Tier": 0,
+                    "DurationMinutes": 66
+                },
+                {
+                    "Tier": 0,
+                    "DurationMinutes": 66
+                }
+            ]
+        },
+        {
+            "Name": "SlowBurn",
+            "WeatherPool": {
+                "RowName": "All_Weather"
+            },
+            "Pattern": [
+                {
+                    "Tier": 1,
+                    "DurationMinutes": 40
+                },
+                {
+                    "Tier": 3,
+                    "DurationMinutes": 40
+                },
+                {
+                    "Tier": 4,
+                    "DurationMinutes": 40
+                },
+                {
+                    "Tier": 5,
+                    "DurationMinutes": 60
+                },
+                {
+                    "Tier": 4,
+                    "DurationMinutes": 40
+                },
+                {
+                    "Tier": 3,
+                    "DurationMinutes": 40
+                }
+            ]
+        },
+        {
+            "Name": "Pulse",
+            "WeatherPool": {
+                "RowName": "All_Weather"
+            },
+            "Pattern": [
+                {
+                    "Tier": 2,
+                    "DurationMinutes": 45
+                },
+                {
+                    "Tier": 3,
+                    "DurationMinutes": 40
+                },
+                {
+                    "Tier": 5,
+                    "DurationMinutes": 40
+                },
+                {
+                    "Tier": 3,
+                    "DurationMinutes": 40
+                }
+            ]
+        },
+        {
+            "Name": "FrontLoaded",
+            "WeatherPool": {
+                "RowName": "All_Weather"
+            },
+            "Pattern": [
+                {
+                    "Tier": 4,
+                    "DurationMinutes": 30
+                },
+                {
+                    "Tier": 5,
+                    "DurationMinutes": 35
+                },
+                {
+                    "Tier": 4,
+                    "DurationMinutes": 40
+                },
+                {
+                    "Tier": 3,
+                    "DurationMinutes": 60
+                },
+                {
+                    "Tier": 2,
+                    "DurationMinutes": 40
+                },
+                {
+                    "Tier": 3,
+                    "DurationMinutes": 50
+                }
+            ]
+        },
+        {
+            "Name": "MidPeak",
+            "WeatherPool": {
+                "RowName": "All_Weather"
+            },
+            "Pattern": [
+                {
+                    "Tier": 1,
+                    "DurationMinutes": 50
+                },
+                {
+                    "Tier": 3,
+                    "DurationMinutes": 40
+                },
+                {
+                    "Tier": 4,
+                    "DurationMinutes": 60
+                },
+                {
+                    "Tier": 3,
+                    "DurationMinutes": 40
+                },
+                {
+                    "Tier": 2,
+                    "DurationMinutes": 45
+                }
+            ]
+        },
+        {
+            "Name": "Beachday",
+            "WeatherPool": {
+                "RowName": "All_Weather_MoreLight"
+            },
+            "Pattern": [
+                {
+                    "Tier": 1,
+                    "DurationMinutes": 60
+                },
+                {
+                    "Tier": 2,
+                    "DurationMinutes": 40
+                },
+                {
+                    "Tier": 1,
+                    "DurationMinutes": 50
+                },
+                {
+                    "Tier": 2,
+                    "DurationMinutes": 30
+                }
+            ]
+        },
+        {
+            "Name": "Surprise",
+            "WeatherPool": {
+                "RowName": "All_Weather"
+            },
+            "Pattern": [
+                {
+                    "Tier": 1,
+                    "DurationMinutes": 60
+                },
+                {
+                    "Tier": 5,
+                    "DurationMinutes": 25
+                },
+                {
+                    "Tier": 1,
+                    "DurationMinutes": 40
+                },
+                {
+                    "Tier": 2,
+                    "DurationMinutes": 40
+                }
+            ]
+        },
+        {
+            "Name": "Esculation",
+            "WeatherPool": {
+                "RowName": "All_Weather"
+            },
+            "Pattern": [
+                {
+                    "Tier": 1,
+                    "DurationMinutes": 60
+                },
+                {
+                    "Tier": 3,
+                    "DurationMinutes": 55
+                },
+                {
+                    "Tier": 2,
+                    "DurationMinutes": 55
+                },
+                {
+                    "Tier": 4,
+                    "DurationMinutes": 50
+                },
+                {
+                    "Tier": 3,
+                    "DurationMinutes": 40
+                },
+                {
+                    "Tier": 5,
+                    "DurationMinutes": 20
+                },
+                {
+                    "Tier": 3,
+                    "DurationMinutes": 35
+                }
+            ]
+        },
+        {
+            "Name": "IThoughtItWasOver",
+            "WeatherPool": {
+                "RowName": "All_Weather"
+            },
+            "Pattern": [
+                {
+                    "Tier": 1,
+                    "DurationMinutes": 20
+                },
+                {
+                    "Tier": 5,
+                    "DurationMinutes": 30
+                },
+                {
+                    "Tier": 3,
+                    "DurationMinutes": 35
+                },
+                {
+                    "Tier": 4,
+                    "DurationMinutes": 40
+                },
+                {
+                    "Tier": 1,
+                    "DurationMinutes": 60
+                },
+                {
+                    "Tier": 5,
+                    "DurationMinutes": 25
+                },
+                {
+                    "Tier": 2,
+                    "DurationMinutes": 60
+                }
+            ]
+        },
+        {
+            "Name": "TokenGesture",
+            "WeatherPool": {
+                "RowName": "All_Weather"
+            },
+            "Pattern": [
+                {
+                    "Tier": 2,
+                    "DurationMinutes": 40
+                },
+                {
+                    "Tier": 5,
+                    "DurationMinutes": 50
+                },
+                {
+                    "Tier": 4,
+                    "DurationMinutes": 40
+                },
+                {
+                    "Tier": 5,
+                    "DurationMinutes": 55
+                }
+            ]
+        },
+        {
+            "Name": "MostlyMild",
+            "WeatherPool": {
+                "RowName": "All_Weather_MoreLight"
+            },
+            "Pattern": [
+                {
+                    "Tier": 1,
+                    "DurationMinutes": 60
+                },
+                {
+                    "Tier": 2,
+                    "DurationMinutes": 40
+                },
+                {
+                    "Tier": 1,
+                    "DurationMinutes": 50
+                },
+                {
+                    "Tier": 3,
+                    "DurationMinutes": 30
+                }
+            ]
+        },
+        {
+            "Name": "Initial",
+            "WeatherPool": {
+                "RowName": "All_Weather_MoreLight"
+            },
+            "Pattern": [
+                {
+                    "Tier": 1,
+                    "DurationMinutes": 30
+                }
+            ]
+        },
+        {
+            "Name": "Initial_RoughLanding",
+            "WeatherPool": {
+                "RowName": "All_Weather"
+            },
+            "Pattern": [
+                {
+                    "Tier": 2,
+                    "DurationMinutes": 15
+                }
+            ]
+        },
+        {
+            "Name": "Initial_MiddleGround",
+            "WeatherPool": {
+                "RowName": "All_Weather_MoreLight"
+            },
+            "Pattern": [
+                {
+                    "Tier": 2,
+                    "DurationMinutes": 35
+                }
+            ]
+        },
+        {
+            "Name": "Initial_MiniRamp",
+            "WeatherPool": {
+                "RowName": "All_Weather_MoreLight"
+            },
+            "Pattern": [
+                {
+                    "Tier": 1,
+                    "DurationMinutes": 35
+                },
+                {
+                    "Tier": 2,
+                    "DurationMinutes": 30
+                },
+                {
+                    "Tier": 3,
+                    "DurationMinutes": 25
+                }
+            ]
+        },
+        {
+            "Name": "IceStorm",
+            "WeatherPool": {
+                "RowName": "All_Weather_HarshArctic"
+            },
+            "Pattern": [
+                {
+                    "Tier": 1,
+                    "DurationMinutes": 50
+                },
+                {
+                    "Tier": 3,
+                    "DurationMinutes": 35
+                },
+                {
+                    "Tier": 2,
+                    "DurationMinutes": 30
+                },
+                {
+                    "Tier": 3,
+                    "DurationMinutes": 40
+                },
+                {
+                    "Tier": 2,
+                    "DurationMinutes": 35
+                }
+            ]
+        },
+        {
+            "Name": "Surprise_Mild",
+            "WeatherPool": {
+                "RowName": "All_Weather"
+            },
+            "Pattern": [
+                {
+                    "Tier": 1,
+                    "DurationMinutes": 60
+                },
+                {
+                    "Tier": 4,
+                    "DurationMinutes": 25
+                },
+                {
+                    "Tier": 1,
+                    "DurationMinutes": 40
+                },
+                {
+                    "Tier": 2,
+                    "DurationMinutes": 40
+                }
+            ]
+        },
+        {
+            "Name": "Arena_IceMammoth_Blizzard",
+            "WeatherPool": {
+                "RowName": "Ice_Arena_Blizzard"
+            },
+            "Pattern": [
+                {
+                    "Tier": 4,
+                    "DurationMinutes": 167
+                }
+            ]
+        }
+    ]
+}

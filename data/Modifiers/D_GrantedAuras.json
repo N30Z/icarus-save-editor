@@ -1,0 +1,284 @@
+{
+    "RowStruct": "/Script/Icarus.AuraInfo",
+    "Defaults": {
+        "Modifier": {
+            "RowName": "None",
+            "DataTableName": "D_ModifierStates"
+        },
+        "Stat": {
+            "Value": "None"
+        }
+    },
+    "Rows": [
+        {
+            "Name": "AuraOxygenConsumption",
+            "Modifier": {
+                "RowName": "GrantedAura_ReducedOxygenConsumption"
+            },
+            "Stat": {
+                "Value": "GrantedAuraOxygenConsumptionRate_?"
+            }
+        },
+        {
+            "Name": "AuraPhysicalResistance",
+            "Modifier": {
+                "RowName": "GrantedAura_AdditionalPhysicalDamageMitigation"
+            },
+            "Stat": {
+                "Value": "GrantedAuraPhysicalDamageResistance_?"
+            }
+        },
+        {
+            "Name": "AuraWeightReduction",
+            "Modifier": {
+                "RowName": "Weight_Reduction_Aura"
+            },
+            "Stat": {
+                "Value": "GrantedAuraWeightReduction_?"
+            }
+        },
+        {
+            "Name": "AuraHealing",
+            "Modifier": {
+                "RowName": "Healing_Modifier_Aura"
+            },
+            "Stat": {
+                "Value": "GrantedAuraHealingAfflictions_?"
+            }
+        },
+        {
+            "Name": "AuraTaming",
+            "Modifier": {
+                "RowName": "GrantedAura_TamingSpeed"
+            },
+            "Stat": {
+                "Value": "GrantedAuraTamingSpeed_?"
+            }
+        },
+        {
+            "Name": "AuraSulfurPool",
+            "Modifier": {
+                "RowName": "GrantedAura_SulfurPool"
+            },
+            "Stat": {
+                "Value": "GrantedAuraSulfurPool_?"
+            }
+        },
+        {
+            "Name": "AuraHealthRegen",
+            "Modifier": {
+                "RowName": "GrantedAura_HealthRegen"
+            },
+            "Stat": {
+                "Value": "GrantedAuraHealthRegen_?"
+            }
+        },
+        {
+            "Name": "AuraMovementSpeed",
+            "Modifier": {
+                "RowName": "GrantedAura_MovementSpeed"
+            },
+            "Stat": {
+                "Value": "GrantedAuraMovementSpeed_?"
+            }
+        },
+        {
+            "Name": "AuraHyperthermiaResistance",
+            "Modifier": {
+                "RowName": "GrantedAura_HyperthermiaResistance"
+            },
+            "Stat": {
+                "Value": "GrantedAuraHyperthermiaResistance_?"
+            }
+        },
+        {
+            "Name": "AuraHypothermiaResistance",
+            "Modifier": {
+                "RowName": "GrantedAura_HypothermiaResistance"
+            },
+            "Stat": {
+                "Value": "GrantedAuraHypothermiaResistance_?"
+            }
+        },
+        {
+            "Name": "AuraWarming",
+            "Modifier": {
+                "RowName": "GrantedAura_Warming"
+            },
+            "Stat": {
+                "Value": "GrantedAuraWarming_?"
+            }
+        },
+        {
+            "Name": "AuraMedicBackpack",
+            "Modifier": {
+                "RowName": "GrantedAura_MedicBackpack"
+            },
+            "Stat": {
+                "Value": "GrantedAuraMedicBackpack_?"
+            }
+        },
+        {
+            "Name": "AuraFrostnip",
+            "Modifier": {
+                "RowName": "GrantedAura_Frostnip"
+            },
+            "Stat": {
+                "Value": "GrantedAuraCooling_?"
+            }
+        },
+        {
+            "Name": "AuraApeResist",
+            "Modifier": {
+                "RowName": "GrantedAura_ApeStrong"
+            },
+            "Stat": {
+                "Value": "GrantedAuraApeResist_?"
+            }
+        },
+        {
+            "Name": "AuraApeStrong",
+            "Modifier": {
+                "RowName": "GrantedAura_ApeStrong"
+            },
+            "Stat": {
+                "Value": "GrantedAuraApeStrong_?"
+            }
+        },
+        {
+            "Name": "AuraApeSpeed",
+            "Modifier": {
+                "RowName": "GrantedAura_ApeStrong"
+            },
+            "Stat": {
+                "Value": "GrantedAuraApeSpeed_?"
+            }
+        },
+        {
+            "Name": "GrantedModifierEnragedBlood",
+            "Modifier": {
+                "RowName": "EnragedBlood"
+            },
+            "Stat": {
+                "Value": "GrantedModifierEnrangedBlood_?"
+            }
+        },
+        {
+            "Name": "AuraFrostCloud",
+            "Modifier": {
+                "RowName": "GrantedAura_FrostCloud"
+            },
+            "Stat": {
+                "Value": "GrantedAuraFrostCloud_?"
+            }
+        },
+        {
+            "Name": "AuraPoisonResistance",
+            "Modifier": {
+                "RowName": "GrantedAura_PoisonResistance"
+            },
+            "Stat": {
+                "Value": "GrantedAuraPoisonResistance_?"
+            }
+        },
+        {
+            "Name": "AuraWaterRetention",
+            "Modifier": {
+                "RowName": "GrantedAura_WaterRetention"
+            },
+            "Stat": {
+                "Value": "GrantedAuraWaterRetention_?"
+            }
+        },
+        {
+            "Name": "AuraCamouflage",
+            "Modifier": {
+                "RowName": "GrantedAura_Camouflage"
+            },
+            "Stat": {
+                "Value": "GrantedAuraCamouflage_?"
+            }
+        },
+        {
+            "Name": "AuraInteractionSpeed",
+            "Modifier": {
+                "RowName": "GrantedAura_InteractionSpeed"
+            },
+            "Stat": {
+                "Value": "GrantedAuraInteractionSpeed_?"
+            }
+        },
+        {
+            "Name": "NonAura_ChargesItemsInInventory",
+            "Modifier": {
+                "RowName": "ChargesItemsInInventory"
+            },
+            "Stat": {
+                "Value": "ChargeItemsInInventory_?"
+            }
+        },
+        {
+            "Name": "AuraShelter",
+            "Modifier": {
+                "RowName": "GrantedAura_Sheltered"
+            },
+            "Stat": {
+                "Value": "GrantedAuraSheltered_?"
+            }
+        },
+        {
+            "Name": "NonAura_ExperienceBoost",
+            "Modifier": {
+                "RowName": "XP_Boost"
+            },
+            "Stat": {
+                "Value": "DoubleExperienceEvent_?"
+            }
+        },
+        {
+            "Name": "AuraGestatingSpeed",
+            "Modifier": {
+                "RowName": "GrantedAura_GestationSpeed"
+            },
+            "Stat": {
+                "Value": "HasGestatingSpeedAura_?"
+            }
+        },
+        {
+            "Name": "AuraInhibitSlinkerHunting",
+            "Modifier": {
+                "RowName": "GrantedAura_InhibitSlinkerHunting"
+            },
+            "Stat": {
+                "Value": "GrantedAuraInhibitSlinkerHunting_?"
+            }
+        },
+        {
+            "Name": "AuraCropGrowthYield",
+            "Modifier": {
+                "RowName": "GrantedAura_CropGrowthYield"
+            },
+            "Stat": {
+                "Value": "GrantedAuraCropGrowthYield_?"
+            }
+        },
+        {
+            "Name": "AuraProtectorTalentAura",
+            "Modifier": {
+                "RowName": "GrantedAura_ProtectorTalent"
+            },
+            "Stat": {
+                "Value": "GrantedAuraProtectorTalent_?"
+            }
+        },
+        {
+            "Name": "GrantedModifierCarryingSpeeder",
+            "Modifier": {
+                "RowName": "CarryingSpeeder"
+            },
+            "Stat": {
+                "Value": "CarryingSpeeder_?"
+            }
+        }
+    ]
+}

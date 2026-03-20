@@ -1,0 +1,101 @@
+{
+    "RowStruct": "/Script/Icarus.GameplayConfig",
+    "Defaults": {
+        "FloatValue": 0
+    },
+    "GenerateEnum": true,
+    "Rows": [
+        {
+            "Name": "ArmorDamagePercent",
+            "FloatValue": 1
+        },
+        {
+            "Name": "DynamicQuestCancelDelay",
+            "FloatValue": 600
+        },
+        {
+            "Name": "MaxProspectAssociatedMembers",
+            "FloatValue": 60
+        },
+        {
+            "Name": "BaseMinFishingTime",
+            "FloatValue": 25
+        },
+        {
+            "Name": "BaseMaxFishingTime",
+            "FloatValue": 30
+        },
+        {
+            "Name": "ExoticReplenishEnabled",
+            "FloatValue": 1
+        },
+        {
+            "Name": "ExFieldGuideEnabled",
+            "FloatValue": 1
+        },
+        {
+            "Name": "ComfortLevelRange",
+            "FloatValue": 2000
+        },
+        {
+            "Name": "SeedPloughInterval",
+            "FloatValue": 0.5
+        },
+        {
+            "Name": "RecommendedBuilding",
+            "FloatValue": 150
+        },
+        {
+            "Name": "RecommendedDeployable",
+            "FloatValue": 30
+        },
+        {
+            "Name": "RecommendedMounts",
+            "FloatValue": 20
+        },
+        {
+            "Name": "ScopeOverlaysEnabled",
+            "FloatValue": 1
+        },
+        {
+            "Name": "RecommendedPipes",
+            "FloatValue": 500
+        },
+        {
+            "Name": "RecommendedWires",
+            "FloatValue": 500
+        },
+        {
+            "Name": "BoneToCarbonPasteConversion",
+            "FloatValue": 0.4000000059604645
+        },
+        {
+            "Name": "RadiationDistanceNode",
+            "FloatValue": 10000
+        },
+        {
+            "Name": "RadiationMinDistanceInventory",
+            "FloatValue": 750
+        },
+        {
+            "Name": "RadiationMAxDistanceInventory",
+            "FloatValue": 3500
+        },
+        {
+            "Name": "MaxGeneticCombination",
+            "FloatValue": 60
+        },
+        {
+            "Name": "IconicDustConversion",
+            "FloatValue": 0.30000001192092896
+        },
+        {
+            "Name": "SapConversion",
+            "FloatValue": 0.15000000596046448
+        },
+        {
+            "Name": "ResinConversion",
+            "FloatValue": 0.10000000149011612
+        }
+    ]
+}

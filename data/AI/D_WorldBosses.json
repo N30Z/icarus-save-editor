@@ -1,0 +1,218 @@
+{
+    "RowStruct": "/Script/Icarus.WorldBossData",
+    "Defaults": {
+        "AISetup": {
+            "RowName": "None",
+            "DataTableName": "D_AISetup"
+        },
+        "EpicCreature": {
+            "RowName": "None",
+            "DataTableName": "D_EpicCreatures"
+        },
+        "SpawnerClass": "None",
+        "SpawnerTagQuery": {
+            "TokenStreamVersion": 0,
+            "TagDictionary": [],
+            "QueryTokenStream": [],
+            "UserDescription": "",
+            "AutoDescription": ""
+        },
+        "BehaviourClass": "None",
+        "bReloadDeadBoss": false,
+        "BossMapMarker": {
+            "RowName": "None",
+            "DataTableName": "D_MapIcons"
+        },
+        "bCanRespawnInPersistentProspects": true,
+        "bStartsOnRespawnCooldown": false,
+        "RespawnTimeInSeconds": 1800,
+        "RespawnTimeRandomDeviation": 300
+    },
+    "Rows": [
+        {
+            "Name": "SandWorm",
+            "AISetup": {
+                "RowName": "SandWorm"
+            },
+            "EpicCreature": {
+                "RowName": "Sandworm_WorldBoss"
+            },
+            "SpawnerClass": "/Game/BP/Systems/WorldBoss/BP_WorldBossSpawner_SandWorm.BP_WorldBossSpawner_SandWorm_C",
+            "SpawnerTagQuery": {
+                "TagDictionary": [
+                    {
+                        "TagName": "WorldBoss.SpawnLocation.SandWorm"
+                    }
+                ],
+                "QueryTokenStream": [
+                    0,
+                    1,
+                    1,
+                    1,
+                    0
+                ],
+                "AutoDescription": " ANY( WorldBoss.SpawnLocation.SandWorm )"
+            },
+            "BehaviourClass": "/Game/BP/Systems/WorldBoss/BP_WorldBossBehaviour_SandWorm.BP_WorldBossBehaviour_SandWorm_C",
+            "bReloadDeadBoss": true,
+            "BossMapMarker": {
+                "RowName": "WorldBoss_SandWorm"
+            },
+            "RespawnTimeInSeconds": 3600,
+            "RespawnTimeRandomDeviation": 600
+        },
+        {
+            "Name": "Scorpion",
+            "AISetup": {
+                "RowName": "Scorpion_Boss"
+            },
+            "EpicCreature": {
+                "RowName": "Scorpion_Boss"
+            },
+            "SpawnerClass": "/Game/BP/Systems/WorldBoss/BP_WorldBossSpawner_Scorpion.BP_WorldBossSpawner_Scorpion_C",
+            "SpawnerTagQuery": {
+                "TagDictionary": [
+                    {
+                        "TagName": "WorldBoss.SpawnLocation.Scorpion"
+                    }
+                ],
+                "QueryTokenStream": [
+                    0,
+                    1,
+                    1,
+                    1,
+                    0
+                ],
+                "AutoDescription": " ANY( WorldBoss.SpawnLocation.Scorpion )"
+            },
+            "bReloadDeadBoss": true,
+            "BossMapMarker": {
+                "RowName": "WorldBoss_Scorpion"
+            },
+            "RespawnTimeInSeconds": 3600,
+            "RespawnTimeRandomDeviation": 600
+        },
+        {
+            "Name": "AlphaWolf",
+            "AISetup": {
+                "RowName": "Alpha_Wolf_Boss"
+            },
+            "EpicCreature": {
+                "RowName": "AlphaWolf_Boss"
+            },
+            "SpawnerClass": "/Game/BP/Systems/WorldBoss/BP_WorldBossSpawner_Alpha_Wolf.BP_WorldBossSpawner_Alpha_Wolf_C",
+            "SpawnerTagQuery": {
+                "TagDictionary": [
+                    {
+                        "TagName": "WorldBoss.SpawnLocation.AlphaWolf"
+                    }
+                ],
+                "QueryTokenStream": [
+                    0,
+                    1,
+                    1,
+                    1,
+                    0
+                ],
+                "AutoDescription": " ANY( WorldBoss.SpawnLocation.AlphaWolf )"
+            },
+            "BossMapMarker": {
+                "RowName": "WorldBoss_AlphaWolf"
+            },
+            "RespawnTimeInSeconds": 3600,
+            "RespawnTimeRandomDeviation": 600
+        },
+        {
+            "Name": "LavaHunter",
+            "AISetup": {
+                "RowName": "LavaHunter"
+            },
+            "EpicCreature": {
+                "RowName": "LavaHunter"
+            },
+            "SpawnerClass": "/Game/BP/Systems/WorldBoss/BP_WorldBossSpawner_LavaHunter.BP_WorldBossSpawner_LavaHunter_C",
+            "SpawnerTagQuery": {
+                "TagDictionary": [
+                    {
+                        "TagName": "WorldBoss.SpawnLocation.LavaHunter"
+                    }
+                ],
+                "QueryTokenStream": [
+                    0,
+                    1,
+                    1,
+                    1,
+                    0
+                ],
+                "AutoDescription": " ANY( WorldBoss.SpawnLocation.LavaHunter )"
+            },
+            "bReloadDeadBoss": true,
+            "BossMapMarker": {
+                "RowName": "WorldBoss_LavaHunter"
+            },
+            "RespawnTimeInSeconds": 3600,
+            "RespawnTimeRandomDeviation": 600
+        },
+        {
+            "Name": "HammerheadSlug",
+            "AISetup": {
+                "RowName": "Hammerhead_Slug_Large"
+            },
+            "EpicCreature": {
+                "RowName": "Hammerhead_Slug"
+            },
+            "SpawnerClass": "/Game/BP/Systems/WorldBoss/BP_WorldBossSpawner_HammerheadSlug.BP_WorldBossSpawner_HammerheadSlug_C",
+            "SpawnerTagQuery": {
+                "TagDictionary": [
+                    {
+                        "TagName": "WorldBoss.SpawnLocation.HammerheadSlug"
+                    }
+                ],
+                "QueryTokenStream": [
+                    0,
+                    1,
+                    2,
+                    1,
+                    0
+                ],
+                "AutoDescription": " ALL( WorldBoss.SpawnLocation.HammerheadSlug )"
+            },
+            "BossMapMarker": {
+                "RowName": "WorldBoss_HammerheadSlug"
+            },
+            "RespawnTimeInSeconds": 3600,
+            "RespawnTimeRandomDeviation": 600
+        },
+        {
+            "Name": "SandwyrmQueen",
+            "AISetup": {
+                "RowName": "Sandwyrm_Queen"
+            },
+            "EpicCreature": {
+                "RowName": "Sandwym_Queen"
+            },
+            "SpawnerClass": "/Game/BP/Systems/WorldBoss/BP_WorldBossSpawner_SandwyrmQueen.BP_WorldBossSpawner_SandwyrmQueen_C",
+            "SpawnerTagQuery": {
+                "TagDictionary": [
+                    {
+                        "TagName": "WorldBoss.SpawnLocation.SandwrymQueen"
+                    }
+                ],
+                "QueryTokenStream": [
+                    0,
+                    1,
+                    2,
+                    1,
+                    0
+                ],
+                "AutoDescription": " ALL( WorldBoss.SpawnLocation.SandwrymQueen )"
+            },
+            "bReloadDeadBoss": true,
+            "BossMapMarker": {
+                "RowName": "WorldBoss_SandwyrmQueen"
+            },
+            "RespawnTimeInSeconds": 3600,
+            "RespawnTimeRandomDeviation": 600
+        }
+    ]
+}

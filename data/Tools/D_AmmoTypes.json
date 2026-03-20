@@ -1,0 +1,575 @@
+{
+    "RowStruct": "/Script/Icarus.AmmoTypeData",
+    "Defaults": {
+        "ProjectileCount": 1,
+        "ProjectileDamage": 5,
+        "ProjectileAccuracy": {
+            "X": 0,
+            "Y": 0
+        },
+        "Stats": {}
+    },
+    "Rows": [
+        {
+            "Name": "Shell_Buckshot",
+            "ProjectileCount": 9,
+            "ProjectileDamage": 30,
+            "ProjectileAccuracy": {
+                "X": 2,
+                "Y": 2
+            },
+            "Stats": {
+                "(Value=\"BaseChanceProjectilesBreak_%\")": 100
+            }
+        },
+        {
+            "Name": "Shell_Workshop",
+            "ProjectileCount": 9,
+            "ProjectileDamage": 50,
+            "ProjectileAccuracy": {
+                "X": 2,
+                "Y": 2
+            },
+            "Stats": {
+                "(Value=\"BaseChanceProjectilesBreak_%\")": 100
+            }
+        },
+        {
+            "Name": "Shell_Explosive",
+            "ProjectileCount": 6,
+            "ProjectileDamage": 20,
+            "ProjectileAccuracy": {
+                "X": 3,
+                "Y": 3
+            },
+            "Stats": {
+                "(Value=\"BaseChanceProjectilesBreak_%\")": 100,
+                "(Value=\"BaseExplosiveDamage_+\")": 50,
+                "(Value=\"BaseExplosiveDamageRadius_+\")": 350
+            }
+        },
+        {
+            "Name": "Shell_Incendiary",
+            "ProjectileCount": 6,
+            "ProjectileDamage": 20,
+            "ProjectileAccuracy": {
+                "X": 3,
+                "Y": 3
+            },
+            "Stats": {
+                "(Value=\"BaseChanceProjectilesBreak_%\")": 100
+            }
+        },
+        {
+            "Name": "Shell_Slug",
+            "ProjectileDamage": 350,
+            "ProjectileAccuracy": {
+                "X": 1,
+                "Y": 1
+            },
+            "Stats": {
+                "(Value=\"BaseChanceProjectilesBreak_%\")": 100,
+                "(Value=\"BaseHardenedPointPenetration_%\")": 100
+            }
+        },
+        {
+            "Name": "Rifle_Round",
+            "ProjectileDamage": 300,
+            "ProjectileAccuracy": {
+                "X": 0.20000000298023224,
+                "Y": 0.20000000298023224
+            },
+            "Stats": {
+                "(Value=\"BaseChanceProjectilesBreak_%\")": 100
+            }
+        },
+        {
+            "Name": "Rifle_Round_Workshop",
+            "ProjectileDamage": 350,
+            "ProjectileAccuracy": {
+                "X": 0.20000000298023224,
+                "Y": 0.20000000298023224
+            },
+            "Stats": {
+                "(Value=\"BaseChanceProjectilesBreak_%\")": 100
+            }
+        },
+        {
+            "Name": "Rifle_Round_Explosive",
+            "ProjectileDamage": 200,
+            "ProjectileAccuracy": {
+                "X": 0.5,
+                "Y": 0.5
+            },
+            "Stats": {
+                "(Value=\"BaseChanceProjectilesBreak_%\")": 100,
+                "(Value=\"BaseExplosiveDamage_+\")": 300,
+                "(Value=\"BaseExplosiveDamageRadius_+\")": 500
+            }
+        },
+        {
+            "Name": "Rifle_Round_Incendiary",
+            "ProjectileDamage": 250,
+            "ProjectileAccuracy": {
+                "X": 0.5,
+                "Y": 0.5
+            },
+            "Stats": {
+                "(Value=\"BaseChanceProjectilesBreak_%\")": 100
+            }
+        },
+        {
+            "Name": "Rifle_Round_Armor_Piercing",
+            "ProjectileDamage": 250,
+            "ProjectileAccuracy": {
+                "X": 0.20000000298023224,
+                "Y": 0.20000000298023224
+            },
+            "Stats": {
+                "(Value=\"BaseChanceProjectilesBreak_%\")": 100,
+                "(Value=\"BaseHardenedPointPenetration_%\")": 100
+            }
+        },
+        {
+            "Name": "Rifle_Round_Obsidian",
+            "ProjectileDamage": 125,
+            "ProjectileAccuracy": {
+                "X": 0.20000000298023224,
+                "Y": 0.20000000298023224
+            },
+            "Stats": {
+                "(Value=\"BaseChanceProjectilesBreak_%\")": 100
+            }
+        },
+        {
+            "Name": "Rifle_Round_Cold_Steel",
+            "ProjectileDamage": 125,
+            "ProjectileAccuracy": {
+                "X": 0.20000000298023224,
+                "Y": 0.20000000298023224
+            },
+            "Stats": {
+                "(Value=\"BaseChanceProjectilesBreak_%\")": 100
+            }
+        },
+        {
+            "Name": "Rifle_Round_Iron_Wood",
+            "ProjectileDamage": 125,
+            "ProjectileAccuracy": {
+                "X": 0.20000000298023224,
+                "Y": 0.20000000298023224
+            },
+            "Stats": {
+                "(Value=\"BaseChanceProjectilesBreak_%\")": 100
+            }
+        },
+        {
+            "Name": "Rifle_Round_Lithium",
+            "ProjectileDamage": 125,
+            "ProjectileAccuracy": {
+                "X": 0.20000000298023224,
+                "Y": 0.20000000298023224
+            },
+            "Stats": {
+                "(Value=\"BaseChanceProjectilesBreak_%\")": 100
+            }
+        },
+        {
+            "Name": "Rifle_Round_Uranium",
+            "ProjectileDamage": 350,
+            "ProjectileAccuracy": {
+                "X": 0.20000000298023224,
+                "Y": 0.20000000298023224
+            },
+            "Stats": {
+                "(Value=\"BaseChanceProjectilesBreak_%\")": 100
+            }
+        },
+        {
+            "Name": "Pistol_Round",
+            "ProjectileDamage": 150,
+            "ProjectileAccuracy": {
+                "X": 0.5,
+                "Y": 0.5
+            },
+            "Stats": {
+                "(Value=\"BaseChanceProjectilesBreak_%\")": 100
+            }
+        },
+        {
+            "Name": "Pistol_Round_Workshop",
+            "ProjectileDamage": 200,
+            "ProjectileAccuracy": {
+                "X": 0.5,
+                "Y": 0.5
+            },
+            "Stats": {
+                "(Value=\"BaseChanceProjectilesBreak_%\")": 100
+            }
+        },
+        {
+            "Name": "Pistol_Round_Explosive",
+            "ProjectileDamage": 50,
+            "ProjectileAccuracy": {
+                "X": 1,
+                "Y": 1
+            },
+            "Stats": {
+                "(Value=\"BaseChanceProjectilesBreak_%\")": 100,
+                "(Value=\"BaseExplosiveDamage_+\")": 250,
+                "(Value=\"BaseExplosiveDamageRadius_+\")": 400
+            }
+        },
+        {
+            "Name": "Pistol_Round_Incendiary",
+            "ProjectileDamage": 150,
+            "ProjectileAccuracy": {
+                "X": 1,
+                "Y": 1
+            },
+            "Stats": {
+                "(Value=\"BaseChanceProjectilesBreak_%\")": 100
+            }
+        },
+        {
+            "Name": "Pistol_Round_Armor_Piercing",
+            "ProjectileDamage": 150,
+            "ProjectileAccuracy": {
+                "X": 0.5,
+                "Y": 0.5
+            },
+            "Stats": {
+                "(Value=\"BaseChanceProjectilesBreak_%\")": 100,
+                "(Value=\"BaseHardenedPointPenetration_%\")": 100
+            }
+        },
+        {
+            "Name": "Pistol_Round_Obsidian",
+            "ProjectileDamage": 50,
+            "ProjectileAccuracy": {
+                "X": 0.5,
+                "Y": 0.5
+            },
+            "Stats": {
+                "(Value=\"BaseChanceProjectilesBreak_%\")": 100
+            }
+        },
+        {
+            "Name": "Pistol_Round_Cold_Steel",
+            "ProjectileDamage": 50,
+            "ProjectileAccuracy": {
+                "X": 0.5,
+                "Y": 0.5
+            },
+            "Stats": {
+                "(Value=\"BaseChanceProjectilesBreak_%\")": 100
+            }
+        },
+        {
+            "Name": "Pistol_Round_Iron_Wood",
+            "ProjectileDamage": 50,
+            "ProjectileAccuracy": {
+                "X": 0.5,
+                "Y": 0.5
+            },
+            "Stats": {
+                "(Value=\"BaseChanceProjectilesBreak_%\")": 100
+            }
+        },
+        {
+            "Name": "Pistol_Round_Uranium",
+            "ProjectileDamage": 150,
+            "ProjectileAccuracy": {
+                "X": 0.5,
+                "Y": 0.5
+            },
+            "Stats": {
+                "(Value=\"BaseChanceProjectilesBreak_%\")": 100
+            }
+        },
+        {
+            "Name": "Pistol_Round_Lithium",
+            "ProjectileDamage": 50,
+            "ProjectileAccuracy": {
+                "X": 0.5,
+                "Y": 0.5
+            },
+            "Stats": {
+                "(Value=\"BaseChanceProjectilesBreak_%\")": 100
+            }
+        },
+        {
+            "Name": "Shell_Miasmic",
+            "ProjectileCount": 6,
+            "ProjectileDamage": 20,
+            "ProjectileAccuracy": {
+                "X": 3,
+                "Y": 3
+            },
+            "Stats": {
+                "(Value=\"BaseChanceProjectilesBreak_%\")": 100
+            }
+        },
+        {
+            "Name": "Shell_ColdSteel",
+            "ProjectileCount": 6,
+            "ProjectileDamage": 20,
+            "ProjectileAccuracy": {
+                "X": 3,
+                "Y": 3
+            },
+            "Stats": {
+                "(Value=\"BaseChanceProjectilesBreak_%\")": 100
+            }
+        },
+        {
+            "Name": "Shell_Lithium",
+            "ProjectileCount": 6,
+            "ProjectileDamage": 20,
+            "ProjectileAccuracy": {
+                "X": 3,
+                "Y": 3
+            },
+            "Stats": {
+                "(Value=\"BaseChanceProjectilesBreak_%\")": 100
+            }
+        },
+        {
+            "Name": "Shell_Uranium",
+            "ProjectileCount": 6,
+            "ProjectileDamage": 50,
+            "ProjectileAccuracy": {
+                "X": 3,
+                "Y": 3
+            },
+            "Stats": {
+                "(Value=\"BaseChanceProjectilesBreak_%\")": 100
+            }
+        },
+        {
+            "Name": "Shell_Obsidian",
+            "ProjectileCount": 6,
+            "ProjectileDamage": 20,
+            "ProjectileAccuracy": {
+                "X": 3,
+                "Y": 3
+            },
+            "Stats": {
+                "(Value=\"BaseChanceProjectilesBreak_%\")": 100
+            }
+        },
+        {
+            "Name": "Ammo_Crude",
+            "ProjectileDamage": 100,
+            "ProjectileAccuracy": {
+                "X": 0.5,
+                "Y": 0.5
+            },
+            "Stats": {
+                "(Value=\"BaseChanceProjectilesBreak_%\")": 90
+            }
+        },
+        {
+            "Name": "Ammo_Stone",
+            "ProjectileCount": 3,
+            "ProjectileDamage": 0,
+            "ProjectileAccuracy": {
+                "X": 3,
+                "Y": 3
+            }
+        },
+        {
+            "Name": "Fireball",
+            "ProjectileDamage": 100,
+            "ProjectileAccuracy": {
+                "X": 0.5,
+                "Y": 0.5
+            },
+            "Stats": {
+                "(Value=\"BaseChanceProjectilesBreak_%\")": 100
+            }
+        },
+        {
+            "Name": "Ammo_Slug_Launcher",
+            "ProjectileDamage": 0
+        },
+        {
+            "Name": "Ammo_IceMammoth_SledgeHammer",
+            "ProjectileDamage": 60
+        },
+        {
+            "Name": "AssaultRifle_Round",
+            "ProjectileDamage": 200,
+            "ProjectileAccuracy": {
+                "X": 0.20000000298023224,
+                "Y": 0.20000000298023224
+            },
+            "Stats": {
+                "(Value=\"BaseChanceProjectilesBreak_%\")": 100
+            }
+        },
+        {
+            "Name": "AssaultRifle_Round_Workshop",
+            "ProjectileDamage": 250,
+            "ProjectileAccuracy": {
+                "X": 0.20000000298023224,
+                "Y": 0.20000000298023224
+            },
+            "Stats": {
+                "(Value=\"BaseChanceProjectilesBreak_%\")": 100
+            }
+        },
+        {
+            "Name": "AssaultRifle_Round_Explosive",
+            "ProjectileDamage": 100,
+            "ProjectileAccuracy": {
+                "X": 0.5,
+                "Y": 0.5
+            },
+            "Stats": {
+                "(Value=\"BaseChanceProjectilesBreak_%\")": 100,
+                "(Value=\"BaseExplosiveDamage_+\")": 250,
+                "(Value=\"BaseExplosiveDamageRadius_+\")": 450
+            }
+        },
+        {
+            "Name": "AssaultRifle_Round_Incendiary",
+            "ProjectileDamage": 150,
+            "ProjectileAccuracy": {
+                "X": 0.5,
+                "Y": 0.5
+            },
+            "Stats": {
+                "(Value=\"BaseChanceProjectilesBreak_%\")": 100
+            }
+        },
+        {
+            "Name": "AssaultRifle_Round_Armor_Piercing",
+            "ProjectileDamage": 150,
+            "ProjectileAccuracy": {
+                "X": 0.20000000298023224,
+                "Y": 0.20000000298023224
+            },
+            "Stats": {
+                "(Value=\"BaseChanceProjectilesBreak_%\")": 100,
+                "(Value=\"BaseHardenedPointPenetration_%\")": 100
+            }
+        },
+        {
+            "Name": "AssaultRifle_Round_Obsidian",
+            "ProjectileDamage": 75,
+            "ProjectileAccuracy": {
+                "X": 0.20000000298023224,
+                "Y": 0.20000000298023224
+            },
+            "Stats": {
+                "(Value=\"BaseChanceProjectilesBreak_%\")": 100
+            }
+        },
+        {
+            "Name": "AssaultRifle_Round_Cold_Steel",
+            "ProjectileDamage": 75,
+            "ProjectileAccuracy": {
+                "X": 0.20000000298023224,
+                "Y": 0.20000000298023224
+            },
+            "Stats": {
+                "(Value=\"BaseChanceProjectilesBreak_%\")": 100
+            }
+        },
+        {
+            "Name": "AssaultRifle_Round_Iron_Wood",
+            "ProjectileDamage": 75,
+            "ProjectileAccuracy": {
+                "X": 0.20000000298023224,
+                "Y": 0.20000000298023224
+            },
+            "Stats": {
+                "(Value=\"BaseChanceProjectilesBreak_%\")": 100
+            }
+        },
+        {
+            "Name": "AssaultRifle_Round_Lithium",
+            "ProjectileDamage": 75,
+            "ProjectileAccuracy": {
+                "X": 0.20000000298023224,
+                "Y": 0.20000000298023224
+            },
+            "Stats": {
+                "(Value=\"BaseChanceProjectilesBreak_%\")": 100
+            }
+        },
+        {
+            "Name": "AssaultRifle_Round_Uranium",
+            "ProjectileDamage": 250,
+            "ProjectileAccuracy": {
+                "X": 0.20000000298023224,
+                "Y": 0.20000000298023224
+            },
+            "Stats": {
+                "(Value=\"BaseChanceProjectilesBreak_%\")": 100
+            }
+        },
+        {
+            "Name": "Sniper_Round",
+            "ProjectileDamage": 600,
+            "ProjectileAccuracy": {
+                "X": 0.05000000074505806,
+                "Y": 0.05000000074505806
+            },
+            "Stats": {
+                "(Value=\"BaseChanceProjectilesBreak_%\")": 100
+            }
+        },
+        {
+            "Name": "Sniper_Round_Explosive",
+            "ProjectileDamage": 500,
+            "ProjectileAccuracy": {
+                "X": 0.05000000074505806,
+                "Y": 0.05000000074505806
+            },
+            "Stats": {
+                "(Value=\"BaseChanceProjectilesBreak_%\")": 100,
+                "(Value=\"BaseExplosiveDamage_+\")": 400,
+                "(Value=\"BaseExplosiveDamageRadius_+\")": 650
+            }
+        },
+        {
+            "Name": "Sniper_Round_Incendiary",
+            "ProjectileDamage": 500,
+            "ProjectileAccuracy": {
+                "X": 0.05000000074505806,
+                "Y": 0.05000000074505806
+            },
+            "Stats": {
+                "(Value=\"BaseChanceProjectilesBreak_%\")": 100
+            }
+        },
+        {
+            "Name": "Sniper_Round_Illumination",
+            "ProjectileDamage": 400,
+            "ProjectileAccuracy": {
+                "X": 0.05000000074505806,
+                "Y": 0.05000000074505806
+            },
+            "Stats": {
+                "(Value=\"BaseProjectileSpeed_+%\")": -90
+            }
+        },
+        {
+            "Name": "Ammo_Nail",
+            "ProjectileDamage": 0,
+            "ProjectileAccuracy": {
+                "X": 1,
+                "Y": 1
+            },
+            "Stats": {
+                "(Value=\"BaseChanceProjectilesBreak_%\")": 100
+            }
+        },
+        {
+            "Name": "Ammo_Laser_Pistol",
+            "ProjectileDamage": 0
+        }
+    ]
+}

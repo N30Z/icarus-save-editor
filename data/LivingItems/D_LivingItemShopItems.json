@@ -1,0 +1,289 @@
+{
+    "RowStruct": "/Script/Icarus.LivingItemShopItemData",
+    "Defaults": {
+        "ItemTemplate": {
+            "RowName": "None",
+            "DataTableName": "D_ItemTemplate"
+        },
+        "Cost": [],
+        "ItemImage": "None",
+        "ItemBackground": "None",
+        "ShopBackground": "None",
+        "BossIcon": "None",
+        "Biomass": {
+            "RowName": "None",
+            "DataTableName": "D_ItemsStatic"
+        },
+        "RequiredPackageToPurchase": {
+            "RowName": "None",
+            "DataTableName": "D_DLCPackageData"
+        },
+        "RequiredAccountFlag": {
+            "RowName": "None",
+            "DataTableName": "D_AccountFlags"
+        }
+    },
+    "Rows": [
+        {
+            "Name": "Legendary_Sniper",
+            "ItemTemplate": {
+                "RowName": "LegendaryWeapon_Sniper"
+            },
+            "Cost": [
+                {
+                    "Meta": {
+                        "RowName": "Licence",
+                        "DataTableName": "D_MetaCurrency"
+                    },
+                    "Amount": 1
+                }
+            ],
+            "ItemImage": "/Game/Assets/2DArt/UI/GreatHunt/T_GHBIOLAB_UI_WPN_SNIPER.T_GHBIOLAB_UI_WPN_SNIPER",
+            "ItemBackground": "/Game/Assets/2DArt/UI/Biolab/T_MonkWepScreen.T_MonkWepScreen",
+            "ShopBackground": "/Game/Assets/2DArt/UI/GreatHunt/T_UI_BIOLAB_SHOP_GARGANUTAN.T_UI_BIOLAB_SHOP_GARGANUTAN",
+            "BossIcon": "/Game/Assets/2DArt/UI/Icons/BossMonsters/T_ICON_ApeBoss.T_ICON_ApeBoss",
+            "Biomass": {
+                "RowName": "Biomass"
+            },
+            "RequiredPackageToPurchase": {
+                "RowName": "Great_Hunts"
+            },
+            "RequiredAccountFlag": {
+                "RowName": "GrantedTalent_GH_APE"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "Legendary_Bow",
+            "ItemTemplate": {
+                "RowName": "LegendaryWeapon_Bow"
+            },
+            "Cost": [
+                {
+                    "Meta": {
+                        "RowName": "Licence",
+                        "DataTableName": "D_MetaCurrency"
+                    },
+                    "Amount": 1
+                }
+            ],
+            "ItemImage": "/Game/Assets/2DArt/UI/GreatHunt/T_GHBIOLAB_UI_WPN_BOW.T_GHBIOLAB_UI_WPN_BOW",
+            "ItemBackground": "/Game/Assets/2DArt/UI/Biolab/T_MammWepScreen.T_MammWepScreen",
+            "ShopBackground": "/Game/Assets/2DArt/UI/GreatHunt/T_UI_BIOLAB_SHOP_RIMETUSK.T_UI_BIOLAB_SHOP_RIMETUSK",
+            "BossIcon": "/Game/Assets/2DArt/UI/Icons/BossMonsters/T_ICON_IceMammoth.T_ICON_IceMammoth",
+            "Biomass": {
+                "RowName": "Biomass"
+            },
+            "RequiredPackageToPurchase": {
+                "RowName": "Great_Hunts"
+            },
+            "RequiredAccountFlag": {
+                "RowName": "GrantedTalent_GH_IM"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "Rock_Golem",
+            "ItemTemplate": {
+                "RowName": "LegendaryWeapon_GolemGauntlet"
+            },
+            "Cost": [
+                {
+                    "Meta": {
+                        "RowName": "Licence",
+                        "DataTableName": "D_MetaCurrency"
+                    },
+                    "Amount": 1
+                }
+            ],
+            "ItemImage": "/Game/Assets/2DArt/UI/GreatHunt/T_LWEAPON_RG.T_LWEAPON_RG",
+            "ItemBackground": "/Game/Assets/2DArt/UI/Biolab/T_GolemWepScreen.T_GolemWepScreen",
+            "ShopBackground": "/Game/Assets/2DArt/UI/GreatHunt/T_UI_BIOLAB_SHOP_QUARRITE.T_UI_BIOLAB_SHOP_QUARRITE",
+            "BossIcon": "/Game/Assets/2DArt/UI/Icons/BossMonsters/T_ICON_RockGolem.T_ICON_RockGolem",
+            "Biomass": {
+                "RowName": "Biomass"
+            },
+            "RequiredPackageToPurchase": {
+                "RowName": "Great_Hunts"
+            },
+            "RequiredAccountFlag": {
+                "RowName": "GrantedTalent_GH_RG"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "Black_Wolf",
+            "ItemTemplate": {
+                "RowName": "LegendaryWeapon_Black_Wolf_Revolver"
+            },
+            "Cost": [
+                {
+                    "Meta": {
+                        "RowName": "Licence",
+                        "DataTableName": "D_MetaCurrency"
+                    },
+                    "Amount": 1
+                }
+            ],
+            "ItemImage": "/Game/Assets/2DArt/UI/GreatHunt/T_WEAPON_INFO_BR.T_WEAPON_INFO_BR",
+            "ItemBackground": "/Game/Assets/2DArt/UI/Biolab/T_NorexBasic.T_NorexBasic",
+            "ShopBackground": "/Game/Assets/2DArt/UI/Biolab/T_NorexBasic.T_NorexBasic",
+            "BossIcon": "/Game/Assets/2DArt/UI/Icons/Currency/T_ICON_CURRENCY_NOREX.T_ICON_CURRENCY_NOREX",
+            "Biomass": {
+                "RowName": "Biomass"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "Scorpion",
+            "ItemTemplate": {
+                "RowName": "LegendaryWeapon_Scorpion_Rifle"
+            },
+            "Cost": [
+                {
+                    "Meta": {
+                        "RowName": "Licence",
+                        "DataTableName": "D_MetaCurrency"
+                    },
+                    "Amount": 1
+                }
+            ],
+            "ItemImage": "/Game/Assets/2DArt/UI/GreatHunt/T_WEAPON_INFO_SR.T_WEAPON_INFO_SR",
+            "ItemBackground": "/Game/Assets/2DArt/UI/Biolab/T_NorexBasic.T_NorexBasic",
+            "ShopBackground": "/Game/Assets/2DArt/UI/Biolab/T_NorexBasic.T_NorexBasic",
+            "BossIcon": "/Game/Assets/2DArt/UI/Icons/Currency/T_ICON_CURRENCY_NOREX.T_ICON_CURRENCY_NOREX",
+            "Biomass": {
+                "RowName": "Biomass"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "Sandworm",
+            "ItemTemplate": {
+                "RowName": "LegendaryWeapon_Sandworm_Crossbow"
+            },
+            "Cost": [
+                {
+                    "Meta": {
+                        "RowName": "Licence",
+                        "DataTableName": "D_MetaCurrency"
+                    },
+                    "Amount": 1
+                }
+            ],
+            "ItemImage": "/Game/Assets/2DArt/UI/GreatHunt/T_WEAPON_INFO_SC.T_WEAPON_INFO_SC",
+            "ItemBackground": "/Game/Assets/2DArt/UI/Biolab/T_NorexBasic.T_NorexBasic",
+            "ShopBackground": "/Game/Assets/2DArt/UI/Biolab/T_NorexBasic.T_NorexBasic",
+            "BossIcon": "/Game/Assets/2DArt/UI/Icons/Currency/T_ICON_CURRENCY_NOREX.T_ICON_CURRENCY_NOREX",
+            "Biomass": {
+                "RowName": "Biomass"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "Lava_Hunter",
+            "ItemTemplate": {
+                "RowName": "LegendaryWeapon_LavaHunter_Flamethrower"
+            },
+            "Cost": [
+                {
+                    "Meta": {
+                        "RowName": "Licence",
+                        "DataTableName": "D_MetaCurrency"
+                    },
+                    "Amount": 1
+                }
+            ],
+            "ItemImage": "/Game/Assets/2DArt/UI/GreatHunt/T_WEAPON_INFO_LF.T_WEAPON_INFO_LF",
+            "ItemBackground": "/Game/Assets/2DArt/UI/Biolab/T_NorexBasic.T_NorexBasic",
+            "ShopBackground": "/Game/Assets/2DArt/UI/Biolab/T_NorexBasic.T_NorexBasic",
+            "BossIcon": "/Game/Assets/2DArt/UI/Icons/Currency/T_ICON_CURRENCY_NOREX.T_ICON_CURRENCY_NOREX",
+            "Biomass": {
+                "RowName": "Biomass"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "Ape",
+            "ItemTemplate": {
+                "RowName": "LegendaryWeapon_ApeClub"
+            },
+            "Cost": [
+                {
+                    "Meta": {
+                        "RowName": "Licence",
+                        "DataTableName": "D_MetaCurrency"
+                    },
+                    "Amount": 1
+                }
+            ],
+            "ItemImage": "/Game/Assets/2DArt/UI/GreatHunt/T_GH_UI_WPN_GARGANUTAN.T_GH_UI_WPN_GARGANUTAN",
+            "ItemBackground": "/Game/Assets/2DArt/UI/Biolab/T_NorexBasic.T_NorexBasic",
+            "ShopBackground": "/Game/Assets/2DArt/UI/Biolab/T_NorexBasic.T_NorexBasic",
+            "BossIcon": "/Game/Assets/2DArt/UI/Icons/Currency/T_ICON_CURRENCY_NOREX.T_ICON_CURRENCY_NOREX",
+            "Biomass": {
+                "RowName": "Biomass"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "Sandwyrm_Chainsaw",
+            "ItemTemplate": {
+                "RowName": "LegendaryWeapon_Sandwyrm_Chainsaw"
+            },
+            "Cost": [
+                {
+                    "Meta": {
+                        "RowName": "Licence",
+                        "DataTableName": "D_MetaCurrency"
+                    },
+                    "Amount": 1
+                }
+            ],
+            "ItemImage": "/Game/Assets/2DArt/UI/GreatHunt/T_GHBIOLAB_UI_WPN_CHAINSAW.T_GHBIOLAB_UI_WPN_CHAINSAW",
+            "ItemBackground": "/Game/Assets/2DArt/UI/Biolab/T_NorexBasic.T_NorexBasic",
+            "ShopBackground": "/Game/Assets/2DArt/UI/Biolab/T_NorexBasic.T_NorexBasic",
+            "BossIcon": "/Game/Assets/2DArt/UI/Icons/Currency/T_ICON_CURRENCY_NOREX.T_ICON_CURRENCY_NOREX",
+            "Biomass": {
+                "RowName": "Biomass"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "ComingSoon"
+                }
+            }
+        }
+    ]
+}

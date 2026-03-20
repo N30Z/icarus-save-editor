@@ -1,0 +1,162 @@
+{
+    "RowStruct": "/Script/Icarus.BreakableRockData",
+    "Defaults": {
+        "ItemReward": {
+            "RowName": "None",
+            "DataTableName": "D_ItemRewards"
+        },
+        "PyriticCrustItemType": {
+            "RowName": "None",
+            "DataTableName": "D_ItemTemplate"
+        },
+        "Durable": {
+            "RowName": "None",
+            "DataTableName": "D_Durable"
+        },
+        "RewardStat": {
+            "Value": "None"
+        },
+        "Tags": {
+            "GameplayTags": []
+        },
+        "BreakSound": "None"
+    },
+    "Rows": [
+        {
+            "Name": "Default",
+            "ItemReward": {
+                "RowName": "GenericRock"
+            },
+            "Durable": {
+                "RowName": "Rock"
+            },
+            "Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Harvest.Sledgehammer"
+                    }
+                ]
+            },
+            "BreakSound": "/Game/FMOD/Events/SFX/D_Surfaces/SFX_VOXEL_FINAL_HIT.SFX_VOXEL_FINAL_HIT"
+        },
+        {
+            "Name": "Obsidian",
+            "ItemReward": {
+                "RowName": "Obsidian"
+            },
+            "PyriticCrustItemType": {
+                "RowName": "Pyritic_Crust_Obsidian"
+            },
+            "Durable": {
+                "RowName": "Rock"
+            },
+            "RewardStat": {
+                "Value": "ShatteringObsidianRewards_+%"
+            },
+            "Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Harvest.Sledgehammer"
+                    }
+                ]
+            },
+            "BreakSound": "/Game/FMOD/Events/SFX/D_Surfaces/SFX_VOXEL_FINAL_HIT.SFX_VOXEL_FINAL_HIT"
+        },
+        {
+            "Name": "Scoria",
+            "ItemReward": {
+                "RowName": "Scoria"
+            },
+            "PyriticCrustItemType": {
+                "RowName": "Pyritic_Crust_Scoria"
+            },
+            "Durable": {
+                "RowName": "Rock"
+            },
+            "RewardStat": {
+                "Value": "ShatteringScoriaRewards_+%"
+            },
+            "Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Harvest.Sledgehammer"
+                    }
+                ]
+            },
+            "BreakSound": "/Game/FMOD/Events/SFX/D_Surfaces/SFX_VOXEL_FINAL_HIT.SFX_VOXEL_FINAL_HIT"
+        },
+        {
+            "Name": "Clay",
+            "ItemReward": {
+                "RowName": "Clay"
+            },
+            "PyriticCrustItemType": {
+                "RowName": "Pyritic_Crust_Clay"
+            },
+            "Durable": {
+                "RowName": "Rock"
+            },
+            "RewardStat": {
+                "Value": "ShatteringClayRewards_+%"
+            },
+            "Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Harvest.Sledgehammer"
+                    }
+                ]
+            },
+            "BreakSound": "/Game/FMOD/Events/SFX/D_Surfaces/SFX_VOXEL_FINAL_HIT.SFX_VOXEL_FINAL_HIT"
+        },
+        {
+            "Name": "Cobalt",
+            "ItemReward": {
+                "RowName": "Cobalt"
+            },
+            "PyriticCrustItemType": {
+                "RowName": "Pyritic_Crust_Cobalt"
+            },
+            "Durable": {
+                "RowName": "Rock"
+            },
+            "Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Harvest.Sledgehammer"
+                    }
+                ]
+            },
+            "BreakSound": "/Game/FMOD/Events/SFX/D_Surfaces/SFX_VOXEL_FINAL_HIT.SFX_VOXEL_FINAL_HIT",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Permafrost",
+            "ItemReward": {
+                "RowName": "Permafrost"
+            },
+            "PyriticCrustItemType": {
+                "RowName": "Frozen_Ore"
+            },
+            "Durable": {
+                "RowName": "Rock"
+            },
+            "Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Harvest.Sledgehammer"
+                    }
+                ]
+            },
+            "BreakSound": "/Game/FMOD/Events/SFX/D_Surfaces/SFX_VOXEL_FINAL_HIT.SFX_VOXEL_FINAL_HIT",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        }
+    ]
+}

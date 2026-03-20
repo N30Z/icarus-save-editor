@@ -1,0 +1,466 @@
+{
+    "RowStruct": "/Script/Icarus.PrebuiltData",
+    "Defaults": {
+        "FileName": ""
+    },
+    "Rows": [
+        {
+            "Name": "MoCave",
+            "FileName": "Prebuilt_Mo_Cave"
+        },
+        {
+            "Name": "MoTree",
+            "FileName": "Prebuilt_Mo_Tree"
+        },
+        {
+            "Name": "MoArctic",
+            "FileName": "Prebuilt_Mo_Cave"
+        },
+        {
+            "Name": "SolArctic",
+            "FileName": "Prebuilt_Sol_Arctic"
+        },
+        {
+            "Name": "MoOutpost",
+            "FileName": "Prebuilt_Mo_Outpost"
+        },
+        {
+            "Name": "Dynamic_Base_1",
+            "FileName": "Dynamic_Base_1"
+        },
+        {
+            "Name": "DaisysOwner",
+            "FileName": "Daisy"
+        },
+        {
+            "Name": "Group15Camp",
+            "FileName": "Prebuilt_Group15_Camp_Volcanic"
+        },
+        {
+            "Name": "Group15Base",
+            "FileName": "Prebuilt_Group15_Base_Volcanic"
+        },
+        {
+            "Name": "AshlandsOutpost",
+            "FileName": "Ashlands_Outpost"
+        },
+        {
+            "Name": "SinotaiCamp",
+            "FileName": "Sinotai_Research_Camp"
+        },
+        {
+            "Name": "HippoCamp",
+            "FileName": "Hippo"
+        },
+        {
+            "Name": "Ashlands_NPC_Camp",
+            "FileName": "Ashlands_NPC_Camp"
+        },
+        {
+            "Name": "Ashlands_Bunker",
+            "FileName": "Ashlands_Bunker"
+        },
+        {
+            "Name": "Icesheet_Outpost",
+            "FileName": "Icesheet_Outpost"
+        },
+        {
+            "Name": "Nullsector_Cave",
+            "FileName": "Nullsector_Cave"
+        },
+        {
+            "Name": "GH_RG_A_MiningOutpost",
+            "FileName": "GH_RG_A_MiningOutpost",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "GH_RG_B_Cave",
+            "FileName": "GH_RG_B_Cave",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "GH_RG_B_Cave2",
+            "FileName": "GH_RG_B_Cave2",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "GH_RG_B_Cave3",
+            "FileName": "GH_RG_B_CAVE3",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "GH_RG_C_MiningPlatform",
+            "FileName": "GH_RG_C_MiningPlatform",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "GH_RG_D2_MiningPlatform_Destroyed",
+            "FileName": "GH_RG_D2_MiningPlatform_Destroyed",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "GH_APE_A_BASE",
+            "FileName": "GH_APE_A_BASE",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "GH_Ape_Blood",
+            "FileName": "GH_Ape_C_BloodTrail",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "GH_APE_B_Base",
+            "FileName": "GH_APE_B_Base",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "GH_APE_E2_BLOOD",
+            "FileName": "GH_APE_E2_BLOOD",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "GH_IM_A_Base",
+            "FileName": "GH_IM_A_Base",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "GH_IM_B_Outpost",
+            "FileName": "GH_IM_B_Outpost",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "GH_IM_C_Base",
+            "FileName": "GH_IM_C_Base",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "GH_IM_D_Base",
+            "FileName": "GH_IM_D_Base",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "GH_IM_O1",
+            "FileName": "GH_IM_O1",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "GH_IM_O1_Storage",
+            "FileName": "GH_IM_O1_Storage",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "GH_IM_O1_Hut",
+            "FileName": "GH_IM_O1_Hut",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "GH_Ape_G_Outpost",
+            "FileName": "GH_Ape_G_Outpost",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "GH_IM_A2_Enzyme",
+            "FileName": "GH_IM_A2_Enzyme",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "GH_IM_D3_Hub",
+            "FileName": "GH_IM_D3_Hub",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "GH_Ape_C_Lab",
+            "FileName": "GH_Ape_C_Lab",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "GH_Ape_O1_SHED",
+            "FileName": "GH_APE_O1_SHED",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "ELY_STORY1_TOWER",
+            "FileName": "ELY_STORY1_TOWER",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "ELY_STORY2_DELTA",
+            "FileName": "ELY_STORY2_DELTA",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "ELY_STORY2_EPSILON",
+            "FileName": "ELY_STORY2_EPSILON",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "ELY_STORY2_LAB",
+            "FileName": "ELY_STORY2_LAB",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "ELY_STORY3_DEFENCE",
+            "FileName": "ELY_STORY3_DEFENCE",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "ELY_STORY3_LAB",
+            "FileName": "ELY_STORY3_LAB",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "ELY_STORY4_OUTPOST",
+            "FileName": "ELY_STORY4_OUTPOST",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "ELY_STORY4_BASE",
+            "FileName": "ELY_STORY_4_BASE",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "ELY_STORY4_IRIS",
+            "FileName": "ELY_STORY_4_IRIS",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "ELY_STORY4_DEAD",
+            "FileName": "ELY_STORY_4_DEAD",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "ELY_STORY4_LAB",
+            "FileName": "ELY_STORY_4_LAB",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "ELY_STORY6_LOWER",
+            "FileName": "ELY_STORY6_LOWER",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "ELY_STORY6_MIDDLE",
+            "FileName": "ELY_STORY6_MIDDLE",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "ELY_STORY6_TOWER",
+            "FileName": "ELY_STORY6_TOWER",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "ELY_SQ_FISH",
+            "FileName": "ELY_SQ_FISH",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "NPC_DYNAMIC_OUTPOST_1",
+            "FileName": "NPC_Outpost_1",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "NPC_Farm",
+            "FileName": "NPC_Farm"
+        },
+        {
+            "Name": "NPC_Farm_Basic",
+            "FileName": "NPC_Farm_Basic"
+        },
+        {
+            "Name": "NPC_Hunter",
+            "FileName": "NPC_Blind"
+        },
+        {
+            "Name": "NPC_Fisher",
+            "FileName": "NPC_Fisher"
+        },
+        {
+            "Name": "NPC_Fisher_Basic",
+            "FileName": "NPC_Fisher_Destroyed"
+        },
+        {
+            "Name": "ELY_SQ_Ambush_Built",
+            "FileName": "ELY_SQ_SCOUT_BASE"
+        },
+        {
+            "Name": "ELY_SQ_Ambush_Destroyed",
+            "FileName": "ELY_SQ_SCOUT_DESTROYED"
+        },
+        {
+            "Name": "ELY_SQ_Lifeline_Cave",
+            "FileName": "ELY_SQ_Lifeline_Cave"
+        },
+        {
+            "Name": "ELY_SQ_Courier_Outpost_1",
+            "FileName": "ELY_SQ_COURIER_OUTPOST_1"
+        },
+        {
+            "Name": "ELY_SQ_Courier_Outpost_2",
+            "FileName": "ELY_SQ_COURIER_OUTPOST_2"
+        },
+        {
+            "Name": "ELY_SQ_Trials_Start",
+            "FileName": "ELY_SQ_Trials_Start"
+        },
+        {
+            "Name": "EDEN_NOTES",
+            "FileName": "EDEN_NOTES"
+        },
+        {
+            "Name": "EDEN_POST",
+            "FileName": "EDEN_POST"
+        }
+    ]
+}

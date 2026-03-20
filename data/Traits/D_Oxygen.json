@@ -1,0 +1,33 @@
+{
+    "RowStruct": "/Script/Icarus.OxygenData",
+    "Defaults": {
+        "FlowType": "Consume",
+        "AlwaysActive": false,
+        "AutoActivate": false,
+        "ResourceFlowRate": 1000,
+        "bAllowPullingResourceFromInventory": false,
+        "bAllowPushingResourceToInventory": false,
+        "bStorageIsInFlowOnly": false,
+        "BrownOutModifier": {
+            "RowName": "None",
+            "DataTableName": "D_ModifierStates"
+        },
+        "AutoShutoffFlowPercent": 0,
+        "bAllowAutoRestart": false,
+        "bIsOptional": false,
+        "OptionalFlowType": {
+            "RowName": "None",
+            "DataTableName": "D_OptionalResourceFlows"
+        }
+    },
+    "Rows": [
+        {
+            "Name": "Oxygen",
+            "AutoActivate": true
+        },
+        {
+            "Name": "BasicOxiteDissolver",
+            "FlowType": "Store"
+        }
+    ]
+}

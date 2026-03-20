@@ -1,0 +1,89 @@
+{
+    "RowStruct": "/Script/Icarus.StasisBagData",
+    "Defaults": {
+        "ActorInput": "None",
+        "ItemOutput": {
+            "RowName": "None",
+            "DataTableName": "D_ItemTemplate"
+        }
+    },
+    "Rows": [
+        {
+            "Name": "NullSector_Recovery1",
+            "ActorInput": "/Game/BP/Objects/World/Items/WorldObjects/Missions/PRO_D/BP_Mission_NPC_Rescue1.BP_Mission_NPC_Rescue1_C",
+            "ItemOutput": {
+                "RowName": "Stasis_Bag_Full_NPC4"
+            }
+        },
+        {
+            "Name": "NullSector_Recovery2",
+            "ActorInput": "/Game/BP/Objects/World/Items/WorldObjects/Missions/PRO_D/BP_Mission_NPC_Rescue2.BP_Mission_NPC_Rescue2_C",
+            "ItemOutput": {
+                "RowName": "Stasis_Bag_Full_NPC5"
+            }
+        },
+        {
+            "Name": "GH_IM_Researcher",
+            "ActorInput": "/Game/BP/Objects/World/Items/WorldObjects/Missions/NPCs/BP_Mission_NPC_IM_Researcher2.BP_Mission_NPC_IM_Researcher2_C",
+            "ItemOutput": {
+                "RowName": "Stasis_Bag_Full_IM_Researcher2"
+            }
+        },
+        {
+            "Name": "GH_APE_Infant",
+            "ActorInput": "/Game/BP/Objects/World/Items/WorldObjects/Missions/NPCs/BP_Mission_NPC_APE_InfantApe.BP_Mission_NPC_APE_InfantApe_C",
+            "ItemOutput": {
+                "RowName": "Stasis_Bag_Full_Ape"
+            }
+        },
+        {
+            "Name": "GH_RG_Miner1",
+            "ActorInput": "/Game/BP/Objects/World/Items/WorldObjects/Missions/NPCs/BP_Mission_NPC_RG_Miner1.BP_Mission_NPC_RG_Miner1_C",
+            "ItemOutput": {
+                "RowName": "Stasis_Bag_Full_RG_NPC1"
+            }
+        },
+        {
+            "Name": "GH_RG_Miner2",
+            "ActorInput": "/Game/BP/Objects/World/Items/WorldObjects/Missions/NPCs/BP_Mission_NPC_RG_Miner2.BP_Mission_NPC_RG_Miner2_C",
+            "ItemOutput": {
+                "RowName": "Stasis_Bag_Full_RG_NPC2"
+            }
+        },
+        {
+            "Name": "GH_RG_Miner3",
+            "ActorInput": "/Game/BP/Objects/World/Items/WorldObjects/Missions/NPCs/BP_Mission_NPC_RG_Miner3.BP_Mission_NPC_RG_Miner3_C",
+            "ItemOutput": {
+                "RowName": "Stasis_Bag_Full_RG_NPC3"
+            }
+        },
+        {
+            "Name": "GH_RG_Miner4",
+            "ActorInput": "/Game/BP/Objects/World/Items/WorldObjects/Missions/NPCs/BP_Mission_NPC_RG_Miner4.BP_Mission_NPC_RG_Miner4_C",
+            "ItemOutput": {
+                "RowName": "Stasis_Bag_Full_RG_NPC4"
+            }
+        },
+        {
+            "Name": "ELY_Story_4_Iris",
+            "ActorInput": "/Game/BP/Objects/World/Items/WorldObjects/Missions/NPCs/BP_Mission_NPC_DH_Iris_Injured.BP_Mission_NPC_DH_Iris_Injured_C",
+            "ItemOutput": {
+                "RowName": "Stasis_Bag_Full_Iris"
+            }
+        },
+        {
+            "Name": "ELY_Story_4_NPC",
+            "ActorInput": "/Game/BP/Objects/World/Items/WorldObjects/Missions/PRO_D/BP_Mission_NPC_ELY4_Recovery.BP_Mission_NPC_ELY4_Recovery_C",
+            "ItemOutput": {
+                "RowName": "Stasis_Bag_Full_ELY4_NPC1"
+            }
+        },
+        {
+            "Name": "ELY_SQ_Lifeline_Wash",
+            "ActorInput": "/Game/BP/Objects/World/Items/WorldObjects/Missions/ELY_SQ/BP_SQ_Lieutenant_Injured.BP_SQ_Lieutenant_Injured_C",
+            "ItemOutput": {
+                "RowName": "Stasis_Bag_Full_NPC5"
+            }
+        }
+    ]
+}

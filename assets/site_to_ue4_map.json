@@ -1,0 +1,96 @@
+{
+  "m_char": [
+    "Charcoal"
+  ],
+  "m_naii": [
+    "Iron_Nail"
+  ],
+  "m_naic": [
+    "Copper_Nail"
+  ],
+  "m_scrs": [
+    "Steel_Screw"
+  ],
+  "m_rebs": [
+    "Steel_Rebar"
+  ],
+  "m_glas": [
+    "Glass"
+  ],
+  "berry": [
+    "Berry"
+  ],
+  "m_flou": [
+    "Flour"
+  ],
+  "meatro": [
+    "Spoiled_Meat"
+  ],
+  "m_resi": [
+    "Organic_Resin"
+  ],
+  "m_tsap": [
+    "Tree_Sap"
+  ],
+  "m_epox": [
+    "Epoxy"
+  ],
+  "m_cbon": [
+    "Crushed_Bone"
+  ],
+  "m_gunp": [
+    "Gunpowder",
+    "Gunpowder_talent"
+  ],
+  "m_pois": [
+    "Poison_Paste"
+  ],
+  "m_rope": [
+    "Rope"
+  ],
+  "p_asto": [
+    "Stone_Arrow"
+  ],
+  "p_acvw": [
+    "Caveworm_Arrow"
+  ],
+  "t_cvwb": [
+    "Caveworm_Bow"
+  ],
+  "t_cvwk": [
+    "Caveworm_Knife"
+  ],
+  "t_cvws": [
+    "Caveworm_Spear"
+  ],
+  "t_fsho": [
+    "Farmers_Shotgun"
+  ],
+  "m_ferb": [
+    "Basic_Fertilizer"
+  ],
+  "m_wref": [
+    "Wood_Refined"
+  ],
+  "m_elec": [
+    "Electronics"
+  ],
+  "m_conc": [
+    "Concrete_Mix"
+  ],
+  "m_carf": [
+    "Carbon_Fiber"
+  ],
+  "m_comf": [
+    "Composites"
+  ],
+  "jargla": [
+    "Glass_Jar"
+  ],
+  "botwin": [
+    "Glass_Bottle_Wine"
+  ],
+  "botbee": [
+    "Glass_Bottle_Beer"
+  ]
+}

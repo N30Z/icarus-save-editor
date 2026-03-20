@@ -1,0 +1,304 @@
+{
+    "RowStruct": "/Script/Icarus.CraftingModifications",
+    "Defaults": {
+        "Query": {
+            "RowName": "None",
+            "DataTableName": "D_TagQueries"
+        },
+        "StatRequirement": {
+            "Value": "None"
+        },
+        "StatGrantedAlteration": [],
+        "ResourceRequirement": {
+            "Resource": {
+                "Value": "None"
+            },
+            "FlowRate": 0
+        },
+        "ResourceGrantedAlteration": {
+            "Value": "None"
+        }
+    },
+    "Rows": [
+        {
+            "Name": "Furnace_Smelting_Speed",
+            "Query": {
+                "RowName": "Any_Furnace"
+            },
+            "StatRequirement": {
+                "Value": "CreatedFurnaceSmeltingSpeedAlt_+"
+            },
+            "StatGrantedAlteration": [
+                {
+                    "Value": "SmeltingSpeed_1"
+                },
+                {
+                    "Value": "SmeltingSpeed_2"
+                }
+            ]
+        },
+        {
+            "Name": "Building_Health",
+            "Query": {
+                "RowName": "Any_Building"
+            },
+            "StatRequirement": {
+                "Value": "CreatedBuildingHealthAlt_+"
+            },
+            "StatGrantedAlteration": [
+                {
+                    "Value": "Durability_1"
+                }
+            ]
+        },
+        {
+            "Name": "Wood_Building_Health",
+            "Query": {
+                "RowName": "Building_Wood"
+            },
+            "StatRequirement": {
+                "Value": "CreatedWoodBuildingHealthAlt_+"
+            },
+            "StatGrantedAlteration": [
+                {
+                    "Value": "Durability_1"
+                },
+                {
+                    "Value": "Durability_3"
+                }
+            ]
+        },
+        {
+            "Name": "Deployable_Storage",
+            "Query": {
+                "RowName": "Any_DeployableStorage"
+            },
+            "StatRequirement": {
+                "Value": "CreatedDeployableStorageAlt_+"
+            },
+            "StatGrantedAlteration": [
+                {
+                    "Value": "Storage_1"
+                },
+                {
+                    "Value": "Storage_2"
+                },
+                {
+                    "Value": "Storage_3"
+                },
+                {
+                    "Value": "Storage_4"
+                }
+            ]
+        },
+        {
+            "Name": "Hedgehog_Damage",
+            "Query": {
+                "RowName": "Any_Hedgehog"
+            },
+            "StatRequirement": {
+                "Value": "CreatedHedgehogDamageAlt_+"
+            },
+            "StatGrantedAlteration": [
+                {
+                    "Value": "HedgehogDamage_1"
+                }
+            ]
+        },
+        {
+            "Name": "Lightning_Rod_Health",
+            "Query": {
+                "RowName": "Any_LightningRod"
+            },
+            "StatRequirement": {
+                "Value": "CreatedLightningRodHealthAlt_+"
+            },
+            "StatGrantedAlteration": [
+                {
+                    "Value": "Durability_6"
+                },
+                {
+                    "Value": "Durability_7"
+                },
+                {
+                    "Value": "Durability_8"
+                }
+            ]
+        },
+        {
+            "Name": "Pickaxe_Health",
+            "Query": {
+                "RowName": "Any_Pickaxe"
+            },
+            "StatRequirement": {
+                "Value": "CreatedPickaxeHealthAlt_+"
+            },
+            "StatGrantedAlteration": [
+                {
+                    "Value": "Durability_1"
+                },
+                {
+                    "Value": "Durability_3"
+                }
+            ]
+        },
+        {
+            "Name": "Knife_Felling",
+            "Query": {
+                "RowName": "Any_Melee_Knife"
+            },
+            "StatRequirement": {
+                "Value": "CreatedKnifeFellingAlt_+"
+            },
+            "StatGrantedAlteration": [
+                {
+                    "Value": "FellingDamage_1"
+                }
+            ]
+        },
+        {
+            "Name": "Knife_Health",
+            "Query": {
+                "RowName": "Any_Melee_Knife"
+            },
+            "StatRequirement": {
+                "Value": "CreatedKnifeHealthAlt_+"
+            },
+            "StatGrantedAlteration": [
+                {
+                    "Value": "Durability_4"
+                }
+            ]
+        },
+        {
+            "Name": "Axe_Health",
+            "Query": {
+                "RowName": "Any_Axe"
+            },
+            "StatRequirement": {
+                "Value": "CreatedAxeHealthAlt_+"
+            },
+            "StatGrantedAlteration": [
+                {
+                    "Value": "Durability_1"
+                },
+                {
+                    "Value": "Durability_4"
+                }
+            ]
+        },
+        {
+            "Name": "Bow_Health",
+            "Query": {
+                "RowName": "Any_Bow"
+            },
+            "StatRequirement": {
+                "Value": "CreatedBowHealthAlt_+"
+            },
+            "StatGrantedAlteration": [
+                {
+                    "Value": "Durability_2"
+                }
+            ]
+        },
+        {
+            "Name": "Spear_Health",
+            "Query": {
+                "RowName": "Any_Melee_Spear"
+            },
+            "StatRequirement": {
+                "Value": "CreatedSpearHealthAlt_+"
+            },
+            "StatGrantedAlteration": [
+                {
+                    "Value": "Durability_4"
+                },
+                {
+                    "Value": "Durability_5"
+                }
+            ]
+        },
+        {
+            "Name": "Wood_Building_Burn_Chance",
+            "Query": {
+                "RowName": "Building_Wood"
+            },
+            "StatRequirement": {
+                "Value": "CreatedWoodBuildingBurnChanceAlt_+"
+            },
+            "StatGrantedAlteration": [
+                {
+                    "Value": "BurnChancePrevention_1"
+                }
+            ]
+        },
+        {
+            "Name": "Wood_Building_Wind_Resistance",
+            "Query": {
+                "RowName": "Building_Wood"
+            },
+            "StatRequirement": {
+                "Value": "CreatedWoodBuildingWindResistanceAlt_+"
+            },
+            "StatGrantedAlteration": [
+                {
+                    "Value": "WindResistance_1"
+                }
+            ]
+        },
+        {
+            "Name": "Arrow_Damage",
+            "Query": {
+                "RowName": "Projectile_Arrow_or_Bolt"
+            },
+            "StatRequirement": {
+                "Value": "CreatedArrowProjectileDamageAlt_+"
+            },
+            "StatGrantedAlteration": [
+                {
+                    "Value": "ProjectileDamage_1"
+                },
+                {
+                    "Value": "ProjectileDamage_2"
+                },
+                {
+                    "Value": "ProjectileDamage_3"
+                }
+            ]
+        },
+        {
+            "Name": "Campfire",
+            "Query": {
+                "RowName": "Any_Campfire"
+            },
+            "StatRequirement": {
+                "Value": "CreatedCampfireEnergyCostAlt_+"
+            },
+            "StatGrantedAlteration": [
+                {
+                    "Value": "EnergyTransmuationEfficiency_1"
+                },
+                {
+                    "Value": "EnergyTransmuationEfficiency_2"
+                }
+            ]
+        },
+        {
+            "Name": "Fishing_Rod_Health",
+            "Query": {
+                "RowName": "Any_Fishing_Rod"
+            },
+            "StatRequirement": {
+                "Value": "CreatedFishingRodHealthAlt_+"
+            },
+            "StatGrantedAlteration": [
+                {
+                    "Value": "Durability_2"
+                },
+                {
+                    "Value": "Durability_4"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,157 @@
+{
+    "RowStruct": "/Script/Icarus.ScalingRuleData",
+    "Defaults": {
+        "bScaleByNearbyPlayerCount": false,
+        "NearbyPlayersScaling": {
+            "InMinValue": 0,
+            "InMaxValue": 100,
+            "OutMinPercentScale": 0,
+            "OutMaxPercentScale": 100,
+            "bClampOutput": true
+        },
+        "CustomNearbyPlayersCurve": "None",
+        "bScaleByTargetLevel": false,
+        "TargetLevelScaling": {
+            "InMinValue": 0,
+            "InMaxValue": 100,
+            "OutMinPercentScale": 0,
+            "OutMaxPercentScale": 100,
+            "bClampOutput": true
+        },
+        "CustomTargetLevelCurve": "None",
+        "bScaleByProspectDifficulty": false,
+        "ProspectDifficultyScaling": {
+            "InMinValue": 0,
+            "InMaxValue": 100,
+            "OutMinPercentScale": 0,
+            "OutMaxPercentScale": 100,
+            "bClampOutput": true
+        },
+        "CustomProspectDifficultyCurve": "None",
+        "bScaleByAverageNearbyPlayerLevel": false,
+        "AverageNearbyPlayerLevelScaling": {
+            "InMinValue": 0,
+            "InMaxValue": 100,
+            "OutMinPercentScale": 0,
+            "OutMaxPercentScale": 100,
+            "bClampOutput": true
+        },
+        "CustomAverageNearbyPlayerLevelCurve": "None"
+    },
+    "Rows": [
+        {
+            "Name": "50%_PerPlayer",
+            "bScaleByNearbyPlayerCount": true,
+            "NearbyPlayersScaling": {
+                "InMaxValue": 1,
+                "OutMaxPercentScale": 50,
+                "bClampOutput": false
+            }
+        },
+        {
+            "Name": "20%_PerPlayer",
+            "bScaleByNearbyPlayerCount": true,
+            "NearbyPlayersScaling": {
+                "InMaxValue": 1,
+                "OutMaxPercentScale": 20,
+                "bClampOutput": false
+            }
+        },
+        {
+            "Name": "75%_PerPlayer",
+            "bScaleByNearbyPlayerCount": true,
+            "NearbyPlayersScaling": {
+                "InMaxValue": 1,
+                "OutMaxPercentScale": 75,
+                "bClampOutput": false
+            }
+        },
+        {
+            "Name": "100%_PerPlayer",
+            "bScaleByNearbyPlayerCount": true,
+            "NearbyPlayersScaling": {
+                "InMaxValue": 1,
+                "bClampOutput": false
+            }
+        },
+        {
+            "Name": "25%_PerDifficultyLevel",
+            "bScaleByProspectDifficulty": true,
+            "ProspectDifficultyScaling": {
+                "InMinValue": 1,
+                "InMaxValue": 4,
+                "OutMaxPercentScale": 75,
+                "bClampOutput": false
+            }
+        },
+        {
+            "Name": "50%_PerDifficultyLevel",
+            "bScaleByProspectDifficulty": true,
+            "ProspectDifficultyScaling": {
+                "InMinValue": 1,
+                "InMaxValue": 4,
+                "OutMaxPercentScale": 150,
+                "bClampOutput": false
+            }
+        },
+        {
+            "Name": "75%_PerDifficultyLevel",
+            "bScaleByProspectDifficulty": true,
+            "ProspectDifficultyScaling": {
+                "InMinValue": 1,
+                "InMaxValue": 4,
+                "OutMaxPercentScale": 225,
+                "bClampOutput": false
+            }
+        },
+        {
+            "Name": "100%_PerDifficultyLevel",
+            "bScaleByProspectDifficulty": true,
+            "ProspectDifficultyScaling": {
+                "InMinValue": 1,
+                "InMaxValue": 4,
+                "OutMaxPercentScale": 300,
+                "bClampOutput": false
+            }
+        },
+        {
+            "Name": "-15%_PerDifficultyLevel",
+            "bScaleByProspectDifficulty": true,
+            "ProspectDifficultyScaling": {
+                "InMinValue": 1,
+                "InMaxValue": 4,
+                "OutMaxPercentScale": -45,
+                "bClampOutput": false
+            }
+        },
+        {
+            "Name": "-25%_PerDifficultyLevel",
+            "bScaleByProspectDifficulty": true,
+            "ProspectDifficultyScaling": {
+                "InMinValue": 1,
+                "InMaxValue": 4,
+                "OutMaxPercentScale": -75,
+                "bClampOutput": false
+            }
+        },
+        {
+            "Name": "-30%_PerDifficultyLevel",
+            "bScaleByProspectDifficulty": true,
+            "ProspectDifficultyScaling": {
+                "InMinValue": 1,
+                "InMaxValue": 4,
+                "OutMaxPercentScale": -90,
+                "bClampOutput": false
+            }
+        },
+        {
+            "Name": "25%_PerPlayer",
+            "bScaleByNearbyPlayerCount": true,
+            "NearbyPlayersScaling": {
+                "InMaxValue": 1,
+                "OutMaxPercentScale": 25,
+                "bClampOutput": false
+            }
+        }
+    ]
+}

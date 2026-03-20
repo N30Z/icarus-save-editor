@@ -1,0 +1,123 @@
+{
+    "RowStruct": "/Script/Icarus.MissionType",
+    "Defaults": {
+        "DisplayText": "",
+        "Icon": "None"
+    },
+    "Rows": [
+        {
+            "Name": "Main",
+            "DisplayText": "NSLOCTEXT(\"D_MissionTypes\", \"Main-DisplayText\", \"Main Mission\")"
+        },
+        {
+            "Name": "Construction",
+            "DisplayText": "NSLOCTEXT(\"D_MissionTypes\", \"Construction-DisplayText\", \"Construction of Buildings and/or Bases\")",
+            "Icon": "/Game/Assets/2DArt/UI/Icons/MissionIcons/T_ICON_MISSION_Construction.T_ICON_MISSION_Construction"
+        },
+        {
+            "Name": "Delivery",
+            "DisplayText": "NSLOCTEXT(\"D_MissionTypes\", \"Delivery-DisplayText\", \"Collection and Delivery of Items\")",
+            "Icon": "/Game/Assets/2DArt/UI/Icons/MissionIcons/T_ICON_MISSION_Delivery.T_ICON_MISSION_Delivery"
+        },
+        {
+            "Name": "Expedition",
+            "DisplayText": "NSLOCTEXT(\"D_MissionTypes\", \"Expedition-DisplayText\", \"Traversal to a New Area of the Region\")",
+            "Icon": "/Game/Assets/2DArt/UI/Icons/MissionIcons/T_ICON_MISSION_Expedition.T_ICON_MISSION_Expedition"
+        },
+        {
+            "Name": "Exploration",
+            "DisplayText": "NSLOCTEXT(\"D_MissionTypes\", \"Exploration-DisplayText\", \"No Objectives freedom to Explore\")",
+            "Icon": "/Game/Assets/2DArt/UI/Icons/MissionIcons/T_ICON_MISSION_Exploration.T_ICON_MISSION_Exploration"
+        },
+        {
+            "Name": "Extermination",
+            "DisplayText": "NSLOCTEXT(\"D_MissionTypes\", \"Extermination-DisplayText\", \"Combat and Killing of Creatures\")",
+            "Icon": "/Game/Assets/2DArt/UI/Icons/MissionIcons/T_ICON_MISSION_Extermination.T_ICON_MISSION_Extermination"
+        },
+        {
+            "Name": "Farming",
+            "DisplayText": "NSLOCTEXT(\"D_MissionTypes\", \"Farming-DisplayText\", \"Planting and Farming of Various Plants\")",
+            "Icon": "/Game/Assets/2DArt/UI/Icons/MissionIcons/T_ICON_MISSION_Farming.T_ICON_MISSION_Farming"
+        },
+        {
+            "Name": "Mining",
+            "DisplayText": "NSLOCTEXT(\"D_MissionTypes\", \"Mining-DisplayText\", \"Collection of Ore and Minerals\")",
+            "Icon": "/Game/Assets/2DArt/UI/Icons/MissionIcons/T_ICON_MISSION_Mining.T_ICON_MISSION_Mining"
+        },
+        {
+            "Name": "Recon",
+            "DisplayText": "NSLOCTEXT(\"D_MissionTypes\", \"Recon-DisplayText\", \"Scoping out and mapping a new Area\")",
+            "Icon": "/Game/Assets/2DArt/UI/Icons/MissionIcons/T_ICON_MISSION_Recon.T_ICON_MISSION_Recon"
+        },
+        {
+            "Name": "Research",
+            "DisplayText": "NSLOCTEXT(\"D_MissionTypes\", \"Research-DisplayText\", \"Experimenting on and Locating Flora and Fauna\")",
+            "Icon": "/Game/Assets/2DArt/UI/Icons/MissionIcons/T_ICON_MISSION_Research.T_ICON_MISSION_Research"
+        },
+        {
+            "Name": "Scan",
+            "DisplayText": "NSLOCTEXT(\"D_MissionTypes\", \"Scan-DisplayText\", \"Defending Scanners as they Map the Region\")",
+            "Icon": "/Game/Assets/2DArt/UI/Icons/MissionIcons/T_ICON_MISSION_Scan.T_ICON_MISSION_Scan"
+        },
+        {
+            "Name": "Stockpile",
+            "DisplayText": "NSLOCTEXT(\"D_MissionTypes\", \"Stockpile-DisplayText\", \"Large Scale Collection and Delivery of Resources\")",
+            "Icon": "/Game/Assets/2DArt/UI/Icons/MissionIcons/T_ICON_MISSION_Stockpile.T_ICON_MISSION_Stockpile"
+        },
+        {
+            "Name": "Training",
+            "DisplayText": "NSLOCTEXT(\"D_MissionTypes\", \"Training-DisplayText\", \"Prospector Training and Testing of Prototype Equipment\")",
+            "Icon": "/Game/Assets/2DArt/UI/Icons/MissionIcons/T_ICON_MISSION_Training.T_ICON_MISSION_Training"
+        },
+        {
+            "Name": "Boss",
+            "DisplayText": "NSLOCTEXT(\"D_MissionTypes\", \"Boss-DisplayText\", \"Combat and Killing of Bosses\")",
+            "Icon": "/Game/Assets/2DArt/UI/Icons/MissionIcons/T_ICON_MISSION_Dangerous.T_ICON_MISSION_Dangerous"
+        },
+        {
+            "Name": "Fishing",
+            "DisplayText": "NSLOCTEXT(\"D_MissionTypes\", \"Fishing-DisplayText\", \"Finding and Catching Fish\")",
+            "Icon": "/Game/Assets/2DArt/UI/Icons/MissionIcons/T_ICON_MISSION_Fishing.T_ICON_MISSION_Fishing"
+        },
+        {
+            "Name": "Exotic",
+            "DisplayText": "NSLOCTEXT(\"D_MissionTypes\", \"Exotic-DisplayText\", \"Good Quality of Exotics to Extract\")",
+            "Icon": "/Game/Assets/2DArt/UI/Icons/MissionIcons/T_ICON_MISSION_Exotics.T_ICON_MISSION_Exotics"
+        },
+        {
+            "Name": "Medical",
+            "DisplayText": "NSLOCTEXT(\"D_MissionTypes\", \"Medical-DisplayText\", \"Rendering Medical Aid Where Required\")",
+            "Icon": "/Game/Assets/2DArt/UI/Icons/MissionIcons/T_ICON_MISSION_MedicalAid.T_ICON_MISSION_MedicalAid"
+        },
+        {
+            "Name": "Destruction",
+            "DisplayText": "NSLOCTEXT(\"D_MissionTypes\", \"Destruction-DisplayText\", \"Destruction of Buildings and/or Bases\")",
+            "Icon": "/Game/Assets/2DArt/UI/Icons/MissionIcons/T_ICON_MISSION_Demolition.T_ICON_MISSION_Demolition"
+        },
+        {
+            "Name": "Infiltration",
+            "DisplayText": "NSLOCTEXT(\"D_MissionTypes\", \"Infiltration-DisplayText\", \"Infiltrating a Defended Base\")",
+            "Icon": "/Game/Assets/2DArt/UI/Icons/MissionIcons/T_ICON_MISSION_Infiltration.T_ICON_MISSION_Infiltration"
+        },
+        {
+            "Name": "Fortification",
+            "DisplayText": "NSLOCTEXT(\"D_MissionTypes\", \"Fortification-DisplayText\", \"Fortifying and Defending a Location\")",
+            "Icon": "/Game/Assets/2DArt/UI/Icons/MissionIcons/T_ICON_MISSION_Fortification.T_ICON_MISSION_Fortification"
+        },
+        {
+            "Name": "Eden",
+            "DisplayText": "NSLOCTEXT(\"D_MissionTypes\", \"Eden-DisplayText\", \"Visit EDEN when Complete for a Specialised Reward\")",
+            "Icon": "/Game/Assets/2DArt/UI/Icons/MissionIcons/T_ICON_MISSION_Eden.T_ICON_MISSION_Eden"
+        },
+        {
+            "Name": "Taming",
+            "DisplayText": "NSLOCTEXT(\"D_MissionTypes\", \"Taming-DisplayText\", \"Tame and Raise Creatures\")",
+            "Icon": "/Game/Assets/2DArt/UI/Icons/MissionIcons/T_ICON_MISSION_Tame.T_ICON_MISSION_Tame"
+        },
+        {
+            "Name": "NPC",
+            "DisplayText": "NSLOCTEXT(\"D_MissionTypes\", \"NPC-DisplayText\", \"Unlockable NPC Trader\")",
+            "Icon": "/Game/Assets/2DArt/UI/Icons/MissionIcons/T_ICON_MISSION_NPC.T_ICON_MISSION_NPC"
+        }
+    ]
+}

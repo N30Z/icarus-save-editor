@@ -1,0 +1,24 @@
+{
+    "RowStruct": "/Script/Icarus.RiverAudioData",
+    "Defaults": {
+        "Sound": "None",
+        "bNeedsAudioContext": false,
+        "bUsesLavaFlowPoints": false
+    },
+    "Rows": [
+        {
+            "Name": "Default",
+            "Sound": "/Game/FMOD/Events/Environment/Fluids/Rivers/ENV_RIVER_01.ENV_RIVER_01"
+        },
+        {
+            "Name": "Cave",
+            "Sound": "/Game/FMOD/Events/Environment/Fluids/Rivers/ENV_CAVE_RIVER.ENV_CAVE_RIVER",
+            "bNeedsAudioContext": true
+        },
+        {
+            "Name": "Lava",
+            "Sound": "/Game/FMOD/Events/Environment/Fluids/Lake/ENV_LAVA_RIVER.ENV_LAVA_RIVER",
+            "bUsesLavaFlowPoints": true
+        }
+    ]
+}

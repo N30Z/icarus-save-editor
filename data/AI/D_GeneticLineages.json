@@ -1,0 +1,146 @@
+{
+    "RowStruct": "/Script/Icarus.GeneticLineage",
+    "Defaults": {
+        "Title": "",
+        "Weighting": 0,
+        "Growth": {},
+        "Stats": {}
+    },
+    "GenerateEnum": true,
+    "Rows": [
+        {
+            "Name": "Wild",
+            "Title": "NSLOCTEXT(\"D_GeneticLineages\", \"Wild-Title\", \"Wild\")",
+            "Weighting": 300,
+            "Growth": {
+                "(Value=\"BaseAttacksCauseMinorHemorrhage_%\")": "CurveFloat'/Game/Data/AI/Lineage/C_Lineage_EveryFiveLevels.C_Lineage_EveryFiveLevels'"
+            },
+            "Stats": {
+                "(Value=\"BaseWaterConsumption_+%\")": 5,
+                "(Value=\"BaseFoodConsumption_+%\")": 5
+            }
+        },
+        {
+            "Name": "Brave",
+            "Title": "NSLOCTEXT(\"D_GeneticLineages\", \"Brave-Title\", \"Brave\")",
+            "Weighting": 50,
+            "Growth": {
+                "(Value=\"BaseMeleeDamage_+\")": "CurveFloat'/Game/Data/AI/Lineage/C_Lineage_EveryTwoLevels.C_Lineage_EveryTwoLevels'"
+            },
+            "Stats": {
+                "(Value=\"BaseMaximumStamina_+%\")": -10
+            }
+        },
+        {
+            "Name": "Careful",
+            "Title": "NSLOCTEXT(\"D_GeneticLineages\", \"Careful-Title\", \"Careful\")",
+            "Weighting": 50,
+            "Growth": {
+                "(Value=\"BaseAnimalThreatModifier_+%\")": "CurveFloat'/Game/Data/AI/Lineage/C_Lineage_Inverse_Base.C_Lineage_Inverse_Base'"
+            },
+            "Stats": {
+                "(Value=\"BaseMovementSpeed_+%\")": -10
+            }
+        },
+        {
+            "Name": "Timid",
+            "Title": "NSLOCTEXT(\"D_GeneticLineages\", \"Timid-Title\", \"Timid\")",
+            "Weighting": 50,
+            "Growth": {
+                "(Value=\"BaseMovementSpeed_+\")": "CurveFloat'/Game/Data/AI/Lineage/C_Lineage_Base.C_Lineage_Base'"
+            },
+            "Stats": {
+                "(Value=\"BaseMeleeDamage_+%\")": -10
+            }
+        },
+        {
+            "Name": "Bold",
+            "Title": "NSLOCTEXT(\"D_GeneticLineages\", \"Bold-Title\", \"Bold\")",
+            "Weighting": 50,
+            "Growth": {
+                "(Value=\"BaseMaximumStamina_+\")": "CurveFloat'/Game/Data/AI/Lineage/C_Lineage_Double.C_Lineage_Double'"
+            },
+            "Stats": {
+                "(Value=\"BasePhysicalDamageResistance_%\")": -10
+            }
+        },
+        {
+            "Name": "Hardy",
+            "Title": "NSLOCTEXT(\"D_GeneticLineages\", \"Hardy-Title\", \"Hardy\")",
+            "Weighting": 50,
+            "Growth": {
+                "(Value=\"BaseMaximumHealth_+\")": "CurveFloat'/Game/Data/AI/Lineage/C_Lineage_Double.C_Lineage_Double'",
+                "(Value=\"BaseStaminaRegen_+%\")": "CurveFloat'/Game/Data/AI/Lineage/C_Lineage_Base.C_Lineage_Base'"
+            },
+            "Stats": {
+                "(Value=\"BaseFoodConsumption_+%\")": 10
+            }
+        },
+        {
+            "Name": "Stout",
+            "Title": "NSLOCTEXT(\"D_GeneticLineages\", \"Stout-Title\", \"Stout\")",
+            "Weighting": 50,
+            "Growth": {
+                "(Value=\"BaseWeightCapacity_+\")": "CurveFloat'/Game/Data/AI/Lineage/C_Lineage_Base.C_Lineage_Base'"
+            },
+            "Stats": {
+                "(Value=\"BaseAnimalThreatModifier_+%\")": 10
+            }
+        },
+        {
+            "Name": "Ambitious",
+            "Title": "NSLOCTEXT(\"D_GeneticLineages\", \"Ambitious-Title\", \"Ambitious\")",
+            "Weighting": 50,
+            "Stats": {
+                "(Value=\"BaseExperience_+%\")": 50
+            }
+        },
+        {
+            "Name": "Resolute",
+            "Title": "NSLOCTEXT(\"D_GeneticLineages\", \"Resolute-Title\", \"Resolute\")",
+            "Weighting": 25,
+            "Growth": {
+                "(Value=\"BaseFertilizationRecoverySpeed_+%\")": "CurveFloat'/Game/Data/AI/Lineage/C_Lineage_Base.C_Lineage_Base'",
+                "(Value=\"BaseStaminaRegen_+%\")": "CurveFloat'/Game/Data/AI/Lineage/C_Lineage_Base.C_Lineage_Base'"
+            },
+            "Stats": {
+                "(Value=\"BaseMaximumHealth_+%\")": -10
+            }
+        },
+        {
+            "Name": "Fierce",
+            "Title": "NSLOCTEXT(\"D_GeneticLineages\", \"Fierce-Title\", \"Unstable\")",
+            "Weighting": 25,
+            "Growth": {
+                "(Value=\"BaseGeneticsMutationChance_%\")": "CurveFloat'/Game/Data/AI/Lineage/C_Lineage_EveryTwoLevels.C_Lineage_EveryTwoLevels'",
+                "(Value=\"BaseCosmeticMutationChance_%\")": "CurveFloat'/Game/Data/AI/Lineage/C_Lineage_EveryTwoLevels.C_Lineage_EveryTwoLevels'"
+            },
+            "Stats": {
+                "(Value=\"BaseFertilizationRecoverySpeed_+%\")": -50
+            }
+        },
+        {
+            "Name": "Savage",
+            "Title": "NSLOCTEXT(\"D_GeneticLineages\", \"Savage-Title\", \"Savage\")",
+            "Weighting": 25,
+            "Growth": {
+                "(Value=\"BaseAttacksLeechHealth_%\")": "CurveFloat'/Game/Data/AI/Lineage/C_Lineage_Base.C_Lineage_Base'"
+            },
+            "Stats": {
+                "(Value=\"BaseHealthRegen_+%\")": -50
+            }
+        },
+        {
+            "Name": "Alpha",
+            "Title": "NSLOCTEXT(\"D_GeneticLineages\", \"Alpha-Title\", \"Alpha\")",
+            "Weighting": 10,
+            "Growth": {
+                "(Value=\"BaseMeleeDamage_+\")": "CurveFloat'/Game/Data/AI/Lineage/C_Lineage_Base.C_Lineage_Base'",
+                "(Value=\"BaseMaximumHealth_+\")": "CurveFloat'/Game/Data/AI/Lineage/C_Lineage_Base.C_Lineage_Base'"
+            },
+            "Stats": {
+                "(Value=\"BaseCreatureSize_+%\")": 20
+            }
+        }
+    ]
+}

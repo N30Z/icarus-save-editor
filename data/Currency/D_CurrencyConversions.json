@@ -1,0 +1,83 @@
+{
+    "RowStruct": "/Script/Icarus.CurrencyConversion",
+    "Defaults": {
+        "StartingCurrency": {
+            "RowName": "None",
+            "DataTableName": "D_MetaCurrency"
+        },
+        "StartingAmount": 0,
+        "ConvertedCurrency": {
+            "RowName": "None",
+            "DataTableName": "D_MetaCurrency"
+        },
+        "ConvertedAmount": 0
+    },
+    "GenerateEnum": true,
+    "Rows": [
+        {
+            "Name": "Purchase_Refund_1",
+            "StartingCurrency": {
+                "RowName": "Credits"
+            },
+            "StartingAmount": 150,
+            "ConvertedCurrency": {
+                "RowName": "Refund"
+            },
+            "ConvertedAmount": 1
+        },
+        {
+            "Name": "Currency_Exchange",
+            "StartingCurrency": {
+                "RowName": "Exotic1"
+            },
+            "StartingAmount": 1,
+            "ConvertedCurrency": {
+                "RowName": "Credits"
+            },
+            "ConvertedAmount": 5
+        },
+        {
+            "Name": "RenRepair",
+            "StartingCurrency": {
+                "RowName": "Credits"
+            },
+            "StartingAmount": 15,
+            "ConvertedCurrency": {
+                "RowName": "Credits"
+            }
+        },
+        {
+            "Name": "Currency_Exchange_2",
+            "StartingCurrency": {
+                "RowName": "Exotic_Red"
+            },
+            "StartingAmount": 1,
+            "ConvertedCurrency": {
+                "RowName": "Credits"
+            },
+            "ConvertedAmount": 7
+        },
+        {
+            "Name": "Currency_Exchange_3",
+            "StartingCurrency": {
+                "RowName": "Exotic_Uranium"
+            },
+            "StartingAmount": 1,
+            "ConvertedCurrency": {
+                "RowName": "Credits"
+            },
+            "ConvertedAmount": 10
+        },
+        {
+            "Name": "Licence",
+            "StartingCurrency": {
+                "RowName": "Credits"
+            },
+            "StartingAmount": 15000,
+            "ConvertedCurrency": {
+                "RowName": "Licence"
+            },
+            "ConvertedAmount": 1
+        }
+    ]
+}

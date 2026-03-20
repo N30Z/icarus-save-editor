@@ -1,0 +1,3145 @@
+{
+    "RowStruct": "/Script/Icarus.LivingItemUpgradeData",
+    "Defaults": {
+        "AlterationToApply": {
+            "RowName": "None",
+            "DataTableName": "D_Alterations"
+        },
+        "UpgradeCost": [],
+        "MeshCustomisations": []
+    },
+    "Rows": [
+        {
+            "Name": "BlackWolf_Handle_A",
+            "AlterationToApply": {
+                "RowName": "BlackWolf_Handle_A"
+            },
+            "UpgradeCost": [
+                {
+                    "Meta": {
+                        "RowName": "Biomass",
+                        "DataTableName": "D_MetaCurrency"
+                    },
+                    "Amount": 20
+                }
+            ],
+            "MeshCustomisations": [
+                {
+                    "SocketName": "LW_Handle",
+                    "StaticMeshToSocket": "/Game/ASS/WEP/GUN_BlackWolfRevolver/SM_GUN_BWR_Handle_B.SM_GUN_BWR_Handle_B"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "BlackWolf_Handle_B",
+            "AlterationToApply": {
+                "RowName": "BlackWolf_Handle_B"
+            },
+            "UpgradeCost": [
+                {
+                    "Meta": {
+                        "RowName": "Biomass",
+                        "DataTableName": "D_MetaCurrency"
+                    },
+                    "Amount": 20
+                }
+            ],
+            "MeshCustomisations": [
+                {
+                    "SocketName": "LW_Handle",
+                    "StaticMeshToSocket": "/Game/ASS/WEP/GUN_BlackWolfRevolver/SM_GUN_BWR_Handle_C.SM_GUN_BWR_Handle_C"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "BlackWolf_Handle_C",
+            "AlterationToApply": {
+                "RowName": "BlackWolf_Handle_C"
+            },
+            "UpgradeCost": [
+                {
+                    "Meta": {
+                        "RowName": "Biomass",
+                        "DataTableName": "D_MetaCurrency"
+                    },
+                    "Amount": 20
+                }
+            ],
+            "MeshCustomisations": [
+                {
+                    "SocketName": "LW_Handle",
+                    "StaticMeshToSocket": "/Game/ASS/WEP/GUN_BlackWolfRevolver/SM_GUN_BWR_Handle_D.SM_GUN_BWR_Handle_D"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "BlackWolf_Chamber_A",
+            "AlterationToApply": {
+                "RowName": "BlackWolf_Chamber_A"
+            },
+            "UpgradeCost": [
+                {
+                    "Meta": {
+                        "RowName": "Biomass",
+                        "DataTableName": "D_MetaCurrency"
+                    },
+                    "Amount": 20
+                }
+            ],
+            "MeshCustomisations": [
+                {
+                    "SocketName": "Clip",
+                    "StaticMeshToSocket": "/Game/ASS/WEP/GUN_BlackWolfRevolver/SM_GUN_BWR_Cylinder_B.SM_GUN_BWR_Cylinder_B"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "BlackWolf_Chamber_B",
+            "AlterationToApply": {
+                "RowName": "BlackWolf_Chamber_B"
+            },
+            "UpgradeCost": [
+                {
+                    "Meta": {
+                        "RowName": "Biomass",
+                        "DataTableName": "D_MetaCurrency"
+                    },
+                    "Amount": 20
+                }
+            ],
+            "MeshCustomisations": [
+                {
+                    "SocketName": "Clip",
+                    "StaticMeshToSocket": "/Game/ASS/WEP/GUN_BlackWolfRevolver/SM_GUN_BWR_Cylinder_C.SM_GUN_BWR_Cylinder_C"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "BlackWolf_Chamber_C",
+            "AlterationToApply": {
+                "RowName": "BlackWolf_Chamber_C"
+            },
+            "UpgradeCost": [
+                {
+                    "Meta": {
+                        "RowName": "Biomass",
+                        "DataTableName": "D_MetaCurrency"
+                    },
+                    "Amount": 20
+                }
+            ],
+            "MeshCustomisations": [
+                {
+                    "SocketName": "Clip",
+                    "StaticMeshToSocket": "/Game/ASS/WEP/GUN_BlackWolfRevolver/SM_GUN_BWR_Cylinder_D.SM_GUN_BWR_Cylinder_D"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "BlackWolf_Trigger_A",
+            "AlterationToApply": {
+                "RowName": "BlackWolf_Trigger_A"
+            },
+            "UpgradeCost": [
+                {
+                    "Meta": {
+                        "RowName": "Biomass",
+                        "DataTableName": "D_MetaCurrency"
+                    },
+                    "Amount": 20
+                }
+            ],
+            "MeshCustomisations": [
+                {
+                    "SocketName": "LW_Trigger",
+                    "StaticMeshToSocket": "/Game/ASS/WEP/GUN_BlackWolfRevolver/SM_GUN_BWR_Trigger_B.SM_GUN_BWR_Trigger_B"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "BlackWolf_Trigger_B",
+            "AlterationToApply": {
+                "RowName": "BlackWolf_Trigger_B"
+            },
+            "UpgradeCost": [
+                {
+                    "Meta": {
+                        "RowName": "Biomass",
+                        "DataTableName": "D_MetaCurrency"
+                    },
+                    "Amount": 20
+                }
+            ],
+            "MeshCustomisations": [
+                {
+                    "SocketName": "LW_Trigger",
+                    "StaticMeshToSocket": "/Game/ASS/WEP/GUN_BlackWolfRevolver/SM_GUN_BWR_Trigger_C.SM_GUN_BWR_Trigger_C"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "BlackWolf_Trigger_C",
+            "AlterationToApply": {
+                "RowName": "BlackWolf_Trigger_C"
+            },
+            "UpgradeCost": [
+                {
+                    "Meta": {
+                        "RowName": "Biomass",
+                        "DataTableName": "D_MetaCurrency"
+                    },
+                    "Amount": 20
+                }
+            ],
+            "MeshCustomisations": [
+                {
+                    "SocketName": "LW_Trigger",
+                    "StaticMeshToSocket": "/Game/ASS/WEP/GUN_BlackWolfRevolver/SM_GUN_BWR_Trigger_D.SM_GUN_BWR_Trigger_D"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "BlackWolf_Barrel_A",
+            "AlterationToApply": {
+                "RowName": "BlackWolf_Barrel_A"
+            },
+            "UpgradeCost": [
+                {
+                    "Meta": {
+                        "RowName": "Biomass",
+                        "DataTableName": "D_MetaCurrency"
+                    },
+                    "Amount": 20
+                }
+            ],
+            "MeshCustomisations": [
+                {
+                    "SocketName": "LW_Barrel",
+                    "StaticMeshToSocket": "/Game/ASS/WEP/GUN_BlackWolfRevolver/SM_GUN_BWR_Barrel_B.SM_GUN_BWR_Barrel_B"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "BlackWolf_Barrel_B",
+            "AlterationToApply": {
+                "RowName": "BlackWolf_Barrel_B"
+            },
+            "UpgradeCost": [
+                {
+                    "Meta": {
+                        "RowName": "Biomass",
+                        "DataTableName": "D_MetaCurrency"
+                    },
+                    "Amount": 20
+                }
+            ],
+            "MeshCustomisations": [
+                {
+                    "SocketName": "LW_Barrel",
+                    "StaticMeshToSocket": "/Game/ASS/WEP/GUN_BlackWolfRevolver/SM_GUN_BWR_Barrel_C.SM_GUN_BWR_Barrel_C"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "BlackWolf_Barrel_C",
+            "AlterationToApply": {
+                "RowName": "BlackWolf_Barrel_C"
+            },
+            "UpgradeCost": [
+                {
+                    "Meta": {
+                        "RowName": "Biomass",
+                        "DataTableName": "D_MetaCurrency"
+                    },
+                    "Amount": 20
+                }
+            ],
+            "MeshCustomisations": [
+                {
+                    "SocketName": "LW_Barrel",
+                    "StaticMeshToSocket": "/Game/ASS/WEP/GUN_BlackWolfRevolver/SM_GUN_BWR_Barrel_D.SM_GUN_BWR_Barrel_D"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "ScorpionRifle_Stock_A",
+            "AlterationToApply": {
+                "RowName": "Scorpion_Stock_A"
+            },
+            "UpgradeCost": [
+                {
+                    "Meta": {
+                        "RowName": "Biomass",
+                        "DataTableName": "D_MetaCurrency"
+                    },
+                    "Amount": 20
+                }
+            ],
+            "MeshCustomisations": [
+                {
+                    "SocketName": "LW_Stock",
+                    "StaticMeshToSocket": "/Game/ASS/WEP/GUN_ScorpionRifle/SM_GUN_ScorpRifle_Stock_D_02.SM_GUN_ScorpRifle_Stock_D_02"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "ScorpionRifle_Stock_B",
+            "AlterationToApply": {
+                "RowName": "Scorpion_Stock_B"
+            },
+            "UpgradeCost": [
+                {
+                    "Meta": {
+                        "RowName": "Biomass",
+                        "DataTableName": "D_MetaCurrency"
+                    },
+                    "Amount": 20
+                }
+            ],
+            "MeshCustomisations": [
+                {
+                    "SocketName": "LW_Stock",
+                    "StaticMeshToSocket": "/Game/ASS/WEP/GUN_ScorpionRifle/SM_GUN_ScorpRifle_Stock_C.SM_GUN_ScorpRifle_Stock_C"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "ScorpionRifle_Stock_C",
+            "AlterationToApply": {
+                "RowName": "Scorpion_Stock_C"
+            },
+            "UpgradeCost": [
+                {
+                    "Meta": {
+                        "RowName": "Biomass",
+                        "DataTableName": "D_MetaCurrency"
+                    },
+                    "Amount": 20
+                }
+            ],
+            "MeshCustomisations": [
+                {
+                    "SocketName": "LW_Stock",
+                    "StaticMeshToSocket": "/Game/ASS/WEP/GUN_ScorpionRifle/SM_GUN_ScorpRifle_Stock_D.SM_GUN_ScorpRifle_Stock_D"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "ScorpionRifle_Chamber_A",
+            "AlterationToApply": {
+                "RowName": "Scorpion_Chamber_A"
+            },
+            "UpgradeCost": [
+                {
+                    "Meta": {
+                        "RowName": "Biomass",
+                        "DataTableName": "D_MetaCurrency"
+                    },
+                    "Amount": 20
+                }
+            ],
+            "MeshCustomisations": [
+                {
+                    "SocketName": "LW_Chamber",
+                    "StaticMeshToSocket": "/Game/ASS/WEP/GUN_ScorpionRifle/SM_GUN_ScorpRifle_Chamber_B.SM_GUN_ScorpRifle_Chamber_B"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "ScorpionRifle_Chamber_B",
+            "AlterationToApply": {
+                "RowName": "Scorpion_Chamber_B"
+            },
+            "UpgradeCost": [
+                {
+                    "Meta": {
+                        "RowName": "Biomass",
+                        "DataTableName": "D_MetaCurrency"
+                    },
+                    "Amount": 20
+                }
+            ],
+            "MeshCustomisations": [
+                {
+                    "SocketName": "LW_Chamber",
+                    "StaticMeshToSocket": "/Game/ASS/WEP/GUN_ScorpionRifle/SM_GUN_ScorpRifle_Chamber_C.SM_GUN_ScorpRifle_Chamber_C"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "ScorpionRifle_Chamber_C",
+            "AlterationToApply": {
+                "RowName": "Scorpion_Chamber_C"
+            },
+            "UpgradeCost": [
+                {
+                    "Meta": {
+                        "RowName": "Biomass",
+                        "DataTableName": "D_MetaCurrency"
+                    },
+                    "Amount": 20
+                }
+            ],
+            "MeshCustomisations": [
+                {
+                    "SocketName": "LW_Chamber",
+                    "StaticMeshToSocket": "/Game/ASS/WEP/GUN_ScorpionRifle/SM_GUN_ScorpRifle_Chamber_D.SM_GUN_ScorpRifle_Chamber_D"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "ScorpionRifle_Mag_A",
+            "AlterationToApply": {
+                "RowName": "Scorpion_Mag_A"
+            },
+            "UpgradeCost": [
+                {
+                    "Meta": {
+                        "RowName": "Biomass",
+                        "DataTableName": "D_MetaCurrency"
+                    },
+                    "Amount": 20
+                }
+            ],
+            "MeshCustomisations": [
+                {
+                    "SocketName": "LW_Mag",
+                    "StaticMeshToSocket": "/Game/ASS/WEP/GUN_ScorpionRifle/SM_GUN_ScorpRifle_Mag_B.SM_GUN_ScorpRifle_Mag_B"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "ScorpionRifle_Mag_B",
+            "AlterationToApply": {
+                "RowName": "Scorpion_Mag_B"
+            },
+            "UpgradeCost": [
+                {
+                    "Meta": {
+                        "RowName": "Biomass",
+                        "DataTableName": "D_MetaCurrency"
+                    },
+                    "Amount": 20
+                }
+            ],
+            "MeshCustomisations": [
+                {
+                    "SocketName": "LW_Mag",
+                    "StaticMeshToSocket": "/Game/ASS/WEP/GUN_ScorpionRifle/SM_GUN_ScorpRifle_Mag_C.SM_GUN_ScorpRifle_Mag_C"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "ScorpionRifle_Mag_C",
+            "AlterationToApply": {
+                "RowName": "Scorpion_Mag_C"
+            },
+            "UpgradeCost": [
+                {
+                    "Meta": {
+                        "RowName": "Biomass",
+                        "DataTableName": "D_MetaCurrency"
+                    },
+                    "Amount": 20
+                }
+            ],
+            "MeshCustomisations": [
+                {
+                    "SocketName": "LW_Mag",
+                    "StaticMeshToSocket": "/Game/ASS/WEP/GUN_ScorpionRifle/SM_GUN_ScorpRifle_Mag_D.SM_GUN_ScorpRifle_Mag_D"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "ScorpionRifle_Barrel_A",
+            "AlterationToApply": {
+                "RowName": "Scorpion_Barrel_A"
+            },
+            "UpgradeCost": [
+                {
+                    "Meta": {
+                        "RowName": "Biomass",
+                        "DataTableName": "D_MetaCurrency"
+                    },
+                    "Amount": 20
+                }
+            ],
+            "MeshCustomisations": [
+                {
+                    "SocketName": "LW_Barrel",
+                    "StaticMeshToSocket": "/Game/ASS/WEP/GUN_ScorpionRifle/SM_GUN_ScorpRifle_Barrel_B.SM_GUN_ScorpRifle_Barrel_B"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "ScorpionRifle_Barrel_B",
+            "AlterationToApply": {
+                "RowName": "Scorpion_Barrel_B"
+            },
+            "UpgradeCost": [
+                {
+                    "Meta": {
+                        "RowName": "Biomass",
+                        "DataTableName": "D_MetaCurrency"
+                    },
+                    "Amount": 20
+                }
+            ],
+            "MeshCustomisations": [
+                {
+                    "SocketName": "LW_Barrel",
+                    "StaticMeshToSocket": "/Game/ASS/WEP/GUN_ScorpionRifle/SM_GUN_ScorpRifle_Barrel_C.SM_GUN_ScorpRifle_Barrel_C"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "ScorpionRifle_Barrel_C",
+            "AlterationToApply": {
+                "RowName": "Scorpion_Barrel_C"
+            },
+            "UpgradeCost": [
+                {
+                    "Meta": {
+                        "RowName": "Biomass",
+                        "DataTableName": "D_MetaCurrency"
+                    },
+                    "Amount": 20
+                }
+            ],
+            "MeshCustomisations": [
+                {
+                    "SocketName": "LW_Barrel",
+                    "StaticMeshToSocket": "/Game/ASS/WEP/GUN_ScorpionRifle/SM_GUN_ScorpRifle_Barrel_D.SM_GUN_ScorpRifle_Barrel_D"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "SandwormCrossbow_Stock_A",
+            "AlterationToApply": {
+                "RowName": "SandwormCrossbow_Stock_A"
+            },
+            "UpgradeCost": [
+                {
+                    "Meta": {
+                        "RowName": "Biomass",
+                        "DataTableName": "D_MetaCurrency"
+                    },
+                    "Amount": 20
+                }
+            ],
+            "MeshCustomisations": [
+                {
+                    "SocketName": "LW_Stock",
+                    "StaticMeshToSocket": "/Game/ASS/WEP/SK_BOW_Crossbow_Sandworm/V3/SM_BOW_Crossbow_Sandworm_CW_Gyro.SM_BOW_Crossbow_Sandworm_CW_Gyro"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "SandwormCrossbow_Stock_B",
+            "AlterationToApply": {
+                "RowName": "SandwormCrossbow_Stock_B"
+            },
+            "UpgradeCost": [
+                {
+                    "Meta": {
+                        "RowName": "Biomass",
+                        "DataTableName": "D_MetaCurrency"
+                    },
+                    "Amount": 20
+                }
+            ],
+            "MeshCustomisations": [
+                {
+                    "SocketName": "LW_Stock",
+                    "StaticMeshToSocket": "/Game/ASS/WEP/SK_BOW_Crossbow_Sandworm/V3/SM_BOW_Crossbow_Sandworm_CW_Sleek.SM_BOW_Crossbow_Sandworm_CW_Sleek"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "SandwormCrossbow_Stock_C",
+            "AlterationToApply": {
+                "RowName": "SandwormCrossbow_Stock_C"
+            },
+            "UpgradeCost": [
+                {
+                    "Meta": {
+                        "RowName": "Biomass",
+                        "DataTableName": "D_MetaCurrency"
+                    },
+                    "Amount": 20
+                }
+            ],
+            "MeshCustomisations": [
+                {
+                    "SocketName": "LW_Stock",
+                    "StaticMeshToSocket": "/Game/ASS/WEP/SK_BOW_Crossbow_Sandworm/V3/SM_BOW_Crossbow_Sandworm_CW_Feature.SM_BOW_Crossbow_Sandworm_CW_Feature"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "SandwormCrossbow_Launcher_A",
+            "AlterationToApply": {
+                "RowName": "SandwormCrossbow_Launcher_A"
+            },
+            "UpgradeCost": [
+                {
+                    "Meta": {
+                        "RowName": "Biomass",
+                        "DataTableName": "D_MetaCurrency"
+                    },
+                    "Amount": 20
+                }
+            ],
+            "MeshCustomisations": [
+                {
+                    "SocketName": "LW_Launcher",
+                    "StaticMeshToSocket": "/Game/ASS/WEP/SK_BOW_Crossbow_Sandworm/MeshV2/SM_BOW_SandwormCrossbow_LA_SLEEK.SM_BOW_SandwormCrossbow_LA_SLEEK"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "SandwormCrossbow_Launcher_B",
+            "AlterationToApply": {
+                "RowName": "SandwormCrossbow_Launcher_B"
+            },
+            "UpgradeCost": [
+                {
+                    "Meta": {
+                        "RowName": "Biomass",
+                        "DataTableName": "D_MetaCurrency"
+                    },
+                    "Amount": 20
+                }
+            ],
+            "MeshCustomisations": [
+                {
+                    "SocketName": "LW_Launcher",
+                    "StaticMeshToSocket": "/Game/ASS/WEP/SK_BOW_Crossbow_Sandworm/MeshV2/SM_BOW_SandwormCrossbow_LA_GAS.SM_BOW_SandwormCrossbow_LA_GAS"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "SandwormCrossbow_Launcher_C",
+            "AlterationToApply": {
+                "RowName": "SandwormCrossbow_Launcher_C"
+            },
+            "UpgradeCost": [
+                {
+                    "Meta": {
+                        "RowName": "Biomass",
+                        "DataTableName": "D_MetaCurrency"
+                    },
+                    "Amount": 20
+                }
+            ],
+            "MeshCustomisations": [
+                {
+                    "SocketName": "LW_Launcher",
+                    "StaticMeshToSocket": "/Game/ASS/WEP/SK_BOW_Crossbow_Sandworm/MeshV2/SM_BOW_SandwormCrossbow_LA_HEAVY.SM_BOW_SandwormCrossbow_LA_HEAVY"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "SandwormCrossbow_Arm_A",
+            "AlterationToApply": {
+                "RowName": "SandwormCrossbow_Arm_A"
+            },
+            "UpgradeCost": [
+                {
+                    "Meta": {
+                        "RowName": "Biomass",
+                        "DataTableName": "D_MetaCurrency"
+                    },
+                    "Amount": 20
+                }
+            ],
+            "MeshCustomisations": [
+                {
+                    "SocketName": "LW_Arm",
+                    "StaticMeshToSocket": "/Game/ASS/WEP/SK_BOW_Crossbow_Sandworm/V3/SM_BOW_Crossbow_Sandworm_ARM_Sleek.SM_BOW_Crossbow_Sandworm_ARM_Sleek"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "SandwormCrossbow_Arm_B",
+            "AlterationToApply": {
+                "RowName": "SandwormCrossbow_Arm_B"
+            },
+            "UpgradeCost": [
+                {
+                    "Meta": {
+                        "RowName": "Biomass",
+                        "DataTableName": "D_MetaCurrency"
+                    },
+                    "Amount": 20
+                }
+            ],
+            "MeshCustomisations": [
+                {
+                    "SocketName": "LW_Arm",
+                    "StaticMeshToSocket": "/Game/ASS/WEP/SK_BOW_Crossbow_Sandworm/V3/SM_BOW_Crossbow_Sandworm_ARM_Feature.SM_BOW_Crossbow_Sandworm_ARM_Feature"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "SandwormCrossbow_Arm_C",
+            "AlterationToApply": {
+                "RowName": "SandwormCrossbow_Arm_C"
+            },
+            "UpgradeCost": [
+                {
+                    "Meta": {
+                        "RowName": "Biomass",
+                        "DataTableName": "D_MetaCurrency"
+                    },
+                    "Amount": 20
+                }
+            ],
+            "MeshCustomisations": [
+                {
+                    "SocketName": "LW_Arm",
+                    "StaticMeshToSocket": "/Game/ASS/WEP/SK_BOW_Crossbow_Sandworm/V3/SM_BOW_Crossbow_Sandworm_ARM_Rotor.SM_BOW_Crossbow_Sandworm_ARM_Rotor"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "SandwormCrossbow_Barrel_A",
+            "AlterationToApply": {
+                "RowName": "SandwormCrossbow_Barrel_A"
+            },
+            "UpgradeCost": [
+                {
+                    "Meta": {
+                        "RowName": "Biomass",
+                        "DataTableName": "D_MetaCurrency"
+                    },
+                    "Amount": 20
+                }
+            ],
+            "MeshCustomisations": [
+                {
+                    "SocketName": "LW_Barrel",
+                    "StaticMeshToSocket": "/Game/ASS/WEP/SK_BOW_Crossbow_Sandworm/MeshV2/SM_BOW_SandwormCrossbow_SZ_POWER.SM_BOW_SandwormCrossbow_SZ_POWER"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "SandwormCrossbow_Barrel_B",
+            "AlterationToApply": {
+                "RowName": "SandwormCrossbow_Barrel_B"
+            },
+            "UpgradeCost": [
+                {
+                    "Meta": {
+                        "RowName": "Biomass",
+                        "DataTableName": "D_MetaCurrency"
+                    },
+                    "Amount": 20
+                }
+            ],
+            "MeshCustomisations": [
+                {
+                    "SocketName": "LW_Barrel",
+                    "StaticMeshToSocket": "/Game/ASS/WEP/SK_BOW_Crossbow_Sandworm/MeshV2/SM_BOW_SandwormCrossbow_SZ_SLEEK.SM_BOW_SandwormCrossbow_SZ_SLEEK"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "SandwormCrossbow_Barrel_C",
+            "AlterationToApply": {
+                "RowName": "SandwormCrossbow_Barrel_C"
+            },
+            "UpgradeCost": [
+                {
+                    "Meta": {
+                        "RowName": "Biomass",
+                        "DataTableName": "D_MetaCurrency"
+                    },
+                    "Amount": 20
+                }
+            ],
+            "MeshCustomisations": [
+                {
+                    "SocketName": "LW_Barrel",
+                    "StaticMeshToSocket": "/Game/ASS/WEP/SK_BOW_Crossbow_Sandworm/MeshV2/SM_BOW_SandwormCrossbow_SZ_POISON.SM_BOW_SandwormCrossbow_SZ_POISON"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "IceMammothSledgehammer_Head_A",
+            "AlterationToApply": {
+                "RowName": "Mammoth_Sledgehammer_Head_A"
+            },
+            "UpgradeCost": [
+                {
+                    "Meta": {
+                        "RowName": "Biomass",
+                        "DataTableName": "D_MetaCurrency"
+                    },
+                    "Amount": 20
+                }
+            ],
+            "MeshCustomisations": [
+                {
+                    "SocketName": "LW_Head",
+                    "StaticMeshToSocket": "/Game/ASS/ITM/Sledgehammer_Ice_Mammoth/SM_ITM_Sledgehammer_IceMammoth_Hammerhead_Cammer.SM_ITM_Sledgehammer_IceMammoth_Hammerhead_Cammer"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "IceMammothSledgehammer_Head_B",
+            "AlterationToApply": {
+                "RowName": "Mammoth_Sledgehammer_Head_B"
+            },
+            "UpgradeCost": [
+                {
+                    "Meta": {
+                        "RowName": "Biomass",
+                        "DataTableName": "D_MetaCurrency"
+                    },
+                    "Amount": 20
+                }
+            ],
+            "MeshCustomisations": [
+                {
+                    "SocketName": "LW_Head",
+                    "StaticMeshToSocket": "/Game/ASS/ITM/Sledgehammer_Ice_Mammoth/SM_ITM_Sledgehammer_IceMammoth_Hammerhead_Gammer.SM_ITM_Sledgehammer_IceMammoth_Hammerhead_Gammer"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "IceMammothSledgehammer_Head_C",
+            "AlterationToApply": {
+                "RowName": "Mammoth_Sledgehammer_Head_C"
+            },
+            "UpgradeCost": [
+                {
+                    "Meta": {
+                        "RowName": "Biomass",
+                        "DataTableName": "D_MetaCurrency"
+                    },
+                    "Amount": 20
+                }
+            ],
+            "MeshCustomisations": [
+                {
+                    "SocketName": "LW_Head",
+                    "StaticMeshToSocket": "/Game/ASS/ITM/Sledgehammer_Ice_Mammoth/SM_ITM_Sledgehammer_IceMammoth_Hammerhead_Mammer.SM_ITM_Sledgehammer_IceMammoth_Hammerhead_Mammer"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "IceMammothSledgehammer_Back_A",
+            "AlterationToApply": {
+                "RowName": "Mammoth_Sledgehammer_Back_A"
+            },
+            "UpgradeCost": [
+                {
+                    "Meta": {
+                        "RowName": "Biomass",
+                        "DataTableName": "D_MetaCurrency"
+                    },
+                    "Amount": 20
+                }
+            ],
+            "MeshCustomisations": [
+                {
+                    "SocketName": "LW_Back",
+                    "StaticMeshToSocket": "/Game/ASS/ITM/Sledgehammer_Ice_Mammoth/SM_ITM_Sledgehammer_IceMammoth_HammerheadBack_Cammer.SM_ITM_Sledgehammer_IceMammoth_HammerheadBack_Cammer"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "IceMammothSledgehammer_Back_B",
+            "AlterationToApply": {
+                "RowName": "Mammoth_Sledgehammer_Back_B"
+            },
+            "UpgradeCost": [
+                {
+                    "Meta": {
+                        "RowName": "Biomass",
+                        "DataTableName": "D_MetaCurrency"
+                    },
+                    "Amount": 20
+                }
+            ],
+            "MeshCustomisations": [
+                {
+                    "SocketName": "LW_Back",
+                    "StaticMeshToSocket": "/Game/ASS/ITM/Sledgehammer_Ice_Mammoth/SM_ITM_Sledgehammer_IceMammoth_HammerheadBack_Gammer.SM_ITM_Sledgehammer_IceMammoth_HammerheadBack_Gammer"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "IceMammothSledgehammer_Back_C",
+            "AlterationToApply": {
+                "RowName": "Mammoth_Sledgehammer_Back_C"
+            },
+            "UpgradeCost": [
+                {
+                    "Meta": {
+                        "RowName": "Biomass",
+                        "DataTableName": "D_MetaCurrency"
+                    },
+                    "Amount": 20
+                }
+            ],
+            "MeshCustomisations": [
+                {
+                    "SocketName": "LW_Back",
+                    "StaticMeshToSocket": "/Game/ASS/ITM/Sledgehammer_Ice_Mammoth/SM_ITM_Sledgehammer_IceMammoth_HammerheadBack_Mammer.SM_ITM_Sledgehammer_IceMammoth_HammerheadBack_Mammer"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "IceMammothSledgehammer_Weight_A",
+            "AlterationToApply": {
+                "RowName": "Mammoth_Sledgehammer_Weight_A"
+            },
+            "UpgradeCost": [
+                {
+                    "Meta": {
+                        "RowName": "Biomass",
+                        "DataTableName": "D_MetaCurrency"
+                    },
+                    "Amount": 20
+                }
+            ],
+            "MeshCustomisations": [
+                {
+                    "SocketName": "LW_Back",
+                    "StaticMeshToSocket": "/Game/ASS/ITM/Sledgehammer_Ice_Mammoth/SM_ITM_Sledgehammer_IceMammoth_Counterweight_Cammer.SM_ITM_Sledgehammer_IceMammoth_Counterweight_Cammer"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "IceMammothSledgehammer_Weight_B",
+            "AlterationToApply": {
+                "RowName": "Mammoth_Sledgehammer_Weight_B"
+            },
+            "UpgradeCost": [
+                {
+                    "Meta": {
+                        "RowName": "Biomass",
+                        "DataTableName": "D_MetaCurrency"
+                    },
+                    "Amount": 20
+                }
+            ],
+            "MeshCustomisations": [
+                {
+                    "SocketName": "LW_Back",
+                    "StaticMeshToSocket": "/Game/ASS/ITM/Sledgehammer_Ice_Mammoth/SM_ITM_Sledgehammer_IceMammoth_Counterweight_Gammer.SM_ITM_Sledgehammer_IceMammoth_Counterweight_Gammer"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "IceMammothSledgehammer_Weight_C",
+            "AlterationToApply": {
+                "RowName": "Mammoth_Sledgehammer_Weight_C"
+            },
+            "UpgradeCost": [
+                {
+                    "Meta": {
+                        "RowName": "Biomass",
+                        "DataTableName": "D_MetaCurrency"
+                    },
+                    "Amount": 20
+                }
+            ],
+            "MeshCustomisations": [
+                {
+                    "SocketName": "LW_Back",
+                    "StaticMeshToSocket": "/Game/ASS/ITM/Sledgehammer_Ice_Mammoth/SM_ITM_Sledgehammer_IceMammoth_Counterweight_Mammer.SM_ITM_Sledgehammer_IceMammoth_Counterweight_Mammer"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "IceMammothSledgehammer_Handle_A",
+            "AlterationToApply": {
+                "RowName": "Mammoth_Sledgehammer_Handle_A"
+            },
+            "UpgradeCost": [
+                {
+                    "Meta": {
+                        "RowName": "Biomass",
+                        "DataTableName": "D_MetaCurrency"
+                    },
+                    "Amount": 20
+                }
+            ],
+            "MeshCustomisations": [
+                {
+                    "SocketName": "LW_Handle",
+                    "StaticMeshToSocket": "/Game/ASS/ITM/Sledgehammer_Ice_Mammoth/SM_ITM_Sledgehammer_IceMammoth_Handle_Cammer.SM_ITM_Sledgehammer_IceMammoth_Handle_Cammer"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "IceMammothSledgehammer_Handle_B",
+            "AlterationToApply": {
+                "RowName": "Mammoth_Sledgehammer_Handle_B"
+            },
+            "UpgradeCost": [
+                {
+                    "Meta": {
+                        "RowName": "Biomass",
+                        "DataTableName": "D_MetaCurrency"
+                    },
+                    "Amount": 20
+                }
+            ],
+            "MeshCustomisations": [
+                {
+                    "SocketName": "LW_Handle",
+                    "StaticMeshToSocket": "/Game/ASS/ITM/Sledgehammer_Ice_Mammoth/SM_ITM_Sledgehammer_IceMammoth_Handle_Gammer.SM_ITM_Sledgehammer_IceMammoth_Handle_Gammer"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "IceMammothSledgehammer_Handle_C",
+            "AlterationToApply": {
+                "RowName": "Mammoth_Sledgehammer_Handle_C"
+            },
+            "UpgradeCost": [
+                {
+                    "Meta": {
+                        "RowName": "Biomass",
+                        "DataTableName": "D_MetaCurrency"
+                    },
+                    "Amount": 20
+                }
+            ],
+            "MeshCustomisations": [
+                {
+                    "SocketName": "LW_Handle",
+                    "StaticMeshToSocket": "/Game/ASS/ITM/Sledgehammer_Ice_Mammoth/SM_ITM_Sledgehammer_IceMammoth_Handle_Mammer.SM_ITM_Sledgehammer_IceMammoth_Handle_Mammer"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "LavaHunterFlamethrower_Chassis_A",
+            "AlterationToApply": {
+                "RowName": "LavaHunterFlamethrower_Chassis_A"
+            },
+            "UpgradeCost": [
+                {
+                    "Meta": {
+                        "RowName": "Biomass",
+                        "DataTableName": "D_MetaCurrency"
+                    },
+                    "Amount": 20
+                }
+            ],
+            "MeshCustomisations": [
+                {
+                    "SocketName": "LW_Chassie",
+                    "StaticMeshToSocket": "/Game/ASS/WEP/Gun_FlameThrower_LavaHunter/SM_WEP_GUN_FlameThrower_LavaHunter_Chasis_B.SM_WEP_GUN_FlameThrower_LavaHunter_Chasis_B"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "LavaHunterFlamethrower_Chassis_B",
+            "AlterationToApply": {
+                "RowName": "LavaHunterFlamethrower_Chassis_B"
+            },
+            "UpgradeCost": [
+                {
+                    "Meta": {
+                        "RowName": "Biomass",
+                        "DataTableName": "D_MetaCurrency"
+                    },
+                    "Amount": 20
+                }
+            ],
+            "MeshCustomisations": [
+                {
+                    "SocketName": "LW_Chassie",
+                    "StaticMeshToSocket": "/Game/ASS/WEP/Gun_FlameThrower_LavaHunter/SM_WEP_GUN_FlameThrower_LavaHunter_Chasis_C.SM_WEP_GUN_FlameThrower_LavaHunter_Chasis_C"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "LavaHunterFlamethrower_Chassis_C",
+            "AlterationToApply": {
+                "RowName": "LavaHunterFlamethrower_Chassis_C"
+            },
+            "UpgradeCost": [
+                {
+                    "Meta": {
+                        "RowName": "Biomass",
+                        "DataTableName": "D_MetaCurrency"
+                    },
+                    "Amount": 20
+                }
+            ],
+            "MeshCustomisations": [
+                {
+                    "SocketName": "LW_Chassie",
+                    "StaticMeshToSocket": "/Game/ASS/WEP/Gun_FlameThrower_LavaHunter/SM_WEP_GUN_FlameThrower_LavaHunter_Chasis_D.SM_WEP_GUN_FlameThrower_LavaHunter_Chasis_D"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "LavaHunterFlamethrower_Fuel_A",
+            "AlterationToApply": {
+                "RowName": "LavaHunterFlamethrower_Fuel_A"
+            },
+            "UpgradeCost": [
+                {
+                    "Meta": {
+                        "RowName": "Biomass",
+                        "DataTableName": "D_MetaCurrency"
+                    },
+                    "Amount": 20
+                }
+            ],
+            "MeshCustomisations": [
+                {
+                    "SocketName": "LW_Fuel",
+                    "StaticMeshToSocket": "/Game/ASS/WEP/Gun_FlameThrower_LavaHunter/SM_WEP_GUN_FlameThrower_LavaHunter_Fuel_B.SM_WEP_GUN_FlameThrower_LavaHunter_Fuel_B"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "LavaHunterFlamethrower_Fuel_B",
+            "AlterationToApply": {
+                "RowName": "LavaHunterFlamethrower_Fuel_B"
+            },
+            "UpgradeCost": [
+                {
+                    "Meta": {
+                        "RowName": "Biomass",
+                        "DataTableName": "D_MetaCurrency"
+                    },
+                    "Amount": 20
+                }
+            ],
+            "MeshCustomisations": [
+                {
+                    "SocketName": "LW_Fuel",
+                    "StaticMeshToSocket": "/Game/ASS/WEP/Gun_FlameThrower_LavaHunter/SM_WEP_GUN_FlameThrower_LavaHunter_Fuel_C.SM_WEP_GUN_FlameThrower_LavaHunter_Fuel_C"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "LavaHunterFlamethrower_Fuel_C",
+            "AlterationToApply": {
+                "RowName": "LavaHunterFlamethrower_Fuel_C"
+            },
+            "UpgradeCost": [
+                {
+                    "Meta": {
+                        "RowName": "Biomass",
+                        "DataTableName": "D_MetaCurrency"
+                    },
+                    "Amount": 20
+                }
+            ],
+            "MeshCustomisations": [
+                {
+                    "SocketName": "LW_Fuel",
+                    "StaticMeshToSocket": "/Game/ASS/WEP/Gun_FlameThrower_LavaHunter/SM_WEP_GUN_FlameThrower_LavaHunter_Fuel_D.SM_WEP_GUN_FlameThrower_LavaHunter_Fuel_D"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "LavaHunterFlamethrower_Injector_A",
+            "AlterationToApply": {
+                "RowName": "LavaHunterFlamethrower_Injector_A"
+            },
+            "UpgradeCost": [
+                {
+                    "Meta": {
+                        "RowName": "Biomass",
+                        "DataTableName": "D_MetaCurrency"
+                    },
+                    "Amount": 20
+                }
+            ],
+            "MeshCustomisations": [
+                {
+                    "SocketName": "LW_Injector",
+                    "StaticMeshToSocket": "/Game/ASS/WEP/Gun_FlameThrower_LavaHunter/SM_WEP_GUN_FlameThrower_LavaHunter_Injector_B.SM_WEP_GUN_FlameThrower_LavaHunter_Injector_B"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "LavaHunterFlamethrower_Injector_B",
+            "AlterationToApply": {
+                "RowName": "LavaHunterFlamethrower_Injector_B"
+            },
+            "UpgradeCost": [
+                {
+                    "Meta": {
+                        "RowName": "Biomass",
+                        "DataTableName": "D_MetaCurrency"
+                    },
+                    "Amount": 20
+                }
+            ],
+            "MeshCustomisations": [
+                {
+                    "SocketName": "LW_Injector",
+                    "StaticMeshToSocket": "/Game/ASS/WEP/Gun_FlameThrower_LavaHunter/SM_WEP_GUN_FlameThrower_LavaHunter_Injector_C.SM_WEP_GUN_FlameThrower_LavaHunter_Injector_C"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "LavaHunterFlamethrower_Injector_C",
+            "AlterationToApply": {
+                "RowName": "LavaHunterFlamethrower_Injector_C"
+            },
+            "UpgradeCost": [
+                {
+                    "Meta": {
+                        "RowName": "Biomass",
+                        "DataTableName": "D_MetaCurrency"
+                    },
+                    "Amount": 20
+                }
+            ],
+            "MeshCustomisations": [
+                {
+                    "SocketName": "LW_Injector",
+                    "StaticMeshToSocket": "/Game/ASS/WEP/Gun_FlameThrower_LavaHunter/SM_WEP_GUN_FlameThrower_LavaHunter_Injector_D.SM_WEP_GUN_FlameThrower_LavaHunter_Injector_D"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "LavaHunterFlamethrower_Nozzle_A",
+            "AlterationToApply": {
+                "RowName": "LavaHunterFlamethrower_Nozzle_A"
+            },
+            "UpgradeCost": [
+                {
+                    "Meta": {
+                        "RowName": "Biomass",
+                        "DataTableName": "D_MetaCurrency"
+                    },
+                    "Amount": 20
+                }
+            ],
+            "MeshCustomisations": [
+                {
+                    "SocketName": "LW_Nozzle",
+                    "StaticMeshToSocket": "/Game/ASS/WEP/Gun_FlameThrower_LavaHunter/SM_WEP_GUN_FlameThrower_LavaHunter_Nozzle_B.SM_WEP_GUN_FlameThrower_LavaHunter_Nozzle_B"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "LavaHunterFlamethrower_Nozzle_B",
+            "AlterationToApply": {
+                "RowName": "LavaHunterFlamethrower_Nozzle_B"
+            },
+            "UpgradeCost": [
+                {
+                    "Meta": {
+                        "RowName": "Biomass",
+                        "DataTableName": "D_MetaCurrency"
+                    },
+                    "Amount": 20
+                }
+            ],
+            "MeshCustomisations": [
+                {
+                    "SocketName": "LW_Nozzle",
+                    "StaticMeshToSocket": "/Game/ASS/WEP/Gun_FlameThrower_LavaHunter/SM_WEP_GUN_FlameThrower_LavaHunter_Nozzle_C.SM_WEP_GUN_FlameThrower_LavaHunter_Nozzle_C"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "LavaHunterFlamethrower_Nozzle_C",
+            "AlterationToApply": {
+                "RowName": "LavaHunterFlamethrower_Nozzle_C"
+            },
+            "UpgradeCost": [
+                {
+                    "Meta": {
+                        "RowName": "Biomass",
+                        "DataTableName": "D_MetaCurrency"
+                    },
+                    "Amount": 20
+                }
+            ],
+            "MeshCustomisations": [
+                {
+                    "SocketName": "LW_Nozzle",
+                    "StaticMeshToSocket": "/Game/ASS/WEP/Gun_FlameThrower_LavaHunter/SM_WEP_GUN_FlameThrower_LavaHunter_Nozzle_D.SM_WEP_GUN_FlameThrower_LavaHunter_Nozzle_D"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "HammheadSlugLauncher_Backpack_A",
+            "AlterationToApply": {
+                "RowName": "LW_Slug_Backpack_A"
+            },
+            "UpgradeCost": [
+                {
+                    "Meta": {
+                        "RowName": "Biomass",
+                        "DataTableName": "D_MetaCurrency"
+                    },
+                    "Amount": 20
+                }
+            ],
+            "MeshCustomisations": [
+                {
+                    "SocketName": "LW_Backpack",
+                    "StaticMeshToSocket": "None"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "HammheadSlugLauncher_Backpack_B",
+            "AlterationToApply": {
+                "RowName": "LW_Slug_Backpack_B"
+            },
+            "UpgradeCost": [
+                {
+                    "Meta": {
+                        "RowName": "Biomass",
+                        "DataTableName": "D_MetaCurrency"
+                    },
+                    "Amount": 20
+                }
+            ],
+            "MeshCustomisations": [
+                {
+                    "SocketName": "LW_Backpack",
+                    "StaticMeshToSocket": "None"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "HammheadSlugLauncher_Backpack_C",
+            "AlterationToApply": {
+                "RowName": "LW_Slug_Backpack_C"
+            },
+            "UpgradeCost": [
+                {
+                    "Meta": {
+                        "RowName": "Biomass",
+                        "DataTableName": "D_MetaCurrency"
+                    },
+                    "Amount": 20
+                }
+            ],
+            "MeshCustomisations": [
+                {
+                    "SocketName": "LW_Backpack",
+                    "StaticMeshToSocket": "None"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "HammheadSlugLauncher_Loader_A",
+            "AlterationToApply": {
+                "RowName": "LW_Slug_Loader_A"
+            },
+            "UpgradeCost": [
+                {
+                    "Meta": {
+                        "RowName": "Biomass",
+                        "DataTableName": "D_MetaCurrency"
+                    },
+                    "Amount": 20
+                }
+            ],
+            "MeshCustomisations": [
+                {
+                    "SocketName": "LW_Loader",
+                    "StaticMeshToSocket": "/Game/ASS/WEP/GUN_Hammerhead_Slug_Glob/SM_GUN_Hammerhead_Slug_Glob_Loader_B.SM_GUN_Hammerhead_Slug_Glob_Loader_B"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "HammheadSlugLauncher_Loader_B",
+            "AlterationToApply": {
+                "RowName": "LW_Slug_Loader_B"
+            },
+            "UpgradeCost": [
+                {
+                    "Meta": {
+                        "RowName": "Biomass",
+                        "DataTableName": "D_MetaCurrency"
+                    },
+                    "Amount": 20
+                }
+            ],
+            "MeshCustomisations": [
+                {
+                    "SocketName": "LW_Loader",
+                    "StaticMeshToSocket": "/Game/ASS/WEP/GUN_Hammerhead_Slug_Glob/SM_GUN_Hammerhead_Slug_Glob_Loader_C.SM_GUN_Hammerhead_Slug_Glob_Loader_C"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "HammheadSlugLauncher_Loader_C",
+            "AlterationToApply": {
+                "RowName": "LW_Slug_Loader_C"
+            },
+            "UpgradeCost": [
+                {
+                    "Meta": {
+                        "RowName": "Biomass",
+                        "DataTableName": "D_MetaCurrency"
+                    },
+                    "Amount": 20
+                }
+            ],
+            "MeshCustomisations": [
+                {
+                    "SocketName": "LW_Loader",
+                    "StaticMeshToSocket": "/Game/ASS/WEP/GUN_Hammerhead_Slug_Glob/SM_GUN_Hammerhead_Slug_Glob_Loader_D.SM_GUN_Hammerhead_Slug_Glob_Loader_D"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "HammheadSlugLauncher_Guard_A",
+            "AlterationToApply": {
+                "RowName": "LW_Slug_Guard_A"
+            },
+            "UpgradeCost": [
+                {
+                    "Meta": {
+                        "RowName": "Biomass",
+                        "DataTableName": "D_MetaCurrency"
+                    },
+                    "Amount": 20
+                }
+            ],
+            "MeshCustomisations": [
+                {
+                    "SocketName": "LW_Guard",
+                    "StaticMeshToSocket": "/Game/ASS/WEP/GUN_Hammerhead_Slug_Glob/SM_GUN_Hammerhead_Slug_Glob_SplashGuard_B.SM_GUN_Hammerhead_Slug_Glob_SplashGuard_B"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "HammheadSlugLauncher_Guard_B",
+            "AlterationToApply": {
+                "RowName": "LW_Slug_Guard_B"
+            },
+            "UpgradeCost": [
+                {
+                    "Meta": {
+                        "RowName": "Biomass",
+                        "DataTableName": "D_MetaCurrency"
+                    },
+                    "Amount": 20
+                }
+            ],
+            "MeshCustomisations": [
+                {
+                    "SocketName": "LW_Guard",
+                    "StaticMeshToSocket": "/Game/ASS/WEP/GUN_Hammerhead_Slug_Glob/SM_GUN_Hammerhead_Slug_Glob_SplashGuard_C.SM_GUN_Hammerhead_Slug_Glob_SplashGuard_C"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "HammheadSlugLauncher_Guard_C",
+            "AlterationToApply": {
+                "RowName": "LW_Slug_Guard_C"
+            },
+            "UpgradeCost": [
+                {
+                    "Meta": {
+                        "RowName": "Biomass",
+                        "DataTableName": "D_MetaCurrency"
+                    },
+                    "Amount": 20
+                }
+            ],
+            "MeshCustomisations": [
+                {
+                    "SocketName": "LW_Guard",
+                    "StaticMeshToSocket": "/Game/ASS/WEP/GUN_Hammerhead_Slug_Glob/SM_GUN_Hammerhead_Slug_Glob_SplashGuard_D.SM_GUN_Hammerhead_Slug_Glob_SplashGuard_D"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "HammheadSlugLauncher_Muzzle_A",
+            "AlterationToApply": {
+                "RowName": "LW_Slug_Muzzle_A"
+            },
+            "UpgradeCost": [
+                {
+                    "Meta": {
+                        "RowName": "Biomass",
+                        "DataTableName": "D_MetaCurrency"
+                    },
+                    "Amount": 20
+                }
+            ],
+            "MeshCustomisations": [
+                {
+                    "SocketName": "LW_Muzzle",
+                    "StaticMeshToSocket": "/Game/ASS/WEP/GUN_Hammerhead_Slug_Glob/SM_GUN_Hammerhead_Slug_Glob_Muzzle_B.SM_GUN_Hammerhead_Slug_Glob_Muzzle_B"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "HammheadSlugLauncher_Muzzle_B",
+            "AlterationToApply": {
+                "RowName": "LW_Slug_Muzzle_B"
+            },
+            "UpgradeCost": [
+                {
+                    "Meta": {
+                        "RowName": "Biomass",
+                        "DataTableName": "D_MetaCurrency"
+                    },
+                    "Amount": 20
+                }
+            ],
+            "MeshCustomisations": [
+                {
+                    "SocketName": "LW_Muzzle",
+                    "StaticMeshToSocket": "/Game/ASS/WEP/GUN_Hammerhead_Slug_Glob/SM_GUN_Hammerhead_Slug_Glob_Muzzle_C.SM_GUN_Hammerhead_Slug_Glob_Muzzle_C"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "HammheadSlugLauncher_Muzzle_C",
+            "AlterationToApply": {
+                "RowName": "LW_Slug_Muzzle_C"
+            },
+            "UpgradeCost": [
+                {
+                    "Meta": {
+                        "RowName": "Biomass",
+                        "DataTableName": "D_MetaCurrency"
+                    },
+                    "Amount": 20
+                }
+            ],
+            "MeshCustomisations": [
+                {
+                    "SocketName": "LW_Muzzle",
+                    "StaticMeshToSocket": "/Game/ASS/WEP/GUN_Hammerhead_Slug_Glob/SM_GUN_Hammerhead_Slug_Glob_Muzzle_D.SM_GUN_Hammerhead_Slug_Glob_Muzzle_D"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "ApeClub_Plate_A",
+            "AlterationToApply": {
+                "RowName": "LW_ApeClub_Plate_A"
+            },
+            "UpgradeCost": [
+                {
+                    "Meta": {
+                        "RowName": "Biomass",
+                        "DataTableName": "D_MetaCurrency"
+                    },
+                    "Amount": 20
+                }
+            ],
+            "MeshCustomisations": [
+                {
+                    "SocketName": "LW_Plate",
+                    "StaticMeshToSocket": "/Game/ASS/ITM/Club_Swamp_Ape/SM_ITM_Club_Ape_Plates_2.SM_ITM_Club_Ape_Plates_2"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "ApeClub_Plate_B",
+            "AlterationToApply": {
+                "RowName": "LW_ApeClub_Plate_B"
+            },
+            "UpgradeCost": [
+                {
+                    "Meta": {
+                        "RowName": "Biomass",
+                        "DataTableName": "D_MetaCurrency"
+                    },
+                    "Amount": 20
+                }
+            ],
+            "MeshCustomisations": [
+                {
+                    "SocketName": "LW_Plate",
+                    "StaticMeshToSocket": "/Game/ASS/ITM/Club_Swamp_Ape/SM_ITM_Club_Ape_Plates_3.SM_ITM_Club_Ape_Plates_3"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "ApeClub_Plate_C",
+            "AlterationToApply": {
+                "RowName": "LW_ApeClub_Plate_C"
+            },
+            "UpgradeCost": [
+                {
+                    "Meta": {
+                        "RowName": "Biomass",
+                        "DataTableName": "D_MetaCurrency"
+                    },
+                    "Amount": 20
+                }
+            ],
+            "MeshCustomisations": [
+                {
+                    "SocketName": "LW_Plate",
+                    "StaticMeshToSocket": "/Game/ASS/ITM/Club_Swamp_Ape/SM_ITM_Club_Ape_Plates_4.SM_ITM_Club_Ape_Plates_4"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "ApeClub_Amp_A",
+            "AlterationToApply": {
+                "RowName": "LW_ApeClub_Amp_A"
+            },
+            "UpgradeCost": [
+                {
+                    "Meta": {
+                        "RowName": "Biomass",
+                        "DataTableName": "D_MetaCurrency"
+                    },
+                    "Amount": 20
+                }
+            ],
+            "MeshCustomisations": [
+                {
+                    "SocketName": "LW_Plate",
+                    "StaticMeshToSocket": "/Game/ASS/ITM/Club_Swamp_Ape/SM_ITM_Club_Ape_Amplifier_2.SM_ITM_Club_Ape_Amplifier_2"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "ApeClub_Amp_B",
+            "AlterationToApply": {
+                "RowName": "LW_ApeClub_Amp_B"
+            },
+            "UpgradeCost": [
+                {
+                    "Meta": {
+                        "RowName": "Biomass",
+                        "DataTableName": "D_MetaCurrency"
+                    },
+                    "Amount": 20
+                }
+            ],
+            "MeshCustomisations": [
+                {
+                    "SocketName": "LW_Amp",
+                    "StaticMeshToSocket": "/Game/ASS/ITM/Club_Swamp_Ape/SM_ITM_Club_Ape_Amplifier_3.SM_ITM_Club_Ape_Amplifier_3"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "ApeClub_Amp_C",
+            "AlterationToApply": {
+                "RowName": "LW_ApeClub_Amp_C"
+            },
+            "UpgradeCost": [
+                {
+                    "Meta": {
+                        "RowName": "Biomass",
+                        "DataTableName": "D_MetaCurrency"
+                    },
+                    "Amount": 20
+                }
+            ],
+            "MeshCustomisations": [
+                {
+                    "SocketName": "LW_Amp",
+                    "StaticMeshToSocket": "/Game/ASS/ITM/Club_Swamp_Ape/SM_ITM_Club_Ape_Amplifier_4.SM_ITM_Club_Ape_Amplifier_4"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "ApeClub_Dampener_A",
+            "AlterationToApply": {
+                "RowName": "LW_ApeClub_Dampener_A"
+            },
+            "UpgradeCost": [
+                {
+                    "Meta": {
+                        "RowName": "Biomass",
+                        "DataTableName": "D_MetaCurrency"
+                    },
+                    "Amount": 20
+                }
+            ],
+            "MeshCustomisations": [
+                {
+                    "SocketName": "LW_Damp",
+                    "StaticMeshToSocket": "/Game/ASS/ITM/Club_Swamp_Ape/SM_ITM_Club_Ape_Absorber_2.SM_ITM_Club_Ape_Absorber_2"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "ApeClub_Dampener_B",
+            "AlterationToApply": {
+                "RowName": "LW_ApeClub_Dampener_B"
+            },
+            "UpgradeCost": [
+                {
+                    "Meta": {
+                        "RowName": "Biomass",
+                        "DataTableName": "D_MetaCurrency"
+                    },
+                    "Amount": 20
+                }
+            ],
+            "MeshCustomisations": [
+                {
+                    "SocketName": "LW_Damp",
+                    "StaticMeshToSocket": "/Game/ASS/ITM/Club_Swamp_Ape/SM_ITM_Club_Ape_Absorber_3.SM_ITM_Club_Ape_Absorber_3"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "ApeClub_Dampener_C",
+            "AlterationToApply": {
+                "RowName": "LW_ApeClub_Dampener_C"
+            },
+            "UpgradeCost": [
+                {
+                    "Meta": {
+                        "RowName": "Biomass",
+                        "DataTableName": "D_MetaCurrency"
+                    },
+                    "Amount": 20
+                }
+            ],
+            "MeshCustomisations": [
+                {
+                    "SocketName": "LW_Damp",
+                    "StaticMeshToSocket": "/Game/ASS/ITM/Club_Swamp_Ape/SM_ITM_Club_Ape_Absorber_4.SM_ITM_Club_Ape_Absorber_4"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "ApeClub_Enhancer_A",
+            "AlterationToApply": {
+                "RowName": "LW_ApeClub_Enhancer_A"
+            },
+            "UpgradeCost": [
+                {
+                    "Meta": {
+                        "RowName": "Biomass",
+                        "DataTableName": "D_MetaCurrency"
+                    },
+                    "Amount": 20
+                }
+            ],
+            "MeshCustomisations": [
+                {
+                    "SocketName": "LW_Enhance",
+                    "StaticMeshToSocket": "/Game/ASS/ITM/Club_Swamp_Ape/SM_ITM_Club_Ape_Injector_2.SM_ITM_Club_Ape_Injector_2"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "ApeClub_Enhancer_B",
+            "AlterationToApply": {
+                "RowName": "LW_ApeClub_Enhancer_B"
+            },
+            "UpgradeCost": [
+                {
+                    "Meta": {
+                        "RowName": "Biomass",
+                        "DataTableName": "D_MetaCurrency"
+                    },
+                    "Amount": 20
+                }
+            ],
+            "MeshCustomisations": [
+                {
+                    "SocketName": "LW_Enhance",
+                    "StaticMeshToSocket": "/Game/ASS/ITM/Club_Swamp_Ape/SM_ITM_Club_Ape_Injector_3.SM_ITM_Club_Ape_Injector_3"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "ApeClub_Enhancer_C",
+            "AlterationToApply": {
+                "RowName": "LW_ApeClub_Enhancer_C"
+            },
+            "UpgradeCost": [
+                {
+                    "Meta": {
+                        "RowName": "Biomass",
+                        "DataTableName": "D_MetaCurrency"
+                    },
+                    "Amount": 20
+                }
+            ],
+            "MeshCustomisations": [
+                {
+                    "SocketName": "LW_Enhance",
+                    "StaticMeshToSocket": "/Game/ASS/ITM/Club_Swamp_Ape/SM_ITM_Club_Ape_Injector_4.SM_ITM_Club_Ape_Injector_4"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "RockGolemGauntlet_Fist_A",
+            "AlterationToApply": {
+                "RowName": "LW_RG_Fist_A"
+            },
+            "UpgradeCost": [
+                {
+                    "Meta": {
+                        "RowName": "Biomass",
+                        "DataTableName": "D_MetaCurrency"
+                    },
+                    "Amount": 20
+                }
+            ],
+            "MeshCustomisations": [
+                {
+                    "SocketName": "Glove_2_Fist",
+                    "StaticMeshToSocket": "/Game/ASS/WEP/Golem_Gauntlet/SM_WEP_GolemGauntlet_Fist2.SM_WEP_GolemGauntlet_Fist2"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "RockGolemGauntlet_Fist_B",
+            "AlterationToApply": {
+                "RowName": "LW_RG_Fist_B"
+            },
+            "UpgradeCost": [
+                {
+                    "Meta": {
+                        "RowName": "Biomass",
+                        "DataTableName": "D_MetaCurrency"
+                    },
+                    "Amount": 20
+                }
+            ],
+            "MeshCustomisations": [
+                {
+                    "SocketName": "Glove_3_Fist",
+                    "StaticMeshToSocket": "/Game/ASS/WEP/Golem_Gauntlet/SM_WEP_GolemGauntlet_Fist3.SM_WEP_GolemGauntlet_Fist3"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "RockGolemGauntlet_Fist_C",
+            "AlterationToApply": {
+                "RowName": "LW_RG_Fist_C"
+            },
+            "UpgradeCost": [
+                {
+                    "Meta": {
+                        "RowName": "Biomass",
+                        "DataTableName": "D_MetaCurrency"
+                    },
+                    "Amount": 20
+                }
+            ],
+            "MeshCustomisations": [
+                {
+                    "SocketName": "Glove_4_Fist1",
+                    "StaticMeshToSocket": "/Game/ASS/WEP/Golem_Gauntlet/SM_WEP_GolemGauntlet_Fist4.SM_WEP_GolemGauntlet_Fist4"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "RockGolemGauntlet_Bracket_A",
+            "AlterationToApply": {
+                "RowName": "LW_RG_Bracket_A"
+            },
+            "UpgradeCost": [
+                {
+                    "Meta": {
+                        "RowName": "Biomass",
+                        "DataTableName": "D_MetaCurrency"
+                    },
+                    "Amount": 20
+                }
+            ],
+            "MeshCustomisations": [
+                {
+                    "SocketName": "Glove_2_Bracket_1",
+                    "StaticMeshToSocket": "/Game/ASS/WEP/Golem_Gauntlet/SM_WEP_GolemGauntlet_Bracket2_p1.SM_WEP_GolemGauntlet_Bracket2_p1"
+                },
+                {
+                    "SocketName": "Glove_2_Bracket_2",
+                    "StaticMeshToSocket": "/Game/ASS/WEP/Golem_Gauntlet/SM_WEP_GolemGauntlet_Bracket2_p2.SM_WEP_GolemGauntlet_Bracket2_p2"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "RockGolemGauntlet_Bracket_B",
+            "AlterationToApply": {
+                "RowName": "LW_RG_Bracket_B"
+            },
+            "UpgradeCost": [
+                {
+                    "Meta": {
+                        "RowName": "Biomass",
+                        "DataTableName": "D_MetaCurrency"
+                    },
+                    "Amount": 20
+                }
+            ],
+            "MeshCustomisations": [
+                {
+                    "SocketName": "Glove_3_Bracket_1",
+                    "StaticMeshToSocket": "/Game/ASS/WEP/Golem_Gauntlet/SM_WEP_GolemGauntlet_Bracket3_p1.SM_WEP_GolemGauntlet_Bracket3_p1"
+                },
+                {
+                    "SocketName": "Glove_3_Bracket_2",
+                    "StaticMeshToSocket": "/Game/ASS/WEP/Golem_Gauntlet/SM_WEP_GolemGauntlet_Bracket3_p2.SM_WEP_GolemGauntlet_Bracket3_p2"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "RockGolemGauntlet_Bracket_C",
+            "AlterationToApply": {
+                "RowName": "LW_RG_Bracket_C"
+            },
+            "UpgradeCost": [
+                {
+                    "Meta": {
+                        "RowName": "Biomass",
+                        "DataTableName": "D_MetaCurrency"
+                    },
+                    "Amount": 20
+                }
+            ],
+            "MeshCustomisations": [
+                {
+                    "SocketName": "Glove_4_Bracket_1",
+                    "StaticMeshToSocket": "/Game/ASS/WEP/Golem_Gauntlet/SM_WEP_GolemGauntlet_Bracket4_p1.SM_WEP_GolemGauntlet_Bracket4_p1"
+                },
+                {
+                    "SocketName": "Glove_2_Bracket_2",
+                    "StaticMeshToSocket": "/Game/ASS/WEP/Golem_Gauntlet/SM_WEP_GolemGauntlet_Bracket4_p2.SM_WEP_GolemGauntlet_Bracket4_p2"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "RockGolemGauntlet_Cuff_A",
+            "AlterationToApply": {
+                "RowName": "LW_RG_Cuff_A"
+            },
+            "UpgradeCost": [
+                {
+                    "Meta": {
+                        "RowName": "Biomass",
+                        "DataTableName": "D_MetaCurrency"
+                    },
+                    "Amount": 20
+                }
+            ],
+            "MeshCustomisations": [
+                {
+                    "SocketName": "Glove_2_Cuff",
+                    "StaticMeshToSocket": "/Game/ASS/WEP/Golem_Gauntlet/SM_WEP_GolemGauntlet_Cuff2.SM_WEP_GolemGauntlet_Cuff2"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "RockGolemGauntlet_Cuff_B",
+            "AlterationToApply": {
+                "RowName": "LW_RG_Cuff_B"
+            },
+            "UpgradeCost": [
+                {
+                    "Meta": {
+                        "RowName": "Biomass",
+                        "DataTableName": "D_MetaCurrency"
+                    },
+                    "Amount": 20
+                }
+            ],
+            "MeshCustomisations": [
+                {
+                    "SocketName": "Glove_3_Cuff",
+                    "StaticMeshToSocket": "/Game/ASS/WEP/Golem_Gauntlet/SM_WEP_GolemGauntlet_Cuff3.SM_WEP_GolemGauntlet_Cuff3"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "RockGolemGauntlet_Cuff_C",
+            "AlterationToApply": {
+                "RowName": "LW_RG_Cuff_C"
+            },
+            "UpgradeCost": [
+                {
+                    "Meta": {
+                        "RowName": "Biomass",
+                        "DataTableName": "D_MetaCurrency"
+                    },
+                    "Amount": 20
+                }
+            ],
+            "MeshCustomisations": [
+                {
+                    "SocketName": "Glove_4_Cuff",
+                    "StaticMeshToSocket": "/Game/ASS/WEP/Golem_Gauntlet/SM_WEP_GolemGauntlet_Cuff4.SM_WEP_GolemGauntlet_Cuff4"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "RockGolemGauntlet_Battery_A",
+            "AlterationToApply": {
+                "RowName": "LW_RG_Battery_A"
+            },
+            "UpgradeCost": [
+                {
+                    "Meta": {
+                        "RowName": "Biomass",
+                        "DataTableName": "D_MetaCurrency"
+                    },
+                    "Amount": 20
+                }
+            ],
+            "MeshCustomisations": [
+                {
+                    "SocketName": "Glove_2_Battery",
+                    "StaticMeshToSocket": "/Game/ASS/WEP/Golem_Gauntlet/SM_WEP_GolemGauntlet_Battery1.SM_WEP_GolemGauntlet_Battery1"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "RockGolemGauntlet_Battery_B",
+            "AlterationToApply": {
+                "RowName": "LW_RG_Battery_B"
+            },
+            "UpgradeCost": [
+                {
+                    "Meta": {
+                        "RowName": "Biomass",
+                        "DataTableName": "D_MetaCurrency"
+                    },
+                    "Amount": 20
+                }
+            ],
+            "MeshCustomisations": [
+                {
+                    "SocketName": "Glove_3_Battery",
+                    "StaticMeshToSocket": "/Game/ASS/WEP/Golem_Gauntlet/SM_WEP_GolemGauntlet_Battery2.SM_WEP_GolemGauntlet_Battery2"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "RockGolemGauntlet_Battery_C",
+            "AlterationToApply": {
+                "RowName": "LW_RG_Battery_C"
+            },
+            "UpgradeCost": [
+                {
+                    "Meta": {
+                        "RowName": "Biomass",
+                        "DataTableName": "D_MetaCurrency"
+                    },
+                    "Amount": 20
+                }
+            ],
+            "MeshCustomisations": [
+                {
+                    "SocketName": "Glove_4_Battery",
+                    "StaticMeshToSocket": "/Game/ASS/WEP/Golem_Gauntlet/SM_WEP_GolemGauntlet_Battery3.SM_WEP_GolemGauntlet_Battery3"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "Bow_Grip_A",
+            "AlterationToApply": {
+                "RowName": "Legendary_Bow_Grip_A"
+            },
+            "UpgradeCost": [
+                {
+                    "Meta": {
+                        "RowName": "Biomass",
+                        "DataTableName": "D_MetaCurrency"
+                    },
+                    "Amount": 20
+                }
+            ],
+            "MeshCustomisations": [
+                {
+                    "SocketName": "None",
+                    "StaticMeshToSocket": "/Game/ASS/WEP/BOW_Recurve_LGD/SM_Bow_Recurve_LGD_Handle_B.SM_Bow_Recurve_LGD_Handle_B"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "Bow_Grip_B",
+            "AlterationToApply": {
+                "RowName": "Legendary_Bow_Grip_B"
+            },
+            "UpgradeCost": [
+                {
+                    "Meta": {
+                        "RowName": "Biomass",
+                        "DataTableName": "D_MetaCurrency"
+                    },
+                    "Amount": 20
+                }
+            ],
+            "MeshCustomisations": [
+                {
+                    "SocketName": "None",
+                    "StaticMeshToSocket": "/Game/ASS/WEP/BOW_Recurve_LGD/SM_Bow_Recurve_LGD_Handle_C.SM_Bow_Recurve_LGD_Handle_C"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "Bow_Grip_C",
+            "AlterationToApply": {
+                "RowName": "Legendary_Bow_Grip_C"
+            },
+            "UpgradeCost": [
+                {
+                    "Meta": {
+                        "RowName": "Biomass",
+                        "DataTableName": "D_MetaCurrency"
+                    },
+                    "Amount": 20
+                }
+            ],
+            "MeshCustomisations": [
+                {
+                    "SocketName": "None",
+                    "StaticMeshToSocket": "/Game/ASS/WEP/BOW_Recurve_LGD/SM_Bow_Recurve_LGD_Handle_D.SM_Bow_Recurve_LGD_Handle_D"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "Bow_Shelf_A",
+            "AlterationToApply": {
+                "RowName": "Legendary_Bow_Shelf_A"
+            },
+            "UpgradeCost": [
+                {
+                    "Meta": {
+                        "RowName": "Biomass",
+                        "DataTableName": "D_MetaCurrency"
+                    },
+                    "Amount": 20
+                }
+            ],
+            "MeshCustomisations": [
+                {
+                    "SocketName": "None",
+                    "StaticMeshToSocket": "/Game/ASS/WEP/BOW_Recurve_LGD/SM_Bow_Recurve_LGD_Rest_B.SM_Bow_Recurve_LGD_Rest_B"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "Bow_Shelf_B",
+            "AlterationToApply": {
+                "RowName": "Legendary_Bow_Shelf_B"
+            },
+            "UpgradeCost": [
+                {
+                    "Meta": {
+                        "RowName": "Biomass",
+                        "DataTableName": "D_MetaCurrency"
+                    },
+                    "Amount": 20
+                }
+            ],
+            "MeshCustomisations": [
+                {
+                    "SocketName": "None",
+                    "StaticMeshToSocket": "/Game/ASS/WEP/BOW_Recurve_LGD/SM_Bow_Recurve_LGD_Rest_C.SM_Bow_Recurve_LGD_Rest_C"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "Bow_Shelf_C",
+            "AlterationToApply": {
+                "RowName": "Legendary_Bow_Shelf_C"
+            },
+            "UpgradeCost": [
+                {
+                    "Meta": {
+                        "RowName": "Biomass",
+                        "DataTableName": "D_MetaCurrency"
+                    },
+                    "Amount": 20
+                }
+            ],
+            "MeshCustomisations": [
+                {
+                    "SocketName": "None",
+                    "StaticMeshToSocket": "/Game/ASS/WEP/BOW_Recurve_LGD/SM_Bow_Recurve_LGD_Rest_D.SM_Bow_Recurve_LGD_Rest_D"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "Bow_Arms_A",
+            "AlterationToApply": {
+                "RowName": "Legendary_Bow_Arms_A"
+            },
+            "UpgradeCost": [
+                {
+                    "Meta": {
+                        "RowName": "Biomass",
+                        "DataTableName": "D_MetaCurrency"
+                    },
+                    "Amount": 20
+                }
+            ],
+            "MeshCustomisations": [
+                {
+                    "SocketName": "None",
+                    "StaticMeshToSocket": "/Game/ASS/WEP/BOW_Recurve_LGD/SM_Bow_Recurve_LGD_Arms_B.SM_Bow_Recurve_LGD_Arms_B"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "Bow_Arms_B",
+            "AlterationToApply": {
+                "RowName": "Legendary_Bow_Arms_B"
+            },
+            "UpgradeCost": [
+                {
+                    "Meta": {
+                        "RowName": "Biomass",
+                        "DataTableName": "D_MetaCurrency"
+                    },
+                    "Amount": 20
+                }
+            ],
+            "MeshCustomisations": [
+                {
+                    "SocketName": "None",
+                    "StaticMeshToSocket": "/Game/ASS/WEP/BOW_Recurve_LGD/SM_Bow_Recurve_LGD_Arms_C.SM_Bow_Recurve_LGD_Arms_C"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "Bow_Arms_C",
+            "AlterationToApply": {
+                "RowName": "Legendary_Bow_Arms_C"
+            },
+            "UpgradeCost": [
+                {
+                    "Meta": {
+                        "RowName": "Biomass",
+                        "DataTableName": "D_MetaCurrency"
+                    },
+                    "Amount": 20
+                }
+            ],
+            "MeshCustomisations": [
+                {
+                    "SocketName": "None",
+                    "StaticMeshToSocket": "/Game/ASS/WEP/BOW_Recurve_LGD/SM_Bow_Recurve_LGD_Arms_D.SM_Bow_Recurve_LGD_Arms_D"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "Bow_Module_A",
+            "AlterationToApply": {
+                "RowName": "Legendary_Bow_Module_A"
+            },
+            "UpgradeCost": [
+                {
+                    "Meta": {
+                        "RowName": "Biomass",
+                        "DataTableName": "D_MetaCurrency"
+                    },
+                    "Amount": 20
+                }
+            ],
+            "MeshCustomisations": [
+                {
+                    "SocketName": "None",
+                    "StaticMeshToSocket": "/Game/ASS/WEP/BOW_Recurve_LGD/SM_Bow_Recurve_LGD_Counterweight_B.SM_Bow_Recurve_LGD_Counterweight_B"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "Bow_Module_B",
+            "AlterationToApply": {
+                "RowName": "Legendary_Bow_Module_B"
+            },
+            "UpgradeCost": [
+                {
+                    "Meta": {
+                        "RowName": "Biomass",
+                        "DataTableName": "D_MetaCurrency"
+                    },
+                    "Amount": 20
+                }
+            ],
+            "MeshCustomisations": [
+                {
+                    "SocketName": "None",
+                    "StaticMeshToSocket": "/Game/ASS/WEP/BOW_Recurve_LGD/SM_Bow_Recurve_LGD_Counterweight_C.SM_Bow_Recurve_LGD_Counterweight_C"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "Bow_Module_C",
+            "AlterationToApply": {
+                "RowName": "Legendary_Bow_Module_C"
+            },
+            "UpgradeCost": [
+                {
+                    "Meta": {
+                        "RowName": "Biomass",
+                        "DataTableName": "D_MetaCurrency"
+                    },
+                    "Amount": 20
+                }
+            ],
+            "MeshCustomisations": [
+                {
+                    "SocketName": "None",
+                    "StaticMeshToSocket": "/Game/ASS/WEP/BOW_Recurve_LGD/SM_Bow_Recurve_LGD_Counterweight_D.SM_Bow_Recurve_LGD_Counterweight_D"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "Sniper_Stock_A",
+            "AlterationToApply": {
+                "RowName": "Legendary_Sniper_Stock_A"
+            },
+            "UpgradeCost": [
+                {
+                    "Meta": {
+                        "RowName": "Biomass",
+                        "DataTableName": "D_MetaCurrency"
+                    },
+                    "Amount": 20
+                }
+            ],
+            "MeshCustomisations": [
+                {
+                    "SocketName": "None",
+                    "StaticMeshToSocket": "/Game/ASS/WEP/GUN_Sniper_LGD/SM_GUN_Sniper_LGD_Stock_B.SM_GUN_Sniper_LGD_Stock_B"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "Sniper_Stock_B",
+            "AlterationToApply": {
+                "RowName": "Legendary_Sniper_Stock_B"
+            },
+            "UpgradeCost": [
+                {
+                    "Meta": {
+                        "RowName": "Biomass",
+                        "DataTableName": "D_MetaCurrency"
+                    },
+                    "Amount": 20
+                }
+            ],
+            "MeshCustomisations": [
+                {
+                    "SocketName": "None",
+                    "StaticMeshToSocket": "/Game/ASS/WEP/GUN_Sniper_LGD/SM_GUN_Sniper_LGD_Stock_C.SM_GUN_Sniper_LGD_Stock_C"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "Sniper_Stock_C",
+            "AlterationToApply": {
+                "RowName": "Legendary_Sniper_Stock_C"
+            },
+            "UpgradeCost": [
+                {
+                    "Meta": {
+                        "RowName": "Biomass",
+                        "DataTableName": "D_MetaCurrency"
+                    },
+                    "Amount": 20
+                }
+            ],
+            "MeshCustomisations": [
+                {
+                    "SocketName": "None",
+                    "StaticMeshToSocket": "/Game/ASS/WEP/GUN_Sniper_LGD/SM_GUN_Sniper_LGD_Stock_D.SM_GUN_Sniper_LGD_Stock_D"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "Sniper_Barrel_A",
+            "AlterationToApply": {
+                "RowName": "Legendary_Sniper_Barrel_A"
+            },
+            "UpgradeCost": [
+                {
+                    "Meta": {
+                        "RowName": "Biomass",
+                        "DataTableName": "D_MetaCurrency"
+                    },
+                    "Amount": 20
+                }
+            ],
+            "MeshCustomisations": [
+                {
+                    "SocketName": "None",
+                    "StaticMeshToSocket": "/Game/ASS/WEP/GUN_Sniper_LGD/SM_GUN_Sniper_LGD_Barrel_B.SM_GUN_Sniper_LGD_Barrel_B"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "Sniper_Barrel_B",
+            "AlterationToApply": {
+                "RowName": "Legendary_Sniper_Barrel_B"
+            },
+            "UpgradeCost": [
+                {
+                    "Meta": {
+                        "RowName": "Biomass",
+                        "DataTableName": "D_MetaCurrency"
+                    },
+                    "Amount": 20
+                }
+            ],
+            "MeshCustomisations": [
+                {
+                    "SocketName": "None",
+                    "StaticMeshToSocket": "/Game/ASS/WEP/GUN_Sniper_LGD/SM_GUN_Sniper_LGD_Barrel_C.SM_GUN_Sniper_LGD_Barrel_C"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "Sniper_Barrel_C",
+            "AlterationToApply": {
+                "RowName": "Legendary_Sniper_Barrel_C"
+            },
+            "UpgradeCost": [
+                {
+                    "Meta": {
+                        "RowName": "Biomass",
+                        "DataTableName": "D_MetaCurrency"
+                    },
+                    "Amount": 20
+                }
+            ],
+            "MeshCustomisations": [
+                {
+                    "SocketName": "None",
+                    "StaticMeshToSocket": "/Game/ASS/WEP/GUN_Sniper_LGD/SM_GUN_Sniper_LGD_Barrel_D.SM_GUN_Sniper_LGD_Barrel_D"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "Sniper_Scope_A",
+            "AlterationToApply": {
+                "RowName": "Legendary_Sniper_Scope_A"
+            },
+            "UpgradeCost": [
+                {
+                    "Meta": {
+                        "RowName": "Biomass",
+                        "DataTableName": "D_MetaCurrency"
+                    },
+                    "Amount": 20
+                }
+            ],
+            "MeshCustomisations": [
+                {
+                    "SocketName": "None",
+                    "StaticMeshToSocket": "/Game/ASS/WEP/GUN_Sniper_LGD/SM_GUN_Sniper_LGD_Scope_C.SM_GUN_Sniper_LGD_Scope_C"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "Sniper_Scope_B",
+            "AlterationToApply": {
+                "RowName": "Legendary_Sniper_Scope_B"
+            },
+            "UpgradeCost": [
+                {
+                    "Meta": {
+                        "RowName": "Biomass",
+                        "DataTableName": "D_MetaCurrency"
+                    },
+                    "Amount": 20
+                }
+            ],
+            "MeshCustomisations": [
+                {
+                    "SocketName": "None",
+                    "StaticMeshToSocket": "/Game/ASS/WEP/GUN_Sniper_LGD/SM_GUN_Sniper_LGD_Scope_B.SM_GUN_Sniper_LGD_Scope_B"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "Sniper_Scope_C",
+            "AlterationToApply": {
+                "RowName": "Legendary_Sniper_Scope_C"
+            },
+            "UpgradeCost": [
+                {
+                    "Meta": {
+                        "RowName": "Biomass",
+                        "DataTableName": "D_MetaCurrency"
+                    },
+                    "Amount": 20
+                }
+            ],
+            "MeshCustomisations": [
+                {
+                    "SocketName": "None",
+                    "StaticMeshToSocket": "/Game/ASS/WEP/GUN_Sniper_LGD/SM_GUN_Sniper_LGD_Scope_D.SM_GUN_Sniper_LGD_Scope_D"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "Sniper_Module_A",
+            "AlterationToApply": {
+                "RowName": "Legendary_Sniper_Module_A"
+            },
+            "UpgradeCost": [
+                {
+                    "Meta": {
+                        "RowName": "Biomass",
+                        "DataTableName": "D_MetaCurrency"
+                    },
+                    "Amount": 20
+                }
+            ],
+            "MeshCustomisations": [
+                {
+                    "SocketName": "None",
+                    "StaticMeshToSocket": "/Game/ASS/WEP/GUN_Sniper_LGD/SM_GUN_Sniper_LGD_Chamber_B.SM_GUN_Sniper_LGD_Chamber_B"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "Sniper_Module_B",
+            "AlterationToApply": {
+                "RowName": "Legendary_Sniper_Module_B"
+            },
+            "UpgradeCost": [
+                {
+                    "Meta": {
+                        "RowName": "Biomass",
+                        "DataTableName": "D_MetaCurrency"
+                    },
+                    "Amount": 20
+                }
+            ],
+            "MeshCustomisations": [
+                {
+                    "SocketName": "None",
+                    "StaticMeshToSocket": "/Game/ASS/WEP/GUN_Sniper_LGD/SM_GUN_Sniper_LGD_Chamber_C.SM_GUN_Sniper_LGD_Chamber_C"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "Sniper_Module_C",
+            "AlterationToApply": {
+                "RowName": "Legendary_Sniper_Module_C"
+            },
+            "UpgradeCost": [
+                {
+                    "Meta": {
+                        "RowName": "Biomass",
+                        "DataTableName": "D_MetaCurrency"
+                    },
+                    "Amount": 20
+                }
+            ],
+            "MeshCustomisations": [
+                {
+                    "SocketName": "None",
+                    "StaticMeshToSocket": "/Game/ASS/WEP/GUN_Sniper_LGD/SM_GUN_Sniper_LGD_Chamber_D.SM_GUN_Sniper_LGD_Chamber_D"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        }
+    ]
+}

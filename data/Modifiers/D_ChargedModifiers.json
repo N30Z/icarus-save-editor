@@ -1,0 +1,63 @@
+{
+    "RowStruct": "/Script/Icarus.ChargedModifiers",
+    "Defaults": {
+        "Modifier": {
+            "RowName": "None",
+            "DataTableName": "D_ModifierStates"
+        },
+        "Resource": {
+            "Value": "None"
+        }
+    },
+    "GenerateEnum": true,
+    "Rows": [
+        {
+            "Name": "Invalid"
+        },
+        {
+            "Name": "Knife",
+            "Modifier": {
+                "RowName": "Lithium_Knife"
+            },
+            "Resource": {
+                "Value": "Energy"
+            }
+        },
+        {
+            "Name": "Axe",
+            "Modifier": {
+                "RowName": "Lithium_Axe"
+            },
+            "Resource": {
+                "Value": "Energy"
+            }
+        },
+        {
+            "Name": "Sickle",
+            "Modifier": {
+                "RowName": "Lithium_Sickle"
+            },
+            "Resource": {
+                "Value": "Energy"
+            }
+        },
+        {
+            "Name": "Pickaxe",
+            "Modifier": {
+                "RowName": "Lithium_Pickaxe"
+            },
+            "Resource": {
+                "Value": "Energy"
+            }
+        },
+        {
+            "Name": "Sledgehammer",
+            "Modifier": {
+                "RowName": "Lithium_Sledgehammer"
+            },
+            "Resource": {
+                "Value": "Energy"
+            }
+        }
+    ]
+}

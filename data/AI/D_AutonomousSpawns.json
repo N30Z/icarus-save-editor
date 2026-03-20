@@ -1,0 +1,289 @@
+{
+    "RowStruct": "/Script/Icarus.AutonomousSpawnData",
+    "Defaults": {
+        "AISetup": {
+            "Value": "None"
+        },
+        "IcarusActorClass": "None",
+        "AISpawnBehaviour": "None",
+        "MaxNumAroundPlayers": 3,
+        "MaxSpawnCount": 10,
+        "MaxDistanceToPlayers": 10000,
+        "GameplayTagsToApply": {
+            "GameplayTags": [
+                {
+                    "TagName": "NPC.AutonomousSpawn"
+                }
+            ]
+        },
+        "RequiredStat": {
+            "Value": "None"
+        }
+    },
+    "Rows": [
+        {
+            "Name": "Kea",
+            "AISetup": {
+                "Value": "Kea"
+            },
+            "AISpawnBehaviour": "/Game/BP/AI/SpawnBehaviours/BP_AISpawnBehaviour_AroundPlayers_Kea.BP_AISpawnBehaviour_AroundPlayers_Kea_C",
+            "MaxSpawnCount": 15,
+            "MaxDistanceToPlayers": 15000
+        },
+        {
+            "Name": "Predator_Bird_Few",
+            "AISetup": {
+                "Value": "Predator_Bird"
+            },
+            "AISpawnBehaviour": "/Game/BP/AI/SpawnBehaviours/BP_AISpawnBehaviour_AroundPlayers_Kea.BP_AISpawnBehaviour_AroundPlayers_Kea_C",
+            "MaxNumAroundPlayers": 2,
+            "MaxSpawnCount": 5,
+            "MaxDistanceToPlayers": 15000
+        },
+        {
+            "Name": "Predator_Bird_Many",
+            "AISetup": {
+                "Value": "Predator_Bird"
+            },
+            "AISpawnBehaviour": "/Game/BP/AI/SpawnBehaviours/BP_AISpawnBehaviour_AroundPlayers_Kea.BP_AISpawnBehaviour_AroundPlayers_Kea_C",
+            "MaxNumAroundPlayers": 5,
+            "MaxSpawnCount": 15,
+            "MaxDistanceToPlayers": 15000
+        },
+        {
+            "Name": "Gas_Flyer",
+            "AISetup": {
+                "Value": "Gas_Flyer"
+            },
+            "AISpawnBehaviour": "/Game/BP/AI/SpawnBehaviours/BP_AISpawnBehaviour_AroundPlayers_GasFlyer.BP_AISpawnBehaviour_AroundPlayers_GasFlyer_C",
+            "MaxNumAroundPlayers": 8,
+            "MaxSpawnCount": 25,
+            "MaxDistanceToPlayers": 30000
+        },
+        {
+            "Name": "Gas_Flyer_Swamp",
+            "AISetup": {
+                "Value": "Gas_Flyer_Swamp"
+            },
+            "AISpawnBehaviour": "/Game/BP/AI/SpawnBehaviours/BP_AISpawnBehaviour_AroundPlayers_GasFlyer.BP_AISpawnBehaviour_AroundPlayers_GasFlyer_C",
+            "MaxNumAroundPlayers": 4,
+            "MaxDistanceToPlayers": 30000
+        },
+        {
+            "Name": "Arctic_Bat",
+            "IcarusActorClass": "/Game/BP/AI/Basic/Caves/BP_BatNest_Arctic.BP_BatNest_Arctic_C",
+            "AISpawnBehaviour": "/Game/BP/AI/SpawnBehaviours/BP_AISpawnBehaviour_AroundPlayers_GroundSpawner.BP_AISpawnBehaviour_AroundPlayers_GroundSpawner_C",
+            "MaxSpawnCount": 5,
+            "MaxDistanceToPlayers": 30000
+        },
+        {
+            "Name": "Wild_Beehive_Tree",
+            "IcarusActorClass": "/Game/BP/AI/Basic/Caves/BP_WildBeeHive_Tree.BP_WildBeeHive_Tree_C",
+            "AISpawnBehaviour": "/Game/BP/AI/SpawnBehaviours/BP_AISpawnBehaviour_AroundPlayers_GroundSpawner.BP_AISpawnBehaviour_AroundPlayers_GroundSpawner_C",
+            "MaxNumAroundPlayers": 2,
+            "MaxSpawnCount": 5,
+            "MaxDistanceToPlayers": 30000
+        },
+        {
+            "Name": "TrappedCreatures",
+            "AISpawnBehaviour": "/Game/BP/AI/SpawnBehaviours/BP_AISpawnBehaviour_TrappedCreatures.BP_AISpawnBehaviour_TrappedCreatures_C",
+            "MaxNumAroundPlayers": 2,
+            "MaxSpawnCount": 5,
+            "MaxDistanceToPlayers": 15000
+        },
+        {
+            "Name": "Wild_Kiwi_Nest",
+            "IcarusActorClass": "/Game/BP/AI/Basic/Caves/BP_WildKiwiNest.BP_WildKiwiNest_C",
+            "AISpawnBehaviour": "/Game/BP/AI/SpawnBehaviours/BP_AISpawnBehaviour_AroundPlayers_GroundSpawner.BP_AISpawnBehaviour_AroundPlayers_GroundSpawner_C",
+            "MaxNumAroundPlayers": 2,
+            "MaxSpawnCount": 5,
+            "MaxDistanceToPlayers": 30000
+        },
+        {
+            "Name": "LavaFlyers",
+            "IcarusActorClass": "/Game/BP/AI/Basic/World/BP_LavaFlyerNest.BP_LavaFlyerNest_C",
+            "AISpawnBehaviour": "/Game/BP/AI/SpawnBehaviours/BP_AISpawnBehaviour_AroundPlayers_GroundSpawner.BP_AISpawnBehaviour_AroundPlayers_GroundSpawner_C",
+            "MaxNumAroundPlayers": 2,
+            "MaxSpawnCount": 5,
+            "MaxDistanceToPlayers": 30000
+        },
+        {
+            "Name": "RockGolem",
+            "IcarusActorClass": "/Game/BP/Objects/World/Items/WorldObjects/Missions/BP_Rock_Golem_Spawner_Elemental.BP_Rock_Golem_Spawner_Elemental_C",
+            "AISpawnBehaviour": "/Game/BP/AI/SpawnBehaviours/BP_AISpawnBehaviour_AroundPlayers_GroundSpawner_Spawners.BP_AISpawnBehaviour_AroundPlayers_GroundSpawner_Spawners_C",
+            "MaxNumAroundPlayers": 2,
+            "MaxSpawnCount": 5,
+            "MaxDistanceToPlayers": 30000,
+            "RequiredStat": {
+                "Value": "WorldJuvenileRockGolemWorldSpawn_?"
+            }
+        },
+        {
+            "Name": "RockGolem_Desert",
+            "IcarusActorClass": "/Game/BP/Objects/World/Items/WorldObjects/Missions/BP_Rock_Golem_Spawner_Elemental.BP_Rock_Golem_Spawner_Elemental_C",
+            "AISpawnBehaviour": "/Game/BP/AI/SpawnBehaviours/BP_AISpawnBehaviour_AroundPlayers_GroundSpawner_Spawners.BP_AISpawnBehaviour_AroundPlayers_GroundSpawner_Spawners_C",
+            "MaxNumAroundPlayers": 2,
+            "MaxSpawnCount": 5,
+            "MaxDistanceToPlayers": 30000,
+            "RequiredStat": {
+                "Value": "WorldJuvenileRockGolemDesertSpawn_?"
+            }
+        },
+        {
+            "Name": "RockGolem_Ice",
+            "IcarusActorClass": "/Game/BP/Objects/World/Items/WorldObjects/Missions/BP_Rock_Golem_Spawner_Elemental_Ice.BP_Rock_Golem_Spawner_Elemental_Ice_C",
+            "AISpawnBehaviour": "/Game/BP/AI/SpawnBehaviours/BP_AISpawnBehaviour_AroundPlayers_GroundSpawner_Spawners.BP_AISpawnBehaviour_AroundPlayers_GroundSpawner_Spawners_C",
+            "MaxNumAroundPlayers": 2,
+            "MaxSpawnCount": 5,
+            "MaxDistanceToPlayers": 30000,
+            "RequiredStat": {
+                "Value": "WorldJuvenileRockGolemWorldSpawn_?"
+            }
+        },
+        {
+            "Name": "Ape_Forest",
+            "IcarusActorClass": "/Game/BP/Objects/World/Items/WorldObjects/Missions/BP_Ape_Spawner.BP_Ape_Spawner_C",
+            "AISpawnBehaviour": "/Game/BP/AI/SpawnBehaviours/BP_AISpawnBehaviour_AroundPlayers_GroundSpawner_Spawners.BP_AISpawnBehaviour_AroundPlayers_GroundSpawner_Spawners_C",
+            "MaxNumAroundPlayers": 2,
+            "MaxSpawnCount": 5,
+            "MaxDistanceToPlayers": 30000,
+            "RequiredStat": {
+                "Value": "WorldJuvenileApeForestSpawn_?"
+            }
+        },
+        {
+            "Name": "Ape_Forest_Poison",
+            "IcarusActorClass": "/Game/BP/Objects/World/Items/WorldObjects/Missions/BP_Ape_Spawner_GasClouds.BP_Ape_Spawner_GasClouds_C",
+            "AISpawnBehaviour": "/Game/BP/AI/SpawnBehaviours/BP_AISpawnBehaviour_AroundPlayers_GroundSpawner_Spawners.BP_AISpawnBehaviour_AroundPlayers_GroundSpawner_Spawners_C",
+            "MaxNumAroundPlayers": 2,
+            "MaxSpawnCount": 2,
+            "MaxDistanceToPlayers": 30000,
+            "RequiredStat": {
+                "Value": "WorldJuvenileApeForestPoisonSpawn_?"
+            }
+        },
+        {
+            "Name": "Ape_Desert",
+            "IcarusActorClass": "/Game/BP/Objects/World/Items/WorldObjects/Missions/BP_Ape_Spawner_Desert.BP_Ape_Spawner_Desert_C",
+            "AISpawnBehaviour": "/Game/BP/AI/SpawnBehaviours/BP_AISpawnBehaviour_AroundPlayers_GroundSpawner_Spawners.BP_AISpawnBehaviour_AroundPlayers_GroundSpawner_Spawners_C",
+            "MaxNumAroundPlayers": 2,
+            "MaxSpawnCount": 5,
+            "MaxDistanceToPlayers": 30000,
+            "RequiredStat": {
+                "Value": "WorldJuvenileApeDesertSpawn_?"
+            }
+        },
+        {
+            "Name": "Ape_Arctic",
+            "IcarusActorClass": "/Game/BP/Objects/World/Items/WorldObjects/Missions/BP_Ape_Spawner_Arctic.BP_Ape_Spawner_Arctic_C",
+            "AISpawnBehaviour": "/Game/BP/AI/SpawnBehaviours/BP_AISpawnBehaviour_AroundPlayers_GroundSpawner_Spawners.BP_AISpawnBehaviour_AroundPlayers_GroundSpawner_Spawners_C",
+            "MaxNumAroundPlayers": 2,
+            "MaxSpawnCount": 5,
+            "MaxDistanceToPlayers": 30000,
+            "RequiredStat": {
+                "Value": "WorldJuvenileApeArcticSpawn_?"
+            }
+        },
+        {
+            "Name": "Caveworm_Spawner",
+            "IcarusActorClass": "/Game/BP/Objects/World/Items/WorldObjects/Missions/BP_Pawn_WorldSpawner.BP_Pawn_WorldSpawner_C",
+            "AISpawnBehaviour": "/Game/BP/AI/SpawnBehaviours/BP_AISpawnBehaviour_AroundPlayers_GroundSpawner_Spawners.BP_AISpawnBehaviour_AroundPlayers_GroundSpawner_Spawners_C",
+            "MaxNumAroundPlayers": 2,
+            "MaxSpawnCount": 6,
+            "RequiredStat": {
+                "Value": "WorldCavewormsSpawnOutsideCaves_?"
+            }
+        },
+        {
+            "Name": "Snow_Slug",
+            "IcarusActorClass": "/Game/BP/Objects/World/Items/WorldObjects/Missions/BP_IceSlug_Spawner.BP_IceSlug_Spawner_C",
+            "AISpawnBehaviour": "/Game/BP/AI/SpawnBehaviours/BP_AISpawnBehaviour_AroundPlayers_GroundSpawner_Spawners.BP_AISpawnBehaviour_AroundPlayers_GroundSpawner_Spawners_C",
+            "MaxNumAroundPlayers": 1,
+            "MaxSpawnCount": 3,
+            "RequiredStat": {
+                "Value": "WorldSnowSlugSpawn_?"
+            }
+        },
+        {
+            "Name": "Geothermal_Bat",
+            "IcarusActorClass": "/Game/BP/AI/Basic/Caves/BP_BatNest_Geothermal.BP_BatNest_Geothermal_C",
+            "AISpawnBehaviour": "/Game/BP/AI/SpawnBehaviours/BP_AISpawnBehaviour_AroundPlayers_GroundSpawner.BP_AISpawnBehaviour_AroundPlayers_GroundSpawner_C",
+            "MaxSpawnCount": 6,
+            "MaxDistanceToPlayers": 30000
+        },
+        {
+            "Name": "SandScuttle",
+            "AISetup": {
+                "Value": "Sand_Scuttle"
+            },
+            "AISpawnBehaviour": "/Game/BP/AI/SpawnBehaviours/BP_AISpawnBehaviour_AroundPlayers_Corpses.BP_AISpawnBehaviour_AroundPlayers_Corpses_C",
+            "MaxSpawnCount": 3,
+            "MaxDistanceToPlayers": 2000,
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "SulphurWorm",
+            "AISetup": {
+                "Value": "Sulfur_Worm_Pincer_Variant"
+            },
+            "AISpawnBehaviour": "/Game/BP/AI/SpawnBehaviours/BP_AISpawnBehaviour_AroundPlayers_SulphurWormsInLakes.BP_AISpawnBehaviour_AroundPlayers_SulphurWormsInLakes_C",
+            "MaxNumAroundPlayers": 1,
+            "MaxSpawnCount": 3,
+            "MaxDistanceToPlayers": 5000,
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Dragonfly_Nest",
+            "IcarusActorClass": "/Game/BP/AI/Basic/Caves/BP_DragonFlyNest.BP_DragonFlyNest_C",
+            "AISpawnBehaviour": "/Game/BP/AI/SpawnBehaviours/BP_AISpawnBehaviour_AroundPlayers_GroundSpawner_Spawners.BP_AISpawnBehaviour_AroundPlayers_GroundSpawner_Spawners_C",
+            "MaxNumAroundPlayers": 2,
+            "MaxSpawnCount": 5,
+            "MaxDistanceToPlayers": 30000,
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "FleshSac_Floater",
+            "AISetup": {
+                "Value": "FleshSac_Floater"
+            },
+            "AISpawnBehaviour": "/Game/BP/AI/SpawnBehaviours/BP_AISpawnBehaviour_AroundPlayers_GasFlyer.BP_AISpawnBehaviour_AroundPlayers_GasFlyer_C",
+            "MaxNumAroundPlayers": 8,
+            "MaxSpawnCount": 25,
+            "MaxDistanceToPlayers": 30000,
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Spider",
+            "AISetup": {
+                "Value": "Spider"
+            },
+            "AISpawnBehaviour": "/Game/BP/AI/SpawnBehaviours/BP_AISpawnBehaviour_AroundCaveEntrances_Spider.BP_AISpawnBehaviour_AroundCaveEntrances_Spider_C",
+            "MaxSpawnCount": 8,
+            "MaxDistanceToPlayers": 35000
+        },
+        {
+            "Name": "NPC_Outpost",
+            "IcarusActorClass": "/Game/BP/Objects/World/Items/WorldObjects/Missions/BP_Prebuilt_WorldSpawner_NPC_Outpost.BP_Prebuilt_WorldSpawner_NPC_Outpost_C",
+            "AISpawnBehaviour": "/Game/BP/AI/SpawnBehaviours/BP_AISpawnBehaviour_AroundPlayers_PrebuiltStructure.BP_AISpawnBehaviour_AroundPlayers_PrebuiltStructure_C",
+            "MaxNumAroundPlayers": 1,
+            "MaxSpawnCount": 2,
+            "MaxDistanceToPlayers": 30000
+        }
+    ]
+}

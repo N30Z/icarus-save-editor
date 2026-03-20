@@ -1,0 +1,411 @@
+{
+    "RowStruct": "/Script/Icarus.PreviewCameraSettings",
+    "Defaults": {
+        "RelativeOffset": {
+            "Rotation": {
+                "X": 0,
+                "Y": 0,
+                "Z": 0,
+                "W": 1
+            },
+            "Translation": {
+                "X": 0,
+                "Y": 0,
+                "Z": 0
+            },
+            "Scale3D": {
+                "X": 1,
+                "Y": 1,
+                "Z": 1
+            }
+        },
+        "CameraFOV": 90
+    },
+    "Rows": [
+        {
+            "Name": "Body",
+            "RelativeOffset": {
+                "Rotation": {
+                    "Z": -0.7071065306663513,
+                    "W": 0.7071070671081543
+                },
+                "Translation": {
+                    "Y": 340,
+                    "Z": 130
+                }
+            },
+            "CameraFOV": 69
+        },
+        {
+            "Name": "Head",
+            "RelativeOffset": {
+                "Rotation": {
+                    "Z": -0.70710688829422,
+                    "W": 0.7071067094802856
+                },
+                "Translation": {
+                    "Y": 340,
+                    "Z": 180
+                }
+            },
+            "CameraFOV": 20
+        },
+        {
+            "Name": "InventoryPreview",
+            "RelativeOffset": {
+                "Rotation": {
+                    "Z": -0.7071070075035095,
+                    "W": 0.7071070075035095
+                },
+                "Translation": {
+                    "Y": 340,
+                    "Z": 100
+                }
+            },
+            "CameraFOV": 15
+        },
+        {
+            "Name": "Eyes",
+            "RelativeOffset": {
+                "Rotation": {
+                    "Z": -0.70710688829422,
+                    "W": 0.7071067094802856
+                },
+                "Translation": {
+                    "X": 6,
+                    "Y": 340,
+                    "Z": 182
+                }
+            },
+            "CameraFOV": 12.56346321105957
+        },
+        {
+            "Name": "DogTags",
+            "RelativeOffset": {
+                "Rotation": {
+                    "X": -0.20603467524051666,
+                    "Y": 0.16181711852550507,
+                    "Z": -0.4563526511192322,
+                    "W": 0.8503570556640625
+                },
+                "Translation": {
+                    "X": -15,
+                    "Y": 315,
+                    "Z": 105.32066345214844
+                }
+            },
+            "CameraFOV": 110.14093780517578
+        },
+        {
+            "Name": "NoFocus"
+        },
+        {
+            "Name": "CharacterSelection",
+            "RelativeOffset": {
+                "Rotation": {
+                    "Z": -0.7071070075035095,
+                    "W": 0.7071070075035095
+                },
+                "Translation": {
+                    "Y": 340,
+                    "Z": 182
+                }
+            },
+            "CameraFOV": 7
+        },
+        {
+            "Name": "Mount",
+            "RelativeOffset": {
+                "Rotation": {
+                    "Z": -0.7071066498756409,
+                    "W": 0.70710688829422
+                },
+                "Translation": {
+                    "Y": 700,
+                    "Z": 100
+                }
+            },
+            "CameraFOV": 20
+        },
+        {
+            "Name": "Mount_Chicken",
+            "RelativeOffset": {
+                "Rotation": {
+                    "Z": -0.7071065902709961,
+                    "W": 0.7071069478988647
+                },
+                "Translation": {
+                    "Y": 700,
+                    "Z": 50
+                }
+            },
+            "CameraFOV": 10
+        },
+        {
+            "Name": "Mount_Sheep",
+            "RelativeOffset": {
+                "Rotation": {
+                    "Z": -0.7071065306663513,
+                    "W": 0.7071070671081543
+                },
+                "Translation": {
+                    "Y": 700,
+                    "Z": 60
+                }
+            },
+            "CameraFOV": 12
+        },
+        {
+            "Name": "Mount_Cat",
+            "RelativeOffset": {
+                "Rotation": {
+                    "Z": -0.7071065306663513,
+                    "W": 0.7071070671081543
+                },
+                "Translation": {
+                    "Y": 700,
+                    "Z": 70
+                }
+            },
+            "CameraFOV": 16
+        },
+        {
+            "Name": "Mount_Wolf",
+            "RelativeOffset": {
+                "Rotation": {
+                    "Z": -0.7071065306663513,
+                    "W": 0.7071070671081543
+                },
+                "Translation": {
+                    "Y": 700,
+                    "Z": 80
+                }
+            },
+            "CameraFOV": 18
+        },
+        {
+            "Name": "Mount_Striker",
+            "RelativeOffset": {
+                "Rotation": {
+                    "Z": -0.7071065902709961,
+                    "W": 0.7071069478988647
+                },
+                "Translation": {
+                    "Y": 700,
+                    "Z": 50
+                }
+            },
+            "CameraFOV": 10
+        },
+        {
+            "Name": "Mount_Blueback",
+            "RelativeOffset": {
+                "Rotation": {
+                    "Z": -0.7071066498756409,
+                    "W": 0.70710688829422
+                },
+                "Translation": {
+                    "Y": 700,
+                    "Z": 100
+                }
+            },
+            "CameraFOV": 22
+        },
+        {
+            "Name": "Mount_Buffalo",
+            "RelativeOffset": {
+                "Rotation": {
+                    "Z": -0.7071065902709961,
+                    "W": 0.7071069478988647
+                },
+                "Translation": {
+                    "Y": 700,
+                    "Z": 110
+                }
+            },
+            "CameraFOV": 22
+        },
+        {
+            "Name": "Mount_SwampQuad",
+            "RelativeOffset": {
+                "Rotation": {
+                    "Z": -0.7071065306663513,
+                    "W": 0.7071070671081543
+                },
+                "Translation": {
+                    "Y": 700,
+                    "Z": 120
+                }
+            },
+            "CameraFOV": 26
+        },
+        {
+            "Name": "Mount_Tusker",
+            "RelativeOffset": {
+                "Rotation": {
+                    "Z": -0.7071065306663513,
+                    "W": 0.7071070671081543
+                },
+                "Translation": {
+                    "Y": 700,
+                    "Z": 110
+                }
+            },
+            "CameraFOV": 24
+        },
+        {
+            "Name": "Mount_Moa",
+            "RelativeOffset": {
+                "Rotation": {
+                    "Z": -0.7071065902709961,
+                    "W": 0.7071069478988647
+                },
+                "Translation": {
+                    "Y": 700,
+                    "Z": 170
+                }
+            },
+            "CameraFOV": 30
+        },
+        {
+            "Name": "Mount_Horse",
+            "RelativeOffset": {
+                "Rotation": {
+                    "Z": -0.7071067690849304,
+                    "W": 0.7071067094802856
+                },
+                "Translation": {
+                    "Y": 700,
+                    "Z": 100
+                }
+            },
+            "CameraFOV": 17
+        },
+        {
+            "Name": "Mount_Storca",
+            "RelativeOffset": {
+                "Rotation": {
+                    "Z": -0.7071066498756409,
+                    "W": 0.70710688829422
+                },
+                "Translation": {
+                    "Y": 700,
+                    "Z": 110
+                }
+            },
+            "CameraFOV": 26
+        },
+        {
+            "Name": "Mount_Horse_Standard",
+            "RelativeOffset": {
+                "Rotation": {
+                    "Z": -0.7071065306663513,
+                    "W": 0.7071070671081543
+                },
+                "Translation": {
+                    "Y": 700,
+                    "Z": 70
+                }
+            },
+            "CameraFOV": 16
+        },
+        {
+            "Name": "Mount_Slinker",
+            "RelativeOffset": {
+                "Rotation": {
+                    "Z": -0.7071067690849304,
+                    "W": 0.7071067094802856
+                },
+                "Translation": {
+                    "Y": 700,
+                    "Z": 100
+                }
+            },
+            "CameraFOV": 21
+        },
+        {
+            "Name": "Mount_Zebra",
+            "RelativeOffset": {
+                "Rotation": {
+                    "Z": -0.7071065902709961,
+                    "W": 0.7071069478988647
+                },
+                "Translation": {
+                    "Y": 700,
+                    "Z": 90
+                }
+            },
+            "CameraFOV": 17
+        },
+        {
+            "Name": "Mount_Chew",
+            "RelativeOffset": {
+                "Rotation": {
+                    "Z": -0.7071065902709961,
+                    "W": 0.7071069478988647
+                },
+                "Translation": {
+                    "Y": 700,
+                    "Z": 90
+                }
+            },
+            "CameraFOV": 16
+        },
+        {
+            "Name": "Tame_MediumSize",
+            "RelativeOffset": {
+                "Rotation": {
+                    "Z": -0.7071065306663513,
+                    "W": 0.7071070671081543
+                },
+                "Translation": {
+                    "Y": 700,
+                    "Z": 75
+                }
+            },
+            "CameraFOV": 15
+        },
+        {
+            "Name": "Mount_SwampBird",
+            "RelativeOffset": {
+                "Rotation": {
+                    "Z": -0.7071065902709961,
+                    "W": 0.7071069478988647
+                },
+                "Translation": {
+                    "Y": 700,
+                    "Z": 185
+                }
+            },
+            "CameraFOV": 33
+        },
+        {
+            "Name": "Mount_Mammoth",
+            "RelativeOffset": {
+                "Rotation": {
+                    "Z": -0.7071065306663513,
+                    "W": 0.7071070671081543
+                },
+                "Translation": {
+                    "Y": 700,
+                    "Z": 250
+                }
+            },
+            "CameraFOV": 50
+        },
+        {
+            "Name": "Mount_SpeederBike",
+            "RelativeOffset": {
+                "Rotation": {
+                    "Z": -0.7071067690849304,
+                    "W": 0.7071067094802856
+                },
+                "Translation": {
+                    "Y": 700,
+                    "Z": 100
+                }
+            },
+            "CameraFOV": 40
+        }
+    ]
+}

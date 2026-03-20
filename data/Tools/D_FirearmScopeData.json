@@ -1,0 +1,113 @@
+{
+    "RowStruct": "/Script/Icarus.FirearmScopeData",
+    "Defaults": {
+        "ScopeTexture": "None",
+        "TargetFOV": 50,
+        "ScopeTime": 0.15000000596046448,
+        "FirstPersonADSOffset": {
+            "X": 0,
+            "Y": 0,
+            "Z": 0
+        }
+    },
+    "GenerateEnum": true,
+    "Rows": [
+        {
+            "Name": "NoScope"
+        },
+        {
+            "Name": "Binoculars",
+            "ScopeTexture": "/Game/Assets/2DArt/UI/Textures/T_BinocularsOverlay.T_BinocularsOverlay"
+        },
+        {
+            "Name": "Scope_Basic",
+            "ScopeTexture": "/Game/Assets/2DArt/UI/Textures/ScopeOverlays/T_Scope_2kx1k.T_Scope_2kx1k",
+            "TargetFOV": 30,
+            "ScopeTime": 0.10000000149011612,
+            "FirstPersonADSOffset": {
+                "Z": -5
+            }
+        },
+        {
+            "Name": "Scope_Advanced",
+            "ScopeTexture": "/Game/Assets/2DArt/UI/Textures/ScopeOverlays/T_Scope_Advanced.T_Scope_Advanced",
+            "TargetFOV": 20,
+            "ScopeTime": 0.10000000149011612,
+            "FirstPersonADSOffset": {
+                "Z": -5
+            }
+        },
+        {
+            "Name": "Scope_01",
+            "ScopeTexture": "/Game/Assets/2DArt/UI/Textures/ScopeOverlays/T_Scope_1.T_Scope_1",
+            "TargetFOV": 20,
+            "ScopeTime": 0.10000000149011612,
+            "FirstPersonADSOffset": {
+                "Z": -5
+            }
+        },
+        {
+            "Name": "Scope_02",
+            "ScopeTexture": "/Game/Assets/2DArt/UI/Textures/ScopeOverlays/T_Scope_2B.T_Scope_2B",
+            "TargetFOV": 30,
+            "ScopeTime": 0.10000000149011612,
+            "FirstPersonADSOffset": {
+                "Z": -5
+            }
+        },
+        {
+            "Name": "Scope_03",
+            "ScopeTexture": "/Game/Assets/2DArt/UI/Textures/ScopeOverlays/T_Scope_3B.T_Scope_3B",
+            "TargetFOV": 20,
+            "ScopeTime": 0.10000000149011612,
+            "FirstPersonADSOffset": {
+                "Z": -5
+            }
+        },
+        {
+            "Name": "Scope_04",
+            "ScopeTexture": "/Game/Assets/2DArt/UI/Textures/ScopeOverlays/T_Scope_4.T_Scope_4",
+            "TargetFOV": 20,
+            "ScopeTime": 0.10000000149011612,
+            "FirstPersonADSOffset": {
+                "Z": -5
+            }
+        },
+        {
+            "Name": "Scope_05",
+            "ScopeTexture": "/Game/Assets/2DArt/UI/Textures/ScopeOverlays/T_Scope_5.T_Scope_5",
+            "TargetFOV": 20,
+            "ScopeTime": 0.10000000149011612,
+            "FirstPersonADSOffset": {
+                "Z": -5
+            }
+        },
+        {
+            "Name": "Scope_06",
+            "ScopeTexture": "/Game/Assets/2DArt/UI/Textures/ScopeOverlays/T_Scope_6.T_Scope_6",
+            "TargetFOV": 20,
+            "ScopeTime": 0.10000000149011612,
+            "FirstPersonADSOffset": {
+                "Z": -5
+            }
+        },
+        {
+            "Name": "Scope_07",
+            "ScopeTexture": "/Game/Assets/2DArt/UI/Textures/ScopeOverlays/T_Scope_7.T_Scope_7",
+            "TargetFOV": 20,
+            "ScopeTime": 0.10000000149011612,
+            "FirstPersonADSOffset": {
+                "Z": -5
+            }
+        },
+        {
+            "Name": "Scope_08",
+            "ScopeTexture": "/Game/Assets/2DArt/UI/Textures/ScopeOverlays/T_Scope_8.T_Scope_8",
+            "TargetFOV": 20,
+            "ScopeTime": 0.10000000149011612,
+            "FirstPersonADSOffset": {
+                "Z": -5
+            }
+        }
+    ]
+}

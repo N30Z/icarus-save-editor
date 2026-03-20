@@ -1,0 +1,141 @@
+{
+    "RowStruct": "/Script/Icarus.CraftingAudioData",
+    "Defaults": {
+        "RecipeCraftedSound": "None",
+        "ProcessorOverrideSounds": {},
+        "bOnlyPlayForLastItemInQueue": false
+    },
+    "Rows": [
+        {
+            "Name": "Default",
+            "RecipeCraftedSound": "/Game/FMOD/Events/UI/Generic/UI_CRAFT_RECIPE_DEFAULT.UI_CRAFT_RECIPE_DEFAULT",
+            "ProcessorOverrideSounds": {
+                "(RowName=\"Carpentry_Bench\",DataTableName=\"D_Processing\")": "/Game/FMOD/Events/UI/Crafting/UI_CRAFT_RECIPE_CARPENTRYBENCH.UI_CRAFT_RECIPE_CARPENTRYBENCH"
+            }
+        },
+        {
+            "Name": "LastOnly",
+            "RecipeCraftedSound": "/Game/FMOD/Events/UI/Generic/UI_CRAFT_RECIPE_DEFAULT.UI_CRAFT_RECIPE_DEFAULT",
+            "bOnlyPlayForLastItemInQueue": true
+        },
+        {
+            "Name": "CraftingBench",
+            "RecipeCraftedSound": "/Game/FMOD/Events/UI/Crafting/UI_CRAFT_RECIPE_WOODBENCH.UI_CRAFT_RECIPE_WOODBENCH"
+        },
+        {
+            "Name": "MasonryBench",
+            "RecipeCraftedSound": "/Game/FMOD/Events/UI/Crafting/UI_CRAFT_RECIPE_MASONRYBENCH.UI_CRAFT_RECIPE_MASONRYBENCH"
+        },
+        {
+            "Name": "ArmorBench",
+            "RecipeCraftedSound": "/Game/FMOD/Events/UI/Crafting/UI_CRAFT_RECIPE_ARMOURBENCH.UI_CRAFT_RECIPE_ARMOURBENCH"
+        },
+        {
+            "Name": "MachiningBench",
+            "RecipeCraftedSound": "/Game/FMOD/Events/UI/Crafting/UI_CRAFT_RECIPE_MACHINEBENCH.UI_CRAFT_RECIPE_MACHINEBENCH"
+        },
+        {
+            "Name": "Campfire",
+            "RecipeCraftedSound": "/Game/FMOD/Events/UI/Crafting/UI_CRAFT_RECIPE_CAMPFIRE.UI_CRAFT_RECIPE_CAMPFIRE"
+        },
+        {
+            "Name": "CarpentryBench",
+            "RecipeCraftedSound": "/Game/FMOD/Events/UI/Crafting/UI_CRAFT_RECIPE_CARPENTRYBENCH.UI_CRAFT_RECIPE_CARPENTRYBENCH"
+        },
+        {
+            "Name": "SkinningBench",
+            "RecipeCraftedSound": "/Game/FMOD/Events/UI/Crafting/UI_CRAFT_RECIPE_SKINNINGBENCH.UI_CRAFT_RECIPE_SKINNINGBENCH"
+        },
+        {
+            "Name": "OxiteDissolver",
+            "RecipeCraftedSound": "/Game/FMOD/Events/UI/Crafting/UI_CRAFT_RECIPE_OXITEDISSOLVER.UI_CRAFT_RECIPE_OXITEDISSOLVER",
+            "bOnlyPlayForLastItemInQueue": true
+        },
+        {
+            "Name": "CookingStation",
+            "RecipeCraftedSound": "/Game/FMOD/Events/UI/Crafting/UI_CRAFT_RECIPE_COOKINGSTATION.UI_CRAFT_RECIPE_COOKINGSTATION"
+        },
+        {
+            "Name": "AnvilBench",
+            "RecipeCraftedSound": "/Game/FMOD/Events/UI/Crafting/UI_CRAFT_RECIPE_ANVILBENCH.UI_CRAFT_RECIPE_ANVILBENCH"
+        },
+        {
+            "Name": "Composter",
+            "RecipeCraftedSound": "/Game/FMOD/Events/UI/Crafting/UI_CRAFT_RECIPE_COMPOSTER.UI_CRAFT_RECIPE_COMPOSTER"
+        },
+        {
+            "Name": "Glassbench",
+            "RecipeCraftedSound": "/Game/FMOD/Events/UI/Crafting/UI_CRAFT_RECIPE_GLASSBENCH.UI_CRAFT_RECIPE_GLASSBENCH",
+            "ProcessorOverrideSounds": {
+                "(RowName=\"Medicine_Bench\",DataTableName=\"D_Processing\")": "/Game/FMOD/Events/UI/Crafting/UI_CRAFT_RECIPE_MEDICINEBENCH.UI_CRAFT_RECIPE_MEDICINEBENCH"
+            }
+        },
+        {
+            "Name": "Ovens",
+            "RecipeCraftedSound": "/Game/FMOD/Events/UI/Crafting/UI_CRAFT_RECIPE_OVENS.UI_CRAFT_RECIPE_OVENS"
+        },
+        {
+            "Name": "HerbalismBench",
+            "RecipeCraftedSound": "/Game/FMOD/Events/UI/Crafting/UI_CRAFT_RECIPE_HERBALISM.UI_CRAFT_RECIPE_HERBALISM",
+            "ProcessorOverrideSounds": {
+                "(RowName=\"Medicine_Bench\",DataTableName=\"D_Processing\")": "/Game/FMOD/Events/UI/Crafting/UI_CRAFT_RECIPE_MEDICINEBENCH.UI_CRAFT_RECIPE_MEDICINEBENCH",
+                "(RowName=\"Chemistry_Bench\",DataTableName=\"D_Processing\")": "/Game/FMOD/Events/UI/Crafting/UI_CRAFT_RECIPE_GLASSBENCH.UI_CRAFT_RECIPE_GLASSBENCH"
+            }
+        },
+        {
+            "Name": "MortarPestle",
+            "RecipeCraftedSound": "/Game/FMOD/Events/UI/Crafting/UI_CRAFT_RECIPE_MORTAR_PESTLE.UI_CRAFT_RECIPE_MORTAR_PESTLE",
+            "ProcessorOverrideSounds": {
+                "(RowName=\"Material_Processor\",DataTableName=\"D_Processing\")": "/Game/FMOD/Events/UI/Crafting/UI_CRAFT_RECIPE_MACHINEBENCH.UI_CRAFT_RECIPE_MACHINEBENCH"
+            }
+        },
+        {
+            "Name": "WoodComposter",
+            "RecipeCraftedSound": "/Game/FMOD/Events/UI/Crafting/UI_CRAFT_RECIPE_WOOD_COMPOSTER.UI_CRAFT_RECIPE_WOOD_COMPOSTER"
+        },
+        {
+            "Name": "DryingRack",
+            "RecipeCraftedSound": "/Game/FMOD/Events/UI/Crafting/UI_CRAFT_RECIPE_DRYINGRACK.UI_CRAFT_RECIPE_DRYINGRACK",
+            "ProcessorOverrideSounds": {
+                "(RowName=\"Smoker_T3\",DataTableName=\"D_Processing\")": "/Game/FMOD/Events/UI/Crafting/UI_CRAFT_RECIPE_SMOKER.UI_CRAFT_RECIPE_SMOKER",
+                "(RowName=\"Smoker_T4\",DataTableName=\"D_Processing\")": "/Game/FMOD/Events/UI/Crafting/UI_CRAFT_RECIPE_SMOKER.UI_CRAFT_RECIPE_SMOKER"
+            }
+        },
+        {
+            "Name": "AlterationsBench",
+            "RecipeCraftedSound": "/Game/FMOD/Events/UI/Crafting/UI_CRAFT_RECIPE_UPGRADE.UI_CRAFT_RECIPE_UPGRADE"
+        },
+        {
+            "Name": "SaltingStation",
+            "RecipeCraftedSound": "/Game/FMOD/Events/UI/Crafting/UI_CRAFT_RECIPE_SALTINGSTATION.UI_CRAFT_RECIPE_SALTINGSTATION"
+        },
+        {
+            "Name": "ExoticProcessor",
+            "RecipeCraftedSound": "/Game/FMOD/Events/UI/Crafting/UI_CRAFT_RECIPE_EXOTIC_PROCESSOR.UI_CRAFT_RECIPE_EXOTIC_PROCESSOR"
+        },
+        {
+            "Name": "FishingBench",
+            "RecipeCraftedSound": "/Game/FMOD/Events/UI/Crafting/UI_CRAFT_RECIPE_FISHING_BENCH.UI_CRAFT_RECIPE_FISHING_BENCH"
+        },
+        {
+            "Name": "SmokingBench",
+            "RecipeCraftedSound": "/Game/FMOD/Events/UI/Crafting/UI_CRAFT_RECIPE_SMOKER.UI_CRAFT_RECIPE_SMOKER"
+        },
+        {
+            "Name": "AnimalsBench",
+            "RecipeCraftedSound": "/Game/FMOD/Events/UI/Crafting/UI_CRAFT_RECIPE_ANIMAL_BENCH.UI_CRAFT_RECIPE_ANIMAL_BENCH"
+        },
+        {
+            "Name": "MedicineBench",
+            "RecipeCraftedSound": "/Game/FMOD/Events/UI/Crafting/UI_CRAFT_RECIPE_MEDICINEBENCH.UI_CRAFT_RECIPE_MEDICINEBENCH"
+        },
+        {
+            "Name": "SeedExtractor",
+            "RecipeCraftedSound": "/Game/FMOD/Events/UI/Crafting/UI_CRAFT_RECIPE_SEED_EXTRACTOR.UI_CRAFT_RECIPE_SEED_EXTRACTOR"
+        },
+        {
+            "Name": "T5ManufacturingUnit",
+            "RecipeCraftedSound": "/Game/FMOD/Events/UI/Crafting/UI_CRAFT_RECIPE_T5__MANUFACTORING.UI_CRAFT_RECIPE_T5__MANUFACTORING"
+        }
+    ]
+}

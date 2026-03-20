@@ -1,0 +1,100 @@
+{
+    "RowStruct": "/Script/Icarus.DialogueSpeaker",
+    "Defaults": {
+        "Speaker": ""
+    },
+    "Rows": [
+        {
+            "Name": "Sol",
+            "Speaker": "NSLOCTEXT(\"D_DialogueSpeaker\", \"Sol-Speaker\", \"Sol\")"
+        },
+        {
+            "Name": "Group15",
+            "Speaker": "NSLOCTEXT(\"D_DialogueSpeaker\", \"Group15-Speaker\", \"Group 15\")"
+        },
+        {
+            "Name": "SMPL3",
+            "Speaker": "NSLOCTEXT(\"D_DialogueSpeaker\", \"SMPL3-Speaker\", \"SMPL3\")"
+        },
+        {
+            "Name": "Clarke",
+            "Speaker": "NSLOCTEXT(\"D_DialogueSpeaker\", \"Clarke-Speaker\", \"Clarke\")"
+        },
+        {
+            "Name": "Unknown",
+            "Speaker": "NSLOCTEXT(\"D_DialogueSpeaker\", \"Unknown-Speaker\", \"Unknown\")"
+        },
+        {
+            "Name": "Mo",
+            "Speaker": "NSLOCTEXT(\"D_DialogueSpeaker\", \"Mo-Speaker\", \"Mo\")"
+        },
+        {
+            "Name": "Church",
+            "Speaker": "NSLOCTEXT(\"D_DialogueSpeaker\", \"Church-Speaker\", \"Captain Church\")"
+        },
+        {
+            "Name": "Griff",
+            "Speaker": "NSLOCTEXT(\"D_DialogueSpeaker\", \"Griff-Speaker\", \"Medic Griff\")"
+        },
+        {
+            "Name": "Tucker",
+            "Speaker": "NSLOCTEXT(\"D_DialogueSpeaker\", \"Tucker-Speaker\", \"Private Tucker\")"
+        },
+        {
+            "Name": "Simmons",
+            "Speaker": "NSLOCTEXT(\"D_DialogueSpeaker\", \"Simmons-Speaker\", \"Private Simmons\")"
+        },
+        {
+            "Name": "Washington",
+            "Speaker": "NSLOCTEXT(\"D_DialogueSpeaker\", \"Washington-Speaker\", \"Lieutenant Washington\")"
+        },
+        {
+            "Name": "Handler",
+            "Speaker": "NSLOCTEXT(\"D_DialogueSpeaker\", \"Handler-Speaker\", \"Handler\")"
+        },
+        {
+            "Name": "Agent",
+            "Speaker": "NSLOCTEXT(\"D_DialogueSpeaker\", \"Agent-Speaker\", \"AGENT\")"
+        },
+        {
+            "Name": "IM_Researcher_1",
+            "Speaker": "NSLOCTEXT(\"D_DialogueSpeaker\", \"IM_Researcher_1-Speaker\", \"Avery\")"
+        },
+        {
+            "Name": "IM_Researcher_2",
+            "Speaker": "NSLOCTEXT(\"D_DialogueSpeaker\", \"IM_Researcher_2-Speaker\", \"Felix\")"
+        },
+        {
+            "Name": "APE_Researcher_1",
+            "Speaker": "NSLOCTEXT(\"D_DialogueSpeaker\", \"APE_Researcher_1-Speaker\", \"Morris\")"
+        },
+        {
+            "Name": "Iris",
+            "Speaker": "NSLOCTEXT(\"D_DialogueSpeaker\", \"Iris-Speaker\", \"Iris\")"
+        },
+        {
+            "Name": "Victor",
+            "Speaker": "NSLOCTEXT(\"D_DialogueSpeaker\", \"Victor-Speaker\", \"Victor\")"
+        },
+        {
+            "Name": "Theo",
+            "Speaker": "NSLOCTEXT(\"D_DialogueSpeaker\", \"Theo-Speaker\", \"Theo\")"
+        },
+        {
+            "Name": "EDEN_Cook",
+            "Speaker": "INVTEXT(\"[DNT] Culinary Specialist\")"
+        },
+        {
+            "Name": "EDEN_Crafter",
+            "Speaker": "INVTEXT(\"[DNT] Quartermaster\")"
+        },
+        {
+            "Name": "EDEN_Logistics",
+            "Speaker": "INVTEXT(\"[DNT] Logistics Officer\")"
+        },
+        {
+            "Name": "Fisherman",
+            "Speaker": "NSLOCTEXT(\"D_DialogueSpeaker\", \"Fisherman-Speaker\", \"Dunski\")"
+        }
+    ]
+}

@@ -1,0 +1,100 @@
+{
+    "RowStruct": "/Script/Icarus.MapSearchArea",
+    "Defaults": {
+        "Image": "None",
+        "Color": {
+            "R": 0,
+            "G": 0,
+            "B": 0,
+            "A": 0
+        }
+    },
+    "Rows": [
+        {
+            "Name": "Orange",
+            "Image": "/Game/Assets/2DArt/UI/Icons/Icon_Map_SearchArea.Icon_Map_SearchArea",
+            "Color": {
+                "R": 1,
+                "G": 0.491021990776062,
+                "B": 0.020289000123739243,
+                "A": 1
+            }
+        },
+        {
+            "Name": "Cyan",
+            "Image": "/Game/Assets/2DArt/UI/Icons/Icon_Map_SearchArea.Icon_Map_SearchArea",
+            "Color": {
+                "R": 0.05448000133037567,
+                "G": 0.37626200914382935,
+                "B": 1,
+                "A": 1
+            }
+        },
+        {
+            "Name": "Purple",
+            "Image": "/Game/Assets/2DArt/UI/Icons/Icon_Map_SearchArea.Icon_Map_SearchArea",
+            "Color": {
+                "R": 0.7011020183563232,
+                "G": 0.5088809728622437,
+                "B": 0.8631569743156433,
+                "A": 1
+            }
+        },
+        {
+            "Name": "Red",
+            "Image": "/Game/Assets/2DArt/UI/Icons/Icon_Map_SearchArea.Icon_Map_SearchArea",
+            "Color": {
+                "R": 0.8999999761581421,
+                "A": 1
+            }
+        },
+        {
+            "Name": "Transparent_Orange",
+            "Image": "/Game/Assets/2DArt/UI/Icons/Icon_Map_SearchArea.Icon_Map_SearchArea",
+            "Color": {
+                "R": 1,
+                "G": 0.491021990776062,
+                "B": 0.020289000123739243,
+                "A": 0.30000001192092896
+            }
+        },
+        {
+            "Name": "Transparent_Cyan",
+            "Image": "/Game/Assets/2DArt/UI/Icons/Icon_Map_SearchArea.Icon_Map_SearchArea",
+            "Color": {
+                "R": 0.05448000133037567,
+                "G": 0.37626200914382935,
+                "B": 1,
+                "A": 0.30000001192092896
+            }
+        },
+        {
+            "Name": "Transparent_LightGreen",
+            "Image": "/Game/Assets/2DArt/UI/Icons/Icon_Map_SearchArea.Icon_Map_SearchArea",
+            "Color": {
+                "R": 0.8148469924926758,
+                "G": 0.8796229958534241,
+                "B": 0.6795430183410645,
+                "A": 0.30000001192092896
+            }
+        },
+        {
+            "Name": "SpawnBlocker",
+            "Image": "/Game/Assets/2DArt/UI/Icons/Icon_Map_SearchArea.Icon_Map_SearchArea",
+            "Color": {
+                "R": 1,
+                "G": 0.1684889942407608,
+                "A": 0.699999988079071
+            }
+        },
+        {
+            "Name": "Prebuilt_Structure",
+            "Image": "/Game/Assets/2DArt/UI/Icons/Icon_Map_SearchArea.Icon_Map_SearchArea",
+            "Color": {
+                "R": 0.21759499609470367,
+                "B": 0.40104201436042786,
+                "A": 1
+            }
+        }
+    ]
+}

@@ -1,0 +1,709 @@
+{
+    "RowStruct": "/Script/Icarus.GeneratorData",
+    "Defaults": {
+        "Resource": {
+            "Value": "None"
+        },
+        "GenerationRate": 1000,
+        "GenerationRatio": 1,
+        "TransmutableItems": [],
+        "TransmutableResources": [],
+        "RequiresManualActivation": true,
+        "OutOfFuelThresholdPercent": 0
+    },
+    "Rows": [
+        {
+            "Name": "Basic_Oxygen_Generator",
+            "Resource": {
+                "Value": "Oxygen"
+            },
+            "GenerationRate": 75,
+            "TransmutableItems": [
+                {
+                    "RowName": "Oxite",
+                    "DataTableName": "D_ItemsStatic"
+                }
+            ]
+        },
+        {
+            "Name": "Basic_Energy_Generator",
+            "Resource": {
+                "Value": "Energy"
+            },
+            "GenerationRate": 2500,
+            "TransmutableItems": [
+                {
+                    "RowName": "Fiber",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Stick",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Wood_Refined",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Wood",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Coal_Ore",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Packed_Fuel_Brick",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Lava_Hunter_Magma",
+                    "DataTableName": "D_ItemsStatic"
+                }
+            ]
+        },
+        {
+            "Name": "Oxidizer_Generator",
+            "Resource": {
+                "Value": "Oxygen"
+            },
+            "GenerationRate": 10,
+            "GenerationRatio": 0.10000000149011612,
+            "TransmutableItems": [
+                {
+                    "RowName": "Oxite",
+                    "DataTableName": "D_ItemsStatic"
+                }
+            ]
+        },
+        {
+            "Name": "Oxite_Dissolver_Generator",
+            "Resource": {
+                "Value": "Energy"
+            },
+            "GenerationRate": 500,
+            "TransmutableItems": [
+                {
+                    "RowName": "Sulfur",
+                    "DataTableName": "D_ItemsStatic"
+                }
+            ]
+        },
+        {
+            "Name": "Basic_Biofuel_Energy_Generator",
+            "Resource": {
+                "Value": "Energy"
+            },
+            "GenerationRate": 5000
+        },
+        {
+            "Name": "Kit_Generator_Energy_Generator",
+            "Resource": {
+                "Value": "Energy"
+            },
+            "GenerationRate": 5000,
+            "GenerationRatio": 7500,
+            "TransmutableResources": [
+                {
+                    "Value": "Biofuel"
+                }
+            ]
+        },
+        {
+            "Name": "Extractor_Biofuel_Generator",
+            "Resource": {
+                "Value": "Energy"
+            },
+            "GenerationRate": 1100,
+            "GenerationRatio": 200,
+            "TransmutableResources": [
+                {
+                    "Value": "Biofuel"
+                }
+            ]
+        },
+        {
+            "Name": "Free_Energy_Generator",
+            "Resource": {
+                "Value": "Energy"
+            },
+            "GenerationRate": 2500
+        },
+        {
+            "Name": "Free_Energy_Generator_Auto",
+            "Resource": {
+                "Value": "Energy"
+            },
+            "RequiresManualActivation": false
+        },
+        {
+            "Name": "Wood_Torch_Generator",
+            "Resource": {
+                "Value": "Energy"
+            },
+            "GenerationRate": 100,
+            "TransmutableItems": [
+                {
+                    "RowName": "Fiber",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Stick",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Wood_Refined",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Wood",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Coal_Ore",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Packed_Fuel_Brick",
+                    "DataTableName": "D_ItemsStatic"
+                }
+            ]
+        },
+        {
+            "Name": "Candle_Generator",
+            "Resource": {
+                "Value": "Energy"
+            },
+            "GenerationRate": 100,
+            "GenerationRatio": 10,
+            "TransmutableItems": [
+                {
+                    "RowName": "Animal_Fat",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Beeswax",
+                    "DataTableName": "D_ItemsStatic"
+                }
+            ]
+        },
+        {
+            "Name": "Water_Pump_Generator",
+            "Resource": {
+                "Value": "Water"
+            },
+            "TransmutableResources": [
+                {
+                    "Value": "Energy"
+                }
+            ],
+            "RequiresManualActivation": false,
+            "OutOfFuelThresholdPercent": -1
+        },
+        {
+            "Name": "Dehumidifier",
+            "Resource": {
+                "Value": "Energy"
+            },
+            "GenerationRate": 2500,
+            "TransmutableItems": [
+                {
+                    "RowName": "Charcoal",
+                    "DataTableName": "D_ItemsStatic"
+                }
+            ]
+        },
+        {
+            "Name": "Kitchen_Stove",
+            "Resource": {
+                "Value": "Energy"
+            },
+            "GenerationRate": 500,
+            "GenerationRatio": 50,
+            "TransmutableResources": [
+                {
+                    "Value": "Biofuel"
+                }
+            ]
+        },
+        {
+            "Name": "Pot_Belly_Stove",
+            "Resource": {
+                "Value": "Energy"
+            },
+            "GenerationRate": 2500,
+            "TransmutableItems": [
+                {
+                    "RowName": "Fiber",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Stick",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Wood_Refined",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Wood",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Coal_Ore",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Packed_Fuel_Brick",
+                    "DataTableName": "D_ItemsStatic"
+                }
+            ]
+        },
+        {
+            "Name": "Rain_Reservoir",
+            "Resource": {
+                "Value": "Water"
+            },
+            "GenerationRate": 50,
+            "TransmutableItems": [
+                {
+                    "RowName": "Ice",
+                    "DataTableName": "D_ItemsStatic"
+                }
+            ],
+            "RequiresManualActivation": false
+        },
+        {
+            "Name": "Ice_Box",
+            "Resource": {
+                "Value": "Energy"
+            },
+            "GenerationRate": 1,
+            "TransmutableItems": [
+                {
+                    "RowName": "Ice",
+                    "DataTableName": "D_ItemsStatic"
+                }
+            ],
+            "RequiresManualActivation": false
+        },
+        {
+            "Name": "Biofuel_MetalOxiteDissolver",
+            "Resource": {
+                "Value": "Energy"
+            },
+            "GenerationRate": 500,
+            "GenerationRatio": 10,
+            "TransmutableResources": [
+                {
+                    "Value": "Biofuel"
+                }
+            ]
+        },
+        {
+            "Name": "Faction_Mission_Drill",
+            "Resource": {
+                "Value": "Energy"
+            },
+            "GenerationRate": 1,
+            "TransmutableResources": [
+                {
+                    "Value": "Biofuel"
+                }
+            ]
+        },
+        {
+            "Name": "Electric_Dehumidifier",
+            "Resource": {
+                "Value": "Energy"
+            },
+            "GenerationRate": 2500,
+            "TransmutableItems": [
+                {
+                    "RowName": "Charcoal",
+                    "DataTableName": "D_ItemsStatic"
+                }
+            ]
+        },
+        {
+            "Name": "SolarPanel_Generator",
+            "Resource": {
+                "Value": "Energy"
+            },
+            "GenerationRate": 5000
+        },
+        {
+            "Name": "WaterWheel_Generator",
+            "Resource": {
+                "Value": "Energy"
+            },
+            "GenerationRate": 2000
+        },
+        {
+            "Name": "Fabricator_Generator",
+            "Resource": {
+                "Value": "Energy"
+            },
+            "GenerationRate": 2500
+        },
+        {
+            "Name": "Deep_Mining_Biofuel_Drill",
+            "Resource": {
+                "Value": "Energy"
+            },
+            "GenerationRate": 1,
+            "GenerationRatio": 0.75,
+            "TransmutableResources": [
+                {
+                    "Value": "Biofuel"
+                }
+            ]
+        },
+        {
+            "Name": "Biofuel_Radar",
+            "Resource": {
+                "Value": "Energy"
+            },
+            "GenerationRate": 200,
+            "GenerationRatio": 20,
+            "TransmutableResources": [
+                {
+                    "Value": "Biofuel"
+                }
+            ]
+        },
+        {
+            "Name": "Meta_Extractor",
+            "GenerationRate": 10,
+            "TransmutableResources": [
+                {
+                    "Value": "Energy"
+                }
+            ]
+        },
+        {
+            "Name": "Mission_STYX_D_Research2_Bomb",
+            "Resource": {
+                "Value": "Oxygen"
+            },
+            "GenerationRate": 10,
+            "GenerationRatio": 0.10000000149011612,
+            "TransmutableItems": [
+                {
+                    "RowName": "Mission_STYX_D_Research2_Abyssal_Oxite",
+                    "DataTableName": "D_ItemsStatic"
+                }
+            ]
+        },
+        {
+            "Name": "Aquarium_T3",
+            "Resource": {
+                "Value": "Energy"
+            },
+            "GenerationRate": 200,
+            "GenerationRatio": 250,
+            "TransmutableResources": [
+                {
+                    "Value": "Biofuel"
+                }
+            ]
+        },
+        {
+            "Name": "SpawnBlocker_T3",
+            "Resource": {
+                "Value": "Energy"
+            },
+            "GenerationRate": 5000,
+            "GenerationRatio": 4000,
+            "TransmutableResources": [
+                {
+                    "Value": "Biofuel"
+                }
+            ]
+        },
+        {
+            "Name": "WindTurbine",
+            "Resource": {
+                "Value": "Energy"
+            },
+            "GenerationRate": 3500
+        },
+        {
+            "Name": "SpawnBlocker_T2",
+            "Resource": {
+                "Value": "Energy"
+            },
+            "GenerationRate": 100,
+            "GenerationRatio": 100,
+            "TransmutableItems": [
+                {
+                    "RowName": "Spoiled_Meat",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Spoiled_Plants",
+                    "DataTableName": "D_ItemsStatic"
+                }
+            ]
+        },
+        {
+            "Name": "Anvil_T3",
+            "Resource": {
+                "Value": "Energy"
+            },
+            "GenerationRate": 2500,
+            "TransmutableItems": [
+                {
+                    "RowName": "Charcoal",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Coal_Ore",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Meta_Coal",
+                    "DataTableName": "D_ItemsStatic"
+                }
+            ]
+        },
+        {
+            "Name": "Water_Purifier",
+            "GenerationRate": 25000,
+            "TransmutableItems": [
+                {
+                    "RowName": "Charcoal",
+                    "DataTableName": "D_ItemsStatic"
+                }
+            ],
+            "RequiresManualActivation": false
+        },
+        {
+            "Name": "T3_Cleaning_Device",
+            "Resource": {
+                "Value": "Energy"
+            },
+            "GenerationRatio": 200,
+            "TransmutableResources": [
+                {
+                    "Value": "Biofuel"
+                }
+            ]
+        },
+        {
+            "Name": "Smoker_T3",
+            "Resource": {
+                "Value": "Energy"
+            },
+            "GenerationRate": 2500,
+            "TransmutableItems": [
+                {
+                    "RowName": "Charcoal",
+                    "DataTableName": "D_ItemsStatic"
+                }
+            ]
+        },
+        {
+            "Name": "Beehive",
+            "GenerationRate": 100,
+            "TransmutableItems": [
+                {
+                    "RowName": "Queen_Bee",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Worker_Bee",
+                    "DataTableName": "D_ItemsStatic"
+                }
+            ],
+            "RequiresManualActivation": false
+        },
+        {
+            "Name": "Water_Pump_Biofuel",
+            "Resource": {
+                "Value": "Energy"
+            },
+            "GenerationRate": 500,
+            "GenerationRatio": 450,
+            "TransmutableResources": [
+                {
+                    "Value": "Biofuel"
+                }
+            ]
+        },
+        {
+            "Name": "Water_Borer",
+            "Resource": {
+                "Value": "Water"
+            },
+            "GenerationRate": 2000,
+            "GenerationRatio": 2,
+            "TransmutableResources": [
+                {
+                    "Value": "Energy"
+                }
+            ],
+            "RequiresManualActivation": false,
+            "OutOfFuelThresholdPercent": -1
+        },
+        {
+            "Name": "Electric_Oxite_Dissolver",
+            "Resource": {
+                "Value": "Oxygen"
+            },
+            "GenerationRate": 500,
+            "GenerationRatio": 10,
+            "TransmutableResources": [
+                {
+                    "Value": "None"
+                }
+            ]
+        },
+        {
+            "Name": "Pump_Jack",
+            "Resource": {
+                "Value": "Crude_Oil"
+            },
+            "GenerationRate": 200,
+            "GenerationRatio": 0.20000000298023224,
+            "TransmutableResources": [
+                {
+                    "Value": "Energy"
+                }
+            ],
+            "RequiresManualActivation": false,
+            "OutOfFuelThresholdPercent": -1
+        },
+        {
+            "Name": "Natural_Oil_Refiner",
+            "Resource": {
+                "Value": "Refined_Oil"
+            },
+            "TransmutableResources": [
+                {
+                    "Value": "Biofuel"
+                }
+            ],
+            "RequiresManualActivation": false,
+            "OutOfFuelThresholdPercent": -1
+        },
+        {
+            "Name": "Organic_Extractor",
+            "Resource": {
+                "Value": "Biofuel"
+            },
+            "GenerationRate": 500,
+            "TransmutableItems": [
+                {
+                    "RowName": "Seed_Oil",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Spoiled_Meat",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Spoiled_Plants",
+                    "DataTableName": "D_ItemsStatic"
+                }
+            ],
+            "RequiresManualActivation": false,
+            "OutOfFuelThresholdPercent": -1
+        },
+        {
+            "Name": "Crude_Oil_Power_Generator",
+            "Resource": {
+                "Value": "Energy"
+            },
+            "GenerationRate": 8000,
+            "GenerationRatio": 53.29999923706055,
+            "TransmutableResources": [
+                {
+                    "Value": "Crude_Oil"
+                }
+            ],
+            "RequiresManualActivation": false,
+            "OutOfFuelThresholdPercent": -1
+        },
+        {
+            "Name": "Portable_Biofuel_Generator",
+            "Resource": {
+                "Value": "Energy"
+            },
+            "GenerationRate": 2000,
+            "GenerationRatio": 2750,
+            "TransmutableResources": [
+                {
+                    "Value": "Biofuel"
+                }
+            ]
+        },
+        {
+            "Name": "Hydrazine_Generator",
+            "Resource": {
+                "Value": "Energy"
+            },
+            "GenerationRate": 2500,
+            "GenerationRatio": 2500,
+            "TransmutableResources": [
+                {
+                    "Value": "Hydrazine"
+                }
+            ]
+        },
+        {
+            "Name": "Enzyme_Cannon_Generator",
+            "GenerationRate": 100,
+            "TransmutableItems": [
+                {
+                    "RowName": "Condensed_Enzymes",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Synthetic_Enzymes",
+                    "DataTableName": "D_ItemsStatic"
+                }
+            ]
+        },
+        {
+            "Name": "Gas_Fireplace",
+            "Resource": {
+                "Value": "Energy"
+            },
+            "GenerationRate": 500,
+            "GenerationRatio": 500,
+            "TransmutableResources": [
+                {
+                    "Value": "Biofuel"
+                }
+            ]
+        },
+        {
+            "Name": "Uranium_Generator",
+            "Resource": {
+                "Value": "Energy"
+            },
+            "GenerationRate": 100000,
+            "GenerationRatio": 10000,
+            "TransmutableItems": [
+                {
+                    "RowName": "Uranium_Rod",
+                    "DataTableName": "D_ItemsStatic"
+                }
+            ]
+        },
+        {
+            "Name": "Deep_Mining_Oil_Drill",
+            "Resource": {
+                "Value": "Energy"
+            },
+            "GenerationRate": 1,
+            "GenerationRatio": 0.75,
+            "TransmutableResources": [
+                {
+                    "Value": "Refined_Oil"
+                }
+            ]
+        }
+    ]
+}

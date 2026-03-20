@@ -1,0 +1,102 @@
+{
+    "RowStruct": "/Script/Icarus.ModifierStateAudioData",
+    "Defaults": {
+        "PlayerModifierAddedSound": "None",
+        "bReplayOnStack": false,
+        "CooldownTime": 0,
+        "PlayerModifierLoopSound": "None",
+        "bApplyStackCountParameterToLoop": false,
+        "PlayerModifierRemovedSound": "None",
+        "bApplyExposedVocalisation": false,
+        "ExposedVocalisationMinEffectiveness": 0,
+        "bApplyEffectivenessParameter": false
+    },
+    "Rows": [
+        {
+            "Name": "Generic_Negative",
+            "PlayerModifierAddedSound": "/Game/FMOD/Events/SFX/D_Modifier_States/SFX_MODIF_GENERIC_NEGATIVE.SFX_MODIF_GENERIC_NEGATIVE",
+            "bReplayOnStack": true
+        },
+        {
+            "Name": "Hot",
+            "PlayerModifierLoopSound": "/Game/FMOD/Events/SFX/D_Modifier_States/SFX_MODIF_WARN_HOT.SFX_MODIF_WARN_HOT"
+        },
+        {
+            "Name": "Cold",
+            "PlayerModifierLoopSound": "/Game/FMOD/Events/SFX/D_Modifier_States/SFX_MODIF_WARN_COLD.SFX_MODIF_WARN_COLD"
+        },
+        {
+            "Name": "Exposure_Light",
+            "PlayerModifierLoopSound": "/Game/FMOD/Events/SFX/D_Modifier_States/SFX_MODIF_EXPOSURE_LIGHT.SFX_MODIF_EXPOSURE_LIGHT"
+        },
+        {
+            "Name": "Exposure_Medium",
+            "PlayerModifierLoopSound": "/Game/FMOD/Events/SFX/D_Modifier_States/SFX_MODIF_EXPOSURE_MEDIUM.SFX_MODIF_EXPOSURE_MEDIUM",
+            "bApplyExposedVocalisation": true
+        },
+        {
+            "Name": "Exposure_Heavy",
+            "PlayerModifierLoopSound": "/Game/FMOD/Events/SFX/D_Modifier_States/SFX_MODIF_EXPOSURE_HEAVY.SFX_MODIF_EXPOSURE_HEAVY",
+            "bApplyExposedVocalisation": true
+        },
+        {
+            "Name": "Generic_Negative_LongCoolDown",
+            "PlayerModifierAddedSound": "/Game/FMOD/Events/SFX/D_Modifier_States/SFX_MODIF_GENERIC_NEGATIVE.SFX_MODIF_GENERIC_NEGATIVE",
+            "bReplayOnStack": true,
+            "CooldownTime": 60
+        },
+        {
+            "Name": "Bandaging",
+            "PlayerModifierLoopSound": "/Game/FMOD/Events/SFX/Character/Consume/SFX_CONSUME_BANDAGE_LOOP.SFX_CONSUME_BANDAGE_LOOP"
+        },
+        {
+            "Name": "Consume_Tonic",
+            "bReplayOnStack": true,
+            "PlayerModifierLoopSound": "/Game/FMOD/Events/SFX/Character/Consume/SFX_CONSUME_TONIC_LOOP.SFX_CONSUME_TONIC_LOOP"
+        },
+        {
+            "Name": "Exposure_Dynamic",
+            "PlayerModifierLoopSound": "/Game/FMOD/Events/SFX/D_Modifier_States/SFX_MODIF_EXPOSURE_DYNAMIC.SFX_MODIF_EXPOSURE_DYNAMIC",
+            "bApplyExposedVocalisation": true,
+            "ExposedVocalisationMinEffectiveness": 50,
+            "bApplyEffectivenessParameter": true
+        },
+        {
+            "Name": "Exposure_Radiation",
+            "PlayerModifierAddedSound": "/Game/FMOD/Events/SFX/D_Modifier_States/SFX_MODIF_GENERIC_NEGATIVE_RADIATION.SFX_MODIF_GENERIC_NEGATIVE_RADIATION",
+            "bReplayOnStack": true,
+            "CooldownTime": 30,
+            "PlayerModifierLoopSound": "/Game/FMOD/Events/SFX/Character/Vocals/Vocal_System/SFX_CHAR_VOC_RADIATION.SFX_CHAR_VOC_RADIATION"
+        },
+        {
+            "Name": "Exposure_Radiation_MED",
+            "PlayerModifierAddedSound": "/Game/FMOD/Events/SFX/D_Modifier_States/SFX_MODIF_GENERIC_NEGATIVE_RADIATION.SFX_MODIF_GENERIC_NEGATIVE_RADIATION",
+            "bReplayOnStack": true,
+            "CooldownTime": 30
+        },
+        {
+            "Name": "Exposure_Radiation_HIGH",
+            "PlayerModifierAddedSound": "/Game/FMOD/Events/SFX/D_Modifier_States/SFX_MODIF_GENERIC_NEGATIVE_RADIATION.SFX_MODIF_GENERIC_NEGATIVE_RADIATION",
+            "bReplayOnStack": true,
+            "CooldownTime": 30
+        },
+        {
+            "Name": "Exposure_Radiation_Geiger",
+            "PlayerModifierAddedSound": "/Game/FMOD/Events/SFX/D_Modifier_States/SFX_MODIF_GENERIC_NEGATIVE_RADIATION.SFX_MODIF_GENERIC_NEGATIVE_RADIATION",
+            "bReplayOnStack": true,
+            "CooldownTime": 30
+        },
+        {
+            "Name": "Radiation_Warning_1SHOT",
+            "PlayerModifierAddedSound": "/Game/FMOD/Events/SFX/D_Modifier_States/SFX_MODIF_GENERIC_NEGATIVE_RADIATION.SFX_MODIF_GENERIC_NEGATIVE_RADIATION",
+            "bReplayOnStack": true,
+            "CooldownTime": 10
+        },
+        {
+            "Name": "Corrosive",
+            "PlayerModifierAddedSound": "/Game/FMOD/Events/SFX/D_Modifier_States/SFX_CRE_CORROSIVE_MODIF.SFX_CRE_CORROSIVE_MODIF",
+            "bReplayOnStack": true,
+            "PlayerModifierLoopSound": "/Game/FMOD/Events/SFX/D_Modifier_States/SFX_CRE_CORROSIVE_MODIF_LOOP.SFX_CRE_CORROSIVE_MODIF_LOOP"
+        }
+    ]
+}

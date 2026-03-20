@@ -1,0 +1,12 @@
+{
+    "RowStruct": "/Script/Icarus.MusicQuestCondition",
+    "Defaults": {},
+    "Rows": [
+        {
+            "Name": "NoQuest"
+        },
+        {
+            "Name": "PRO_Story6_Evidence"
+        }
+    ]
+}

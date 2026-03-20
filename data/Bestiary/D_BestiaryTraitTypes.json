@@ -1,0 +1,63 @@
+{
+    "RowStruct": "/Script/Icarus.BestiaryTraitType",
+    "Defaults": {
+        "Color": {
+            "R": 0,
+            "G": 0,
+            "B": 0,
+            "A": 0
+        },
+        "Icon": "None"
+    },
+    "Rows": [
+        {
+            "Name": "Weakness",
+            "Color": {
+                "R": 0.8541669845581055,
+                "G": 0.20373399555683136,
+                "A": 1
+            },
+            "Icon": "/Game/Assets/2DArt/UI/Icons/Icon_Equipment.Icon_Equipment"
+        },
+        {
+            "Name": "CritSpot",
+            "Color": {
+                "R": 0.953125,
+                "G": 0.048535000532865524,
+                "B": 0.029572000727057457,
+                "A": 1
+            },
+            "Icon": "/Game/Assets/2DArt/UI/Icons/Icon_Crit.Icon_Crit"
+        },
+        {
+            "Name": "Strength",
+            "Color": {
+                "R": 0.008138000033795834,
+                "G": 0.18261900544166565,
+                "B": 0.5208330154418945,
+                "A": 1
+            },
+            "Icon": "/Game/Assets/2DArt/UI/Icons/Icon_StrongCritPoint.Icon_StrongCritPoint"
+        },
+        {
+            "Name": "Behavior",
+            "Color": {
+                "R": 0.09363900125026703,
+                "G": 0.30729201436042786,
+                "B": 0.06179700046777725,
+                "A": 1
+            },
+            "Icon": "/Game/Assets/2DArt/UI/Icons/Icon_ConcussionDebuff.Icon_ConcussionDebuff"
+        },
+        {
+            "Name": "DamageType",
+            "Color": {
+                "R": 0.2698870003223419,
+                "G": 0.023437999188899994,
+                "B": 0.75,
+                "A": 1
+            },
+            "Icon": "/Game/Assets/2DArt/UI/Icons/Icon_Combat.Icon_Combat"
+        }
+    ]
+}

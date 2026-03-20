@@ -1,0 +1,96 @@
+{
+    "RowStruct": "/Script/Icarus.FieldGuideRedirectData",
+    "Defaults": {
+        "DisplayItem": {
+            "RowName": "None",
+            "DataTableName": "D_ItemsStatic"
+        },
+        "HiddenItems": [],
+        "QueryMatchHiddenItem": {
+            "RowName": "None",
+            "DataTableName": "D_TagQueries"
+        }
+    },
+    "Rows": [
+        {
+            "Name": "Test_Pyritic_Crust",
+            "DisplayItem": {
+                "RowName": "FieldGuide_PyriticCrust"
+            },
+            "HiddenItems": [
+                {
+                    "RowName": "Pyritic_Crust_Bauxite",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Pyritic_Crust_Clay",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Pyritic_Crust_Coal",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Pyritic_Crust_Copper",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Pyritic_Crust_Gold",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Pyritic_Crust_Iron",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Pyritic_Crust_Limestone",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Pyritic_Crust_Limestone",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Pyritic_Crust_Oxite",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Pyritic_Crust_Platinum",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Pyritic_Crust_Purple_Exotic",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Pyritic_Crust_Red_Exotic",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Pyritic_Crust_Salt",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Pyritic_Crust_Scoria",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Pyritic_Crust_Silicon",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Pyritic_Crust_Stone",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Pyritic_Crust_Sulfur",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Pyritic_Crust_Titanium",
+                    "DataTableName": "D_ItemsStatic"
+                }
+            ]
+        }
+    ]
+}

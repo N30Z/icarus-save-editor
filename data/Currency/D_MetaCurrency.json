@@ -1,0 +1,174 @@
+{
+    "RowStruct": "/Script/Icarus.MetaCurrency",
+    "Defaults": {
+        "DisplayName": "",
+        "Icon": "None",
+        "Color": {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 0
+        },
+        "Description": "",
+        "ItemStaticData": {
+            "RowName": "None",
+            "DataTableName": "D_ItemsStatic"
+        },
+        "DecoratorText": "",
+        "DecoratorImage": "",
+        "bDisplayOnMainScreen": false
+    },
+    "GenerateEnum": true,
+    "Rows": [
+        {
+            "Name": "Credits",
+            "DisplayName": "NSLOCTEXT(\"D_MetaCurrency\", \"Credits-DisplayName\", \"Ren\")",
+            "Icon": "/Game/Assets/2DArt/UI/Icons/Icon_RenCurrency.Icon_RenCurrency",
+            "Color": {
+                "B": 68,
+                "G": 201,
+                "R": 248,
+                "A": 255
+            },
+            "ItemStaticData": {
+                "RowName": "Ren"
+            },
+            "DecoratorText": "Ren",
+            "DecoratorImage": "Ren",
+            "bDisplayOnMainScreen": true
+        },
+        {
+            "Name": "Exotic1",
+            "DisplayName": "INVTEXT(\"[DNT] Exotics\")",
+            "Icon": "/Game/Assets/2DArt/UI/Icons/Icon_MetaExotic.Icon_MetaExotic",
+            "Color": {
+                "B": 239,
+                "G": 189,
+                "R": 218,
+                "A": 255
+            },
+            "Description": "NSLOCTEXT(\"D_MetaCurrency\", \"Exotic1-Description\", \"The most valuable substance in existence, by lightyears.\")",
+            "ItemStaticData": {
+                "RowName": "MetaResource"
+            },
+            "DecoratorText": "Exotic",
+            "DecoratorImage": "Exotic",
+            "bDisplayOnMainScreen": true
+        },
+        {
+            "Name": "Refund",
+            "DisplayName": "NSLOCTEXT(\"D_MetaCurrency\", \"Refund-DisplayName\", \"Respec Point\")",
+            "Icon": "/Game/Assets/2DArt/UI/Icons/Icon_RetrainingPoints.Icon_RetrainingPoints",
+            "Color": {
+                "B": 39,
+                "G": 186,
+                "R": 255,
+                "A": 255
+            },
+            "DecoratorText": "Retrain",
+            "DecoratorImage": "Retrain"
+        },
+        {
+            "Name": "Exotic_Red",
+            "DisplayName": "INVTEXT(\"[DNT] Red Exotics\")",
+            "Icon": "/Game/Assets/2DArt/UI/Icons/T_ICON_RedExotic.T_ICON_RedExotic",
+            "Color": {
+                "G": 26,
+                "R": 239,
+                "A": 255
+            },
+            "Description": "NSLOCTEXT(\"D_MetaCurrency\", \"Exotic_Red-Description\", \"The most valuable substance in existence, by lightyears.\")",
+            "ItemStaticData": {
+                "RowName": "Exotic_Red"
+            },
+            "DecoratorText": "RedExotics",
+            "DecoratorImage": "RedExotics",
+            "bDisplayOnMainScreen": true,
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "NewFrontiers"
+                }
+            }
+        },
+        {
+            "Name": "Biomass",
+            "DisplayName": "NSLOCTEXT(\"D_MetaCurrency\", \"Biomass-DisplayName\", \"Legendary Biomass\")",
+            "Icon": "/Game/Assets/2DArt/UI/Icons/T_ICON_Biomass.T_ICON_Biomass",
+            "Color": {
+                "B": 101,
+                "G": 165,
+                "A": 255
+            },
+            "ItemStaticData": {
+                "RowName": "Biomass"
+            },
+            "DecoratorText": "Biomass",
+            "DecoratorImage": "Biomass",
+            "bDisplayOnMainScreen": true,
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "Exotic_Uranium",
+            "DisplayName": "NSLOCTEXT(\"D_MetaCurrency\", \"Exotic_Uranium-DisplayName\", \"Uranium Rod\")",
+            "Icon": "/Game/Assets/2DArt/UI/Icons/T_ICON_Uranium.T_ICON_Uranium",
+            "Color": {
+                "G": 255,
+                "R": 228,
+                "A": 255
+            },
+            "ItemStaticData": {
+                "RowName": "Uranium_Rod"
+            },
+            "DecoratorText": "Uranium",
+            "DecoratorImage": "Uranium",
+            "bDisplayOnMainScreen": true,
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Licence",
+            "DisplayName": "NSLOCTEXT(\"D_MetaCurrency\", \"Licence-DisplayName\", \"Legendary Licence\")",
+            "Icon": "/Game/Assets/2DArt/UI/Icons/T_ICON_Licence.T_ICON_Licence",
+            "Color": {
+                "B": 255,
+                "G": 243,
+                "A": 255
+            },
+            "ItemStaticData": {
+                "RowName": "Licence"
+            },
+            "DecoratorText": "Licence",
+            "DecoratorImage": "Licence",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "Biomass_Converter",
+            "DisplayName": "NSLOCTEXT(\"D_MetaCurrency\", \"Biomass_Converter-DisplayName\", \"Flux\")",
+            "Icon": "/Game/Assets/2DArt/UI/Icons/Currency/T_ICON_CURRENCY_NOREX.T_ICON_CURRENCY_NOREX",
+            "Color": {
+                "B": 45,
+                "G": 45,
+                "R": 183,
+                "A": 255
+            },
+            "DecoratorText": "Flux",
+            "DecoratorImage": "Flux",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        }
+    ]
+}

@@ -1,0 +1,281 @@
+{
+    "RowStruct": "/Script/Icarus.IcarusTerrain",
+    "Defaults": {
+        "TerrainName": "None",
+        "Level": "None",
+        "TemperatureMap": "None",
+        "TemperatureMapRange": {
+            "X": -5,
+            "Y": 5
+        },
+        "BiomeMap": "None",
+        "Bounds": "None",
+        "SpawnConfig": {
+            "RowName": "None",
+            "DataTableName": "D_AISpawnConfig"
+        },
+        "FishConfig": {
+            "RowName": "None",
+            "DataTableName": "D_FishSpawnConfig"
+        },
+        "WorldBosses": {},
+        "AudioZoneMap": "None"
+    },
+    "Rows": [
+        {
+            "Name": "Terrain_016",
+            "TerrainName": "NSLOCTEXT(\"D_Terrains\", \"Terrain_016-TerrainName\", \"Olympus\")",
+            "Level": "/Game/Maps/Terrain_016_OLY/Terrain_016.Terrain_016",
+            "BiomeMap": "/Game/Heatmaps/Terrain_016_OLY/GT_Terrain016_Biome.GT_Terrain016_Biome",
+            "Bounds": "/Game/Heatmaps/Terrain_016_OLY/GT_Terrain016_Bounds_Impassable.GT_Terrain016_Bounds_Impassable",
+            "SpawnConfig": {
+                "RowName": "Olympus"
+            },
+            "FishConfig": {
+                "RowName": "Olympus"
+            },
+            "WorldBosses": {
+                "(RowName=\"SandWorm\",DataTableName=\"D_WorldBosses\")": {
+                    "X": 3,
+                    "Y": 3
+                },
+                "(RowName=\"AlphaWolf\",DataTableName=\"D_WorldBosses\")": {
+                    "X": 3,
+                    "Y": 3
+                }
+            },
+            "AudioZoneMap": "/Game/Heatmaps/Terrain_016_OLY/GT_Terrain016_Audio.GT_Terrain016_Audio"
+        },
+        {
+            "Name": "Terrain_017",
+            "TerrainName": "NSLOCTEXT(\"D_Terrains\", \"Terrain_017-TerrainName\", \"Styx\")",
+            "Level": "/Game/Maps/Terrain_017_STYX/Terrain_017.Terrain_017",
+            "BiomeMap": "/Game/Heatmaps/Terrain_017_STYX/GT_Terrain017_Biome.GT_Terrain017_Biome",
+            "Bounds": "/Game/Heatmaps/Terrain_017_STYX/GT_Terrain017_Bounds_Impassable.GT_Terrain017_Bounds_Impassable",
+            "SpawnConfig": {
+                "RowName": "Styx"
+            },
+            "FishConfig": {
+                "RowName": "Styx"
+            },
+            "WorldBosses": {
+                "(RowName=\"SandWorm\",DataTableName=\"D_WorldBosses\")": {
+                    "X": 3,
+                    "Y": 3
+                },
+                "(RowName=\"Scorpion\",DataTableName=\"D_WorldBosses\")": {
+                    "X": 3,
+                    "Y": 3
+                },
+                "(RowName=\"AlphaWolf\",DataTableName=\"D_WorldBosses\")": {
+                    "X": 3,
+                    "Y": 3
+                }
+            },
+            "AudioZoneMap": "/Game/Heatmaps/Terrain_017_STYX/GT_Terrain017_Audio.GT_Terrain017_Audio"
+        },
+        {
+            "Name": "Terrain_019",
+            "TerrainName": "NSLOCTEXT(\"D_Terrains\", \"Terrain_019-TerrainName\", \"Prometheus\")",
+            "Level": "/Game/Maps/Terrain_019_DLC/Terrain_019.Terrain_019",
+            "TemperatureMap": "/Game/Heatmaps/Terrain_019_DLC/GT_Terrain019_Temperature.GT_Terrain019_Temperature",
+            "TemperatureMapRange": {
+                "Y": 100
+            },
+            "BiomeMap": "/Game/Heatmaps/Terrain_019_DLC/GT_Terrain019_Biome.GT_Terrain019_Biome",
+            "Bounds": "/Game/Heatmaps/Terrain_019_DLC/GT_Terrain019_Bounds_Impassable.GT_Terrain019_Bounds_Impassable",
+            "SpawnConfig": {
+                "RowName": "Prometheus"
+            },
+            "FishConfig": {
+                "RowName": "Prometheus"
+            },
+            "WorldBosses": {
+                "(RowName=\"LavaHunter\",DataTableName=\"D_WorldBosses\")": {
+                    "X": 1,
+                    "Y": 1
+                },
+                "(RowName=\"HammerheadSlug\",DataTableName=\"D_WorldBosses\")": {
+                    "X": 1,
+                    "Y": 1
+                }
+            },
+            "AudioZoneMap": "/Game/Heatmaps/Terrain_019_DLC/GT_Terrain019_Audio.GT_Terrain019_Audio",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "NewFrontiers"
+                }
+            }
+        },
+        {
+            "Name": "Terrain_021",
+            "TerrainName": "NSLOCTEXT(\"D_Terrains\", \"Terrain_021-TerrainName\", \"Elysium\")",
+            "Level": "/Game/Maps/Terrain_021_DLC2/Terrain_021.Terrain_021",
+            "TemperatureMapRange": {
+                "Y": 100
+            },
+            "BiomeMap": "/Game/Heatmaps/Terrain_021_DLC2/GT_Terrain021_Biome.GT_Terrain021_Biome",
+            "SpawnConfig": {
+                "RowName": "Elysium"
+            },
+            "FishConfig": {
+                "RowName": "Prometheus"
+            },
+            "WorldBosses": {
+                "(RowName=\"SandWorm\",DataTableName=\"D_WorldBosses\")": {
+                    "X": 2,
+                    "Y": 2
+                },
+                "(RowName=\"HammerheadSlug\",DataTableName=\"D_WorldBosses\")": {
+                    "X": 1,
+                    "Y": 1
+                },
+                "(RowName=\"LavaHunter\",DataTableName=\"D_WorldBosses\")": {
+                    "X": 2,
+                    "Y": 2
+                },
+                "(RowName=\"SandwyrmQueen\",DataTableName=\"D_WorldBosses\")": {
+                    "X": 1,
+                    "Y": 1
+                }
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Space",
+            "TerrainName": "NSLOCTEXT(\"D_Terrains\", \"Space-TerrainName\", \"Orbit\")",
+            "BiomeMap": "/Game/Heatmaps/Outpost_001/GT_Outpost001_Biome.GT_Outpost001_Biome",
+            "SpawnConfig": {
+                "RowName": "Olympus"
+            },
+            "FishConfig": {
+                "RowName": "Olympus"
+            }
+        },
+        {
+            "Name": "Outpost_002",
+            "TerrainName": "NSLOCTEXT(\"D_Terrains\", \"Outpost_002-TerrainName\", \"Arcwood\")",
+            "Level": "/Game/Maps/Outpost_002/Outpost_002.Outpost_002",
+            "BiomeMap": "/Game/Heatmaps/Outpost_001/GT_Outpost001_Biome.GT_Outpost001_Biome",
+            "SpawnConfig": {
+                "RowName": "Outpost_Forest"
+            },
+            "FishConfig": {
+                "RowName": "Outpost_Forest"
+            }
+        },
+        {
+            "Name": "Outpost_003",
+            "TerrainName": "NSLOCTEXT(\"D_Terrains\", \"Outpost_003-TerrainName\", \"Iceholm\")",
+            "Level": "/Game/Maps/Outpost_003/Outpost_003.Outpost_003",
+            "BiomeMap": "/Game/Heatmaps/Outpost_003/GT_Outpost003_Biome.GT_Outpost003_Biome",
+            "SpawnConfig": {
+                "RowName": "Outpost_Arctic"
+            },
+            "FishConfig": {
+                "RowName": "Outpost_Arctic"
+            }
+        },
+        {
+            "Name": "Outpost_004",
+            "TerrainName": "NSLOCTEXT(\"D_Terrains\", \"Outpost_004-TerrainName\", \"Tecton\")",
+            "Level": "/Game/Maps/Outpost_004/Outpost_004.Outpost_004",
+            "BiomeMap": "/Game/Heatmaps/Outpost_004/GT_Outpost004_Biome.GT_Outpost004_Biome",
+            "SpawnConfig": {
+                "RowName": "Outpost_Desert"
+            },
+            "FishConfig": {
+                "RowName": "Outpost_Desert"
+            }
+        },
+        {
+            "Name": "Outpost_005",
+            "TerrainName": "NSLOCTEXT(\"D_Terrains\", \"Outpost_005-TerrainName\", \"Holdfast\")",
+            "Level": "/Game/Maps/Outpost_005/Outpost_005.Outpost_005",
+            "BiomeMap": "/Game/Heatmaps/Outpost_001/GT_Outpost001_Biome.GT_Outpost001_Biome",
+            "SpawnConfig": {
+                "RowName": "Outpost_Forest"
+            },
+            "FishConfig": {
+                "RowName": "Outpost_Forest_2"
+            }
+        },
+        {
+            "Name": "Outpost_006",
+            "TerrainName": "NSLOCTEXT(\"D_Terrains\", \"Outpost_006-TerrainName\", \"Everbark\")",
+            "Level": "/Game/Maps/Outpost_006/Outpost_006.Outpost_006",
+            "BiomeMap": "/Game/Heatmaps/Outpost_001/GT_Outpost001_Biome.GT_Outpost001_Biome",
+            "SpawnConfig": {
+                "RowName": "Outpost_Forest"
+            },
+            "FishConfig": {
+                "RowName": "Outpost_Forest_3"
+            }
+        },
+        {
+            "Name": "Outpost_007",
+            "TerrainName": "NSLOCTEXT(\"D_Terrains\", \"Outpost_007-TerrainName\", \"Cactus\")",
+            "Level": "/Game/Maps/Outpost_007/Outpost_007.Outpost_007",
+            "BiomeMap": "/Game/Heatmaps/Outpost_004/GT_Outpost004_Biome.GT_Outpost004_Biome",
+            "SpawnConfig": {
+                "RowName": "Outpost_Desert"
+            },
+            "FishConfig": {
+                "RowName": "Outpost_Desert_2"
+            }
+        },
+        {
+            "Name": "Outpost_008",
+            "TerrainName": "NSLOCTEXT(\"D_Terrains\", \"Outpost_008-TerrainName\", \"Arcticus\")",
+            "Level": "/Game/Maps/Outpost_008/Outpost_008.Outpost_008",
+            "BiomeMap": "/Game/Heatmaps/Outpost_003/GT_Outpost003_Biome.GT_Outpost003_Biome",
+            "SpawnConfig": {
+                "RowName": "Outpost_Arctic"
+            },
+            "FishConfig": {
+                "RowName": "Outpost_Arctic_2"
+            }
+        },
+        {
+            "Name": "Outpost_009",
+            "TerrainName": "NSLOCTEXT(\"D_Terrains\", \"Outpost_009-TerrainName\", \"Frostfall\")",
+            "Level": "/Game/Maps/Outpost_009/Outpost_009.Outpost_009",
+            "BiomeMap": "/Game/Heatmaps/Outpost_009/GT_Outpost009_Biome.GT_Outpost009_Biome",
+            "SpawnConfig": {
+                "RowName": "Outpost_009"
+            },
+            "FishConfig": {
+                "RowName": "Outpost_009"
+            }
+        },
+        {
+            "Name": "Outpost_DEV",
+            "TerrainName": "NSLOCTEXT(\"D_Terrains\", \"Outpost_DEV-TerrainName\", \"Devland\")",
+            "Level": "/Game/Maps/Outpost_DEV/Outpost_DEV.Outpost_DEV",
+            "BiomeMap": "/Game/Heatmaps/Outpost_001/GT_Outpost001_Biome.GT_Outpost001_Biome",
+            "SpawnConfig": {
+                "RowName": "Outpost_Forest"
+            },
+            "FishConfig": {
+                "RowName": "Outpost_Forest_3"
+            }
+        },
+        {
+            "Name": "Outpost_012",
+            "TerrainName": "NSLOCTEXT(\"D_Terrains\", \"Outpost_012-TerrainName\", \"Aquatica Isle\")",
+            "Level": "/Game/Maps/Outpost_012/Outpost_012.Outpost_012",
+            "BiomeMap": "/Game/Heatmaps/Outpost_012/GT_Outpost012_Biome.GT_Outpost012_Biome",
+            "Bounds": "/Game/Heatmaps/Outpost_012/GT_Outpost012_Bounds.GT_Outpost012_Bounds",
+            "SpawnConfig": {
+                "RowName": "Outpost_012"
+            },
+            "FishConfig": {
+                "RowName": "Outpost_Forest_3"
+            }
+        }
+    ]
+}

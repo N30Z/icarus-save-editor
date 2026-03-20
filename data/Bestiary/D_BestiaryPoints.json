@@ -1,0 +1,65 @@
+{
+    "RowStruct": "/Script/Icarus.BestiaryPoints",
+    "Defaults": {
+        "PointsAwarded": 0
+    },
+    "GenerateEnum": true,
+    "Rows": [
+        {
+            "Name": "Kill",
+            "PointsAwarded": 3
+        },
+        {
+            "Name": "Skin",
+            "PointsAwarded": 2
+        },
+        {
+            "Name": "SkinWithTrophyKnife",
+            "PointsAwarded": 4
+        },
+        {
+            "Name": "SkinOnBench",
+            "PointsAwarded": 4
+        },
+        {
+            "Name": "KilledBy",
+            "PointsAwarded": 4
+        },
+        {
+            "Name": "KillBoss",
+            "PointsAwarded": 40
+        },
+        {
+            "Name": "CraftTrophy",
+            "PointsAwarded": 4
+        },
+        {
+            "Name": "Scanned",
+            "PointsAwarded": 6
+        },
+        {
+            "Name": "KillEpic",
+            "PointsAwarded": 6
+        },
+        {
+            "Name": "DestroyedBeehive",
+            "PointsAwarded": 6
+        },
+        {
+            "Name": "LevelTame",
+            "PointsAwarded": 2
+        },
+        {
+            "Name": "MilkCow",
+            "PointsAwarded": 4
+        },
+        {
+            "Name": "MilkCow_Many",
+            "PointsAwarded": 10
+        },
+        {
+            "Name": "ShearedSheep",
+            "PointsAwarded": 4
+        }
+    ]
+}

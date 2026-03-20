@@ -1,0 +1,215 @@
+{
+    "RowStruct": "/Script/Icarus.NationalFlag",
+    "Defaults": {
+        "Item": {
+            "RowName": "None",
+            "DataTableName": "D_Itemable"
+        },
+        "FlagTexture": "None"
+    },
+    "Rows": [
+        {
+            "Name": "NZ",
+            "Item": {
+                "RowName": "Item_NationalFlag_NewZealand"
+            },
+            "FlagTexture": "/Game/ASS/DEP/DEP_FlagPole/Textures/T_DEP_Flag_NewZealand.T_DEP_Flag_NewZealand"
+        },
+        {
+            "Name": "Australia",
+            "Item": {
+                "RowName": "Item_NationalFlag_Australia"
+            },
+            "FlagTexture": "/Game/ASS/DEP/DEP_FlagPole/Textures/T_DEP_Flag_Australia.T_DEP_Flag_Australia"
+        },
+        {
+            "Name": "Belgium",
+            "Item": {
+                "RowName": "Item_NationalFlag_Belgium"
+            },
+            "FlagTexture": "/Game/ASS/DEP/DEP_FlagPole/Textures/T_DEP_Flag_Belgium.T_DEP_Flag_Belgium"
+        },
+        {
+            "Name": "Brazil",
+            "Item": {
+                "RowName": "Item_NationalFlag_Brazil"
+            },
+            "FlagTexture": "/Game/ASS/DEP/DEP_FlagPole/Textures/T_DEP_Flag_Brazil.T_DEP_Flag_Brazil"
+        },
+        {
+            "Name": "Canada",
+            "Item": {
+                "RowName": "Item_NationalFlag_Canada"
+            },
+            "FlagTexture": "/Game/ASS/DEP/DEP_FlagPole/Textures/T_DEP_Flag_Canada.T_DEP_Flag_Canada"
+        },
+        {
+            "Name": "China",
+            "Item": {
+                "RowName": "Item_NationalFlag_China"
+            },
+            "FlagTexture": "/Game/ASS/DEP/DEP_FlagPole/Textures/T_DEP_Flag_China.T_DEP_Flag_China"
+        },
+        {
+            "Name": "Czech",
+            "Item": {
+                "RowName": "Item_NationalFlag_Czech"
+            },
+            "FlagTexture": "/Game/ASS/DEP/DEP_FlagPole/Textures/T_DEP_Flag_CzechRepublic.T_DEP_Flag_CzechRepublic"
+        },
+        {
+            "Name": "Denmark",
+            "Item": {
+                "RowName": "Item_NationalFlag_Denmark"
+            },
+            "FlagTexture": "/Game/ASS/DEP/DEP_FlagPole/Textures/T_DEP_Flag_Denmark.T_DEP_Flag_Denmark"
+        },
+        {
+            "Name": "EuropeanUnion",
+            "Item": {
+                "RowName": "Item_NationalFlag_EuropeanUnion"
+            },
+            "FlagTexture": "/Game/ASS/DEP/DEP_FlagPole/Textures/T_DEP_Flag_EuropeanUnion.T_DEP_Flag_EuropeanUnion"
+        },
+        {
+            "Name": "Finland",
+            "Item": {
+                "RowName": "Item_NationalFlag_Finland"
+            },
+            "FlagTexture": "/Game/ASS/DEP/DEP_FlagPole/Textures/T_DEP_Flag_Finland.T_DEP_Flag_Finland"
+        },
+        {
+            "Name": "France",
+            "Item": {
+                "RowName": "Item_NationalFlag_France"
+            },
+            "FlagTexture": "/Game/ASS/DEP/DEP_FlagPole/Textures/T_DEP_Flag_France.T_DEP_Flag_France"
+        },
+        {
+            "Name": "Germany",
+            "Item": {
+                "RowName": "Item_NationalFlag_Germany"
+            },
+            "FlagTexture": "/Game/ASS/DEP/DEP_FlagPole/Textures/T_DEP_Flag_Germany.T_DEP_Flag_Germany"
+        },
+        {
+            "Name": "Hungry",
+            "Item": {
+                "RowName": "Item_NationalFlag_Hungry"
+            },
+            "FlagTexture": "/Game/ASS/DEP/DEP_FlagPole/Textures/T_DEP_Flag_Hungary.T_DEP_Flag_Hungary"
+        },
+        {
+            "Name": "Italy",
+            "Item": {
+                "RowName": "Item_NationalFlag_Italy"
+            },
+            "FlagTexture": "/Game/ASS/DEP/DEP_FlagPole/Textures/T_DEP_Flag_Italy.T_DEP_Flag_Italy"
+        },
+        {
+            "Name": "Japan",
+            "Item": {
+                "RowName": "Item_NationalFlag_Japan"
+            },
+            "FlagTexture": "/Game/ASS/DEP/DEP_FlagPole/Textures/T_DEP_Flag_Japan.T_DEP_Flag_Japan"
+        },
+        {
+            "Name": "Netherlands",
+            "Item": {
+                "RowName": "Item_NationalFlag_Netherlands"
+            },
+            "FlagTexture": "/Game/ASS/DEP/DEP_FlagPole/Textures/T_DEP_Flag_Netherlands.T_DEP_Flag_Netherlands"
+        },
+        {
+            "Name": "Norway",
+            "Item": {
+                "RowName": "Item_NationalFlag_Norway"
+            },
+            "FlagTexture": "/Game/ASS/DEP/DEP_FlagPole/Textures/T_DEP_Flag_Norway.T_DEP_Flag_Norway"
+        },
+        {
+            "Name": "Romania",
+            "Item": {
+                "RowName": "Item_NationalFlag_Romania"
+            },
+            "FlagTexture": "/Game/ASS/DEP/DEP_FlagPole/Textures/T_DEP_Flag_Romania.T_DEP_Flag_Romania"
+        },
+        {
+            "Name": "Russia",
+            "Item": {
+                "RowName": "Item_NationalFlag_Russia"
+            },
+            "FlagTexture": "/Game/ASS/DEP/DEP_FlagPole/Textures/T_DEP_Flag_Russia.T_DEP_Flag_Russia"
+        },
+        {
+            "Name": "SouthAfrica",
+            "Item": {
+                "RowName": "Item_NationalFlag_SouthAfrica"
+            },
+            "FlagTexture": "/Game/ASS/DEP/DEP_FlagPole/Textures/T_DEP_Flag_SouthAfrica.T_DEP_Flag_SouthAfrica"
+        },
+        {
+            "Name": "SouthKorea",
+            "Item": {
+                "RowName": "Item_NationalFlag_SouthKorea"
+            },
+            "FlagTexture": "/Game/ASS/DEP/DEP_FlagPole/Textures/T_DEP_Flag_SouthKorea.T_DEP_Flag_SouthKorea"
+        },
+        {
+            "Name": "Spain",
+            "Item": {
+                "RowName": "Item_NationalFlag_Spain"
+            },
+            "FlagTexture": "/Game/ASS/DEP/DEP_FlagPole/Textures/T_DEP_Flag_Spain.T_DEP_Flag_Spain"
+        },
+        {
+            "Name": "Sweden",
+            "Item": {
+                "RowName": "Item_NationalFlag_Sweden"
+            },
+            "FlagTexture": "/Game/ASS/DEP/DEP_FlagPole/Textures/T_DEP_Flag_Sweden.T_DEP_Flag_Sweden"
+        },
+        {
+            "Name": "Switzerland",
+            "Item": {
+                "RowName": "Item_NationalFlag_Switzerland"
+            },
+            "FlagTexture": "/Game/ASS/DEP/DEP_FlagPole/Textures/T_DEP_Flag_Switzerland.T_DEP_Flag_Switzerland"
+        },
+        {
+            "Name": "Taiwan",
+            "Item": {
+                "RowName": "Item_NationalFlag_Taiwan"
+            },
+            "FlagTexture": "/Game/ASS/DEP/DEP_FlagPole/Textures/T_DEP_Flag_Taiwan.T_DEP_Flag_Taiwan"
+        },
+        {
+            "Name": "Turkey",
+            "Item": {
+                "RowName": "Item_NationalFlag_Turkey"
+            },
+            "FlagTexture": "/Game/ASS/DEP/DEP_FlagPole/Textures/T_DEP_Flag_Turkey.T_DEP_Flag_Turkey"
+        },
+        {
+            "Name": "Ukraine",
+            "Item": {
+                "RowName": "Item_NationalFlag_Ukraine"
+            },
+            "FlagTexture": "/Game/ASS/DEP/DEP_FlagPole/Textures/T_DEP_Flag_Ukraine.T_DEP_Flag_Ukraine"
+        },
+        {
+            "Name": "UnitedKingdom",
+            "Item": {
+                "RowName": "Item_NationalFlag_UnitedKingdom"
+            },
+            "FlagTexture": "/Game/ASS/DEP/DEP_FlagPole/Textures/T_DEP_Flag_UnitedKingdom.T_DEP_Flag_UnitedKingdom"
+        },
+        {
+            "Name": "UnitedStates",
+            "Item": {
+                "RowName": "Item_NationalFlag_UnitedStates"
+            },
+            "FlagTexture": "/Game/ASS/DEP/DEP_FlagPole/Textures/T_DEP_Flag_UnitedStates.T_DEP_Flag_UnitedStates"
+        }
+    ]
+}

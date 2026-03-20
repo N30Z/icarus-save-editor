@@ -1,0 +1,511 @@
+{
+    "RowStruct": "/Script/Icarus.RecipeSet",
+    "Defaults": {
+        "RecipeSetName": "",
+        "DisplayText": "",
+        "RecipeSetIcon": "None",
+        "ExperienceMultiplier": 10,
+        "bAllowRefundOfRecipesOnDestroy": true
+    },
+    "GenerateEnum": true,
+    "Rows": [
+        {
+            "Name": "Character",
+            "RecipeSetName": "NSLOCTEXT(\"D_RecipeSets\", \"Character-RecipeSetName\", \"Character\")",
+            "RecipeSetIcon": "/Game/Assets/2DArt/UI/Icons/Icon_PlayerCrafting.Icon_PlayerCrafting",
+            "ExperienceMultiplier": 0.20000000298023224
+        },
+        {
+            "Name": "Campfire",
+            "RecipeSetName": "NSLOCTEXT(\"D_RecipeSets\", \"Campfire-RecipeSetName\", \"Campfire\")",
+            "RecipeSetIcon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Campfire.ITEM_Campfire",
+            "ExperienceMultiplier": 0.20000000298023224,
+            "bAllowRefundOfRecipesOnDestroy": false
+        },
+        {
+            "Name": "Crafting_Bench",
+            "RecipeSetName": "NSLOCTEXT(\"D_RecipeSets\", \"Crafting_Bench-RecipeSetName\", \"Crafting Bench\")",
+            "RecipeSetIcon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Crafting_Bench.ITEM_Crafting_Bench",
+            "ExperienceMultiplier": 0.20000000298023224
+        },
+        {
+            "Name": "Mortar_And_Pestle",
+            "RecipeSetName": "NSLOCTEXT(\"D_RecipeSets\", \"Mortar_And_Pestle-RecipeSetName\", \"Mortar And Pestle\")",
+            "RecipeSetIcon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Kit_Mortar_And_Pestle.ITEM_Kit_Mortar_And_Pestle",
+            "ExperienceMultiplier": 0.20000000298023224,
+            "bAllowRefundOfRecipesOnDestroy": false
+        },
+        {
+            "Name": "Oxite_Dissolver",
+            "RecipeSetName": "NSLOCTEXT(\"D_RecipeSets\", \"Oxite_Dissolver-RecipeSetName\", \"Oxite Dissolver\")",
+            "RecipeSetIcon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Kit_Oxite_Dissolver.ITEM_Kit_Oxite_Dissolver",
+            "ExperienceMultiplier": 0.20000000298023224,
+            "bAllowRefundOfRecipesOnDestroy": false
+        },
+        {
+            "Name": "Stone_Furnace",
+            "RecipeSetName": "NSLOCTEXT(\"D_RecipeSets\", \"Stone_Furnace-RecipeSetName\", \"Stone Furnace\")",
+            "RecipeSetIcon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Kit_Stone_Furnace.ITEM_Kit_Stone_Furnace",
+            "ExperienceMultiplier": 0.20000000298023224
+        },
+        {
+            "Name": "Concrete_Furnace",
+            "RecipeSetName": "NSLOCTEXT(\"D_RecipeSets\", \"Concrete_Furnace-RecipeSetName\", \"Concrete Furnace\")",
+            "RecipeSetIcon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Kit_Concrete_Furnace.ITEM_Kit_Concrete_Furnace",
+            "ExperienceMultiplier": 0.20000000298023224
+        },
+        {
+            "Name": "Electric_Furnace",
+            "RecipeSetName": "NSLOCTEXT(\"D_RecipeSets\", \"Electric_Furnace-RecipeSetName\", \"Electric Furnace\")",
+            "RecipeSetIcon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Kit_Electric_Furnace.ITEM_Kit_Electric_Furnace",
+            "ExperienceMultiplier": 0.20000000298023224
+        },
+        {
+            "Name": "Machining_Bench",
+            "RecipeSetName": "NSLOCTEXT(\"D_RecipeSets\", \"Machining_Bench-RecipeSetName\", \"Machining Bench\")",
+            "RecipeSetIcon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Kit_Machining_Bench.ITEM_Kit_Machining_Bench",
+            "ExperienceMultiplier": 0.20000000298023224
+        },
+        {
+            "Name": "Composter",
+            "RecipeSetName": "NSLOCTEXT(\"D_RecipeSets\", \"Composter-RecipeSetName\", \"Composter\")",
+            "DisplayText": "NSLOCTEXT(\"D_RecipeSets\", \"Composter-DisplayText\", \"An active water connection will increase processing speed and reduce crafting cost.\")",
+            "RecipeSetIcon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Composter.ITEM_Composter",
+            "ExperienceMultiplier": 0.20000000298023224,
+            "bAllowRefundOfRecipesOnDestroy": false
+        },
+        {
+            "Name": "Material_Processor",
+            "RecipeSetName": "NSLOCTEXT(\"D_RecipeSets\", \"Material_Processor-RecipeSetName\", \"Material Processor\")",
+            "RecipeSetIcon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Material_Processor.ITEM_Material_Processor",
+            "ExperienceMultiplier": 0.20000000298023224
+        },
+        {
+            "Name": "Meta_Extractor",
+            "RecipeSetName": "NSLOCTEXT(\"D_RecipeSets\", \"Meta_Extractor-RecipeSetName\", \"Extractor\")",
+            "RecipeSetIcon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Kit_Extractor.ITEM_Kit_Extractor",
+            "ExperienceMultiplier": 0.20000000298023224
+        },
+        {
+            "Name": "Cooking_Station",
+            "RecipeSetName": "NSLOCTEXT(\"D_RecipeSets\", \"Cooking_Station-RecipeSetName\", \"Cooking Station\")",
+            "RecipeSetIcon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Cooking_Station.ITEM_Cooking_Station",
+            "ExperienceMultiplier": 0.20000000298023224,
+            "bAllowRefundOfRecipesOnDestroy": false
+        },
+        {
+            "Name": "Fabricator",
+            "RecipeSetName": "NSLOCTEXT(\"D_RecipeSets\", \"Fabricator-RecipeSetName\", \"Fabricator\")",
+            "RecipeSetIcon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Fabricator.ITEM_Fabricator",
+            "ExperienceMultiplier": 0.20000000298023224
+        },
+        {
+            "Name": "Skinning_Bench",
+            "RecipeSetName": "NSLOCTEXT(\"D_RecipeSets\", \"Skinning_Bench-RecipeSetName\", \"Skinning Bench\")",
+            "RecipeSetIcon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Kit_Skinning_Bench.ITEM_Kit_Skinning_Bench",
+            "ExperienceMultiplier": 1.7999999523162842,
+            "bAllowRefundOfRecipesOnDestroy": false
+        },
+        {
+            "Name": "Carpentry_Bench",
+            "RecipeSetName": "NSLOCTEXT(\"D_RecipeSets\", \"Carpentry_Bench-RecipeSetName\", \"Carpentry Bench\")",
+            "RecipeSetIcon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Carpentry_Bench.ITEM_Carpentry_Bench",
+            "ExperienceMultiplier": 0.20000000298023224
+        },
+        {
+            "Name": "Carpentry_Bench_T4",
+            "RecipeSetName": "NSLOCTEXT(\"D_RecipeSets\", \"Carpentry_Bench_T4-RecipeSetName\", \"Electric Carpentry Bench\")",
+            "RecipeSetIcon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Carpentry_Bench_T4.ITEM_Carpentry_Bench_T4",
+            "ExperienceMultiplier": 0.20000000298023224
+        },
+        {
+            "Name": "Composter_Wood",
+            "RecipeSetName": "NSLOCTEXT(\"D_RecipeSets\", \"Composter_Wood-RecipeSetName\", \"Wood Composter\")",
+            "RecipeSetIcon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Composter_Wood.ITEM_Composter_Wood",
+            "ExperienceMultiplier": 0.20000000298023224,
+            "bAllowRefundOfRecipesOnDestroy": false
+        },
+        {
+            "Name": "Rain_Collector",
+            "RecipeSetName": "NSLOCTEXT(\"D_RecipeSets\", \"Rain_Collector-RecipeSetName\", \"Rain Collector\")",
+            "RecipeSetIcon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Rain_Reservoir.ITEM_Rain_Reservoir",
+            "ExperienceMultiplier": 0.20000000298023224,
+            "bAllowRefundOfRecipesOnDestroy": false
+        },
+        {
+            "Name": "Metal_Oxite_Dissolver",
+            "RecipeSetName": "NSLOCTEXT(\"D_RecipeSets\", \"Metal_Oxite_Dissolver-RecipeSetName\", \"Metal Oxite Dissolver\")",
+            "RecipeSetIcon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Metal_Oxite_Dissolver.ITEM_Metal_Oxite_Dissolver",
+            "ExperienceMultiplier": 0.20000000298023224,
+            "bAllowRefundOfRecipesOnDestroy": false
+        },
+        {
+            "Name": "Armor_Bench",
+            "RecipeSetName": "NSLOCTEXT(\"D_RecipeSets\", \"Armor_Bench-RecipeSetName\", \"Textiles Bench\")",
+            "RecipeSetIcon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Armor_Bench.T_ITEM_Armor_Bench",
+            "ExperienceMultiplier": 0.20000000298023224
+        },
+        {
+            "Name": "Masonry_Bench",
+            "RecipeSetName": "NSLOCTEXT(\"D_RecipeSets\", \"Masonry_Bench-RecipeSetName\", \"Masonry Bench\")",
+            "RecipeSetIcon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Masonry_Bench.ITEM_Masonry_Bench",
+            "ExperienceMultiplier": 0.20000000298023224
+        },
+        {
+            "Name": "Masonry_Bench_T4",
+            "RecipeSetName": "NSLOCTEXT(\"D_RecipeSets\", \"Masonry_Bench_T4-RecipeSetName\", \"Electric Masonry Bench\")",
+            "DisplayText": "NSLOCTEXT(\"D_RecipeSets\", \"Masonry_Bench_T4-DisplayText\", \"An active water connection will increase processing speed and reduce crafting cost.\")",
+            "RecipeSetIcon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Masonry_Bench_T4.ITEM_Masonry_Bench_T4",
+            "ExperienceMultiplier": 0.20000000298023224
+        },
+        {
+            "Name": "Cement_Mixer",
+            "RecipeSetName": "NSLOCTEXT(\"D_RecipeSets\", \"Cement_Mixer-RecipeSetName\", \"Cement Mixer\")",
+            "DisplayText": "NSLOCTEXT(\"D_RecipeSets\", \"Cement_Mixer-DisplayText\", \"An active water connection will increase processing speed and refund a portion of crafting costs.\")",
+            "RecipeSetIcon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Cement_Mixer.ITEM_Cement_Mixer",
+            "ExperienceMultiplier": 0.20000000298023224
+        },
+        {
+            "Name": "Generator_Fuel",
+            "RecipeSetName": "NSLOCTEXT(\"D_RecipeSets\", \"Generator_Fuel-RecipeSetName\", \"Generator\")",
+            "RecipeSetIcon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Kit_Generator.ITEM_Kit_Generator",
+            "ExperienceMultiplier": 0.20000000298023224,
+            "bAllowRefundOfRecipesOnDestroy": false
+        },
+        {
+            "Name": "Herbalism_Bench",
+            "RecipeSetName": "NSLOCTEXT(\"D_RecipeSets\", \"Herbalism_Bench-RecipeSetName\", \"Herbalism Bench\")",
+            "RecipeSetIcon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Herbalism_Bench.ITEM_Herbalism_Bench",
+            "ExperienceMultiplier": 0.20000000298023224,
+            "bAllowRefundOfRecipesOnDestroy": false
+        },
+        {
+            "Name": "Chemistry_Bench",
+            "RecipeSetName": "NSLOCTEXT(\"D_RecipeSets\", \"Chemistry_Bench-RecipeSetName\", \"Chemistry Bench\")",
+            "RecipeSetIcon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Chemistry_Bench.ITEM_Chemistry_Bench",
+            "ExperienceMultiplier": 0.20000000298023224,
+            "bAllowRefundOfRecipesOnDestroy": false
+        },
+        {
+            "Name": "Trophy_Bench",
+            "RecipeSetName": "NSLOCTEXT(\"D_RecipeSets\", \"Trophy_Bench-RecipeSetName\", \"Trophy Bench\")",
+            "RecipeSetIcon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Trophy_Bench.ITEM_Trophy_Bench",
+            "ExperienceMultiplier": 0.20000000298023224,
+            "bAllowRefundOfRecipesOnDestroy": false
+        },
+        {
+            "Name": "Repair_Bench",
+            "RecipeSetName": "NSLOCTEXT(\"D_RecipeSets\", \"Repair_Bench-RecipeSetName\", \"Repair Bench\")",
+            "RecipeSetIcon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Repair_Bench.ITEM_Repair_Bench",
+            "ExperienceMultiplier": 0.20000000298023224
+        },
+        {
+            "Name": "Anvil_Bench",
+            "RecipeSetName": "NSLOCTEXT(\"D_RecipeSets\", \"Anvil_Bench-RecipeSetName\", \"Anvil Bench\")",
+            "RecipeSetIcon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Anvil_Bench.ITEM_Anvil_Bench",
+            "ExperienceMultiplier": 0.20000000298023224
+        },
+        {
+            "Name": "Firepit",
+            "RecipeSetName": "NSLOCTEXT(\"D_RecipeSets\", \"Firepit-RecipeSetName\", \"Firepit\")",
+            "RecipeSetIcon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_FirePit.ITEM_FirePit",
+            "ExperienceMultiplier": 0.20000000298023224,
+            "bAllowRefundOfRecipesOnDestroy": false
+        },
+        {
+            "Name": "Glassworking_Bench",
+            "RecipeSetName": "NSLOCTEXT(\"D_RecipeSets\", \"Glassworking_Bench-RecipeSetName\", \"Glassworking Bench\")",
+            "RecipeSetIcon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Glassworking_Bench_V2.ITEM_Glassworking_Bench_V2",
+            "ExperienceMultiplier": 0.20000000298023224
+        },
+        {
+            "Name": "Kitchen_Bench",
+            "RecipeSetName": "NSLOCTEXT(\"D_RecipeSets\", \"Kitchen_Bench-RecipeSetName\", \"Kitchen Bench\")",
+            "RecipeSetIcon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Kitchen_Bench.ITEM_Kitchen_Bench",
+            "ExperienceMultiplier": 0.20000000298023224,
+            "bAllowRefundOfRecipesOnDestroy": false
+        },
+        {
+            "Name": "Medicine_Bench",
+            "RecipeSetName": "NSLOCTEXT(\"D_RecipeSets\", \"Medicine_Bench-RecipeSetName\", \"Medicine Bench\")",
+            "RecipeSetIcon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Medicine_Bench.T_ITEM_Medicine_Bench",
+            "ExperienceMultiplier": 0.20000000298023224,
+            "bAllowRefundOfRecipesOnDestroy": false
+        },
+        {
+            "Name": "Kitchen_Stove",
+            "RecipeSetName": "NSLOCTEXT(\"D_RecipeSets\", \"Kitchen_Stove-RecipeSetName\", \"Kitchen Stove\")",
+            "RecipeSetIcon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Kitchen_Stove.ITEM_Kitchen_Stove",
+            "ExperienceMultiplier": 0.20000000298023224,
+            "bAllowRefundOfRecipesOnDestroy": false
+        },
+        {
+            "Name": "PotBellyStove",
+            "RecipeSetName": "NSLOCTEXT(\"D_RecipeSets\", \"PotBellyStove-RecipeSetName\", \"Potbelly Stove\")",
+            "RecipeSetIcon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_PotBellyStove.ITEM_PotBellyStove",
+            "ExperienceMultiplier": 0.20000000298023224,
+            "bAllowRefundOfRecipesOnDestroy": false
+        },
+        {
+            "Name": "Drying_Rack",
+            "RecipeSetName": "NSLOCTEXT(\"D_RecipeSets\", \"Drying_Rack-RecipeSetName\", \"Drying Rack\")",
+            "RecipeSetIcon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_DryingRack.ITEM_DryingRack",
+            "ExperienceMultiplier": 0.20000000298023224,
+            "bAllowRefundOfRecipesOnDestroy": false
+        },
+        {
+            "Name": "Rustic_Decorations_Bench",
+            "RecipeSetName": "NSLOCTEXT(\"D_RecipeSets\", \"Rustic_Decorations_Bench-RecipeSetName\", \"Decoration Bench\")",
+            "RecipeSetIcon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Rustic_Decoration_Bench.ITEM_Rustic_Decoration_Bench",
+            "ExperienceMultiplier": 0.20000000298023224
+        },
+        {
+            "Name": "Alteration_Bench",
+            "RecipeSetName": "NSLOCTEXT(\"D_RecipeSets\", \"Alteration_Bench-RecipeSetName\", \"Alteration Bench\")",
+            "DisplayText": "NSLOCTEXT(\"D_RecipeSets\", \"Alteration_Bench-DisplayText\", \"Interact with the right side of the bench to connect attachments.\")",
+            "RecipeSetIcon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Alteration_Bench.ITEM_Alteration_Bench",
+            "ExperienceMultiplier": 0.20000000298023224
+        },
+        {
+            "Name": "Advanced_Alteration_Bench",
+            "RecipeSetName": "NSLOCTEXT(\"D_RecipeSets\", \"Advanced_Alteration_Bench-RecipeSetName\", \"Advanced Alteration Bench\")",
+            "DisplayText": "NSLOCTEXT(\"D_RecipeSets\", \"Advanced_Alteration_Bench-DisplayText\", \"Interact with the right side of the bench to connect attachments.\")",
+            "RecipeSetIcon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Advanced_Alteration_Bench.ITEM_Advanced_Alteration_Bench",
+            "ExperienceMultiplier": 0.20000000298023224
+        },
+        {
+            "Name": "Advanced_Armor_Bench",
+            "RecipeSetName": "NSLOCTEXT(\"D_RecipeSets\", \"Advanced_Armor_Bench-RecipeSetName\", \"Advanced Textiles Bench\")",
+            "RecipeSetIcon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Advanced_Armor_Bench.ITEM_Advanced_Armor_Bench",
+            "ExperienceMultiplier": 0.20000000298023224
+        },
+        {
+            "Name": "Electric_Armor_Bench",
+            "RecipeSetName": "NSLOCTEXT(\"D_RecipeSets\", \"Electric_Armor_Bench-RecipeSetName\", \"Electric Textiles Bench\")",
+            "RecipeSetIcon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Electric_Armor_Bench.ITEM_Electric_Armor_Bench",
+            "ExperienceMultiplier": 0.20000000298023224
+        },
+        {
+            "Name": "Exotic_Processor",
+            "RecipeSetName": "NSLOCTEXT(\"D_RecipeSets\", \"Exotic_Processor-RecipeSetName\", \"Exotic Processor\")",
+            "RecipeSetIcon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Composter.ITEM_Composter",
+            "ExperienceMultiplier": 0.20000000298023224,
+            "bAllowRefundOfRecipesOnDestroy": false,
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "NewFrontiers"
+                }
+            }
+        },
+        {
+            "Name": "Electric_Stove",
+            "RecipeSetName": "NSLOCTEXT(\"D_RecipeSets\", \"Electric_Stove-RecipeSetName\", \"Electric Stove\")",
+            "RecipeSetIcon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Electric_Stove.ITEM_Electric_Stove",
+            "ExperienceMultiplier": 0.20000000298023224,
+            "bAllowRefundOfRecipesOnDestroy": false
+        },
+        {
+            "Name": "Advanced_Kitchen_Bench",
+            "RecipeSetName": "NSLOCTEXT(\"D_RecipeSets\", \"Advanced_Kitchen_Bench-RecipeSetName\", \"Advanced Kitchen Bench\")",
+            "RecipeSetIcon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Advanced_Kitchen_Bench.ITEM_Advanced_Kitchen_Bench",
+            "ExperienceMultiplier": 0.20000000298023224,
+            "bAllowRefundOfRecipesOnDestroy": false
+        },
+        {
+            "Name": "Fishing_Bench_Recipes",
+            "RecipeSetName": "NSLOCTEXT(\"D_RecipeSets\", \"Fishing_Bench_Recipes-RecipeSetName\", \"Basic Fishing Bench\")",
+            "DisplayText": "NSLOCTEXT(\"D_RecipeSets\", \"Fishing_Bench_Recipes-DisplayText\", \"Interact with the left side of the bench to craft fishing equipment.\")",
+            "RecipeSetIcon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Fishing_Bench.ITEM_Fishing_Bench",
+            "ExperienceMultiplier": 0.20000000298023224,
+            "bAllowRefundOfRecipesOnDestroy": false
+        },
+        {
+            "Name": "Fishing_Bench_Rods",
+            "RecipeSetName": "NSLOCTEXT(\"D_RecipeSets\", \"Fishing_Bench_Rods-RecipeSetName\", \"Basic Fishing Bench\")",
+            "DisplayText": "NSLOCTEXT(\"D_RecipeSets\", \"Fishing_Bench_Rods-DisplayText\", \"Interact with the right side of the bench to fillet fish.\")",
+            "RecipeSetIcon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Fishing_Bench.ITEM_Fishing_Bench",
+            "ExperienceMultiplier": 0.20000000298023224
+        },
+        {
+            "Name": "Anvil_Bench_T3",
+            "RecipeSetName": "NSLOCTEXT(\"D_RecipeSets\", \"Anvil_Bench_T3-RecipeSetName\", \"Forge\")",
+            "RecipeSetIcon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Anvil_Bench_T3.T_ITEM_Anvil_Bench_T3",
+            "ExperienceMultiplier": 0.20000000298023224
+        },
+        {
+            "Name": "Anvil_Bench_T4",
+            "RecipeSetName": "NSLOCTEXT(\"D_RecipeSets\", \"Anvil_Bench_T4-RecipeSetName\", \"Foundry\")",
+            "RecipeSetIcon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Anvil_Bench_T4.T_ITEM_Anvil_Bench_T4",
+            "ExperienceMultiplier": 0.20000000298023224
+        },
+        {
+            "Name": "Masonry_Bench_T3",
+            "RecipeSetName": "NSLOCTEXT(\"D_RecipeSets\", \"Masonry_Bench_T3-RecipeSetName\", \"Advanced Masonry Bench\")",
+            "DisplayText": "NSLOCTEXT(\"D_RecipeSets\", \"Masonry_Bench_T3-DisplayText\", \"An active water connection will increase processing speed and reduce crafting cost.\")",
+            "RecipeSetIcon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Masonry_Bench_T3.T_ITEM_Masonry_Bench_T3",
+            "ExperienceMultiplier": 0.20000000298023224
+        },
+        {
+            "Name": "RefundOnly",
+            "RecipeSetName": "INVTEXT(\"[DNT] Refund Only\")",
+            "DisplayText": "INVTEXT(\"[DNT] Intentially only for recipes to allow refund but no craft\")",
+            "RecipeSetIcon": "/Game/Assets/2DArt/UI/Icons/Icon_Close.Icon_Close",
+            "ExperienceMultiplier": 0.20000000298023224
+        },
+        {
+            "Name": "T3_Smoker",
+            "RecipeSetName": "NSLOCTEXT(\"D_RecipeSets\", \"T3_Smoker-RecipeSetName\", \"Smoker\")",
+            "RecipeSetIcon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Smoker_T3.T_ITEM_Smoker_T3",
+            "ExperienceMultiplier": 0.20000000298023224,
+            "bAllowRefundOfRecipesOnDestroy": false
+        },
+        {
+            "Name": "T4_Smoker",
+            "RecipeSetName": "INVTEXT(\"[DNT] Electic Smoker\")",
+            "RecipeSetIcon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Smoker_T4.T_ITEM_Smoker_T4",
+            "ExperienceMultiplier": 0.20000000298023224,
+            "bAllowRefundOfRecipesOnDestroy": false
+        },
+        {
+            "Name": "WaterPurifierT2",
+            "RecipeSetName": "NSLOCTEXT(\"D_RecipeSets\", \"WaterPurifierT2-RecipeSetName\", \"Water Purifier\")",
+            "RecipeSetIcon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Water_Purifier_T2.T_ITEM_Water_Purifier_T2",
+            "ExperienceMultiplier": 0.20000000298023224
+        },
+        {
+            "Name": "Cleaning_Device",
+            "RecipeSetName": "NSLOCTEXT(\"D_RecipeSets\", \"Cleaning_Device-RecipeSetName\", \"Cleaning Device\")",
+            "DisplayText": "NSLOCTEXT(\"D_RecipeSets\", \"Cleaning_Device-DisplayText\", \"An active water connection will increase processing speed.\")",
+            "RecipeSetIcon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_T3_Cleaning_Device.T_ITEM_T3_Cleaning_Device",
+            "ExperienceMultiplier": 0.20000000298023224
+        },
+        {
+            "Name": "Animal_Bench",
+            "RecipeSetName": "NSLOCTEXT(\"D_RecipeSets\", \"Animal_Bench-RecipeSetName\", \"Ranching Station\")",
+            "RecipeSetIcon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Animal_Bench.T_ITEM_Animal_Bench",
+            "ExperienceMultiplier": 0.20000000298023224
+        },
+        {
+            "Name": "Butchery_Bench",
+            "RecipeSetName": "NSLOCTEXT(\"D_RecipeSets\", \"Butchery_Bench-RecipeSetName\", \"Butchery Bench\")",
+            "RecipeSetIcon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Butchery_Bench.T_ITEM_Butchery_Bench",
+            "ExperienceMultiplier": 0.20000000298023224,
+            "bAllowRefundOfRecipesOnDestroy": false
+        },
+        {
+            "Name": "Advanced_Butchery_Bench",
+            "RecipeSetName": "NSLOCTEXT(\"D_RecipeSets\", \"Advanced_Butchery_Bench-RecipeSetName\", \"Advanced Butchery Bench\")",
+            "RecipeSetIcon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Advanced_Butchery_Bench.T_ITEM_Advanced_Butchery_Bench",
+            "ExperienceMultiplier": 0.20000000298023224,
+            "bAllowRefundOfRecipesOnDestroy": false
+        },
+        {
+            "Name": "Manufacturer",
+            "RecipeSetName": "NSLOCTEXT(\"D_RecipeSets\", \"Manufacturer-RecipeSetName\", \"Manufacturer\")",
+            "RecipeSetIcon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Manufacturer.T_ITEM_Manufacturer",
+            "ExperienceMultiplier": 0.20000000298023224,
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Polymerizer",
+            "RecipeSetName": "NSLOCTEXT(\"D_RecipeSets\", \"Polymerizer-RecipeSetName\", \"Polymerizer\")",
+            "RecipeSetIcon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Polymerizer.T_ITEM_Polymerizer",
+            "ExperienceMultiplier": 0.20000000298023224,
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Seed_Extractor",
+            "RecipeSetName": "NSLOCTEXT(\"D_RecipeSets\", \"Seed_Extractor-RecipeSetName\", \"Seed Extractor\")",
+            "RecipeSetIcon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Kit_Mortar_And_Pestle.ITEM_Kit_Mortar_And_Pestle",
+            "ExperienceMultiplier": 0.20000000298023224,
+            "bAllowRefundOfRecipesOnDestroy": false
+        },
+        {
+            "Name": "Uranium_Coverter",
+            "RecipeSetName": "NSLOCTEXT(\"D_RecipeSets\", \"Uranium_Coverter-RecipeSetName\", \"Nuclear Centrifuge\")",
+            "RecipeSetIcon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Uranium_Converter.T_ITEM_Uranium_Converter",
+            "ExperienceMultiplier": 0.20000000298023224,
+            "bAllowRefundOfRecipesOnDestroy": false,
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Vestige_Exchange",
+            "RecipeSetName": "NSLOCTEXT(\"D_RecipeSets\", \"Vestige_Exchange-RecipeSetName\", \"Vestige Exchange\")",
+            "RecipeSetIcon": "/Game/Assets/2DArt/UI/Icons/MapIcons/T_Icon_Map_Prospector.T_Icon_Map_Prospector",
+            "ExperienceMultiplier": 0.20000000298023224,
+            "bAllowRefundOfRecipesOnDestroy": false,
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Biomass_Exchange",
+            "RecipeSetName": "NSLOCTEXT(\"D_RecipeSets\", \"Biomass_Exchange-RecipeSetName\", \"Biomass Exchange\")",
+            "RecipeSetIcon": "/Game/Assets/2DArt/UI/Icons/MapIcons/T_Icon_Map_Prospector.T_Icon_Map_Prospector",
+            "ExperienceMultiplier": 0.20000000298023224,
+            "bAllowRefundOfRecipesOnDestroy": false,
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Crops_Exchange",
+            "RecipeSetName": "NSLOCTEXT(\"D_RecipeSets\", \"Crops_Exchange-RecipeSetName\", \"Crops Exchange\")",
+            "RecipeSetIcon": "/Game/Assets/2DArt/UI/Icons/MapIcons/T_Icon_Map_Prospector.T_Icon_Map_Prospector",
+            "ExperienceMultiplier": 0.20000000298023224,
+            "bAllowRefundOfRecipesOnDestroy": false,
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Fish_Exchange",
+            "RecipeSetName": "NSLOCTEXT(\"D_RecipeSets\", \"Fish_Exchange-RecipeSetName\", \"Fish Exchange\")",
+            "RecipeSetIcon": "/Game/Assets/2DArt/UI/Icons/MapIcons/T_Icon_Map_Prospector.T_Icon_Map_Prospector",
+            "ExperienceMultiplier": 0.20000000298023224,
+            "bAllowRefundOfRecipesOnDestroy": false,
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Food_Shop",
+            "RecipeSetName": "NSLOCTEXT(\"D_RecipeSets\", \"Food_Shop-RecipeSetName\", \"Food Shop\")",
+            "RecipeSetIcon": "/Game/Assets/2DArt/UI/Icons/MapIcons/T_Icon_Map_Prospector.T_Icon_Map_Prospector",
+            "ExperienceMultiplier": 0.20000000298023224,
+            "bAllowRefundOfRecipesOnDestroy": false,
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Food_Trough_T4",
+            "RecipeSetName": "NSLOCTEXT(\"D_RecipeSets\", \"Food_Trough_T4-RecipeSetName\", \"Electronic Food Trough\")",
+            "RecipeSetIcon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Food_Trough_T4.T_ITEM_Food_Trough_T4",
+            "ExperienceMultiplier": 0.20000000298023224,
+            "bAllowRefundOfRecipesOnDestroy": false
+        }
+    ]
+}

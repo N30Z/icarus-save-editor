@@ -1,0 +1,30 @@
+{
+    "RowStruct": "/Script/Icarus.RefinedOilData",
+    "Defaults": {
+        "FlowType": "Consume",
+        "AlwaysActive": false,
+        "AutoActivate": false,
+        "ResourceFlowRate": 1000,
+        "bAllowPullingResourceFromInventory": false,
+        "bAllowPushingResourceToInventory": false,
+        "bStorageIsInFlowOnly": false,
+        "BrownOutModifier": {
+            "RowName": "None",
+            "DataTableName": "D_ModifierStates"
+        },
+        "AutoShutoffFlowPercent": 0,
+        "bAllowAutoRestart": false,
+        "bIsOptional": false,
+        "OptionalFlowType": {
+            "RowName": "None",
+            "DataTableName": "D_OptionalResourceFlows"
+        }
+    },
+    "Rows": [
+        {
+            "Name": "Crude_Oil_Refiner",
+            "bAllowPushingResourceToInventory": true,
+            "bAllowAutoRestart": true
+        }
+    ]
+}

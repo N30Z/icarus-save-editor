@@ -1,0 +1,86 @@
+{
+    "RowStruct": "/Script/Icarus.Outpost",
+    "Defaults": {
+        "Icon": "None",
+        "ProspectListRowHandle": {
+            "RowName": "None",
+            "DataTableName": "D_ProspectList"
+        },
+        "RequiredMission": {
+            "RowName": "None",
+            "DataTableName": "D_Talents"
+        }
+    },
+    "Rows": [
+        {
+            "Name": "Outpost_002_Forest",
+            "Icon": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_OUTPOST_ARCWOOD.T_OUTPOST_ARCWOOD",
+            "ProspectListRowHandle": {
+                "RowName": "Outpost002_Forest"
+            }
+        },
+        {
+            "Name": "Outpost_003_Arctic",
+            "Icon": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_OUTPOST_ICEHOLM.T_OUTPOST_ICEHOLM",
+            "ProspectListRowHandle": {
+                "RowName": "Outpost003_Arctic"
+            }
+        },
+        {
+            "Name": "Outpost_004_Desert",
+            "Icon": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_OUTPOST_TECTON.T_OUTPOST_TECTON",
+            "ProspectListRowHandle": {
+                "RowName": "Outpost004_Deset"
+            }
+        },
+        {
+            "Name": "Outpost_005_Forest",
+            "Icon": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_OUTPOST_HOLDFAST.T_OUTPOST_HOLDFAST",
+            "ProspectListRowHandle": {
+                "RowName": "Outpost005_Forest"
+            }
+        },
+        {
+            "Name": "Outpost_006_Forest2",
+            "Icon": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_OUTPOST_EVERBARK.T_OUTPOST_EVERBARK",
+            "ProspectListRowHandle": {
+                "RowName": "Outpost006_Forest"
+            }
+        },
+        {
+            "Name": "Outpost_007_Desert2",
+            "Icon": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_OUTPOST_CACTUS.T_OUTPOST_CACTUS",
+            "ProspectListRowHandle": {
+                "RowName": "Outpost007_Desert"
+            }
+        },
+        {
+            "Name": "Outpost_008_Arctic2",
+            "Icon": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_OUTPOST_ARCTICUS.T_OUTPOST_ARCTICUS",
+            "ProspectListRowHandle": {
+                "RowName": "Outpost008_Arctic"
+            }
+        },
+        {
+            "Name": "Outpost_Olympus",
+            "Icon": "/Game/Assets/2DArt/UI/ProspectSelect/TerrainButtons/T_Olympus_TerrainSelectButton.T_Olympus_TerrainSelectButton",
+            "ProspectListRowHandle": {
+                "RowName": "Outpost006_Olympus"
+            }
+        },
+        {
+            "Name": "Outpost_009_IceVolcano",
+            "Icon": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_OUTPOST_FROSTFALL.T_OUTPOST_FROSTFALL",
+            "ProspectListRowHandle": {
+                "RowName": "Outpost009_IceVolcano"
+            }
+        },
+        {
+            "Name": "Outpost_012_Island",
+            "Icon": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_OUTPOST_ISLAND.T_OUTPOST_ISLAND",
+            "ProspectListRowHandle": {
+                "RowName": "Outpost_012"
+            }
+        }
+    ]
+}

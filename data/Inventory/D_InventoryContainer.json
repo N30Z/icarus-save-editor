@@ -1,0 +1,241 @@
+{
+    "RowStruct": "/Script/Icarus.InventoryContainerData",
+    "Defaults": {
+        "InventoryInfo": {
+            "RowName": "None",
+            "DataTableName": "D_InventoryInfo"
+        },
+        "AttachmentSlot": -1,
+        "bCanInventoryTick": false
+    },
+    "Rows": [
+        {
+            "Name": "StandardAmmoInventory",
+            "InventoryInfo": {
+                "RowName": "Weapon_AmmoSlot"
+            }
+        },
+        {
+            "Name": "Knife_Attachment",
+            "InventoryInfo": {
+                "RowName": "Knife_Attachment"
+            },
+            "AttachmentSlot": 0
+        },
+        {
+            "Name": "Spear_Attachment",
+            "InventoryInfo": {
+                "RowName": "Spear_Attachment"
+            },
+            "AttachmentSlot": 0
+        },
+        {
+            "Name": "Axe_Attachment",
+            "InventoryInfo": {
+                "RowName": "Axe_Attachment"
+            },
+            "AttachmentSlot": 0
+        },
+        {
+            "Name": "Pickaxe_Attachment",
+            "InventoryInfo": {
+                "RowName": "Pickaxe_Attachment"
+            },
+            "AttachmentSlot": 0
+        },
+        {
+            "Name": "Sickle_Attachment",
+            "InventoryInfo": {
+                "RowName": "Sickle_Attachment"
+            },
+            "AttachmentSlot": 0
+        },
+        {
+            "Name": "Hammer_Attachment",
+            "InventoryInfo": {
+                "RowName": "Hammer_Attachment"
+            },
+            "AttachmentSlot": 0
+        },
+        {
+            "Name": "Sledgehammer_Attachment",
+            "InventoryInfo": {
+                "RowName": "Sledgehammer_Attachment"
+            },
+            "AttachmentSlot": 0
+        },
+        {
+            "Name": "Head_Attachment",
+            "InventoryInfo": {
+                "RowName": "Head_Attachment"
+            },
+            "AttachmentSlot": 0
+        },
+        {
+            "Name": "Body_Attachment",
+            "InventoryInfo": {
+                "RowName": "Body_Attachment"
+            },
+            "AttachmentSlot": 0
+        },
+        {
+            "Name": "Arms_Attachment",
+            "InventoryInfo": {
+                "RowName": "Arms_Attachment"
+            },
+            "AttachmentSlot": 0
+        },
+        {
+            "Name": "Legs_Attachment",
+            "InventoryInfo": {
+                "RowName": "Legs_Attachment"
+            },
+            "AttachmentSlot": 0
+        },
+        {
+            "Name": "Feet_Attachment",
+            "InventoryInfo": {
+                "RowName": "Feet_Attachment"
+            },
+            "AttachmentSlot": 0
+        },
+        {
+            "Name": "Bow_Ammo_Attachment",
+            "InventoryInfo": {
+                "RowName": "Bow_Ammo_Attachment"
+            },
+            "AttachmentSlot": 1
+        },
+        {
+            "Name": "Crossbow_Ammo_Attachment",
+            "InventoryInfo": {
+                "RowName": "Crossbow_Ammo_Attachment"
+            },
+            "AttachmentSlot": 1
+        },
+        {
+            "Name": "Pistol_Ammo_Attachment",
+            "InventoryInfo": {
+                "RowName": "Pistol_Ammo_Attachment"
+            },
+            "AttachmentSlot": 1
+        },
+        {
+            "Name": "Rifle_Ammo_Attachment",
+            "InventoryInfo": {
+                "RowName": "Rifle_Ammo_Attachment"
+            },
+            "AttachmentSlot": 1
+        },
+        {
+            "Name": "Submachine_Gun_Ammo_Attachment",
+            "InventoryInfo": {
+                "RowName": "Pistol_Ammo_Attachment"
+            },
+            "AttachmentSlot": 1
+        },
+        {
+            "Name": "Shotgun_Ammo_Attachment",
+            "InventoryInfo": {
+                "RowName": "Shotgun_Ammo_Attachment"
+            },
+            "AttachmentSlot": 1
+        },
+        {
+            "Name": "Fishing_Rod_Attachment",
+            "InventoryInfo": {
+                "RowName": "Fishing_Rod"
+            },
+            "AttachmentSlot": 0
+        },
+        {
+            "Name": "Tackle_Box",
+            "InventoryInfo": {
+                "RowName": "Tackle_Box"
+            },
+            "bCanInventoryTick": true
+        },
+        {
+            "Name": "Seed_Pouch",
+            "InventoryInfo": {
+                "RowName": "Seed_Pouch"
+            },
+            "bCanInventoryTick": true
+        },
+        {
+            "Name": "Medicine_Bag",
+            "InventoryInfo": {
+                "RowName": "Medicine_Bag"
+            },
+            "bCanInventoryTick": true
+        },
+        {
+            "Name": "Seed_Pouch_T2",
+            "InventoryInfo": {
+                "RowName": "Seed_Pouch_T2"
+            },
+            "bCanInventoryTick": true
+        },
+        {
+            "Name": "Rock_Ammo",
+            "InventoryInfo": {
+                "RowName": "RockGun_Ammo_Attachment"
+            },
+            "AttachmentSlot": 1
+        },
+        {
+            "Name": "Cart_Plough_Blade",
+            "InventoryInfo": {
+                "RowName": "Plough_Attachment"
+            },
+            "AttachmentSlot": 0
+        },
+        {
+            "Name": "Spear_Launcher",
+            "InventoryInfo": {
+                "RowName": "Sandworm_Crossbow"
+            }
+        },
+        {
+            "Name": "Weapon_Rack",
+            "InventoryInfo": {
+                "RowName": "Weapon_Rack"
+            }
+        },
+        {
+            "Name": "Cart_Harvest_Attachment",
+            "InventoryInfo": {
+                "RowName": "Harvester_Attachment"
+            },
+            "AttachmentSlot": 0
+        },
+        {
+            "Name": "Pouch_Generic",
+            "InventoryInfo": {
+                "RowName": "Pouch_Generic"
+            },
+            "bCanInventoryTick": true
+        },
+        {
+            "Name": "Nailgun_Ammo_Attachment",
+            "InventoryInfo": {
+                "RowName": "Nailgun_Ammo_Attachment"
+            },
+            "AttachmentSlot": 1
+        },
+        {
+            "Name": "Laser_Attachment",
+            "InventoryInfo": {
+                "RowName": "Laser_Attachment"
+            },
+            "AttachmentSlot": 0
+        },
+        {
+            "Name": "Pouch_Generic_Large",
+            "InventoryInfo": {
+                "RowName": "Pouch_Generic_Large"
+            },
+            "bCanInventoryTick": true
+        }
+    ]
+}

@@ -1,0 +1,1281 @@
+{
+  "sr": {
+    "luy": {
+      "title": "Lumber Yield",
+      "desc": "Increased wood from felling",
+      "stats": "+{0}% Yield from Felling Trees;5;10;20"
+    },
+    "dnp": {
+      "title": "Dense Packing I",
+      "desc": "Increased inventory weight capacity",
+      "stats": "+{0}% Weight Capacity;5;10;20"
+    },
+    "dn2": {
+      "title": "Dense Packing II",
+      "desc": "Increased inventory weight capacity",
+      "stats": "+{0}% Weight Capacity;5;10;20"
+    },
+    "skp": {
+      "title": "Skilled Picker",
+      "desc": "Increased yield from harvesting by hand",
+      "stats": "+{0}% Yield from Foraging;5;10;15;20"
+    },
+    "cyo": {
+      "title": "Carry On",
+      "desc": "Reduced encumbrance penalty",
+      "stats": "+{0}% Over-Encumbrance Penalty;-3;-8;-15;-25"
+    },
+    "sty": {
+      "title": "Rock Star",
+      "desc": "Increased stone from mining",
+      "stats": "+{0}% Yield from Mining Stone;10;15;20"
+    },
+    "wbr": {
+      "title": "Wood Breakdown",
+      "desc": "Unlocks the ability to turn wood into sticks",
+      "stats": ""
+    },
+    "mot": {
+      "title": "Movin' Wood",
+      "desc": "Decreases wood weight in your inventory",
+      "stats": "+{0}% Carry Weight of Wood;-5;-10;-15;-30"
+    },
+    "oxt": {
+      "title": "Oxygen Thief",
+      "desc": "Increased yield from oxite nodes",
+      "stats": "+{0}% Yield from Mining Oxite;10;15;20"
+    },
+    "mom": {
+      "title": "Slinging Stone",
+      "desc": "Decreases stone weight in your inventory",
+      "stats": "+{0}% Carry Weight of Stone;-5;-10;-15;-25"
+    },
+    "mem": {
+      "title": "Metal Miner",
+      "desc": "Increased yield from metal deposits",
+      "stats": "+{0}% Yield from Mining Iron;10;15;20"
+    },
+    "ags": {
+      "title": "All The Good Stuff",
+      "desc": "Receive secondary resources from bushes",
+      "stats": "{0}% chance to find additional Resources in Plants;10;20;30"
+    },
+    "ext": {
+      "title": "Exotic Power",
+      "desc": "Reduces exotics weight in your inventory",
+      "stats": "+{0}% Carry Weight of Exotics;-5;-10;-15;-25"
+    },
+    "efl": {
+      "title": "Seasoned Logsman",
+      "desc": "Chopped wood is automatically added to your inventory",
+      "stats": "Wood is automatically gathered from chopping trees;1"
+    },
+    "frt": {
+      "title": "Friend Of The Trees",
+      "desc": "Reduced damage from falling trees",
+      "stats": "+{0}% Falling Tree Resistance;50"
+    },
+    "wno": {
+      "title": "Waste Not",
+      "desc": "Receive stone in addition to resources when mining ore deposits",
+      "stats": "{0}% chance to find additional Resources while Mining;5;8;10"
+    },
+    "exp": {
+      "title": "Exotic Sprinter",
+      "desc": "Increased movespeed with exotics in your inventory",
+      "stats": "+{0}% Movement Speed while Carrying Exotics;5;8;10"
+    },
+    "oul": {
+      "title": "Peerless Lumberjack",
+      "desc": "Chance to instantly chop up a tree",
+      "stats": "{0}% chance to Instantly Fell Trees;1"
+    },
+    "luk": {
+      "title": "Lucky Strike",
+      "desc": "Chance to mine a deposit in one hit",
+      "stats": "+{0}% to Instantly Break Mineral or Ore Deposits while Mining;1"
+    },
+    "doe": {
+      "title": "Unburdened",
+      "desc": "Decreased ore weight in your inventory",
+      "stats": "+{0}% Carry Weight of Ores;-5;-10;-15;-25"
+    }
+  },
+  "se": {
+    "hex": {
+      "title": "Robust Explorer",
+      "desc": "Increase to base health",
+      "stats": "+{0} Maximum Health;10;25;50"
+    },
+    "sws": {
+      "title": "Swift Survivor",
+      "desc": "Increase to base movespeed",
+      "stats": "+{0}% Movement Speed;3;5;10"
+    },
+    "gwf": {
+      "title": "Go With The Flow",
+      "desc": "Increased swim speed",
+      "stats": "+{0}% Swimming Speed;10;15"
+    },
+    "stb": {
+      "title": "Steady Breathing",
+      "desc": "Reduced oxygen consumption rate",
+      "stats": "+{0}% Oxygen Consumption;-10;-15;-25"
+    },
+    "crb": {
+      "title": "Carbo Loaded",
+      "desc": "Reduced hunger rate",
+      "stats": "+{0}% Food Consumption;-10;-15;-25"
+    },
+    "wtr": {
+      "title": "Water Retention",
+      "desc": "Reduced thirst rate",
+      "stats": "+{0}% Water Consumption;-10;-15;-25"
+    },
+    "amp": {
+      "title": "Amphibian",
+      "desc": "Reduced oxygen usage underwater",
+      "stats": "+{0}% Oxygen Consumed while Swimming;-10"
+    },
+    "_pl": {
+      "title": "Three Point Landing",
+      "desc": "Reduced fall damage",
+      "stats": "+{0}% Falling Resistance;5;15;25"
+    },
+    "ply": {
+      "title": "Plyometrics",
+      "desc": "Reduced jumping stamina cost",
+      "stats": "+{0}% Stamina Consumed by Jumping;-10;-25;-50"
+    },
+    "clp": {
+      "title": "Calming Presence",
+      "desc": "Reduces oxygen consumption for allies within 20m",
+      "stats": "Nearby Allies have reduced Oxygen Consumption;1"
+    },
+    "fmd": {
+      "title": "Field Medic",
+      "desc": "Gives revived players more health",
+      "stats": "+{0}% Health Restored to Revived Incapacitated Player;25;50"
+    },
+    "plt": {
+      "title": "Pack Lightly",
+      "desc": "Increased inventory weight capacity",
+      "stats": "+{0}% Weight Capacity;2;5;10"
+    },
+    "wts": {
+      "title": "Weathering The Storm",
+      "desc": "Increased resistance to exposure",
+      "stats": "+{0}% Exposure Resistance;5;10;15"
+    },
+    "stc": {
+      "title": "Storm Chaser",
+      "desc": "Increased stamina regen during storms",
+      "stats": "+{0}% Stamina Regeneration during a Storm;10;20;30"
+    },
+    "qrf": {
+      "title": "Quick Refresh",
+      "desc": "Increased recovery from exposure",
+      "stats": "+{0}% Exposure Recovery Rate;5;10;15"
+    },
+    "cut": {
+      "title": "Cutting It Close",
+      "desc": "Increased movespeed in a drop's final 15 minutes",
+      "stats": "+{0}% Movement Speed during final moments of the Mission;10"
+    },
+    "cuf": {
+      "title": "Cushioned Fall",
+      "desc": "Reduced chance of sprain from fall damage",
+      "stats": "{0}% chance to avoid Sprain when taking Fall Damage;25;50"
+    },
+    "sfm": {
+      "title": "And Some For Me",
+      "desc": "Reviving a player also regenerates your health",
+      "stats": "Trigger Additional Health Regeneration when Reviving a Player;1"
+    },
+    "mdw": {
+      "title": "Makes the Dream Work",
+      "desc": "Increased shared XP from party members",
+      "stats": "+{0}% Shared Experience Gained;15"
+    },
+    "stn": {
+      "title": "Strong Bones",
+      "desc": "Increased sprain recovery speed",
+      "stats": "+{0}% Sprain Duration;-15;-25;-40"
+    },
+    "nto": {
+      "title": "Night Owl",
+      "desc": "Increased movespeed at night",
+      "stats": "+{0}% Movement Speed at Night;3;6"
+    },
+    "llo": {
+      "title": "Like It With the Lights Off",
+      "desc": "Hunger, thirst and oxygen drain much more slowly at night",
+      "stats": "{0}% Reduced Food, Oxygen, and Water Consumption at Night;-15"
+    },
+    "arm": {
+      "title": "Arctic Master",
+      "desc": "Increased cold resistance and movespeed in Arctic biomes",
+      "stats": "+5% Movement Speed and +15% cold resistance while in the Arctic"
+    },
+    "frm": {
+      "title": "Forest Master",
+      "desc": "Increased health regen and movespeed in Forest biomes",
+      "stats": "+5% Movement Speed and +10% health regen while in the Forest"
+    },
+    "dsm": {
+      "title": "Desert Master",
+      "desc": "Decreased thirst and movespeed in Desert biomes",
+      "stats": "+5% Movement Speed and -25% water consumption while in the Desert"
+    }
+  },
+  "sh": {
+    "skb": {
+      "title": "Fine Butcher I",
+      "desc": "Increased meat yield when skinning",
+      "stats": "+{0}% Yield from Butchering Meat;25"
+    },
+    "fb2": {
+      "title": "Fine Butcher II",
+      "desc": "Increased meat yield when skinning",
+      "stats": "+{0}% Yield from Butchering Meat;10;25"
+    },
+    "ced": {
+      "title": "Chase 'em Down",
+      "desc": "Increase to base stamina",
+      "stats": "+{0} Maximum Stamina;10;25;40"
+    },
+    "ce2": {
+      "title": "Chase 'em Down",
+      "desc": "Increase to base stamina",
+      "stats": "+{0} Maximum Stamina;10;25;40"
+    },
+    "swk": {
+      "title": "Swift Stalker",
+      "desc": "Increased movespeed while crouching",
+      "stats": "+{0}% Crouching Movement Speed;3;5;10"
+    },
+    "boc": {
+      "title": "Bone Collector",
+      "desc": "Increased bone yield when skinning",
+      "stats": "+{0}% Yield from Creature Bones;15"
+    },
+    "bc2": {
+      "title": "Bone Collector II",
+      "desc": "Increased bone yield when skinning",
+      "stats": "+{0}% Yield from Creature Bones;8;15"
+    },
+    "sts": {
+      "title": "Strong Shoulders",
+      "desc": "Increased movespeed when carrying animal corpses",
+      "stats": "+{0}% Movement Speed while Carrying an Animal;5"
+    },
+    "hbr": {
+      "title": "Health Bars",
+      "desc": "See animal health bars",
+      "stats": "Can see Creature Alert Level and Health;1"
+    },
+    "qgt": {
+      "title": "Quick Getaway",
+      "desc": "Increased stamina regen after taking damage",
+      "stats": "Trigger 5 seconds of increased Stamina Regeneration when Damaged;1"
+    },
+    "lbr": {
+      "title": "Leather Breakdown",
+      "desc": "Unlocks the ability to turn leather into rope",
+      "stats": ""
+    },
+    "was": {
+      "title": "Without a Sound",
+      "desc": "Harder to detect when in stealth",
+      "stats": "+{0}% Perceived Threat while Stealthed;-5;-10;-15"
+    },
+    "thu": {
+      "title": "Trained Hunter",
+      "desc": "Knives degrade slower when skinning",
+      "stats": "+{0}% Wear Rate of Knives while Skinning;-10;-20;-40"
+    },
+    "sms": {
+      "title": "Sense Small Animals",
+      "desc": "Nearby small animals will highlight when aiming",
+      "stats": "Small Creatures are Highlighted when Aiming;1"
+    },
+    "cas": {
+      "title": "Careful Skinner",
+      "desc": "Increased leather from skinning",
+      "stats": "+{0}% Yield from Skinning Leather;10;20"
+    },
+    "sst": {
+      "title": "Storm Stalker",
+      "desc": "Increased stealth in storms",
+      "stats": ""
+    },
+    "mas": {
+      "title": "Sense Medium Animals",
+      "desc": "Nearby medium animals will highlight when aiming",
+      "stats": "Medium Creatures are Highlighted when Aiming;1"
+    },
+    "coh": {
+      "title": "Cold Hearted",
+      "desc": "Double resource yield from baby animals",
+      "stats": "Double Yield from Skinning Baby Animals;1"
+    },
+    "gaB": {
+      "title": "Blueprint: Ghillie Armor",
+      "desc": "Grants access to Ghillie Armor blueprints",
+      "stats": ""
+    },
+    "las": {
+      "title": "Sense Megafauna",
+      "desc": "Nearby large animals will highlight when aiming",
+      "stats": "Large Creatures are Highlighted when Aiming;1"
+    },
+    "pbB": {
+      "title": "Blueprint: Polar Bear Armor",
+      "desc": "Grants access to Polar Bear Armor blueprints",
+      "stats": ""
+    },
+    "bgh": {
+      "title": "Big Game Hunter",
+      "desc": "Allows you to see the location of World Bosses on the map",
+      "stats": "Can see World Bosses on the Map;1"
+    }
+  },
+  "sc": {
+    "ntp": {
+      "title": "Naturally Preserved",
+      "desc": "Slows food decay in your inventory",
+      "stats": "+{0}% Rate of Food Spoiling;-15;-30;-50"
+    },
+    "fim": {
+      "title": "Filling Meals",
+      "desc": "Eating refills hunger bar more rapidly",
+      "stats": "+{0}% Nutrition from Food;10;25"
+    },
+    "grt": {
+      "title": "Green Thumb",
+      "desc": "Planted crops grow faster",
+      "stats": "+{0}% Crop Growth Speed of Crops Grown in Crafted Crop Plots;10;20"
+    },
+    "wlf": {
+      "title": "Well Laid Fire",
+      "desc": "Crafted campfires consume fuel more slowly",
+      "stats": "+{0}% Fuel Use On Crafted Campfires;-25;-50"
+    },
+    "aln": {
+      "title": "All-Nighter",
+      "desc": "Crafted crops in crop plots grow faster at night.",
+      "stats": "+{0}% Growth Rate of Crops at Night with Crafted Crop Plots;15;30"
+    },
+    "lle": {
+      "title": "Long Lasting Effects",
+      "desc": "Food buffs persist longer",
+      "stats": "+{0}% Food Effects Duration;10;15;20"
+    },
+    "nat": {
+      "title": "Neat and Tidy",
+      "desc": "Crafted Crop Plots use less fertilizer",
+      "stats": "+{0}% Consumption of Fertilizer in Crafted Crop Plots;-50"
+    },
+    "gag": {
+      "title": "Get up and go",
+      "desc": "Increase to base stamina",
+      "stats": "+{0}% Maximum Stamina;2;5;10"
+    },
+    "sbz": {
+      "title": "Shoot the Breeze",
+      "desc": "Grants the recipe to make gunpowder from fertilizer on the Mortar and Pestle",
+      "stats": ""
+    },
+    "oot": {
+      "title": "The Old One-Two",
+      "desc": "Increased melee damage",
+      "stats": "+{0}% Melee Damage;2;5;10"
+    },
+    "gml": {
+      "title": "Get off my Lawn",
+      "desc": "Grants the recipe to make the Rusty Shotgun on the Machining Bench",
+      "stats": ""
+    },
+    "suf": {
+      "title": "Superfoods",
+      "desc": "Raw food provides more sustenance",
+      "stats": "+{0}% Nutrition from Raw Foods;20;40"
+    },
+    "ggu": {
+      "title": "Gathering Guru",
+      "desc": "Increased yield from harvesting by hand",
+      "stats": "+{0}% Yield from Foraging;2;5;10"
+    },
+    "spg": {
+      "title": "Speed-Gro",
+      "desc": "Crafted Crop Plots grow crops faster",
+      "stats": "+{0}% Crop Growth Speed of Crops Grown in Crafted Crop Plots;10;20"
+    },
+    "yge": {
+      "title": "You Gonna Eat That?",
+      "desc": "Gain the ability to eat spoiled food",
+      "stats": "Can Eat Spoiled Food;1"
+    },
+    "buc": {
+      "title": "Bumper Crop",
+      "desc": "Crafted Crop Plots yield more crops",
+      "stats": "+{0}% Planted Crop Yield from Crafted Crop Plots;50;100"
+    },
+    "ibt": {
+      "title": "It's Better Than I Thought",
+      "desc": "Increased benefit from spoiled food",
+      "stats": "+{0}% Nutrition from Spoiled Food;10;15"
+    },
+    "fib": {
+      "title": "Fresh is Best",
+      "desc": "Grown Crops in Crafted Crop Plots do not Wither away after they have finished growing.",
+      "stats": "Created Crop Plot Crops will not Wither;1"
+    },
+    "fpy": {
+      "title": "Food Pyramid",
+      "desc": "Gives an extra active food buff",
+      "stats": "+{0} Space in Stomach;1"
+    },
+    "ssk": {
+      "title": "Sturdy Stalks",
+      "desc": "Crafted Crop Plots crops spoil slower when harvested",
+      "stats": "+{0}% Spoil Time of Harvested Items from Crafted Crop Plots;25;50"
+    }
+  },
+  "tr": {
+    "rtw": {
+      "title": "Ready To Work",
+      "desc": "Increased stamina regeneration",
+      "stats": "+{0}% Stamina Regeneration;5;15;30"
+    },
+    "spw": {
+      "title": "Speedy Whacks",
+      "desc": "Increased extinguishing speed with fire whacker",
+      "stats": "+{0}% Fire Extinguishing Speed;10;20;30"
+    },
+    "ht1": {
+      "title": "Hammer Time I",
+      "desc": "Increased repair hammer speed",
+      "stats": "+{0}% Repair Tool Action Hold Time;-15;-30;-50"
+    },
+    "ht2": {
+      "title": "Hammer Time II",
+      "desc": "Increased repair hammer speed",
+      "stats": "+{0}% Repair Tool Action Hold Time;-10;-25"
+    },
+    "fir": {
+      "title": "First Responder",
+      "desc": "Increased movespeed with fire whacker equipped",
+      "stats": "+{0}% Movement Speed with a Fire Whacker;10"
+    },
+    "hrw": {
+      "title": "Hardy Whacker",
+      "desc": "Reduced durability loss on fire whacker",
+      "stats": "+{0}% Wear Rate of Fire Whackers;-10;-25;-50"
+    },
+    "hah": {
+      "title": "Hardy Hammer",
+      "desc": "Reduced durability loss on repair hammer",
+      "stats": "+{0}% Wear Rate of Hammers;-25;-50"
+    },
+    "whe": {
+      "title": "Whacker Endurance",
+      "desc": "Incresed stamina regen with fire whacker equipped",
+      "stats": "+{0}% Stamina Regeneration with a Fire Whacker Equipped;15;30"
+    },
+    "btn": {
+      "title": "Better Than New",
+      "desc": "Recently repaired building pieces are resistant to storm damage for a time",
+      "stats": "Repaired Building Pieces have Increased Wind Damage Resistance for {0} seconds;10"
+    },
+    "wbB": {
+      "title": "Blueprint: Waterbomb",
+      "desc": "Grants access to the waterbomb blueprint",
+      "stats": ""
+    },
+    "lex": {
+      "title": "Lingering Extinguishing",
+      "desc": "Recently extinguished building pieces remain fire resistant for a time",
+      "stats": "Extinguished Building Pieces have Reduced Burn Chance for {0} seconds;10"
+    },
+    "wos": {
+      "title": "With One Swing",
+      "desc": "Chance to instantly repair building pieces",
+      "stats": "+{0}% Chance to Repair a Building Piece Instantly;25"
+    },
+    "rbB": {
+      "title": "Blueprint: Repair Bench",
+      "desc": "Grants access to repair bench blueprint",
+      "stats": ""
+    },
+    "htr": {
+      "title": "Hard to Reach",
+      "desc": "Gives ability to throw a fire whacker",
+      "stats": "Can Throw Your Fire Whacker;1"
+    }
+  },
+  "tt": {
+    "cfh": {
+      "title": "Careful Hits",
+      "desc": "Reduced durability loss on pickaxes",
+      "stats": "+{0}% Wear Rate of Pickaxes;-5;-10;-15"
+    },
+    "mie": {
+      "title": "Miner Endurance I",
+      "desc": "Reduced stamina cost on pickaxes",
+      "stats": "+{0}% Stamina Consumed by Pickaxe Actions;-5;-10;-15"
+    },
+    "hah": {
+      "title": "Hardy Axe Heads I",
+      "desc": "Reduced durability loss on axes",
+      "stats": "+{0}% Wear Rate of Axes;-5;-10;-15"
+    },
+    "mid": {
+      "title": "Miner Damage",
+      "desc": "Increased pickaxe melee damage",
+      "stats": "+{0}% Pickaxe Melee Damage;20;40;60"
+    },
+    "spm": {
+      "title": "Speedy Mining",
+      "desc": "Increased pickaxe swing speed",
+      "stats": "+{0}% Attack Speed with Pickaxes;5;10;20"
+    },
+    "spc": {
+      "title": "Speed Chopper",
+      "desc": "Increased axe swing speed",
+      "stats": "+{0}% Attack Speed with Axes;5;10;20"
+    },
+    "lje": {
+      "title": "Lumberjack Endurance",
+      "desc": "Reduced stamina cost with axes",
+      "stats": "+{0}% Stamina Consumed by Axe Actions;-5;-10;-15"
+    },
+    "stp": {
+      "title": "Big Pick",
+      "desc": "Increased pickaxe mining radius",
+      "stats": "+{0}% Mining Radius;10;20"
+    },
+    "taf": {
+      "title": "Think of All the Fiber",
+      "desc": "Reduced durability loss on sickles",
+      "stats": "+{0}% Wear Rate of Sickles;-25;-50"
+    },
+    "exs": {
+      "title": "Extra Sharp",
+      "desc": "Increased felling damage with axes",
+      "stats": "+{0}% Felling Damage;5;10;25"
+    },
+    "ps1": {
+      "title": "Picksmith I",
+      "desc": "Cheaper pickaxe crafting",
+      "stats": "+{0}% Resource Cost of Crafted Pickaxes;-25"
+    },
+    "ps2": {
+      "title": "Picksmith II",
+      "desc": "Even cheaper pickaxe crafting",
+      "stats": "+{0}% Resource Cost of Crafted Pickaxes;-25"
+    },
+    "spx": {
+      "title": "Strong Pick",
+      "desc": "Crafted pickaxes have increased durability",
+      "stats": "+{0}% Maximum Durability of Crafted Pickaxes;10;25"
+    },
+    "cf2": {
+      "title": "Careful Hits",
+      "desc": "Reduced durability loss on pickaxes",
+      "stats": "+{0}% Wear Rate of Pickaxes;-5;-10;-20"
+    },
+    "mi2": {
+      "title": "Miner Endurance II",
+      "desc": "Reduced stamina cost on pickaxes",
+      "stats": "+{0}% Stamina Consumed by Pickaxe Actions;-5;-10;-15"
+    },
+    "da1": {
+      "title": "Discount Axes I",
+      "desc": "Cheaper axe crafting",
+      "stats": "+{0}% Resource Cost of Crafted Axes;-25"
+    },
+    "da2": {
+      "title": "Discount Axes II",
+      "desc": "Cheaper axe crafting",
+      "stats": "+{0}% Resource Cost of Crafted Axes;-25"
+    },
+    "hax": {
+      "title": "Hard Axe",
+      "desc": "Crafted axes have increased durability",
+      "stats": "+{0}% Maximum Durability of Crafted Axes;10;25"
+    },
+    "ha2": {
+      "title": "Hardy Axe Heads II",
+      "desc": "Reduced durability loss on axes",
+      "stats": "+{0}% Wear Rate of Axes;-5;-10;-20"
+    },
+    "gan": {
+      "title": "Good As New",
+      "desc": "Chance to restore pickaxe's durability on breaking hit",
+      "stats": "{0}% for Pickaxes to Recover Durability Instead of Breaking;25"
+    },
+    "tom": {
+      "title": "Tomahawk",
+      "desc": "Gives ability to throw an axe",
+      "stats": "Can Throw Your Axe;1"
+    },
+    "owi": {
+      "title": "Oh Wait, I Need That",
+      "desc": "Thrown axes highlight in world",
+      "stats": "Thrown Axes are highlighted;1"
+    }
+  },
+  "tb": {
+    "wdc": {
+      "title": "Wood Hauling",
+      "desc": "Wooden buildables weigh less in inventory",
+      "stats": "+{0}% Carry Weight of Wood Building Pieces;-10;-15;-20"
+    },
+    "wdh": {
+      "title": "Wood Hauling II",
+      "desc": "Wooden buildables weigh less in inventory",
+      "stats": "+{0}% Carry Weight of Wood Building Pieces;-3;-5;-8"
+    },
+    "stc": {
+      "title": "Stone Hauling I",
+      "desc": "Stone buildables weigh less in inventory",
+      "stats": "+{0}% Carry Weight of Stone Building Pieces;-10;-20;-40"
+    },
+    "sth": {
+      "title": "Stone Hauling II",
+      "desc": "Stone buildables weigh less in inventory",
+      "stats": "+{0}% Carry Weight of Stone Building Pieces;-5;-10;-15"
+    },
+    "cnc": {
+      "title": "Concrete Hauling",
+      "desc": "Concrete buildables weigh less in inventory",
+      "stats": "+{0}% Carry Weight of Concrete Building Pieces;-10;-15;-20"
+    },
+    "cnh": {
+      "title": "Concrete Hauling II",
+      "desc": "Concrete buildables weigh less in inventory",
+      "stats": "+{0}% Carry Weight of Concrete Building Pieces;-10;-15;-20"
+    },
+    "dit": {
+      "title": "Discount Thatch",
+      "desc": "Thatch buildables cost less to craft",
+      "stats": "+{0}% Resource Cost of Crafted Thatch Building Pieces;-10;-25"
+    },
+    "diw": {
+      "title": "Discount Wood",
+      "desc": "Wooden buildables cost less to craft",
+      "stats": "+{0}% Resource Cost of Crafted Wood Building Pieces;-10;-25"
+    },
+    "sfl": {
+      "title": "Stoking the Flames",
+      "desc": "Increased smelting speed on furnaces",
+      "stats": "+{0}% Smelting Speed from Crafted Furnaces;10;15"
+    },
+    "exs": {
+      "title": "Extra Space I",
+      "desc": "Storage deployables have larger inventories",
+      "stats": "+{0} Storage Space in Crafted Deployables;3;5"
+    },
+    "ex2": {
+      "title": "Extra Space II",
+      "desc": "Storage deployables have larger inventories",
+      "stats": "+{0} Storage Space in Crafted Deployables;3;5"
+    },
+    "dpe": {
+      "title": "Deployable Engineering",
+      "desc": "Reduced crafting time of deployables",
+      "stats": "+{0}% Crafting Speed of Deployable Items;25"
+    },
+    "ffw": {
+      "title": "Fortified Wood",
+      "desc": "Crafted wood buildables have more durability",
+      "stats": "+{0}% Maximum Durability of Crafted Wood Buildings;10;20"
+    },
+    "dis": {
+      "title": "Discount Stone",
+      "desc": "Stone buildables cost less to craft",
+      "stats": "+{0}% Resource Cost of Crafted Stone Building Pieces;-10;-25"
+    },
+    "dic": {
+      "title": "Discount Concrete",
+      "desc": "Concrete buildables cost less to craft",
+      "stats": "+{0}% Resource Cost of Crafted Concrete Building Pieces;-10;-25"
+    },
+    "dig": {
+      "title": "Discount Glass",
+      "desc": "Glass buildables cost less to craft",
+      "stats": "+{0}% Resource Cost of Crafted Glass Building Pieces;-10;-25"
+    },
+    "dsr": {
+      "title": "Discount Rod",
+      "desc": "Basic lightning rod costs less to craft",
+      "stats": "+{0}% Resource Cost of Crafted Lightning Rods;-50"
+    },
+    "ehd": {
+      "title": "Enhanced Defences",
+      "desc": "Hedgehogs deal more damage",
+      "stats": "+{0}% Damage of Crafted Hedgehogs;25"
+    },
+    "for": {
+      "title": "Fortified Rod",
+      "desc": "Lightning rods have more durability",
+      "stats": "+{0}% Maximum Durability of Crafted Lightning Rods;100;300;500"
+    },
+    "wpc": {
+      "title": "Weatherproof Cladding",
+      "desc": "Slower storm damage on wooden buildables",
+      "stats": "+{0}% Wind Resistance of Crafted Wood Buildings;25"
+    },
+    "fps": {
+      "title": "Fireproofing Sealant",
+      "desc": "Wooden building pieces are less likely to catch fire",
+      "stats": "+{0}% Burn Chance of Crafted Wood Buildings;-25"
+    }
+  },
+  "xb": {
+    "boa": {
+      "title": "Bow Agility",
+      "desc": "Faster movespeed while holding bows",
+      "stats": "+{0}% Movement Speed with a Bow/Crossbow Equipped;5;8;10"
+    },
+    "ead": {
+      "title": "Easy Draw",
+      "desc": "Reduced stamina usage when drawing bows",
+      "stats": "+{0}% Stamina Consumed by Bow Actions;-5;-10;-15"
+    },
+    "qlo": {
+      "title": "Quick Load",
+      "desc": "Faster bow reload",
+      "stats": "+{0}% Reload Speed of Bows/Crossbows;5;10;15"
+    },
+    "ia1": {
+      "title": "Increased Arrow Damage I",
+      "desc": "Adds a bonus to arrow damage",
+      "stats": "+{0}% Damage with Bows/Crossbows;2;5;10"
+    },
+    "qdr": {
+      "title": "Bow Quick Draw",
+      "desc": "Increased aim speed with bows",
+      "stats": "+{0}% Aim Speed with Bows/Crossbows;5;10;15"
+    },
+    "swf": {
+      "title": "Swift Flight",
+      "desc": "Increased arrow speed",
+      "stats": "+{0}% Arrow Speed;3;5;10"
+    },
+    "ia2": {
+      "title": "Increased Arrow Damage II",
+      "desc": "Adds a further bonus to arrow damage",
+      "stats": "+{0}% Damage with Bows/Crossbows;2;5;10"
+    },
+    "trs": {
+      "title": "Trained Bowsmith",
+      "desc": "Crafted bows have increased durability",
+      "stats": "+{0}% Maximum Durability of Crafted Bows/Crossbows;15"
+    },
+    "bul": {
+      "title": "Bullseye",
+      "desc": "Increased accuracy with bows",
+      "stats": "+{0}% Accuracy with Bows/Crossbows;15;30"
+    },
+    "crf": {
+      "title": "Crafty Fletcher",
+      "desc": "Chance to craft double when crafting arrows",
+      "stats": "{0}% chance to Craft an additional Arrow/Bolt;10"
+    },
+    "ss1": {
+      "title": "Soft Spot I",
+      "desc": "Increased critical hit multiplier on bows",
+      "stats": "+{0}% Critical Damage with Bows/Crossbows;2;5"
+    },
+    "mfl": {
+      "title": "More For Less I",
+      "desc": "Cheaper bow crafting",
+      "stats": "+{0}% Resource Cost of Crafted Bows/Crossbows;-25"
+    },
+    "mf2": {
+      "title": "More For Less II",
+      "desc": "Cheaper bow crafting",
+      "stats": "+{0}% Resource Cost of Crafted Bows/Crossbows;-25"
+    },
+    "ss2": {
+      "title": "Soft Spot II",
+      "desc": "Increased critical hit multiplier on bows",
+      "stats": "+{0}% Critical Damage with Bows/Crossbows;5;10"
+    },
+    "ttf": {
+      "title": "Twice the Fun",
+      "desc": "Chance to fire two arrows",
+      "stats": "{0}% chance to fire an additional Arrow/Bolt;5;15"
+    },
+    "trm": {
+      "title": "Trained Bowman",
+      "desc": "Reduced bow durability loss",
+      "stats": "+{0}% Wear Rate of Bows/Crossbows;-10;-20;-30"
+    },
+    "his": {
+      "title": "Hindering Shot",
+      "desc": "Arrow strikes slow your target",
+      "stats": "{0}% chance to Slow on Hit with Bows/Crossbows;5;10;15"
+    },
+    "sad": {
+      "title": "Supply and Demand",
+      "desc": "Increased damage from crafted arrows",
+      "stats": "+{0}% Projectile Damage of Crafted Arrows;2;5;10"
+    },
+    "hoa": {
+      "title": "Homing Instinct",
+      "desc": "Chance for arrows to find targets more easily",
+      "stats": "Fired Arrows and Bolts will Lock On to Targets;1"
+    },
+    "wos": {
+      "title": "Wounding Shot",
+      "desc": "Arrow strikes bleed your target over time",
+      "stats": "{0}% chance to Wound on Hit with Bows/Crossbows;5;10;15"
+    },
+    "pis": {
+      "title": "Pinning Shot",
+      "desc": "Chance for arrow strikes to immobilize target",
+      "stats": "{0}% chance to Immobilize on Hit with Bows/Crossbows;5"
+    }
+  },
+  "xs": {
+    "ses": {
+      "title": "Seasoned Spearman",
+      "desc": "Decreased stamina usage with spears",
+      "stats": "+{0}% Stamina Consumed by Spear Actions;-5;-10;-15"
+    },
+    "qst": {
+      "title": "Quick Step",
+      "desc": "Increased movespeed while aiming",
+      "stats": "+{0}% Movement Speed while Aiming a Spear;5;10;15"
+    },
+    "qdr": {
+      "title": "Spear Quick Draw",
+      "desc": "Increased aim speed",
+      "stats": "+{0}% Aim Speed with Spears;5;10;15"
+    },
+    "st1": {
+      "title": "Strong Thrust I",
+      "desc": "Increased melee attack damage",
+      "stats": "+{0}% Damage with Spears;3;5;10"
+    },
+    "qth": {
+      "title": "Quick Thrust",
+      "desc": "Increased melee attack speed",
+      "stats": "+{0}% Attack Speed with Spears;10;15;20"
+    },
+    "fa1": {
+      "title": "From Afar I",
+      "desc": "Increased ranged damage",
+      "stats": "+{0}% Damage with Thrown Spears;5;8"
+    },
+    "st2": {
+      "title": "Strong Thrust II",
+      "desc": "Increased melee attack damage",
+      "stats": "+{0}% Damage with Spears;5;10;15"
+    },
+    "dt1": {
+      "title": "Deadly Thrust I",
+      "desc": "Increased critical hit multiplier on spears",
+      "stats": "+{0}% Critical Damage with Spears;2;4"
+    },
+    "fa2": {
+      "title": "From Afar II",
+      "desc": "Increased ranged damage",
+      "stats": "+{0}% Damage with Thrown Spears;10;12"
+    },
+    "dt2": {
+      "title": "Deadly Thrust II",
+      "desc": "Increased critical hit multiplier on spears",
+      "stats": "+{0}% Critical Damage with Spears;5;10"
+    },
+    "cga": {
+      "title": "Could Go All Day",
+      "desc": "Increased stamina regen when spear equipped",
+      "stats": "+{0}% Stamina Regeneration with a Spear Equipped;10;20"
+    },
+    "tii": {
+      "title": "There It Is",
+      "desc": "Thrown spears highlight in world",
+      "stats": "Thrown Spears are highlighted;1"
+    },
+    "efc": {
+      "title": "Efficient Crafter I",
+      "desc": "Cheaper spear crafting",
+      "stats": "+{0}% Resource Cost of Crafted Spears;-20"
+    },
+    "ef2": {
+      "title": "Efficient Crafter II",
+      "desc": "Cheaper spear crafting",
+      "stats": "+{0}% Resource Cost of Crafted Spears;-20"
+    },
+    "lr1": {
+      "title": "Long Reach I",
+      "desc": "Increased throw distance",
+      "stats": "+{0}% Speed of Thrown Spears;5;10"
+    },
+    "exc": {
+      "title": "Excellent Crafter II",
+      "desc": "Crafted spears have increased durability",
+      "stats": "+{0}% Maximum Durability of Crafted Spears;25"
+    },
+    "ex2": {
+      "title": "Excellent Crafter I",
+      "desc": "Crafted spears have increased durability",
+      "stats": "+{0}% Maximum Durability of Crafted Spears;25"
+    },
+    "lr2": {
+      "title": "Long Reach II",
+      "desc": "Increased throw distance",
+      "stats": "+{0}% Speed of Thrown Spears;10;15"
+    },
+    "spp": {
+      "title": "Spear Parry",
+      "desc": "Take less melee damage when spear equipped",
+      "stats": "+{0}% Melee Resistance with a Spear Equipped;15;20"
+    },
+    "dew": {
+      "title": "Deep Wounds",
+      "desc": "Spear strikes cause bleeding over time",
+      "stats": "{0}% chance to Wound on Hit with Spears;5;10;15"
+    }
+  },
+  "xx": {
+    "dfh": {
+      "title": "Deft Hands",
+      "desc": "Faster aim windup",
+      "stats": "+{0}% Aim Speed with Knives;10;15;20"
+    },
+    "rwk": {
+      "title": "Running with Knives",
+      "desc": "Increased movespeed with a blade",
+      "stats": "+{0}% Movement Speed with a Knife Equipped;2;5;10"
+    },
+    "qst": {
+      "title": "Swift Stab",
+      "desc": "Increased melee attack speed",
+      "stats": "+{0}% Attack Speed with Knives;5;10;15"
+    },
+    "_tc": {
+      "title": "1000 cuts",
+      "desc": "Reduced stamina usage with knives",
+      "stats": "+{0}% Stamina Cost by Knife Actions;-10;-15;-20"
+    },
+    "hab": {
+      "title": "Hardy Blade",
+      "desc": "Knives degrade slower in combat",
+      "stats": "+{0}% Wear Rate of Knives;-10;-15;-20"
+    },
+    "sts": {
+      "title": "Heavy Hand",
+      "desc": "Increased melee attack damage",
+      "stats": "+{0}% Damage with Knives;5;10;15"
+    },
+    "wtg": {
+      "title": "Where'd that go?",
+      "desc": "Thrown knives highlight in world",
+      "stats": "Thrown Knives are highlighted;1"
+    },
+    "rd1": {
+      "title": "Range Damage I",
+      "desc": "Increased ranged damage",
+      "stats": "+{0}% Damage with Thrown Knives;5;8;10"
+    },
+    "rd2": {
+      "title": "Range Damage II",
+      "desc": "Increased ranged damage",
+      "stats": "+{0}% Damage with Thrown Knives;10;15;20"
+    },
+    "trk": {
+      "title": "Trained Skinner",
+      "desc": "Knives degrade slower when skinning",
+      "stats": "+{0}% Wear Rate of Knives while Skinning;-5;-10;-20"
+    },
+    "des": {
+      "title": "Deadly Stab",
+      "desc": "Increased multiplier on knife critical hits",
+      "stats": "+{0}% Critical Damage with Knives;2;5;10"
+    },
+    "sa1": {
+      "title": "Strong Arm",
+      "desc": "Increased throw distance",
+      "stats": "+{0}% Speed of Thrown Knives;5;8;10"
+    },
+    "iiw": {
+      "title": "If It Works",
+      "desc": "Knives deal felling damage",
+      "stats": "+{0} Felling Damage of Crafted Knives;20"
+    },
+    "sa2": {
+      "title": "Strong Arm II",
+      "desc": "Increased throw distance",
+      "stats": "+{0}% Speed of Thrown Knives;15;18;20"
+    },
+    "twq": {
+      "title": "That Was Quick",
+      "desc": "Increased skinning speed",
+      "stats": "+{0}% Skinning Speed;5;10;20"
+    },
+    "di1": {
+      "title": "Discount Blades I",
+      "desc": "Cheaper knife crafting",
+      "stats": "+{0}% Resource Cost of Crafted Knives;-25"
+    },
+    "di2": {
+      "title": "Discount Blades II",
+      "desc": "Cheaper knife crafting",
+      "stats": "+{0}% Resource Cost of Crafted Knives;-25"
+    },
+    "sik": {
+      "title": "Silent Blade",
+      "desc": "Increased sneak while holding a knife",
+      "stats": "+{0}% Perceived Threat while Stealthed with a Knife Equipped;-4;-8;-12"
+    },
+    "det": {
+      "title": "Killer Throw",
+      "desc": "Chance to instantly kill non-boss targets with a thrown knife.",
+      "stats": "{0}% chance to Kill Instantly with a Knife while Crouching;5"
+    },
+    "reb": {
+      "title": "Reinforced Blades",
+      "desc": "Crafted knives have increased durability",
+      "stats": "+{0}% Maximum Durability of Crafted Knives;25"
+    },
+    "srt": {
+      "title": "Stay Right There",
+      "desc": "Thrown knife critical hits immobilize target",
+      "stats": "{0}% Chance for Thrown Knife Critical Hits to Immobilise Targets;100"
+    }
+  },
+  "xf": {
+    "pip": {
+      "title": "Pistol Proficiency",
+      "desc": "Cheaper bulk pistol ammo crafting",
+      "stats": "+{0}% Crafted Pistol Ammo Resource Cost;-25"
+    },
+    "pih": {
+      "title": "Pistol Handling",
+      "desc": "Faster pistol reloading",
+      "stats": "+{0}% Reload Speed of Pistols;10;15;20"
+    },
+    "fwt": {
+      "title": "Featherweight",
+      "desc": "Firearms weigh less in your inventory",
+      "stats": "+{0}% Carry Weight of Firearms;-25"
+    },
+    "ppu": {
+      "title": "Pistol Powerup",
+      "desc": "Increased damage with pistols",
+      "stats": "+{0}% Damage with Pistols;3;5;10"
+    },
+    "gur": {
+      "title": "Gun Runner",
+      "desc": "Faster movespeed with firearms",
+      "stats": "+{0}% Movement Speed with a Firearm Equipped;5;10"
+    },
+    "rru": {
+      "title": "Rifle Re-Up",
+      "desc": "Faster rifle reloading",
+      "stats": "+{0}% Reload Speed of Rifles;10;15;20"
+    },
+    "shh": {
+      "title": "Shotgun Handling",
+      "desc": "Faster shotgun reloading",
+      "stats": "+{0}% Reload Speed of Shotguns;10;15;20"
+    },
+    "rid": {
+      "title": "Rifle Redress",
+      "desc": "Increased damage with rifles",
+      "stats": "+{0}% Damage with Rifles;3;5;10"
+    },
+    "ssv": {
+      "title": "Shotgun Sovereign",
+      "desc": "Increased damage with shotguns",
+      "stats": "+{0}% Damage with Shotguns;3;5;10"
+    },
+    "gum": {
+      "title": "Gunsmith",
+      "desc": "Reduced firearm durability loss",
+      "stats": "+{0}% Wear Rate of Firearms;-10;-15;-20"
+    },
+    "hms": {
+      "title": "How Many Shots Did You Count?",
+      "desc": "Chance to not consume ammo",
+      "stats": "{0}% chance to not consume Ammo when Firing a Projectile Weapon;5;10"
+    },
+    "ria": {
+      "title": "Rifle Reduction",
+      "desc": "Cheaper bulk rifle ammo crafting",
+      "stats": "+{0}% Crafted Rifle Ammo Resource Cost;-25"
+    },
+    "shp": {
+      "title": "Sharpshooter",
+      "desc": "Increased critical hit multiplier on firearms",
+      "stats": "+{0}% Critical Damage with Firearms;5;10;15"
+    },
+    "fof": {
+      "title": "Focus Fire",
+      "desc": "Reduced bullet spread",
+      "stats": "+{0}% Accuracy with Firearms;10;25"
+    },
+    "sha": {
+      "title": "Shotgun Slash",
+      "desc": "Cheaper bulk shotgun ammo crafting",
+      "stats": "+{0}% Crafted Shotgun Ammo Resource Cost;-25"
+    },
+    "frb": {
+      "title": "Freebies",
+      "desc": "Chance to craft double ammo",
+      "stats": "{0}% chance to Craft additional Ammo;5"
+    },
+    "nel": {
+      "title": "New Life",
+      "desc": "Chance that gun gains durability on a breaking shot",
+      "stats": "{0}% for Firearms to Recover Durability Instead of Breaking;30"
+    }
+  },
+  "za": {
+    "mar": {
+      "title": "Marathon Runner",
+      "desc": "Increased base stamina",
+      "stats": "+{0} Maximum Stamina;20;50"
+    },
+    "fft": {
+      "title": "Fleet Footed",
+      "desc": "Increased base movespeed",
+      "stats": "+{0}% Movement Speed;5;10"
+    },
+    "hem": {
+      "title": "Healthy Maverick",
+      "desc": "Increased base health",
+      "stats": "+{0} Maximum Health;50;100"
+    },
+    "hvh": {
+      "title": "Heavy Hitter",
+      "desc": "A general increase to melee damage",
+      "stats": "+{0}% Melee Damage;5;10"
+    },
+    "lir": {
+      "title": "Lightning Recovery",
+      "desc": "Increased base stamina regen",
+      "stats": "+{0}% Stamina Regeneration;10;20"
+    },
+    "tbs": {
+      "title": "'Tis But A Scratch",
+      "desc": "Reduced damage from animals",
+      "stats": "+{0} Physical Resistance;5;10;15"
+    },
+    "sak": {
+      "title": "Steel Ankles",
+      "desc": "Reduced chance of sprain from fall damage",
+      "stats": "{0}% chance to avoid Sprain when taking Fall Damage;5;10;20"
+    },
+    "bbk": {
+      "title": "Bounce Back",
+      "desc": "Increased base health regen",
+      "stats": "+{0}% Health Regeneration;10;20"
+    },
+    "pcl": {
+      "title": "Precision Logging",
+      "desc": "Increased wood from felling",
+      "stats": "+{0}% Yield from Felling Trees;5;10"
+    },
+    "lom": {
+      "title": "Low Maintenance",
+      "desc": "Decreased oxygen, hunger and thirst costs",
+      "stats": "+{0}% Water, Food, Oxygen Consumption;-10;-20"
+    },
+    "vvq": {
+      "title": "Very, Very Quiet",
+      "desc": "Harder to detect when sneaking",
+      "stats": "+{0}% Perceived Threat while Stealthed;-15"
+    },
+    "sss": {
+      "title": "Sweet, Savoury, Satisfied",
+      "desc": "Food buffs persist longer",
+      "stats": "+{0}% Food Effects Duration;10"
+    },
+    "hnh": {
+      "title": "Honed Heads",
+      "desc": "Adds a bonus to arrow damage",
+      "stats": "+{0}% Bow/Crossbow Projectile Damage and Reload Speed;5;10"
+    },
+    "sdc": {
+      "title": "Slice And Dice",
+      "desc": "Increased knife melee and thrown knife damage",
+      "stats": "+{0} Damage with Knives and Thrown Knives;5;10"
+    },
+    "mrw": {
+      "title": "Miner Rewards",
+      "desc": "Increased yield from mining ore deposits",
+      "stats": "+{0}% Yield from Mining;5;10"
+    },
+    "tb3": {
+      "title": "The Big Three",
+      "desc": "Increased wood, stone and fiber yield",
+      "stats": "+{0}% Yield from Felling Trees, Mining, and Harvesting;15"
+    },
+    "pkh": {
+      "title": "Pack Horse",
+      "desc": "Increased inventory weight capacity",
+      "stats": "+{0}% Weight Capacity;25"
+    },
+    "bgg": {
+      "title": "Bring A Gun To A Gun Fight",
+      "desc": "Increased firearm projectile damage",
+      "stats": "+{0}% Firearm Projectile Damage and Reload Speed;5;10"
+    },
+    "sod": {
+      "title": "Stick Of Destiny",
+      "desc": "Increased spear melee and thrown spear damage",
+      "stats": "+{0} Damage with Spears and Thrown Spears;5;10"
+    },
+    "svh": {
+      "title": "Savage Hunter I",
+      "desc": "Increased yields from hunting",
+      "stats": "{0}% Increased Meat and Bone harvested;25;50"
+    },
+    "mth": {
+      "title": "More Than A Handful",
+      "desc": "Increased yield from harvesting by hand",
+      "stats": "+{0}% Yield from Foraging;5;10"
+    },
+    "mos": {
+      "title": "Mobile Stockpile",
+      "desc": "Stone, wood and metal weigh less in inventory",
+      "stats": "{0}% Carry Weight of Wood, Stone, Ores;-20"
+    },
+    "ehm": {
+      "title": "Efficient Home Maintenance",
+      "desc": "Decreased stamina cost for Firewhacker use and faster repair time with hammers",
+      "stats": "+{0}% Stamina Consumed by Firewhacker Actions and Hammer Repair Time/-5"
+    },
+    "hmo": {
+      "title": "Health Monitor",
+      "desc": "See animal health bars",
+      "stats": "Can see Creature Alert Level and Health;1"
+    },
+    "sv2": {
+      "title": "Savage Hunter II",
+      "desc": "Increased yields from hunting",
+      "stats": "{0}% Increased Leather and Fur harvested;25;50"
+    },
+    "lxp": {
+      "title": "Lone Wolf",
+      "desc": "Increased XP gain when not in a party",
+      "stats": "+{0}% Experience Gained;8;15"
+    },
+    "bom": {
+      "title": "Basic Move",
+      "desc": "All buildables weigh less in your inventory",
+      "stats": "{0}% Carry Weight of Building Pieces;-15;-30"
+    },
+    "gdf": {
+      "title": "Gotta Damage Fast",
+      "desc": "Hedgehogs deal more damage",
+      "stats": "+{0}% Damage of Crafted Hedgehogs;20"
+    }
+  }
+}

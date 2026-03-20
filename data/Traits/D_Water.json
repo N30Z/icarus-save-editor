@@ -1,0 +1,268 @@
+{
+    "RowStruct": "/Script/Icarus.WaterData",
+    "Defaults": {
+        "FlowType": "Consume",
+        "AlwaysActive": false,
+        "AutoActivate": false,
+        "ResourceFlowRate": 1000,
+        "bAllowPullingResourceFromInventory": false,
+        "bAllowPushingResourceToInventory": false,
+        "bStorageIsInFlowOnly": false,
+        "BrownOutModifier": {
+            "RowName": "None",
+            "DataTableName": "D_ModifierStates"
+        },
+        "AutoShutoffFlowPercent": 0,
+        "bAllowAutoRestart": false,
+        "bIsOptional": false,
+        "OptionalFlowType": {
+            "RowName": "None",
+            "DataTableName": "D_OptionalResourceFlows"
+        }
+    },
+    "Rows": [
+        {
+            "Name": "Pump",
+            "FlowType": "Produce",
+            "AutoActivate": true
+        },
+        {
+            "Name": "Composter",
+            "AutoActivate": true,
+            "ResourceFlowRate": 100,
+            "AutoShutoffFlowPercent": -1,
+            "bIsOptional": true,
+            "OptionalFlowType": {
+                "RowName": "Boost"
+            }
+        },
+        {
+            "Name": "Barrel",
+            "FlowType": "Store",
+            "AutoActivate": true
+        },
+        {
+            "Name": "Sprinkler",
+            "AutoActivate": true,
+            "ResourceFlowRate": 100,
+            "AutoShutoffFlowPercent": 99
+        },
+        {
+            "Name": "CropPlot",
+            "AlwaysActive": true,
+            "AutoActivate": true,
+            "ResourceFlowRate": 15,
+            "AutoShutoffFlowPercent": -1,
+            "bIsOptional": true,
+            "OptionalFlowType": {
+                "RowName": "Boost"
+            }
+        },
+        {
+            "Name": "CementMixer",
+            "AutoActivate": true,
+            "ResourceFlowRate": 250,
+            "AutoShutoffFlowPercent": -1,
+            "bIsOptional": true,
+            "OptionalFlowType": {
+                "RowName": "Boost"
+            }
+        },
+        {
+            "Name": "T3_Cleaner",
+            "AutoActivate": true,
+            "ResourceFlowRate": 250,
+            "AutoShutoffFlowPercent": -1,
+            "bIsOptional": true,
+            "OptionalFlowType": {
+                "RowName": "Boost"
+            }
+        },
+        {
+            "Name": "KitchenBench",
+            "AutoActivate": true,
+            "ResourceFlowRate": 0,
+            "bAllowPullingResourceFromInventory": true,
+            "BrownOutModifier": {
+                "RowName": "Water_Brownout_Crafting"
+            },
+            "AutoShutoffFlowPercent": -1,
+            "bIsOptional": true,
+            "OptionalFlowType": {
+                "RowName": "PerRecipe"
+            }
+        },
+        {
+            "Name": "Generic_Reciever",
+            "AutoActivate": true,
+            "ResourceFlowRate": 100
+        },
+        {
+            "Name": "GlassworkingBench",
+            "AutoActivate": true,
+            "ResourceFlowRate": 0,
+            "AutoShutoffFlowPercent": -1,
+            "bIsOptional": true
+        },
+        {
+            "Name": "MasonryBench",
+            "AutoActivate": true,
+            "ResourceFlowRate": 250,
+            "AutoShutoffFlowPercent": -1,
+            "bIsOptional": true,
+            "OptionalFlowType": {
+                "RowName": "Boost"
+            }
+        },
+        {
+            "Name": "ElectricMasonryBench",
+            "AutoActivate": true,
+            "ResourceFlowRate": 250,
+            "AutoShutoffFlowPercent": -1,
+            "bIsOptional": true,
+            "OptionalFlowType": {
+                "RowName": "Boost"
+            }
+        },
+        {
+            "Name": "Sink",
+            "AutoActivate": true,
+            "ResourceFlowRate": 100,
+            "AutoShutoffFlowPercent": 99
+        },
+        {
+            "Name": "KitchenStove",
+            "AutoActivate": true,
+            "ResourceFlowRate": 0,
+            "bAllowPullingResourceFromInventory": true,
+            "BrownOutModifier": {
+                "RowName": "Water_Brownout_Crafting"
+            },
+            "bIsOptional": true,
+            "OptionalFlowType": {
+                "RowName": "PerRecipe"
+            }
+        },
+        {
+            "Name": "ElectricStove",
+            "AutoActivate": true,
+            "ResourceFlowRate": 0,
+            "bAllowPullingResourceFromInventory": true,
+            "BrownOutModifier": {
+                "RowName": "Water_Brownout_Crafting"
+            },
+            "bIsOptional": true,
+            "OptionalFlowType": {
+                "RowName": "PerRecipe"
+            }
+        },
+        {
+            "Name": "Aquarium",
+            "AutoActivate": true,
+            "ResourceFlowRate": 250,
+            "AutoShutoffFlowPercent": 99
+        },
+        {
+            "Name": "Advanced_Aquarium",
+            "AutoActivate": true,
+            "ResourceFlowRate": 500
+        },
+        {
+            "Name": "Large_Advanced_Aquarium",
+            "AutoActivate": true,
+            "ResourceFlowRate": 750
+        },
+        {
+            "Name": "Rain_Reservoir",
+            "FlowType": "Store",
+            "AutoActivate": true,
+            "AutoShutoffFlowPercent": -1
+        },
+        {
+            "Name": "Water_Barrel",
+            "FlowType": "Store",
+            "AutoActivate": true
+        },
+        {
+            "Name": "Biofuel_Water_Pump",
+            "FlowType": "Produce",
+            "AutoActivate": true
+        },
+        {
+            "Name": "Mission_Analyzer",
+            "AlwaysActive": true,
+            "AutoActivate": true,
+            "ResourceFlowRate": 100,
+            "AutoShutoffFlowPercent": 99
+        },
+        {
+            "Name": "Furnaces",
+            "AutoActivate": true,
+            "ResourceFlowRate": 0,
+            "bAllowPullingResourceFromInventory": true,
+            "AutoShutoffFlowPercent": -1,
+            "bIsOptional": true,
+            "OptionalFlowType": {
+                "RowName": "PerRecipe"
+            }
+        },
+        {
+            "Name": "Water_Purifier_T2",
+            "ResourceFlowRate": 200,
+            "AutoShutoffFlowPercent": -1
+        },
+        {
+            "Name": "Water_Trough_T4",
+            "ResourceFlowRate": 30,
+            "bAllowPushingResourceToInventory": true,
+            "AutoShutoffFlowPercent": 99
+        },
+        {
+            "Name": "Water_Purifier_T4",
+            "AutoActivate": true,
+            "ResourceFlowRate": 500,
+            "AutoShutoffFlowPercent": -1
+        },
+        {
+            "Name": "Mission_Incubator",
+            "AlwaysActive": true,
+            "AutoActivate": true,
+            "ResourceFlowRate": 500,
+            "AutoShutoffFlowPercent": 99
+        },
+        {
+            "Name": "Water_Trough",
+            "AutoActivate": true,
+            "ResourceFlowRate": 250,
+            "bStorageIsInFlowOnly": true
+        },
+        {
+            "Name": "Electric_Oxite_Dissolver",
+            "AutoActivate": true,
+            "ResourceFlowRate": 500,
+            "AutoShutoffFlowPercent": 99
+        },
+        {
+            "Name": "Fabricator",
+            "AutoActivate": true,
+            "ResourceFlowRate": 0,
+            "bAllowPullingResourceFromInventory": true,
+            "AutoShutoffFlowPercent": -1,
+            "bIsOptional": true,
+            "OptionalFlowType": {
+                "RowName": "PerRecipe"
+            }
+        },
+        {
+            "Name": "ChemistryBench",
+            "AutoActivate": true,
+            "ResourceFlowRate": 0,
+            "bAllowPullingResourceFromInventory": true,
+            "AutoShutoffFlowPercent": -1,
+            "bIsOptional": true,
+            "OptionalFlowType": {
+                "RowName": "PerRecipe"
+            }
+        }
+    ]
+}

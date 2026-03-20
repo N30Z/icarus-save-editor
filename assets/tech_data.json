@@ -1,0 +1,1722 @@
+{
+  "biolam": {
+    "title": "Biofuel Lamp",
+    "desc": "A robust, portable biofuel-powered lamp.",
+    "flavor": "Activate with secondary fire."
+  },
+  "fishtr": {
+    "title": "Fishing Trap",
+    "desc": "Add bait, set, and wait."
+  },
+  "t_bupg": {
+    "title": "Building Upgrade Tool",
+    "desc": "Improve your structures without tearing them down.",
+    "flavor": "Allows you to replace an existing structural piece for an advanced version, if you have that item in your inventory. Hold 'R\" when holding the tool."
+  },
+  "t_mach": {
+    "title": "Machete",
+    "desc": "A heavy duty blade, highly durable but less suitable for skinning.",
+    "flavor": "Vanquishes flora and fauna alike."
+  },
+  "co_flo": {
+    "title": "Concrete Floor",
+    "desc": "Strong and stable, a floor that endures the worst Icarus can deliver."
+  },
+  "t_recb": {
+    "title": "Recurve Bow",
+    "desc": "With higher energy, recurve bows increase range and power.",
+    "flavor": "Originating in ancient Scythia, the recurve bow stores energy more efficiently than a conventional bow, allowing for smaller, more compact weapons with an appreciable improvement in range and stopping power."
+  },
+  "c_sres": {
+    "title": "Stamina Restoration Paste",
+    "desc": "A natural stimulant that restores lost stamina.",
+    "flavor": "As countless athletes, party-goers and would-be mystics have noted, the line between natural stimulant and highly addictive narcotic is arbitrary, at best."
+  },
+  "radbio": {
+    "title": "Biofuel Radar",
+    "desc": "A portable topographical radar unit powered by Biofuel. Nearby Local wildlife become agressive when this is active.",
+    "flavor": "Powered by good old Icarus Biofuel."
+  },
+  "p_btit": {
+    "title": "Titanium Bolt",
+    "desc": "A high-damage projectile.",
+    "flavor": "\"When you've got two tons of polar bear lumbering towards you across the ice, you suddenly realise a bullet's not going to cut it. But a titanium bolt through the eye, that's another story.\" - Sol Berlinski"
+  },
+  "iw_hps": {
+    "title": "Refined Wood Halfpieces",
+    "desc": "Half- and quarter-sized building elements for detailed construction work.",
+    "flavor": "These sets are useful for creating walkways, balconies, trims and a range of other smaller constructions."
+  },
+  "rainre": {
+    "title": "Rain Reservoir",
+    "desc": "A simple and durable way to collect rain water.",
+    "flavor": "Water can be consumed directly from the reservoir, or it will refill an equipped container."
+  },
+  "iw_doo": {
+    "title": "Interior Wood Door",
+    "desc": "A light wooden door, best suited to internal use.",
+    "flavor": "Less durable than basic wooden construction elements, refined materials will make your lumber go further, but require protection from the elements."
+  },
+  "gl_win": {
+    "title": "Glass Window",
+    "desc": "A single-pane glass window."
+  },
+  "al_wan": {
+    "title": "Aluminium Wall Angled",
+    "desc": "A lightweight, corrugated aluminium gable. ",
+    "flavor": "Able to be repaired with a repair hammer."
+  },
+  "p_aste": {
+    "title": "Steel Arrow",
+    "desc": "A stronger arrow head, more durable than flint.",
+    "flavor": "Tempered and fletched, the steel arrow has significant upsides over comparable alternatives."
+  },
+  "t_pkni": {
+    "title": "Platinum Knife",
+    "desc": "A precision blade, stronger than steel.",
+    "flavor": "Platinum's durablity gives an incredibly accurate, lethal cutting edge."
+  },
+  "t_paxe": {
+    "title": "Platinum Axe",
+    "desc": "An axceedingly reliable, accurate hewing tool.",
+    "flavor": "\"Give me six hours to chop down a tree, I'll spend the first four sharpening the axe\" - A. Lincoln"
+  },
+  "th_hps": {
+    "title": "Thatch Halfpieces",
+    "desc": "Half- and quarter-sized building elements for detailed construction work.",
+    "flavor": "These sets are useful for creating walkways, balconies, trims and a range of other smaller constructions."
+  },
+  "iw_flo": {
+    "title": "Interior Wood Floor",
+    "desc": "Light wooden flooring, best used internally.",
+    "flavor": "Less durable than basic wooden construction elements, refined materials will make your lumber go further, but require protection from the elements."
+  },
+  "t_ppkx": {
+    "title": "Platinum Pickaxe",
+    "desc": "Strong, high-yield and extremely accurate.",
+    "flavor": "There is a small, but specific class of problems for which the only solution is a pickaxe."
+  },
+  "a_ghic": {
+    "title": "Ghillie Chest Armor",
+    "desc": "Lightweight camouflage, reduces visibility to wildlife, but gives little protection or warmth.",
+    "flavor": "Take the effort out of hunting."
+  },
+  "c_hres": {
+    "title": "Health Restoration Paste",
+    "desc": "An organic fusion that restores health.",
+    "flavor": "The combination of Icarus's unique conditions and genetic adjustments to plant life has seen the addition of 'useful' methyl chains to many previously innocuous plant-based preparations."
+  },
+  "botbee": {
+    "title": "Beer Bottle",
+    "desc": "A small, empty glass bottle. "
+  },
+  "wo_trf": {
+    "title": "Wood Floor Trapdoor",
+    "desc": "A floorpiece with a hole for a trapdoor.",
+    "flavor": "Trapdoor not included."
+  },
+  "s_ceme": {
+    "title": "Cement Mixer",
+    "desc": "Craft concrete construction elements.",
+    "flavor": "Concrete is composed of two essential elements: aggregate and a cement binder, with ratios depending on the specific design mix. Specialized concrete engineers are rare on Icarus, though."
+  },
+  "ltrodb": {
+    "title": "Lightning Rod",
+    "desc": "Channels lightning strikes safely toward the ground, saving structures from fiery destruction.",
+    "flavor": "The effect of Minos's gravitational tides on the atmosphere creates extraordinarily powerful electrical storms, making these devices indispensible."
+  },
+  "a_cloa": {
+    "title": "Cloth Arm Armor",
+    "desc": "Light and easily craftable, offering low protection and decent insulation."
+  },
+  "torrag": {
+    "title": "Wood Rag Torch",
+    "desc": "An easily crafted source of illumination.",
+    "flavor": "An ancient guiding light has found its place on Icarus, to keep the darkness at bay."
+  },
+  "gl_wal": {
+    "title": "Glass Wall",
+    "desc": "A fully transparent, mullioned wall section.",
+    "flavor": "Throw no stones, but hold 'R' to cycle through variants, such as doorways. Mysteriously, can be repaired with a repair hammer."
+  },
+  "p_sbuc": {
+    "title": "00 Buckshot Shell",
+    "desc": "Standard 12 gauge \"00\" buckshot."
+  },
+  "fertgr": {
+    "title": "Growth Fertilizer",
+    "desc": "Helps your crops to grow faster",
+    "flavor": "Reach for the sky"
+  },
+  "s_cook": {
+    "title": "Cooking Station",
+    "desc": "A stone oven and food preparation station.",
+    "flavor": "While it may not deliver high cuisine, the Cooking Station rewards the attentions of an attentive chef with a swifter, more sustaining food supply."
+  },
+  "t_ipkx": {
+    "title": "Iron Pickaxe",
+    "desc": "A strong iron pickaxe, for more rapid, reliable mining of basic stone.",
+    "flavor": "An enduring if ironic icon of the so-called 'Exotics Rush'."
+  },
+  "gl_rco": {
+    "title": "Glass Roof Corner",
+    "desc": "A transparent insert for angled roofs."
+  },
+  "M_cool": {
+    "title": "Cooling Bandage",
+    "desc": "A bandage with a soothing balm to quickly lower temperatures"
+  },
+  "t_shov": {
+    "title": "Shovel",
+    "desc": "Shift snow, or bury a friend."
+  },
+  "al_trd": {
+    "title": "Aluminium Trapdoor",
+    "desc": "A simple aluminium door-in-the-floor.",
+    "flavor": "Able to be repaired with a repair hammer."
+  },
+  "a_hunc": {
+    "title": "Hunter Chest Armor",
+    "desc": "Lightweight camouflage, reduces visibility to wildlife, but gives little protection or warmth.",
+    "flavor": "Take the effort out of hunting."
+  },
+  "t_bspe": {
+    "title": "Bone Spear",
+    "desc": "A bone blade improves melee and ranged damage.",
+    "flavor": "As most new arrivals on Icarus realise at some stage, there is a certain elegance to hunting an animal for its bones, in order to craft a more effective weapon to hunt further animals."
+  },
+  "al_doo": {
+    "title": "Aluminium Door",
+    "desc": "A rough but resilient corrugated aluminium door.",
+    "flavor": "Able to be repaired with a repair hammer."
+  },
+  "p_afla": {
+    "title": "Flare Arrow",
+    "desc": "Projects your position into the sky.",
+    "flavor": "The lost among us lean heavily on this launchable marker."
+  },
+  "s_carp": {
+    "title": "Carpentry Bench",
+    "desc": "Workbench and tools for advanced wooden crafting.",
+    "flavor": "The rapid growth of trees on Icarus makes for noticeably less durable wooden creations."
+  },
+  "e_wate": {
+    "title": "Waterwheel Generator",
+    "desc": "A combined wheel and generator, turns fluid motion into angular momentum.",
+    "flavor": "Still one of humanity's greatest ideas."
+  },
+  "ecooll": {
+    "title": "Heavy Air Conditioner",
+    "desc": "A powered heat exchange unit for cooling larger areas.",
+    "flavor": "Stay frosty."
+  },
+  "c_ocon": {
+    "title": "Oxygen Consumption Paste",
+    "desc": "A natural beta blocker.",
+    "flavor": "This preparation reduces the heart rate, dropping oxygen consumption temporarily."
+  },
+  "a_furl": {
+    "title": "Fur Leg Armor",
+    "desc": "Heavy, strengthened fur leg armor, warm and moderately protective."
+  },
+  "t_cros": {
+    "title": "Crossbow",
+    "desc": "Heavy hitting with a slow reload, so make it count.",
+    "flavor": "'The first time I held a crossbow, I was confused. How can you feel powerful and so medieval at the same time?' -- Anton Chang"
+  },
+  "wo_sta": {
+    "title": "Wood Stairs",
+    "desc": "Roughly built wooden stairs.",
+    "flavor": "Up, down, whatever."
+  },
+  "t_mkni": {
+    "title": "Combat Knife",
+    "desc": "A hardened sheepsfoot blade for the swiftest killing and skinning.",
+    "flavor": "Stay sharp."
+  },
+  "t_comb": {
+    "title": "Compound Bow",
+    "desc": "Lightweight, long-range lethality."
+  },
+  "flashl": {
+    "title": "Flashlight",
+    "desc": "An LED flashlight for illuminating dark corners.",
+    "flavor": "Activate light with secondary fire."
+  },
+  "M_sutu": {
+    "title": "Suture Kit",
+    "desc": "A basic medical kit for healing deep wounds.",
+    "flavor": "Whether lightly or deeply wounded, 'Permit the pain to pass over you, and through you.' - Bao Li Wei"
+  },
+  "t_dsca": {
+    "title": "Deep Mining Ore Scanner",
+    "desc": "A scanner that can locate various deep ore deposits within the surrounding area",
+    "flavor": "A truly remarkable piece of equipment."
+  },
+  "lthwin": {
+    "title": "Leather Curtain Window",
+    "desc": "Heavy duty leather curtains.",
+    "flavor": "Happier with flaps."
+  },
+  "extbio": {
+    "title": "Biofuel Extractor",
+    "desc": "A portable, powered mining unit powered by biofuel for extracting exotics deposits.",
+    "flavor": "I mean, it works."
+  },
+  "g_frag": {
+    "title": "Frag Grenade",
+    "desc": "A basic fragmentation grenade design.",
+    "flavor": "Homemade explosives are the best kind."
+  },
+  "firepl": {
+    "title": "Fireplace",
+    "desc": "Cooks food swiftly and safely. Basically a large enclosed firepit, for a more homely feel.",
+    "flavor": "On Icarus, fire is both friend and foe."
+  },
+  "t_pham": {
+    "title": "Platinum Hammer",
+    "desc": "Light, durable, accurate, but still a hammer.",
+    "flavor": "\"On Icarus, you're either the hammer, or the anvil\" - Javier Survez"
+  },
+  "p_apoi": {
+    "title": "Poison Arrow",
+    "desc": "Slow death, with a point.",
+    "flavor": "Requiring less accuracy, but more patience, the poison arrow brings down quarry slowly, but surely."
+  },
+  "a_cloh": {
+    "title": "Cloth Head Armor",
+    "desc": "Light and easily craftable, offering low protection and decent insulation."
+  },
+  "iw_bea": {
+    "title": "Interior Wood Beam",
+    "desc": "Anchors structures to the ground for higher building.",
+    "flavor": "Beams connect vertically and diagonally to support multi-level construction. Your HUD will indicate when beams are anchored with a blue cursor."
+  },
+  "c_sreg": {
+    "title": "Stamina Regeneration Paste",
+    "desc": "An organic stimulant that accelerates stamina recovery.",
+    "flavor": "A herbal preparation that acts rapidly on the sympathetic nervous system, increasing noradrenergic activity."
+  },
+  "iw_rhf": {
+    "title": "Refined Wood Halfpitches",
+    "desc": "Shallow-sloped roof building elements.",
+    "flavor": "A two part construction element, containing a base slope and an upper slope, for building low-pitched roofs."
+  },
+  "wchair": {
+    "title": "Wooden Chair",
+    "desc": "A robust, rustic wooden seat.",
+    "flavor": "Driven by the demands and scarcity of life on the surface, a recognizable 'Icarus vernacular' has swiftly emerged, spanning many forms of design, with furniture being no exception."
+  },
+  "t_sham": {
+    "title": "Steel Hammer",
+    "desc": "The most efficient tool for repairing damaged structures.",
+    "flavor": "The tidal forces of Minos produce exceptionally violent weather on Icarus, its largest moon, which in turn damages even the most robust construction. A steel hammer can even the odds ... a little."
+  },
+  "st_fra": {
+    "title": "Stone Frame",
+    "desc": "A heavy stone foundation, extends height and stability of constructions."
+  },
+  "m_gunp": {
+    "title": "Gunpowder",
+    "desc": "Creating and solving problems for over one thousand years.",
+    "flavor": "'Not the best we could do, but not the worst either' - Sol Berlinski"
+  },
+  "kitstv": {
+    "title": "Biofuel Stove",
+    "desc": "An efficient, biofuel-powered cooking unit.",
+    "flavor": "A well-crafted, solidly insulated stove for discerning off-world chefs."
+  },
+  "blwall": {
+    "title": "Basic Wall Light",
+    "desc": "A wall-mounted lamp, providing wide illumination, needing power.",
+    "flavor": "\"Darkness cannot drive out darkness.\""
+  },
+  "wo_win": {
+    "title": "Wood Window",
+    "desc": "Open to let Icarus in, close to keep it out."
+  },
+  "wbed": {
+    "title": "Wood Bed",
+    "desc": "Once placed in shelter, a bed can be set as a respawn location. Can also be used to sleep through the night.",
+    "flavor": "Rest, restore energy, respawn as required."
+  },
+  "t_pist": {
+    "title": "Pistol",
+    "desc": "A serviceable 9mm handgun.",
+    "flavor": "Icarus is open carry."
+  },
+  "th_ram": {
+    "title": "Thatch Roof/Ramp",
+    "desc": "A light, easily crafted ramp for roofing or access.",
+    "flavor": "Whether you employ this for a roof, or simply for ease of access, the thatch ramp is simple to make and easy to carry, but provides only limited environmental protection."
+  },
+  "t_isic": {
+    "title": "Iron Sickle",
+    "desc": "An ancient, but efficient tool for harvesting from nature.",
+    "flavor": "Delivers more resources with each swipe."
+  },
+  "t_fwha": {
+    "title": "Fire Whacker",
+    "desc": "Quickly beats out fires.",
+    "flavor": "Discovered in prehistory, the fire whacker represents an effective, if unsophisticated tactic: Attack the flames until they surrender."
+  },
+  "wpump": {
+    "title": "Water Pump",
+    "desc": "A small, but powerful axial-flow pump useful for creating water networks."
+  },
+  "wpipet": {
+    "title": "Water Pipe Tool",
+    "desc": "A tool to help create and connect Water networks."
+  },
+  "p_srif": {
+    "title": "Rifle Round",
+    "desc": "Standard NATO 7.62mm cartridges."
+  },
+  "c_wcon": {
+    "title": "Water Consumption Paste",
+    "desc": "A natural preparation, temporarily reducing the body's need for water.",
+    "flavor": "The key word here is 'temporarily'."
+  },
+  "p_bcop": {
+    "title": "Copper Bolt",
+    "desc": "Lightweight and strong, the copper bolt hits hard over distance."
+  },
+  "a_furf": {
+    "title": "Fur Feet Armor",
+    "desc": "Heavily insulated fur boots, offering moderate physical protection."
+  },
+  "iw_rai": {
+    "title": "Interior Wood Railing",
+    "desc": "A light wooden railing for internal construction."
+  },
+  "th_lad": {
+    "title": "Thatch Ladder",
+    "desc": "An easily craftable ladder."
+  },
+  "wcupbo": {
+    "title": "Wood Cupboard",
+    "desc": "A place to put necessities ... and the rest.",
+    "flavor": "Has 40 storage slots."
+  },
+  "ecompo": {
+    "title": "Electric Composter",
+    "desc": "Advanced biofuel unit for accelerated production.",
+    "flavor": "An upshot of the Climate Emergency was a focus on efficient, sustainable technology that squeezes every ounce of energy from nature."
+  },
+  "s_trop": {
+    "title": "Trophy Bench",
+    "desc": "Taxidermy tools and mounting equipment.",
+    "flavor": "Make a record of your victories, because planet is barely aware of you."
+  },
+  "s_rdec": {
+    "title": "Rustic Decoration Bench",
+    "desc": "A bench for crafting items from the Rustic Decor Set",
+    "flavor": "Pick up a new hobby, today!"
+  },
+  "a_cloc": {
+    "title": "Cloth Chest Armor",
+    "desc": "Light and easily craftable, offering low protection and decent insulation."
+  },
+  "a_coma": {
+    "title": "Composite Arms Armor",
+    "desc": "Heavy HDP armor with unmatched impact protection and insulation.",
+    "flavor": "Employing ultra-high molecular weight thermoplastics, composite armor trades weight for extraordinary protection against physical damage and exposure. "
+  },
+  "m_pois": {
+    "title": "Poison Paste",
+    "desc": "A slow-working toxin made from spoiled meat. ",
+    "flavor": "'Life is a slow working poison' - Jean Hurvit"
+  },
+  "st_flo": {
+    "title": "Stone Floor",
+    "desc": "Roughly hewn flagstones, unlikely to burn."
+  },
+  "icratm": {
+    "title": "Medium Interior Wood Crate",
+    "desc": "A storage unit for items and gear.",
+    "flavor": "Has 20 storage slots."
+  },
+  "s_potb": {
+    "title": "Potbelly Stove",
+    "desc": "A wrought iron stove for cooking basic meals.",
+    "flavor": "Hearty and filling, the warm meals provided by this stove are the next steps towards culinary perfection."
+  },
+  "st_win": {
+    "title": "Reinforced Window",
+    "desc": "A braced and bolstered wooden window."
+  },
+  "a_polf": {
+    "title": "Polar Bear Feet Armor",
+    "desc": "Highly insulated, lightweight protective fur boots.",
+    "flavor": "Evolved for the most demanding climate on Earth, the polar bear's skin works equally well in the most damaged environment on Icarus."
+  },
+  "a_leaf": {
+    "title": "Leather Feet Armor",
+    "desc": "Roughly made boots, increase temperature and damage resistance."
+  },
+  "s_croh": {
+    "title": "Hydroponic Crop Plot",
+    "desc": "An advanced option for the busy farmer. Supports inputs from both Power and Water networks for increased crop growth speed. Fully-grown crops left too long will eventually wither and only provide spoiled plants.",
+    "flavor": "Can be connected to both a water and a power network"
+  },
+  "co_sta": {
+    "title": "Concrete Stairs",
+    "desc": "Strong, simple stairs.",
+    "flavor": "Verticality included."
+  },
+  "a_comc": {
+    "title": "Composite Chest Armor",
+    "desc": "Heavy HDP armor with unmatched impact protection and insulation.",
+    "flavor": "Employing ultra-high molecular weight thermoplastics, composite armor trades weight for extraordinary protection against physical damage and exposure. "
+  },
+  "wlamom": {
+    "title": "Omnidirectional Worklamp",
+    "desc": "A basic lamp for illuminating a large area."
+  },
+  "iw_trd": {
+    "title": "Interior Wood Trapdoor",
+    "desc": "A light wooden hatch.",
+    "flavor": "Attaches to a floor trapdoor structure. Less durable than basic wooden construction elements, refined materials will make your lumber go further, but require protection from the elements."
+  },
+  "t_spkx": {
+    "title": "Steel Pickaxe",
+    "desc": "Tempered steel, suitable for even the toughest of metals.",
+    "flavor": "When first landing on Icarus prospectors quickly discovered the need for stronger metals to deal with the local ore."
+  },
+  "th_wan": {
+    "title": "Thatch Wall Angled",
+    "desc": "Light, easily crafted gables."
+  },
+  "a_coml": {
+    "title": "Composite Legs Armor",
+    "desc": "Heavy HDP armor with unmatched impact protection and insulation.",
+    "flavor": "Employing ultra-high molecular weight thermoplastics, composite armor trades weight for extraordinary protection against physical damage and exposure. "
+  },
+  "p_asto": {
+    "title": "Stone Arrow",
+    "desc": "The most basic version of an ancient weapon.",
+    "flavor": "Attempts to redesign the planet failed, but the terrazone nonetheless has a ready supply of raw ingredients for this 'rock on a stick'."
+  },
+  "firepi": {
+    "title": "Firepit",
+    "desc": "A large, stone-lined pit for swift cooking and heating.",
+    "flavor": "Flashroast a steak or an entire mammoth forequarter."
+  },
+  "a_leal": {
+    "title": "Leather Leg Armor",
+    "desc": "Simple chausses, improving insulation and damage resistance."
+  },
+  "st_rhf": {
+    "title": "Stone Halfpitches",
+    "desc": "Shallow-sloped roof building elements.",
+    "flavor": "A two part construction element, containing a base slope and an upper slope, for building low-pitched roofs."
+  },
+  "m_carp": {
+    "title": "Carbon Paste",
+    "desc": "A carbon-based admixture used in advanced constructions.",
+    "flavor": "Don't leave Earth without it."
+  },
+  "t_tsic": {
+    "title": "Titanium Sickle",
+    "desc": "A resilient version of an antique design.",
+    "flavor": "Sharper and stronger, it swings further, delivering more resources with each swipe."
+  },
+  "ewire": {
+    "title": "Electricity Tool",
+    "desc": "A tool to help create and connect Electricity networks."
+  },
+  "M_bthp": {
+    "title": "Blood Thinning Paste",
+    "desc": "A folk remedy for diminishing the effects of concussions and contusions.",
+    "flavor": "A very basic anticoagulant."
+  },
+  "co_ram": {
+    "title": "Concrete Roof/Ramp",
+    "desc": "A high strength slope for roofing, supports great weight."
+  },
+  "t_csca": {
+    "title": "Cave Scanner",
+    "desc": "A scanner that can locate caves within the surrounding area. Right click to toggle audible beeping.",
+    "flavor": "Making life easier, one piece of technology at a time."
+  },
+  "co_fra": {
+    "title": "Concrete Frame",
+    "desc": "The strongest, most stable foundation for any structure."
+  },
+  "m_cbon": {
+    "title": "Crushed Bone",
+    "desc": "A calium-rich powder.",
+    "flavor": "Highly ground bone creates a useful ingredient for a range of concoctions."
+  },
+  "wo_rco": {
+    "title": "Wood Roof Corner",
+    "desc": "A roughly cut insert for angled roofs."
+  },
+  "th_wal": {
+    "title": "Thatch Wall",
+    "desc": "Lightweight walls, doorways and windows (Hold 'R' for variants).",
+    "flavor": "Simple to craft and plentiful, thatch construction provides rapid shelter to those on the move, or in need of rapid, disposable protection."
+  },
+  "c_scon": {
+    "title": "Stamina Consumption Paste",
+    "desc": "A biotic compound that slows stamina loss temporarily.",
+    "flavor": "The time-jarring effects of exotics find their influence in many subtle, poorly understood ways on Icarus."
+  },
+  "m_rope": {
+    "title": "Rope",
+    "desc": "Remains one of humanity's greatest inventions.",
+    "flavor": "A central element in crafting various construction materials and equipment."
+  },
+  "brazie": {
+    "title": "Brazier",
+    "desc": "An easily crafted, open source of light."
+  },
+  "lthdoo": {
+    "title": "Leather Curtain Door",
+    "desc": "A heavily curtained doorway.",
+    "flavor": "A door for those unimpressed by hinges and handles."
+  },
+  "fireex": {
+    "title": "Fire Extinguisher",
+    "desc": "A canister of compressed flame-extinguishing gel.",
+    "flavor": "The instructions say: 'Aim towards flame.'"
+  },
+  "co_trd": {
+    "title": "Heavy Trapdoor",
+    "desc": "A heavy duty trapdoor.",
+    "flavor": "May be attached to a floorpiece with a trapdoor accessway."
+  },
+  "edehum": {
+    "title": "Electric Dehumidifier",
+    "desc": "Diminishes such health risks as pneumonia, while also seeming to dispel cave worms.",
+    "flavor": "Whether cave worms are offended by the sudden aridity it produces, or the high pitched whine, research is yet to confirm."
+  },
+  "s_herb": {
+    "title": "Herbalism Bench",
+    "desc": "Craft, create, concoct.",
+    "flavor": "Once the realm of witches and shaman, herbalism offers useful wisdom to those who can discern basic science from hocus pocus."
+  },
+  "st_trd": {
+    "title": "Reinforced Trapdoor",
+    "desc": "A braced and bolstered wooden trapdoor.",
+    "flavor": "May be attached to a floorpiece with a trapdoor accessway."
+  },
+  "a_pola": {
+    "title": "Polar Bear Arm Armor",
+    "desc": "Tough and lightweight fur gloves offering extreme protection against low temperatures.",
+    "flavor": "Skinning polar bears has been illegal to everyone except Inuit hunters for centuries on Earth. On Icarus, there is no such prohibition."
+  },
+  "a_ghif": {
+    "title": "Ghillie Feet Armor",
+    "desc": "Lightweight camouflage, reduces visibility to wildlife, but gives little protection or warmth.",
+    "flavor": "Take the effort out of hunting."
+  },
+  "radele": {
+    "title": "Electric Radar",
+    "desc": "A portable topographical radar unit powered by Electricity, angers local wildlife when active.",
+    "flavor": "Connect this baby up to a generator and you are good to go."
+  },
+  "s_skin": {
+    "title": "Skinning Bench",
+    "desc": "Fully processes animal carcasses for more resources.",
+    "flavor": "As any hunter knows, preparing an animal can be a slow, messy, wasteful task. The right tools make all the difference."
+  },
+  "wcrats": {
+    "title": "Small Wood Crate",
+    "desc": "A modest wooden crate for storing small items.",
+    "flavor": "Has 10 storage slots."
+  },
+  "oxiteb": {
+    "title": "Oxidizer",
+    "desc": "A simple device for processing oxite into oxygen.",
+    "flavor": "The oxidizer is a slow, unpowered device that uses mechanical pressure to crush oxite, then store the resulting oxygen. Once the balloon begins to fill, consume oxygen from it directly."
+  },
+  "icrats": {
+    "title": "Small Interior Wood Crate",
+    "desc": "A small storage unit for items.",
+    "flavor": "Has 10 storage slots."
+  },
+  "th_doo": {
+    "title": "Thatch Door",
+    "desc": "An easily crafted door."
+  },
+  "wo_bea": {
+    "title": "Wood Beam",
+    "desc": "Anchors structures to the ground for higher building.",
+    "flavor": "Beams connect vertically and diagonally to support multi-level construction. Your HUD will indicate when beams are anchored with a blue cursor."
+  },
+  "iw_wal": {
+    "title": "Interior Wood Wall",
+    "desc": "A light wooden wall, best used internally.",
+    "flavor": "Less durable than basic wooden construction elements, refined materials will make your lumber go further, but require protection from the elements."
+  },
+  "M_btht": {
+    "title": "Blood Thinning Tonic",
+    "desc": "An effective remedy for relieving concussions and contusions.",
+    "flavor": "Voyagers to Icarus have found themselves forced to ressurect a range of folk treatments and traditional medicines."
+  },
+  "kitstg": {
+    "title": "Kitchen Storage Block",
+    "desc": "A compact module for all your kitchen storage needs.",
+    "flavor": "For the demanding Icarus ingredient hoarder, a small module with 40 storage slots."
+  },
+  "dmdbio": {
+    "title": "Biofuel Deep-Mining Drill",
+    "desc": "A biofuel-powered drill capable of mining ore trapped deep under the surface.",
+    "flavor": "Slow progress, but it's worth it"
+  },
+  "p_acar": {
+    "title": "Carbon Arrow",
+    "desc": "Strength and lightness combined in one hard-hitting package."
+  },
+  "st_rai": {
+    "title": "Reinforced Railing",
+    "desc": "Build a better balcony."
+  },
+  "t_mspe": {
+    "title": "Composite Spear",
+    "desc": "Low weight, high strength, extreme damage.",
+    "flavor": "Bringing two thousand years of materials technology to a sharp stick, the composite spear is lethal at long range or close quarters."
+  },
+  "s_maso": {
+    "title": "Masonry Bench",
+    "desc": "Tools for working and shaping stone.",
+    "flavor": "The art of stonework is untouched by the distance between worlds."
+  },
+  "m_doub": {
+    "title": "Bread Dough",
+    "desc": "Makes bread, just add to a fire."
+  },
+  "c_hbuf": {
+    "title": "Health Buff Paste",
+    "desc": "An organic preparation that temporarily increases health.",
+    "flavor": "Like so many things on Icarus, the exact ingredients would probably render this concoction illegal on Earth."
+  },
+  "a_huna": {
+    "title": "Hunter Arms Armor",
+    "desc": "Lightweight camouflage, reduces visibility to wildlife, but gives little protection or warmth.",
+    "flavor": "Take the effort out of hunting."
+  },
+  "a_fura": {
+    "title": "Fur Arm Armor",
+    "desc": "Heavy fur gloves, extremely warm with moderate physical protection."
+  },
+  "s_furs": {
+    "title": "Stone Furnace",
+    "desc": "A simple stone furnace for smelting iron and copper.",
+    "flavor": "Bronze-age technology, spread to the stars."
+  },
+  "t_bsic": {
+    "title": "Bone Sickle",
+    "desc": "Repurposed remains for easy reaping.",
+    "flavor": "The falk or grasshook is a harvesting tool of old, a symbol of labor, and weapon of disgruntled serfdom."
+  },
+  "s_crop": {
+    "title": "Wood Crop Plot",
+    "desc": "A general-purpose planter bed for your crops Fully-grown crops left too long will eventually wither and only provide spoiled plants..",
+    "flavor": "A raised planting bed brings the food to you, slowly."
+  },
+  "e_sola": {
+    "title": "Solar Panel",
+    "desc": "This solar panel needs to be in direct sunlight to create power, best deployed in a large, open area.",
+    "flavor": "As effective under this star as any other."
+  },
+  "M_bthx": {
+    "title": "Blood Thinning Pill",
+    "desc": "A potent preventative for concussions and contusions.",
+    "flavor": "Off-label and off-planet, this one doesn't come with any warnings. So it's probably safe."
+  },
+  "M_heat": {
+    "title": "Heat Bandage",
+    "desc": "Cloth bandages impregnated with a warming salve, for treating frostbite."
+  },
+  "hedgem": {
+    "title": "Medium Wood Hedgehog",
+    "desc": "A medium sized hedgehog-style defensive structure.",
+    "flavor": "Hedgehogs may have been left on Earth but the lessons they tought will serve us well on Icarus."
+  },
+  "wopile": {
+    "title": "Wood Pile",
+    "desc": "Stack and store wood."
+  },
+  "M_abip": {
+    "title": "Antibiotic Paste",
+    "desc": "Reduces the effects of food poisoning, and other low grade infections.",
+    "flavor": "A natural antibacterial agent that diminishes the impact of afflictions such as infected wounds and pnuemonia."
+  },
+  "t_ispe": {
+    "title": "Iron Spear",
+    "desc": "An iron spearhead, improving defensive power and range.",
+    "flavor": "'I throw a spear into the darkness. That is intuition. Then I must send an army into the darkness to find the spear. That is intellect.' -- Ingmar Bergman"
+  },
+  "c_hreg": {
+    "title": "Health Regeneration Paste",
+    "desc": "A herbal confection that speeds healing.",
+    "flavor": "The lily's high concentration of bioactive ingredients is thought to inhibit the reuptake of certain cytochromes, briefly flooding your body with oxidating enzymes."
+  },
+  "t_brif": {
+    "title": "Bolt Action Rifle",
+    "desc": "A single-shot bolt action, packs a punch.",
+    "flavor": "Despite limited metallurgic and gunsmithing resources, First Cohort prospectors have managed to design a better-than-serviceable, true-aiming hunting rifle."
+  },
+  "iw_lad": {
+    "title": "Interior Wood Ladder",
+    "desc": "A ladder for internal use."
+  },
+  "co_win": {
+    "title": "Heavy Glass Window",
+    "desc": "A heavy duty, highly durable window. "
+  },
+  "binocu": {
+    "title": "Binoculars",
+    "desc": "Simple to fabricate, 8x42 field glasses."
+  },
+  "g_smok": {
+    "title": "Smoke Grenade",
+    "desc": "A canister grenade, used for drawing attention or concealing."
+  },
+  "th_rco": {
+    "title": "Thatch Roof Corner",
+    "desc": "A lightweight insert for angled roofs."
+  },
+  "co_trf": {
+    "title": "Concrete Floor Trapdoor",
+    "desc": "Concrete floor with space for a trapdoor.",
+    "flavor": "Trapdoor not included."
+  },
+  "al_rco": {
+    "title": "Aluminium Roof Corner",
+    "desc": "A strong, lightweight insert for angled roofs."
+  },
+  "t_lonb": {
+    "title": "Longbow",
+    "desc": "A powerful, but heavy long-range weapon.",
+    "flavor": "Xeno-biologists hurriedly altered the genes of the tree from which this weapon is made, so that it might thrive on Icarus, never imagining that one day, a bow would be fashioned from it."
+  },
+  "m_elec": {
+    "title": "Electronics",
+    "desc": "A modular control unit, adaptable to most I/Os."
+  },
+  "a_hunf": {
+    "title": "Hunter Feet Armor",
+    "desc": "Lightweight camouflage, reduces visibility to wildlife, but gives little protection or warmth.",
+    "flavor": "Take the effort out of hunting."
+  },
+  "wo_flo": {
+    "title": "Wood Floor",
+    "desc": "Rugged timber flooring, stronger if supported by beams.",
+    "flavor": "Durable if rudimentary flooring, prone to damage by Icarus's heavier weather. Notably prone to fire in lightning storms. Wooden structures can be repaired with a repair hammer."
+  },
+  "e_biof": {
+    "title": "Biofuel Generator",
+    "desc": "An efficient, if basic biofuel-driven electric generator.",
+    "flavor": "Literally or figuratively, we've come a long way from the Faraday Disc."
+  },
+  "t_wbow": {
+    "title": "Wood Bow",
+    "desc": "A primitive bow with limited range and durability.",
+    "flavor": "A more rudimentary bow is hard to imagine, but will prove lethal in steady, patient hands."
+  },
+  "backpl": {
+    "title": "Leather Backpack",
+    "desc": "A tough leather backpack that increases inventory space, carry weight capacity and reduces the weight of ore.",
+    "flavor": "Sol Berlinski, now Lagos Unit dispatcher on Ceres Station, claims the design of the 'quietly iconic' prospector's basic backpack was taught to him personally by Mo Chou."
+  },
+  "wo_doo": {
+    "title": "Wood Door",
+    "desc": "A simply built wooden door.",
+    "flavor": "Doors can be attached to doorways, once built."
+  },
+  "wo_lad": {
+    "title": "Wood Ladder",
+    "desc": "A rudimentary ladder, lashed together with fiber."
+  },
+  "st_rco": {
+    "title": "Stone Roof Corner",
+    "desc": "A robust insert for angled roofs."
+  },
+  "s_mpro": {
+    "title": "Material Processor",
+    "desc": "Swiftly craft advanced ingredients and resources."
+  },
+  "a_comh": {
+    "title": "Composite Head Armor",
+    "desc": "Heavy HDP armor with unmatched impact protection and insulation.",
+    "flavor": "Employing ultra-high molecular weight thermoplastics, composite armor trades weight for extraordinary protection against physical damage and exposure. "
+  },
+  "th_bea": {
+    "title": "Thatch Beam",
+    "desc": "Anchors structures to the ground for higher building.",
+    "flavor": "Beams connect vertically and diagonally to support multi-level construction. Your HUD will indicate when beams are anchored with a blue cursor."
+  },
+  "co_bea": {
+    "title": "Concrete Beam",
+    "desc": "Anchors structures to the ground for extremely high building.",
+    "flavor": "Beams connect vertically and diagonally to support multi-level construction. Your HUD will indicate when beams are anchored with a blue cursor. Increasing the quantity of beams at lower levels will increase build height even further."
+  },
+  "t_bkni": {
+    "title": "Bone Knife",
+    "desc": "Stronger, lighter and sharper than its stone cousin. ",
+    "flavor": "Did any UDA xenobiologist ever foresee that the bones of animals they adapted for life on Icarus would one day be used to fashion rudimentary hunting weapons?"
+  },
+  "s_furc": {
+    "title": "Concrete Furnace",
+    "desc": "An insulated, high-temperature furnace for smelting a wide range of materials including steel.",
+    "flavor": "Icarus's oxygen levels may slow combustion, but ceramic insulation produces temperatures sufficient for smelting more advanced alloys."
+  },
+  "t_brep": {
+    "title": "Wood Repair Hammer",
+    "desc": "Maintain your structures against the wrath of Icarus.",
+    "flavor": "Quickly beat dislodged planks back into place with this basic repair tool."
+  },
+  "wlamdi": {
+    "title": "Directional Worklamp",
+    "desc": "A basic lamp for illuminating a large area."
+  },
+  "a_ghia": {
+    "title": "Ghillie Arms Armor",
+    "desc": "Lightweight camouflage, reduces visibility to wildlife, but gives little protection or warmth.",
+    "flavor": "Take the effort out of hunting."
+  },
+  "t_tpkx": {
+    "title": "Titanium Pickaxe",
+    "desc": "An extremely strong, lightweight mining tool."
+  },
+  "t_iaxe": {
+    "title": "Iron Axe",
+    "desc": "An iron axe, for swifter felling and hewing.",
+    "flavor": "'Technological progress is like an axe in the hands of a pathological criminal.' -- Albert Einstein"
+  },
+  "m_flou": {
+    "title": "Flour",
+    "desc": "Ground wheat, ready for cooking."
+  },
+  "st_hps": {
+    "title": "Stone Halfpieces",
+    "desc": "Half- and quarter-sized building elements for detailed construction work.",
+    "flavor": "These sets are useful for creating walkways, balconies, trims and a range of other smaller constructions."
+  },
+  "a_ghih": {
+    "title": "Ghillie Head Armor",
+    "desc": "Lightweight camouflage, reduces visibility to wildlife, but gives little protection or warmth.",
+    "flavor": "Take the effort out of hunting."
+  },
+  "t_sspe": {
+    "title": "Steel Spear",
+    "desc": "A light, strong traditional spear design that holds its edge.",
+    "flavor": "The word 'spear' has descended to us through the ages largely unchanged."
+  },
+  "a_ghil": {
+    "title": "Ghillie Leg Armor",
+    "desc": "Lightweight camouflage, reduces visibility to wildlife, but gives little protection or warmth.",
+    "flavor": "Take the effort out of hunting."
+  },
+  "t_wspe": {
+    "title": "Wood Spear",
+    "desc": "Simple to make, easy to break.",
+    "flavor": "An effective defensive weapon, and erratic low range projectile, rapidly surpassed by improved versions."
+  },
+  "fertyd": {
+    "title": "High-Quality Fertilizer",
+    "desc": "Increases the yield of your crops",
+    "flavor": "Fertilizer is a multivitamin for your plants"
+  },
+  "a_polc": {
+    "title": "Polar Bear Chest Armor",
+    "desc": "Strong, lightweight body armor with extreme protection against cold.",
+    "flavor": "Evolved for the most demanding climate on Earth, the polar bear's skin works equally well in the most damaged environment on Icarus."
+  },
+  "t_hrif": {
+    "title": "Hunting Rifle",
+    "desc": "A semi-automatic rifle, ideal for big game hunting.",
+    "flavor": "An ancient hand-wrought weapon design, adapted to a new frontier."
+  },
+  "cantee": {
+    "title": "Canteen",
+    "desc": "A small, lightly-insulated water bottle."
+  },
+  "fcrats": {
+    "title": "Small Iron Crate",
+    "desc": "Strong protective storage for items.",
+    "flavor": "Has 15 storage slots."
+  },
+  "s_kita": {
+    "title": "Advanced Kitchen Bench",
+    "desc": "A full food and herbal preparation area."
+  },
+  "icebox": {
+    "title": "Ice Box",
+    "desc": "Stores food at low temperatures when supplied with ice.",
+    "flavor": "The insulated icebox arrests food decay, as well as slowing the melting of ice itself. Has 10 storage slots."
+  },
+  "t_fish": {
+    "title": "Fishing Rod",
+    "desc": "A basic fishing rod.",
+    "flavor": "Gone Fishin"
+  },
+  "oxited": {
+    "title": "Oxite Dissolver",
+    "desc": "A more efficient oxidizer for processing oxite into oxygen.",
+    "flavor": "Place oxite and an appropriate container into the dissolver to start filling it. Requires sulfur for fuel."
+  },
+  "a_poll": {
+    "title": "Polar Bear Leg Armor",
+    "desc": "Lightweight fur armor for the lower body, offering exceptional insulation.",
+    "flavor": "Once a warm high altitude desert, the arctic's temperature dropped in the aftermath of failed terraforming, leaving a frigid wasteland of which the polar bear is now the unchallenged apex predator."
+  },
+  "a_hunh": {
+    "title": "Hunter Head Armor",
+    "desc": "Lightweight camouflage, reduces visibility to wildlife, but gives little protection or warmth.",
+    "flavor": "Take the effort out of hunting."
+  },
+  "st_wan": {
+    "title": "Stone Wall Angled",
+    "desc": "Stone half-gables."
+  },
+  "t_saxe": {
+    "title": "Steel Axe",
+    "desc": "A steel axe, for swifter felling and hewing.",
+    "flavor": "Steel of this quality would be an embarrassment to any industry on Earth, but on Icarus remains a minor miracle."
+  },
+  "st_wal": {
+    "title": "Stone Wall",
+    "desc": "Build stronger structures, unthreatened by fire."
+  },
+  "fuelca": {
+    "title": "Biofuel Can",
+    "desc": "Canister for biofuel storage, which can be filled at a composter."
+  },
+  "t_tspe": {
+    "title": "Titanium Spear",
+    "desc": "A powerful, precise projectile and combat weapon. ",
+    "flavor": "Extremely strong and lightweight, the titanium spear is a devastating hunting and protective tool in well-trained hands."
+  },
+  "s_car4": {
+    "title": "Electric Carpentry Bench",
+    "desc": "Powered workbench and machine tools for advanced woodworking."
+  },
+  "c_fcon": {
+    "title": "Food Consumption Paste",
+    "desc": "An organic confection that arrests hunger for a limited time.",
+    "flavor": "Just because it's organic, doesn't mean it's good for you."
+  },
+  "M_abix": {
+    "title": "Antibiotic Pill",
+    "desc": "A broad-spectrum antibacterial agent, protecting against food poisoning, wound infections and pneumonia.",
+    "flavor": "While not quite invincible, your susceptibility to microbial takeover will temporarily reach an all-time low."
+  },
+  "a_leac": {
+    "title": "Leather Chest Armor",
+    "desc": "A basic cuirass, gives limited insulation and damage protection"
+  },
+  "waters": {
+    "title": "Waterskin",
+    "desc": "A basic water bladder, not perfectly watertight.",
+    "flavor": "The waterskin's rough construction allows for rapid crafting, but loses water over time."
+  },
+  "M_band": {
+    "title": "Basic Bandage",
+    "desc": "Cloth bandages to stem bleeding and heal minor wounds.",
+    "flavor": "The healing won't start until the bleeding stops."
+  },
+  "vapcon": {
+    "title": "Vapor Condenser",
+    "desc": "Can be placed over Enzyme Geysers across Icarus to condense vapor into exotics or condensed enzymes. WARNING: Attracts creatures while active.",
+    "flavor": "Pretty high tech, considering it was created on planet."
+  },
+  "al_bea": {
+    "title": "Aluminium Beam",
+    "desc": "Anchors structures to the ground for higher building.",
+    "flavor": "Beams connect vertically and diagonally to support multi-level construction. Your HUD will indicate when beams are anchored with a blue cursor."
+  },
+  "torwal": {
+    "title": "Wall Torch",
+    "desc": "A mounted flame for adorning shelter walls.",
+    "flavor": "Lower oxygen levels produce a dirty, but workable flame."
+  },
+  "t_opkx": {
+    "title": "Stone Pickaxe",
+    "desc": "Break rocks with stone.",
+    "flavor": "The soft sedimentary rock scattered across Icarus's surface is easily shaped into useful tools. They may not be durable, but can be repaired easily enough."
+  },
+  "bedrol": {
+    "title": "Bedroll",
+    "desc": "Once placed in shelter, a bed can be set as a respawn location. Can also be used to sleep through the night.",
+    "flavor": "'A bed is where the soul returns after a night's travelling' ~ Russian folk saying"
+  },
+  "wcratm": {
+    "title": "Medium Wood Crate",
+    "desc": "Store, share and protect items and resources.",
+    "flavor": "Has 20 storage slots."
+  },
+  "wo_hps": {
+    "title": "Wood Halfpieces",
+    "desc": "Half- and quarter-sized building elements for detailed construction work.",
+    "flavor": "These sets are useful for creating walkways, balconies, trims and a range of other smaller constructions."
+  },
+  "co_wal": {
+    "title": "Concrete Wall",
+    "desc": "Resilient, with high structural strength."
+  },
+  "t_okni": {
+    "title": "Stone Knife",
+    "desc": "A basic hunting tool, strong and sharp enough ... just.",
+    "flavor": "Icarus's unusually active tectonics provide a ready source of sedimentary rocks, making for easily knapped, sharp, but weak blades."
+  },
+  "al_rhf": {
+    "title": "Aluminium Halfpitches",
+    "desc": "Shallow-sloped roof building elements.",
+    "flavor": "A two part construction element, containing a base slope and an upper slope, for building low-pitched roofs."
+  },
+  "c_obuf": {
+    "title": "Oxygen Buff Paste",
+    "desc": "A natural concoction that increases available oxygen.",
+    "flavor": "Your parents are a long way from here. What you do with your body is your business."
+  },
+  "t_shot": {
+    "title": "Shotgun",
+    "desc": "The reliable and timeless pump-action, savage at short range.",
+    "flavor": "Ruin something's day, every day."
+  },
+  "M_apop": {
+    "title": "Anti-poison Paste",
+    "desc": "A basic toxicology and anti-venom kit to reduce the effects of poisoning.",
+    "flavor": "It's speculated that exotics may suffuse much of the plant life in the terrazone, imparting bioactive properties, though exactly what these are, whether they're safe, and exactly how it works ... at this stage, who knows?"
+  },
+  "t_tham": {
+    "title": "Titanium Hammer",
+    "desc": "A durable and reliable tool for structure repair.",
+    "flavor": "Counter the forces of nature with a little violence of your own."
+  },
+  "oxybla": {
+    "title": "Oxygen Bladder",
+    "desc": "A simple airtight vessel for storing extra oxygen.",
+    "flavor": "'The Icarus nang.' - Prospector joke"
+  },
+  "botwin": {
+    "title": "Wine Bottle",
+    "desc": "A large, empty glass bottle."
+  },
+  "st_sta": {
+    "title": "Stone Stairs",
+    "desc": "Stairs that may last longer than you."
+  },
+  "wo_rhf": {
+    "title": "Wood Halfpitches",
+    "desc": "Shallow-sloped roof building elements.",
+    "flavor": "A two part construction element, containing a base slope and an upper slope, for building low-pitched roofs."
+  },
+  "compos": {
+    "title": "Biofuel Composter",
+    "desc": "Rapidly decomposes organic matter into biofuel, which is collected by adding a biofuel can. Can be connected to a water network for increased processing speed.",
+    "flavor": "Requires a fuel can to be added to collect biofuel."
+  },
+  "a_furc": {
+    "title": "Fur Chest Armor",
+    "desc": "An armored fur jacket, giving warmth and reasonable damage protection."
+  },
+  "eheatl": {
+    "title": "Heavy Heater ",
+    "desc": "A powered heating device for warming larger areas.",
+    "flavor": "Entropy is your friend."
+  },
+  "s_chem": {
+    "title": "Chemistry Bench",
+    "desc": "A rough but effective laboratory.",
+    "flavor": "Unlikely to win anyone a Nobel Prize, but sufficient for the average Icarus alchemist."
+  },
+  "t_cspe": {
+    "title": "Carbon Spear",
+    "desc": "A light, resilient spear made of layered carbon fiber.",
+    "flavor": "Kills faster, flies further."
+  },
+  "t3base": {
+    "title": "Machining Bench",
+    "desc": "Upgrades your manufacturing abilities with basic machine tools."
+  },
+  "oxytan": {
+    "title": "Oxygen Tank",
+    "desc": "A small tank for storing and consuming oxygen.",
+    "flavor": "While plants and animals were genetically adjusted to deal with the impurities in Icarus's air, humans need to bring their own."
+  },
+  "gl_ram": {
+    "title": "Glass Roof",
+    "desc": "A transparent roof piece or ramp.",
+    "flavor": "Able to be repaired with a repair hammer."
+  },
+  "co_hps": {
+    "title": "Concrete Halfpieces",
+    "desc": "Half- and quarter-sized building elements for detailed construction work.",
+    "flavor": "These sets are useful for creating walkways, balconies, trims and a range of other smaller constructions."
+  },
+  "a_clol": {
+    "title": "Cloth Leg Armor",
+    "desc": "Light and easily craftable, offering low protection and decent insulation."
+  },
+  "st_trf": {
+    "title": "Stone Floor Trapdoor",
+    "desc": "Stone floor with space for a trapdoor.",
+    "flavor": "Trapdoor not included."
+  },
+  "p_abon": {
+    "title": "Bone Arrow",
+    "desc": "A primitive arrow, dealing greater damage than flint or stone.",
+    "flavor": "In the mid-22nd century, the fletchers art is being rediscovered on Icarus."
+  },
+  "t_pspe": {
+    "title": "Platinum Spear",
+    "desc": "Priceless on Earth. A projectile on Icarus.",
+    "flavor": "A midweight, short-shafted ahlspeiss spear that, composition aside, would not have looked out of place in 16th century Prussia."
+  },
+  "refrig": {
+    "title": "Refrigerator",
+    "desc": "Preserves food from spoilage when powered.",
+    "flavor": "The Xigo-designed Skift fridge maintains an optimum four degrees."
+  },
+  "wo_trd": {
+    "title": "Wood Trapdoor",
+    "desc": "A rough wooden hatch.",
+    "flavor": "Attaches to a floor trapdoor structure."
+  },
+  "dehumi": {
+    "title": "Dehumidifier",
+    "desc": "Powerful, portable protection against the effects of being underground.",
+    "flavor": "Powered by charcoal, the dehumidifier heavily reduces bacterial growth in caves by reducing dampness."
+  },
+  "M_apat": {
+    "title": "Anti-parasitic Tonic",
+    "desc": "A medicinal preparation for curing festering wounds.",
+    "flavor": "From suppurating wounds to dysentery, this natural broad-spectrum antibiotic remedy cures it all."
+  },
+  "al_ram": {
+    "title": "Aluminium Roof/Ramp",
+    "desc": "A lightweight sheet aluminium ramp or roofing sheet.",
+    "flavor": "Able to be repaired with a repair hammer."
+  },
+  "M_spli": {
+    "title": "Splint",
+    "desc": "Speeds the healing of a broken leg."
+  },
+  "st_doo": {
+    "title": "Reinforced Door",
+    "desc": "A heavy wooden door reinforced with iron bracing.",
+    "flavor": "Once your structure has a doorway, this heavy door can be attached."
+  },
+  "t_taxe": {
+    "title": "Titanium Axe",
+    "desc": "A savagely sharp, extremely durable hand axe."
+  },
+  "kiastg": {
+    "title": "Advanced Kitchen Storage",
+    "desc": "The best cabinets this planet can offer."
+  },
+  "th_win": {
+    "title": "Thatch Window",
+    "desc": "An easily crafted, openable window.",
+    "flavor": "Low durability."
+  },
+  "iw_ram": {
+    "title": "Interior Wood Ramp",
+    "desc": "A light ramp, best used internally.",
+    "flavor": "Less durable than basic wooden construction elements, refined materials will make your lumber go further, but require protection from the elements."
+  },
+  "t_skni": {
+    "title": "Steel Knife",
+    "desc": "A tempered needlepoint hunting blade.",
+    "flavor": "Finely balanced knives like this can be thrown accurately with a little practice."
+  },
+  "t_ikni": {
+    "title": "Iron Knife",
+    "desc": "A short, clip-point blade for better defense and swifter skinning.",
+    "flavor": "'A mind all logic is like a knife all blade. It makes the hand bleed that uses it.' -- Rabindranath Tagore"
+  },
+  "gl_doo": {
+    "title": "Glass Door",
+    "desc": "A delicate door.",
+    "flavor": "Please leave a review."
+  },
+  "p_acom": {
+    "title": "Composite Arrow",
+    "desc": "For power and weight, nothing compares."
+  },
+  "s_earm": {
+    "title": "Electric Armor Bench",
+    "desc": "Powered workbench for advanced armor tooling and production."
+  },
+  "co_rai": {
+    "title": "Concrete Railing",
+    "desc": "Safety first."
+  },
+  "stpile": {
+    "title": "Stone Pile",
+    "desc": "A pile of stones.",
+    "flavor": "A time honored solution for storing rubble, stone and debris."
+  },
+  "iw_trf": {
+    "title": "Interior Wood Floor Trapdoor",
+    "desc": "An interior floorpiece with a hole for a trapdoor.",
+    "flavor": "Trapdoor not included."
+  },
+  "estove": {
+    "title": "Electric Stove",
+    "desc": "A swifter, safer cooking system."
+  },
+  "jamber": {
+    "title": "Berry Jam",
+    "desc": "Slightly bitter, but unsurpassed.",
+    "flavor": "It's not just jam. You hold in your hand an irreducible symbol of humanity's commitment to settling an alien world. Strongly increases max stamina."
+  },
+  "icupbo": {
+    "title": "Interior Wood Cupboard",
+    "desc": "A place to keep items, gear and the rest.",
+    "flavor": "Has 40 storage slots."
+  },
+  "blceil": {
+    "title": "Basic Ceiling Light",
+    "desc": "A ceiling-mounted lamp, providing wide illumination, needing power.",
+    "flavor": "\"We forgive children who are afraid of the dark. The tragedy is adults afraid of the light.\" - Plato"
+  },
+  "s_glas": {
+    "title": "Glassworking Bench",
+    "desc": "Tools for creating glass items and construction elements.",
+    "flavor": "True glass-making originated in the Indus Valley in 1700 BCE, passing into the Mediterranean, then Africa and the rest of the world, before extending through space to Icarus in the mid 22nd century."
+  },
+  "p_bste": {
+    "title": "Steel Bolt",
+    "desc": "A hard-hitting steel bolt, trading distance for damage.",
+    "flavor": "Roughly 64,000 years since its first invention, the essential form of the arrow remains unchanged."
+  },
+  "wo_rai": {
+    "title": "Wood Railing",
+    "desc": "A rough, but serviceable wooden railing."
+  },
+  "al_trf": {
+    "title": "Aluminium Floor Trapdoor",
+    "desc": "Rough sheet aluminium flooring with an access hole.",
+    "flavor": "Able to be repaired with a repair hammer."
+  },
+  "al_rai": {
+    "title": "Aluminium Railing",
+    "desc": "Reduce risk, improve resale value."
+  },
+  "lanter": {
+    "title": "Lantern",
+    "desc": "A portable, biofuel-powered light, refueled by the composter.",
+    "flavor": "Fear not the dark."
+  },
+  "al_hps": {
+    "title": "Aluminium Halfpieces",
+    "desc": "Half- and quarter-sized building elements for detailed construction work.",
+    "flavor": "These sets are useful for creating walkways, balconies, trims and a range of other smaller constructions."
+  },
+  "p_afli": {
+    "title": "Flint Arrow",
+    "desc": "Flies further, hits harder than stone.",
+    "flavor": "Knappable flint provides a sharper arrowhead and greater penetration than stone."
+  },
+  "co_wan": {
+    "title": "Concrete Wall Angled",
+    "desc": "Moulded inserts for gables and other angular constructions.."
+  },
+  "p_srii": {
+    "title": "Incendiary Rifle Round",
+    "desc": "Explosive 7.62mm ammunition."
+  },
+  "a_comf": {
+    "title": "Composite Feet Armor",
+    "desc": "Heavy HDP armor with unmatched impact protection and insulation.",
+    "flavor": "Employing ultra-high molecular weight thermoplastics, composite armor trades weight for extraordinary protection against physical damage and exposure. "
+  },
+  "beapor": {
+    "title": "Portable Beacon",
+    "desc": "Displays a map marker when deployed.",
+    "flavor": "Lightly mapped and largely unexplored, human markers on the surface of Icarus are few and far between. The beacon offers a BYO solution."
+  },
+  "dryrac": {
+    "title": "Drying Rack",
+    "desc": "A rack for slowly drying various cuts of meat",
+    "flavor": "Jerky is always a winner"
+  },
+  "wo_wal": {
+    "title": "Wood Wall",
+    "desc": "A roughly made wall, window or doorway (Hold 'R' for variants).",
+    "flavor": "Wood structures withstand light storms without damage. Can be repaired with a repair hammer."
+  },
+  "th_trd": {
+    "title": "Thatch Trapdoor",
+    "desc": "A thatch hatch.",
+    "flavor": "Attaches to a thatch floor trapdoor."
+  },
+  "R_stic": {
+    "title": "Stick",
+    "desc": "Small branches, easily fashioned into basic tools.",
+    "flavor": "Whether making weapons or tools, a crafting bench or fuel, basic creation begins with the humble stick."
+  },
+  "a_leaa": {
+    "title": "Leather Arms Armor",
+    "desc": "Gauntlets, providing basic protection and insulation."
+  },
+  "a_polh": {
+    "title": "Polar Bear Head",
+    "desc": "The head of a polar bear, can be crafted into a deployable trophy to hang on your wall."
+  },
+  "iw_wan": {
+    "title": "Interior Wood Wall Angled",
+    "desc": "Angular inserts for interior construction."
+  },
+  "gl_bea": {
+    "title": "Glass Beam",
+    "desc": "Anchors structures to the ground for higher building.",
+    "flavor": "Beams connect vertically and diagonally to support multi-level construction. Your HUD will indicate when beams are anchored with a blue cursor."
+  },
+  "iw_sta": {
+    "title": "Interior Wood Stairs",
+    "desc": "A set of stairs designed for interior use."
+  },
+  "s_anvi": {
+    "title": "Anvil Bench",
+    "desc": "Heavyweight work surface for iron and steel tools, using ingots smelted in their appropriate furnaces.",
+    "flavor": "Arguably the simplest fabrication system known to humanity."
+  },
+  "al_lad": {
+    "title": "Aluminium Ladder",
+    "desc": "A sturdy metal ladder for climbing."
+  },
+  "jargla": {
+    "title": "Glass Jar",
+    "desc": "A roughly made, but perfectly serviceable mason jar.",
+    "flavor": "This jar is empty, but like the many gaps in our understanding of this planet, is waiting to be filled."
+  },
+  "st_lad": {
+    "title": "Reinforced Ladder",
+    "desc": "A strong ladder, highly durable."
+  },
+  "co_rco": {
+    "title": "Concrete Roof Corner",
+    "desc": "A strong insert for angled roofs."
+  },
+  "wo_ram": {
+    "title": "Wood Roof/Ramp",
+    "desc": "A basic wooden ramp or roof.",
+    "flavor": "A ramp or a roof, depending whose hands this element is in. Able to be repaired with a repair hammer."
+  },
+  "al_wal": {
+    "title": "Aluminium Wall",
+    "desc": "A lightweight corrugated aluminium wall",
+    "flavor": "Cycle for other construction variants. Able to be repaired with a repair hammer."
+  },
+  "th_rhf": {
+    "title": "Thatch Halfpitches",
+    "desc": "Shallow-sloped roof building elements.",
+    "flavor": "A two-part construction element, containing a base slope and an upper slope, for building low-pitched roofs."
+  },
+  "wtable": {
+    "title": "Wood Table",
+    "desc": "A wooden table, like so many before it.",
+    "flavor": "It's possible that the entirety of human culture can be extrapolated from the existence of tables."
+  },
+  "extele": {
+    "title": "Electric Extractor",
+    "desc": "A portable, powered mining unit powered by electricity for extracting exotics deposits.",
+    "flavor": "For all your exotic mining needs."
+  },
+  "t_oaxe": {
+    "title": "Stone Axe",
+    "desc": "A roughly-made axe, but fells trees well enough.",
+    "flavor": "The first step on a path that leads back to the 22nd century."
+  },
+  "s_repa": {
+    "title": "Repair Bench",
+    "desc": "Repair any Item Crafted on Other Benches",
+    "flavor": "A Specialized Bench which allows you to Repair Items Crafted on any Bench"
+  },
+  "oxitem": {
+    "title": "Metal Oxite Dissolver",
+    "desc": "A faster and more efficient, biofuel-powered oxidizer with greater storage."
+  },
+  "c_sbuf": {
+    "title": "Stamina Buff Paste",
+    "desc": "A herbal concoction, temporarily increasing stamina.",
+    "flavor": "While lacking some of the pharmaceutical refinements, this paste produces similar physiological affects to the 'wakers' once offered to long haul space pilots."
+  },
+  "th_rai": {
+    "title": "Thatch Railing",
+    "desc": "LIght, easily crafted railings."
+  },
+  "M_abit": {
+    "title": "Antibiotic Tonic",
+    "desc": "An antibacterial distillation that cures food poisoning, wound infections and afflictions like pneumonia.",
+    "flavor": "The interaction between bioactive substances and microbial life here on Icarus is still poorly understood, especially when one factors in the effects of exotic matter to both."
+  },
+  "s_kitc": {
+    "title": "Kitchen Bench",
+    "desc": "A modular workspace for cooking and concocting complex recipes.",
+    "flavor": "Prep advanced food recipes here to assist on your adventures"
+  },
+  "s_croi": {
+    "title": "Iron Crop Plot",
+    "desc": "A sturdy option for farming with water intake for faster crop growth. Fully-grown crops left too long will eventually wither and only provide spoiled plants.",
+    "flavor": "Can be connected to a water network"
+  },
+  "wine": {
+    "title": "Wine",
+    "desc": "One of humanity's oldest inventions.",
+    "flavor": "You're four billion kilometers from Earth, but some things never change. Wine stops the pain, increases stamina and heath regen."
+  },
+  "a_leah": {
+    "title": "Leather Head Armor",
+    "desc": "Headgear, providing some insulation and damage protection."
+  },
+  "torflo": {
+    "title": "Floor Torch",
+    "desc": "A free-standing torch requiring sticks for fuel.",
+    "flavor": "Oxygen levels may be a little lower, but fire provides light well enough."
+  },
+  "t1base": {
+    "title": "Character Crafting",
+    "desc": "Unlocks crafting."
+  },
+  "p_biro": {
+    "title": "Iron Bolt",
+    "desc": "A hard-hitting iron arrow, trading distance for damage.",
+    "flavor": "Roughly 64,000 years since its first invention, the essential form of the arrow remains unchanged."
+  },
+  "s_mas4": {
+    "title": "Electric Masonry Bench",
+    "desc": "Powered bench for heavy stonework and carving."
+  },
+  "a_clof": {
+    "title": "Cloth Feet Armor",
+    "desc": "Light and easily craftable, offering low protection and decent insulation."
+  },
+  "M_apap": {
+    "title": "Anti-parasitic Paste",
+    "desc": "A medical preparation for reducing the effects of festering wounds.",
+    "flavor": "From the very first, newcomers to Icarus noted the medicinal and bioactive properties of Earth-type plants were significantly more intense."
+  },
+  "kiasin": {
+    "title": "Advanced Kitchen Sink",
+    "desc": "Fully plumbed basin and running water, a luxury of sorts."
+  },
+  "p_atit": {
+    "title": "Titanium Arrow",
+    "desc": "An extremely light, strong projectile.",
+    "flavor": "Whether on Icarus or Earth, hunters continue to value skills for stealth, control and intimacy of the kill."
+  },
+  "p_aalu": {
+    "title": "Aluminium Arrow",
+    "desc": "A mid-grade, lightweight arrow giving decent range and damage.",
+    "flavor": "Sharp, savage, slightly barbed."
+  },
+  "wsprin": {
+    "title": "Water Sprinkler",
+    "desc": "Fire reduction, just add water.",
+    "flavor": "Must be connected to a water source."
+  },
+  "s_mort": {
+    "title": "Mortar and Pestle",
+    "desc": "A simple tool for crafting resins, pastes, medicines and more.",
+    "flavor": "The tool of chefs, herbalists, apothecaries and alchemists."
+  },
+  "gl_wan": {
+    "title": "Glass Wall Angled",
+    "desc": "Angular inserts for gables and other tilted designs."
+  },
+  "m_douf": {
+    "title": "Flatbread Dough",
+    "desc": "Makes flatbread, just add to a fire.",
+    "flavor": "Lightyears from the Levant."
+  },
+  "a_furh": {
+    "title": "Fur Head Armor",
+    "desc": "Heavy, warm and moderately protective headgear."
+  },
+  "c_ores": {
+    "title": "Oxygen Restoration Paste",
+    "desc": "An organic co-factor that rapidly restores oxygen.",
+    "flavor": "'Helper molecule'"
+  },
+  "m_comp": {
+    "title": "Composite Paste",
+    "desc": "A high grade ferro-organic precursor."
+  },
+  "wsigns": {
+    "title": "Small Wood Sign",
+    "desc": "Places writeable signage."
+  },
+  "st_bea": {
+    "title": "Stone Beam",
+    "desc": "Anchors structures to the ground for much higher building.",
+    "flavor": "Beams connect vertically and diagonally to support multi-level construction. Your HUD will indicate when beams are anchored with a blue cursor. Increasing the quantity of beams at lower levels will increase build height further."
+  },
+  "co_rhf": {
+    "title": "Concrete Halfpitches",
+    "desc": "Shallow-sloped roof building elements.",
+    "flavor": "A two part construction element, containing a base slope and an upper slope, for building low-pitched roofs."
+  },
+  "st_ram": {
+    "title": "Stone Roof/Ramp",
+    "desc": "A sturdy stone ramp or roof to resist the elements."
+  },
+  "t4base": {
+    "title": "Fabricator",
+    "desc": "A marvel of survival technology.",
+    "flavor": "Surprisingly simple for such a versatile machine, the Fabricator combines a flatbed CNC router with limited 3D alloy printing capabilities."
+  },
+  "m_bloo": {
+    "title": "Steel Bloom",
+    "desc": "A precursor mixture of iron ore and coal, smelted in a concrete furnace to create steel.",
+    "flavor": "The conditions on Icarus give its would-be metallurgists very little control over the finer details of steel smelting. A basic bloomery process prevails."
+  },
+  "m_epox": {
+    "title": "Epoxy",
+    "desc": "A basic but strong and hard-setting organic polymer.",
+    "flavor": "UDA safety guidelines recommend not breathing in the fumes."
+  },
+  "s_fure": {
+    "title": "Electric Furnace",
+    "desc": "A laboratory grade arc furnace, smelts basic and advanced materials alike."
+  },
+  "torwoo": {
+    "title": "Wood Torch",
+    "desc": "A longer burning source of light in the darkness.",
+    "flavor": "'One thing about wearing a helmet, you don't notice your shack smells like Satan's armpit.' ~ Sol Berlinski. (Activate with secondary attack.)"
+  },
+  "fcupbo": {
+    "title": "Iron Cupboard",
+    "desc": "A robust storage solution.",
+    "flavor": "Has 50 storage slots."
+  },
+  "th_trf": {
+    "title": "Thatch Floor Trapdoor",
+    "desc": "An easily crafted floorpiece with a hole for a trapdoor.",
+    "flavor": "Trapdoor not included."
+  },
+  "s_armo": {
+    "title": "Textiles Bench",
+    "desc": "Craft and assemble various protective items and garments.",
+    "flavor": "Basic fabric, leatherwork and armorer's tools allow you to fashion a range of clothing and protective wear from natural materials and fibres."
+  },
+  "dmdele": {
+    "title": "Electric Deep-Mining Drill",
+    "desc": "A convenient drilling device that runs on electricity.",
+    "flavor": "Set it and forget it"
+  },
+  "M_apox": {
+    "title": "Anti-poison Pill",
+    "desc": "An long-acting anti-venom to prevent poisoning.",
+    "flavor": "Ingest and ignore the risks."
+  },
+  "M_apot": {
+    "title": "Anti-poison Tonic",
+    "desc": "Fast-working anti-venom to combat poisoning.",
+    "flavor": "Of the many ways to die on Icarus, poisoning is perhaps the least glorious."
+  },
+  "a_hunl": {
+    "title": "Hunter Leg Armor",
+    "desc": "Lightweight camouflage, reduces visibility to wildlife, but gives little protection or warmth.",
+    "flavor": "Take the effort out of hunting."
+  },
+  "th_flo": {
+    "title": "Thatch Floor",
+    "desc": "A lightweight, quickly crafted floor piece.",
+    "flavor": "Simple to craft and plentiful, thatch construction provides rapid shelter to those on the move, or in need of rapid, if not particularly durable protection."
+  },
+  "t_taxi": {
+    "title": "Taxidermy Knife",
+    "desc": "A small, strong precision cutting tool.",
+    "flavor": "Perfect for precise cuts to preserve that 'still breathing' look."
+  },
+  "M_apax": {
+    "title": "Anti-parasitic Pill",
+    "desc": "A potent antibacterial preparation for preventing festering wounds.",
+    "flavor": "Flooding your body with antibiotics is a double-edged sword, but if it stops you needing to use the word 'festering' to describe part of your body, it's worth it."
+  },
+  "t_psic": {
+    "title": "Platinum Sickle",
+    "desc": "An extremely precise, high yield harvesting tool.",
+    "flavor": "A proletariat icon made from a near-priceless material, yet no more valuable than lead when compared to exotics themselves."
+  },
+  "compow": {
+    "title": "Wood Composter",
+    "desc": "Change your trash into Fertilizer with this simple composter. Items placed in this device will spoil at an accelerated rate.",
+    "flavor": "Reduce, reuse, recycle"
+  },
+  "waterb": {
+    "title": "Water Bomb",
+    "desc": "A thrown device for fire fighting.",
+    "flavor": "Woven from fiber, the water bomb allows fire suppression from a safe distance."
+  },
+  "beer": {
+    "title": "Beer",
+    "desc": "Proving you can brew beer from just about anything.",
+    "flavor": "Warms the body, soothes the soul, increases regeneration rates."
+  },
+  "al_flo": {
+    "title": "Aluminium Floor",
+    "desc": "Lightweight but resilient sheet aluminium flooring.",
+    "flavor": "Able to be repaired with a repair hammer."
+  },
+  "p_afir": {
+    "title": "Fire Arrow",
+    "desc": "Share the warmth.",
+    "flavor": "'One of the good things about being this far from Earth, there's no-one to tell you not to play with fire.' - Sol Berlinski"
+  },
+  "t_tkni": {
+    "title": "Titanium Knife",
+    "desc": "A blade as hard and lightweight as life itself.",
+    "flavor": "Named for the Greek Titans, titanium is harder than steel, corrosion resistant and extremely light. Its only flaw is brittleness, meaning it falls short of its indestructible reputation."
+  },
+  "t_iham": {
+    "title": "Iron Hammer",
+    "desc": "Maintain structures against the wrath of Icarus.",
+    "flavor": "Counter the forces of nature with a little violence of your own."
+  },
+  "thermo": {
+    "title": "Thermos",
+    "desc": "Like a Canteen, but with better thermal protection"
+  },
+  "fcratm": {
+    "title": "Medium Iron Crate",
+    "desc": "A strong, generous storage unit.",
+    "flavor": "Has 25 storage slots."
+  },
+  "campfi": {
+    "title": "Campfire",
+    "desc": "A place to cook food and fend the cold away.",
+    "flavor": "One of the simplest sources of heat available on Icarus, the campfire burns sticks and wood to cook basic foods. Toxins in the planet's atmosphere do not interfere with combustion."
+  },
+  "p_bpla": {
+    "title": "Platinum Bolt",
+    "desc": "Hard-hitting, if not priceless.",
+    "flavor": "Though eclipsed by exotics, platinum remains extremely valuable, even if the market is somewhat distant."
+  },
+  "al_win": {
+    "title": "Aluminium Window",
+    "desc": "A rough, wood-framed aluminium window.",
+    "flavor": "Able to be repaired with a repair hammer."
+  },
+  "p_spis": {
+    "title": "Pistol Round",
+    "desc": "Reliable 9mm ammunition."
+  },
+  "th_sta": {
+    "title": "Thatch Stairs",
+    "desc": "Light, easily crafted stairs.",
+    "flavor": "Simple to craft and plentiful, thatch construction provides rapid shelter to those on the move, or in need of rapid, if not especially durable protection."
+  },
+  "t2base": {
+    "title": "Crafting Bench",
+    "desc": "A sturdy construction bench, though useless without shelter.",
+    "flavor": "A heavy woodworking table that enables construction of improved tools, weapons and structural elements."
+  },
+  "wo_wan": {
+    "title": "Wood Wall Angled",
+    "desc": "Angular inserts for gables and other tilted designs."
+  },
+  "al_sta": {
+    "title": "Aluminium Stairs",
+    "desc": "Lightweight and durable aluminium stairs.",
+    "flavor": "Able to be repaired with a repair hammer."
+  }
+}

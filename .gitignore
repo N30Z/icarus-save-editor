@@ -41,8 +41,8 @@ nul
 ai-docs/*
 
 # Test saves (don't commit real save data)
-*.json
-!examples/*.json
+#*.json
+#!examples/*.json
 
 # Test output directory
 test_output/

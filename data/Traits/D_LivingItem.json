@@ -1,0 +1,1552 @@
+{
+    "RowStruct": "/Script/Icarus.LivingItemData",
+    "Defaults": {
+        "UpgradeSlots": [],
+        "ItemPreviewOffset": {
+            "X": 0,
+            "Y": 0,
+            "Z": 0
+        },
+        "ItemPreviewRotation": {
+            "Pitch": 0,
+            "Yaw": 0,
+            "Roll": 0
+        },
+        "PreviewMeshOverride": "None",
+        "BehaviourOverride": "None"
+    },
+    "Rows": [
+        {
+            "Name": "Legendary_Sniper",
+            "UpgradeSlots": [
+                {
+                    "SlotPosition2D": {
+                        "X": 600,
+                        "Y": 0
+                    },
+                    "PinPosition2D": {
+                        "X": 400,
+                        "Y": -490
+                    },
+                    "PinBendPosition2D": {
+                        "X": 400,
+                        "Y": 0
+                    },
+                    "AvailableUpgrades": [
+                        {
+                            "RowName": "Sniper_Barrel_A",
+                            "DataTableName": "D_LivingItemUpgrades"
+                        },
+                        {
+                            "RowName": "Sniper_Barrel_B",
+                            "DataTableName": "D_LivingItemUpgrades"
+                        },
+                        {
+                            "RowName": "Sniper_Barrel_C",
+                            "DataTableName": "D_LivingItemUpgrades"
+                        }
+                    ],
+                    "ChallengeToUnlock": {
+                        "RowName": "None",
+                        "DataTableName": "D_Challenges"
+                    },
+                    "DefaultSlotMeshes": [
+                        {
+                            "SocketName": "None",
+                            "StaticMeshToSocket": "/Game/ASS/WEP/GUN_Sniper_LGD/SM_GUN_Sniper_LGD_Barrel_A.SM_GUN_Sniper_LGD_Barrel_A"
+                        }
+                    ]
+                },
+                {
+                    "SlotPosition2D": {
+                        "X": 0,
+                        "Y": -600
+                    },
+                    "PinPosition2D": {
+                        "X": -357,
+                        "Y": -158
+                    },
+                    "PinBendPosition2D": {
+                        "X": -357,
+                        "Y": -600
+                    },
+                    "AvailableUpgrades": [
+                        {
+                            "RowName": "Sniper_Scope_A",
+                            "DataTableName": "D_LivingItemUpgrades"
+                        },
+                        {
+                            "RowName": "Sniper_Scope_B",
+                            "DataTableName": "D_LivingItemUpgrades"
+                        },
+                        {
+                            "RowName": "Sniper_Scope_C",
+                            "DataTableName": "D_LivingItemUpgrades"
+                        }
+                    ],
+                    "ChallengeToUnlock": {
+                        "RowName": "None",
+                        "DataTableName": "D_Challenges"
+                    },
+                    "DefaultSlotMeshes": [
+                        {
+                            "SocketName": "None",
+                            "StaticMeshToSocket": "/Game/ASS/WEP/GUN_Sniper_LGD/SM_GUN_Sniper_LGD_Scope_A.SM_GUN_Sniper_LGD_Scope_A"
+                        }
+                    ]
+                },
+                {
+                    "SlotPosition2D": {
+                        "X": -1300,
+                        "Y": -450
+                    },
+                    "PinPosition2D": {
+                        "X": -800,
+                        "Y": 250
+                    },
+                    "PinBendPosition2D": {
+                        "X": -1300,
+                        "Y": 250
+                    },
+                    "AvailableUpgrades": [
+                        {
+                            "RowName": "Sniper_Stock_A",
+                            "DataTableName": "D_LivingItemUpgrades"
+                        },
+                        {
+                            "RowName": "Sniper_Stock_B",
+                            "DataTableName": "D_LivingItemUpgrades"
+                        },
+                        {
+                            "RowName": "Sniper_Stock_C",
+                            "DataTableName": "D_LivingItemUpgrades"
+                        }
+                    ],
+                    "ChallengeToUnlock": {
+                        "RowName": "None",
+                        "DataTableName": "D_Challenges"
+                    },
+                    "DefaultSlotMeshes": [
+                        {
+                            "SocketName": "None",
+                            "StaticMeshToSocket": "/Game/ASS/WEP/GUN_Sniper_LGD/SM_GUN_Sniper_LGD_Stock_A.SM_GUN_Sniper_LGD_Stock_A"
+                        }
+                    ]
+                },
+                {
+                    "SlotPosition2D": {
+                        "X": 0,
+                        "Y": 300
+                    },
+                    "PinPosition2D": {
+                        "X": -300,
+                        "Y": 0
+                    },
+                    "PinBendPosition2D": {
+                        "X": 0,
+                        "Y": 0
+                    },
+                    "AvailableUpgrades": [
+                        {
+                            "RowName": "Sniper_Module_A",
+                            "DataTableName": "D_LivingItemUpgrades"
+                        },
+                        {
+                            "RowName": "Sniper_Module_B",
+                            "DataTableName": "D_LivingItemUpgrades"
+                        },
+                        {
+                            "RowName": "Sniper_Module_C",
+                            "DataTableName": "D_LivingItemUpgrades"
+                        }
+                    ],
+                    "ChallengeToUnlock": {
+                        "RowName": "None",
+                        "DataTableName": "D_Challenges"
+                    },
+                    "DefaultSlotMeshes": [
+                        {
+                            "SocketName": "None",
+                            "StaticMeshToSocket": "/Game/ASS/WEP/GUN_Sniper_LGD/SM_GUN_Sniper_LGD_Chamber_A.SM_GUN_Sniper_LGD_Chamber_A"
+                        }
+                    ]
+                }
+            ],
+            "ItemPreviewOffset": {
+                "X": -30,
+                "Z": 50
+            },
+            "ItemPreviewRotation": {
+                "Pitch": 30
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "Legendary_Bow",
+            "UpgradeSlots": [
+                {
+                    "SlotPosition2D": {
+                        "X": 500,
+                        "Y": -400
+                    },
+                    "PinPosition2D": {
+                        "X": -100,
+                        "Y": 100
+                    },
+                    "PinBendPosition2D": {
+                        "X": 500,
+                        "Y": 100
+                    },
+                    "AvailableUpgrades": [
+                        {
+                            "RowName": "Bow_Grip_A",
+                            "DataTableName": "D_LivingItemUpgrades"
+                        },
+                        {
+                            "RowName": "Bow_Grip_B",
+                            "DataTableName": "D_LivingItemUpgrades"
+                        },
+                        {
+                            "RowName": "Bow_Grip_C",
+                            "DataTableName": "D_LivingItemUpgrades"
+                        }
+                    ],
+                    "ChallengeToUnlock": {
+                        "RowName": "None",
+                        "DataTableName": "D_Challenges"
+                    },
+                    "DefaultSlotMeshes": [
+                        {
+                            "SocketName": "None",
+                            "StaticMeshToSocket": "/Game/ASS/WEP/BOW_Recurve_LGD/SM_Bow_Recurve_LGD_Handle_A.SM_Bow_Recurve_LGD_Handle_A"
+                        }
+                    ]
+                },
+                {
+                    "SlotPosition2D": {
+                        "X": -1200,
+                        "Y": -200
+                    },
+                    "PinPosition2D": {
+                        "X": -700,
+                        "Y": 400
+                    },
+                    "PinBendPosition2D": {
+                        "X": -1200,
+                        "Y": 400
+                    },
+                    "AvailableUpgrades": [
+                        {
+                            "RowName": "Bow_Arms_A",
+                            "DataTableName": "D_LivingItemUpgrades"
+                        },
+                        {
+                            "RowName": "Bow_Arms_B",
+                            "DataTableName": "D_LivingItemUpgrades"
+                        },
+                        {
+                            "RowName": "Bow_Arms_C",
+                            "DataTableName": "D_LivingItemUpgrades"
+                        }
+                    ],
+                    "ChallengeToUnlock": {
+                        "RowName": "None",
+                        "DataTableName": "D_Challenges"
+                    },
+                    "DefaultSlotMeshes": [
+                        {
+                            "SocketName": "None",
+                            "StaticMeshToSocket": "/Game/ASS/WEP/BOW_Recurve_LGD/SM_Bow_Recurve_LGD_Arms_A.SM_Bow_Recurve_LGD_Arms_A"
+                        }
+                    ]
+                },
+                {
+                    "SlotPosition2D": {
+                        "X": -800,
+                        "Y": -400
+                    },
+                    "PinPosition2D": {
+                        "X": 0,
+                        "Y": 0
+                    },
+                    "PinBendPosition2D": {
+                        "X": 0,
+                        "Y": -400
+                    },
+                    "AvailableUpgrades": [
+                        {
+                            "RowName": "Bow_Shelf_A",
+                            "DataTableName": "D_LivingItemUpgrades"
+                        },
+                        {
+                            "RowName": "Bow_Shelf_B",
+                            "DataTableName": "D_LivingItemUpgrades"
+                        },
+                        {
+                            "RowName": "Bow_Shelf_C",
+                            "DataTableName": "D_LivingItemUpgrades"
+                        }
+                    ],
+                    "ChallengeToUnlock": {
+                        "RowName": "None",
+                        "DataTableName": "D_Challenges"
+                    },
+                    "DefaultSlotMeshes": [
+                        {
+                            "SocketName": "None",
+                            "StaticMeshToSocket": "/Game/ASS/WEP/BOW_Recurve_LGD/SM_Bow_recurve_LGD_Rest_A.SM_Bow_recurve_LGD_Rest_A"
+                        }
+                    ]
+                },
+                {
+                    "SlotPosition2D": {
+                        "X": 100,
+                        "Y": 600
+                    },
+                    "PinPosition2D": {
+                        "X": -200,
+                        "Y": 200
+                    },
+                    "PinBendPosition2D": {
+                        "X": -200,
+                        "Y": 600
+                    },
+                    "AvailableUpgrades": [
+                        {
+                            "RowName": "Bow_Module_A",
+                            "DataTableName": "D_LivingItemUpgrades"
+                        },
+                        {
+                            "RowName": "Bow_Module_B",
+                            "DataTableName": "D_LivingItemUpgrades"
+                        },
+                        {
+                            "RowName": "Bow_Module_C",
+                            "DataTableName": "D_LivingItemUpgrades"
+                        }
+                    ],
+                    "ChallengeToUnlock": {
+                        "RowName": "None",
+                        "DataTableName": "D_Challenges"
+                    },
+                    "DefaultSlotMeshes": [
+                        {
+                            "SocketName": "None",
+                            "StaticMeshToSocket": "/Game/ASS/WEP/BOW_Recurve_LGD/SM_Bow_Recurve_LGD_Counterweight_A.SM_Bow_Recurve_LGD_Counterweight_A"
+                        }
+                    ]
+                }
+            ],
+            "ItemPreviewOffset": {
+                "Z": 20
+            },
+            "ItemPreviewRotation": {
+                "Pitch": -45
+            },
+            "BehaviourOverride": "/Script/Icarus.LivingItemComponent",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "Rock_Golem",
+            "UpgradeSlots": [
+                {
+                    "SlotPosition2D": {
+                        "X": 600,
+                        "Y": -500
+                    },
+                    "PinPosition2D": {
+                        "X": 260,
+                        "Y": -150
+                    },
+                    "PinBendPosition2D": {
+                        "X": 260,
+                        "Y": -500
+                    },
+                    "AvailableUpgrades": [
+                        {
+                            "RowName": "RockGolemGauntlet_Fist_A",
+                            "DataTableName": "D_LivingItemUpgrades"
+                        },
+                        {
+                            "RowName": "RockGolemGauntlet_Fist_B",
+                            "DataTableName": "D_LivingItemUpgrades"
+                        },
+                        {
+                            "RowName": "RockGolemGauntlet_Fist_C",
+                            "DataTableName": "D_LivingItemUpgrades"
+                        }
+                    ],
+                    "ChallengeToUnlock": {
+                        "RowName": "None",
+                        "DataTableName": "D_Challenges"
+                    },
+                    "DefaultSlotMeshes": [
+                        {
+                            "SocketName": "Glove_1_Fist",
+                            "StaticMeshToSocket": "/Game/ASS/WEP/Golem_Gauntlet/SM_WEP_GolemGauntlet_Fist1.SM_WEP_GolemGauntlet_Fist1"
+                        }
+                    ]
+                },
+                {
+                    "SlotPosition2D": {
+                        "X": 240,
+                        "Y": 400
+                    },
+                    "PinPosition2D": {
+                        "X": -75,
+                        "Y": 50
+                    },
+                    "PinBendPosition2D": {
+                        "X": -75,
+                        "Y": 400
+                    },
+                    "AvailableUpgrades": [
+                        {
+                            "RowName": "RockGolemGauntlet_Cuff_A",
+                            "DataTableName": "D_LivingItemUpgrades"
+                        },
+                        {
+                            "RowName": "RockGolemGauntlet_Cuff_B",
+                            "DataTableName": "D_LivingItemUpgrades"
+                        },
+                        {
+                            "RowName": "RockGolemGauntlet_Cuff_C",
+                            "DataTableName": "D_LivingItemUpgrades"
+                        }
+                    ],
+                    "ChallengeToUnlock": {
+                        "RowName": "None",
+                        "DataTableName": "D_Challenges"
+                    },
+                    "DefaultSlotMeshes": [
+                        {
+                            "SocketName": "Glove_1_Cuff",
+                            "StaticMeshToSocket": "/Game/ASS/WEP/Golem_Gauntlet/SM_WEP_GolemGauntlet_Cuff1.SM_WEP_GolemGauntlet_Cuff1"
+                        }
+                    ]
+                },
+                {
+                    "SlotPosition2D": {
+                        "X": -600,
+                        "Y": -600
+                    },
+                    "PinPosition2D": {
+                        "X": -50,
+                        "Y": -100
+                    },
+                    "PinBendPosition2D": {
+                        "X": -50,
+                        "Y": -600
+                    },
+                    "AvailableUpgrades": [
+                        {
+                            "RowName": "RockGolemGauntlet_Bracket_A",
+                            "DataTableName": "D_LivingItemUpgrades"
+                        },
+                        {
+                            "RowName": "RockGolemGauntlet_Bracket_B",
+                            "DataTableName": "D_LivingItemUpgrades"
+                        },
+                        {
+                            "RowName": "RockGolemGauntlet_Bracket_C",
+                            "DataTableName": "D_LivingItemUpgrades"
+                        }
+                    ],
+                    "ChallengeToUnlock": {
+                        "RowName": "None",
+                        "DataTableName": "D_Challenges"
+                    },
+                    "DefaultSlotMeshes": [
+                        {
+                            "SocketName": "Glove_1_Bracket_2",
+                            "StaticMeshToSocket": "/Game/ASS/WEP/Golem_Gauntlet/SM_WEP_GolemGauntlet_Bracket1_p2.SM_WEP_GolemGauntlet_Bracket1_p2"
+                        },
+                        {
+                            "SocketName": "Glove_1_Bracket_1",
+                            "StaticMeshToSocket": "/Game/ASS/WEP/Golem_Gauntlet/SM_WEP_GolemGauntlet_Bracket1_p1.SM_WEP_GolemGauntlet_Bracket1_p1"
+                        }
+                    ]
+                },
+                {
+                    "SlotPosition2D": {
+                        "X": -1200,
+                        "Y": 400
+                    },
+                    "PinPosition2D": {
+                        "X": -700,
+                        "Y": 0
+                    },
+                    "PinBendPosition2D": {
+                        "X": -700,
+                        "Y": 400
+                    },
+                    "AvailableUpgrades": [
+                        {
+                            "RowName": "RockGolemGauntlet_Battery_A",
+                            "DataTableName": "D_LivingItemUpgrades"
+                        },
+                        {
+                            "RowName": "RockGolemGauntlet_Battery_B",
+                            "DataTableName": "D_LivingItemUpgrades"
+                        },
+                        {
+                            "RowName": "RockGolemGauntlet_Battery_C",
+                            "DataTableName": "D_LivingItemUpgrades"
+                        }
+                    ],
+                    "ChallengeToUnlock": {
+                        "RowName": "None",
+                        "DataTableName": "D_Challenges"
+                    },
+                    "DefaultSlotMeshes": [
+                        {
+                            "SocketName": "None",
+                            "StaticMeshToSocket": "None"
+                        }
+                    ]
+                }
+            ],
+            "ItemPreviewOffset": {
+                "X": -80,
+                "Z": -20
+            },
+            "ItemPreviewRotation": {
+                "Pitch": 179.56639099121094,
+                "Yaw": 40,
+                "Roll": 109.79295349121094
+            },
+            "PreviewMeshOverride": "/Game/ASS/WEP/Golem_Gauntlet/SK_1ST_WEP_GolemGauntlet.SK_1ST_WEP_GolemGauntlet",
+            "BehaviourOverride": "/Game/BP/Behaviours/LivingItem/BP_LivingItemComponent_GolemGauntlet.BP_LivingItemComponent_GolemGauntlet_C",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "Black_Wolf",
+            "UpgradeSlots": [
+                {
+                    "SlotPosition2D": {
+                        "X": 420,
+                        "Y": -560
+                    },
+                    "PinPosition2D": {
+                        "X": 140,
+                        "Y": -250
+                    },
+                    "PinBendPosition2D": {
+                        "X": 140,
+                        "Y": -560
+                    },
+                    "AvailableUpgrades": [
+                        {
+                            "RowName": "BlackWolf_Barrel_A",
+                            "DataTableName": "D_LivingItemUpgrades"
+                        },
+                        {
+                            "RowName": "BlackWolf_Barrel_B",
+                            "DataTableName": "D_LivingItemUpgrades"
+                        },
+                        {
+                            "RowName": "BlackWolf_Barrel_C",
+                            "DataTableName": "D_LivingItemUpgrades"
+                        }
+                    ],
+                    "ChallengeToUnlock": {
+                        "RowName": "None",
+                        "DataTableName": "D_Challenges"
+                    },
+                    "DefaultSlotMeshes": [
+                        {
+                            "SocketName": "LW_Barrel",
+                            "StaticMeshToSocket": "/Game/ASS/WEP/GUN_BlackWolfRevolver/SM_GUN_BWR_Barrel_A.SM_GUN_BWR_Barrel_A"
+                        }
+                    ]
+                },
+                {
+                    "SlotPosition2D": {
+                        "X": -400,
+                        "Y": -600
+                    },
+                    "PinPosition2D": {
+                        "X": -200,
+                        "Y": -200
+                    },
+                    "PinBendPosition2D": {
+                        "X": -400,
+                        "Y": -200
+                    },
+                    "AvailableUpgrades": [
+                        {
+                            "RowName": "BlackWolf_Chamber_A",
+                            "DataTableName": "D_LivingItemUpgrades"
+                        },
+                        {
+                            "RowName": "BlackWolf_Chamber_B",
+                            "DataTableName": "D_LivingItemUpgrades"
+                        },
+                        {
+                            "RowName": "BlackWolf_Chamber_C",
+                            "DataTableName": "D_LivingItemUpgrades"
+                        }
+                    ],
+                    "ChallengeToUnlock": {
+                        "RowName": "None",
+                        "DataTableName": "D_Challenges"
+                    },
+                    "DefaultSlotMeshes": [
+                        {
+                            "SocketName": "Clip",
+                            "StaticMeshToSocket": "/Game/ASS/WEP/GUN_BlackWolfRevolver/SM_GUN_BWR_Cylinder_A.SM_GUN_BWR_Cylinder_A"
+                        }
+                    ]
+                },
+                {
+                    "SlotPosition2D": {
+                        "X": 200,
+                        "Y": 200
+                    },
+                    "PinPosition2D": {
+                        "X": -300,
+                        "Y": 100
+                    },
+                    "PinBendPosition2D": {
+                        "X": -300,
+                        "Y": 200
+                    },
+                    "AvailableUpgrades": [
+                        {
+                            "RowName": "BlackWolf_Trigger_A",
+                            "DataTableName": "D_LivingItemUpgrades"
+                        },
+                        {
+                            "RowName": "BlackWolf_Trigger_B",
+                            "DataTableName": "D_LivingItemUpgrades"
+                        },
+                        {
+                            "RowName": "BlackWolf_Trigger_C",
+                            "DataTableName": "D_LivingItemUpgrades"
+                        }
+                    ],
+                    "ChallengeToUnlock": {
+                        "RowName": "None",
+                        "DataTableName": "D_Challenges"
+                    },
+                    "DefaultSlotMeshes": [
+                        {
+                            "SocketName": "LW_Trigger",
+                            "StaticMeshToSocket": "/Game/ASS/WEP/GUN_BlackWolfRevolver/SM_GUN_BWR_Trigger_A.SM_GUN_BWR_Trigger_A"
+                        }
+                    ]
+                },
+                {
+                    "SlotPosition2D": {
+                        "X": -800,
+                        "Y": 500
+                    },
+                    "PinPosition2D": {
+                        "X": -650,
+                        "Y": 240
+                    },
+                    "PinBendPosition2D": {
+                        "X": -800,
+                        "Y": 240
+                    },
+                    "AvailableUpgrades": [
+                        {
+                            "RowName": "BlackWolf_Handle_A",
+                            "DataTableName": "D_LivingItemUpgrades"
+                        },
+                        {
+                            "RowName": "BlackWolf_Handle_B",
+                            "DataTableName": "D_LivingItemUpgrades"
+                        },
+                        {
+                            "RowName": "BlackWolf_Handle_C",
+                            "DataTableName": "D_LivingItemUpgrades"
+                        }
+                    ],
+                    "ChallengeToUnlock": {
+                        "RowName": "None",
+                        "DataTableName": "D_Challenges"
+                    },
+                    "DefaultSlotMeshes": [
+                        {
+                            "SocketName": "LW_Handle",
+                            "StaticMeshToSocket": "/Game/ASS/WEP/GUN_BlackWolfRevolver/SM_GUN_BWR_Handle_A.SM_GUN_BWR_Handle_A"
+                        }
+                    ]
+                }
+            ],
+            "ItemPreviewOffset": {
+                "X": -20,
+                "Y": -2,
+                "Z": -30
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "Scorpion",
+            "UpgradeSlots": [
+                {
+                    "SlotPosition2D": {
+                        "X": 420,
+                        "Y": -720
+                    },
+                    "PinPosition2D": {
+                        "X": 100,
+                        "Y": -400
+                    },
+                    "PinBendPosition2D": {
+                        "X": 100,
+                        "Y": -720
+                    },
+                    "AvailableUpgrades": [
+                        {
+                            "RowName": "ScorpionRifle_Barrel_A",
+                            "DataTableName": "D_LivingItemUpgrades"
+                        },
+                        {
+                            "RowName": "ScorpionRifle_Barrel_B",
+                            "DataTableName": "D_LivingItemUpgrades"
+                        },
+                        {
+                            "RowName": "ScorpionRifle_Barrel_C",
+                            "DataTableName": "D_LivingItemUpgrades"
+                        }
+                    ],
+                    "ChallengeToUnlock": {
+                        "RowName": "None",
+                        "DataTableName": "D_Challenges"
+                    },
+                    "DefaultSlotMeshes": [
+                        {
+                            "SocketName": "LW_Barrel",
+                            "StaticMeshToSocket": "/Game/ASS/WEP/GUN_ScorpionRifle/SM_GUN_ScorpRifle_Barrel_A.SM_GUN_ScorpRifle_Barrel_A"
+                        }
+                    ]
+                },
+                {
+                    "SlotPosition2D": {
+                        "X": 300,
+                        "Y": 300
+                    },
+                    "PinPosition2D": {
+                        "X": -300,
+                        "Y": 50
+                    },
+                    "PinBendPosition2D": {
+                        "X": 300,
+                        "Y": 50
+                    },
+                    "AvailableUpgrades": [
+                        {
+                            "RowName": "ScorpionRifle_Chamber_A",
+                            "DataTableName": "D_LivingItemUpgrades"
+                        },
+                        {
+                            "RowName": "ScorpionRifle_Chamber_B",
+                            "DataTableName": "D_LivingItemUpgrades"
+                        },
+                        {
+                            "RowName": "ScorpionRifle_Chamber_C",
+                            "DataTableName": "D_LivingItemUpgrades"
+                        }
+                    ],
+                    "ChallengeToUnlock": {
+                        "RowName": "None",
+                        "DataTableName": "D_Challenges"
+                    },
+                    "DefaultSlotMeshes": [
+                        {
+                            "SocketName": "LW_Chamber",
+                            "StaticMeshToSocket": "/Game/ASS/WEP/GUN_ScorpionRifle/SM_GUN_ScorpRifle_Chamber_A.SM_GUN_ScorpRifle_Chamber_A"
+                        }
+                    ]
+                },
+                {
+                    "SlotPosition2D": {
+                        "X": -100,
+                        "Y": 500
+                    },
+                    "PinPosition2D": {
+                        "X": -400,
+                        "Y": -50
+                    },
+                    "PinBendPosition2D": {
+                        "X": -400,
+                        "Y": 500
+                    },
+                    "AvailableUpgrades": [
+                        {
+                            "RowName": "ScorpionRifle_Mag_A",
+                            "DataTableName": "D_LivingItemUpgrades"
+                        },
+                        {
+                            "RowName": "ScorpionRifle_Mag_B",
+                            "DataTableName": "D_LivingItemUpgrades"
+                        },
+                        {
+                            "RowName": "ScorpionRifle_Mag_C",
+                            "DataTableName": "D_LivingItemUpgrades"
+                        }
+                    ],
+                    "ChallengeToUnlock": {
+                        "RowName": "None",
+                        "DataTableName": "D_Challenges"
+                    },
+                    "DefaultSlotMeshes": [
+                        {
+                            "SocketName": "LW_Mag",
+                            "StaticMeshToSocket": "/Game/ASS/WEP/GUN_ScorpionRifle/SM_GUN_ScorpRifle_Mag_A.SM_GUN_ScorpRifle_Mag_A"
+                        }
+                    ]
+                },
+                {
+                    "SlotPosition2D": {
+                        "X": -800,
+                        "Y": -400
+                    },
+                    "PinPosition2D": {
+                        "X": -550,
+                        "Y": 300
+                    },
+                    "PinBendPosition2D": {
+                        "X": -800,
+                        "Y": 300
+                    },
+                    "AvailableUpgrades": [
+                        {
+                            "RowName": "ScorpionRifle_Stock_A",
+                            "DataTableName": "D_LivingItemUpgrades"
+                        },
+                        {
+                            "RowName": "ScorpionRifle_Stock_B",
+                            "DataTableName": "D_LivingItemUpgrades"
+                        },
+                        {
+                            "RowName": "ScorpionRifle_Stock_C",
+                            "DataTableName": "D_LivingItemUpgrades"
+                        }
+                    ],
+                    "ChallengeToUnlock": {
+                        "RowName": "None",
+                        "DataTableName": "D_Challenges"
+                    },
+                    "DefaultSlotMeshes": [
+                        {
+                            "SocketName": "LW_Stock",
+                            "StaticMeshToSocket": "/Game/ASS/WEP/GUN_ScorpionRifle/SM_GUN_ScorpRifle_Stock_C_02.SM_GUN_ScorpRifle_Stock_C_02"
+                        }
+                    ]
+                }
+            ],
+            "ItemPreviewOffset": {
+                "X": -30,
+                "Z": 20
+            },
+            "ItemPreviewRotation": {
+                "Pitch": 35
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "Sandworm",
+            "UpgradeSlots": [
+                {
+                    "SlotPosition2D": {
+                        "X": 660,
+                        "Y": 300
+                    },
+                    "PinPosition2D": {
+                        "X": 480,
+                        "Y": -500
+                    },
+                    "PinBendPosition2D": {
+                        "X": 480,
+                        "Y": 300
+                    },
+                    "AvailableUpgrades": [
+                        {
+                            "RowName": "SandwormCrossbow_Barrel_A",
+                            "DataTableName": "D_LivingItemUpgrades"
+                        },
+                        {
+                            "RowName": "SandwormCrossbow_Barrel_B",
+                            "DataTableName": "D_LivingItemUpgrades"
+                        },
+                        {
+                            "RowName": "SandwormCrossbow_Barrel_C",
+                            "DataTableName": "D_LivingItemUpgrades"
+                        }
+                    ],
+                    "ChallengeToUnlock": {
+                        "RowName": "None",
+                        "DataTableName": "D_Challenges"
+                    },
+                    "DefaultSlotMeshes": [
+                        {
+                            "SocketName": "LW_Barrel",
+                            "StaticMeshToSocket": "/Game/ASS/WEP/SK_BOW_Crossbow_Sandworm/MeshV2/SM_BOW_SandwormCrossbow_SZ_STD.SM_BOW_SandwormCrossbow_SZ_STD"
+                        }
+                    ]
+                },
+                {
+                    "SlotPosition2D": {
+                        "X": 0,
+                        "Y": 200
+                    },
+                    "PinPosition2D": {
+                        "X": 150,
+                        "Y": -180
+                    },
+                    "PinBendPosition2D": {
+                        "X": 150,
+                        "Y": 200
+                    },
+                    "AvailableUpgrades": [
+                        {
+                            "RowName": "SandwormCrossbow_Arm_A",
+                            "DataTableName": "D_LivingItemUpgrades"
+                        },
+                        {
+                            "RowName": "SandwormCrossbow_Arm_B",
+                            "DataTableName": "D_LivingItemUpgrades"
+                        },
+                        {
+                            "RowName": "SandwormCrossbow_Arm_C",
+                            "DataTableName": "D_LivingItemUpgrades"
+                        }
+                    ],
+                    "ChallengeToUnlock": {
+                        "RowName": "None",
+                        "DataTableName": "D_Challenges"
+                    },
+                    "DefaultSlotMeshes": [
+                        {
+                            "SocketName": "LW_Arm",
+                            "StaticMeshToSocket": "None"
+                        }
+                    ]
+                },
+                {
+                    "SlotPosition2D": {
+                        "X": -500,
+                        "Y": 600
+                    },
+                    "PinPosition2D": {
+                        "X": -300,
+                        "Y": -50
+                    },
+                    "PinBendPosition2D": {
+                        "X": -300,
+                        "Y": 600
+                    },
+                    "AvailableUpgrades": [
+                        {
+                            "RowName": "SandwormCrossbow_Launcher_A",
+                            "DataTableName": "D_LivingItemUpgrades"
+                        },
+                        {
+                            "RowName": "SandwormCrossbow_Launcher_B",
+                            "DataTableName": "D_LivingItemUpgrades"
+                        },
+                        {
+                            "RowName": "SandwormCrossbow_Launcher_C",
+                            "DataTableName": "D_LivingItemUpgrades"
+                        }
+                    ],
+                    "ChallengeToUnlock": {
+                        "RowName": "None",
+                        "DataTableName": "D_Challenges"
+                    },
+                    "DefaultSlotMeshes": [
+                        {
+                            "SocketName": "LW_Launcher",
+                            "StaticMeshToSocket": "/Game/ASS/WEP/SK_BOW_Crossbow_Sandworm/MeshV2/SM_BOW_SandwormCrossbow_LA_STD.SM_BOW_SandwormCrossbow_LA_STD"
+                        }
+                    ]
+                },
+                {
+                    "SlotPosition2D": {
+                        "X": -960,
+                        "Y": -400
+                    },
+                    "PinPosition2D": {
+                        "X": -700,
+                        "Y": 80
+                    },
+                    "PinBendPosition2D": {
+                        "X": -700,
+                        "Y": -400
+                    },
+                    "AvailableUpgrades": [
+                        {
+                            "RowName": "SandwormCrossbow_Stock_A",
+                            "DataTableName": "D_LivingItemUpgrades"
+                        },
+                        {
+                            "RowName": "SandwormCrossbow_Stock_B",
+                            "DataTableName": "D_LivingItemUpgrades"
+                        },
+                        {
+                            "RowName": "SandwormCrossbow_Stock_C",
+                            "DataTableName": "D_LivingItemUpgrades"
+                        }
+                    ],
+                    "ChallengeToUnlock": {
+                        "RowName": "None",
+                        "DataTableName": "D_Challenges"
+                    },
+                    "DefaultSlotMeshes": [
+                        {
+                            "SocketName": "LW_Stock",
+                            "StaticMeshToSocket": "/Game/ASS/WEP/SK_BOW_Crossbow_Sandworm/V3/SM_BOW_Crossbow_Sandworm_CW_Std.SM_BOW_Crossbow_Sandworm_CW_Std"
+                        }
+                    ]
+                }
+            ],
+            "ItemPreviewOffset": {
+                "X": -48,
+                "Y": -10,
+                "Z": 40
+            },
+            "ItemPreviewRotation": {
+                "Pitch": 25,
+                "Roll": 50
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "Lava_Hunter",
+            "UpgradeSlots": [
+                {
+                    "SlotPosition2D": {
+                        "X": -1200,
+                        "Y": -450
+                    },
+                    "PinPosition2D": {
+                        "X": -300,
+                        "Y": 0
+                    },
+                    "PinBendPosition2D": {
+                        "X": -300,
+                        "Y": -450
+                    },
+                    "AvailableUpgrades": [
+                        {
+                            "RowName": "LavaHunterFlamethrower_Chassis_A",
+                            "DataTableName": "D_LivingItemUpgrades"
+                        },
+                        {
+                            "RowName": "LavaHunterFlamethrower_Chassis_B",
+                            "DataTableName": "D_LivingItemUpgrades"
+                        },
+                        {
+                            "RowName": "LavaHunterFlamethrower_Chassis_C",
+                            "DataTableName": "D_LivingItemUpgrades"
+                        }
+                    ],
+                    "ChallengeToUnlock": {
+                        "RowName": "None",
+                        "DataTableName": "D_Challenges"
+                    },
+                    "DefaultSlotMeshes": [
+                        {
+                            "SocketName": "LW_Chassis",
+                            "StaticMeshToSocket": "/Game/ASS/WEP/Gun_FlameThrower_LavaHunter/SM_WEP_GUN_FlameThrower_LavaHunter_Chasis_A.SM_WEP_GUN_FlameThrower_LavaHunter_Chasis_A"
+                        }
+                    ]
+                },
+                {
+                    "SlotPosition2D": {
+                        "X": 300,
+                        "Y": 350
+                    },
+                    "PinPosition2D": {
+                        "X": -150,
+                        "Y": 200
+                    },
+                    "PinBendPosition2D": {
+                        "X": -150,
+                        "Y": 350
+                    },
+                    "AvailableUpgrades": [
+                        {
+                            "RowName": "LavaHunterFlamethrower_Fuel_A",
+                            "DataTableName": "D_LivingItemUpgrades"
+                        },
+                        {
+                            "RowName": "LavaHunterFlamethrower_Fuel_B",
+                            "DataTableName": "D_LivingItemUpgrades"
+                        },
+                        {
+                            "RowName": "LavaHunterFlamethrower_Fuel_C",
+                            "DataTableName": "D_LivingItemUpgrades"
+                        }
+                    ],
+                    "ChallengeToUnlock": {
+                        "RowName": "None",
+                        "DataTableName": "D_Challenges"
+                    },
+                    "DefaultSlotMeshes": [
+                        {
+                            "SocketName": "LW_Fuel",
+                            "StaticMeshToSocket": "/Game/ASS/WEP/Gun_FlameThrower_LavaHunter/SM_WEP_GUN_FlameThrower_LavaHunter_Fuel_A.SM_WEP_GUN_FlameThrower_LavaHunter_Fuel_A"
+                        }
+                    ]
+                },
+                {
+                    "SlotPosition2D": {
+                        "X": 700,
+                        "Y": 0
+                    },
+                    "PinPosition2D": {
+                        "X": 400,
+                        "Y": -280
+                    },
+                    "PinBendPosition2D": {
+                        "X": 400,
+                        "Y": 0
+                    },
+                    "AvailableUpgrades": [
+                        {
+                            "RowName": "LavaHunterFlamethrower_Injector_A",
+                            "DataTableName": "D_LivingItemUpgrades"
+                        },
+                        {
+                            "RowName": "LavaHunterFlamethrower_Injector_B",
+                            "DataTableName": "D_LivingItemUpgrades"
+                        },
+                        {
+                            "RowName": "LavaHunterFlamethrower_Injector_C",
+                            "DataTableName": "D_LivingItemUpgrades"
+                        }
+                    ],
+                    "ChallengeToUnlock": {
+                        "RowName": "None",
+                        "DataTableName": "D_Challenges"
+                    },
+                    "DefaultSlotMeshes": [
+                        {
+                            "SocketName": "LW_Injector",
+                            "StaticMeshToSocket": "/Game/ASS/WEP/Gun_FlameThrower_LavaHunter/SM_WEP_GUN_FlameThrower_LavaHunter_Injector_A.SM_WEP_GUN_FlameThrower_LavaHunter_Injector_A"
+                        }
+                    ]
+                },
+                {
+                    "SlotPosition2D": {
+                        "X": 400,
+                        "Y": -800
+                    },
+                    "PinPosition2D": {
+                        "X": 150,
+                        "Y": -280
+                    },
+                    "PinBendPosition2D": {
+                        "X": 150,
+                        "Y": -800
+                    },
+                    "AvailableUpgrades": [
+                        {
+                            "RowName": "LavaHunterFlamethrower_Nozzle_A",
+                            "DataTableName": "D_LivingItemUpgrades"
+                        },
+                        {
+                            "RowName": "LavaHunterFlamethrower_Nozzle_B",
+                            "DataTableName": "D_LivingItemUpgrades"
+                        },
+                        {
+                            "RowName": "LavaHunterFlamethrower_Nozzle_C",
+                            "DataTableName": "D_LivingItemUpgrades"
+                        }
+                    ],
+                    "ChallengeToUnlock": {
+                        "RowName": "None",
+                        "DataTableName": "D_Challenges"
+                    },
+                    "DefaultSlotMeshes": [
+                        {
+                            "SocketName": "LW_Nozzle",
+                            "StaticMeshToSocket": "/Game/ASS/WEP/Gun_FlameThrower_LavaHunter/SM_WEP_GUN_FlameThrower_LavaHunter_Nozzle_A.SM_WEP_GUN_FlameThrower_LavaHunter_Nozzle_A"
+                        }
+                    ]
+                }
+            ],
+            "ItemPreviewOffset": {
+                "X": -50,
+                "Y": -5,
+                "Z": 50
+            },
+            "ItemPreviewRotation": {
+                "Pitch": 25
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "Ape",
+            "UpgradeSlots": [
+                {
+                    "SlotPosition2D": {
+                        "X": 640,
+                        "Y": -720
+                    },
+                    "PinPosition2D": {
+                        "X": 500,
+                        "Y": -450
+                    },
+                    "PinBendPosition2D": {
+                        "X": 500,
+                        "Y": -720
+                    },
+                    "AvailableUpgrades": [
+                        {
+                            "RowName": "ApeClub_Plate_A",
+                            "DataTableName": "D_LivingItemUpgrades"
+                        },
+                        {
+                            "RowName": "ApeClub_Plate_B",
+                            "DataTableName": "D_LivingItemUpgrades"
+                        },
+                        {
+                            "RowName": "ApeClub_Plate_C",
+                            "DataTableName": "D_LivingItemUpgrades"
+                        }
+                    ],
+                    "ChallengeToUnlock": {
+                        "RowName": "None",
+                        "DataTableName": "D_Challenges"
+                    },
+                    "DefaultSlotMeshes": [
+                        {
+                            "SocketName": "LW_Plate",
+                            "StaticMeshToSocket": "/Game/ASS/ITM/Club_Swamp_Ape/SM_ITM_Club_Ape_Plates_1.SM_ITM_Club_Ape_Plates_1"
+                        }
+                    ]
+                },
+                {
+                    "SlotPosition2D": {
+                        "X": 560,
+                        "Y": 420
+                    },
+                    "PinPosition2D": {
+                        "X": 400,
+                        "Y": -320
+                    },
+                    "PinBendPosition2D": {
+                        "X": 400,
+                        "Y": 420
+                    },
+                    "AvailableUpgrades": [
+                        {
+                            "RowName": "ApeClub_Amp_A",
+                            "DataTableName": "D_LivingItemUpgrades"
+                        },
+                        {
+                            "RowName": "ApeClub_Amp_B",
+                            "DataTableName": "D_LivingItemUpgrades"
+                        },
+                        {
+                            "RowName": "ApeClub_Amp_C",
+                            "DataTableName": "D_LivingItemUpgrades"
+                        }
+                    ],
+                    "ChallengeToUnlock": {
+                        "RowName": "None",
+                        "DataTableName": "D_Challenges"
+                    },
+                    "DefaultSlotMeshes": [
+                        {
+                            "SocketName": "LW_Amp",
+                            "StaticMeshToSocket": "/Game/ASS/ITM/Club_Swamp_Ape/SM_ITM_Club_Ape_Amplifier_1.SM_ITM_Club_Ape_Amplifier_1"
+                        }
+                    ]
+                },
+                {
+                    "SlotPosition2D": {
+                        "X": -600,
+                        "Y": -100
+                    },
+                    "PinPosition2D": {
+                        "X": 230,
+                        "Y": -240
+                    },
+                    "PinBendPosition2D": {
+                        "X": -600,
+                        "Y": -240
+                    },
+                    "AvailableUpgrades": [
+                        {
+                            "RowName": "ApeClub_Dampener_A",
+                            "DataTableName": "D_LivingItemUpgrades"
+                        },
+                        {
+                            "RowName": "ApeClub_Dampener_B",
+                            "DataTableName": "D_LivingItemUpgrades"
+                        },
+                        {
+                            "RowName": "ApeClub_Dampener_C",
+                            "DataTableName": "D_LivingItemUpgrades"
+                        }
+                    ],
+                    "ChallengeToUnlock": {
+                        "RowName": "None",
+                        "DataTableName": "D_Challenges"
+                    },
+                    "DefaultSlotMeshes": [
+                        {
+                            "SocketName": "LW_Damp",
+                            "StaticMeshToSocket": "/Game/ASS/ITM/Club_Swamp_Ape/SM_ITM_Club_Ape_Absorber_1.SM_ITM_Club_Ape_Absorber_1"
+                        }
+                    ]
+                },
+                {
+                    "SlotPosition2D": {
+                        "X": -1200,
+                        "Y": -400
+                    },
+                    "PinPosition2D": {
+                        "X": -820,
+                        "Y": 400
+                    },
+                    "PinBendPosition2D": {
+                        "X": -820,
+                        "Y": -400
+                    },
+                    "AvailableUpgrades": [
+                        {
+                            "RowName": "ApeClub_Enhancer_A",
+                            "DataTableName": "D_LivingItemUpgrades"
+                        },
+                        {
+                            "RowName": "ApeClub_Enhancer_B",
+                            "DataTableName": "D_LivingItemUpgrades"
+                        },
+                        {
+                            "RowName": "ApeClub_Enhancer_C",
+                            "DataTableName": "D_LivingItemUpgrades"
+                        }
+                    ],
+                    "ChallengeToUnlock": {
+                        "RowName": "None",
+                        "DataTableName": "D_Challenges"
+                    },
+                    "DefaultSlotMeshes": [
+                        {
+                            "SocketName": "LW_Enhance",
+                            "StaticMeshToSocket": "/Game/ASS/ITM/Club_Swamp_Ape/SM_ITM_Club_Ape_Injector_1.SM_ITM_Club_Ape_Injector_1"
+                        }
+                    ]
+                }
+            ],
+            "ItemPreviewOffset": {
+                "X": -30,
+                "Y": -10,
+                "Z": 50
+            },
+            "ItemPreviewRotation": {
+                "Pitch": -60
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "Sandwyrm_Chainsaw",
+            "UpgradeSlots": [
+                {
+                    "SlotPosition2D": {
+                        "X": 640,
+                        "Y": -720
+                    },
+                    "PinPosition2D": {
+                        "X": 500,
+                        "Y": -450
+                    },
+                    "PinBendPosition2D": {
+                        "X": 500,
+                        "Y": -720
+                    },
+                    "AvailableUpgrades": [
+                        {
+                            "RowName": "ApeClub_Plate_A",
+                            "DataTableName": "D_LivingItemUpgrades"
+                        },
+                        {
+                            "RowName": "ApeClub_Plate_B",
+                            "DataTableName": "D_LivingItemUpgrades"
+                        },
+                        {
+                            "RowName": "ApeClub_Plate_C",
+                            "DataTableName": "D_LivingItemUpgrades"
+                        }
+                    ],
+                    "ChallengeToUnlock": {
+                        "RowName": "None",
+                        "DataTableName": "D_Challenges"
+                    },
+                    "DefaultSlotMeshes": [
+                        {
+                            "SocketName": "LW_Plate",
+                            "StaticMeshToSocket": "/Game/ASS/ITM/Legendary_Chainsaw/SM_ITM_Legendary_Chainsaw_DRIVE_A.SM_ITM_Legendary_Chainsaw_DRIVE_A"
+                        }
+                    ]
+                },
+                {
+                    "SlotPosition2D": {
+                        "X": 560,
+                        "Y": 420
+                    },
+                    "PinPosition2D": {
+                        "X": 400,
+                        "Y": -320
+                    },
+                    "PinBendPosition2D": {
+                        "X": 400,
+                        "Y": 420
+                    },
+                    "AvailableUpgrades": [
+                        {
+                            "RowName": "ApeClub_Amp_A",
+                            "DataTableName": "D_LivingItemUpgrades"
+                        },
+                        {
+                            "RowName": "ApeClub_Amp_B",
+                            "DataTableName": "D_LivingItemUpgrades"
+                        },
+                        {
+                            "RowName": "ApeClub_Amp_C",
+                            "DataTableName": "D_LivingItemUpgrades"
+                        }
+                    ],
+                    "ChallengeToUnlock": {
+                        "RowName": "None",
+                        "DataTableName": "D_Challenges"
+                    },
+                    "DefaultSlotMeshes": [
+                        {
+                            "SocketName": "LW_Amp",
+                            "StaticMeshToSocket": "/Game/ASS/ITM/Legendary_Chainsaw/SM_ITM_Legendary_Chainsaw_HANDLE_A.SM_ITM_Legendary_Chainsaw_HANDLE_A"
+                        }
+                    ]
+                },
+                {
+                    "SlotPosition2D": {
+                        "X": -600,
+                        "Y": -100
+                    },
+                    "PinPosition2D": {
+                        "X": 230,
+                        "Y": -240
+                    },
+                    "PinBendPosition2D": {
+                        "X": -600,
+                        "Y": -240
+                    },
+                    "AvailableUpgrades": [
+                        {
+                            "RowName": "ApeClub_Dampener_A",
+                            "DataTableName": "D_LivingItemUpgrades"
+                        },
+                        {
+                            "RowName": "ApeClub_Dampener_B",
+                            "DataTableName": "D_LivingItemUpgrades"
+                        },
+                        {
+                            "RowName": "ApeClub_Dampener_C",
+                            "DataTableName": "D_LivingItemUpgrades"
+                        }
+                    ],
+                    "ChallengeToUnlock": {
+                        "RowName": "None",
+                        "DataTableName": "D_Challenges"
+                    },
+                    "DefaultSlotMeshes": [
+                        {
+                            "SocketName": "LW_Damp",
+                            "StaticMeshToSocket": "/Game/ASS/ITM/Legendary_Chainsaw/SM_ITM_Legendary_Chainsaw_MOTOR_A.SM_ITM_Legendary_Chainsaw_MOTOR_A"
+                        }
+                    ]
+                },
+                {
+                    "SlotPosition2D": {
+                        "X": -1200,
+                        "Y": -400
+                    },
+                    "PinPosition2D": {
+                        "X": -820,
+                        "Y": 400
+                    },
+                    "PinBendPosition2D": {
+                        "X": -820,
+                        "Y": -400
+                    },
+                    "AvailableUpgrades": [
+                        {
+                            "RowName": "ApeClub_Enhancer_A",
+                            "DataTableName": "D_LivingItemUpgrades"
+                        },
+                        {
+                            "RowName": "ApeClub_Enhancer_B",
+                            "DataTableName": "D_LivingItemUpgrades"
+                        },
+                        {
+                            "RowName": "ApeClub_Enhancer_C",
+                            "DataTableName": "D_LivingItemUpgrades"
+                        }
+                    ],
+                    "ChallengeToUnlock": {
+                        "RowName": "None",
+                        "DataTableName": "D_Challenges"
+                    },
+                    "DefaultSlotMeshes": [
+                        {
+                            "SocketName": "LW_Enhance",
+                            "StaticMeshToSocket": "/Game/ASS/ITM/Legendary_Chainsaw/SM_Legendary_Chainsaw_SAW_A_Blades.SM_Legendary_Chainsaw_SAW_A_Blades"
+                        }
+                    ]
+                }
+            ],
+            "ItemPreviewOffset": {
+                "X": -30,
+                "Y": -10,
+                "Z": 50
+            },
+            "ItemPreviewRotation": {
+                "Pitch": -60
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "ComingSoon"
+                }
+            }
+        }
+    ]
+}

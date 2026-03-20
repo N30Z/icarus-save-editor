@@ -1,0 +1,137 @@
+{
+    "RowStruct": "/Script/Icarus.IcarusResource",
+    "Defaults": {
+        "DisplayName": "",
+        "Units": "",
+        "Color": {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 0
+        },
+        "Resource_Icon": "None",
+        "Recipe_Icon": "None",
+        "Container_Icon": "None"
+    },
+    "GenerateEnum": true,
+    "Rows": [
+        {
+            "Name": "Invalid",
+            "DisplayName": "NSLOCTEXT(\"D_IcarusResources\", \"Invalid-DisplayName\", \"Invalid\")",
+            "Color": {
+                "A": 255
+            },
+            "Resource_Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/ITEM_Missing.ITEM_Missing",
+            "Recipe_Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/ITEM_Missing.ITEM_Missing"
+        },
+        {
+            "Name": "Energy",
+            "DisplayName": "NSLOCTEXT(\"D_IcarusResources\", \"Energy-DisplayName\", \"Electricity\")",
+            "Units": "NSLOCTEXT(\"D_IcarusResources\", \"Energy-Units\", \"kJ\")",
+            "Color": {
+                "G": 245,
+                "R": 250,
+                "A": 255
+            },
+            "Resource_Icon": "/Game/Assets/2DArt/UI/Icons/T_ICON_Resource_Electricity.T_ICON_Resource_Electricity",
+            "Recipe_Icon": "/Game/Assets/2DArt/UI/Icons/T_ICON_Recipe_Electricity.T_ICON_Recipe_Electricity",
+            "Container_Icon": "/Game/Assets/2DArt/UI/Materials/M_FuelType_Electricity.M_FuelType_Electricity"
+        },
+        {
+            "Name": "Water",
+            "DisplayName": "NSLOCTEXT(\"D_IcarusResources\", \"Water-DisplayName\", \"Water\")",
+            "Units": "NSLOCTEXT(\"D_IcarusResources\", \"Water-Units\", \"L\")",
+            "Color": {
+                "B": 255,
+                "G": 165,
+                "R": 66,
+                "A": 255
+            },
+            "Resource_Icon": "/Game/Assets/2DArt/UI/Icons/T_ICON_Resource_Water.T_ICON_Resource_Water",
+            "Recipe_Icon": "/Game/Assets/2DArt/UI/Icons/T_ICON_Recipe_Water.T_ICON_Recipe_Water",
+            "Container_Icon": "/Game/Assets/2DArt/UI/Materials/M_FuelType_Water.M_FuelType_Water"
+        },
+        {
+            "Name": "Biofuel",
+            "DisplayName": "NSLOCTEXT(\"D_IcarusResources\", \"Biofuel-DisplayName\", \"Biofuel\")",
+            "Units": "NSLOCTEXT(\"D_IcarusResources\", \"Biofuel-Units\", \"L\")",
+            "Color": {
+                "B": 151,
+                "G": 255,
+                "A": 255
+            },
+            "Resource_Icon": "/Game/Assets/2DArt/UI/Icons/T_ICON_Resource_Biofuel.T_ICON_Resource_Biofuel",
+            "Recipe_Icon": "/Game/Assets/2DArt/UI/Icons/T_ICON_Recipe_Biofuel.T_ICON_Recipe_Biofuel",
+            "Container_Icon": "/Game/Assets/2DArt/UI/Materials/M_FuelType_Biofuel.M_FuelType_Biofuel"
+        },
+        {
+            "Name": "Oxygen",
+            "DisplayName": "NSLOCTEXT(\"D_IcarusResources\", \"Oxygen-DisplayName\", \"Oxygen\")",
+            "Units": "NSLOCTEXT(\"D_IcarusResources\", \"Oxygen-Units\", \"L\")",
+            "Color": {
+                "B": 255,
+                "G": 255,
+                "R": 255,
+                "A": 255
+            },
+            "Resource_Icon": "/Game/Assets/2DArt/UI/Icons/T_ICON_Resource_Oxygen.T_ICON_Resource_Oxygen",
+            "Recipe_Icon": "/Game/Assets/2DArt/UI/Icons/T_ICON_Recipe_Oxygen.T_ICON_Recipe_Oxygen",
+            "Container_Icon": "/Game/Assets/2DArt/UI/Materials/M_FuelType_Oxygen.M_FuelType_Oxygen"
+        },
+        {
+            "Name": "Hydrazine",
+            "DisplayName": "NSLOCTEXT(\"D_IcarusResources\", \"Hydrazine-DisplayName\", \"Hydrazine\")",
+            "Units": "NSLOCTEXT(\"D_IcarusResources\", \"Hydrazine-Units\", \"L\")",
+            "Color": {
+                "B": 230,
+                "G": 57,
+                "R": 102,
+                "A": 255
+            },
+            "Resource_Icon": "/Game/Assets/2DArt/UI/Icons/T_ICON_Resource_Hydrazine.T_ICON_Resource_Hydrazine",
+            "Recipe_Icon": "/Game/Assets/2DArt/UI/Icons/T_ICON_Recipe_Hydrazine.T_ICON_Recipe_Hydrazine",
+            "Container_Icon": "/Game/Assets/2DArt/UI/Materials/M_FuelType_Hydrazine.M_FuelType_Hydrazine"
+        },
+        {
+            "Name": "Crude_Oil",
+            "DisplayName": "NSLOCTEXT(\"D_IcarusResources\", \"Crude_Oil-DisplayName\", \"Crude Oil\")",
+            "Units": "NSLOCTEXT(\"D_IcarusResources\", \"Crude_Oil-Units\", \"L\")",
+            "Color": {
+                "B": 58,
+                "G": 120,
+                "R": 171,
+                "A": 255
+            },
+            "Resource_Icon": "/Game/Assets/2DArt/UI/Icons/T_ICON_Resource_CrudeOil.T_ICON_Resource_CrudeOil",
+            "Recipe_Icon": "/Game/Assets/2DArt/UI/Icons/T_ICON_Recipe_CrudeOil.T_ICON_Recipe_CrudeOil",
+            "Container_Icon": "/Game/Assets/2DArt/UI/Materials/M_FuelType_CrudeOil.M_FuelType_CrudeOil"
+        },
+        {
+            "Name": "Milk",
+            "DisplayName": "NSLOCTEXT(\"D_IcarusResources\", \"Milk-DisplayName\", \"Milk\")",
+            "Units": "NSLOCTEXT(\"D_IcarusResources\", \"Milk-Units\", \"L\")",
+            "Color": {
+                "B": 255,
+                "G": 238,
+                "R": 133,
+                "A": 255
+            },
+            "Resource_Icon": "/Game/Assets/2DArt/UI/Icons/T_ICON_Resource_Milk.T_ICON_Resource_Milk",
+            "Recipe_Icon": "/Game/Assets/2DArt/UI/Icons/T_ICON_Recipe_Milk.T_ICON_Recipe_Milk",
+            "Container_Icon": "/Game/Assets/2DArt/UI/Materials/M_FuelType_Milk.M_FuelType_Milk"
+        },
+        {
+            "Name": "Refined_Oil",
+            "DisplayName": "NSLOCTEXT(\"D_IcarusResources\", \"Refined_Oil-DisplayName\", \"Refined Oil\")",
+            "Units": "NSLOCTEXT(\"D_IcarusResources\", \"Refined_Oil-Units\", \"L\")",
+            "Color": {
+                "G": 135,
+                "R": 191,
+                "A": 255
+            },
+            "Resource_Icon": "/Game/Assets/2DArt/UI/Icons/T_ICON_Resource_RefinedOil.T_ICON_Resource_RefinedOil",
+            "Recipe_Icon": "/Game/Assets/2DArt/UI/Icons/T_ICON_Recipe_RefinedOil.T_ICON_Recipe_RefinedOil",
+            "Container_Icon": "/Game/Assets/2DArt/UI/Materials/M_FuelType_RefinedOil.M_FuelType_RefinedOil"
+        }
+    ]
+}

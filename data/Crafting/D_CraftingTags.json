@@ -1,0 +1,232 @@
+{
+    "RowStruct": "/Script/Icarus.CraftingTag",
+    "Defaults": {
+        "TagName": "",
+        "TagIcon": "None",
+        "Query": {
+            "RowName": "None",
+            "DataTableName": "D_TagQueries"
+        }
+    },
+    "Rows": [
+        {
+            "Name": "Any_Raw_Meat",
+            "TagName": "NSLOCTEXT(\"D_CraftingTags\", \"Any_Raw_Meat-TagName\", \"Raw Meat\")",
+            "TagIcon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Query/T_QUERY_Raw_Meat.T_QUERY_Raw_Meat",
+            "Query": {
+                "RowName": "Any_Raw_Meat"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Homestead"
+                }
+            }
+        },
+        {
+            "Name": "Any_Spoiled_Item",
+            "TagName": "NSLOCTEXT(\"D_CraftingTags\", \"Any_Spoiled_Item-TagName\", \"Spoiled\")",
+            "TagIcon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Query/T_QUERY_Spoiled.T_QUERY_Spoiled",
+            "Query": {
+                "RowName": "Any_Spoiled_Item"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Homestead"
+                }
+            }
+        },
+        {
+            "Name": "Any_Raw_Fish",
+            "TagName": "NSLOCTEXT(\"D_CraftingTags\", \"Any_Raw_Fish-TagName\", \"Raw Fish\")",
+            "TagIcon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Query/T_QUERY_Fish_Raw.T_QUERY_Fish_Raw",
+            "Query": {
+                "RowName": "Any_Fish"
+            }
+        },
+        {
+            "Name": "Any_Saltwater_Fish",
+            "TagName": "NSLOCTEXT(\"D_CraftingTags\", \"Any_Saltwater_Fish-TagName\", \"Saltwater Fish\")",
+            "TagIcon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Query/T_QUERY_Fish_Salt2.T_QUERY_Fish_Salt2",
+            "Query": {
+                "RowName": "Any_Saltwater_Fish"
+            }
+        },
+        {
+            "Name": "Any_Freshwater_Fish",
+            "TagName": "NSLOCTEXT(\"D_CraftingTags\", \"Any_Freshwater_Fish-TagName\", \"Freshwater Fish\")",
+            "TagIcon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Query/T_QUERY_Fish_Fresh2.T_QUERY_Fish_Fresh2",
+            "Query": {
+                "RowName": "Any_Freshwater_Fish"
+            }
+        },
+        {
+            "Name": "Any_Chicken_Vestige",
+            "TagName": "NSLOCTEXT(\"D_CraftingTags\", \"Any_Chicken_Vestige-TagName\", \"Chicken Vestige\")",
+            "TagIcon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Carcasses/T_ITEM_Chicken_Head.T_ITEM_Chicken_Head",
+            "Query": {
+                "RowName": "Any_Chicken_Vestige"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Homestead"
+                }
+            }
+        },
+        {
+            "Name": "Any_Common_Vestige",
+            "TagName": "NSLOCTEXT(\"D_CraftingTags\", \"Any_Common_Vestige-TagName\", \"Common Vestige\")",
+            "TagIcon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Query/T_QUERY_Vestige_Common.T_QUERY_Vestige_Common",
+            "Query": {
+                "RowName": "Any_Common_Vestige"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Any_Uncommon_Vestige",
+            "TagName": "NSLOCTEXT(\"D_CraftingTags\", \"Any_Uncommon_Vestige-TagName\", \"Uncommon Vestige\")",
+            "TagIcon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Query/T_QUERY_Vestige_Uncommon.T_QUERY_Vestige_Uncommon",
+            "Query": {
+                "RowName": "Any_Uncommon_Vestige"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Any_Rare_Vestige",
+            "TagName": "NSLOCTEXT(\"D_CraftingTags\", \"Any_Rare_Vestige-TagName\", \"Rare Vestige\")",
+            "TagIcon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Query/T_QUERY_Vestige_Rare.T_QUERY_Vestige_Rare",
+            "Query": {
+                "RowName": "Any_Rare_Vestige"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Any_Unique_Vestige",
+            "TagName": "NSLOCTEXT(\"D_CraftingTags\", \"Any_Unique_Vestige-TagName\", \"Legendary Vestige\")",
+            "TagIcon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Query/T_QUERY_Vestige_Unique.T_QUERY_Vestige_Unique",
+            "Query": {
+                "RowName": "Any_Unique_Vestige"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Any_Fruit",
+            "TagName": "NSLOCTEXT(\"D_CraftingTags\", \"Any_Fruit-TagName\", \"Fruit\")",
+            "TagIcon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Query/T_QUERY_Crop_Fruit.T_QUERY_Crop_Fruit",
+            "Query": {
+                "RowName": "Any_Fruit"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Homestead"
+                }
+            }
+        },
+        {
+            "Name": "Any_Vegetable",
+            "TagName": "NSLOCTEXT(\"D_CraftingTags\", \"Any_Vegetable-TagName\", \"Vegetable\")",
+            "TagIcon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Query/T_QUERY_Crop_Vegetable.T_QUERY_Crop_Vegetable",
+            "Query": {
+                "RowName": "Any_Vegetable"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Homestead"
+                }
+            }
+        },
+        {
+            "Name": "Any_Herb",
+            "TagName": "NSLOCTEXT(\"D_CraftingTags\", \"Any_Herb-TagName\", \"Herb\")",
+            "TagIcon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Query/T_QUERY_Crop_Herb.T_QUERY_Crop_Herb",
+            "Query": {
+                "RowName": "Any_Herb"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Homestead"
+                }
+            }
+        },
+        {
+            "Name": "Any_Grain",
+            "TagName": "NSLOCTEXT(\"D_CraftingTags\", \"Any_Grain-TagName\", \"Grain\")",
+            "TagIcon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Query/T_QUERY_Crop_Grain.T_QUERY_Crop_Grain",
+            "Query": {
+                "RowName": "Any_Grain"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Homestead"
+                }
+            }
+        },
+        {
+            "Name": "Any_Speciality",
+            "TagName": "NSLOCTEXT(\"D_CraftingTags\", \"Any_Speciality-TagName\", \"Delicacy\")",
+            "TagIcon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Query/T_QUERY_Crop_Speciality.T_QUERY_Crop_Speciality",
+            "Query": {
+                "RowName": "Any_Speciality"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Homestead"
+                }
+            }
+        },
+        {
+            "Name": "Any_Unique_Fish",
+            "TagName": "NSLOCTEXT(\"D_CraftingTags\", \"Any_Unique_Fish-TagName\", \"Unique Fish\")",
+            "TagIcon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Query/T_QUERY_Fish_Unique.T_QUERY_Fish_Unique",
+            "Query": {
+                "RowName": "Any_Unique_Fish"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Any_Enzyme",
+            "TagName": "NSLOCTEXT(\"D_CraftingTags\", \"Any_Enzyme-TagName\", \"Terraforming Enzyme\")",
+            "TagIcon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Query/T_QUERY_Enzyme.T_QUERY_Enzyme",
+            "Query": {
+                "RowName": "Any_Enzyme"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Homestead"
+                }
+            }
+        },
+        {
+            "Name": "Any_Prime_Meat",
+            "TagName": "NSLOCTEXT(\"D_CraftingTags\", \"Any_Prime_Meat-TagName\", \"Prime Meat\")",
+            "TagIcon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Query/T_QUERY_Raw_Meat.T_QUERY_Raw_Meat",
+            "Query": {
+                "RowName": "Any_Prime_Meat"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Homestead"
+                }
+            }
+        }
+    ]
+}

@@ -1,0 +1,282 @@
+{
+    "RowStruct": "/Script/Icarus.GreatHuntCreatureInfo",
+    "Defaults": {
+        "AISetup": {
+            "RowName": "None",
+            "DataTableName": "D_AISetup"
+        },
+        "WeaponImage": "None",
+        "BackgroundImage": "None",
+        "BackgroundVerticalImage": "None",
+        "BossImage": "None",
+        "GreatHunt": {
+            "RowName": "None",
+            "DataTableName": "D_TalentTrees"
+        },
+        "WorldBoss": {
+            "RowName": "None",
+            "DataTableName": "D_WorldBosses"
+        },
+        "LegendaryWeapon": {
+            "RowName": "None",
+            "DataTableName": "D_LivingItemShopItems"
+        },
+        "DLCData": {
+            "RowName": "None",
+            "DataTableName": "D_DLCPackageData"
+        },
+        "Terrain": {
+            "RowName": "None",
+            "DataTableName": "D_Terrains"
+        },
+        "ItemDisplays": []
+    },
+    "GenerateEnum": true,
+    "Rows": [
+        {
+            "Name": "Rock_Golem",
+            "AISetup": {
+                "RowName": "RockGolem"
+            },
+            "WeaponImage": "Texture2D'/Game/Assets/2DArt/UI/GreatHunt/T_GHBIOLAB_UI_WPN_QUARRITE.T_GHBIOLAB_UI_WPN_QUARRITE'",
+            "BackgroundImage": "Texture2D'/Game/Assets/2DArt/UI/GreatHunt/T_GH_UI_BG_QUARRITE.T_GH_UI_BG_QUARRITE'",
+            "BackgroundVerticalImage": "Texture2D'/Game/Assets/2DArt/UI/GreatHunt/T_GH_VERT_QUARRITE.T_GH_VERT_QUARRITE'",
+            "BossImage": "Texture2D'/Game/Assets/2DArt/UI/GreatHunt/T_GH_UI_QUARRITE.T_GH_UI_QUARRITE'",
+            "GreatHunt": {
+                "RowName": "GreatHunt_RockGolem"
+            },
+            "LegendaryWeapon": {
+                "RowName": "Rock_Golem"
+            },
+            "DLCData": {
+                "RowName": "Great_Hunts"
+            },
+            "Terrain": {
+                "RowName": "Terrain_016"
+            },
+            "ItemDisplays": [
+                {
+                    "IconOverride": "Texture2D'/Game/Assets/2DArt/UI/GreatHunt/T_GH_ItemDisplay_Quar01.T_GH_ItemDisplay_Quar01'",
+                    "ItemReward": {
+                        "RowName": "Rock_Golem_Core",
+                        "DataTableName": "D_ItemsStatic"
+                    }
+                },
+                {
+                    "IconOverride": "Texture2D'/Game/Assets/2DArt/UI/GreatHunt/T_GH_ItemDisplay_Quar02.T_GH_ItemDisplay_Quar02'",
+                    "ItemReward": {
+                        "RowName": "Rock_Golem_Fragment",
+                        "DataTableName": "D_ItemsStatic"
+                    }
+                },
+                {
+                    "IconOverride": "Texture2D'/Game/Assets/2DArt/UI/GreatHunt/T_GH_ItemDisplay_Quar03.T_GH_ItemDisplay_Quar03'",
+                    "ItemReward": {
+                        "RowName": "LegendaryWeapon_GolemGauntlet",
+                        "DataTableName": "D_ItemsStatic"
+                    }
+                }
+            ]
+        },
+        {
+            "Name": "Garganutan",
+            "AISetup": {
+                "RowName": "Ape"
+            },
+            "WeaponImage": "Texture2D'/Game/Assets/2DArt/UI/GreatHunt/T_GHBIOLAB_UI_WPN_SNIPER.T_GHBIOLAB_UI_WPN_SNIPER'",
+            "BackgroundImage": "Texture2D'/Game/Assets/2DArt/UI/GreatHunt/T_GH_UI_BG_GARGANUTAN.T_GH_UI_BG_GARGANUTAN'",
+            "BackgroundVerticalImage": "Texture2D'/Game/Assets/2DArt/UI/GreatHunt/T_GH_VERT_GARGANUTAN.T_GH_VERT_GARGANUTAN'",
+            "BossImage": "Texture2D'/Game/Assets/2DArt/UI/GreatHunt/T_GH_UI_GARGANUTAN.T_GH_UI_GARGANUTAN'",
+            "GreatHunt": {
+                "RowName": "GreatHunt_Ape"
+            },
+            "LegendaryWeapon": {
+                "RowName": "Legendary_Sniper"
+            },
+            "DLCData": {
+                "RowName": "Great_Hunts"
+            },
+            "Terrain": {
+                "RowName": "Terrain_017"
+            },
+            "ItemDisplays": [
+                {
+                    "IconOverride": "Texture2D'/Game/Assets/2DArt/UI/GreatHunt/T_GH_ItemDisplay_G01.T_GH_ItemDisplay_G01'",
+                    "ItemReward": {
+                        "RowName": "Ape_Bicep",
+                        "DataTableName": "D_ItemsStatic"
+                    }
+                },
+                {
+                    "IconOverride": "Texture2D'/Game/Assets/2DArt/UI/GreatHunt/T_GH_ItemDisplay_G02.T_GH_ItemDisplay_G02'",
+                    "ItemReward": {
+                        "RowName": "Ape_Hide",
+                        "DataTableName": "D_ItemsStatic"
+                    }
+                },
+                {
+                    "IconOverride": "Texture2D'/Game/Assets/2DArt/UI/GreatHunt/T_GH_ItemDisplay_G03.T_GH_ItemDisplay_G03'",
+                    "ItemReward": {
+                        "RowName": "LegendaryWeapon_Ape_Club",
+                        "DataTableName": "D_ItemsStatic"
+                    }
+                }
+            ]
+        },
+        {
+            "Name": "Ice_Mammoth",
+            "AISetup": {
+                "RowName": "Ice_Mammoth_Boss"
+            },
+            "WeaponImage": "Texture2D'/Game/Assets/2DArt/UI/GreatHunt/T_GHBIOLAB_UI_WPN_BOW.T_GHBIOLAB_UI_WPN_BOW'",
+            "BackgroundImage": "Texture2D'/Game/Assets/2DArt/UI/GreatHunt/T_GH_UI_BG_ICEMAMMOTH.T_GH_UI_BG_ICEMAMMOTH'",
+            "BackgroundVerticalImage": "Texture2D'/Game/Assets/2DArt/UI/GreatHunt/T_GH_VERT_MAMMOTH.T_GH_VERT_MAMMOTH'",
+            "BossImage": "Texture2D'/Game/Assets/2DArt/UI/GreatHunt/T_GH_UI_ICEMAMMOTH_V2.T_GH_UI_ICEMAMMOTH_V2'",
+            "GreatHunt": {
+                "RowName": "GreatHunt_IceMammoth"
+            },
+            "LegendaryWeapon": {
+                "RowName": "Legendary_Bow"
+            },
+            "DLCData": {
+                "RowName": "Great_Hunts"
+            },
+            "Terrain": {
+                "RowName": "Terrain_019"
+            },
+            "ItemDisplays": [
+                {
+                    "IconOverride": "Texture2D'/Game/Assets/2DArt/UI/GreatHunt/T_GH_ItemDisplay_IM01.T_GH_ItemDisplay_IM01'",
+                    "ItemReward": {
+                        "RowName": "IceMammoth_Fractured_Ice",
+                        "DataTableName": "D_ItemsStatic"
+                    }
+                },
+                {
+                    "IconOverride": "Texture2D'/Game/Assets/2DArt/UI/GreatHunt/T_GH_ItemDisplay_IM02.T_GH_ItemDisplay_IM02'",
+                    "ItemReward": {
+                        "RowName": "Frozen_Wool",
+                        "DataTableName": "D_ItemsStatic"
+                    }
+                },
+                {
+                    "IconOverride": "Texture2D'/Game/Assets/2DArt/UI/GreatHunt/T_GH_ItemDisplay_IM03.T_GH_ItemDisplay_IM03'",
+                    "ItemReward": {
+                        "RowName": "LegendaryWeapon_IceMammoth_Sledgehammer",
+                        "DataTableName": "D_ItemsStatic"
+                    }
+                }
+            ]
+        },
+        {
+            "Name": "Hammerhead_Slug",
+            "AISetup": {
+                "RowName": "Hammerhead_Slug_Large"
+            },
+            "WeaponImage": "Texture2D'/Game/Assets/2DArt/UI/Items/Item_Icons/LegendaryWeapons/T_ITEM_LegendaryWeapon_SlugLauncher.T_ITEM_LegendaryWeapon_SlugLauncher'",
+            "BackgroundImage": "Texture2D'/Game/Assets/2DArt/UI/GreatHunt/T_GH_UI_HAMMERHEAD.T_GH_UI_HAMMERHEAD'",
+            "BossImage": "Texture2D'/Game/Assets/2DArt/UI/GreatHunt/T_GH_UI_HAMMERHEAD.T_GH_UI_HAMMERHEAD'",
+            "WorldBoss": {
+                "RowName": "HammerheadSlug"
+            },
+            "LegendaryWeapon": {
+                "RowName": "Hammerhead_Slug"
+            },
+            "DLCData": {
+                "RowName": "Great_Hunts"
+            }
+        },
+        {
+            "Name": "Lava_Hunter",
+            "AISetup": {
+                "RowName": "LavaHunter"
+            },
+            "WeaponImage": "Texture2D'/Game/Assets/2DArt/UI/Items/Item_Icons/LegendaryWeapons/T_ITEM_LegendaryWeapon_LavaHunter_FlameThrower.T_ITEM_LegendaryWeapon_LavaHunter_FlameThrower'",
+            "BackgroundImage": "Texture2D'/Game/Assets/2DArt/UI/GreatHunt/T_GH_UI_LAVAHUNTER.T_GH_UI_LAVAHUNTER'",
+            "BossImage": "Texture2D'/Game/Assets/2DArt/UI/GreatHunt/T_GH_UI_LAVAHUNTER.T_GH_UI_LAVAHUNTER'",
+            "WorldBoss": {
+                "RowName": "LavaHunter"
+            },
+            "LegendaryWeapon": {
+                "RowName": "Lava_Hunter"
+            },
+            "DLCData": {
+                "RowName": "Great_Hunts"
+            }
+        },
+        {
+            "Name": "Sandworm",
+            "AISetup": {
+                "RowName": "Sandworm"
+            },
+            "WeaponImage": "Texture2D'/Game/Assets/2DArt/UI/Items/Item_Icons/LegendaryWeapons/T_ITEM_LegendaryWeapon_Sandworm_Crossbow.T_ITEM_LegendaryWeapon_Sandworm_Crossbow'",
+            "BackgroundImage": "Texture2D'/Game/Assets/2DArt/UI/GreatHunt/T_GH_UI_LANDSHARK.T_GH_UI_LANDSHARK'",
+            "BossImage": "Texture2D'/Game/Assets/2DArt/UI/GreatHunt/T_GH_UI_LANDSHARK.T_GH_UI_LANDSHARK'",
+            "WorldBoss": {
+                "RowName": "Sandworm"
+            },
+            "LegendaryWeapon": {
+                "RowName": "Sandworm"
+            },
+            "DLCData": {
+                "RowName": "Great_Hunts"
+            }
+        },
+        {
+            "Name": "Scorpion",
+            "AISetup": {
+                "RowName": "Scorpion_Boss"
+            },
+            "WeaponImage": "Texture2D'/Game/Assets/2DArt/UI/Items/Item_Icons/LegendaryWeapons/T_ITEM_LegendaryWeapon_Scorpion_Rifle.T_ITEM_LegendaryWeapon_Scorpion_Rifle'",
+            "BackgroundImage": "Texture2D'/Game/Assets/2DArt/UI/GreatHunt/T_GH_UI_SCORPION.T_GH_UI_SCORPION'",
+            "BossImage": "Texture2D'/Game/Assets/2DArt/UI/GreatHunt/T_GH_UI_SCORPION.T_GH_UI_SCORPION'",
+            "WorldBoss": {
+                "RowName": "Scorpion"
+            },
+            "LegendaryWeapon": {
+                "RowName": "Scorpion"
+            },
+            "DLCData": {
+                "RowName": "Great_Hunts"
+            }
+        },
+        {
+            "Name": "Alpha_Wolf",
+            "AISetup": {
+                "RowName": "Alpha_Wolf_Boss"
+            },
+            "WeaponImage": "Texture2D'/Game/Assets/2DArt/UI/Items/Item_Icons/LegendaryWeapons/T_ITEM_LegendaryWeapon_Black_Wolf_Revolver.T_ITEM_LegendaryWeapon_Black_Wolf_Revolver'",
+            "BackgroundImage": "Texture2D'/Game/Assets/2DArt/UI/GreatHunt/T_GH_UI_ALPHAWOLF.T_GH_UI_ALPHAWOLF'",
+            "BossImage": "Texture2D'/Game/Assets/2DArt/UI/GreatHunt/T_GH_UI_WOLFHOVERED.T_GH_UI_WOLFHOVERED'",
+            "WorldBoss": {
+                "RowName": "AlphaWolf"
+            },
+            "LegendaryWeapon": {
+                "RowName": "Black_Wolf"
+            },
+            "DLCData": {
+                "RowName": "Great_Hunts"
+            }
+        },
+        {
+            "Name": "Sandwyrm_Queen",
+            "AISetup": {
+                "RowName": "Sandwyrm_Queen"
+            },
+            "WeaponImage": "Texture2D'/Game/Assets/2DArt/UI/Items/Item_Icons/Tools/T_ITEM_Chainsaw.T_ITEM_Chainsaw'",
+            "BackgroundImage": "Texture2D'/Game/Assets/2DArt/UI/GreatHunt/T_GH_UI_SANDWYRMQUEEN.T_GH_UI_SANDWYRMQUEEN'",
+            "BossImage": "Texture2D'/Game/Assets/2DArt/UI/GreatHunt/T_GH_UI_SANDWYRMQUEEN.T_GH_UI_SANDWYRMQUEEN'",
+            "WorldBoss": {
+                "RowName": "SandwyrmQueen"
+            },
+            "DLCData": {
+                "RowName": "Dangerous_Horizons"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        }
+    ]
+}

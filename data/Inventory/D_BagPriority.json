@@ -1,0 +1,40 @@
+{
+    "RowStruct": "/Script/Icarus.BagPriorityData",
+    "Defaults": {
+        "ItemQuery": {
+            "RowName": "None",
+            "DataTableName": "D_TagQueries"
+        },
+        "BagItems": []
+    },
+    "Rows": [
+        {
+            "Name": "SeedBag",
+            "ItemQuery": {
+                "RowName": "Any_Seed"
+            },
+            "BagItems": [
+                {
+                    "RowName": "Seed_Pouch_T2",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Seed_Pouch",
+                    "DataTableName": "D_ItemsStatic"
+                }
+            ]
+        },
+        {
+            "Name": "MedicineBag",
+            "ItemQuery": {
+                "RowName": "Any_Medicine"
+            },
+            "BagItems": [
+                {
+                    "RowName": "Item_Medicine_Bag",
+                    "DataTableName": "D_ItemsStatic"
+                }
+            ]
+        }
+    ]
+}

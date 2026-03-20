@@ -1,0 +1,782 @@
+{
+    "RowStruct": "/Script/Icarus.VoxelDistributionRegion",
+    "Defaults": {
+        "VoxelDistribution": {},
+        "VoxelColor": {
+            "R": 1,
+            "G": 1,
+            "B": 1,
+            "A": 1
+        },
+        "Brightness": 10
+    },
+    "Rows": [
+        {
+            "Name": "DefaultPool",
+            "VoxelDistribution": {
+                "(RowName=\"Oxite_Normal\",DataTableName=\"D_VoxelSetupData\")": 350,
+                "(RowName=\"Silica_Normal\",DataTableName=\"D_VoxelSetupData\")": 200,
+                "(RowName=\"Sulfur_Normal\",DataTableName=\"D_VoxelSetupData\")": 100,
+                "(RowName=\"Coal_Normal\",DataTableName=\"D_VoxelSetupData\")": 10,
+                "(RowName=\"Salt_Normal\",DataTableName=\"D_VoxelSetupData\")": 50
+            }
+        },
+        {
+            "Name": "CliffPool",
+            "VoxelDistribution": {
+                "(RowName=\"Copper_Normal\",DataTableName=\"D_VoxelSetupData\")": 100,
+                "(RowName=\"Metal_Normal\",DataTableName=\"D_VoxelSetupData\")": 350,
+                "(RowName=\"Silica_Normal\",DataTableName=\"D_VoxelSetupData\")": 200,
+                "(RowName=\"Sulfur_Normal\",DataTableName=\"D_VoxelSetupData\")": 150,
+                "(RowName=\"Bauxite_Normal\",DataTableName=\"D_VoxelSetupData\")": 100,
+                "(RowName=\"Gold_Normal\",DataTableName=\"D_VoxelSetupData\")": 10,
+                "(RowName=\"Titanium_Normal\",DataTableName=\"D_VoxelSetupData\")": 5,
+                "(RowName=\"Platinum_Normal\",DataTableName=\"D_VoxelSetupData\")": 5
+            },
+            "VoxelColor": {
+                "G": 0.19618099927902222,
+                "B": 0.2001579999923706
+            }
+        },
+        {
+            "Name": "RarePool",
+            "VoxelDistribution": {
+                "(RowName=\"Platinum_Normal\",DataTableName=\"D_VoxelSetupData\")": 25,
+                "(RowName=\"Titanium_Normal\",DataTableName=\"D_VoxelSetupData\")": 25,
+                "(RowName=\"Metal_Normal\",DataTableName=\"D_VoxelSetupData\")": 250,
+                "(RowName=\"Gold_Normal\",DataTableName=\"D_VoxelSetupData\")": 20,
+                "(RowName=\"Copper_Normal\",DataTableName=\"D_VoxelSetupData\")": 75,
+                "(RowName=\"Bauxite_Normal\",DataTableName=\"D_VoxelSetupData\")": 20,
+                "(RowName=\"Coal_Normal\",DataTableName=\"D_VoxelSetupData\")": 50
+            },
+            "VoxelColor": {
+                "R": 0.5595139861106873,
+                "G": 0.16484799981117249,
+                "B": 0.609375
+            }
+        },
+        {
+            "Name": "Arctic_Caves_1",
+            "VoxelDistribution": {
+                "(RowName=\"Platinum_Normal\",DataTableName=\"D_VoxelSetupData\")": 25,
+                "(RowName=\"Titanium_Normal\",DataTableName=\"D_VoxelSetupData\")": 25,
+                "(RowName=\"Metal_Normal\",DataTableName=\"D_VoxelSetupData\")": 250,
+                "(RowName=\"Gold_Normal\",DataTableName=\"D_VoxelSetupData\")": 20,
+                "(RowName=\"Copper_Normal\",DataTableName=\"D_VoxelSetupData\")": 75,
+                "(RowName=\"Bauxite_Normal\",DataTableName=\"D_VoxelSetupData\")": 20,
+                "(RowName=\"Coal_Normal\",DataTableName=\"D_VoxelSetupData\")": 50
+            },
+            "VoxelColor": {
+                "R": 0,
+                "G": 0,
+                "B": 0.10000000149011612
+            }
+        },
+        {
+            "Name": "Arctic_Outside_1",
+            "VoxelDistribution": {
+                "(RowName=\"Oxite_Normal\",DataTableName=\"D_VoxelSetupData\")": 350,
+                "(RowName=\"Silica_Normal\",DataTableName=\"D_VoxelSetupData\")": 200,
+                "(RowName=\"Sulfur_Normal\",DataTableName=\"D_VoxelSetupData\")": 100,
+                "(RowName=\"Coal_Normal\",DataTableName=\"D_VoxelSetupData\")": 10,
+                "(RowName=\"Salt_Normal\",DataTableName=\"D_VoxelSetupData\")": 50
+            },
+            "VoxelColor": {
+                "R": 0,
+                "G": 0,
+                "B": 0.5
+            }
+        },
+        {
+            "Name": "Desert_Caves_1",
+            "VoxelDistribution": {
+                "(RowName=\"Platinum_Normal\",DataTableName=\"D_VoxelSetupData\")": 25,
+                "(RowName=\"Titanium_Normal\",DataTableName=\"D_VoxelSetupData\")": 25,
+                "(RowName=\"Metal_Normal\",DataTableName=\"D_VoxelSetupData\")": 250,
+                "(RowName=\"Gold_Normal\",DataTableName=\"D_VoxelSetupData\")": 20,
+                "(RowName=\"Copper_Normal\",DataTableName=\"D_VoxelSetupData\")": 75,
+                "(RowName=\"Bauxite_Normal\",DataTableName=\"D_VoxelSetupData\")": 20,
+                "(RowName=\"Coal_Normal\",DataTableName=\"D_VoxelSetupData\")": 50
+            },
+            "VoxelColor": {
+                "G": 0.5,
+                "B": 0
+            }
+        },
+        {
+            "Name": "Desert_Outside_1",
+            "VoxelDistribution": {
+                "(RowName=\"Oxite_Normal\",DataTableName=\"D_VoxelSetupData\")": 350,
+                "(RowName=\"Silica_Normal\",DataTableName=\"D_VoxelSetupData\")": 200,
+                "(RowName=\"Sulfur_Normal\",DataTableName=\"D_VoxelSetupData\")": 100,
+                "(RowName=\"Coal_Normal\",DataTableName=\"D_VoxelSetupData\")": 10,
+                "(RowName=\"Salt_Normal\",DataTableName=\"D_VoxelSetupData\")": 50
+            },
+            "VoxelColor": {
+                "R": 0.5,
+                "G": 0.5,
+                "B": 0
+            }
+        },
+        {
+            "Name": "Conifer_Caves_1",
+            "VoxelDistribution": {
+                "(RowName=\"Platinum_Normal\",DataTableName=\"D_VoxelSetupData\")": 25,
+                "(RowName=\"Titanium_Normal\",DataTableName=\"D_VoxelSetupData\")": 25,
+                "(RowName=\"Metal_Normal\",DataTableName=\"D_VoxelSetupData\")": 250,
+                "(RowName=\"Gold_Normal\",DataTableName=\"D_VoxelSetupData\")": 20,
+                "(RowName=\"Copper_Normal\",DataTableName=\"D_VoxelSetupData\")": 75,
+                "(RowName=\"Bauxite_Normal\",DataTableName=\"D_VoxelSetupData\")": 20,
+                "(RowName=\"Coal_Normal\",DataTableName=\"D_VoxelSetupData\")": 50
+            },
+            "VoxelColor": {
+                "R": 0,
+                "G": 0.03645800054073334,
+                "B": 0
+            }
+        },
+        {
+            "Name": "Conifer_Outside_1",
+            "VoxelDistribution": {
+                "(RowName=\"Oxite_Normal\",DataTableName=\"D_VoxelSetupData\")": 350,
+                "(RowName=\"Silica_Normal\",DataTableName=\"D_VoxelSetupData\")": 200,
+                "(RowName=\"Sulfur_Normal\",DataTableName=\"D_VoxelSetupData\")": 100,
+                "(RowName=\"Coal_Normal\",DataTableName=\"D_VoxelSetupData\")": 10,
+                "(RowName=\"Salt_Normal\",DataTableName=\"D_VoxelSetupData\")": 50
+            },
+            "VoxelColor": {
+                "R": 0,
+                "G": 0.5364580154418945,
+                "B": 0.012826000340282917
+            }
+        },
+        {
+            "Name": "Exotic_Pool",
+            "VoxelDistribution": {
+                "(RowName=\"Exotic_Normal\",DataTableName=\"D_VoxelSetupData\")": 100
+            },
+            "VoxelColor": {
+                "R": 0.043414998799562454,
+                "G": 0,
+                "B": 0.11979199945926666
+            }
+        },
+        {
+            "Name": "Prometheus_Volcanic",
+            "VoxelDistribution": {
+                "(RowName=\"Sulfur_Dense\",DataTableName=\"D_VoxelSetupData\")": 25,
+                "(RowName=\"Coal_Dense\",DataTableName=\"D_VoxelSetupData\")": 10,
+                "(RowName=\"Sulfur_Normal\",DataTableName=\"D_VoxelSetupData\")": 25,
+                "(RowName=\"Metal_Normal\",DataTableName=\"D_VoxelSetupData\")": 20,
+                "(RowName=\"Silica_Normal\",DataTableName=\"D_VoxelSetupData\")": 25,
+                "(RowName=\"Silica_Dense\",DataTableName=\"D_VoxelSetupData\")": 5,
+                "(RowName=\"Salt_Normal\",DataTableName=\"D_VoxelSetupData\")": 10,
+                "(RowName=\"Coal_Normal\",DataTableName=\"D_VoxelSetupData\")": 10
+            },
+            "VoxelColor": {
+                "G": 0,
+                "B": 0
+            }
+        },
+        {
+            "Name": "Prometheus_Volcanic_Caves",
+            "VoxelDistribution": {
+                "(RowName=\"Metal_Dense\",DataTableName=\"D_VoxelSetupData\")": 25,
+                "(RowName=\"Coal_Dense\",DataTableName=\"D_VoxelSetupData\")": 10,
+                "(RowName=\"Copper_Dense\",DataTableName=\"D_VoxelSetupData\")": 5,
+                "(RowName=\"Gold_Normal\",DataTableName=\"D_VoxelSetupData\")": 20,
+                "(RowName=\"Bauxite_Normal\",DataTableName=\"D_VoxelSetupData\")": 20,
+                "(RowName=\"Platinum_Normal\",DataTableName=\"D_VoxelSetupData\")": 15,
+                "(RowName=\"Titanium_Normal\",DataTableName=\"D_VoxelSetupData\")": 15
+            },
+            "VoxelColor": {
+                "R": 0.20000000298023224,
+                "G": 0,
+                "B": 0
+            }
+        },
+        {
+            "Name": "Prometheus_Swamp",
+            "VoxelDistribution": {
+                "(RowName=\"Oxite_Dense\",DataTableName=\"D_VoxelSetupData\")": 40,
+                "(RowName=\"Silica_Normal\",DataTableName=\"D_VoxelSetupData\")": 20,
+                "(RowName=\"Coal_Normal\",DataTableName=\"D_VoxelSetupData\")": 5,
+                "(RowName=\"Oxite_Normal\",DataTableName=\"D_VoxelSetupData\")": 20,
+                "(RowName=\"Salt_Normal\",DataTableName=\"D_VoxelSetupData\")": 10,
+                "(RowName=\"Sulfur_Normal\",DataTableName=\"D_VoxelSetupData\")": 15
+            },
+            "VoxelColor": {
+                "R": 0.800000011920929,
+                "G": 0,
+                "B": 0.800000011920929
+            }
+        },
+        {
+            "Name": "Prometheus_Swamp_Caves",
+            "VoxelDistribution": {
+                "(RowName=\"Metal_Dense\",DataTableName=\"D_VoxelSetupData\")": 10,
+                "(RowName=\"Coal_Normal\",DataTableName=\"D_VoxelSetupData\")": 10,
+                "(RowName=\"Copper_Dense\",DataTableName=\"D_VoxelSetupData\")": 20,
+                "(RowName=\"Gold_Normal\",DataTableName=\"D_VoxelSetupData\")": 5,
+                "(RowName=\"Platinum_Normal\",DataTableName=\"D_VoxelSetupData\")": 5,
+                "(RowName=\"Copper_Normal\",DataTableName=\"D_VoxelSetupData\")": 10,
+                "(RowName=\"Metal_Normal\",DataTableName=\"D_VoxelSetupData\")": 50
+            },
+            "VoxelColor": {
+                "R": 0.20000000298023224,
+                "G": 0,
+                "B": 0.20000000298023224
+            }
+        },
+        {
+            "Name": "Prometheus_Arctic",
+            "VoxelDistribution": {
+                "(RowName=\"Oxite_Normal\",DataTableName=\"D_VoxelSetupData\")": 30,
+                "(RowName=\"Silica_Normal\",DataTableName=\"D_VoxelSetupData\")": 10,
+                "(RowName=\"Sulfur_Dense\",DataTableName=\"D_VoxelSetupData\")": 5,
+                "(RowName=\"Silica_Dense\",DataTableName=\"D_VoxelSetupData\")": 30,
+                "(RowName=\"Salt_Normal\",DataTableName=\"D_VoxelSetupData\")": 15,
+                "(RowName=\"Coal_Dense\",DataTableName=\"D_VoxelSetupData\")": 5
+            },
+            "VoxelColor": {
+                "R": 0,
+                "G": 0
+            }
+        },
+        {
+            "Name": "Prometheus_Arctic_Caves",
+            "VoxelDistribution": {
+                "(RowName=\"Metal_Dense\",DataTableName=\"D_VoxelSetupData\")": 15,
+                "(RowName=\"Gold_Dense\",DataTableName=\"D_VoxelSetupData\")": 5,
+                "(RowName=\"Copper_Dense\",DataTableName=\"D_VoxelSetupData\")": 5,
+                "(RowName=\"Gold_Normal\",DataTableName=\"D_VoxelSetupData\")": 10,
+                "(RowName=\"Bauxite_Normal\",DataTableName=\"D_VoxelSetupData\")": 10,
+                "(RowName=\"Platinum_Normal\",DataTableName=\"D_VoxelSetupData\")": 5,
+                "(RowName=\"Titanium_Normal\",DataTableName=\"D_VoxelSetupData\")": 5,
+                "(RowName=\"Bauxite_Dense\",DataTableName=\"D_VoxelSetupData\")": 5,
+                "(RowName=\"Silica_Dense\",DataTableName=\"D_VoxelSetupData\")": 15
+            },
+            "VoxelColor": {
+                "R": 0,
+                "G": 0,
+                "B": 0.20000000298023224
+            }
+        },
+        {
+            "Name": "Prometheus_Grasslands",
+            "VoxelDistribution": {
+                "(RowName=\"Oxite_Normal\",DataTableName=\"D_VoxelSetupData\")": 20,
+                "(RowName=\"Silica_Normal\",DataTableName=\"D_VoxelSetupData\")": 10,
+                "(RowName=\"Sulfur_Normal\",DataTableName=\"D_VoxelSetupData\")": 10,
+                "(RowName=\"Coal_Normal\",DataTableName=\"D_VoxelSetupData\")": 5,
+                "(RowName=\"Salt_Normal\",DataTableName=\"D_VoxelSetupData\")": 10,
+                "(RowName=\"Oxite_Dense\",DataTableName=\"D_VoxelSetupData\")": 20
+            },
+            "VoxelColor": {
+                "R": 0,
+                "B": 0
+            }
+        },
+        {
+            "Name": "Prometheus_Grasslands_Caves",
+            "VoxelDistribution": {
+                "(RowName=\"Metal_Dense\",DataTableName=\"D_VoxelSetupData\")": 25,
+                "(RowName=\"Coal_Normal\",DataTableName=\"D_VoxelSetupData\")": 10,
+                "(RowName=\"Copper_Dense\",DataTableName=\"D_VoxelSetupData\")": 5,
+                "(RowName=\"Gold_Normal\",DataTableName=\"D_VoxelSetupData\")": 5,
+                "(RowName=\"Bauxite_Normal\",DataTableName=\"D_VoxelSetupData\")": 5,
+                "(RowName=\"Copper_Normal\",DataTableName=\"D_VoxelSetupData\")": 15,
+                "(RowName=\"Metal_Normal\",DataTableName=\"D_VoxelSetupData\")": 35
+            },
+            "VoxelColor": {
+                "R": 0,
+                "G": 0.20000000298023224,
+                "B": 0
+            }
+        },
+        {
+            "Name": "Prometheus_NS_Volcanic_Spread",
+            "VoxelDistribution": {
+                "(RowName=\"Sulfur_Dense\",DataTableName=\"D_VoxelSetupData\")": 25,
+                "(RowName=\"Coal_Dense\",DataTableName=\"D_VoxelSetupData\")": 10,
+                "(RowName=\"Sulfur_Normal\",DataTableName=\"D_VoxelSetupData\")": 25,
+                "(RowName=\"Metal_Normal\",DataTableName=\"D_VoxelSetupData\")": 20,
+                "(RowName=\"Silica_Normal\",DataTableName=\"D_VoxelSetupData\")": 25,
+                "(RowName=\"Silica_Dense\",DataTableName=\"D_VoxelSetupData\")": 5,
+                "(RowName=\"Salt_Normal\",DataTableName=\"D_VoxelSetupData\")": 10,
+                "(RowName=\"Coal_Normal\",DataTableName=\"D_VoxelSetupData\")": 10
+            },
+            "VoxelColor": {
+                "G": 0,
+                "B": 0
+            }
+        },
+        {
+            "Name": "Prometheus_NS_Volcanic_Cluster",
+            "VoxelDistribution": {
+                "(RowName=\"Sulfur_Dense\",DataTableName=\"D_VoxelSetupData\")": 25,
+                "(RowName=\"Coal_Dense\",DataTableName=\"D_VoxelSetupData\")": 10,
+                "(RowName=\"Sulfur_Normal\",DataTableName=\"D_VoxelSetupData\")": 25,
+                "(RowName=\"Metal_Normal\",DataTableName=\"D_VoxelSetupData\")": 20,
+                "(RowName=\"Silica_Normal\",DataTableName=\"D_VoxelSetupData\")": 25,
+                "(RowName=\"Silica_Dense\",DataTableName=\"D_VoxelSetupData\")": 5,
+                "(RowName=\"Salt_Normal\",DataTableName=\"D_VoxelSetupData\")": 10,
+                "(RowName=\"Coal_Normal\",DataTableName=\"D_VoxelSetupData\")": 10
+            },
+            "VoxelColor": {
+                "G": 0.8239790201187134,
+                "B": 0
+            }
+        },
+        {
+            "Name": "Prometheus_NS_Volcanic_Caves",
+            "VoxelDistribution": {
+                "(RowName=\"Metal_Dense\",DataTableName=\"D_VoxelSetupData\")": 25,
+                "(RowName=\"Coal_Dense\",DataTableName=\"D_VoxelSetupData\")": 10,
+                "(RowName=\"Copper_Dense\",DataTableName=\"D_VoxelSetupData\")": 5,
+                "(RowName=\"Gold_Normal\",DataTableName=\"D_VoxelSetupData\")": 20,
+                "(RowName=\"Bauxite_Normal\",DataTableName=\"D_VoxelSetupData\")": 20,
+                "(RowName=\"Platinum_Normal\",DataTableName=\"D_VoxelSetupData\")": 15,
+                "(RowName=\"Titanium_Normal\",DataTableName=\"D_VoxelSetupData\")": 15
+            },
+            "VoxelColor": {
+                "R": 0.20000000298023224,
+                "G": 0,
+                "B": 0
+            }
+        },
+        {
+            "Name": "Prometheus_NS_Abyss_Spread",
+            "VoxelDistribution": {
+                "(RowName=\"Oxite_Dense\",DataTableName=\"D_VoxelSetupData\")": 40,
+                "(RowName=\"Silica_Normal\",DataTableName=\"D_VoxelSetupData\")": 20,
+                "(RowName=\"Coal_Normal\",DataTableName=\"D_VoxelSetupData\")": 5,
+                "(RowName=\"Oxite_Normal\",DataTableName=\"D_VoxelSetupData\")": 20,
+                "(RowName=\"Salt_Normal\",DataTableName=\"D_VoxelSetupData\")": 10,
+                "(RowName=\"Sulfur_Normal\",DataTableName=\"D_VoxelSetupData\")": 15
+            },
+            "VoxelColor": {
+                "R": 0.800000011920929,
+                "G": 0,
+                "B": 0.800000011920929
+            }
+        },
+        {
+            "Name": "Prometheus_NS_Abyss_Cluster",
+            "VoxelDistribution": {
+                "(RowName=\"Metal_Dense\",DataTableName=\"D_VoxelSetupData\")": 45,
+                "(RowName=\"Coal_Dense\",DataTableName=\"D_VoxelSetupData\")": 10,
+                "(RowName=\"Copper_Dense\",DataTableName=\"D_VoxelSetupData\")": 15,
+                "(RowName=\"Gold_Dense\",DataTableName=\"D_VoxelSetupData\")": 5,
+                "(RowName=\"Bauxite_Dense\",DataTableName=\"D_VoxelSetupData\")": 5,
+                "(RowName=\"Platinum_Normal\",DataTableName=\"D_VoxelSetupData\")": 5,
+                "(RowName=\"Titanium_Normal\",DataTableName=\"D_VoxelSetupData\")": 5
+            },
+            "VoxelColor": {
+                "R": 0.20000000298023224,
+                "G": 0,
+                "B": 0.20000000298023224
+            }
+        },
+        {
+            "Name": "Prometheus_NS_Arctic_Spread",
+            "VoxelDistribution": {
+                "(RowName=\"Oxite_Normal\",DataTableName=\"D_VoxelSetupData\")": 30,
+                "(RowName=\"Silica_Normal\",DataTableName=\"D_VoxelSetupData\")": 10,
+                "(RowName=\"Sulfur_Dense\",DataTableName=\"D_VoxelSetupData\")": 5,
+                "(RowName=\"Silica_Dense\",DataTableName=\"D_VoxelSetupData\")": 30,
+                "(RowName=\"Salt_Normal\",DataTableName=\"D_VoxelSetupData\")": 15,
+                "(RowName=\"Coal_Dense\",DataTableName=\"D_VoxelSetupData\")": 5
+            },
+            "VoxelColor": {
+                "R": 0,
+                "G": 0
+            }
+        },
+        {
+            "Name": "Prometheus_NS_Arctic_Cluster",
+            "VoxelDistribution": {
+                "(RowName=\"Oxite_Normal\",DataTableName=\"D_VoxelSetupData\")": 30,
+                "(RowName=\"Silica_Normal\",DataTableName=\"D_VoxelSetupData\")": 10,
+                "(RowName=\"Sulfur_Dense\",DataTableName=\"D_VoxelSetupData\")": 5,
+                "(RowName=\"Silica_Dense\",DataTableName=\"D_VoxelSetupData\")": 30,
+                "(RowName=\"Salt_Normal\",DataTableName=\"D_VoxelSetupData\")": 15,
+                "(RowName=\"Coal_Dense\",DataTableName=\"D_VoxelSetupData\")": 5
+            },
+            "VoxelColor": {
+                "R": 0,
+                "G": 0.9592159986495972
+            }
+        },
+        {
+            "Name": "Prometheus_NS_Arctic_Caves",
+            "VoxelDistribution": {
+                "(RowName=\"Metal_Dense\",DataTableName=\"D_VoxelSetupData\")": 15,
+                "(RowName=\"Gold_Dense\",DataTableName=\"D_VoxelSetupData\")": 5,
+                "(RowName=\"Copper_Dense\",DataTableName=\"D_VoxelSetupData\")": 5,
+                "(RowName=\"Gold_Normal\",DataTableName=\"D_VoxelSetupData\")": 10,
+                "(RowName=\"Bauxite_Normal\",DataTableName=\"D_VoxelSetupData\")": 10,
+                "(RowName=\"Platinum_Normal\",DataTableName=\"D_VoxelSetupData\")": 5,
+                "(RowName=\"Titanium_Normal\",DataTableName=\"D_VoxelSetupData\")": 5,
+                "(RowName=\"Bauxite_Dense\",DataTableName=\"D_VoxelSetupData\")": 5,
+                "(RowName=\"Silica_Dense\",DataTableName=\"D_VoxelSetupData\")": 15
+            },
+            "VoxelColor": {
+                "R": 0,
+                "G": 0,
+                "B": 0.20000000298023224
+            }
+        },
+        {
+            "Name": "Underwater",
+            "VoxelDistribution": {
+                "(RowName=\"Limestone_Dense\",DataTableName=\"D_VoxelSetupData\")": 5,
+                "(RowName=\"Limestone_Normal\",DataTableName=\"D_VoxelSetupData\")": 20
+            },
+            "VoxelColor": {
+                "R": 0,
+                "G": 10,
+                "B": 10
+            }
+        },
+        {
+            "Name": "Elysium_Tundra",
+            "VoxelDistribution": {
+                "(RowName=\"Oxite_Normal\",DataTableName=\"D_VoxelSetupData\")": 40,
+                "(RowName=\"Coal_Normal\",DataTableName=\"D_VoxelSetupData\")": 10,
+                "(RowName=\"Sulfur_Normal\",DataTableName=\"D_VoxelSetupData\")": 40,
+                "(RowName=\"Salt_Normal\",DataTableName=\"D_VoxelSetupData\")": 10,
+                "(RowName=\"Silica_Normal\",DataTableName=\"D_VoxelSetupData\")": 30
+            },
+            "VoxelColor": {
+                "R": 0.5587310194969177,
+                "G": 0.86906898021698,
+                "B": 0.8958330154418945
+            }
+        },
+        {
+            "Name": "Elysium_Tundra_Ridges",
+            "VoxelDistribution": {
+                "(RowName=\"Oxite_Normal\",DataTableName=\"D_VoxelSetupData\")": 40,
+                "(RowName=\"Coal_Normal\",DataTableName=\"D_VoxelSetupData\")": 10,
+                "(RowName=\"Sulfur_Normal\",DataTableName=\"D_VoxelSetupData\")": 40,
+                "(RowName=\"Salt_Normal\",DataTableName=\"D_VoxelSetupData\")": 10,
+                "(RowName=\"Silica_Normal\",DataTableName=\"D_VoxelSetupData\")": 30
+            },
+            "VoxelColor": {
+                "R": 0.08577200025320053,
+                "G": 0.27913400530815125,
+                "B": 0.296875
+            }
+        },
+        {
+            "Name": "Elysium_Tundra_Caves",
+            "VoxelDistribution": {
+                "(RowName=\"Copper_Normal\",DataTableName=\"D_VoxelSetupData\")": 50,
+                "(RowName=\"Metal_Normal\",DataTableName=\"D_VoxelSetupData\")": 50,
+                "(RowName=\"Gold_Normal\",DataTableName=\"D_VoxelSetupData\")": 10,
+                "(RowName=\"Bauxite_Normal\",DataTableName=\"D_VoxelSetupData\")": 10,
+                "(RowName=\"Platinum_Normal\",DataTableName=\"D_VoxelSetupData\")": 10,
+                "(RowName=\"Titanium_Normal\",DataTableName=\"D_VoxelSetupData\")": 8,
+                "(RowName=\"Coal_Normal\",DataTableName=\"D_VoxelSetupData\")": 5
+            },
+            "VoxelColor": {
+                "R": 0.34758299589157104,
+                "G": 0.5406420230865479,
+                "B": 0.5572919845581055
+            }
+        },
+        {
+            "Name": "Elysium_Tundra_Gorge",
+            "VoxelDistribution": {
+                "(RowName=\"Copper_Dense\",DataTableName=\"D_VoxelSetupData\")": 10,
+                "(RowName=\"Metal_Dense\",DataTableName=\"D_VoxelSetupData\")": 10,
+                "(RowName=\"Gold_Dense\",DataTableName=\"D_VoxelSetupData\")": 7,
+                "(RowName=\"Bauxite_Dense\",DataTableName=\"D_VoxelSetupData\")": 8,
+                "(RowName=\"Platinum_Normal\",DataTableName=\"D_VoxelSetupData\")": 4,
+                "(RowName=\"Titanium_Normal\",DataTableName=\"D_VoxelSetupData\")": 2,
+                "(RowName=\"Coal_Dense\",DataTableName=\"D_VoxelSetupData\")": 3
+            },
+            "VoxelColor": {
+                "R": 10,
+                "G": 0.25,
+                "B": 0
+            }
+        },
+        {
+            "Name": "Elysium_Desert",
+            "VoxelDistribution": {
+                "(RowName=\"Oxite_Normal\",DataTableName=\"D_VoxelSetupData\")": 20,
+                "(RowName=\"Coal_Normal\",DataTableName=\"D_VoxelSetupData\")": 20,
+                "(RowName=\"Sulfur_Normal\",DataTableName=\"D_VoxelSetupData\")": 10,
+                "(RowName=\"Salt_Normal\",DataTableName=\"D_VoxelSetupData\")": 10,
+                "(RowName=\"Silica_Normal\",DataTableName=\"D_VoxelSetupData\")": 30,
+                "(RowName=\"Lithium_Ore_Normal\",DataTableName=\"D_VoxelSetupData\")": 2
+            },
+            "VoxelColor": {
+                "R": 0.8958330154418945,
+                "G": 0.8575819730758667,
+                "B": 0.5150629878044128
+            }
+        },
+        {
+            "Name": "Elysium_Desert_Ridges",
+            "VoxelDistribution": {
+                "(RowName=\"Oxite_Normal\",DataTableName=\"D_VoxelSetupData\")": 20,
+                "(RowName=\"Coal_Normal\",DataTableName=\"D_VoxelSetupData\")": 20,
+                "(RowName=\"Sulfur_Normal\",DataTableName=\"D_VoxelSetupData\")": 10,
+                "(RowName=\"Salt_Normal\",DataTableName=\"D_VoxelSetupData\")": 10,
+                "(RowName=\"Silica_Normal\",DataTableName=\"D_VoxelSetupData\")": 30,
+                "(RowName=\"Lithium_Ore_Normal\",DataTableName=\"D_VoxelSetupData\")": 5
+            },
+            "VoxelColor": {
+                "R": 0.8958330154418945,
+                "G": 0.15995299816131592,
+                "B": 0
+            }
+        },
+        {
+            "Name": "Elysium_Desert_Oasis",
+            "VoxelDistribution": {
+                "(RowName=\"Oxite_Normal\",DataTableName=\"D_VoxelSetupData\")": 20,
+                "(RowName=\"Coal_Normal\",DataTableName=\"D_VoxelSetupData\")": 20,
+                "(RowName=\"Sulfur_Normal\",DataTableName=\"D_VoxelSetupData\")": 10,
+                "(RowName=\"Salt_Normal\",DataTableName=\"D_VoxelSetupData\")": 10,
+                "(RowName=\"Silica_Normal\",DataTableName=\"D_VoxelSetupData\")": 30,
+                "(RowName=\"Lithium_Ore_Normal\",DataTableName=\"D_VoxelSetupData\")": 5
+            },
+            "VoxelColor": {
+                "R": 0.8958330154418945,
+                "G": 0.047529999166727066,
+                "B": 0.6080340147018433
+            }
+        },
+        {
+            "Name": "Elysium_Desert_Caves",
+            "VoxelDistribution": {
+                "(RowName=\"Copper_Normal\",DataTableName=\"D_VoxelSetupData\")": 50,
+                "(RowName=\"Metal_Normal\",DataTableName=\"D_VoxelSetupData\")": 50,
+                "(RowName=\"Gold_Normal\",DataTableName=\"D_VoxelSetupData\")": 10,
+                "(RowName=\"Bauxite_Normal\",DataTableName=\"D_VoxelSetupData\")": 10,
+                "(RowName=\"Platinum_Normal\",DataTableName=\"D_VoxelSetupData\")": 5,
+                "(RowName=\"Titanium_Normal\",DataTableName=\"D_VoxelSetupData\")": 2,
+                "(RowName=\"Coal_Normal\",DataTableName=\"D_VoxelSetupData\")": 5,
+                "(RowName=\"Lithium_Ore_Dense\",DataTableName=\"D_VoxelSetupData\")": 10
+            },
+            "VoxelColor": {
+                "R": 0.24479199945926666,
+                "G": 0.23433899879455566,
+                "B": 0.14074400067329407
+            }
+        },
+        {
+            "Name": "Elysium_Arctic",
+            "VoxelDistribution": {
+                "(RowName=\"Oxite_Normal\",DataTableName=\"D_VoxelSetupData\")": 40,
+                "(RowName=\"Coal_Normal\",DataTableName=\"D_VoxelSetupData\")": 10,
+                "(RowName=\"Sulfur_Normal\",DataTableName=\"D_VoxelSetupData\")": 40,
+                "(RowName=\"Salt_Normal\",DataTableName=\"D_VoxelSetupData\")": 10,
+                "(RowName=\"Silica_Normal\",DataTableName=\"D_VoxelSetupData\")": 30,
+                "(RowName=\"Ruby_Ore_Normal\",DataTableName=\"D_VoxelSetupData\")": 2
+            },
+            "VoxelColor": {
+                "R": 0,
+                "G": 0.15198099613189697,
+                "B": 0.8958330154418945
+            }
+        },
+        {
+            "Name": "Elysium_Arctic_Ridges",
+            "VoxelDistribution": {
+                "(RowName=\"Oxite_Normal\",DataTableName=\"D_VoxelSetupData\")": 40,
+                "(RowName=\"Coal_Normal\",DataTableName=\"D_VoxelSetupData\")": 10,
+                "(RowName=\"Sulfur_Normal\",DataTableName=\"D_VoxelSetupData\")": 40,
+                "(RowName=\"Salt_Normal\",DataTableName=\"D_VoxelSetupData\")": 10,
+                "(RowName=\"Silica_Normal\",DataTableName=\"D_VoxelSetupData\")": 30,
+                "(RowName=\"Ruby_Ore_Normal\",DataTableName=\"D_VoxelSetupData\")": 10
+            },
+            "VoxelColor": {
+                "R": 0,
+                "G": 0.8833450078964233,
+                "B": 0.8958330154418945
+            }
+        },
+        {
+            "Name": "Elysium_Arctic_Caves",
+            "VoxelDistribution": {
+                "(RowName=\"Copper_Normal\",DataTableName=\"D_VoxelSetupData\")": 40,
+                "(RowName=\"Metal_Normal\",DataTableName=\"D_VoxelSetupData\")": 40,
+                "(RowName=\"Gold_Normal\",DataTableName=\"D_VoxelSetupData\")": 10,
+                "(RowName=\"Bauxite_Normal\",DataTableName=\"D_VoxelSetupData\")": 10,
+                "(RowName=\"Platinum_Normal\",DataTableName=\"D_VoxelSetupData\")": 15,
+                "(RowName=\"Titanium_Normal\",DataTableName=\"D_VoxelSetupData\")": 15,
+                "(RowName=\"Coal_Normal\",DataTableName=\"D_VoxelSetupData\")": 10,
+                "(RowName=\"Ruby_Ore_Dense\",DataTableName=\"D_VoxelSetupData\")": 5
+            },
+            "VoxelColor": {
+                "R": 0,
+                "G": 0.046831000596284866,
+                "B": 0.27604201436042786
+            }
+        },
+        {
+            "Name": "Elysium_Geothermal",
+            "VoxelDistribution": {
+                "(RowName=\"Oxite_Normal\",DataTableName=\"D_VoxelSetupData\")": 20,
+                "(RowName=\"Coal_Normal\",DataTableName=\"D_VoxelSetupData\")": 20,
+                "(RowName=\"Sulfur_Normal\",DataTableName=\"D_VoxelSetupData\")": 10,
+                "(RowName=\"Salt_Normal\",DataTableName=\"D_VoxelSetupData\")": 10,
+                "(RowName=\"Silica_Normal\",DataTableName=\"D_VoxelSetupData\")": 30,
+                "(RowName=\"Lithium_Ore_Normal\",DataTableName=\"D_VoxelSetupData\")": 5
+            },
+            "VoxelColor": {
+                "R": 0.953125,
+                "G": 0.3468180000782013,
+                "B": 0.08656399697065353
+            }
+        },
+        {
+            "Name": "Elysium_Geothermal_Ridges",
+            "VoxelDistribution": {
+                "(RowName=\"Oxite_Normal\",DataTableName=\"D_VoxelSetupData\")": 20,
+                "(RowName=\"Coal_Normal\",DataTableName=\"D_VoxelSetupData\")": 20,
+                "(RowName=\"Sulfur_Normal\",DataTableName=\"D_VoxelSetupData\")": 10,
+                "(RowName=\"Salt_Normal\",DataTableName=\"D_VoxelSetupData\")": 10,
+                "(RowName=\"Silica_Normal\",DataTableName=\"D_VoxelSetupData\")": 30,
+                "(RowName=\"Lithium_Ore_Normal\",DataTableName=\"D_VoxelSetupData\")": 5
+            },
+            "VoxelColor": {
+                "R": 0.953125,
+                "G": 0,
+                "B": 0.5419229865074158
+            }
+        },
+        {
+            "Name": "Elysium_Geothermal_Pools",
+            "VoxelDistribution": {
+                "(RowName=\"Salt_Normal\",DataTableName=\"D_VoxelSetupData\")": 3,
+                "(RowName=\"Sulfur_Dense\",DataTableName=\"D_VoxelSetupData\")": 6,
+                "(RowName=\"Silica_Normal\",DataTableName=\"D_VoxelSetupData\")": 5,
+                "(RowName=\"Lithium_Ore_Dense\",DataTableName=\"D_VoxelSetupData\")": 4
+            },
+            "VoxelColor": {
+                "R": 0.5608299970626831,
+                "G": 0.27931201457977295,
+                "B": 0.8958330154418945
+            }
+        },
+        {
+            "Name": "Elysium_Geothermal_Caves",
+            "VoxelDistribution": {
+                "(RowName=\"Copper_Normal\",DataTableName=\"D_VoxelSetupData\")": 50,
+                "(RowName=\"Metal_Normal\",DataTableName=\"D_VoxelSetupData\")": 50,
+                "(RowName=\"Gold_Normal\",DataTableName=\"D_VoxelSetupData\")": 10,
+                "(RowName=\"Bauxite_Normal\",DataTableName=\"D_VoxelSetupData\")": 10,
+                "(RowName=\"Platinum_Normal\",DataTableName=\"D_VoxelSetupData\")": 5,
+                "(RowName=\"Titanium_Normal\",DataTableName=\"D_VoxelSetupData\")": 2,
+                "(RowName=\"Coal_Normal\",DataTableName=\"D_VoxelSetupData\")": 5,
+                "(RowName=\"Lithium_Ore_Dense\",DataTableName=\"D_VoxelSetupData\")": 10
+            },
+            "VoxelColor": {
+                "R": 0.30729201436042786,
+                "G": 0.11466900259256363,
+                "B": 0.008298000320792198
+            }
+        },
+        {
+            "Name": "Elysium_Volcanic",
+            "VoxelDistribution": {
+                "(RowName=\"Oxite_Normal\",DataTableName=\"D_VoxelSetupData\")": 5,
+                "(RowName=\"Coal_Normal\",DataTableName=\"D_VoxelSetupData\")": 20,
+                "(RowName=\"Sulfur_Normal\",DataTableName=\"D_VoxelSetupData\")": 10,
+                "(RowName=\"Salt_Normal\",DataTableName=\"D_VoxelSetupData\")": 10,
+                "(RowName=\"Silica_Normal\",DataTableName=\"D_VoxelSetupData\")": 5
+            },
+            "VoxelColor": {
+                "R": 0.8958330154418945,
+                "G": 0,
+                "B": 0.0438309982419014
+            }
+        },
+        {
+            "Name": "Elysium_Volcanic_Ridges",
+            "VoxelDistribution": {
+                "(RowName=\"Oxite_Normal\",DataTableName=\"D_VoxelSetupData\")": 5,
+                "(RowName=\"Coal_Normal\",DataTableName=\"D_VoxelSetupData\")": 20,
+                "(RowName=\"Sulfur_Normal\",DataTableName=\"D_VoxelSetupData\")": 10,
+                "(RowName=\"Salt_Normal\",DataTableName=\"D_VoxelSetupData\")": 10,
+                "(RowName=\"Silica_Normal\",DataTableName=\"D_VoxelSetupData\")": 5
+            },
+            "VoxelColor": {
+                "R": 0.8958330154418945,
+                "G": 0.2705470025539398,
+                "B": 0.2794579863548279
+            }
+        },
+        {
+            "Name": "Elysium_Volcanic_Caves",
+            "VoxelDistribution": {
+                "(RowName=\"Copper_Normal\",DataTableName=\"D_VoxelSetupData\")": 40,
+                "(RowName=\"Metal_Normal\",DataTableName=\"D_VoxelSetupData\")": 40,
+                "(RowName=\"Gold_Normal\",DataTableName=\"D_VoxelSetupData\")": 10,
+                "(RowName=\"Bauxite_Normal\",DataTableName=\"D_VoxelSetupData\")": 10,
+                "(RowName=\"Platinum_Normal\",DataTableName=\"D_VoxelSetupData\")": 5,
+                "(RowName=\"Titanium_Normal\",DataTableName=\"D_VoxelSetupData\")": 10,
+                "(RowName=\"Coal_Normal\",DataTableName=\"D_VoxelSetupData\")": 5
+            },
+            "VoxelColor": {
+                "R": 0.28125,
+                "G": 0,
+                "B": 0.013760999776422977
+            }
+        },
+        {
+            "Name": "Elysium_Swamp",
+            "VoxelDistribution": {
+                "(RowName=\"Oxite_Normal\",DataTableName=\"D_VoxelSetupData\")": 20,
+                "(RowName=\"Coal_Normal\",DataTableName=\"D_VoxelSetupData\")": 10,
+                "(RowName=\"Sulfur_Normal\",DataTableName=\"D_VoxelSetupData\")": 20,
+                "(RowName=\"Salt_Normal\",DataTableName=\"D_VoxelSetupData\")": 10,
+                "(RowName=\"Silica_Normal\",DataTableName=\"D_VoxelSetupData\")": 30
+            },
+            "VoxelColor": {
+                "R": 0.46995100378990173,
+                "G": 0.8958330154418945,
+                "B": 0.2772670090198517
+            }
+        },
+        {
+            "Name": "Elysium_Swamp_Ridges",
+            "VoxelDistribution": {
+                "(RowName=\"Oxite_Normal\",DataTableName=\"D_VoxelSetupData\")": 20,
+                "(RowName=\"Coal_Normal\",DataTableName=\"D_VoxelSetupData\")": 10,
+                "(RowName=\"Sulfur_Normal\",DataTableName=\"D_VoxelSetupData\")": 20,
+                "(RowName=\"Salt_Normal\",DataTableName=\"D_VoxelSetupData\")": 10,
+                "(RowName=\"Silica_Normal\",DataTableName=\"D_VoxelSetupData\")": 30
+            },
+            "VoxelColor": {
+                "R": 0.8958330154418945,
+                "G": 0.866316020488739,
+                "B": 0.2953389883041382
+            }
+        },
+        {
+            "Name": "Elysium_Swamp_Caves",
+            "VoxelDistribution": {
+                "(RowName=\"Copper_Normal\",DataTableName=\"D_VoxelSetupData\")": 30,
+                "(RowName=\"Metal_Normal\",DataTableName=\"D_VoxelSetupData\")": 30,
+                "(RowName=\"Gold_Normal\",DataTableName=\"D_VoxelSetupData\")": 5,
+                "(RowName=\"Bauxite_Normal\",DataTableName=\"D_VoxelSetupData\")": 10,
+                "(RowName=\"Platinum_Normal\",DataTableName=\"D_VoxelSetupData\")": 10,
+                "(RowName=\"Titanium_Normal\",DataTableName=\"D_VoxelSetupData\")": 5,
+                "(RowName=\"Coal_Normal\",DataTableName=\"D_VoxelSetupData\")": 5,
+                "(RowName=\"Lithium_Ore_Dense\",DataTableName=\"D_VoxelSetupData\")": 5
+            },
+            "VoxelColor": {
+                "R": 0.1448110044002533,
+                "G": 0.27604201436042786,
+                "B": 0.08543699979782104
+            }
+        }
+    ]
+}

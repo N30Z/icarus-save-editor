@@ -1,0 +1,346 @@
+{
+    "RowStruct": "/Script/Icarus.WaterSetup",
+    "Defaults": {
+        "Material": "None",
+        "Fish": [],
+        "FishDensity": 1,
+        "Sound": "None",
+        "IsInCave": false,
+        "IsDrinkable": true,
+        "WetModifiers": [],
+        "GameplayTags": {
+            "GameplayTags": []
+        },
+        "WaterAlteration": {
+            "Value": "None"
+        },
+        "Highlightable": {
+            "RowName": "WaterNode",
+            "DataTableName": "D_Highlightable"
+        }
+    },
+    "Rows": [
+        {
+            "Name": "Default",
+            "Material": "/Game/ASS/ENV/WAT/MI_WaterRVT.MI_WaterRVT",
+            "Fish": [
+                {
+                    "RowName": "Fish_01",
+                    "DataTableName": "D_FishSetup"
+                },
+                {
+                    "RowName": "Fish_02",
+                    "DataTableName": "D_FishSetup"
+                },
+                {
+                    "RowName": "Fish_03",
+                    "DataTableName": "D_FishSetup"
+                }
+            ],
+            "Sound": "/Game/FMOD/Events/Environment/Fluids/Lake/ENV_LAKE.ENV_LAKE",
+            "WetModifiers": [
+                {
+                    "RowName": "Wet",
+                    "DataTableName": "D_ModifierStates"
+                }
+            ],
+            "GameplayTags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Traits.Water"
+                    }
+                ]
+            },
+            "WaterAlteration": {
+                "Value": "Dirty_Water"
+            }
+        },
+        {
+            "Name": "Swamp",
+            "Material": "/Game/ASS/ENV/WAT/MI_WaterRVT_Swamp.MI_WaterRVT_Swamp",
+            "Fish": [
+                {
+                    "RowName": "Fish_01",
+                    "DataTableName": "D_FishSetup"
+                },
+                {
+                    "RowName": "Fish_02",
+                    "DataTableName": "D_FishSetup"
+                },
+                {
+                    "RowName": "Fish_03",
+                    "DataTableName": "D_FishSetup"
+                }
+            ],
+            "Sound": "/Game/FMOD/Events/Environment/Fluids/Lake/ENV_SWAMP_LAKE.ENV_SWAMP_LAKE",
+            "WetModifiers": [
+                {
+                    "RowName": "Wet",
+                    "DataTableName": "D_ModifierStates"
+                },
+                {
+                    "RowName": "SwampWater",
+                    "DataTableName": "D_ModifierStates"
+                }
+            ],
+            "GameplayTags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Traits.Water.Swamp"
+                    }
+                ]
+            },
+            "WaterAlteration": {
+                "Value": "Dirty_Water_Swamp"
+            }
+        },
+        {
+            "Name": "Cave_Calm",
+            "Material": "/Game/ASS/ENV/WAT/RW_Water/MI_Profile_CalmCave.MI_Profile_CalmCave",
+            "FishDensity": 0.25,
+            "Sound": "/Game/FMOD/Events/Environment/Fluids/Lake/ENV_LAKE_CAVE.ENV_LAKE_CAVE",
+            "IsInCave": true,
+            "WetModifiers": [
+                {
+                    "RowName": "Wet",
+                    "DataTableName": "D_ModifierStates"
+                }
+            ],
+            "GameplayTags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Traits.Water"
+                    }
+                ]
+            },
+            "WaterAlteration": {
+                "Value": "Rain_Water"
+            }
+        },
+        {
+            "Name": "Cave_Glow",
+            "Material": "/Game/ASS/ENV/WAT/RW_Water/MI_Profile_GlowyCave.MI_Profile_GlowyCave",
+            "FishDensity": 0.25,
+            "Sound": "/Game/FMOD/Events/Environment/Fluids/Lake/ENV_LAKE_CAVE.ENV_LAKE_CAVE",
+            "IsInCave": true,
+            "WetModifiers": [
+                {
+                    "RowName": "Wet",
+                    "DataTableName": "D_ModifierStates"
+                }
+            ],
+            "GameplayTags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Traits.Water"
+                    }
+                ]
+            },
+            "WaterAlteration": {
+                "Value": "Rain_Water"
+            }
+        },
+        {
+            "Name": "TutorialLake",
+            "Material": "/Game/ASS/ENV/WAT/MI_WaterRVT.MI_WaterRVT",
+            "Fish": [
+                {
+                    "RowName": "Fish_01",
+                    "DataTableName": "D_FishSetup"
+                },
+                {
+                    "RowName": "Fish_02",
+                    "DataTableName": "D_FishSetup"
+                }
+            ],
+            "Sound": "/Game/FMOD/Events/Environment/Fluids/Lake/ENV_LAKE.ENV_LAKE",
+            "WetModifiers": [
+                {
+                    "RowName": "Wet",
+                    "DataTableName": "D_ModifierStates"
+                }
+            ],
+            "GameplayTags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Traits.Water"
+                    }
+                ]
+            },
+            "WaterAlteration": {
+                "Value": "Dirty_Water"
+            }
+        },
+        {
+            "Name": "Lava",
+            "Material": "/Game/ASS/ENV/WAT/MI_LavaRVT.MI_LavaRVT",
+            "FishDensity": 0,
+            "Sound": "/Game/FMOD/Events/Environment/Fluids/Lake/ENV_LAKE.ENV_LAKE",
+            "IsDrinkable": false,
+            "WetModifiers": [
+                {
+                    "RowName": "Lava",
+                    "DataTableName": "D_ModifierStates"
+                }
+            ],
+            "GameplayTags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Traits.Lava"
+                    }
+                ]
+            },
+            "WaterAlteration": {
+                "Value": "Dirty_Water"
+            }
+        },
+        {
+            "Name": "Lava_Lake",
+            "Material": "/Game/ASS/ENV/WAT/MI_LavaLakeB.MI_LavaLakeB",
+            "FishDensity": 0,
+            "Sound": "/Game/FMOD/Events/Environment/Fluids/Lake/ENV_LAVA_LAKE.ENV_LAVA_LAKE",
+            "IsDrinkable": false,
+            "WetModifiers": [
+                {
+                    "RowName": "Lava",
+                    "DataTableName": "D_ModifierStates"
+                }
+            ],
+            "GameplayTags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Traits.Lava"
+                    }
+                ]
+            },
+            "WaterAlteration": {
+                "Value": "Dirty_Water"
+            }
+        },
+        {
+            "Name": "FrozenTransparent",
+            "Material": "/Game/ASS/ENV/WAT/IceWater/MI_IcePlaneBase_LitTraslucent.MI_IcePlaneBase_LitTraslucent",
+            "Sound": "/Game/FMOD/Events/Environment/Fluids/Lake/ENV_LAKE.ENV_LAKE",
+            "WaterAlteration": {
+                "Value": "Dirty_Water"
+            }
+        },
+        {
+            "Name": "FrozenOpaque",
+            "Material": "/Game/ASS/ENV/WAT/IceWater/MI_IcePlaneBase_LitOpaque.MI_IcePlaneBase_LitOpaque",
+            "Sound": "/Game/FMOD/Events/Environment/Fluids/Lake/ENV_LAKE.ENV_LAKE",
+            "WaterAlteration": {
+                "Value": "Dirty_Water"
+            }
+        },
+        {
+            "Name": "Geothermal",
+            "Material": "/Game/ASS/ENV/WAT/MI_Water_SulfurPool.MI_Water_SulfurPool",
+            "Sound": "/Game/FMOD/Events/Environment/Fluids/Lake/ENV_GEOTHERMAL_LAKE.ENV_GEOTHERMAL_LAKE",
+            "WetModifiers": [
+                {
+                    "RowName": "GeothermalPool_Wet",
+                    "DataTableName": "D_ModifierStates"
+                }
+            ],
+            "GameplayTags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Traits.Water.Geothermal"
+                    }
+                ]
+            },
+            "WaterAlteration": {
+                "Value": "Dirty_Water_Lava"
+            },
+            "Highlightable": {
+                "RowName": "SulfurWater"
+            }
+        },
+        {
+            "Name": "Geothermal_DLC2",
+            "Material": "/Game/ASS/ENV/WAT/MI_Water_GeothermalLake_DLC2.MI_Water_GeothermalLake_DLC2",
+            "Sound": "/Game/FMOD/Events/Environment/Fluids/Lake/ENV_GEOTHERMAL_LAKE.ENV_GEOTHERMAL_LAKE",
+            "WetModifiers": [
+                {
+                    "RowName": "GeothermalPool_Wet",
+                    "DataTableName": "D_ModifierStates"
+                },
+                {
+                    "RowName": "Corrosive_DOT",
+                    "DataTableName": "D_ModifierStates"
+                }
+            ],
+            "GameplayTags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Traits.Water.Geothermal"
+                    }
+                ]
+            },
+            "WaterAlteration": {
+                "Value": "Corrosive_Water"
+            },
+            "Highlightable": {
+                "RowName": "SulfurWater"
+            }
+        },
+        {
+            "Name": "Ocean",
+            "Material": "/Game/ASS/ENV/WAT/MI_WaterRVT_Tessellated_Ocean.MI_WaterRVT_Tessellated_Ocean",
+            "Fish": [
+                {
+                    "RowName": "Fish_01",
+                    "DataTableName": "D_FishSetup"
+                },
+                {
+                    "RowName": "Fish_02",
+                    "DataTableName": "D_FishSetup"
+                },
+                {
+                    "RowName": "Fish_03",
+                    "DataTableName": "D_FishSetup"
+                }
+            ],
+            "Sound": "/Game/FMOD/Events/Environment/Fluids/Lake/ENV_LAKE.ENV_LAKE",
+            "IsDrinkable": false,
+            "WetModifiers": [
+                {
+                    "RowName": "Wet",
+                    "DataTableName": "D_ModifierStates"
+                }
+            ],
+            "GameplayTags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Traits.Water"
+                    }
+                ]
+            },
+            "WaterAlteration": {
+                "Value": "Dirty_Water"
+            }
+        },
+        {
+            "Name": "Eden_CleanWater",
+            "Material": "/Game/ASS/ENV/WAT/MI_WaterRVT.MI_WaterRVT",
+            "Sound": "/Game/FMOD/Events/Environment/Fluids/Lake/ENV_LAKE.ENV_LAKE",
+            "WetModifiers": [
+                {
+                    "RowName": "Wet",
+                    "DataTableName": "D_ModifierStates"
+                }
+            ],
+            "GameplayTags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Traits.Water"
+                    }
+                ]
+            },
+            "WaterAlteration": {
+                "Value": "Rain_Water"
+            }
+        }
+    ]
+}

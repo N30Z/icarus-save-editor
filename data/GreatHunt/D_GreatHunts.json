@@ -1,0 +1,673 @@
+{
+    "RowStruct": "/Script/Icarus.GreatHunt",
+    "Defaults": {
+        "Hunt": {
+            "RowName": "None",
+            "DataTableName": "D_TalentArchetypes"
+        },
+        "Prospect": {
+            "RowName": "None",
+            "DataTableName": "D_ProspectList"
+        },
+        "ForbiddenTalent": [],
+        "Type": "Standard",
+        "WorldStats": {}
+    },
+    "GenerateEnum": true,
+    "Rows": [
+        {
+            "Name": "Rock_Golem_A",
+            "Hunt": {
+                "RowName": "GreatHunt_RockGolem"
+            },
+            "Prospect": {
+                "RowName": "GH_RG_A"
+            },
+            "WorldStats": {
+                "(Value=\"WorldJuvenileRockGolemDesertSpawn_?\")": 1
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "Rock_Golem_B",
+            "Hunt": {
+                "RowName": "GreatHunt_RockGolem"
+            },
+            "Prospect": {
+                "RowName": "GH_RG_B"
+            },
+            "WorldStats": {
+                "(Value=\"WorldJuvenileRockGolemWorldSpawn_?\")": 1
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "Rock_Golem_C",
+            "Hunt": {
+                "RowName": "GreatHunt_RockGolem"
+            },
+            "Prospect": {
+                "RowName": "GH_RG_C"
+            },
+            "ForbiddenTalent": [
+                {
+                    "RowName": "GH_RG_D",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "Type": "Choice",
+            "WorldStats": {
+                "(Value=\"WorldLandsharksAppearInCaves_?\")": 1
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "Rock_Golem_C2",
+            "Hunt": {
+                "RowName": "GreatHunt_RockGolem"
+            },
+            "Prospect": {
+                "RowName": "GH_RG_C2"
+            },
+            "WorldStats": {
+                "(Value=\"WorldJuvenileRockGolemExoticSpawn_?\")": 1
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "Rock_Golem_D",
+            "Hunt": {
+                "RowName": "GreatHunt_RockGolem"
+            },
+            "Prospect": {
+                "RowName": "GH_RG_D"
+            },
+            "ForbiddenTalent": [
+                {
+                    "RowName": "GH_RG_C",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "Type": "Choice",
+            "WorldStats": {
+                "(Value=\"WorldCavewormsSpawnOutsideCaves_?\")": 1
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "Rock_Golem_D2",
+            "Hunt": {
+                "RowName": "GreatHunt_RockGolem"
+            },
+            "Prospect": {
+                "RowName": "GH_RG_D2"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "Rock_Golem_E",
+            "Hunt": {
+                "RowName": "GreatHunt_RockGolem"
+            },
+            "Prospect": {
+                "RowName": "GH_RG_E"
+            },
+            "ForbiddenTalent": [
+                {
+                    "RowName": "GH_RG_F",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "Type": "Choice",
+            "WorldStats": {
+                "(Value=\"WorldJuvenileRockGolemLootIncreased_?\")": 1
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "Rock_Golem_F",
+            "Hunt": {
+                "RowName": "GreatHunt_RockGolem"
+            },
+            "Prospect": {
+                "RowName": "GH_RG_F"
+            },
+            "ForbiddenTalent": [
+                {
+                    "RowName": "GH_RG_E",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "Type": "Choice",
+            "WorldStats": {
+                "(Value=\"WorldRockGolemMinionsReduced_?\")": 1
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "Rock_Golem_O1",
+            "Hunt": {
+                "RowName": "GreatHunt_RockGolem"
+            },
+            "Prospect": {
+                "RowName": "GH_RG_O1"
+            },
+            "Type": "Optional",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "Rock_Golem_O2",
+            "Hunt": {
+                "RowName": "GreatHunt_RockGolem"
+            },
+            "Prospect": {
+                "RowName": "GH_RG_O2"
+            },
+            "Type": "Optional",
+            "WorldStats": {
+                "(Value=\"WorldRockGolemExplosiveWeakness_?\")": 1
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "Rock_Golem_Final",
+            "Hunt": {
+                "RowName": "GreatHunt_RockGolem"
+            },
+            "Prospect": {
+                "RowName": "GH_RG_Final"
+            },
+            "Type": "Final",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "Ape_A",
+            "Hunt": {
+                "RowName": "GreatHunt_Ape"
+            },
+            "Prospect": {
+                "RowName": "GH_Ape_A"
+            },
+            "WorldStats": {
+                "(Value=\"WorldJuvenileApeDesertSpawn_?\")": 1
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "Ape_B",
+            "Hunt": {
+                "RowName": "GreatHunt_Ape"
+            },
+            "Prospect": {
+                "RowName": "GH_Ape_B"
+            },
+            "WorldStats": {
+                "(Value=\"WorldJuvenileApeForestSpawn_?\")": 1
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "Ape_C",
+            "Hunt": {
+                "RowName": "GreatHunt_Ape"
+            },
+            "Prospect": {
+                "RowName": "GH_Ape_C"
+            },
+            "ForbiddenTalent": [
+                {
+                    "RowName": "GH_Ape_D",
+                    "DataTableName": "D_Talents"
+                },
+                {
+                    "RowName": "GH_Ape_E",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "Type": "Choice",
+            "WorldStats": {
+                "(Value=\"WorldApeNorex_?\")": 1
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "Ape_C2",
+            "Hunt": {
+                "RowName": "GreatHunt_Ape"
+            },
+            "Prospect": {
+                "RowName": "GH_Ape_C2"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "Ape_D",
+            "Hunt": {
+                "RowName": "GreatHunt_Ape"
+            },
+            "Prospect": {
+                "RowName": "GH_Ape_D"
+            },
+            "ForbiddenTalent": [
+                {
+                    "RowName": "GH_Ape_C",
+                    "DataTableName": "D_Talents"
+                },
+                {
+                    "RowName": "GH_Ape_E",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "Type": "Choice",
+            "WorldStats": {
+                "(Value=\"WorldApeBlackmarket_?\")": 1
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "Ape_D2",
+            "Hunt": {
+                "RowName": "GreatHunt_Ape"
+            },
+            "Prospect": {
+                "RowName": "GH_Ape_D2"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "Ape_E",
+            "Hunt": {
+                "RowName": "GreatHunt_Ape"
+            },
+            "Prospect": {
+                "RowName": "GH_Ape_E"
+            },
+            "ForbiddenTalent": [
+                {
+                    "RowName": "GH_Ape_C",
+                    "DataTableName": "D_Talents"
+                },
+                {
+                    "RowName": "GH_Ape_D",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "Type": "Choice",
+            "WorldStats": {
+                "(Value=\"WorldJuvenileApeArcticSpawn_?\")": 1
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "Ape_E2",
+            "Hunt": {
+                "RowName": "GreatHunt_Ape"
+            },
+            "Prospect": {
+                "RowName": "GH_Ape_E2"
+            },
+            "WorldStats": {
+                "(Value=\"WorldApeApeEscape_?\")": 1
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "Ape_F",
+            "Hunt": {
+                "RowName": "GreatHunt_Ape"
+            },
+            "Prospect": {
+                "RowName": "GH_Ape_F"
+            },
+            "WorldStats": {
+                "(Value=\"WorldJuvenileApeForestPoisonSpawn_?\")": 1
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "Ape_G",
+            "Hunt": {
+                "RowName": "GreatHunt_Ape"
+            },
+            "Prospect": {
+                "RowName": "GH_Ape_G"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "Ape_O1",
+            "Hunt": {
+                "RowName": "GreatHunt_Ape"
+            },
+            "Prospect": {
+                "RowName": "GH_Ape_O1"
+            },
+            "Type": "Optional",
+            "WorldStats": {
+                "(Value=\"WorldApeExpurgation_?\")": 1
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "Ape_O2",
+            "Hunt": {
+                "RowName": "GreatHunt_Ape"
+            },
+            "Prospect": {
+                "RowName": "GH_Ape_O2"
+            },
+            "Type": "Optional",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "Ape_Final",
+            "Hunt": {
+                "RowName": "GreatHunt_Ape"
+            },
+            "Prospect": {
+                "RowName": "GH_Ape_Final"
+            },
+            "Type": "Final",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "IM_A",
+            "Hunt": {
+                "RowName": "GreatHunt_IceMammoth"
+            },
+            "Prospect": {
+                "RowName": "GH_IM_A"
+            },
+            "ForbiddenTalent": [
+                {
+                    "RowName": "GH_IM_A2",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "Type": "Choice",
+            "WorldStats": {
+                "(Value=\"WorldIceMammothSpawnInPairs_?\")": 1
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "IM_A2",
+            "Hunt": {
+                "RowName": "GreatHunt_IceMammoth"
+            },
+            "Prospect": {
+                "RowName": "GH_IM_A2"
+            },
+            "ForbiddenTalent": [
+                {
+                    "RowName": "GH_IM_A",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "Type": "Choice",
+            "WorldStats": {
+                "(Value=\"WorldPolarBearInGrasslandsSpawn_?\")": 1
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "IM_B",
+            "Hunt": {
+                "RowName": "GreatHunt_IceMammoth"
+            },
+            "Prospect": {
+                "RowName": "GH_IM_B"
+            },
+            "WorldStats": {
+                "(Value=\"WorldSnowSlugSpawn_?\")": 1
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "IM_C",
+            "Hunt": {
+                "RowName": "GreatHunt_IceMammoth"
+            },
+            "Prospect": {
+                "RowName": "GH_IM_C"
+            },
+            "ForbiddenTalent": [
+                {
+                    "RowName": "GH_IM_D2",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "Type": "Choice",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "IM_C2",
+            "Hunt": {
+                "RowName": "GreatHunt_IceMammoth"
+            },
+            "Prospect": {
+                "RowName": "GH_IM_C2"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "IM_D",
+            "Hunt": {
+                "RowName": "GreatHunt_IceMammoth"
+            },
+            "Prospect": {
+                "RowName": "GH_IM_D"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "IM_D2",
+            "Hunt": {
+                "RowName": "GreatHunt_IceMammoth"
+            },
+            "Prospect": {
+                "RowName": "GH_IM_D2"
+            },
+            "ForbiddenTalent": [
+                {
+                    "RowName": "GH_IM_C",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "Type": "Choice",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "IM_O1",
+            "Hunt": {
+                "RowName": "GreatHunt_IceMammoth"
+            },
+            "Prospect": {
+                "RowName": "GH_IM_O1"
+            },
+            "WorldStats": {
+                "(Value=\"WorldIceMammothSpawn_?\")": 1
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "IM_O2",
+            "Hunt": {
+                "RowName": "GreatHunt_IceMammoth"
+            },
+            "Prospect": {
+                "RowName": "GH_IM_O2"
+            },
+            "Type": "Optional",
+            "WorldStats": {
+                "(Value=\"WorldIceMammothLessBirds_?\")": 1
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "IM_O3",
+            "Hunt": {
+                "RowName": "GreatHunt_IceMammoth"
+            },
+            "Prospect": {
+                "RowName": "GH_IM_O3"
+            },
+            "Type": "Optional",
+            "WorldStats": {
+                "(Value=\"WorldIceMammothLessArmor_?\")": 1
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "IM_Final",
+            "Hunt": {
+                "RowName": "GreatHunt_IceMammoth"
+            },
+            "Prospect": {
+                "RowName": "GH_IM_Final"
+            },
+            "Type": "Final",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        }
+    ]
+}

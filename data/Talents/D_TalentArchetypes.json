@@ -1,0 +1,826 @@
+{
+    "RowStruct": "/Script/Icarus.TalentArchetype",
+    "Defaults": {
+        "Model": {
+            "RowName": "None",
+            "DataTableName": "D_TalentModels"
+        },
+        "DisplayName": "",
+        "BackgroundTexture": "None",
+        "Icon": "None",
+        "RequiredLevel": 0
+    },
+    "Columns": [
+        {
+            "Name": "Model",
+            "Key": true,
+            "Cardinality": "Multiple",
+            "ForwardDeclare": "struct"
+        }
+    ],
+    "Rows": [
+        {
+            "Name": "Survival",
+            "Model": {
+                "RowName": "Player"
+            },
+            "DisplayName": "NSLOCTEXT(\"D_TalentArchetypes\", \"Survival-DisplayName\", \"Survival\")",
+            "Icon": "/Game/Assets/2DArt/UI/Icons/Icon_Survival.Icon_Survival"
+        },
+        {
+            "Name": "Player_Adventure",
+            "Model": {
+                "RowName": "Player"
+            },
+            "DisplayName": "NSLOCTEXT(\"D_TalentArchetypes\", \"Player_Adventure-DisplayName\", \"Adventure\")",
+            "Icon": "/Game/Assets/2DArt/UI/Icons/Icon_Cave.Icon_Cave"
+        },
+        {
+            "Name": "Construction",
+            "Model": {
+                "RowName": "Player"
+            },
+            "DisplayName": "NSLOCTEXT(\"D_TalentArchetypes\", \"Construction-DisplayName\", \"Habitation\")",
+            "Icon": "/Game/Assets/2DArt/UI/Icons/Icon_Construction.Icon_Construction"
+        },
+        {
+            "Name": "Combat",
+            "Model": {
+                "RowName": "Player"
+            },
+            "DisplayName": "NSLOCTEXT(\"D_TalentArchetypes\", \"Combat-DisplayName\", \"Combat\")",
+            "Icon": "/Game/Assets/2DArt/UI/Icons/Icon_Combat.Icon_Combat"
+        },
+        {
+            "Name": "Blueprint_Player",
+            "Model": {
+                "RowName": "Blueprint"
+            },
+            "DisplayName": "NSLOCTEXT(\"D_TalentArchetypes\", \"Blueprint_Player-DisplayName\", \"Tier 1\")",
+            "Icon": "/Game/Assets/2DArt/UI/Icons/Icon_TechTier_Personal.Icon_TechTier_Personal"
+        },
+        {
+            "Name": "Blueprint_Crafting",
+            "Model": {
+                "RowName": "Blueprint"
+            },
+            "DisplayName": "NSLOCTEXT(\"D_TalentArchetypes\", \"Blueprint_Crafting-DisplayName\", \"Tier 2\")",
+            "Icon": "/Game/Assets/2DArt/UI/Icons/Icon_TechTier_CraftingBench.Icon_TechTier_CraftingBench",
+            "RequiredLevel": 10
+        },
+        {
+            "Name": "Blueprint_Machine",
+            "Model": {
+                "RowName": "Blueprint"
+            },
+            "DisplayName": "NSLOCTEXT(\"D_TalentArchetypes\", \"Blueprint_Machine-DisplayName\", \"Tier 3\")",
+            "Icon": "/Game/Assets/2DArt/UI/Icons/Icon_TechTier_MachineBench.Icon_TechTier_MachineBench",
+            "RequiredLevel": 20
+        },
+        {
+            "Name": "Blueprint_Fabricator",
+            "Model": {
+                "RowName": "Blueprint"
+            },
+            "DisplayName": "NSLOCTEXT(\"D_TalentArchetypes\", \"Blueprint_Fabricator-DisplayName\", \"Tier 4\")",
+            "Icon": "/Game/Assets/2DArt/UI/Icons/Icon_TechTier_Fabricator.Icon_TechTier_Fabricator",
+            "RequiredLevel": 30
+        },
+        {
+            "Name": "Solo",
+            "Model": {
+                "RowName": "Solo"
+            },
+            "DisplayName": "NSLOCTEXT(\"D_TalentArchetypes\", \"Solo-DisplayName\", \"Solo\")",
+            "Icon": "/Game/Assets/2DArt/UI/Icons/Icon_Solo.Icon_Solo"
+        },
+        {
+            "Name": "Prospect_Olympus",
+            "Model": {
+                "RowName": "Prospect"
+            },
+            "DisplayName": "NSLOCTEXT(\"D_TalentArchetypes\", \"Prospect_Olympus-DisplayName\", \"Olympus\")",
+            "Icon": "/Game/Assets/2DArt/UI/Icons/Icon_Consume.Icon_Consume"
+        },
+        {
+            "Name": "Prospect_Styx",
+            "Model": {
+                "RowName": "Prospect"
+            },
+            "DisplayName": "NSLOCTEXT(\"D_TalentArchetypes\", \"Prospect_Styx-DisplayName\", \"Styx\")",
+            "Icon": "/Game/Assets/2DArt/UI/Icons/Icon_Consume.Icon_Consume"
+        },
+        {
+            "Name": "Prospect_Dev",
+            "Model": {
+                "RowName": "Prospect"
+            },
+            "DisplayName": "NSLOCTEXT(\"D_TalentArchetypes\", \"Prospect_Dev-DisplayName\", \"Dev\")",
+            "Icon": "/Game/Assets/2DArt/UI/Icons/Icon_Consume.Icon_Consume"
+        },
+        {
+            "Name": "Outpost",
+            "Model": {
+                "RowName": "Outpost"
+            },
+            "DisplayName": "NSLOCTEXT(\"D_TalentArchetypes\", \"Outpost-DisplayName\", \"Outpost Overview\")",
+            "Icon": "/Game/Assets/2DArt/UI/Icons/Icon_Consume.Icon_Consume"
+        },
+        {
+            "Name": "Prospect_Prometheus",
+            "Model": {
+                "RowName": "Prospect"
+            },
+            "DisplayName": "NSLOCTEXT(\"D_TalentArchetypes\", \"Prospect_Prometheus-DisplayName\", \"Prometheus\")",
+            "Icon": "/Game/Assets/2DArt/UI/Icons/Icon_Consume.Icon_Consume",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "NewFrontiers"
+                }
+            }
+        },
+        {
+            "Name": "Workshop_Envirosuits",
+            "Model": {
+                "RowName": "Workshop"
+            },
+            "DisplayName": "NSLOCTEXT(\"D_TalentArchetypes\", \"Workshop_Envirosuits-DisplayName\", \"Envirosuits\")",
+            "Icon": "/Game/Assets/2DArt/UI/Icons/Icon_PlayerSlot.Icon_PlayerSlot"
+        },
+        {
+            "Name": "Workshop_Armor",
+            "Model": {
+                "RowName": "Workshop"
+            },
+            "DisplayName": "NSLOCTEXT(\"D_TalentArchetypes\", \"Workshop_Armor-DisplayName\", \"Armors\")",
+            "Icon": "/Game/Assets/2DArt/UI/Icons/Icon_BodyArmor.Icon_BodyArmor"
+        },
+        {
+            "Name": "Workshop_Backpacks",
+            "Model": {
+                "RowName": "Workshop"
+            },
+            "DisplayName": "NSLOCTEXT(\"D_TalentArchetypes\", \"Workshop_Backpacks-DisplayName\", \"Backpacks\")",
+            "Icon": "/Game/Assets/2DArt/UI/Icons/T_ICON_inventoryOpen.T_ICON_inventoryOpen"
+        },
+        {
+            "Name": "Workshop_Modules",
+            "Model": {
+                "RowName": "Workshop"
+            },
+            "DisplayName": "NSLOCTEXT(\"D_TalentArchetypes\", \"Workshop_Modules-DisplayName\", \"Modules\")",
+            "Icon": "/Game/Assets/2DArt/UI/FieldGuide/CategoryIcons/T_ICON_FieldGuide_SuitsModules.T_ICON_FieldGuide_SuitsModules"
+        },
+        {
+            "Name": "Workshop_Gadgets",
+            "Model": {
+                "RowName": "Workshop"
+            },
+            "DisplayName": "NSLOCTEXT(\"D_TalentArchetypes\", \"Workshop_Gadgets-DisplayName\", \"Gadgets\")",
+            "Icon": "/Game/Assets/2DArt/UI/Icons/Icon_Alteration_Item.Icon_Alteration_Item"
+        },
+        {
+            "Name": "Workshop_Axes",
+            "Model": {
+                "RowName": "Workshop"
+            },
+            "DisplayName": "NSLOCTEXT(\"D_TalentArchetypes\", \"Workshop_Axes-DisplayName\", \"Axes\")",
+            "Icon": "/Game/Assets/2DArt/UI/Icons/Icon_ContextChop.Icon_ContextChop"
+        },
+        {
+            "Name": "Workshop_Pickaxes",
+            "Model": {
+                "RowName": "Workshop"
+            },
+            "DisplayName": "NSLOCTEXT(\"D_TalentArchetypes\", \"Workshop_Pickaxes-DisplayName\", \"Pickaxes\")",
+            "Icon": "/Game/Assets/2DArt/UI/Icons/Icon_ContextMine.Icon_ContextMine"
+        },
+        {
+            "Name": "Workshop_Knives",
+            "Model": {
+                "RowName": "Workshop"
+            },
+            "DisplayName": "NSLOCTEXT(\"D_TalentArchetypes\", \"Workshop_Knives-DisplayName\", \"Knives\")",
+            "Icon": "/Game/Assets/2DArt/UI/Icons/Icon_ContextSkin.Icon_ContextSkin"
+        },
+        {
+            "Name": "Workshop_Spears",
+            "Model": {
+                "RowName": "Workshop"
+            },
+            "DisplayName": "NSLOCTEXT(\"D_TalentArchetypes\", \"Workshop_Spears-DisplayName\", \"Spears\")",
+            "Icon": "/Game/Assets/2DArt/UI/Icons/Icon_Spear.Icon_Spear"
+        },
+        {
+            "Name": "Workshop_Sickles",
+            "Model": {
+                "RowName": "Workshop"
+            },
+            "DisplayName": "NSLOCTEXT(\"D_TalentArchetypes\", \"Workshop_Sickles-DisplayName\", \"Sickles\")",
+            "Icon": "/Game/Assets/2DArt/UI/Icons/Icon_ContextSickle.Icon_ContextSickle"
+        },
+        {
+            "Name": "Workshop_Hammers",
+            "Model": {
+                "RowName": "Workshop"
+            },
+            "DisplayName": "NSLOCTEXT(\"D_TalentArchetypes\", \"Workshop_Hammers-DisplayName\", \"Hammers\")",
+            "Icon": "/Game/Assets/2DArt/UI/Icons/Icon_Hammer.Icon_Hammer"
+        },
+        {
+            "Name": "Workshop_Bows",
+            "Model": {
+                "RowName": "Workshop"
+            },
+            "DisplayName": "NSLOCTEXT(\"D_TalentArchetypes\", \"Workshop_Bows-DisplayName\", \"Bows\")",
+            "Icon": "/Game/Assets/2DArt/UI/Icons/Icon_ClassBow.Icon_ClassBow"
+        },
+        {
+            "Name": "Workshop_Crossbows",
+            "Model": {
+                "RowName": "Workshop"
+            },
+            "DisplayName": "NSLOCTEXT(\"D_TalentArchetypes\", \"Workshop_Crossbows-DisplayName\", \"Crossbows\")",
+            "Icon": "/Game/Assets/2DArt/UI/Icons/Icon_ClassCrossbow.Icon_ClassCrossbow"
+        },
+        {
+            "Name": "Workshop_Firearms",
+            "Model": {
+                "RowName": "Workshop"
+            },
+            "DisplayName": "NSLOCTEXT(\"D_TalentArchetypes\", \"Workshop_Firearms-DisplayName\", \"Firearms\")",
+            "Icon": "/Game/Assets/2DArt/UI/Icons/Icon_ClassShotgun.Icon_ClassShotgun"
+        },
+        {
+            "Name": "Workshop_Deployables",
+            "Model": {
+                "RowName": "Workshop"
+            },
+            "DisplayName": "NSLOCTEXT(\"D_TalentArchetypes\", \"Workshop_Deployables-DisplayName\", \"Deployables\")",
+            "Icon": "/Game/Assets/2DArt/UI/Icons/Icon_Construction.Icon_Construction"
+        },
+        {
+            "Name": "Workshop_Farming",
+            "Model": {
+                "RowName": "Workshop"
+            },
+            "DisplayName": "NSLOCTEXT(\"D_TalentArchetypes\", \"Workshop_Farming-DisplayName\", \"Farming\")",
+            "Icon": "/Game/Assets/2DArt/UI/Icons/Icon_ContextPlant.Icon_ContextPlant"
+        },
+        {
+            "Name": "Workshop_Consumables",
+            "Model": {
+                "RowName": "Workshop"
+            },
+            "DisplayName": "NSLOCTEXT(\"D_TalentArchetypes\", \"Workshop_Consumables-DisplayName\", \"Consumables\")",
+            "Icon": "/Game/Assets/2DArt/UI/Icons/Icon_Consume.Icon_Consume"
+        },
+        {
+            "Name": "Workshop_Extraction",
+            "Model": {
+                "RowName": "Workshop"
+            },
+            "DisplayName": "NSLOCTEXT(\"D_TalentArchetypes\", \"Workshop_Extraction-DisplayName\", \"Extraction\")",
+            "Icon": "/Game/Assets/2DArt/UI/Icons/Icon_Meta1.Icon_Meta1"
+        },
+        {
+            "Name": "Workshop_Resources",
+            "Model": {
+                "RowName": "Workshop"
+            },
+            "DisplayName": "NSLOCTEXT(\"D_TalentArchetypes\", \"Workshop_Resources-DisplayName\", \"Raw Resources\")",
+            "Icon": "/Game/Assets/2DArt/UI/Icons/MapIcons/ICON_MAPBeacon_Stone.ICON_MAPBeacon_Stone"
+        },
+        {
+            "Name": "Workshop_Resources_Refined",
+            "Model": {
+                "RowName": "Workshop"
+            },
+            "DisplayName": "NSLOCTEXT(\"D_TalentArchetypes\", \"Workshop_Resources_Refined-DisplayName\", \"Refined Resources\")",
+            "Icon": "/Game/Assets/2DArt/UI/Icons/Icon_Crate.Icon_Crate"
+        },
+        {
+            "Name": "Workshop_Creatures",
+            "Model": {
+                "RowName": "Workshop"
+            },
+            "DisplayName": "NSLOCTEXT(\"D_TalentArchetypes\", \"Workshop_Creatures-DisplayName\", \"Creatures\")",
+            "Icon": "/Game/Assets/2DArt/UI/Icons/BestiaryTraits/Icon_BestTrait_FollowsParent.Icon_BestTrait_FollowsParent",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Laika"
+                }
+            }
+        },
+        {
+            "Name": "Workshop_Creature_Equipment",
+            "Model": {
+                "RowName": "Workshop"
+            },
+            "DisplayName": "NSLOCTEXT(\"D_TalentArchetypes\", \"Workshop_Creature_Equipment-DisplayName\", \"Creature Equipment\")",
+            "Icon": "/Game/Assets/2DArt/UI/Icons/BestiaryTraits/Icon_BestTrait_FollowsParent.Icon_BestTrait_FollowsParent",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Creature_Moa",
+            "Model": {
+                "RowName": "Creature"
+            },
+            "DisplayName": "NSLOCTEXT(\"D_TalentArchetypes\", \"Creature_Moa-DisplayName\", \"Moa\")",
+            "BackgroundTexture": "/Game/Assets/2DArt/UI/FieldGuide/Creatures/Conifer/T_Bestiary_Moa.T_Bestiary_Moa",
+            "Icon": "/Game/Assets/2DArt/UI/Icons/BossMonsters/Icon_Wolf.Icon_Wolf",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Laika"
+                }
+            }
+        },
+        {
+            "Name": "Creature_Buffalo",
+            "Model": {
+                "RowName": "Creature"
+            },
+            "DisplayName": "NSLOCTEXT(\"D_TalentArchetypes\", \"Creature_Buffalo-DisplayName\", \"Buffalo\")",
+            "BackgroundTexture": "/Game/Assets/2DArt/UI/FieldGuide/Creatures/Conifer/T_Bestiary_BuffaloJuvie.T_Bestiary_BuffaloJuvie",
+            "Icon": "/Game/Assets/2DArt/UI/Icons/BossMonsters/Icon_Wolf.Icon_Wolf",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Laika"
+                }
+            }
+        },
+        {
+            "Name": "Creature_Tusker",
+            "Model": {
+                "RowName": "Creature"
+            },
+            "DisplayName": "NSLOCTEXT(\"D_TalentArchetypes\", \"Creature_Tusker-DisplayName\", \"Tusker\")",
+            "BackgroundTexture": "/Game/Assets/2DArt/UI/FieldGuide/Creatures/Arctic/T_Bestiary_Tusker.T_Bestiary_Tusker",
+            "Icon": "/Game/Assets/2DArt/UI/Icons/BossMonsters/Icon_Wolf.Icon_Wolf",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Laika"
+                }
+            }
+        },
+        {
+            "Name": "Creature_Terrenus",
+            "Model": {
+                "RowName": "Creature"
+            },
+            "DisplayName": "NSLOCTEXT(\"D_TalentArchetypes\", \"Creature_Terrenus-DisplayName\", \"Terrenus\")",
+            "BackgroundTexture": "/Game/Assets/2DArt/UI/FieldGuide/Creatures/Grasslands/T_Bestiary_Terrenus.T_Bestiary_Terrenus",
+            "Icon": "/Game/Assets/2DArt/UI/Icons/BossMonsters/Icon_Wolf.Icon_Wolf",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Laika"
+                }
+            }
+        },
+        {
+            "Name": "Creature_Wolf",
+            "Model": {
+                "RowName": "Creature"
+            },
+            "DisplayName": "NSLOCTEXT(\"D_TalentArchetypes\", \"Creature_Wolf-DisplayName\", \"Wolf\")",
+            "BackgroundTexture": "/Game/Assets/2DArt/UI/FieldGuide/Creatures/Conifer/T_Bestiary_PackWolf.T_Bestiary_PackWolf",
+            "Icon": "/Game/Assets/2DArt/UI/Icons/BossMonsters/Icon_Wolf.Icon_Wolf",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Laika"
+                }
+            }
+        },
+        {
+            "Name": "Creature_Snow_Wolf",
+            "Model": {
+                "RowName": "Creature"
+            },
+            "DisplayName": "NSLOCTEXT(\"D_TalentArchetypes\", \"Creature_Snow_Wolf-DisplayName\", \"Snow Wolf\")",
+            "BackgroundTexture": "/Game/Assets/2DArt/UI/FieldGuide/Creatures/Arctic/T_Bestiary_SnowWolf.T_Bestiary_SnowWolf",
+            "Icon": "/Game/Assets/2DArt/UI/Icons/BossMonsters/Icon_Wolf.Icon_Wolf",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Laika"
+                }
+            }
+        },
+        {
+            "Name": "Creature_Desert_Wolf",
+            "Model": {
+                "RowName": "Creature"
+            },
+            "DisplayName": "NSLOCTEXT(\"D_TalentArchetypes\", \"Creature_Desert_Wolf-DisplayName\", \"Hyena\")",
+            "BackgroundTexture": "/Game/Assets/2DArt/UI/FieldGuide/Creatures/Desert/T_Bestiary_DesertWolf.T_Bestiary_DesertWolf",
+            "Icon": "/Game/Assets/2DArt/UI/Icons/BossMonsters/Icon_Wolf.Icon_Wolf",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Laika"
+                }
+            }
+        },
+        {
+            "Name": "Creature_Boar",
+            "Model": {
+                "RowName": "Creature"
+            },
+            "DisplayName": "NSLOCTEXT(\"D_TalentArchetypes\", \"Creature_Boar-DisplayName\", \"Boar\")",
+            "BackgroundTexture": "/Game/Assets/2DArt/UI/FieldGuide/Creatures/Conifer/T_Bestiary_WildBoar.T_Bestiary_WildBoar",
+            "Icon": "/Game/Assets/2DArt/UI/Icons/BossMonsters/Icon_Wolf.Icon_Wolf",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Laika"
+                }
+            }
+        },
+        {
+            "Name": "Creature_Sheep",
+            "Model": {
+                "RowName": "Creature"
+            },
+            "DisplayName": "NSLOCTEXT(\"D_TalentArchetypes\", \"Creature_Sheep-DisplayName\", \"Sheep\")",
+            "BackgroundTexture": "/Game/Assets/2DArt/UI/FieldGuide/Creatures/Workshop/T_Bestiary_Sheep.T_Bestiary_Sheep",
+            "Icon": "/Game/Assets/2DArt/UI/Icons/BossMonsters/Icon_Wolf.Icon_Wolf",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Laika"
+                }
+            }
+        },
+        {
+            "Name": "Creature_Chicken",
+            "Model": {
+                "RowName": "Creature"
+            },
+            "DisplayName": "NSLOCTEXT(\"D_TalentArchetypes\", \"Creature_Chicken-DisplayName\", \"Chicken\")",
+            "BackgroundTexture": "/Game/Assets/2DArt/UI/FieldGuide/Creatures/Workshop/T_Bestiary_Chickens.T_Bestiary_Chickens",
+            "Icon": "/Game/Assets/2DArt/UI/Icons/BossMonsters/Icon_Wolf.Icon_Wolf",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Laika"
+                }
+            }
+        },
+        {
+            "Name": "Creature_Rooster",
+            "Model": {
+                "RowName": "Creature"
+            },
+            "DisplayName": "NSLOCTEXT(\"D_TalentArchetypes\", \"Creature_Rooster-DisplayName\", \"Rooster\")",
+            "BackgroundTexture": "/Game/Assets/2DArt/UI/FieldGuide/Creatures/Workshop/T_Bestiary_Chickens.T_Bestiary_Chickens",
+            "Icon": "/Game/Assets/2DArt/UI/Icons/BossMonsters/Icon_Wolf.Icon_Wolf",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Laika"
+                }
+            }
+        },
+        {
+            "Name": "Creature_Horse",
+            "Model": {
+                "RowName": "Creature"
+            },
+            "DisplayName": "NSLOCTEXT(\"D_TalentArchetypes\", \"Creature_Horse-DisplayName\", \"Horse\")",
+            "BackgroundTexture": "/Game/Assets/2DArt/UI/FieldGuide/Creatures/Workshop/T_Bestiary_Horse.T_Bestiary_Horse",
+            "Icon": "/Game/Assets/2DArt/UI/Icons/BossMonsters/Icon_Wolf.Icon_Wolf",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Laika"
+                }
+            }
+        },
+        {
+            "Name": "Creature_Cat",
+            "Model": {
+                "RowName": "Creature"
+            },
+            "DisplayName": "NSLOCTEXT(\"D_TalentArchetypes\", \"Creature_Cat-DisplayName\", \"Cat\")",
+            "BackgroundTexture": "/Game/Assets/2DArt/UI/FieldGuide/Creatures/Workshop/T_Bestiary_Cat.T_Bestiary_Cat",
+            "Icon": "/Game/Assets/2DArt/UI/Icons/BossMonsters/Icon_Wolf.Icon_Wolf",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Laika"
+                }
+            }
+        },
+        {
+            "Name": "Creature_Dog",
+            "Model": {
+                "RowName": "Creature"
+            },
+            "DisplayName": "NSLOCTEXT(\"D_TalentArchetypes\", \"Creature_Dog-DisplayName\", \"Dog\")",
+            "BackgroundTexture": "/Game/Assets/2DArt/UI/FieldGuide/Creatures/Workshop/T_Bestiary_Dogs.T_Bestiary_Dogs",
+            "Icon": "/Game/Assets/2DArt/UI/Icons/BossMonsters/Icon_Wolf.Icon_Wolf",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Laika"
+                }
+            }
+        },
+        {
+            "Name": "Creature_Zebra",
+            "Model": {
+                "RowName": "Creature"
+            },
+            "DisplayName": "NSLOCTEXT(\"D_TalentArchetypes\", \"Creature_Zebra-DisplayName\", \"Zebra\")",
+            "BackgroundTexture": "/Game/Assets/2DArt/UI/FieldGuide/Creatures/Desert/T_Bestiary_Zebra.T_Bestiary_Zebra",
+            "Icon": "/Game/Assets/2DArt/UI/Icons/BossMonsters/Icon_Wolf.Icon_Wolf",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Laika"
+                }
+            }
+        },
+        {
+            "Name": "Creature_Swamp_Quadruped",
+            "Model": {
+                "RowName": "Creature"
+            },
+            "DisplayName": "NSLOCTEXT(\"D_TalentArchetypes\", \"Creature_Swamp_Quadruped-DisplayName\", \"Stryder\")",
+            "BackgroundTexture": "/Game/Assets/2DArt/UI/FieldGuide/Creatures/Swamp/T_Bestiary_SwampQuad.T_Bestiary_SwampQuad",
+            "Icon": "/Game/Assets/2DArt/UI/Icons/BossMonsters/Icon_Wolf.Icon_Wolf",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Laika"
+                }
+            }
+        },
+        {
+            "Name": "Creature_Blueback",
+            "Model": {
+                "RowName": "Creature"
+            },
+            "DisplayName": "NSLOCTEXT(\"D_TalentArchetypes\", \"Creature_Blueback-DisplayName\", \"Blueback\")",
+            "BackgroundTexture": "/Game/Assets/2DArt/UI/FieldGuide/Creatures/Grasslands/T_Bestiary_Blueback.T_Bestiary_Blueback",
+            "Icon": "/Game/Assets/2DArt/UI/Icons/BossMonsters/Icon_Wolf.Icon_Wolf",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Laika"
+                }
+            }
+        },
+        {
+            "Name": "Creature_WoolyZebra",
+            "Model": {
+                "RowName": "Creature"
+            },
+            "DisplayName": "NSLOCTEXT(\"D_TalentArchetypes\", \"Creature_WoolyZebra-DisplayName\", \"Shaggy Zebra\")",
+            "BackgroundTexture": "/Game/Assets/2DArt/UI/FieldGuide/Creatures/Arctic/T_Bestiary_WoolyZebra.T_Bestiary_WoolyZebra",
+            "Icon": "/Game/Assets/2DArt/UI/Icons/BossMonsters/Icon_Wolf.Icon_Wolf",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Laika"
+                }
+            }
+        },
+        {
+            "Name": "Creature_ArcticMoa",
+            "Model": {
+                "RowName": "Creature"
+            },
+            "DisplayName": "NSLOCTEXT(\"D_TalentArchetypes\", \"Creature_ArcticMoa-DisplayName\", \"Arctic Moa\")",
+            "BackgroundTexture": "/Game/Assets/2DArt/UI/FieldGuide/Creatures/Arctic/T_Bestiary_ArcticMoa.T_Bestiary_ArcticMoa",
+            "Icon": "/Game/Assets/2DArt/UI/Icons/BossMonsters/Icon_Wolf.Icon_Wolf",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Laika"
+                }
+            }
+        },
+        {
+            "Name": "Blueprint_Tier5_Manufacturer",
+            "Model": {
+                "RowName": "Blueprint"
+            },
+            "DisplayName": "NSLOCTEXT(\"D_TalentArchetypes\", \"Blueprint_Tier5_Manufacturer-DisplayName\", \"Tier 5\")",
+            "Icon": "/Game/Assets/2DArt/UI/Icons/Icon_Satellite.Icon_Satellite",
+            "RequiredLevel": 40,
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "GreatHunt_RockGolem",
+            "Model": {
+                "RowName": "Great_Hunt"
+            },
+            "DisplayName": "NSLOCTEXT(\"D_TalentArchetypes\", \"GreatHunt_RockGolem-DisplayName\", \"Quarrite\")",
+            "Icon": "/Game/Assets/2DArt/UI/Icons/BossMonsters/Icon_Wolf.Icon_Wolf",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "GreatHunt_IceMammoth",
+            "Model": {
+                "RowName": "Great_Hunt"
+            },
+            "DisplayName": "NSLOCTEXT(\"D_TalentArchetypes\", \"GreatHunt_IceMammoth-DisplayName\", \"Rimetusk\")",
+            "Icon": "/Game/Assets/2DArt/UI/Icons/BossMonsters/Icon_Wolf.Icon_Wolf",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "Prospect_Elysium",
+            "Model": {
+                "RowName": "Prospect"
+            },
+            "DisplayName": "NSLOCTEXT(\"D_TalentArchetypes\", \"Prospect_Elysium-DisplayName\", \"Elysium\")",
+            "Icon": "/Game/Assets/2DArt/UI/Icons/Icon_Consume.Icon_Consume",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Workshop_Biolab",
+            "Model": {
+                "RowName": "Workshop"
+            },
+            "DisplayName": "NSLOCTEXT(\"D_TalentArchetypes\", \"Workshop_Biolab-DisplayName\", \"Norex\")",
+            "Icon": "/Game/Assets/2DArt/UI/Icons/BossMonsters/T_Icon_Workshop_Biolab.T_Icon_Workshop_Biolab",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "GreatHunt_Ape",
+            "Model": {
+                "RowName": "Great_Hunt"
+            },
+            "DisplayName": "NSLOCTEXT(\"D_TalentArchetypes\", \"GreatHunt_Ape-DisplayName\", \"Garganutan\")",
+            "Icon": "/Game/Assets/2DArt/UI/Icons/BossMonsters/Icon_Wolf.Icon_Wolf",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "Creature_Cow",
+            "Model": {
+                "RowName": "Creature"
+            },
+            "DisplayName": "NSLOCTEXT(\"D_TalentArchetypes\", \"Creature_Cow-DisplayName\", \"Cow\")",
+            "BackgroundTexture": "/Game/Assets/2DArt/UI/FieldGuide/Creatures/Workshop/T_Bestiary_Cattle.T_Bestiary_Cattle",
+            "Icon": "/Game/Assets/2DArt/UI/Icons/BossMonsters/Icon_Wolf.Icon_Wolf"
+        },
+        {
+            "Name": "Creature_SwampBird",
+            "Model": {
+                "RowName": "Creature"
+            },
+            "DisplayName": "NSLOCTEXT(\"D_TalentArchetypes\", \"Creature_SwampBird-DisplayName\", \"Ubis\")",
+            "BackgroundTexture": "/Game/Assets/2DArt/UI/FieldGuide/Creatures/Swamp/T_Bestiary_SwampBird.T_Bestiary_SwampBird",
+            "Icon": "/Game/Assets/2DArt/UI/Icons/BossMonsters/Icon_Wolf.Icon_Wolf"
+        },
+        {
+            "Name": "Creature_Raptor",
+            "Model": {
+                "RowName": "Creature"
+            },
+            "DisplayName": "NSLOCTEXT(\"D_TalentArchetypes\", \"Creature_Raptor-DisplayName\", \"Raptor\")",
+            "BackgroundTexture": "/Game/Assets/2DArt/UI/FieldGuide/Creatures/Geothermal/T_Bestiary_Raptor_Geothermal.T_Bestiary_Raptor_Geothermal",
+            "Icon": "/Game/Assets/2DArt/UI/Icons/BossMonsters/Icon_Wolf.Icon_Wolf",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Creature_Raptor_Desert",
+            "Model": {
+                "RowName": "Creature"
+            },
+            "DisplayName": "NSLOCTEXT(\"D_TalentArchetypes\", \"Creature_Raptor_Desert-DisplayName\", \"Dune Raptor\")",
+            "BackgroundTexture": "/Game/Assets/2DArt/UI/FieldGuide/Creatures/Desert/T_Bestiary_Raptor_Desert.T_Bestiary_Raptor_Desert",
+            "Icon": "/Game/Assets/2DArt/UI/Icons/BossMonsters/Icon_Wolf.Icon_Wolf",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Creature_Chew",
+            "Model": {
+                "RowName": "Creature"
+            },
+            "DisplayName": "NSLOCTEXT(\"D_TalentArchetypes\", \"Creature_Chew-DisplayName\", \"Draven\")",
+            "BackgroundTexture": "/Game/Assets/2DArt/UI/FieldGuide/Creatures/Desert/T_Bestiary_Chew.T_Bestiary_Chew",
+            "Icon": "/Game/Assets/2DArt/UI/Icons/BossMonsters/Icon_Wolf.Icon_Wolf",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Creature_Slinker",
+            "Model": {
+                "RowName": "Creature"
+            },
+            "DisplayName": "NSLOCTEXT(\"D_TalentArchetypes\", \"Creature_Slinker-DisplayName\", \"Slinker\")",
+            "BackgroundTexture": "/Game/Assets/2DArt/UI/FieldGuide/Creatures/Tundra/T_Bestiary_Slinker.T_Bestiary_Slinker",
+            "Icon": "/Game/Assets/2DArt/UI/Icons/BossMonsters/Icon_Wolf.Icon_Wolf",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Creature_Orka",
+            "Model": {
+                "RowName": "Creature"
+            },
+            "DisplayName": "NSLOCTEXT(\"D_TalentArchetypes\", \"Creature_Orka-DisplayName\", \"Skulk\")",
+            "BackgroundTexture": "/Game/Assets/2DArt/UI/FieldGuide/Creatures/Arctic/T_Bestiary_Orka.T_Bestiary_Orka",
+            "Icon": "/Game/Assets/2DArt/UI/Icons/BossMonsters/Icon_Wolf.Icon_Wolf",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Creature_Storca",
+            "Model": {
+                "RowName": "Creature"
+            },
+            "DisplayName": "NSLOCTEXT(\"D_TalentArchetypes\", \"Creature_Storca-DisplayName\", \"Storca\")",
+            "BackgroundTexture": "/Game/Assets/2DArt/UI/FieldGuide/Creatures/Tundra/T_Bestiary_Storca.T_Bestiary_Storca",
+            "Icon": "/Game/Assets/2DArt/UI/Icons/BossMonsters/Icon_Wolf.Icon_Wolf",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Creature_Tundra_Monkey",
+            "Model": {
+                "RowName": "Creature"
+            },
+            "DisplayName": "NSLOCTEXT(\"D_TalentArchetypes\", \"Creature_Tundra_Monkey-DisplayName\", \"Gribbler\")",
+            "BackgroundTexture": "/Game/Assets/2DArt/UI/FieldGuide/Creatures/Tundra/T_Bestiary_TundraMonkey.T_Bestiary_TundraMonkey",
+            "Icon": "/Game/Assets/2DArt/UI/Icons/BossMonsters/Icon_Wolf.Icon_Wolf",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Creature_WoollyMammoth",
+            "Model": {
+                "RowName": "Creature"
+            },
+            "DisplayName": "NSLOCTEXT(\"D_TalentArchetypes\", \"Creature_WoollyMammoth-DisplayName\", \"Woolly Mammoth\")",
+            "BackgroundTexture": "/Game/Assets/2DArt/UI/FieldGuide/Creatures/Arctic/T_Bestiary_Mammoth.T_Bestiary_Mammoth",
+            "Icon": "/Game/Assets/2DArt/UI/Icons/BossMonsters/Icon_Wolf.Icon_Wolf"
+        },
+        {
+            "Name": "Creature_Bull",
+            "Model": {
+                "RowName": "Creature"
+            },
+            "DisplayName": "NSLOCTEXT(\"D_TalentArchetypes\", \"Creature_Bull-DisplayName\", \"Bull\")",
+            "BackgroundTexture": "/Game/Assets/2DArt/UI/FieldGuide/Creatures/Workshop/T_Bestiary_Cattle.T_Bestiary_Cattle",
+            "Icon": "/Game/Assets/2DArt/UI/Icons/BossMonsters/Icon_Wolf.Icon_Wolf",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Homestead"
+                }
+            }
+        },
+        {
+            "Name": "Creature_Pig",
+            "Model": {
+                "RowName": "Creature"
+            },
+            "DisplayName": "NSLOCTEXT(\"D_TalentArchetypes\", \"Creature_Pig-DisplayName\", \"Pig\")",
+            "Icon": "/Game/Assets/2DArt/UI/Icons/BossMonsters/Icon_Wolf.Icon_Wolf",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Homestead"
+                }
+            }
+        }
+    ]
+}

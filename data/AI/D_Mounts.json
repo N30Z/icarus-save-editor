@@ -1,0 +1,3061 @@
+{
+    "RowStruct": "/Script/Icarus.IcarusMount",
+    "Defaults": {
+        "AISetup": {
+            "RowName": "None",
+            "DataTableName": "D_AISetup"
+        },
+        "Icon": "None",
+        "Variations": [],
+        "RelevantSaddleQuery": {
+            "RowName": "None",
+            "DataTableName": "D_TagQueries"
+        },
+        "SupportedCombatStates": [],
+        "SupportedMovementStates": [],
+        "SupportedConsumptionStates": [
+            "Any",
+            "Assigned",
+            "None"
+        ],
+        "SupportedGrazingStates": [],
+        "Animations": {},
+        "InventoryPreviewCameraSettings": {
+            "RowName": "Mount",
+            "DataTableName": "D_PreviewCameraSettings"
+        },
+        "DefaultNames": [],
+        "MapIcon": {
+            "RowName": "None",
+            "DataTableName": "D_MapIcons"
+        },
+        "RelativeFeetOffset": {
+            "X": 0,
+            "Y": 0,
+            "Z": 0
+        },
+        "RelativeHandsOffset": {
+            "X": 0,
+            "Y": 0,
+            "Z": 0
+        },
+        "RelativeLightOffset": {
+            "X": 0,
+            "Y": 0,
+            "Z": 0
+        },
+        "SpringArmTargetDistance": 300,
+        "MountTalentArchetype": {
+            "RowName": "None",
+            "DataTableName": "D_TalentArchetypes"
+        },
+        "GrowthCurve": {
+            "RowName": "AI_Mounts",
+            "DataTableName": "D_CharacterGrowth"
+        },
+        "bUseTemperature": false,
+        "ComfortableTemperatureRange": {
+            "X": 8,
+            "Y": 42
+        },
+        "ColdTemperatureResistance": 0,
+        "HotTemperatureResistance": 0
+    },
+    "Rows": [
+        {
+            "Name": "Buffalo",
+            "AISetup": {
+                "RowName": "Mount_Buffalo"
+            },
+            "Icon": "/Game/Assets/2DArt/UI/Icons/MapIcons/T_Icon_Map_Buffalo.T_Icon_Map_Buffalo",
+            "Variations": [
+                {
+                    "MeshMaterials": {
+                        "0": "/Game/ASS/CRE/Buffalo/MI_CRE_Buffalo.MI_CRE_Buffalo"
+                    },
+                    "GFurMaterials": {
+                        "0": "/Game/ASS/CRE/Buffalo/MI_CRE_Buffalo_fur.MI_CRE_Buffalo_fur"
+                    },
+                    "CarcassMeshMaterials": {
+                        "0": "/Game/ASS/CRE/Buffalo/MI_CRE_Buffalo_Carcass.MI_CRE_Buffalo_Carcass"
+                    },
+                    "CarcassGFurMaterials": {
+                        "0": "/Game/ASS/CRE/Buffalo/MI_CRE_Buffalo_fur_Carcass.MI_CRE_Buffalo_fur_Carcass"
+                    },
+                    "Weighting": 2000
+                },
+                {
+                    "MeshMaterials": {
+                        "0": "/Game/ASS/CRE/Buffalo/MI_CRE_Buffalo_Rare_VarC.MI_CRE_Buffalo_Rare_VarC"
+                    },
+                    "GFurMaterials": {
+                        "0": "/Game/ASS/CRE/Buffalo/MI_CRE_Buffalo_Rare_VarC_Fur.MI_CRE_Buffalo_Rare_VarC_Fur"
+                    },
+                    "CarcassMeshMaterials": {
+                        "0": "/Game/ASS/CRE/Buffalo/MI_CRE_Buffalo_Rare_VarC_Carcass.MI_CRE_Buffalo_Rare_VarC_Carcass"
+                    },
+                    "CarcassGFurMaterials": {
+                        "0": "/Game/ASS/CRE/Buffalo/MI_CRE_Buffalo_Rare_VarC_fur_Carcass.MI_CRE_Buffalo_Rare_VarC_fur_Carcass"
+                    },
+                    "Weighting": 50
+                },
+                {
+                    "MeshMaterials": {
+                        "0": "/Game/ASS/CRE/Buffalo/MI_CRE_Buffalo_Rare_VarD.MI_CRE_Buffalo_Rare_VarD"
+                    },
+                    "GFurMaterials": {
+                        "0": "/Game/ASS/CRE/Buffalo/MI_CRE_Buffalo_Rare_VarD_Fur.MI_CRE_Buffalo_Rare_VarD_Fur"
+                    },
+                    "CarcassMeshMaterials": {
+                        "0": "/Game/ASS/CRE/Buffalo/MI_CRE_Buffalo_Rare_VarD_Carcass.MI_CRE_Buffalo_Rare_VarD_Carcass"
+                    },
+                    "CarcassGFurMaterials": {
+                        "0": "/Game/ASS/CRE/Buffalo/MI_CRE_Buffalo_Rare_VarD_fur_Carcass.MI_CRE_Buffalo_Rare_VarD_fur_Carcass"
+                    },
+                    "Weighting": 50
+                },
+                {
+                    "MeshMaterials": {
+                        "0": "/Game/ASS/CRE/Buffalo/MI_CRE_Buffalo_Rare_VarG.MI_CRE_Buffalo_Rare_VarG"
+                    },
+                    "GFurMaterials": {
+                        "0": "/Game/ASS/CRE/Buffalo/MI_CRE_Buffalo_Rare_VarG_Fur.MI_CRE_Buffalo_Rare_VarG_Fur"
+                    },
+                    "CarcassMeshMaterials": {
+                        "0": "/Game/ASS/CRE/Buffalo/MI_CRE_Buffalo_Rare_VarG_Carcass.MI_CRE_Buffalo_Rare_VarG_Carcass"
+                    },
+                    "CarcassGFurMaterials": {
+                        "0": "/Game/ASS/CRE/Buffalo/MI_CRE_Buffalo_Rare_VarG_fur_Carcass.MI_CRE_Buffalo_Rare_VarG_fur_Carcass"
+                    },
+                    "Weighting": 50
+                },
+                {
+                    "MeshMaterials": {
+                        "0": "/Game/ASS/CRE/Buffalo/MI_CRE_Buffalo_Rare_VarH.MI_CRE_Buffalo_Rare_VarH"
+                    },
+                    "GFurMaterials": {
+                        "0": "/Game/ASS/CRE/Buffalo/MI_CRE_Buffalo_Rare_VarH_Fur.MI_CRE_Buffalo_Rare_VarH_Fur"
+                    },
+                    "CarcassMeshMaterials": {
+                        "0": "/Game/ASS/CRE/Buffalo/MI_CRE_Buffalo_Rare_VarH_Carcass.MI_CRE_Buffalo_Rare_VarH_Carcass"
+                    },
+                    "CarcassGFurMaterials": {
+                        "0": "/Game/ASS/CRE/Buffalo/MI_CRE_Buffalo_Rare_VarH_fur_Carcass.MI_CRE_Buffalo_Rare_VarH_fur_Carcass"
+                    },
+                    "Weighting": 50
+                },
+                {
+                    "MeshMaterials": {
+                        "0": "/Game/ASS/CRE/Buffalo/MI_CRE_Buffalo_White.MI_CRE_Buffalo_White"
+                    },
+                    "GFurMaterials": {
+                        "0": "/Game/ASS/CRE/Buffalo/MI_CRE_Buffalo_White_fur.MI_CRE_Buffalo_White_fur"
+                    },
+                    "CarcassMeshMaterials": {
+                        "0": "/Game/ASS/CRE/Buffalo/MI_CRE_Buffalo_White_Carcass.MI_CRE_Buffalo_White_Carcass"
+                    },
+                    "CarcassGFurMaterials": {
+                        "0": "/Game/ASS/CRE/Buffalo/MI_CRE_Buffalo_White_fur_Carcass.MI_CRE_Buffalo_White_fur_Carcass"
+                    },
+                    "Weighting": 5
+                },
+                {
+                    "MeshMaterials": {
+                        "0": "/Game/ASS/CRE/Buffalo/MI_CRE_Buffalo_Legendary_VarA.MI_CRE_Buffalo_Legendary_VarA"
+                    },
+                    "GFurMaterials": {
+                        "0": "/Game/ASS/CRE/Buffalo/MI_CRE_Buffalo_Legendary_VarA_Fur.MI_CRE_Buffalo_Legendary_VarA_Fur"
+                    },
+                    "CarcassMeshMaterials": {
+                        "0": "/Game/ASS/CRE/Buffalo/MI_CRE_Buffalo_Legendary_VarA_Carcass.MI_CRE_Buffalo_Legendary_VarA_Carcass"
+                    },
+                    "CarcassGFurMaterials": {
+                        "0": "/Game/ASS/CRE/Buffalo/MI_CRE_Buffalo_Legendary_VarA_fur_Carcass.MI_CRE_Buffalo_Legendary_VarA_fur_Carcass"
+                    },
+                    "Weighting": 5
+                },
+                {
+                    "MeshMaterials": {
+                        "0": "/Game/ASS/CRE/Buffalo/MI_CRE_Buffalo_Legendary_VarB.MI_CRE_Buffalo_Legendary_VarB"
+                    },
+                    "GFurMaterials": {
+                        "0": "/Game/ASS/CRE/Buffalo/MI_CRE_Buffalo_Legendary_VarB_Fur.MI_CRE_Buffalo_Legendary_VarB_Fur"
+                    },
+                    "CarcassMeshMaterials": {
+                        "0": "/Game/ASS/CRE/Buffalo/MI_CRE_Buffalo_Legendary_VarB_Carcass.MI_CRE_Buffalo_Legendary_VarB_Carcass"
+                    },
+                    "CarcassGFurMaterials": {
+                        "0": "/Game/ASS/CRE/Buffalo/MI_CRE_Buffalo_Legendary_VarB_fur_Carcass.MI_CRE_Buffalo_Legendary_VarB_fur_Carcass"
+                    },
+                    "Weighting": 5
+                }
+            ],
+            "RelevantSaddleQuery": {
+                "RowName": "Any_Saddle"
+            },
+            "SupportedCombatStates": [
+                "DoNotEngage",
+                "NeutralEngagement",
+                "AggressiveEngagement"
+            ],
+            "SupportedMovementStates": [
+                "Follow",
+                "IdleWander",
+                "IdleStanding",
+                "IdleLying"
+            ],
+            "Animations": {
+                "(TagName=\"BT.Mount.Animation.IdleStanding\")": "/Game/ThirdPartyAssets/AnimalsVol01/Buffalo/Meshes/Animations/Buffalo_Stand_Idle_Montage.Buffalo_Stand_Idle_Montage",
+                "(TagName=\"BT.Mount.Animation.Rest\")": "/Game/ThirdPartyAssets/AnimalsVol01/Buffalo/Meshes/Animations/Buffalo_Rest_Montage.Buffalo_Rest_Montage",
+                "(TagName=\"BT.Mount.Animation.Eat\")": "/Game/ThirdPartyAssets/AnimalsVol01/Buffalo/Meshes/Animations/Buffalo_Eating_Montage.Buffalo_Eating_Montage",
+                "(TagName=\"BT.Mount.Animation.Jump\")": "/Game/ThirdPartyAssets/AnimalsVol01/Buffalo/Meshes/Animations/Buffalo_Jump_Montage.Buffalo_Jump_Montage",
+                "(TagName=\"BT.Mount.Animation.Attack\")": "/Game/ThirdPartyAssets/AnimalsVol01/Buffalo/Meshes/Animations/Buffalo_Attack_Montage.Buffalo_Attack_Montage"
+            },
+            "InventoryPreviewCameraSettings": {
+                "RowName": "Mount_Buffalo"
+            },
+            "DefaultNames": [
+                "NSLOCTEXT(\"D_Mounts\", \"Buffalo-DefaultNames-0\", \"Thales\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Buffalo-DefaultNames-1\", \"Pythagoras\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Buffalo-DefaultNames-2\", \"Protagoras\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Buffalo-DefaultNames-3\", \"Socrates\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Buffalo-DefaultNames-4\", \"Plato\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Buffalo-DefaultNames-5\", \"Aristotle\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Buffalo-DefaultNames-6\", \"Epicurus\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Buffalo-DefaultNames-7\", \"Diogenes\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Buffalo-DefaultNames-8\", \"Zeno\")"
+            ],
+            "MapIcon": {
+                "RowName": "Mount"
+            },
+            "RelativeFeetOffset": {
+                "Y": 10,
+                "Z": 10
+            },
+            "RelativeLightOffset": {
+                "X": 5.577991962432861,
+                "Y": -33.10087585449219,
+                "Z": 66
+            },
+            "MountTalentArchetype": {
+                "RowName": "Creature_Buffalo"
+            },
+            "bUseTemperature": true
+        },
+        {
+            "Name": "Moa",
+            "AISetup": {
+                "RowName": "Mount_Moa"
+            },
+            "Icon": "/Game/Assets/2DArt/UI/Icons/MapIcons/T_Icon_Map_Moa.T_Icon_Map_Moa",
+            "Variations": [
+                {
+                    "MeshMaterials": {
+                        "0": "/Game/ASS/CRE/Moa/M_CRE_Moa_MI.M_CRE_Moa_MI"
+                    },
+                    "GFurMaterials": {
+                        "0": "/Game/ASS/CRE/Moa/M_CRE_Moa_fur.M_CRE_Moa_fur"
+                    },
+                    "CarcassMeshMaterials": {
+                        "0": "/Game/ASS/CRE/Moa/M_CRE_Moa_carc.M_CRE_Moa_carc"
+                    },
+                    "CarcassGFurMaterials": {
+                        "0": "/Game/ASS/CRE/Moa/M_CRE_Moa_fur.M_CRE_Moa_fur"
+                    },
+                    "Weighting": 2000
+                },
+                {
+                    "MeshMaterials": {
+                        "0": "/Game/ASS/CRE/Moa/Colour_Variants/M_CRE_Moa_Var5.M_CRE_Moa_Var5"
+                    },
+                    "GFurMaterials": {
+                        "0": "/Game/ASS/CRE/Moa/Colour_Variants/M_CRE_Moa_Var5_Fur.M_CRE_Moa_Var5_Fur"
+                    },
+                    "CarcassMeshMaterials": {
+                        "0": "/Game/ASS/CRE/Moa/Colour_Variants/M_CRE_Moa_Carcass_Var5.M_CRE_Moa_Carcass_Var5"
+                    },
+                    "CarcassGFurMaterials": {
+                        "0": "/Game/ASS/CRE/Moa/Colour_Variants/M_CRE_Moa_Var5_Carcass_Fur.M_CRE_Moa_Var5_Carcass_Fur"
+                    },
+                    "Weighting": 50
+                },
+                {
+                    "MeshMaterials": {
+                        "0": "/Game/ASS/CRE/Moa/Colour_Variants/M_CRE_Moa_Var8.M_CRE_Moa_Var8"
+                    },
+                    "GFurMaterials": {
+                        "0": "/Game/ASS/CRE/Moa/Colour_Variants/M_CRE_Moa_Var8_Fur.M_CRE_Moa_Var8_Fur"
+                    },
+                    "CarcassMeshMaterials": {
+                        "0": "/Game/ASS/CRE/Moa/Colour_Variants/M_CRE_Moa_Carcass_Var8.M_CRE_Moa_Carcass_Var8"
+                    },
+                    "CarcassGFurMaterials": {
+                        "0": "/Game/ASS/CRE/Moa/Colour_Variants/M_CRE_Moa_Var8_Carcass_Fur.M_CRE_Moa_Var8_Carcass_Fur"
+                    },
+                    "Weighting": 50
+                },
+                {
+                    "MeshMaterials": {
+                        "0": "/Game/ASS/CRE/Moa/Colour_Variants/M_CRE_Moa_Var9.M_CRE_Moa_Var9"
+                    },
+                    "GFurMaterials": {
+                        "0": "/Game/ASS/CRE/Moa/Colour_Variants/M_CRE_Moa_Var9_Fur.M_CRE_Moa_Var9_Fur"
+                    },
+                    "CarcassMeshMaterials": {
+                        "0": "/Game/ASS/CRE/Moa/Colour_Variants/M_CRE_Moa_Carcass_Var9.M_CRE_Moa_Carcass_Var9"
+                    },
+                    "CarcassGFurMaterials": {
+                        "0": "/Game/ASS/CRE/Moa/Colour_Variants/M_CRE_Moa_Var9_Carcass_Fur.M_CRE_Moa_Var9_Carcass_Fur"
+                    },
+                    "Weighting": 50
+                },
+                {
+                    "MeshMaterials": {
+                        "0": "/Game/ASS/CRE/Moa/Colour_Variants/M_CRE_Moa_Var10.M_CRE_Moa_Var10"
+                    },
+                    "GFurMaterials": {
+                        "0": "/Game/ASS/CRE/Moa/Colour_Variants/M_CRE_Moa_Var10_Fur.M_CRE_Moa_Var10_Fur"
+                    },
+                    "CarcassMeshMaterials": {
+                        "0": "/Game/ASS/CRE/Moa/Colour_Variants/M_CRE_Moa_Carcass_Var10.M_CRE_Moa_Carcass_Var10"
+                    },
+                    "CarcassGFurMaterials": {
+                        "0": "/Game/ASS/CRE/Moa/Colour_Variants/M_CRE_Moa_Var10_Carcass_Fur.M_CRE_Moa_Var10_Carcass_Fur"
+                    },
+                    "Weighting": 25
+                },
+                {
+                    "MeshMaterials": {
+                        "0": "/Game/ASS/CRE/Moa/Colour_Variants/M_CRE_Moa_Var11.M_CRE_Moa_Var11"
+                    },
+                    "GFurMaterials": {
+                        "0": "/Game/ASS/CRE/Moa/Colour_Variants/M_CRE_Moa_Var11_Fur.M_CRE_Moa_Var11_Fur"
+                    },
+                    "CarcassMeshMaterials": {
+                        "0": "/Game/ASS/CRE/Moa/Colour_Variants/M_CRE_Moa_Carcass_Var11.M_CRE_Moa_Carcass_Var11"
+                    },
+                    "CarcassGFurMaterials": {
+                        "0": "/Game/ASS/CRE/Moa/Colour_Variants/M_CRE_Moa_Var11_Carcass_Fur.M_CRE_Moa_Var11_Carcass_Fur"
+                    },
+                    "Weighting": 25
+                },
+                {
+                    "MeshMaterials": {
+                        "0": "/Game/ASS/CRE/Moa/Colour_Variants/M_CRE_Moa_Var12.M_CRE_Moa_Var12"
+                    },
+                    "GFurMaterials": {
+                        "0": "/Game/ASS/CRE/Moa/Colour_Variants/M_CRE_Moa_Var12_Fur.M_CRE_Moa_Var12_Fur"
+                    },
+                    "CarcassMeshMaterials": {
+                        "0": "/Game/ASS/CRE/Moa/Colour_Variants/M_CRE_Moa_Carcass_Var12.M_CRE_Moa_Carcass_Var12"
+                    },
+                    "CarcassGFurMaterials": {
+                        "0": "/Game/ASS/CRE/Moa/Colour_Variants/M_CRE_Moa_Var12_Carcass_Fur.M_CRE_Moa_Var12_Carcass_Fur"
+                    },
+                    "Weighting": 25
+                },
+                {
+                    "MeshMaterials": {
+                        "0": "/Game/ASS/CRE/Moa/Colour_Variants/M_CRE_Moa_Var13.M_CRE_Moa_Var13"
+                    },
+                    "GFurMaterials": {
+                        "0": "/Game/ASS/CRE/Moa/Colour_Variants/M_CRE_Moa_Var13_Fur.M_CRE_Moa_Var13_Fur"
+                    },
+                    "CarcassMeshMaterials": {
+                        "0": "/Game/ASS/CRE/Moa/Colour_Variants/M_CRE_Moa_Carcass_Var13.M_CRE_Moa_Carcass_Var13"
+                    },
+                    "CarcassGFurMaterials": {
+                        "0": "/Game/ASS/CRE/Moa/Colour_Variants/M_CRE_Moa_Var13_Carcass_Fur.M_CRE_Moa_Var13_Carcass_Fur"
+                    },
+                    "Weighting": 5
+                }
+            ],
+            "RelevantSaddleQuery": {
+                "RowName": "Any_Saddle_Standard"
+            },
+            "SupportedCombatStates": [
+                "DoNotEngage"
+            ],
+            "SupportedMovementStates": [
+                "Follow",
+                "IdleWander",
+                "IdleStanding",
+                "IdleLying"
+            ],
+            "Animations": {
+                "(TagName=\"BT.Mount.Animation.IdleStanding\")": "/Game/ASS/CRE/Moa/Anims/Moa_Stand_Idle_Montage.Moa_Stand_Idle_Montage",
+                "(TagName=\"BT.Mount.Animation.Rest\")": "/Game/ASS/CRE/Moa/Anims/Moa_Rest_Montage.Moa_Rest_Montage",
+                "(TagName=\"BT.Mount.Animation.Eat\")": "/Game/ASS/CRE/Moa/Anims/Moa_Eat_Montage.Moa_Eat_Montage",
+                "(TagName=\"BT.Mount.Animation.Jump\")": "/Game/ASS/CRE/Moa/Anims/Moa_Jump_Montage.Moa_Jump_Montage",
+                "(TagName=\"BT.Mount.Animation.Attack\")": "/Game/ASS/CRE/Moa/Anims/Moa_Attack_Montage.Moa_Attack_Montage"
+            },
+            "InventoryPreviewCameraSettings": {
+                "RowName": "Mount_Moa"
+            },
+            "DefaultNames": [
+                "NSLOCTEXT(\"D_Mounts\", \"Moa-DefaultNames-0\", \"Ranginui\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Moa-DefaultNames-1\", \"Kupe\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Moa-DefaultNames-2\", \"Rongo\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Moa-DefaultNames-3\", \"Tangaroa\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Moa-DefaultNames-4\", \"Haumia\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Moa-DefaultNames-5\", \"Maui\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Moa-DefaultNames-6\", \"Tane\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Moa-DefaultNames-7\", \"Tawhiri\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Moa-DefaultNames-8\", \"Tu\")"
+            ],
+            "MapIcon": {
+                "RowName": "Mount"
+            },
+            "RelativeFeetOffset": {
+                "X": -10,
+                "Y": 15,
+                "Z": -10
+            },
+            "RelativeHandsOffset": {
+                "X": -15
+            },
+            "RelativeLightOffset": {
+                "X": 5.577991962432861,
+                "Y": -33.10087585449219,
+                "Z": 66
+            },
+            "MountTalentArchetype": {
+                "RowName": "Creature_Moa"
+            },
+            "bUseTemperature": true,
+            "ComfortableTemperatureRange": {
+                "X": 12,
+                "Y": 52
+            }
+        },
+        {
+            "Name": "Swamp_Bird",
+            "AISetup": {
+                "RowName": "Mount_SwampBird"
+            },
+            "Icon": "/Game/Assets/2DArt/UI/Icons/MapIcons/T_Icon_Map_Ubis.T_Icon_Map_Ubis",
+            "RelevantSaddleQuery": {
+                "RowName": "Any_Saddle_Standard"
+            },
+            "SupportedCombatStates": [
+                "DoNotEngage"
+            ],
+            "SupportedMovementStates": [
+                "Follow",
+                "IdleWander",
+                "IdleStanding",
+                "IdleLying"
+            ],
+            "Animations": {
+                "(TagName=\"BT.Mount.Animation.IdleStanding\")": "/Game/ASS/CRE/SwampBird/Anims/SwampBird_Stand_Idle_Montage.SwampBird_Stand_Idle_Montage",
+                "(TagName=\"BT.Mount.Animation.Rest\")": "/Game/ASS/CRE/SwampBird/Anims/SwampBird_Rest_Montage.SwampBird_Rest_Montage",
+                "(TagName=\"BT.Mount.Animation.Eat\")": "/Game/ASS/CRE/SwampBird/Anims/SwampBird_Eat_Montage.SwampBird_Eat_Montage",
+                "(TagName=\"BT.Mount.Animation.Jump\")": "/Game/ASS/CRE/SwampBird/Anims/SwampBird_Jump_Montage.SwampBird_Jump_Montage",
+                "(TagName=\"BT.Mount.Animation.Attack\")": "/Game/ASS/CRE/SwampBird/Anims/SwampBird_Attack_Montage.SwampBird_Attack_Montage"
+            },
+            "InventoryPreviewCameraSettings": {
+                "RowName": "Mount_SwampBird"
+            },
+            "DefaultNames": [
+                "NSLOCTEXT(\"D_Mounts\", \"Swamp_Bird-DefaultNames-0\", \"Nal\\'tuk\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Swamp_Bird-DefaultNames-1\", \"Vul\\'Naathi\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Swamp_Bird-DefaultNames-2\", \"Hoshekk\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Swamp_Bird-DefaultNames-3\", \"Tyri\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Swamp_Bird-DefaultNames-4\", \"Mek\\'ta\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Swamp_Bird-DefaultNames-5\", \"Ullok\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Swamp_Bird-DefaultNames-6\", \"Drozan\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Swamp_Bird-DefaultNames-7\", \"Tariq\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Swamp_Bird-DefaultNames-8\", \"Kezh\\'un\")"
+            ],
+            "MapIcon": {
+                "RowName": "Mount"
+            },
+            "RelativeFeetOffset": {
+                "X": -10,
+                "Y": 20,
+                "Z": -10
+            },
+            "RelativeHandsOffset": {
+                "X": -15
+            },
+            "RelativeLightOffset": {
+                "X": 5.577991962432861,
+                "Y": -33.10087585449219,
+                "Z": 66
+            },
+            "MountTalentArchetype": {
+                "RowName": "Creature_SwampBird"
+            },
+            "bUseTemperature": true,
+            "ComfortableTemperatureRange": {
+                "Y": 35
+            }
+        },
+        {
+            "Name": "SwampQuad",
+            "AISetup": {
+                "RowName": "Mount_SwampQuad"
+            },
+            "Icon": "/Game/Assets/2DArt/UI/Icons/MapIcons/T_Icon_Map_SwampQuad.T_Icon_Map_SwampQuad",
+            "RelevantSaddleQuery": {
+                "RowName": "Any_Saddle_Standard"
+            },
+            "SupportedCombatStates": [
+                "DoNotEngage"
+            ],
+            "SupportedMovementStates": [
+                "Follow",
+                "IdleWander",
+                "IdleStanding",
+                "IdleLying"
+            ],
+            "Animations": {
+                "(TagName=\"BT.Mount.Animation.IdleStanding\")": "/Game/ASS/CRE/Swamp_Quadruped/Anims/SwampQuad_Idle_Montage.SwampQuad_Idle_Montage",
+                "(TagName=\"BT.Mount.Animation.Rest\")": "/Game/ASS/CRE/Swamp_Quadruped/Anims/SwampQuad_Rest_Montage.SwampQuad_Rest_Montage",
+                "(TagName=\"BT.Mount.Animation.Eat\")": "/Game/ASS/CRE/Swamp_Quadruped/Anims/SwampQuad_Eating_Montage.SwampQuad_Eating_Montage",
+                "(TagName=\"BT.Mount.Animation.Jump\")": "/Game/ASS/CRE/Swamp_Quadruped/Anims/SwampQuad_Jump_Montage.SwampQuad_Jump_Montage"
+            },
+            "InventoryPreviewCameraSettings": {
+                "RowName": "Mount_SwampQuad"
+            },
+            "DefaultNames": [
+                "NSLOCTEXT(\"D_Mounts\", \"SwampQuad-DefaultNames-0\", \"Ranginui\")",
+                "NSLOCTEXT(\"D_Mounts\", \"SwampQuad-DefaultNames-1\", \"Kupe\")",
+                "NSLOCTEXT(\"D_Mounts\", \"SwampQuad-DefaultNames-2\", \"Rongo\")",
+                "NSLOCTEXT(\"D_Mounts\", \"SwampQuad-DefaultNames-3\", \"Tangaroa\")",
+                "NSLOCTEXT(\"D_Mounts\", \"SwampQuad-DefaultNames-4\", \"Haumia\")",
+                "NSLOCTEXT(\"D_Mounts\", \"SwampQuad-DefaultNames-5\", \"Maui\")",
+                "NSLOCTEXT(\"D_Mounts\", \"SwampQuad-DefaultNames-6\", \"Tane\")",
+                "NSLOCTEXT(\"D_Mounts\", \"SwampQuad-DefaultNames-7\", \"Tawhiri\")",
+                "NSLOCTEXT(\"D_Mounts\", \"SwampQuad-DefaultNames-8\", \"Tu\")"
+            ],
+            "MapIcon": {
+                "RowName": "Mount"
+            },
+            "RelativeFeetOffset": {
+                "X": -10,
+                "Y": 20,
+                "Z": -10
+            },
+            "RelativeHandsOffset": {
+                "X": -15
+            },
+            "RelativeLightOffset": {
+                "X": 5.577991962432861,
+                "Y": -33.10087585449219,
+                "Z": 66
+            },
+            "MountTalentArchetype": {
+                "RowName": "Creature_Swamp_Quadruped"
+            },
+            "bUseTemperature": true,
+            "ComfortableTemperatureRange": {
+                "Y": 35
+            }
+        },
+        {
+            "Name": "Snow_Striker",
+            "AISetup": {
+                "RowName": "Mount_Snow_Striker"
+            },
+            "Icon": "/Game/Assets/2DArt/UI/Icons/MapIcons/T_Icon_Map_Striker.T_Icon_Map_Striker",
+            "RelevantSaddleQuery": {
+                "RowName": "Any_Saddle_Standard"
+            },
+            "SupportedCombatStates": [
+                "DoNotEngage"
+            ],
+            "SupportedMovementStates": [
+                "Follow",
+                "IdleWander",
+                "IdleStanding",
+                "IdleLying"
+            ],
+            "Animations": {
+                "(TagName=\"BT.Mount.Animation.IdleStanding\")": "/Game/ASS/CRE/Striker/Anim/SnowStriker_ilde4legs_Montage.SnowStriker_ilde4legs_Montage",
+                "(TagName=\"BT.Mount.Animation.Rest\")": "/Game/ASS/CRE/Striker/Anim/Striker_Sleep_Montage.Striker_Sleep_Montage",
+                "(TagName=\"BT.Mount.Animation.Eat\")": "/Game/ASS/CRE/Striker/Anim/Striker_Eat_Montage.Striker_Eat_Montage",
+                "(TagName=\"BT.Mount.Animation.Jump\")": "/Game/ASS/CRE/Moa/Anims/Moa_Jump_Montage.Moa_Jump_Montage"
+            },
+            "InventoryPreviewCameraSettings": {
+                "RowName": "Mount_Striker"
+            },
+            "DefaultNames": [
+                "NSLOCTEXT(\"D_Mounts\", \"Snow_Striker-DefaultNames-0\", \"Ranginui\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Snow_Striker-DefaultNames-1\", \"Kupe\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Snow_Striker-DefaultNames-2\", \"Rongo\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Snow_Striker-DefaultNames-3\", \"Tangaroa\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Snow_Striker-DefaultNames-4\", \"Haumia\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Snow_Striker-DefaultNames-5\", \"Maui\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Snow_Striker-DefaultNames-6\", \"Tane\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Snow_Striker-DefaultNames-7\", \"Tawhiri\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Snow_Striker-DefaultNames-8\", \"Tu\")"
+            ],
+            "MapIcon": {
+                "RowName": "Mount"
+            },
+            "RelativeFeetOffset": {
+                "X": -10,
+                "Y": 20,
+                "Z": -10
+            },
+            "RelativeHandsOffset": {
+                "X": -15
+            },
+            "RelativeLightOffset": {
+                "X": 5.577991962432861,
+                "Y": -33.10087585449219,
+                "Z": 66
+            },
+            "bUseTemperature": true,
+            "ComfortableTemperatureRange": {
+                "X": -17,
+                "Y": 26
+            }
+        },
+        {
+            "Name": "WoolyZebra",
+            "AISetup": {
+                "RowName": "Mount_WoolyZebra"
+            },
+            "Icon": "/Game/Assets/2DArt/UI/Icons/MapIcons/T_Icon_Map_WoolyZebra.T_Icon_Map_WoolyZebra",
+            "RelevantSaddleQuery": {
+                "RowName": "Any_Saddle"
+            },
+            "SupportedCombatStates": [
+                "DoNotEngage",
+                "NeutralEngagement",
+                "AggressiveEngagement"
+            ],
+            "SupportedMovementStates": [
+                "Follow",
+                "IdleWander",
+                "IdleStanding",
+                "IdleLying"
+            ],
+            "Animations": {
+                "(TagName=\"BT.Mount.Animation.IdleStanding\")": "/Game/ASS/CRE/Zebra/Anim/Wooly_Zebra_Idle_Montage_mounts.Wooly_Zebra_Idle_Montage_mounts",
+                "(TagName=\"BT.Mount.Animation.Rest\")": "/Game/ASS/CRE/Zebra/Anim/Montages/zebra_Sleep_Montage.zebra_Sleep_Montage",
+                "(TagName=\"BT.Mount.Animation.Eat\")": "/Game/ASS/CRE/Zebra/Anim/Montages/zebra_Eat_Montage.zebra_Eat_Montage",
+                "(TagName=\"BT.Mount.Animation.Jump\")": "/Game/ASS/CRE/Zebra/Anim/Montages/Zebra_Jump_Montage.Zebra_Jump_Montage",
+                "(TagName=\"BT.Mount.Animation.Attack\")": "/Game/ASS/CRE/Zebra/Anim/Wooly_zebra_Attack_Montage.Wooly_zebra_Attack_Montage"
+            },
+            "InventoryPreviewCameraSettings": {
+                "RowName": "Mount_Chew"
+            },
+            "DefaultNames": [
+                "NSLOCTEXT(\"D_Mounts\", \"WoolyZebra-DefaultNames-0\", \"Boris\")",
+                "NSLOCTEXT(\"D_Mounts\", \"WoolyZebra-DefaultNames-1\", \"Natalya\")",
+                "NSLOCTEXT(\"D_Mounts\", \"WoolyZebra-DefaultNames-2\", \"Nikolai\")",
+                "NSLOCTEXT(\"D_Mounts\", \"WoolyZebra-DefaultNames-3\", \"Vladimir\")",
+                "NSLOCTEXT(\"D_Mounts\", \"WoolyZebra-DefaultNames-4\", \"Pavlov\")",
+                "NSLOCTEXT(\"D_Mounts\", \"WoolyZebra-DefaultNames-5\", \"Dragomir\")",
+                "NSLOCTEXT(\"D_Mounts\", \"WoolyZebra-DefaultNames-6\", \"Radovan\")",
+                "NSLOCTEXT(\"D_Mounts\", \"WoolyZebra-DefaultNames-7\", \"Viktor\")",
+                "NSLOCTEXT(\"D_Mounts\", \"WoolyZebra-DefaultNames-8\", \"Olga\")"
+            ],
+            "MapIcon": {
+                "RowName": "Mount"
+            },
+            "RelativeFeetOffset": {
+                "Y": 10,
+                "Z": 10
+            },
+            "RelativeLightOffset": {
+                "X": 33,
+                "Y": -54,
+                "Z": 55
+            },
+            "MountTalentArchetype": {
+                "RowName": "Creature_WoolyZebra"
+            },
+            "bUseTemperature": true,
+            "ComfortableTemperatureRange": {
+                "X": -17,
+                "Y": 26
+            }
+        },
+        {
+            "Name": "Blueback",
+            "AISetup": {
+                "RowName": "Mount_BlueBack"
+            },
+            "Icon": "/Game/Assets/2DArt/UI/Icons/MapIcons/T_Icon_Map_blueback.T_Icon_Map_blueback",
+            "RelevantSaddleQuery": {
+                "RowName": "Any_Saddle"
+            },
+            "SupportedCombatStates": [
+                "DoNotEngage",
+                "NeutralEngagement",
+                "AggressiveEngagement"
+            ],
+            "SupportedMovementStates": [
+                "Follow",
+                "IdleWander",
+                "IdleStanding",
+                "IdleLying"
+            ],
+            "Animations": {
+                "(TagName=\"BT.Mount.Animation.IdleStanding\")": "/Game/ASS/CRE/Blueback/Anim/BlueBack_Stand_Idle_Montage.BlueBack_Stand_Idle_Montage",
+                "(TagName=\"BT.Mount.Animation.Rest\")": "/Game/ASS/CRE/Blueback/Anim/BlueBack_Rest_Montage.BlueBack_Rest_Montage",
+                "(TagName=\"BT.Mount.Animation.Eat\")": "/Game/ASS/CRE/Blueback/Anim/BlueBack_Eating_Montage.BlueBack_Eating_Montage",
+                "(TagName=\"BT.Mount.Animation.Jump\")": "/Game/ASS/CRE/Blueback/Anim/BlueBack_Jump_Montage.BlueBack_Jump_Montage",
+                "(TagName=\"BT.Mount.Animation.Attack\")": "/Game/ASS/CRE/Blueback/Anim/BlueBack_Attack_Montage.BlueBack_Attack_Montage"
+            },
+            "InventoryPreviewCameraSettings": {
+                "RowName": "Mount_Blueback"
+            },
+            "DefaultNames": [
+                "NSLOCTEXT(\"D_Mounts\", \"Blueback-DefaultNames-0\", \"Arnold\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Blueback-DefaultNames-1\", \"Sylvester\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Blueback-DefaultNames-2\", \"Jason\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Blueback-DefaultNames-3\", \"Chuck\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Blueback-DefaultNames-4\", \"Dolph\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Blueback-DefaultNames-5\", \"Bruce\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Blueback-DefaultNames-6\", \"Jean\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Blueback-DefaultNames-7\", \"Jackie\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Blueback-DefaultNames-8\", \"Keanu\")"
+            ],
+            "MapIcon": {
+                "RowName": "Mount"
+            },
+            "RelativeFeetOffset": {
+                "Y": 10,
+                "Z": 10
+            },
+            "RelativeLightOffset": {
+                "X": 5.577991962432861,
+                "Y": -33.10087585449219,
+                "Z": 66
+            },
+            "MountTalentArchetype": {
+                "RowName": "Creature_Blueback"
+            },
+            "bUseTemperature": true,
+            "ComfortableTemperatureRange": {
+                "Y": 35
+            }
+        },
+        {
+            "Name": "Horse",
+            "AISetup": {
+                "RowName": "Mount_Horse"
+            },
+            "Icon": "/Game/Assets/2DArt/UI/Icons/MapIcons/T_Icon_Map_Terrenus.T_Icon_Map_Terrenus",
+            "RelevantSaddleQuery": {
+                "RowName": "Any_Saddle"
+            },
+            "SupportedCombatStates": [
+                "DoNotEngage",
+                "NeutralEngagement",
+                "AggressiveEngagement"
+            ],
+            "SupportedMovementStates": [
+                "Follow",
+                "IdleWander",
+                "IdleStanding",
+                "IdleLying"
+            ],
+            "Animations": {
+                "(TagName=\"BT.Mount.Animation.IdleStanding\")": "/Game/ASS/CRE/Zebra/Anim/Montages/Horse_Idle_Montage.Horse_Idle_Montage",
+                "(TagName=\"BT.Mount.Animation.Rest\")": "/Game/ASS/CRE/Zebra/Anim/Montages/zebra_Sleep_Montage.zebra_Sleep_Montage",
+                "(TagName=\"BT.Mount.Animation.Eat\")": "/Game/ASS/CRE/Zebra/Anim/Montages/zebra_Eat_Montage.zebra_Eat_Montage",
+                "(TagName=\"BT.Mount.Animation.Jump\")": "/Game/ASS/CRE/Zebra/Anim/Montages/Zebra_Jump_Montage.Zebra_Jump_Montage",
+                "(TagName=\"BT.Mount.Animation.Attack\")": "/Game/ASS/CRE/Zebra/Anim/Montages/zebra_Attack_Montage.zebra_Attack_Montage",
+                "(TagName=\"BT.Mount.Animation.Pet\")": "/Game/ASS/CRE/Zebra/Anim/Montages/Horse_Idle_Montage.Horse_Idle_Montage"
+            },
+            "InventoryPreviewCameraSettings": {
+                "RowName": "Mount_Horse"
+            },
+            "DefaultNames": [
+                "NSLOCTEXT(\"D_Mounts\", \"Horse-DefaultNames-0\", \"Sir Percival\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Horse-DefaultNames-1\", \"Lord Rutherford\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Horse-DefaultNames-2\", \"Cornelius\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Horse-DefaultNames-3\", \"Bartholomew\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Horse-DefaultNames-4\", \"Octavius\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Horse-DefaultNames-5\", \"Archibald\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Horse-DefaultNames-6\", \"Ignatius\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Horse-DefaultNames-7\", \"Constantine\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Horse-DefaultNames-8\", \"Benedict\")"
+            ],
+            "MapIcon": {
+                "RowName": "Mount"
+            },
+            "RelativeFeetOffset": {
+                "X": -10,
+                "Y": 20,
+                "Z": -10
+            },
+            "RelativeHandsOffset": {
+                "X": -15
+            },
+            "RelativeLightOffset": {
+                "X": 33,
+                "Y": -54,
+                "Z": 55
+            },
+            "MountTalentArchetype": {
+                "RowName": "Creature_Terrenus"
+            },
+            "bUseTemperature": true,
+            "ComfortableTemperatureRange": {
+                "X": -8,
+                "Y": 35
+            }
+        },
+        {
+            "Name": "Tusker",
+            "AISetup": {
+                "RowName": "Mount_Tusker"
+            },
+            "Icon": "/Game/Assets/2DArt/UI/Icons/MapIcons/T_Icon_Map_Tusker.T_Icon_Map_Tusker",
+            "RelevantSaddleQuery": {
+                "RowName": "Any_Saddle"
+            },
+            "SupportedCombatStates": [
+                "DoNotEngage",
+                "NeutralEngagement",
+                "AggressiveEngagement"
+            ],
+            "SupportedMovementStates": [
+                "Follow",
+                "IdleWander",
+                "IdleStanding",
+                "IdleLying"
+            ],
+            "Animations": {
+                "(TagName=\"BT.Mount.Animation.IdleStanding\")": "/Game/ThirdPartyAssets/AnimalsVol01/Buffalo/Meshes/Animations/Buffalo_Stand_Idle_Montage.Buffalo_Stand_Idle_Montage",
+                "(TagName=\"BT.Mount.Animation.Rest\")": "/Game/ThirdPartyAssets/AnimalsVol01/Buffalo/Meshes/Animations/Buffalo_Rest_Montage.Buffalo_Rest_Montage",
+                "(TagName=\"BT.Mount.Animation.Eat\")": "/Game/ThirdPartyAssets/AnimalsVol01/Buffalo/Meshes/Animations/Buffalo_Eating_Montage.Buffalo_Eating_Montage",
+                "(TagName=\"BT.Mount.Animation.Jump\")": "/Game/ThirdPartyAssets/AnimalsVol01/Buffalo/Meshes/Animations/Buffalo_Jump_Montage.Buffalo_Jump_Montage",
+                "(TagName=\"BT.Mount.Animation.Attack\")": "/Game/ThirdPartyAssets/AnimalsVol01/Buffalo/Meshes/Animations/Buffalo_Attack_Montage.Buffalo_Attack_Montage",
+                "(TagName=\"BT.Mount.Animation.Attack.Charge\")": "/Game/ASS/CRE/Tusker/Animations/Tusker_Charge_Montage.Tusker_Charge_Montage"
+            },
+            "InventoryPreviewCameraSettings": {
+                "RowName": "Mount_Tusker"
+            },
+            "DefaultNames": [
+                "NSLOCTEXT(\"D_Mounts\", \"Tusker-DefaultNames-0\", \"Odin\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Tusker-DefaultNames-1\", \"Thor\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Tusker-DefaultNames-2\", \"Frigg\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Tusker-DefaultNames-3\", \"Tyr\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Tusker-DefaultNames-4\", \"Heimdallr\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Tusker-DefaultNames-5\", \"Loki\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Tusker-DefaultNames-6\", \"Freyja\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Tusker-DefaultNames-7\", \"Baldr\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Tusker-DefaultNames-8\", \"Mimir\")"
+            ],
+            "MapIcon": {
+                "RowName": "Mount"
+            },
+            "RelativeFeetOffset": {
+                "X": -10,
+                "Y": -17.5,
+                "Z": 10
+            },
+            "RelativeLightOffset": {
+                "X": 5.577991962432861,
+                "Y": -33.10087585449219,
+                "Z": 66
+            },
+            "MountTalentArchetype": {
+                "RowName": "Creature_Tusker"
+            },
+            "bUseTemperature": true,
+            "ComfortableTemperatureRange": {
+                "X": -17,
+                "Y": 26
+            }
+        },
+        {
+            "Name": "Wolf",
+            "AISetup": {
+                "RowName": "Tamed_Forest_Wolf"
+            },
+            "Icon": "/Game/Assets/2DArt/UI/Icons/MapIcons/T_Icon_Map_Wolf.T_Icon_Map_Wolf",
+            "Variations": [
+                {
+                    "MeshMaterials": {
+                        "0": "/Game/ASS/CRE/Wolf/M_CRE_Wolf.M_CRE_Wolf"
+                    },
+                    "GFurMaterials": {
+                        "0": "/Game/ASS/CRE/Wolf/M_CRE_Wolf_fur.M_CRE_Wolf_fur"
+                    },
+                    "CarcassMeshMaterials": {
+                        "0": "/Game/ASS/CRE/Wolf/M_CRE_Wolf_carc.M_CRE_Wolf_carc"
+                    },
+                    "CarcassGFurMaterials": {
+                        "0": "/Game/ASS/CRE/Wolf/M_CRE_Wolf_fur_carc.M_CRE_Wolf_fur_carc"
+                    },
+                    "Weighting": 2000
+                },
+                {
+                    "MeshMaterials": {
+                        "0": "/Game/ASS/CRE/Wolf/Wolf_Variants/M_CRE_Wolf_Rare_VarA.M_CRE_Wolf_Rare_VarA"
+                    },
+                    "GFurMaterials": {
+                        "0": "/Game/ASS/CRE/Wolf/Wolf_Variants/M_CRE_Wolf_Rare_VarA_fur.M_CRE_Wolf_Rare_VarA_fur"
+                    },
+                    "CarcassMeshMaterials": {
+                        "0": "/Game/ASS/CRE/Wolf/Wolf_Variants/M_CRE_Wolf_Rare_VarA_carc.M_CRE_Wolf_Rare_VarA_carc"
+                    },
+                    "CarcassGFurMaterials": {
+                        "0": "/Game/ASS/CRE/Wolf/Wolf_Variants/M_CRE_Wolf_Rare_VarA_fur_carc.M_CRE_Wolf_Rare_VarA_fur_carc"
+                    },
+                    "Weighting": 50
+                },
+                {
+                    "MeshMaterials": {
+                        "0": "/Game/ASS/CRE/Wolf/Wolf_Variants/M_CRE_Wolf_Rare_VarB.M_CRE_Wolf_Rare_VarB"
+                    },
+                    "GFurMaterials": {
+                        "0": "/Game/ASS/CRE/Wolf/Wolf_Variants/M_CRE_Wolf_Rare_VarB_fur.M_CRE_Wolf_Rare_VarB_fur"
+                    },
+                    "CarcassMeshMaterials": {
+                        "0": "/Game/ASS/CRE/Wolf/Wolf_Variants/M_CRE_Wolf_Rare_VarB_carc.M_CRE_Wolf_Rare_VarB_carc"
+                    },
+                    "CarcassGFurMaterials": {
+                        "0": "/Game/ASS/CRE/Wolf/Wolf_Variants/M_CRE_Wolf_Rare_VarA_fur_carc.M_CRE_Wolf_Rare_VarA_fur_carc"
+                    },
+                    "Weighting": 50
+                },
+                {
+                    "MeshMaterials": {
+                        "0": "/Game/ASS/CRE/Wolf/Wolf_Variants/M_CRE_Wolf_Rare_VarC.M_CRE_Wolf_Rare_VarC"
+                    },
+                    "GFurMaterials": {
+                        "0": "/Game/ASS/CRE/Wolf/Wolf_Variants/M_CRE_Wolf_Rare_VarC_fur.M_CRE_Wolf_Rare_VarC_fur"
+                    },
+                    "CarcassMeshMaterials": {
+                        "0": "/Game/ASS/CRE/Wolf/Wolf_Variants/M_CRE_Wolf_Rare_VarC_carc.M_CRE_Wolf_Rare_VarC_carc"
+                    },
+                    "CarcassGFurMaterials": {
+                        "0": "/Game/ASS/CRE/Wolf/Wolf_Variants/M_CRE_Wolf_Rare_VarC_fur_carc.M_CRE_Wolf_Rare_VarC_fur_carc"
+                    },
+                    "Weighting": 50
+                },
+                {
+                    "MeshMaterials": {
+                        "0": "/Game/ASS/CRE/Wolf/Wolf_Variants/M_CRE_Wolf_Rare_VarD.M_CRE_Wolf_Rare_VarD"
+                    },
+                    "GFurMaterials": {
+                        "0": "/Game/ASS/CRE/Wolf/Wolf_Variants/M_CRE_Wolf_Rare_VarD_fur.M_CRE_Wolf_Rare_VarD_fur"
+                    },
+                    "CarcassMeshMaterials": {
+                        "0": "/Game/ASS/CRE/Wolf/Wolf_Variants/M_CRE_Wolf_Rare_VarD_carc.M_CRE_Wolf_Rare_VarD_carc"
+                    },
+                    "CarcassGFurMaterials": {
+                        "0": "/Game/ASS/CRE/Wolf/Wolf_Variants/M_CRE_Wolf_Rare_VarD_fur_carc.M_CRE_Wolf_Rare_VarD_fur_carc"
+                    },
+                    "Weighting": 50
+                },
+                {
+                    "MeshMaterials": {
+                        "0": "/Game/ASS/CRE/Wolf/Wolf_Variants/M_CRE_Wolf_Rare_VarE.M_CRE_Wolf_Rare_VarE"
+                    },
+                    "GFurMaterials": {
+                        "0": "/Game/ASS/CRE/Wolf/Wolf_Variants/M_CRE_Wolf_Rare_VarE_fur.M_CRE_Wolf_Rare_VarE_fur"
+                    },
+                    "CarcassMeshMaterials": {
+                        "0": "/Game/ASS/CRE/Wolf/Wolf_Variants/M_CRE_Wolf_Rare_VarE_carc.M_CRE_Wolf_Rare_VarE_carc"
+                    },
+                    "CarcassGFurMaterials": {
+                        "0": "/Game/ASS/CRE/Wolf/Wolf_Variants/M_CRE_Wolf_Rare_VarE_fur_carc.M_CRE_Wolf_Rare_VarE_fur_carc"
+                    },
+                    "Weighting": 50
+                },
+                {
+                    "MeshMaterials": {
+                        "0": "/Game/ASS/CRE/Wolf/Wolf_Variants/M_CRE_Wolf_Legendary_VarA.M_CRE_Wolf_Legendary_VarA"
+                    },
+                    "GFurMaterials": {
+                        "0": "/Game/ASS/CRE/Wolf/Wolf_Variants/M_CRE_Wolf_Legendary_VarA_fur.M_CRE_Wolf_Legendary_VarA_fur"
+                    },
+                    "CarcassMeshMaterials": {
+                        "0": "/Game/ASS/CRE/Wolf/Wolf_Variants/M_CRE_Wolf_Legendary_VarA_carc.M_CRE_Wolf_Legendary_VarA_carc"
+                    },
+                    "CarcassGFurMaterials": {
+                        "0": "/Game/ASS/CRE/Wolf/Wolf_Variants/M_CRE_Wolf_Legendary_VarA_fur_carc.M_CRE_Wolf_Legendary_VarA_fur_carc"
+                    },
+                    "Weighting": 5
+                },
+                {
+                    "MeshMaterials": {
+                        "0": "/Game/ASS/CRE/Wolf/Wolf_Variants/M_CRE_Wolf_Legendary_VarB.M_CRE_Wolf_Legendary_VarB"
+                    },
+                    "GFurMaterials": {
+                        "0": "/Game/ASS/CRE/Wolf/Wolf_Variants/M_CRE_Wolf_Legendary_VarB_fur.M_CRE_Wolf_Legendary_VarB_fur"
+                    },
+                    "CarcassMeshMaterials": {
+                        "0": "/Game/ASS/CRE/Wolf/Wolf_Variants/M_CRE_Wolf_Legendary_VarB_carc.M_CRE_Wolf_Legendary_VarB_carc"
+                    },
+                    "CarcassGFurMaterials": {
+                        "0": "/Game/ASS/CRE/Wolf/Wolf_Variants/M_CRE_Wolf_Legendary_VarB_fur_carc.M_CRE_Wolf_Legendary_VarB_fur_carc"
+                    },
+                    "Weighting": 5
+                }
+            ],
+            "SupportedCombatStates": [
+                "DoNotEngage",
+                "NeutralEngagement",
+                "AggressiveEngagement"
+            ],
+            "SupportedMovementStates": [
+                "Follow",
+                "IdleWander"
+            ],
+            "Animations": {
+                "(TagName=\"BT.Mount.Animation.IdleStanding\")": "/Game/ThirdPartyAssets/AnimalsVol01/Wolf/Meshes/Animations/Wolf_Sit_Idle_NoHowl_Montage.Wolf_Sit_Idle_NoHowl_Montage",
+                "(TagName=\"BT.Mount.Animation.Rest\")": "/Game/ThirdPartyAssets/AnimalsVol01/Wolf/Meshes/Animations/Wolf_Rest_Montage.Wolf_Rest_Montage",
+                "(TagName=\"BT.Mount.Animation.Eat\")": "/Game/ThirdPartyAssets/AnimalsVol01/Wolf/Meshes/Animations/Wolf_Eating_Montage.Wolf_Eating_Montage",
+                "(TagName=\"BT.Mount.Animation.Jump\")": "/Game/ThirdPartyAssets/AnimalsVol01/Wolf/Meshes/Animations/Wolf_Jump_Montage.Wolf_Jump_Montage",
+                "(TagName=\"BT.Mount.Animation.Attack\")": "/Game/ThirdPartyAssets/AnimalsVol01/Wolf/Meshes/Animations/Wolf_Attack_Montage.Wolf_Attack_Montage",
+                "(TagName=\"BT.Mount.Animation.Dodge.Backwards\")": "/Game/ThirdPartyAssets/AnimalsVol01/Wolf/Meshes/Animations/Wolf_Hop_Montage.Wolf_Hop_Montage",
+                "(TagName=\"BT.Mount.Animation.Drink\")": "/Game/ThirdPartyAssets/AnimalsVol01/Wolf/Meshes/Animations/Wolf_Drinking_Montage_2.Wolf_Drinking_Montage_2"
+            },
+            "InventoryPreviewCameraSettings": {
+                "RowName": "Mount_Wolf"
+            },
+            "DefaultNames": [
+                "NSLOCTEXT(\"D_Mounts\", \"Wolf-DefaultNames-0\", \"Arthur\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Wolf-DefaultNames-1\", \"Merlin\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Wolf-DefaultNames-2\", \"Gawain\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Wolf-DefaultNames-3\", \"Galahad\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Wolf-DefaultNames-4\", \"Bedivere\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Wolf-DefaultNames-5\", \"Gareth\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Wolf-DefaultNames-6\", \"Agravain\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Wolf-DefaultNames-7\", \"Lamorak\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Wolf-DefaultNames-8\", \"Dagonet\")"
+            ],
+            "MapIcon": {
+                "RowName": "Mount"
+            },
+            "RelativeFeetOffset": {
+                "X": -10,
+                "Y": -17.5,
+                "Z": 10
+            },
+            "MountTalentArchetype": {
+                "RowName": "Creature_Wolf"
+            },
+            "GrowthCurve": {
+                "RowName": "AI_Pets"
+            },
+            "bUseTemperature": true,
+            "ComfortableTemperatureRange": {
+                "Y": 35
+            }
+        },
+        {
+            "Name": "Snow_Wolf",
+            "AISetup": {
+                "RowName": "Tamed_Snow_Wolf"
+            },
+            "Icon": "/Game/Assets/2DArt/UI/Icons/MapIcons/T_Icon_Map_ArcticWolf.T_Icon_Map_ArcticWolf",
+            "SupportedCombatStates": [
+                "DoNotEngage",
+                "NeutralEngagement",
+                "AggressiveEngagement"
+            ],
+            "SupportedMovementStates": [
+                "Follow",
+                "IdleWander"
+            ],
+            "Animations": {
+                "(TagName=\"BT.Mount.Animation.IdleStanding\")": "/Game/ThirdPartyAssets/AnimalsVol01/Wolf/Meshes/Animations/Wolf_Sit_Idle_NoHowl_Montage.Wolf_Sit_Idle_NoHowl_Montage",
+                "(TagName=\"BT.Mount.Animation.Rest\")": "/Game/ThirdPartyAssets/AnimalsVol01/Wolf/Meshes/Animations/Wolf_Rest_Montage.Wolf_Rest_Montage",
+                "(TagName=\"BT.Mount.Animation.Eat\")": "/Game/ThirdPartyAssets/AnimalsVol01/Wolf/Meshes/Animations/Wolf_Eating_Montage.Wolf_Eating_Montage",
+                "(TagName=\"BT.Mount.Animation.Jump\")": "/Game/ThirdPartyAssets/AnimalsVol01/Wolf/Meshes/Animations/Wolf_Jump_Montage.Wolf_Jump_Montage",
+                "(TagName=\"BT.Mount.Animation.Attack\")": "/Game/ThirdPartyAssets/AnimalsVol01/Wolf/Meshes/Animations/Wolf_Attack_Montage.Wolf_Attack_Montage",
+                "(TagName=\"BT.Mount.Animation.Dodge.Backwards\")": "/Game/ThirdPartyAssets/AnimalsVol01/Wolf/Meshes/Animations/Wolf_Hop_Montage.Wolf_Hop_Montage",
+                "(TagName=\"BT.Mount.Animation.Drink\")": "/Game/ThirdPartyAssets/AnimalsVol01/Wolf/Meshes/Animations/Wolf_Drinking_Montage_2.Wolf_Drinking_Montage_2"
+            },
+            "InventoryPreviewCameraSettings": {
+                "RowName": "Mount_Wolf"
+            },
+            "DefaultNames": [
+                "NSLOCTEXT(\"D_Mounts\", \"Snow_Wolf-DefaultNames-0\", \"Arthur\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Snow_Wolf-DefaultNames-1\", \"Merlin\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Snow_Wolf-DefaultNames-2\", \"Gawain\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Snow_Wolf-DefaultNames-3\", \"Galahad\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Snow_Wolf-DefaultNames-4\", \"Bedivere\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Snow_Wolf-DefaultNames-5\", \"Gareth\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Snow_Wolf-DefaultNames-6\", \"Agravain\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Snow_Wolf-DefaultNames-7\", \"Lamorak\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Snow_Wolf-DefaultNames-8\", \"Dagonet\")"
+            ],
+            "MapIcon": {
+                "RowName": "Mount"
+            },
+            "RelativeFeetOffset": {
+                "X": -10,
+                "Y": -17.5,
+                "Z": 10
+            },
+            "MountTalentArchetype": {
+                "RowName": "Creature_Snow_Wolf"
+            },
+            "GrowthCurve": {
+                "RowName": "AI_Pets"
+            },
+            "bUseTemperature": true,
+            "ComfortableTemperatureRange": {
+                "X": -17,
+                "Y": 26
+            }
+        },
+        {
+            "Name": "Wolf_Desert",
+            "AISetup": {
+                "RowName": "Tamed_Desert_Wolf"
+            },
+            "Icon": "/Game/Assets/2DArt/UI/Icons/MapIcons/T_Icon_Map_DesertWolf.T_Icon_Map_DesertWolf",
+            "SupportedCombatStates": [
+                "DoNotEngage",
+                "NeutralEngagement",
+                "AggressiveEngagement"
+            ],
+            "SupportedMovementStates": [
+                "Follow",
+                "IdleWander"
+            ],
+            "Animations": {
+                "(TagName=\"BT.Mount.Animation.IdleStanding\")": "/Game/ASS/CRE/Wolf/DesertWolf/Animation/Wolf_Sit_Idle_NoHowl_Montage.Wolf_Sit_Idle_NoHowl_Montage",
+                "(TagName=\"BT.Mount.Animation.Rest\")": "/Game/ASS/CRE/Wolf/DesertWolf/Animation/Wolf_Rest_Montage.Wolf_Rest_Montage",
+                "(TagName=\"BT.Mount.Animation.Eat\")": "/Game/ASS/CRE/Wolf/DesertWolf/Animation/Wolf_Eating_Montage.Wolf_Eating_Montage",
+                "(TagName=\"BT.Mount.Animation.Jump\")": "/Game/ASS/CRE/Wolf/DesertWolf/Animation/Wolf_Jump_Montage.Wolf_Jump_Montage",
+                "(TagName=\"BT.Mount.Animation.Attack\")": "/Game/ASS/CRE/Wolf/DesertWolf/Animation/Wolf_Attack_Montage.Wolf_Attack_Montage",
+                "(TagName=\"BT.Mount.Animation.Dodge.Backwards\")": "/Game/ThirdPartyAssets/AnimalsVol01/Wolf/Meshes/Animations/Wolf_Hop_Montage.Wolf_Hop_Montage"
+            },
+            "InventoryPreviewCameraSettings": {
+                "RowName": "Mount_Wolf"
+            },
+            "DefaultNames": [
+                "NSLOCTEXT(\"D_Mounts\", \"Wolf_Desert-DefaultNames-0\", \"Anansi\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Wolf_Desert-DefaultNames-1\", \"Tano\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Wolf_Desert-DefaultNames-2\", \"Nyame\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Wolf_Desert-DefaultNames-3\", \"Katarwiri\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Wolf_Desert-DefaultNames-4\", \"Warumbe\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Wolf_Desert-DefaultNames-5\", \"Bosomtwe\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Wolf_Desert-DefaultNames-6\", \"Abu-Mehsu\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Wolf_Desert-DefaultNames-7\", \"Nambi\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Wolf_Desert-DefaultNames-8\", \"Kitaka\")"
+            ],
+            "MapIcon": {
+                "RowName": "Mount"
+            },
+            "RelativeFeetOffset": {
+                "X": -10,
+                "Y": -17.5,
+                "Z": 10
+            },
+            "MountTalentArchetype": {
+                "RowName": "Creature_Desert_Wolf"
+            },
+            "GrowthCurve": {
+                "RowName": "AI_Pets"
+            },
+            "bUseTemperature": true,
+            "ComfortableTemperatureRange": {
+                "X": 12,
+                "Y": 52
+            }
+        },
+        {
+            "Name": "Zebra",
+            "AISetup": {
+                "RowName": "Mount_Zebra"
+            },
+            "Icon": "/Game/Assets/2DArt/UI/Icons/MapIcons/T_Icon_Zebra.T_Icon_Zebra",
+            "RelevantSaddleQuery": {
+                "RowName": "Any_Saddle"
+            },
+            "SupportedCombatStates": [
+                "DoNotEngage",
+                "NeutralEngagement",
+                "AggressiveEngagement"
+            ],
+            "SupportedMovementStates": [
+                "Follow",
+                "IdleWander",
+                "IdleStanding",
+                "IdleLying"
+            ],
+            "Animations": {
+                "(TagName=\"BT.Mount.Animation.IdleStanding\")": "/Game/ASS/CRE/Zebra/Anim/Montages/Horse_Idle_Montage.Horse_Idle_Montage",
+                "(TagName=\"BT.Mount.Animation.Rest\")": "/Game/ASS/CRE/Zebra/Anim/Montages/zebra_Sleep_Montage.zebra_Sleep_Montage",
+                "(TagName=\"BT.Mount.Animation.Eat\")": "/Game/ASS/CRE/Zebra/Anim/Montages/zebra_Eat_Montage.zebra_Eat_Montage",
+                "(TagName=\"BT.Mount.Animation.Jump\")": "/Game/ASS/CRE/Zebra/Anim/Montages/Zebra_Jump_Montage.Zebra_Jump_Montage",
+                "(TagName=\"BT.Mount.Animation.Attack\")": "/Game/ASS/CRE/Zebra/Anim/Montages/zebra_Attack_Montage.zebra_Attack_Montage"
+            },
+            "InventoryPreviewCameraSettings": {
+                "RowName": "Mount_Zebra"
+            },
+            "DefaultNames": [
+                "NSLOCTEXT(\"D_Mounts\", \"Zebra-DefaultNames-0\", \"Spot\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Zebra-DefaultNames-1\", \"Patch\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Zebra-DefaultNames-2\", \"Stripes\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Zebra-DefaultNames-3\", \"Buddy\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Zebra-DefaultNames-4\", \"Charlie\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Zebra-DefaultNames-5\", \"Lucky\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Zebra-DefaultNames-6\", \"Bailey\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Zebra-DefaultNames-7\", \"Lucy\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Zebra-DefaultNames-8\", \"Rosie\")"
+            ],
+            "MapIcon": {
+                "RowName": "Zebra"
+            },
+            "RelativeFeetOffset": {
+                "X": -10,
+                "Y": 20,
+                "Z": -10
+            },
+            "RelativeHandsOffset": {
+                "X": -15
+            },
+            "RelativeLightOffset": {
+                "X": 33,
+                "Y": -54,
+                "Z": 55
+            },
+            "MountTalentArchetype": {
+                "RowName": "Creature_Zebra"
+            },
+            "bUseTemperature": true,
+            "ComfortableTemperatureRange": {
+                "X": 12,
+                "Y": 52
+            }
+        },
+        {
+            "Name": "Mini_Hippo",
+            "AISetup": {
+                "RowName": "Mini_Hippo_Quest"
+            },
+            "Icon": "/Game/Assets/2DArt/UI/Icons/MapIcons/T_Icon_Map_Hippo.T_Icon_Map_Hippo",
+            "SupportedCombatStates": [
+                "DoNotEngage",
+                "NeutralEngagement",
+                "AggressiveEngagement"
+            ],
+            "SupportedMovementStates": [
+                "Follow",
+                "IdleWander",
+                "IdleStanding",
+                "IdleLying"
+            ],
+            "Animations": {
+                "(TagName=\"BT.Mount.Animation.IdleStanding\")": "/Game/ASS/CRE/Wild_Boar/Animation/Boar_Sit_Idle_Montage.Boar_Sit_Idle_Montage",
+                "(TagName=\"BT.Mount.Animation.Rest\")": "/Game/ASS/CRE/Wild_Boar/Animation/Boar_Rest_Montage.Boar_Rest_Montage",
+                "(TagName=\"BT.Mount.Animation.Eat\")": "/Game/ASS/CRE/Wild_Boar/Animation/Boar_Eating_Montage.Boar_Eating_Montage",
+                "(TagName=\"BT.Mount.Animation.Jump\")": "/Game/ASS/CRE/Baby_Wildboar/Animation/Boar_Jump_Montage.Boar_Jump_Montage",
+                "(TagName=\"BT.Mount.Animation.Attack\")": "/Game/ASS/CRE/Wild_Boar/Animation/Boar_Attack_Montage.Boar_Attack_Montage"
+            },
+            "InventoryPreviewCameraSettings": {
+                "RowName": "Mount_Striker"
+            },
+            "DefaultNames": [
+                "NSLOCTEXT(\"D_Mounts\", \"Mini_Hippo-DefaultNames-0\", \"Snuffles\")"
+            ],
+            "MapIcon": {
+                "RowName": "Mount"
+            },
+            "RelativeFeetOffset": {
+                "X": -10,
+                "Y": 20,
+                "Z": -10
+            },
+            "RelativeHandsOffset": {
+                "X": -15
+            }
+        },
+        {
+            "Name": "Chicken",
+            "AISetup": {
+                "RowName": "Chicken"
+            },
+            "Icon": "/Game/Assets/2DArt/UI/Icons/MapIcons/T_Icon_Map_Chicken.T_Icon_Map_Chicken",
+            "SupportedCombatStates": [
+                "DoNotEngage"
+            ],
+            "SupportedMovementStates": [
+                "Follow",
+                "IdleWander"
+            ],
+            "Animations": {
+                "(TagName=\"BT.Mount.Animation.IdleStanding\")": "/Game/ASS/CRE/Chicken/Anim/Chicken_StandIdle_Montage.Chicken_StandIdle_Montage",
+                "(TagName=\"BT.Mount.Animation.Rest\")": "/Game/ASS/CRE/Chicken/Anim/Chicken_Sleep_Montage.Chicken_Sleep_Montage",
+                "(TagName=\"BT.Mount.Animation.Eat\")": "/Game/ASS/CRE/Chicken/Anim/Chicken_Eat_Montage.Chicken_Eat_Montage",
+                "(TagName=\"BT.Mount.Animation.Jump\")": "/Game/ASS/CRE/Chicken/Anim/Chicken_Jump_Montage.Chicken_Jump_Montage",
+                "(TagName=\"BT.Mount.Animation.LayEgg\")": "/Game/ASS/CRE/Chicken/Anim/Chicken_LayEgg_Montage.Chicken_LayEgg_Montage"
+            },
+            "InventoryPreviewCameraSettings": {
+                "RowName": "Mount_Chicken"
+            },
+            "DefaultNames": [
+                "NSLOCTEXT(\"D_Mounts\", \"Chicken-DefaultNames-0\", \"Fowler\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Chicken-DefaultNames-1\", \"Ginger\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Chicken-DefaultNames-2\", \"Edwina\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Chicken-DefaultNames-3\", \"Mac\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Chicken-DefaultNames-4\", \"Babs\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Chicken-DefaultNames-5\", \"Bunty\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Chicken-DefaultNames-6\", \"Fletcher\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Chicken-DefaultNames-7\", \"Rocky\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Chicken-DefaultNames-8\", \"Molly\")"
+            ],
+            "MapIcon": {
+                "RowName": "Mount"
+            },
+            "RelativeFeetOffset": {
+                "X": -10,
+                "Y": -17.5,
+                "Z": 10
+            },
+            "MountTalentArchetype": {
+                "RowName": "Creature_Chicken"
+            },
+            "GrowthCurve": {
+                "RowName": "AI_Pets"
+            }
+        },
+        {
+            "Name": "Sheep",
+            "AISetup": {
+                "RowName": "Sheep"
+            },
+            "Icon": "/Game/Assets/2DArt/UI/Icons/MapIcons/T_Icon_Map_Sheep.T_Icon_Map_Sheep",
+            "SupportedCombatStates": [
+                "DoNotEngage"
+            ],
+            "SupportedMovementStates": [
+                "Follow",
+                "IdleWander"
+            ],
+            "Animations": {
+                "(TagName=\"BT.Mount.Animation.IdleStanding\")": "/Game/ASS/CRE/Sheep/Anim/Sheep_Idle_Montage.Sheep_Idle_Montage",
+                "(TagName=\"BT.Mount.Animation.Rest\")": "/Game/ASS/CRE/Sheep/Anim/Sheep_Rest_Montage.Sheep_Rest_Montage",
+                "(TagName=\"BT.Mount.Animation.Eat\")": "/Game/ASS/CRE/Sheep/Anim/Sheep_Eating_Montage.Sheep_Eating_Montage",
+                "(TagName=\"BT.Mount.Animation.Jump\")": "/Game/ASS/CRE/Sheep/Anim/Sheep_Jump_Montage.Sheep_Jump_Montage",
+                "(TagName=\"BT.Mount.Animation.Drink\")": "/Game/ASS/CRE/Sheep/Anim/Sheep_Eating_Montage.Sheep_Eating_Montage"
+            },
+            "InventoryPreviewCameraSettings": {
+                "RowName": "Mount_Sheep"
+            },
+            "DefaultNames": [
+                "NSLOCTEXT(\"D_Mounts\", \"Sheep-DefaultNames-0\", \"Shaun\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Sheep-DefaultNames-1\", \"Shirley\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Sheep-DefaultNames-2\", \"Timmy\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Sheep-DefaultNames-3\", \"Nuts\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Sheep-DefaultNames-4\", \"Hazel\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Sheep-DefaultNames-5\", \"Rosie\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Sheep-DefaultNames-6\", \"Lucy\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Sheep-DefaultNames-7\", \"Dolly\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Sheep-DefaultNames-8\", \"Shrek\")"
+            ],
+            "MapIcon": {
+                "RowName": "Mount"
+            },
+            "RelativeFeetOffset": {
+                "X": -10,
+                "Y": -17.5,
+                "Z": 10
+            },
+            "MountTalentArchetype": {
+                "RowName": "Creature_Sheep"
+            },
+            "GrowthCurve": {
+                "RowName": "AI_Pets"
+            }
+        },
+        {
+            "Name": "Wild_Boar",
+            "AISetup": {
+                "RowName": "Tamed_Wild_Boar"
+            },
+            "Icon": "/Game/Assets/2DArt/UI/Icons/MapIcons/T_Icon_Map_Boar.T_Icon_Map_Boar",
+            "SupportedCombatStates": [
+                "DoNotEngage",
+                "NeutralEngagement",
+                "AggressiveEngagement"
+            ],
+            "SupportedMovementStates": [
+                "Follow",
+                "IdleWander"
+            ],
+            "Animations": {
+                "(TagName=\"BT.Mount.Animation.IdleStanding\")": "/Game/ASS/CRE/Wild_Boar/Animation/Boar_Sit_Idle_Montage.Boar_Sit_Idle_Montage",
+                "(TagName=\"BT.Mount.Animation.Rest\")": "/Game/ASS/CRE/Wild_Boar/Animation/Boar_Rest_Montage.Boar_Rest_Montage",
+                "(TagName=\"BT.Mount.Animation.Eat\")": "/Game/ASS/CRE/Wild_Boar/Animation/Boar_Eating_Montage.Boar_Eating_Montage",
+                "(TagName=\"BT.Mount.Animation.Jump\")": "/Game/ASS/CRE/Wild_Boar/Animation/Boar_Jump_Montage.Boar_Jump_Montage",
+                "(TagName=\"BT.Mount.Animation.Attack\")": "/Game/ASS/CRE/Wild_Boar/Animation/Boar_Attack_Montage.Boar_Attack_Montage",
+                "(TagName=\"BT.Mount.Animation.Drink\")": "/Game/ASS/CRE/Wild_Boar/Animation/Boar_Eating_Montage.Boar_Eating_Montage"
+            },
+            "InventoryPreviewCameraSettings": {
+                "RowName": "Mount_Sheep"
+            },
+            "DefaultNames": [
+                "NSLOCTEXT(\"D_Mounts\", \"Wild_Boar-DefaultNames-0\", \"Thicket\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Wild_Boar-DefaultNames-1\", \"Bramble\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Wild_Boar-DefaultNames-2\", \"Hazel\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Wild_Boar-DefaultNames-3\", \"Fern\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Wild_Boar-DefaultNames-4\", \"Moss\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Wild_Boar-DefaultNames-5\", \"Willow\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Wild_Boar-DefaultNames-6\", \"Cypress\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Wild_Boar-DefaultNames-7\", \"Thorn\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Wild_Boar-DefaultNames-8\", \"Sage\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Wild_Boar-DefaultNames-9\", \"Birch\")"
+            ],
+            "MapIcon": {
+                "RowName": "Mount"
+            },
+            "RelativeFeetOffset": {
+                "X": -10,
+                "Y": -17.5,
+                "Z": 10
+            },
+            "MountTalentArchetype": {
+                "RowName": "Creature_Boar"
+            },
+            "GrowthCurve": {
+                "RowName": "AI_Pets"
+            },
+            "bUseTemperature": true,
+            "ComfortableTemperatureRange": {
+                "Y": 40
+            }
+        },
+        {
+            "Name": "Dog",
+            "AISetup": {
+                "RowName": "Tame_Dog_A1"
+            },
+            "Icon": "/Game/Assets/2DArt/UI/Icons/MapIcons/T_Icon_Map_Dog.T_Icon_Map_Dog",
+            "SupportedCombatStates": [
+                "DoNotEngage",
+                "NeutralEngagement",
+                "AggressiveEngagement"
+            ],
+            "SupportedMovementStates": [
+                "Follow",
+                "IdleWander"
+            ],
+            "Animations": {
+                "(TagName=\"BT.Mount.Animation.IdleStanding\")": "/Game/ThirdPartyAssets/AnimalsVol01/Wolf/Meshes/Animations/Wolf_Sit_Idle_NoHowl_Montage.Wolf_Sit_Idle_NoHowl_Montage",
+                "(TagName=\"BT.Mount.Animation.Rest\")": "/Game/ASS/CRE/Labrador/Anims/Dog_Sleep_Montage.Dog_Sleep_Montage",
+                "(TagName=\"BT.Mount.Animation.Eat\")": "/Game/ThirdPartyAssets/AnimalsVol01/Wolf/Meshes/Animations/Dog_Eating_Montage_2.Dog_Eating_Montage_2",
+                "(TagName=\"BT.Mount.Animation.Jump\")": "/Game/ThirdPartyAssets/AnimalsVol01/Wolf/Meshes/Animations/Wolf_Jump_Montage.Wolf_Jump_Montage",
+                "(TagName=\"BT.Mount.Animation.Attack\")": "/Game/ASS/CRE/Labrador/Anims/Dog_Attack_Montage.Dog_Attack_Montage",
+                "(TagName=\"BT.Mount.Animation.Dodge.Backwards\")": "/Game/ThirdPartyAssets/AnimalsVol01/Wolf/Meshes/Animations/Wolf_Hop_Montage.Wolf_Hop_Montage",
+                "(TagName=\"BT.Mount.Animation.Drink\")": "/Game/ThirdPartyAssets/AnimalsVol01/Wolf/Meshes/Animations/Wolf_Drinking_Montage_2.Wolf_Drinking_Montage_2"
+            },
+            "DefaultNames": [
+                "NSLOCTEXT(\"D_Mounts\", \"Dog-DefaultNames-0\", \"Lassie\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Dog-DefaultNames-1\", \"Beethoven\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Dog-DefaultNames-2\", \"Toto\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Dog-DefaultNames-3\", \"Scooby\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Dog-DefaultNames-4\", \"Astro\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Dog-DefaultNames-5\", \"Frank\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Dog-DefaultNames-6\", \"Copper\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Dog-DefaultNames-7\", \"Laika\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Dog-DefaultNames-8\", \"Marley\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Dog-DefaultNames-9\", \"Buddy\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Dog-DefaultNames-10\", \"Baxter\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Dog-DefaultNames-11\", \"Roberto\")"
+            ],
+            "MapIcon": {
+                "RowName": "Mount"
+            },
+            "RelativeFeetOffset": {
+                "X": -10,
+                "Y": -17.5,
+                "Z": 10
+            },
+            "MountTalentArchetype": {
+                "RowName": "Creature_Dog"
+            },
+            "GrowthCurve": {
+                "RowName": "AI_Pets"
+            },
+            "bUseTemperature": true,
+            "ComfortableTemperatureRange": {
+                "Y": 35
+            }
+        },
+        {
+            "Name": "DogSmall",
+            "AISetup": {
+                "RowName": "Tame_Dog_C1"
+            },
+            "Icon": "/Game/Assets/2DArt/UI/Icons/MapIcons/T_Icon_Map_Dog.T_Icon_Map_Dog",
+            "SupportedCombatStates": [
+                "DoNotEngage"
+            ],
+            "SupportedMovementStates": [
+                "Follow",
+                "IdleWander"
+            ],
+            "Animations": {
+                "(TagName=\"BT.Mount.Animation.IdleStanding\")": "/Game/ThirdPartyAssets/AnimalsVol01/Wolf/Meshes/Animations/Wolf_Sit_Idle_NoHowl_Montage.Wolf_Sit_Idle_NoHowl_Montage",
+                "(TagName=\"BT.Mount.Animation.Rest\")": "/Game/ASS/CRE/Labrador/Anims/Dog_Sleep_Montage.Dog_Sleep_Montage",
+                "(TagName=\"BT.Mount.Animation.Eat\")": "/Game/ThirdPartyAssets/AnimalsVol01/Wolf/Meshes/Animations/Small_Dog_Eating_Montage.Small_Dog_Eating_Montage",
+                "(TagName=\"BT.Mount.Animation.Jump\")": "/Game/ThirdPartyAssets/AnimalsVol01/Wolf/Meshes/Animations/Wolf_Jump_Montage.Wolf_Jump_Montage",
+                "(TagName=\"BT.Mount.Animation.Attack\")": "/Game/ThirdPartyAssets/AnimalsVol01/Wolf/Meshes/Animations/Wolf_Attack_Montage.Wolf_Attack_Montage",
+                "(TagName=\"BT.Mount.Animation.Dodge.Backwards\")": "/Game/ThirdPartyAssets/AnimalsVol01/Wolf/Meshes/Animations/Wolf_Hop_Montage.Wolf_Hop_Montage",
+                "(TagName=\"BT.Mount.Animation.Drink\")": "/Game/ThirdPartyAssets/AnimalsVol01/Wolf/Meshes/Animations/Small_Dog_Drinking_Montage_3.Small_Dog_Drinking_Montage_3"
+            },
+            "DefaultNames": [
+                "NSLOCTEXT(\"D_Mounts\", \"DogSmall-DefaultNames-0\", \"Lassie\")",
+                "NSLOCTEXT(\"D_Mounts\", \"DogSmall-DefaultNames-1\", \"Beethoven\")",
+                "NSLOCTEXT(\"D_Mounts\", \"DogSmall-DefaultNames-2\", \"Toto\")",
+                "NSLOCTEXT(\"D_Mounts\", \"DogSmall-DefaultNames-3\", \"Scooby\")",
+                "NSLOCTEXT(\"D_Mounts\", \"DogSmall-DefaultNames-4\", \"Astro\")",
+                "NSLOCTEXT(\"D_Mounts\", \"DogSmall-DefaultNames-5\", \"Frank\")",
+                "NSLOCTEXT(\"D_Mounts\", \"DogSmall-DefaultNames-6\", \"Copper\")",
+                "NSLOCTEXT(\"D_Mounts\", \"DogSmall-DefaultNames-7\", \"Laika\")",
+                "NSLOCTEXT(\"D_Mounts\", \"DogSmall-DefaultNames-8\", \"Marley\")",
+                "NSLOCTEXT(\"D_Mounts\", \"DogSmall-DefaultNames-9\", \"Buddy\")",
+                "NSLOCTEXT(\"D_Mounts\", \"DogSmall-DefaultNames-10\", \"Baxter\")"
+            ],
+            "MapIcon": {
+                "RowName": "Mount"
+            },
+            "RelativeFeetOffset": {
+                "X": -10,
+                "Y": -17.5,
+                "Z": 10
+            },
+            "MountTalentArchetype": {
+                "RowName": "Creature_Dog"
+            },
+            "GrowthCurve": {
+                "RowName": "AI_Pets"
+            },
+            "bUseTemperature": true,
+            "ComfortableTemperatureRange": {
+                "Y": 35
+            }
+        },
+        {
+            "Name": "Cat",
+            "AISetup": {
+                "RowName": "Tame_Cat_A1"
+            },
+            "Icon": "/Game/Assets/2DArt/UI/Icons/MapIcons/T_Icon_Map_Cat.T_Icon_Map_Cat",
+            "SupportedCombatStates": [
+                "DoNotEngage"
+            ],
+            "SupportedMovementStates": [
+                "Follow",
+                "IdleWander"
+            ],
+            "Animations": {
+                "(TagName=\"BT.Mount.Animation.IdleStanding\")": "/Game/ASS/CRE/Cat/Anim/Cat_Idle_Montage.Cat_Idle_Montage",
+                "(TagName=\"BT.Mount.Animation.Rest\")": "/Game/ASS/CRE/Cat/Anim/Cat_Rest_Montage.Cat_Rest_Montage",
+                "(TagName=\"BT.Mount.Animation.Eat\")": "/Game/ASS/CRE/Cougar/Animations/Cat_Eating_Montage_2.Cat_Eating_Montage_2",
+                "(TagName=\"BT.Mount.Animation.Jump\")": "/Game/ASS/CRE/Cougar/Animations/Cougar_Jump_Up_Montage.Cougar_Jump_Up_Montage",
+                "(TagName=\"BT.Mount.Animation.Attack\")": "/Game/ASS/CRE/Cougar/Animations/Lion_F_Attack_Montage.Lion_F_Attack_Montage",
+                "(TagName=\"BT.Mount.Animation.Drink\")": "/Game/ASS/CRE/Cougar/Animations/Cat_Drinking_Montage_2.Cat_Drinking_Montage_2"
+            },
+            "InventoryPreviewCameraSettings": {
+                "RowName": "Mount_Cat"
+            },
+            "DefaultNames": [
+                "NSLOCTEXT(\"D_Mounts\", \"Cat-DefaultNames-0\", \"Marie\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Cat-DefaultNames-1\", \"Duchess\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Cat-DefaultNames-2\", \"Toulouse\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Cat-DefaultNames-3\", \"Berlioz\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Cat-DefaultNames-4\", \"O\\'Malley\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Cat-DefaultNames-5\", \"Bagheera\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Cat-DefaultNames-6\", \"Figaro\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Cat-DefaultNames-7\", \"Rajah\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Cat-DefaultNames-8\", \"Scar\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Cat-DefaultNames-9\", \"Tom\")"
+            ],
+            "MapIcon": {
+                "RowName": "Mount"
+            },
+            "RelativeFeetOffset": {
+                "X": -10,
+                "Y": -17.5,
+                "Z": 10
+            },
+            "MountTalentArchetype": {
+                "RowName": "Creature_Cat"
+            },
+            "GrowthCurve": {
+                "RowName": "AI_Pets"
+            }
+        },
+        {
+            "Name": "Horse_Standard",
+            "AISetup": {
+                "RowName": "Mount_Horse_Standard_A1"
+            },
+            "Icon": "/Game/Assets/2DArt/UI/Icons/MapIcons/T_Icon_Map_Horse.T_Icon_Map_Horse",
+            "RelevantSaddleQuery": {
+                "RowName": "Any_Saddle"
+            },
+            "SupportedCombatStates": [
+                "DoNotEngage",
+                "NeutralEngagement",
+                "AggressiveEngagement"
+            ],
+            "SupportedMovementStates": [
+                "Follow",
+                "IdleWander",
+                "IdleStanding",
+                "IdleLying"
+            ],
+            "Animations": {
+                "(TagName=\"BT.Mount.Animation.IdleStanding\")": "/Game/ASS/CRE/Zebra/Anim/Montages/Horse_Idle_Montage.Horse_Idle_Montage",
+                "(TagName=\"BT.Mount.Animation.Rest\")": "/Game/ASS/CRE/Zebra/Anim/Montages/zebra_Sleep_Montage.zebra_Sleep_Montage",
+                "(TagName=\"BT.Mount.Animation.Eat\")": "/Game/ASS/CRE/Zebra/Anim/Montages/zebra_Eat_Montage.zebra_Eat_Montage",
+                "(TagName=\"BT.Mount.Animation.Jump\")": "/Game/ASS/CRE/Zebra/Anim/Montages/Zebra_Jump_Montage.Zebra_Jump_Montage",
+                "(TagName=\"BT.Mount.Animation.Attack\")": "/Game/ASS/CRE/Zebra/Anim/Montages/zebra_Attack_Montage.zebra_Attack_Montage",
+                "(TagName=\"BT.Mount.Animation.Pet\")": "/Game/ASS/CRE/Zebra/Anim/Montages/Horse_Idle_Montage.Horse_Idle_Montage"
+            },
+            "InventoryPreviewCameraSettings": {
+                "RowName": "Mount_Horse_Standard"
+            },
+            "DefaultNames": [
+                "NSLOCTEXT(\"D_Mounts\", \"Horse_Standard-DefaultNames-0\", \"Sir Percival\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Horse_Standard-DefaultNames-1\", \"Lord Rutherford\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Horse_Standard-DefaultNames-2\", \"Cornelius\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Horse_Standard-DefaultNames-3\", \"Bartholomew\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Horse_Standard-DefaultNames-4\", \"Octavius\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Horse_Standard-DefaultNames-5\", \"Archibald\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Horse_Standard-DefaultNames-6\", \"Ignatius\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Horse_Standard-DefaultNames-7\", \"Constantine\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Horse_Standard-DefaultNames-8\", \"Benedict\")"
+            ],
+            "MapIcon": {
+                "RowName": "Mount"
+            },
+            "RelativeFeetOffset": {
+                "X": -10,
+                "Y": 20,
+                "Z": -10
+            },
+            "RelativeHandsOffset": {
+                "X": -15
+            },
+            "RelativeLightOffset": {
+                "X": 33,
+                "Y": -54,
+                "Z": 55
+            },
+            "MountTalentArchetype": {
+                "RowName": "Creature_Horse"
+            },
+            "bUseTemperature": true,
+            "ComfortableTemperatureRange": {
+                "X": -8,
+                "Y": 35
+            }
+        },
+        {
+            "Name": "Arctic_moa",
+            "AISetup": {
+                "RowName": "Mount_Arctic_Moa"
+            },
+            "Icon": "/Game/Assets/2DArt/UI/Icons/MapIcons/T_Icon_Map_ArcticMoa.T_Icon_Map_ArcticMoa",
+            "RelevantSaddleQuery": {
+                "RowName": "Any_Saddle_Standard"
+            },
+            "SupportedCombatStates": [
+                "DoNotEngage"
+            ],
+            "SupportedMovementStates": [
+                "Follow",
+                "IdleWander",
+                "IdleStanding",
+                "IdleLying"
+            ],
+            "Animations": {
+                "(TagName=\"BT.Mount.Animation.IdleStanding\")": "/Game/ASS/CRE/Moa/Anims/Moa_Stand_Idle_Montage.Moa_Stand_Idle_Montage",
+                "(TagName=\"BT.Mount.Animation.Rest\")": "/Game/ASS/CRE/Moa/Anims/Moa_Rest_Montage.Moa_Rest_Montage",
+                "(TagName=\"BT.Mount.Animation.Eat\")": "/Game/ASS/CRE/Moa/Anims/Moa_Eat_Montage.Moa_Eat_Montage",
+                "(TagName=\"BT.Mount.Animation.Jump\")": "/Game/ASS/CRE/Moa/Anims/Moa_Jump_Montage.Moa_Jump_Montage",
+                "(TagName=\"BT.Mount.Animation.Attack\")": "/Game/ASS/CRE/Moa/Anims/Moa_Attack_Montage.Moa_Attack_Montage"
+            },
+            "InventoryPreviewCameraSettings": {
+                "RowName": "Mount_Moa"
+            },
+            "DefaultNames": [
+                "NSLOCTEXT(\"D_Mounts\", \"Arctic_moa-DefaultNames-0\", \"Ranginui\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Arctic_moa-DefaultNames-1\", \"Kupe\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Arctic_moa-DefaultNames-2\", \"Rongo\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Arctic_moa-DefaultNames-3\", \"Tangaroa\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Arctic_moa-DefaultNames-4\", \"Haumia\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Arctic_moa-DefaultNames-5\", \"Maui\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Arctic_moa-DefaultNames-6\", \"Tane\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Arctic_moa-DefaultNames-7\", \"Tawhiri\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Arctic_moa-DefaultNames-8\", \"Tu\")"
+            ],
+            "MapIcon": {
+                "RowName": "Mount"
+            },
+            "RelativeFeetOffset": {
+                "X": -10,
+                "Y": 20,
+                "Z": -10
+            },
+            "RelativeHandsOffset": {
+                "X": -15
+            },
+            "RelativeLightOffset": {
+                "X": 5.577991962432861,
+                "Y": -33.10087585449219,
+                "Z": 66
+            },
+            "MountTalentArchetype": {
+                "RowName": "Creature_ArcticMoa"
+            },
+            "bUseTemperature": true,
+            "ComfortableTemperatureRange": {
+                "X": -17,
+                "Y": 26
+            }
+        },
+        {
+            "Name": "Cow",
+            "AISetup": {
+                "RowName": "Cow"
+            },
+            "Icon": "/Game/Assets/2DArt/UI/Icons/MapIcons/T_Icon_Map_Cow.T_Icon_Map_Cow",
+            "SupportedCombatStates": [
+                "DoNotEngage"
+            ],
+            "SupportedMovementStates": [
+                "Follow",
+                "IdleWander"
+            ],
+            "Animations": {
+                "(TagName=\"BT.Mount.Animation.IdleStanding\")": "/Game/ThirdPartyAssets/AnimalsVol01/Buffalo/Meshes/Animations/Buffalo_Stand_Idle_Montage.Buffalo_Stand_Idle_Montage",
+                "(TagName=\"BT.Mount.Animation.Rest\")": "/Game/ThirdPartyAssets/AnimalsVol01/Buffalo/Meshes/Animations/Buffalo_Rest_Montage.Buffalo_Rest_Montage",
+                "(TagName=\"BT.Mount.Animation.Eat\")": "/Game/ThirdPartyAssets/AnimalsVol01/Buffalo/Meshes/Animations/Buffalo_Eating_Montage.Buffalo_Eating_Montage",
+                "(TagName=\"BT.Mount.Animation.Jump\")": "/Game/ThirdPartyAssets/AnimalsVol01/Buffalo/Meshes/Animations/Buffalo_Jump_Montage.Buffalo_Jump_Montage",
+                "(TagName=\"BT.Mount.Animation.Attack\")": "/Game/ThirdPartyAssets/AnimalsVol01/Buffalo/Meshes/Animations/Buffalo_Attack_Montage.Buffalo_Attack_Montage"
+            },
+            "DefaultNames": [
+                "NSLOCTEXT(\"D_Mounts\", \"Cow-DefaultNames-0\", \"Dolly\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Cow-DefaultNames-1\", \"Bessie\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Cow-DefaultNames-2\", \"Muffin\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Cow-DefaultNames-3\", \"Milky\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Cow-DefaultNames-4\", \"Clarabelle\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Cow-DefaultNames-5\", \"Buttercup\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Cow-DefaultNames-6\", \"Moo\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Cow-DefaultNames-7\", \"Pearl\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Cow-DefaultNames-8\", \"Clover\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Cow-DefaultNames-9\", \"Penny\")"
+            ],
+            "MapIcon": {
+                "RowName": "Mount"
+            },
+            "RelativeFeetOffset": {
+                "X": -10,
+                "Y": -17.5,
+                "Z": 10
+            },
+            "MountTalentArchetype": {
+                "RowName": "Creature_Cow"
+            },
+            "GrowthCurve": {
+                "RowName": "AI_Pets"
+            }
+        },
+        {
+            "Name": "Bull",
+            "AISetup": {
+                "RowName": "Mount_Bull"
+            },
+            "Icon": "/Game/Assets/2DArt/UI/Icons/MapIcons/T_Icon_Map_Bull.T_Icon_Map_Bull",
+            "RelevantSaddleQuery": {
+                "RowName": "Any_Saddle"
+            },
+            "SupportedCombatStates": [
+                "DoNotEngage",
+                "NeutralEngagement",
+                "AggressiveEngagement"
+            ],
+            "SupportedMovementStates": [
+                "Follow",
+                "IdleWander",
+                "IdleStanding",
+                "IdleLying"
+            ],
+            "Animations": {
+                "(TagName=\"BT.Mount.Animation.IdleStanding\")": "/Game/ThirdPartyAssets/AnimalsVol01/Buffalo/Meshes/Animations/Buffalo_Stand_Idle_Montage.Buffalo_Stand_Idle_Montage",
+                "(TagName=\"BT.Mount.Animation.Rest\")": "/Game/ThirdPartyAssets/AnimalsVol01/Buffalo/Meshes/Animations/Buffalo_Rest_Montage.Buffalo_Rest_Montage",
+                "(TagName=\"BT.Mount.Animation.Eat\")": "/Game/ThirdPartyAssets/AnimalsVol01/Buffalo/Meshes/Animations/Buffalo_Eating_Montage.Buffalo_Eating_Montage",
+                "(TagName=\"BT.Mount.Animation.Jump\")": "/Game/ThirdPartyAssets/AnimalsVol01/Buffalo/Meshes/Animations/Buffalo_Jump_Montage.Buffalo_Jump_Montage",
+                "(TagName=\"BT.Mount.Animation.Attack\")": "/Game/ThirdPartyAssets/AnimalsVol01/Buffalo/Meshes/Animations/Buffalo_Attack_Montage.Buffalo_Attack_Montage",
+                "(TagName=\"BT.Mount.Animation.Attack.Charge\")": "/Game/ASS/CRE/Tusker/Animations/Tusker_Charge_Montage.Tusker_Charge_Montage"
+            },
+            "InventoryPreviewCameraSettings": {
+                "RowName": "Mount_Buffalo"
+            },
+            "DefaultNames": [
+                "NSLOCTEXT(\"D_Mounts\", \"Bull-DefaultNames-0\", \"Beast\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Bull-DefaultNames-1\", \"Maddox\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Bull-DefaultNames-2\", \"Vader\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Bull-DefaultNames-3\", \"Angus\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Bull-DefaultNames-4\", \"Spartacus\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Bull-DefaultNames-5\", \"Ruckus\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Bull-DefaultNames-6\", \"Bandit\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Bull-DefaultNames-7\", \"Havoc\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Bull-DefaultNames-8\", \"Duke\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Bull-DefaultNames-9\", \"Maverick\")"
+            ],
+            "MapIcon": {
+                "RowName": "Mount"
+            },
+            "RelativeFeetOffset": {
+                "Y": 10,
+                "Z": 10
+            },
+            "RelativeLightOffset": {
+                "X": 5.577991962432861,
+                "Y": -33.10087585449219,
+                "Z": 66
+            },
+            "MountTalentArchetype": {
+                "RowName": "Creature_Bull"
+            },
+            "bUseTemperature": true
+        },
+        {
+            "Name": "Rooster",
+            "AISetup": {
+                "RowName": "Rooster"
+            },
+            "Icon": "/Game/Assets/2DArt/UI/Icons/MapIcons/T_Icon_MapRooster.T_Icon_MapRooster",
+            "SupportedCombatStates": [
+                "DoNotEngage"
+            ],
+            "SupportedMovementStates": [
+                "Follow",
+                "IdleWander"
+            ],
+            "Animations": {
+                "(TagName=\"BT.Mount.Animation.IdleStanding\")": "/Game/ASS/CRE/Chicken/Anim/Chicken_StandIdle_Montage.Chicken_StandIdle_Montage",
+                "(TagName=\"BT.Mount.Animation.Rest\")": "/Game/ASS/CRE/Chicken/Anim/Chicken_Sleep_Montage.Chicken_Sleep_Montage",
+                "(TagName=\"BT.Mount.Animation.Eat\")": "/Game/ASS/CRE/Chicken/Anim/Chicken_Eat_Montage.Chicken_Eat_Montage",
+                "(TagName=\"BT.Mount.Animation.Jump\")": "/Game/ASS/CRE/Chicken/Anim/Chicken_Jump_Montage.Chicken_Jump_Montage",
+                "(TagName=\"BT.Mount.Animation.LayEgg\")": "/Game/ASS/CRE/Chicken/Anim/Chicken_LayEgg_Montage.Chicken_LayEgg_Montage"
+            },
+            "InventoryPreviewCameraSettings": {
+                "RowName": "Mount_Chicken"
+            },
+            "DefaultNames": [
+                "NSLOCTEXT(\"D_Mounts\", \"Rooster-DefaultNames-0\", \"Cluck\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Rooster-DefaultNames-1\", \"Peck\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Rooster-DefaultNames-2\", \"Bok\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Rooster-DefaultNames-3\", \"Chirp\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Rooster-DefaultNames-4\", \"Blaze\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Rooster-DefaultNames-5\", \"Rusty\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Rooster-DefaultNames-6\", \"Cinder\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Rooster-DefaultNames-7\", \"Sizzle\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Rooster-DefaultNames-8\", \"Flash\")"
+            ],
+            "MapIcon": {
+                "RowName": "Mount"
+            },
+            "RelativeFeetOffset": {
+                "X": -10,
+                "Y": -17.5,
+                "Z": 10
+            },
+            "MountTalentArchetype": {
+                "RowName": "Creature_Rooster"
+            },
+            "GrowthCurve": {
+                "RowName": "AI_Pets"
+            }
+        },
+        {
+            "Name": "Ram",
+            "AISetup": {
+                "RowName": "Ram"
+            },
+            "Icon": "/Game/Assets/2DArt/UI/Icons/MapIcons/T_Icon_Map_RAM.T_Icon_Map_RAM",
+            "SupportedCombatStates": [
+                "DoNotEngage"
+            ],
+            "SupportedMovementStates": [
+                "Follow",
+                "IdleWander"
+            ],
+            "Animations": {
+                "(TagName=\"BT.Mount.Animation.IdleStanding\")": "/Game/ASS/CRE/Sheep/Anim/Sheep_Idle_Montage.Sheep_Idle_Montage",
+                "(TagName=\"BT.Mount.Animation.Rest\")": "/Game/ASS/CRE/Sheep/Anim/Sheep_Rest_Montage.Sheep_Rest_Montage",
+                "(TagName=\"BT.Mount.Animation.Eat\")": "/Game/ASS/CRE/Sheep/Anim/Sheep_Eating_Montage.Sheep_Eating_Montage",
+                "(TagName=\"BT.Mount.Animation.Jump\")": "/Game/ASS/CRE/Sheep/Anim/Sheep_Jump_Montage.Sheep_Jump_Montage",
+                "(TagName=\"BT.Mount.Animation.Drink\")": "/Game/ASS/CRE/Sheep/Anim/Sheep_Eating_Montage.Sheep_Eating_Montage"
+            },
+            "InventoryPreviewCameraSettings": {
+                "RowName": "Mount_Sheep"
+            },
+            "DefaultNames": [
+                "NSLOCTEXT(\"D_Mounts\", \"Ram-DefaultNames-0\", \"Pan\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Ram-DefaultNames-1\", \"Bacchus\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Ram-DefaultNames-2\", \"Faunus\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Ram-DefaultNames-3\", \"Khaldi\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Ram-DefaultNames-4\", \"Marduk\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Ram-DefaultNames-5\", \"Silenus\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Ram-DefaultNames-6\", \"Amalthea\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Ram-DefaultNames-7\", \"Aries\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Ram-DefaultNames-8\", \"Set\")"
+            ],
+            "MapIcon": {
+                "RowName": "Mount"
+            },
+            "RelativeFeetOffset": {
+                "X": -10,
+                "Y": -17.5,
+                "Z": 10
+            },
+            "MountTalentArchetype": {
+                "RowName": "Creature_Sheep"
+            },
+            "GrowthCurve": {
+                "RowName": "AI_Pets"
+            }
+        },
+        {
+            "Name": "Chew",
+            "AISetup": {
+                "RowName": "Mount_Chew"
+            },
+            "Icon": "/Game/Assets/2DArt/UI/Icons/MapIcons/T_Icon_Map_Chew.T_Icon_Map_Chew",
+            "RelevantSaddleQuery": {
+                "RowName": "Any_Saddle"
+            },
+            "SupportedCombatStates": [
+                "DoNotEngage",
+                "NeutralEngagement",
+                "AggressiveEngagement"
+            ],
+            "SupportedMovementStates": [
+                "Follow",
+                "IdleWander",
+                "IdleStanding",
+                "IdleLying"
+            ],
+            "Animations": {
+                "(TagName=\"BT.Mount.Animation.IdleStanding\")": "/Game/ASS/CRE/Chew/Chew_Idle_Montage.Chew_Idle_Montage",
+                "(TagName=\"BT.Mount.Animation.Rest\")": "/Game/ASS/CRE/Zebra/Anim/Montages/zebra_Sleep_Montage.zebra_Sleep_Montage",
+                "(TagName=\"BT.Mount.Animation.Eat\")": "/Game/ASS/CRE/Zebra/Anim/Montages/zebra_Eat_Montage.zebra_Eat_Montage",
+                "(TagName=\"BT.Mount.Animation.Jump\")": "/Game/ASS/CRE/Zebra/Anim/Montages/Zebra_Jump_Montage.Zebra_Jump_Montage",
+                "(TagName=\"BT.Mount.Animation.Attack\")": "/Game/ASS/CRE/Chew/Chew_Attack_Montage.Chew_Attack_Montage"
+            },
+            "InventoryPreviewCameraSettings": {
+                "RowName": "Mount_Chew"
+            },
+            "DefaultNames": [
+                "NSLOCTEXT(\"D_Mounts\", \"Chew-DefaultNames-0\", \"Alice\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Chew-DefaultNames-1\", \"Humphrey\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Chew-DefaultNames-2\", \"Matilda\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Chew-DefaultNames-3\", \"Mizzy\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Chew-DefaultNames-4\", \"Sambati\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Chew-DefaultNames-5\", \"Casper\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Chew-DefaultNames-6\", \"Kamilah\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Chew-DefaultNames-7\", \"Clyde\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Chew-DefaultNames-8\", \"Joe\")"
+            ],
+            "MapIcon": {
+                "RowName": "Mount"
+            },
+            "RelativeHandsOffset": {
+                "Y": -10,
+                "Z": 20
+            },
+            "RelativeLightOffset": {
+                "X": 33,
+                "Y": -54,
+                "Z": 55
+            },
+            "MountTalentArchetype": {
+                "RowName": "Creature_Chew"
+            },
+            "bUseTemperature": true,
+            "ComfortableTemperatureRange": {
+                "X": 12,
+                "Y": 52
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Raptor",
+            "AISetup": {
+                "RowName": "Mount_Raptor"
+            },
+            "Icon": "/Game/Assets/2DArt/UI/Icons/MapIcons/T_Icon_Map_Raptor.T_Icon_Map_Raptor",
+            "Variations": [
+                {
+                    "MeshMaterials": {
+                        "3": "/Game/ASS/CRE/Raptor/M_CRE_Raptor_Feathers.M_CRE_Raptor_Feathers",
+                        "2": "/Game/ASS/CRE/Raptor/M_CRE_Raptor_Feathers_Edges.M_CRE_Raptor_Feathers_Edges",
+                        "0": "/Game/ASS/CRE/Raptor/M_CRE_Raptor.M_CRE_Raptor"
+                    },
+                    "GFurMaterials": {},
+                    "CarcassMeshMaterials": {
+                        "3": "/Game/ASS/CRE/Raptor/M_CRE_Raptor_Feathers.M_CRE_Raptor_Feathers",
+                        "2": "/Game/ASS/CRE/Raptor/M_CRE_Raptor_Feathers_Edges.M_CRE_Raptor_Feathers_Edges",
+                        "0": "/Game/ASS/CRE/Raptor/M_CRE_Raptor_Carcass.M_CRE_Raptor_Carcass"
+                    },
+                    "CarcassGFurMaterials": {},
+                    "Weighting": 2000
+                },
+                {
+                    "MeshMaterials": {
+                        "3": "/Game/ASS/CRE/Raptor/M_CRE_Raptor_Geothermal_Feathers_Rare_VarA.M_CRE_Raptor_Geothermal_Feathers_Rare_VarA",
+                        "2": "/Game/ASS/CRE/Raptor/M_CRE_Raptor_Geothermal_Feathers_Edges_Rare_VarA.M_CRE_Raptor_Geothermal_Feathers_Edges_Rare_VarA",
+                        "0": "/Game/ASS/CRE/Raptor/M_CRE_Raptor_Geothermal_Rare_VarA.M_CRE_Raptor_Geothermal_Rare_VarA"
+                    },
+                    "GFurMaterials": {},
+                    "CarcassMeshMaterials": {
+                        "3": "/Game/ASS/CRE/Raptor/M_CRE_Raptor_Geothermal_Feathers_Rare_VarA.M_CRE_Raptor_Geothermal_Feathers_Rare_VarA",
+                        "2": "/Game/ASS/CRE/Raptor/M_CRE_Raptor_Geothermal_Feathers_Edges_Rare_VarA.M_CRE_Raptor_Geothermal_Feathers_Edges_Rare_VarA",
+                        "0": "/Game/ASS/CRE/Raptor/M_CRE_Raptor_Geothermal_Carcass_Rare_VarA.M_CRE_Raptor_Geothermal_Carcass_Rare_VarA"
+                    },
+                    "CarcassGFurMaterials": {},
+                    "Weighting": 50
+                },
+                {
+                    "MeshMaterials": {
+                        "3": "/Game/ASS/CRE/Raptor/M_CRE_Raptor_Geothermal_Feathers_Rare_VarB.M_CRE_Raptor_Geothermal_Feathers_Rare_VarB",
+                        "2": "/Game/ASS/CRE/Raptor/M_CRE_Raptor_Geothermal_Feathers_Edges_Rare_VarB.M_CRE_Raptor_Geothermal_Feathers_Edges_Rare_VarB",
+                        "0": "/Game/ASS/CRE/Raptor/M_CRE_Raptor_Geothermal_Rare_VarB.M_CRE_Raptor_Geothermal_Rare_VarB"
+                    },
+                    "GFurMaterials": {},
+                    "CarcassMeshMaterials": {
+                        "3": "/Game/ASS/CRE/Raptor/M_CRE_Raptor_Geothermal_Feathers_Rare_VarB.M_CRE_Raptor_Geothermal_Feathers_Rare_VarB",
+                        "2": "/Game/ASS/CRE/Raptor/M_CRE_Raptor_Geothermal_Feathers_Edges_Rare_VarB.M_CRE_Raptor_Geothermal_Feathers_Edges_Rare_VarB",
+                        "0": "/Game/ASS/CRE/Raptor/M_CRE_Raptor_Geothermal_Carcass_Rare_VarB.M_CRE_Raptor_Geothermal_Carcass_Rare_VarB"
+                    },
+                    "CarcassGFurMaterials": {},
+                    "Weighting": 50
+                },
+                {
+                    "MeshMaterials": {
+                        "3": "/Game/ASS/CRE/Raptor/M_CRE_Raptor_Geothermal_Feathers_Rare_VarC.M_CRE_Raptor_Geothermal_Feathers_Rare_VarC",
+                        "2": "/Game/ASS/CRE/Raptor/M_CRE_Raptor_Geothermal_Feathers_Edges_Rare_VarC.M_CRE_Raptor_Geothermal_Feathers_Edges_Rare_VarC",
+                        "0": "/Game/ASS/CRE/Raptor/M_CRE_Raptor_Geothermal_Rare_VarC.M_CRE_Raptor_Geothermal_Rare_VarC"
+                    },
+                    "GFurMaterials": {},
+                    "CarcassMeshMaterials": {
+                        "3": "/Game/ASS/CRE/Raptor/M_CRE_Raptor_Geothermal_Feathers_Rare_VarC.M_CRE_Raptor_Geothermal_Feathers_Rare_VarC",
+                        "2": "/Game/ASS/CRE/Raptor/M_CRE_Raptor_Geothermal_Feathers_Edges_Rare_VarC.M_CRE_Raptor_Geothermal_Feathers_Edges_Rare_VarC",
+                        "0": "/Game/ASS/CRE/Raptor/M_CRE_Raptor_Geothermal_Carcass_Rare_VarC.M_CRE_Raptor_Geothermal_Carcass_Rare_VarC"
+                    },
+                    "CarcassGFurMaterials": {},
+                    "Weighting": 50
+                },
+                {
+                    "MeshMaterials": {
+                        "3": "/Game/ASS/CRE/Raptor/M_CRE_Raptor_Geothermal_Feathers_Rare_VarD.M_CRE_Raptor_Geothermal_Feathers_Rare_VarD",
+                        "2": "/Game/ASS/CRE/Raptor/M_CRE_Raptor_Geothermal_Feathers_Edges_Rare_VarD.M_CRE_Raptor_Geothermal_Feathers_Edges_Rare_VarD",
+                        "0": "/Game/ASS/CRE/Raptor/M_CRE_Raptor_Geothermal_Rare_VarD.M_CRE_Raptor_Geothermal_Rare_VarD"
+                    },
+                    "GFurMaterials": {},
+                    "CarcassMeshMaterials": {
+                        "3": "/Game/ASS/CRE/Raptor/M_CRE_Raptor_Geothermal_Feathers_Rare_VarD.M_CRE_Raptor_Geothermal_Feathers_Rare_VarD",
+                        "2": "/Game/ASS/CRE/Raptor/M_CRE_Raptor_Geothermal_Feathers_Edges_Rare_VarD.M_CRE_Raptor_Geothermal_Feathers_Edges_Rare_VarD",
+                        "0": "/Game/ASS/CRE/Raptor/M_CRE_Raptor_Geothermal_Carcass_Rare_VarD.M_CRE_Raptor_Geothermal_Carcass_Rare_VarD"
+                    },
+                    "CarcassGFurMaterials": {},
+                    "Weighting": 50
+                },
+                {
+                    "MeshMaterials": {
+                        "3": "/Game/ASS/CRE/Raptor/M_CRE_Raptor_Geothermal_Feathers_Rare_VarE.M_CRE_Raptor_Geothermal_Feathers_Rare_VarE",
+                        "2": "/Game/ASS/CRE/Raptor/M_CRE_Raptor_Geothermal_Feathers_Edges_Rare_VarE.M_CRE_Raptor_Geothermal_Feathers_Edges_Rare_VarE",
+                        "0": "/Game/ASS/CRE/Raptor/M_CRE_Raptor_Geothermal_Rare_VarE.M_CRE_Raptor_Geothermal_Rare_VarE"
+                    },
+                    "GFurMaterials": {},
+                    "CarcassMeshMaterials": {
+                        "3": "/Game/ASS/CRE/Raptor/M_CRE_Raptor_Geothermal_Feathers_Rare_VarE.M_CRE_Raptor_Geothermal_Feathers_Rare_VarE",
+                        "2": "/Game/ASS/CRE/Raptor/M_CRE_Raptor_Geothermal_Feathers_Edges_Rare_VarE.M_CRE_Raptor_Geothermal_Feathers_Edges_Rare_VarE",
+                        "0": "/Game/ASS/CRE/Raptor/M_CRE_Raptor_Geothermal_Carcass_Rare_VarE.M_CRE_Raptor_Geothermal_Carcass_Rare_VarE"
+                    },
+                    "CarcassGFurMaterials": {},
+                    "Weighting": 50
+                },
+                {
+                    "MeshMaterials": {
+                        "3": "/Game/ASS/CRE/Raptor/M_CRE_Raptor_Geothermal_Feathers_Rare_VarF.M_CRE_Raptor_Geothermal_Feathers_Rare_VarF",
+                        "2": "/Game/ASS/CRE/Raptor/M_CRE_Raptor_Geothermal_Feathers_Edges_Rare_VarF.M_CRE_Raptor_Geothermal_Feathers_Edges_Rare_VarF",
+                        "0": "/Game/ASS/CRE/Raptor/M_CRE_Raptor_Geothermal_Rare_VarF.M_CRE_Raptor_Geothermal_Rare_VarF"
+                    },
+                    "GFurMaterials": {},
+                    "CarcassMeshMaterials": {
+                        "3": "/Game/ASS/CRE/Raptor/M_CRE_Raptor_Geothermal_Feathers_Rare_VarF.M_CRE_Raptor_Geothermal_Feathers_Rare_VarF",
+                        "2": "/Game/ASS/CRE/Raptor/M_CRE_Raptor_Geothermal_Feathers_Edges_Rare_VarF.M_CRE_Raptor_Geothermal_Feathers_Edges_Rare_VarF",
+                        "0": "/Game/ASS/CRE/Raptor/M_CRE_Raptor_Geothermal_Carcass_Rare_VarF.M_CRE_Raptor_Geothermal_Carcass_Rare_VarF"
+                    },
+                    "CarcassGFurMaterials": {},
+                    "Weighting": 5
+                },
+                {
+                    "MeshMaterials": {
+                        "3": "/Game/ASS/CRE/Raptor/M_CRE_Raptor_Geothermal_Feathers_Legendary_VarA.M_CRE_Raptor_Geothermal_Feathers_Legendary_VarA",
+                        "2": "/Game/ASS/CRE/Raptor/M_CRE_Raptor_Geothermal_Feathers_Edges_Legendary_VarA.M_CRE_Raptor_Geothermal_Feathers_Edges_Legendary_VarA",
+                        "0": "/Game/ASS/CRE/Raptor/M_CRE_Raptor_Geothermal_Legendary_VarA.M_CRE_Raptor_Geothermal_Legendary_VarA"
+                    },
+                    "GFurMaterials": {},
+                    "CarcassMeshMaterials": {
+                        "3": "/Game/ASS/CRE/Raptor/M_CRE_Raptor_Geothermal_Feathers_Legendary_VarA.M_CRE_Raptor_Geothermal_Feathers_Legendary_VarA",
+                        "2": "/Game/ASS/CRE/Raptor/M_CRE_Raptor_Geothermal_Feathers_Edges_Legendary_VarA.M_CRE_Raptor_Geothermal_Feathers_Edges_Legendary_VarA",
+                        "0": "/Game/ASS/CRE/Raptor/M_CRE_Raptor_Geothermal_Carcass_Legendary_VarA.M_CRE_Raptor_Geothermal_Carcass_Legendary_VarA"
+                    },
+                    "CarcassGFurMaterials": {},
+                    "Weighting": 5
+                }
+            ],
+            "RelevantSaddleQuery": {
+                "RowName": "Any_Saddle"
+            },
+            "SupportedCombatStates": [
+                "DoNotEngage",
+                "NeutralEngagement",
+                "AggressiveEngagement"
+            ],
+            "SupportedMovementStates": [
+                "Follow",
+                "IdleWander",
+                "IdleStanding",
+                "IdleLying"
+            ],
+            "Animations": {
+                "(TagName=\"BT.Mount.Animation.IdleStanding\")": "/Game/ASS/CRE/Raptor/Raptor_Idle_Montage.Raptor_Idle_Montage",
+                "(TagName=\"BT.Mount.Animation.Rest\")": "/Game/ASS/CRE/Raptor/Raptor_Sleep_Montage.Raptor_Sleep_Montage",
+                "(TagName=\"BT.Mount.Animation.Eat\")": "/Game/ASS/CRE/Raptor/Raptor_Eat_Montage.Raptor_Eat_Montage",
+                "(TagName=\"BT.Mount.Animation.Jump\")": "/Game/ASS/CRE/Raptor/Raptor_Jump_Montage.Raptor_Jump_Montage",
+                "(TagName=\"BT.Mount.Animation.Attack\")": "/Game/ASS/CRE/Raptor/Anim/Raptor_Mount_Attack_Montage.Raptor_Mount_Attack_Montage",
+                "(TagName=\"BT.Mount.Animation.SecondaryAttack\")": "/Game/ASS/CRE/Raptor/Anim/Raptor_Jump_Attack_Montage.Raptor_Jump_Attack_Montage"
+            },
+            "InventoryPreviewCameraSettings": {
+                "RowName": "Mount_Horse"
+            },
+            "DefaultNames": [
+                "NSLOCTEXT(\"D_Mounts\", \"Raptor-DefaultNames-0\", \"Sickle\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Raptor-DefaultNames-1\", \"Claw\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Raptor-DefaultNames-2\", \"Fang\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Raptor-DefaultNames-3\", \"Razor\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Raptor-DefaultNames-4\", \"Scythe\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Raptor-DefaultNames-5\", \"Talon\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Raptor-DefaultNames-6\", \"Slash\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Raptor-DefaultNames-7\", \"Cutter\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Raptor-DefaultNames-8\", \"Tear\")"
+            ],
+            "MapIcon": {
+                "RowName": "Mount"
+            },
+            "RelativeFeetOffset": {
+                "X": -20,
+                "Y": 20
+            },
+            "RelativeHandsOffset": {
+                "X": -15
+            },
+            "RelativeLightOffset": {
+                "X": 33,
+                "Y": -54,
+                "Z": 55
+            },
+            "MountTalentArchetype": {
+                "RowName": "Creature_Raptor"
+            },
+            "bUseTemperature": true,
+            "ComfortableTemperatureRange": {
+                "X": 12,
+                "Y": 52
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Raptor_Desert",
+            "AISetup": {
+                "RowName": "Mount_Raptor_Desert"
+            },
+            "Icon": "/Game/Assets/2DArt/UI/Icons/MapIcons/T_Icon_Map_Raptor.T_Icon_Map_Raptor",
+            "Variations": [
+                {
+                    "MeshMaterials": {
+                        "3": "/Game/ASS/CRE/Raptor/M_CRE_Raptor_Desert_Feathers.M_CRE_Raptor_Desert_Feathers",
+                        "2": "/Game/ASS/CRE/Raptor/M_CRE_Raptor_Feathers_Desert_Edges.M_CRE_Raptor_Feathers_Desert_Edges",
+                        "0": "/Game/ASS/CRE/Raptor/M_CRE_Raptor_Desert.M_CRE_Raptor_Desert"
+                    },
+                    "GFurMaterials": {},
+                    "CarcassMeshMaterials": {
+                        "3": "/Game/ASS/CRE/Raptor/M_CRE_Raptor_Desert_Feathers.M_CRE_Raptor_Desert_Feathers",
+                        "2": "/Game/ASS/CRE/Raptor/M_CRE_Raptor_Feathers_Desert_Edges.M_CRE_Raptor_Feathers_Desert_Edges",
+                        "0": "/Game/ASS/CRE/Raptor/M_CRE_Raptor_Desert_Carcass1.M_CRE_Raptor_Desert_Carcass1"
+                    },
+                    "CarcassGFurMaterials": {},
+                    "Weighting": 2000
+                },
+                {
+                    "MeshMaterials": {
+                        "3": "/Game/ASS/CRE/Raptor/Variants/M_CRE_Raptor_Desert_Feathers_Rare_VarA.M_CRE_Raptor_Desert_Feathers_Rare_VarA",
+                        "2": "/Game/ASS/CRE/Raptor/Variants/M_CRE_Raptor_Feathers_Desert_Edges_Rare_VarA.M_CRE_Raptor_Feathers_Desert_Edges_Rare_VarA",
+                        "0": "/Game/ASS/CRE/Raptor/Variants/M_CRE_Raptor_Desert_Rare_VarA.M_CRE_Raptor_Desert_Rare_VarA"
+                    },
+                    "GFurMaterials": {},
+                    "CarcassMeshMaterials": {
+                        "3": "/Game/ASS/CRE/Raptor/Variants/M_CRE_Raptor_Desert_Feathers_Rare_VarA.M_CRE_Raptor_Desert_Feathers_Rare_VarA",
+                        "2": "/Game/ASS/CRE/Raptor/Variants/M_CRE_Raptor_Feathers_Desert_Edges_Rare_VarA.M_CRE_Raptor_Feathers_Desert_Edges_Rare_VarA",
+                        "0": "/Game/ASS/CRE/Raptor/Variants/M_CRE_Raptor_Desert_Rare_VarA_Carcass.M_CRE_Raptor_Desert_Rare_VarA_Carcass"
+                    },
+                    "CarcassGFurMaterials": {},
+                    "Weighting": 50
+                },
+                {
+                    "MeshMaterials": {
+                        "3": "/Game/ASS/CRE/Raptor/Variants/M_CRE_Raptor_Desert_Feathers_Rare_VarB.M_CRE_Raptor_Desert_Feathers_Rare_VarB",
+                        "2": "/Game/ASS/CRE/Raptor/Variants/M_CRE_Raptor_Feathers_Desert_Edges_Rare_VarB.M_CRE_Raptor_Feathers_Desert_Edges_Rare_VarB",
+                        "0": "/Game/ASS/CRE/Raptor/Variants/M_CRE_Raptor_Desert_Rare_VarB.M_CRE_Raptor_Desert_Rare_VarB"
+                    },
+                    "GFurMaterials": {},
+                    "CarcassMeshMaterials": {
+                        "3": "/Game/ASS/CRE/Raptor/Variants/M_CRE_Raptor_Desert_Feathers_Rare_VarB.M_CRE_Raptor_Desert_Feathers_Rare_VarB",
+                        "2": "/Game/ASS/CRE/Raptor/Variants/M_CRE_Raptor_Feathers_Desert_Edges_Rare_VarB.M_CRE_Raptor_Feathers_Desert_Edges_Rare_VarB",
+                        "0": "/Game/ASS/CRE/Raptor/Variants/M_CRE_Raptor_Desert_Rare_VarB_Carcass.M_CRE_Raptor_Desert_Rare_VarB_Carcass"
+                    },
+                    "CarcassGFurMaterials": {},
+                    "Weighting": 50
+                },
+                {
+                    "MeshMaterials": {
+                        "3": "/Game/ASS/CRE/Raptor/Variants/M_CRE_Raptor_Desert_Feathers_Rare_VarC.M_CRE_Raptor_Desert_Feathers_Rare_VarC",
+                        "2": "/Game/ASS/CRE/Raptor/Variants/M_CRE_Raptor_Feathers_Desert_Edges_Rare_VarC.M_CRE_Raptor_Feathers_Desert_Edges_Rare_VarC",
+                        "0": "/Game/ASS/CRE/Raptor/Variants/M_CRE_Raptor_Desert_Rare_VarC.M_CRE_Raptor_Desert_Rare_VarC"
+                    },
+                    "GFurMaterials": {},
+                    "CarcassMeshMaterials": {
+                        "3": "/Game/ASS/CRE/Raptor/Variants/M_CRE_Raptor_Desert_Feathers_Rare_VarC.M_CRE_Raptor_Desert_Feathers_Rare_VarC",
+                        "2": "/Game/ASS/CRE/Raptor/Variants/M_CRE_Raptor_Feathers_Desert_Edges_Rare_VarC.M_CRE_Raptor_Feathers_Desert_Edges_Rare_VarC",
+                        "0": "/Game/ASS/CRE/Raptor/Variants/M_CRE_Raptor_Desert_Rare_VarC_Carcass.M_CRE_Raptor_Desert_Rare_VarC_Carcass"
+                    },
+                    "CarcassGFurMaterials": {},
+                    "Weighting": 50
+                },
+                {
+                    "MeshMaterials": {
+                        "3": "/Game/ASS/CRE/Raptor/Variants/M_CRE_Raptor_Desert_Feathers_Rare_VarD.M_CRE_Raptor_Desert_Feathers_Rare_VarD",
+                        "2": "/Game/ASS/CRE/Raptor/Variants/M_CRE_Raptor_Feathers_Desert_Edges_Rare_VarD.M_CRE_Raptor_Feathers_Desert_Edges_Rare_VarD",
+                        "0": "/Game/ASS/CRE/Raptor/Variants/M_CRE_Raptor_Desert_Rare_VarD.M_CRE_Raptor_Desert_Rare_VarD"
+                    },
+                    "GFurMaterials": {},
+                    "CarcassMeshMaterials": {
+                        "3": "/Game/ASS/CRE/Raptor/Variants/M_CRE_Raptor_Desert_Feathers_Rare_VarD.M_CRE_Raptor_Desert_Feathers_Rare_VarD",
+                        "2": "/Game/ASS/CRE/Raptor/Variants/M_CRE_Raptor_Feathers_Desert_Edges_Rare_VarD.M_CRE_Raptor_Feathers_Desert_Edges_Rare_VarD",
+                        "0": "/Game/ASS/CRE/Raptor/Variants/M_CRE_Raptor_Desert_Rare_VarD_Carcass.M_CRE_Raptor_Desert_Rare_VarD_Carcass"
+                    },
+                    "CarcassGFurMaterials": {},
+                    "Weighting": 50
+                },
+                {
+                    "MeshMaterials": {
+                        "3": "/Game/ASS/CRE/Raptor/Variants/M_CRE_Raptor_Desert_Feathers_Rare_VarE.M_CRE_Raptor_Desert_Feathers_Rare_VarE",
+                        "2": "/Game/ASS/CRE/Raptor/Variants/M_CRE_Raptor_Feathers_Desert_Edges_Rare_VarE.M_CRE_Raptor_Feathers_Desert_Edges_Rare_VarE",
+                        "0": "/Game/ASS/CRE/Raptor/Variants/M_CRE_Raptor_Desert_Rare_VarE.M_CRE_Raptor_Desert_Rare_VarE"
+                    },
+                    "GFurMaterials": {},
+                    "CarcassMeshMaterials": {
+                        "3": "/Game/ASS/CRE/Raptor/Variants/M_CRE_Raptor_Desert_Feathers_Rare_VarE.M_CRE_Raptor_Desert_Feathers_Rare_VarE",
+                        "2": "/Game/ASS/CRE/Raptor/Variants/M_CRE_Raptor_Feathers_Desert_Edges_Rare_VarE.M_CRE_Raptor_Feathers_Desert_Edges_Rare_VarE",
+                        "0": "/Game/ASS/CRE/Raptor/Variants/M_CRE_Raptor_Desert_Rare_VarE_Carcass.M_CRE_Raptor_Desert_Rare_VarE_Carcass"
+                    },
+                    "CarcassGFurMaterials": {},
+                    "Weighting": 50
+                },
+                {
+                    "MeshMaterials": {
+                        "3": "/Game/ASS/CRE/Raptor/Variants/M_CRE_Raptor_Desert_Feathers_Legendary_VarA.M_CRE_Raptor_Desert_Feathers_Legendary_VarA",
+                        "2": "/Game/ASS/CRE/Raptor/Variants/M_CRE_Raptor_Feathers_Desert_Edges_Legendary_VarA.M_CRE_Raptor_Feathers_Desert_Edges_Legendary_VarA",
+                        "0": "/Game/ASS/CRE/Raptor/Variants/M_CRE_Raptor_Desert_Legendary_VarA.M_CRE_Raptor_Desert_Legendary_VarA"
+                    },
+                    "GFurMaterials": {},
+                    "CarcassMeshMaterials": {
+                        "3": "/Game/ASS/CRE/Raptor/Variants/M_CRE_Raptor_Desert_Feathers_Legendary_VarA.M_CRE_Raptor_Desert_Feathers_Legendary_VarA",
+                        "2": "/Game/ASS/CRE/Raptor/Variants/M_CRE_Raptor_Feathers_Desert_Edges_Legendary_VarA.M_CRE_Raptor_Feathers_Desert_Edges_Legendary_VarA",
+                        "0": "/Game/ASS/CRE/Raptor/Variants/M_CRE_Raptor_Desert_Legendary_VarA_Carcass.M_CRE_Raptor_Desert_Legendary_VarA_Carcass"
+                    },
+                    "CarcassGFurMaterials": {},
+                    "Weighting": 5
+                },
+                {
+                    "MeshMaterials": {
+                        "3": "/Game/ASS/CRE/Raptor/Variants/M_CRE_Raptor_Desert_Feathers_Legendary_VarB.M_CRE_Raptor_Desert_Feathers_Legendary_VarB",
+                        "2": "/Game/ASS/CRE/Raptor/Variants/M_CRE_Raptor_Feathers_Desert_Edges_Legendary_VarB.M_CRE_Raptor_Feathers_Desert_Edges_Legendary_VarB",
+                        "0": "/Game/ASS/CRE/Raptor/Variants/M_CRE_Raptor_Desert_Legendary_VarB.M_CRE_Raptor_Desert_Legendary_VarB"
+                    },
+                    "GFurMaterials": {},
+                    "CarcassMeshMaterials": {
+                        "3": "/Game/ASS/CRE/Raptor/Variants/M_CRE_Raptor_Desert_Feathers_Legendary_VarB.M_CRE_Raptor_Desert_Feathers_Legendary_VarB",
+                        "2": "/Game/ASS/CRE/Raptor/Variants/M_CRE_Raptor_Feathers_Desert_Edges_Legendary_VarB.M_CRE_Raptor_Feathers_Desert_Edges_Legendary_VarB",
+                        "0": "/Game/ASS/CRE/Raptor/Variants/M_CRE_Raptor_Desert_Legendary_VarB_Carcass.M_CRE_Raptor_Desert_Legendary_VarB_Carcass"
+                    },
+                    "CarcassGFurMaterials": {},
+                    "Weighting": 5
+                }
+            ],
+            "RelevantSaddleQuery": {
+                "RowName": "Any_Saddle"
+            },
+            "SupportedCombatStates": [
+                "DoNotEngage",
+                "NeutralEngagement",
+                "AggressiveEngagement"
+            ],
+            "SupportedMovementStates": [
+                "Follow",
+                "IdleWander",
+                "IdleStanding",
+                "IdleLying"
+            ],
+            "Animations": {
+                "(TagName=\"BT.Mount.Animation.IdleStanding\")": "/Game/ASS/CRE/Raptor/Raptor_Idle_Montage.Raptor_Idle_Montage",
+                "(TagName=\"BT.Mount.Animation.Rest\")": "/Game/ASS/CRE/Raptor/Raptor_Sleep_Montage.Raptor_Sleep_Montage",
+                "(TagName=\"BT.Mount.Animation.Eat\")": "/Game/ASS/CRE/Raptor/Raptor_Eat_Montage.Raptor_Eat_Montage",
+                "(TagName=\"BT.Mount.Animation.Jump\")": "/Game/ASS/CRE/Raptor/Raptor_Jump_Montage.Raptor_Jump_Montage",
+                "(TagName=\"BT.Mount.Animation.Attack\")": "/Game/ASS/CRE/Raptor/Anim/Raptor_Mount_Attack_Montage.Raptor_Mount_Attack_Montage",
+                "(TagName=\"BT.Mount.Animation.SecondaryAttack\")": "/Game/ASS/CRE/Raptor/Anim/Raptor_Jump_Attack_Montage.Raptor_Jump_Attack_Montage"
+            },
+            "InventoryPreviewCameraSettings": {
+                "RowName": "Mount_Horse"
+            },
+            "DefaultNames": [
+                "NSLOCTEXT(\"D_Mounts\", \"Raptor_Desert-DefaultNames-0\", \"Sickle\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Raptor_Desert-DefaultNames-1\", \"Claw\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Raptor_Desert-DefaultNames-2\", \"Fang\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Raptor_Desert-DefaultNames-3\", \"Razor\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Raptor_Desert-DefaultNames-4\", \"Scythe\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Raptor_Desert-DefaultNames-5\", \"Talon\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Raptor_Desert-DefaultNames-6\", \"Slash\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Raptor_Desert-DefaultNames-7\", \"Cutter\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Raptor_Desert-DefaultNames-8\", \"Tear\")"
+            ],
+            "MapIcon": {
+                "RowName": "Mount"
+            },
+            "RelativeFeetOffset": {
+                "X": -20,
+                "Y": 20
+            },
+            "RelativeHandsOffset": {
+                "X": -15
+            },
+            "RelativeLightOffset": {
+                "X": 33,
+                "Y": -54,
+                "Z": 55
+            },
+            "MountTalentArchetype": {
+                "RowName": "Creature_Raptor_Desert"
+            },
+            "bUseTemperature": true,
+            "ComfortableTemperatureRange": {
+                "X": 12,
+                "Y": 52
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Slinker",
+            "AISetup": {
+                "RowName": "Mount_Slinker"
+            },
+            "Icon": "/Game/Assets/2DArt/UI/Icons/MapIcons/T_Icon_Map_Slinker.T_Icon_Map_Slinker",
+            "Variations": [
+                {
+                    "MeshMaterials": {
+                        "0": "/Game/ASS/CRE/Slinker/M_CRE_Slinker.M_CRE_Slinker",
+                        "2": "/Game/ASS/CRE/Slinker/M_CRE_Slinker_Feathers.M_CRE_Slinker_Feathers"
+                    },
+                    "GFurMaterials": {
+                        "0": "/Game/ASS/CRE/Slinker/M_CRE_Slinker_Fur.M_CRE_Slinker_Fur",
+                        "2": "/Game/ASS/CRE/Slinker/M_CRE_Slinker_Feathers.M_CRE_Slinker_Feathers"
+                    },
+                    "CarcassMeshMaterials": {
+                        "0": "/Game/ASS/CRE/Slinker/M_CRE_Slinker_Carcass.M_CRE_Slinker_Carcass",
+                        "2": "/Game/ASS/CRE/Slinker/M_CRE_Slinker_Feathers.M_CRE_Slinker_Feathers"
+                    },
+                    "CarcassGFurMaterials": {
+                        "0": "/Game/ASS/CRE/Slinker/M_CRE_Slinker_Fur_Carc.M_CRE_Slinker_Fur_Carc",
+                        "2": "/Game/ASS/CRE/Slinker/M_CRE_Slinker_Feathers.M_CRE_Slinker_Feathers"
+                    },
+                    "Weighting": 2000
+                },
+                {
+                    "MeshMaterials": {
+                        "2": "/Game/ASS/CRE/Slinker/M_CRE_Slinker_Feathers_Rare_VarA.M_CRE_Slinker_Feathers_Rare_VarA",
+                        "0": "/Game/ASS/CRE/Slinker/M_CRE_Slinker_Rare_VarA.M_CRE_Slinker_Rare_VarA"
+                    },
+                    "GFurMaterials": {
+                        "0": "/Game/ASS/CRE/Slinker/M_CRE_Slinker_Fur_Rare_VarA.M_CRE_Slinker_Fur_Rare_VarA",
+                        "2": "/Game/ASS/CRE/Slinker/M_CRE_Slinker_Feathers_Rare_VarA.M_CRE_Slinker_Feathers_Rare_VarA"
+                    },
+                    "CarcassMeshMaterials": {
+                        "2": "/Game/ASS/CRE/Slinker/M_CRE_Slinker_Feathers_Rare_VarA.M_CRE_Slinker_Feathers_Rare_VarA",
+                        "0": "/Game/ASS/CRE/Slinker/M_CRE_Slinker_Carcass_Rare_VarA.M_CRE_Slinker_Carcass_Rare_VarA"
+                    },
+                    "CarcassGFurMaterials": {
+                        "0": "/Game/ASS/CRE/Slinker/M_CRE_Slinker_Fur_Carc_Rare_VarA.M_CRE_Slinker_Fur_Carc_Rare_VarA",
+                        "2": "/Game/ASS/CRE/Slinker/M_CRE_Slinker_Feathers_Rare_VarA.M_CRE_Slinker_Feathers_Rare_VarA"
+                    },
+                    "Weighting": 50
+                },
+                {
+                    "MeshMaterials": {
+                        "2": "/Game/ASS/CRE/Slinker/M_CRE_Slinker_Feathers_Rare_VarB.M_CRE_Slinker_Feathers_Rare_VarB",
+                        "0": "/Game/ASS/CRE/Slinker/M_CRE_Slinker_Rare_VarB.M_CRE_Slinker_Rare_VarB"
+                    },
+                    "GFurMaterials": {
+                        "0": "/Game/ASS/CRE/Slinker/M_CRE_Slinker_Fur_Rare_VarB.M_CRE_Slinker_Fur_Rare_VarB",
+                        "2": "/Game/ASS/CRE/Slinker/M_CRE_Slinker_Feathers_Rare_VarB.M_CRE_Slinker_Feathers_Rare_VarB"
+                    },
+                    "CarcassMeshMaterials": {
+                        "2": "/Game/ASS/CRE/Slinker/M_CRE_Slinker_Feathers_Rare_VarB.M_CRE_Slinker_Feathers_Rare_VarB",
+                        "0": "/Game/ASS/CRE/Slinker/M_CRE_Slinker_Carcass_Rare_VarB.M_CRE_Slinker_Carcass_Rare_VarB"
+                    },
+                    "CarcassGFurMaterials": {
+                        "0": "/Game/ASS/CRE/Slinker/M_CRE_Slinker_Fur_Carc_Rare_VarB.M_CRE_Slinker_Fur_Carc_Rare_VarB",
+                        "2": "/Game/ASS/CRE/Slinker/M_CRE_Slinker_Feathers_Rare_VarB.M_CRE_Slinker_Feathers_Rare_VarB"
+                    },
+                    "Weighting": 50
+                },
+                {
+                    "MeshMaterials": {
+                        "2": "/Game/ASS/CRE/Slinker/M_CRE_Slinker_Feathers_Rare_VarC.M_CRE_Slinker_Feathers_Rare_VarC",
+                        "0": "/Game/ASS/CRE/Slinker/M_CRE_Slinker_Rare_VarC.M_CRE_Slinker_Rare_VarC"
+                    },
+                    "GFurMaterials": {
+                        "0": "/Game/ASS/CRE/Slinker/M_CRE_Slinker_Fur_Rare_VarC.M_CRE_Slinker_Fur_Rare_VarC",
+                        "2": "/Game/ASS/CRE/Slinker/M_CRE_Slinker_Feathers_Rare_VarC.M_CRE_Slinker_Feathers_Rare_VarC"
+                    },
+                    "CarcassMeshMaterials": {
+                        "2": "/Game/ASS/CRE/Slinker/M_CRE_Slinker_Feathers_Rare_VarC.M_CRE_Slinker_Feathers_Rare_VarC",
+                        "0": "/Game/ASS/CRE/Slinker/M_CRE_Slinker_Carcass_Rare_VarC.M_CRE_Slinker_Carcass_Rare_VarC"
+                    },
+                    "CarcassGFurMaterials": {
+                        "0": "/Game/ASS/CRE/Slinker/M_CRE_Slinker_Fur_Carc_Rare_VarC.M_CRE_Slinker_Fur_Carc_Rare_VarC",
+                        "2": "/Game/ASS/CRE/Slinker/M_CRE_Slinker_Feathers_Rare_VarC.M_CRE_Slinker_Feathers_Rare_VarC"
+                    },
+                    "Weighting": 5
+                },
+                {
+                    "MeshMaterials": {
+                        "2": "/Game/ASS/CRE/Slinker/M_CRE_Slinker_Feathers_Rare_VarD.M_CRE_Slinker_Feathers_Rare_VarD",
+                        "0": "/Game/ASS/CRE/Slinker/M_CRE_Slinker_Rare_VarD.M_CRE_Slinker_Rare_VarD"
+                    },
+                    "GFurMaterials": {
+                        "0": "/Game/ASS/CRE/Slinker/M_CRE_Slinker_Fur_Rare_VarD.M_CRE_Slinker_Fur_Rare_VarD",
+                        "2": "/Game/ASS/CRE/Slinker/M_CRE_Slinker_Feathers_Rare_VarD.M_CRE_Slinker_Feathers_Rare_VarD"
+                    },
+                    "CarcassMeshMaterials": {
+                        "2": "/Game/ASS/CRE/Slinker/M_CRE_Slinker_Feathers_Rare_VarD.M_CRE_Slinker_Feathers_Rare_VarD",
+                        "0": "/Game/ASS/CRE/Slinker/M_CRE_Slinker_Carcass_Rare_VarD.M_CRE_Slinker_Carcass_Rare_VarD"
+                    },
+                    "CarcassGFurMaterials": {
+                        "0": "/Game/ASS/CRE/Slinker/M_CRE_Slinker_Fur_Carc_Rare_VarD.M_CRE_Slinker_Fur_Carc_Rare_VarD",
+                        "2": "/Game/ASS/CRE/Slinker/M_CRE_Slinker_Feathers_Rare_VarD.M_CRE_Slinker_Feathers_Rare_VarD"
+                    },
+                    "Weighting": 50
+                },
+                {
+                    "MeshMaterials": {
+                        "2": "/Game/ASS/CRE/Slinker/M_CRE_Slinker_Feathers_Rare_VarE.M_CRE_Slinker_Feathers_Rare_VarE",
+                        "0": "/Game/ASS/CRE/Slinker/M_CRE_Slinker_Rare_VarE.M_CRE_Slinker_Rare_VarE"
+                    },
+                    "GFurMaterials": {
+                        "0": "/Game/ASS/CRE/Slinker/M_CRE_Slinker_Fur_Rare_VarE.M_CRE_Slinker_Fur_Rare_VarE",
+                        "2": "/Game/ASS/CRE/Slinker/M_CRE_Slinker_Feathers_Rare_VarE.M_CRE_Slinker_Feathers_Rare_VarE"
+                    },
+                    "CarcassMeshMaterials": {
+                        "2": "/Game/ASS/CRE/Slinker/M_CRE_Slinker_Feathers_Rare_VarE.M_CRE_Slinker_Feathers_Rare_VarE",
+                        "0": "/Game/ASS/CRE/Slinker/M_CRE_Slinker_Carcass_Rare_VarE.M_CRE_Slinker_Carcass_Rare_VarE"
+                    },
+                    "CarcassGFurMaterials": {
+                        "0": "/Game/ASS/CRE/Slinker/M_CRE_Slinker_Fur_Carc_Rare_VarE.M_CRE_Slinker_Fur_Carc_Rare_VarE",
+                        "2": "/Game/ASS/CRE/Slinker/M_CRE_Slinker_Feathers_Rare_VarE.M_CRE_Slinker_Feathers_Rare_VarE"
+                    },
+                    "Weighting": 50
+                },
+                {
+                    "MeshMaterials": {
+                        "2": "/Game/ASS/CRE/Slinker/M_CRE_Slinker_Feathers_Legendary_VarA.M_CRE_Slinker_Feathers_Legendary_VarA",
+                        "0": "/Game/ASS/CRE/Slinker/M_CRE_Slinker_Legendary_VarA.M_CRE_Slinker_Legendary_VarA"
+                    },
+                    "GFurMaterials": {
+                        "0": "/Game/ASS/CRE/Slinker/M_CRE_Slinker_Fur_Legendary_VarA.M_CRE_Slinker_Fur_Legendary_VarA",
+                        "2": "/Game/ASS/CRE/Slinker/M_CRE_Slinker_Feathers_Legendary_VarA.M_CRE_Slinker_Feathers_Legendary_VarA"
+                    },
+                    "CarcassMeshMaterials": {
+                        "2": "/Game/ASS/CRE/Slinker/M_CRE_Slinker_Feathers_Legendary_VarA.M_CRE_Slinker_Feathers_Legendary_VarA",
+                        "0": "/Game/ASS/CRE/Slinker/M_CRE_Slinker_Carcass_Legendary_VarA.M_CRE_Slinker_Carcass_Legendary_VarA"
+                    },
+                    "CarcassGFurMaterials": {
+                        "0": "/Game/ASS/CRE/Slinker/M_CRE_Slinker_Fur_Carc_Legendary_VarA.M_CRE_Slinker_Fur_Carc_Legendary_VarA",
+                        "2": "/Game/ASS/CRE/Slinker/M_CRE_Slinker_Feathers_Legendary_VarA.M_CRE_Slinker_Feathers_Legendary_VarA"
+                    },
+                    "Weighting": 5
+                }
+            ],
+            "RelevantSaddleQuery": {
+                "RowName": "Any_Saddle"
+            },
+            "SupportedCombatStates": [
+                "DoNotEngage",
+                "NeutralEngagement",
+                "AggressiveEngagement"
+            ],
+            "SupportedMovementStates": [
+                "Follow",
+                "IdleWander",
+                "IdleStanding",
+                "IdleLying"
+            ],
+            "Animations": {
+                "(TagName=\"BT.Mount.Animation.IdleStanding\")": "/Game/ASS/CRE/Slinker/Anims/Slinker_Idle_Montage.Slinker_Idle_Montage",
+                "(TagName=\"BT.Mount.Animation.Rest\")": "/Game/ASS/CRE/Slinker/Anims/Slinker_Rest_Montage.Slinker_Rest_Montage",
+                "(TagName=\"BT.Mount.Animation.Eat\")": "/Game/ASS/CRE/Slinker/Anims/Slinker_Eating_Montage.Slinker_Eating_Montage",
+                "(TagName=\"BT.Mount.Animation.Jump\")": "/Game/ASS/CRE/Slinker/Anims/Slinker_Jump_Montage.Slinker_Jump_Montage",
+                "(TagName=\"BT.Mount.Animation.Attack\")": "/Game/ASS/CRE/Slinker/Anims/Slinker_Attack_Montage.Slinker_Attack_Montage",
+                "(TagName=\"BT.Mount.Animation.Drink\")": "/Game/ASS/CRE/Slinker/Anims/Slinker_Eating_Montage.Slinker_Eating_Montage"
+            },
+            "InventoryPreviewCameraSettings": {
+                "RowName": "Mount_Slinker"
+            },
+            "DefaultNames": [
+                "NSLOCTEXT(\"D_Mounts\", \"Slinker-DefaultNames-0\", \"Bastet\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Slinker-DefaultNames-1\", \"Bygul\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Slinker-DefaultNames-2\", \"Simba\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Slinker-DefaultNames-3\", \"Nala\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Slinker-DefaultNames-4\", \"Mufasa\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Slinker-DefaultNames-5\", \"Scar\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Slinker-DefaultNames-6\", \"Aslan\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Slinker-DefaultNames-7\", \"Shere Khan\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Slinker-DefaultNames-8\", \"Tigger\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Slinker-DefaultNames-9\", \"Trjegul\")"
+            ],
+            "MapIcon": {
+                "RowName": "Mount"
+            },
+            "RelativeFeetOffset": {
+                "X": -20,
+                "Y": 20
+            },
+            "RelativeHandsOffset": {
+                "X": -15
+            },
+            "RelativeLightOffset": {
+                "X": 33,
+                "Y": -54,
+                "Z": 55
+            },
+            "MountTalentArchetype": {
+                "RowName": "Creature_Slinker"
+            },
+            "bUseTemperature": true,
+            "ComfortableTemperatureRange": {
+                "X": -17,
+                "Y": 26
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Storca",
+            "AISetup": {
+                "RowName": "Tamed_Storca"
+            },
+            "Icon": "/Game/Assets/2DArt/UI/Icons/MapIcons/T_Icon_Map_Storca.T_Icon_Map_Storca",
+            "SupportedCombatStates": [
+                "DoNotEngage",
+                "NeutralEngagement",
+                "AggressiveEngagement"
+            ],
+            "SupportedMovementStates": [
+                "Follow",
+                "IdleWander"
+            ],
+            "Animations": {
+                "(TagName=\"BT.Mount.Animation.IdleStanding\")": "/Game/ASS/CRE/Slinker/Anims/Slinker_Idle_Montage.Slinker_Idle_Montage",
+                "(TagName=\"BT.Mount.Animation.Rest\")": "/Game/ASS/CRE/Slinker/Anims/Slinker_Rest_Montage.Slinker_Rest_Montage",
+                "(TagName=\"BT.Mount.Animation.Eat\")": "/Game/ASS/CRE/Slinker/Anims/Slinker_Eating_Montage.Slinker_Eating_Montage",
+                "(TagName=\"BT.Mount.Animation.Jump\")": "/Game/ASS/CRE/Slinker/Anims/Slinker_Jump_Montage.Slinker_Jump_Montage",
+                "(TagName=\"BT.Mount.Animation.Attack\")": "/Game/ASS/CRE/Slinker/Anims/Slinker_Attack_Montage.Slinker_Attack_Montage",
+                "(TagName=\"BT.Mount.Animation.Drink\")": "/Game/ASS/CRE/Slinker/Anims/Slinker_Eating_Montage.Slinker_Eating_Montage"
+            },
+            "InventoryPreviewCameraSettings": {
+                "RowName": "Mount_Storca"
+            },
+            "DefaultNames": [
+                "NSLOCTEXT(\"D_Mounts\", \"Storca-DefaultNames-0\", \"Rexo\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Storca-DefaultNames-1\", \"Zuzu\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Storca-DefaultNames-2\", \"Momo\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Storca-DefaultNames-3\", \"Tato\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Storca-DefaultNames-4\", \"Lolo\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Storca-DefaultNames-5\", \"Bobo\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Storca-DefaultNames-6\", \"Nubi\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Storca-DefaultNames-7\", \"Koba\")"
+            ],
+            "MapIcon": {
+                "RowName": "Mount"
+            },
+            "RelativeFeetOffset": {
+                "X": -10,
+                "Y": -17.5,
+                "Z": 10
+            },
+            "MountTalentArchetype": {
+                "RowName": "Creature_Storca"
+            },
+            "GrowthCurve": {
+                "RowName": "AI_Pets"
+            },
+            "bUseTemperature": true,
+            "ComfortableTemperatureRange": {
+                "X": -10,
+                "Y": 25
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Orka",
+            "AISetup": {
+                "RowName": "Tamed_Orka"
+            },
+            "Icon": "/Game/Assets/2DArt/UI/Icons/MapIcons/T_Icon_Map_Skulk.T_Icon_Map_Skulk",
+            "SupportedCombatStates": [
+                "DoNotEngage",
+                "NeutralEngagement",
+                "AggressiveEngagement"
+            ],
+            "SupportedMovementStates": [
+                "Follow",
+                "IdleWander"
+            ],
+            "Animations": {
+                "(TagName=\"BT.Mount.Animation.IdleStanding\")": "/Game/ASS/CRE/Orka/Animation/Orka_Stand_Idle_Montage.Orka_Stand_Idle_Montage",
+                "(TagName=\"BT.Mount.Animation.Rest\")": "/Game/ASS/CRE/Orka/Animation/Orka_Rest_Montage.Orka_Rest_Montage",
+                "(TagName=\"BT.Mount.Animation.Eat\")": "/Game/ASS/CRE/Orka/Animation/Orka_Stand_Eating_Montage.Orka_Stand_Eating_Montage",
+                "(TagName=\"BT.Mount.Animation.Attack\")": "/Game/ASS/CRE/Orka/Animation/Orka_Attack_Montage.Orka_Attack_Montage",
+                "(TagName=\"BT.Mount.Animation.Drink\")": "/Game/ASS/CRE/Orka/Animation/Orka_Stand_Eating_Montage.Orka_Stand_Eating_Montage"
+            },
+            "InventoryPreviewCameraSettings": {
+                "RowName": "Mount_Storca"
+            },
+            "DefaultNames": [
+                "NSLOCTEXT(\"D_Mounts\", \"Orka-DefaultNames-0\", \"Orvion\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Orka-DefaultNames-1\", \"Gravemaw\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Orka-DefaultNames-2\", \"Nihmouth\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Orka-DefaultNames-3\", \"Abyssal\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Orka-DefaultNames-4\", \"Chasmor\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Orka-DefaultNames-5\", \"Vorrax\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Orka-DefaultNames-6\", \"Devora\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Orka-DefaultNames-7\", \"Mawgrin\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Orka-DefaultNames-8\", \"Gulprax\")"
+            ],
+            "MapIcon": {
+                "RowName": "Mount"
+            },
+            "RelativeFeetOffset": {
+                "X": -10,
+                "Y": -17.5,
+                "Z": 10
+            },
+            "MountTalentArchetype": {
+                "RowName": "Creature_Orka"
+            },
+            "GrowthCurve": {
+                "RowName": "AI_Pets"
+            },
+            "bUseTemperature": true,
+            "ComfortableTemperatureRange": {
+                "X": -10,
+                "Y": 25
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Tundra_Monkey",
+            "AISetup": {
+                "RowName": "Tamed_Tundra_Monkey"
+            },
+            "Icon": "/Game/Assets/2DArt/UI/Icons/MapIcons/T_Icon_Map_TundraMonkey.T_Icon_Map_TundraMonkey",
+            "Variations": [
+                {
+                    "MeshMaterials": {
+                        "1": "/Game/ASS/CRE/Tundra_Monkey/M_CRE_Tundra_Monkey.M_CRE_Tundra_Monkey",
+                        "0": "/Game/ASS/CRE/Tundra_Monkey/M_CRE_Tundra_Monkey_FurCards.M_CRE_Tundra_Monkey_FurCards"
+                    },
+                    "GFurMaterials": {
+                        "1": "/Game/ASS/CRE/Tundra_Monkey/M_CRE_Tundra_Monkey_Fur.M_CRE_Tundra_Monkey_Fur"
+                    },
+                    "CarcassMeshMaterials": {
+                        "1": "/Game/ASS/CRE/Tundra_Monkey/M_CRE_Tundra_Monkey_Carcass.M_CRE_Tundra_Monkey_Carcass",
+                        "0": "/Game/ASS/CRE/Tundra_Monkey/M_CRE_Tundra_Monkey_FurCards_Carcass.M_CRE_Tundra_Monkey_FurCards_Carcass"
+                    },
+                    "CarcassGFurMaterials": {
+                        "1": "/Game/ASS/CRE/Tundra_Monkey/M_CRE_Tundra_Monkey_Rare_VarA_Fur.M_CRE_Tundra_Monkey_Rare_VarA_Fur"
+                    },
+                    "Weighting": 50
+                },
+                {
+                    "MeshMaterials": {
+                        "1": "/Game/ASS/CRE/Tundra_Monkey/M_CRE_Tundra_Monkey_Rare_VarA.M_CRE_Tundra_Monkey_Rare_VarA",
+                        "0": "/Game/ASS/CRE/Tundra_Monkey/M_CRE_Tundra_Monkey_Rare_VarA_FurCards.M_CRE_Tundra_Monkey_Rare_VarA_FurCards"
+                    },
+                    "GFurMaterials": {
+                        "1": "/Game/ASS/CRE/Tundra_Monkey/M_CRE_Tundra_Monkey_Rare_VarA_Fur.M_CRE_Tundra_Monkey_Rare_VarA_Fur"
+                    },
+                    "CarcassMeshMaterials": {
+                        "1": "/Game/ASS/CRE/Tundra_Monkey/M_CRE_Tundra_Monkey_Rare_VarA_Carcass_2.M_CRE_Tundra_Monkey_Rare_VarA_Carcass_2",
+                        "0": "/Game/ASS/CRE/Tundra_Monkey/M_CRE_Tundra_Monkey_Rare_VarA_FurCards_Carcass_2.M_CRE_Tundra_Monkey_Rare_VarA_FurCards_Carcass_2"
+                    },
+                    "CarcassGFurMaterials": {
+                        "1": "/Game/ASS/CRE/Tundra_Monkey/M_CRE_Tundra_Monkey_Rare_VarA_Fur.M_CRE_Tundra_Monkey_Rare_VarA_Fur"
+                    },
+                    "Weighting": 50
+                },
+                {
+                    "MeshMaterials": {
+                        "1": "/Game/ASS/CRE/Tundra_Monkey/M_CRE_Tundra_Monkey_Rare_VarB.M_CRE_Tundra_Monkey_Rare_VarB",
+                        "0": "/Game/ASS/CRE/Tundra_Monkey/M_CRE_Tundra_Monkey_Rare_VarB_FurCards.M_CRE_Tundra_Monkey_Rare_VarB_FurCards"
+                    },
+                    "GFurMaterials": {
+                        "1": "/Game/ASS/CRE/Tundra_Monkey/M_CRE_Tundra_Monkey_Rare_VarB_Fur.M_CRE_Tundra_Monkey_Rare_VarB_Fur"
+                    },
+                    "CarcassMeshMaterials": {
+                        "1": "/Game/ASS/CRE/Tundra_Monkey/M_CRE_Tundra_Monkey_Rare_VarB_Carcass.M_CRE_Tundra_Monkey_Rare_VarB_Carcass",
+                        "0": "/Game/ASS/CRE/Tundra_Monkey/M_CRE_Tundra_Monkey_Rare_VarB_FurCards_Carcass.M_CRE_Tundra_Monkey_Rare_VarB_FurCards_Carcass"
+                    },
+                    "CarcassGFurMaterials": {
+                        "1": "/Game/ASS/CRE/Tundra_Monkey/M_CRE_Tundra_Monkey_Rare_VarB_Fur.M_CRE_Tundra_Monkey_Rare_VarB_Fur"
+                    },
+                    "Weighting": 50
+                },
+                {
+                    "MeshMaterials": {
+                        "1": "/Game/ASS/CRE/Tundra_Monkey/M_CRE_Tundra_Monkey_Rare_VarC.M_CRE_Tundra_Monkey_Rare_VarC",
+                        "0": "/Game/ASS/CRE/Tundra_Monkey/M_CRE_Tundra_Monkey_Rare_VarC_FurCards.M_CRE_Tundra_Monkey_Rare_VarC_FurCards"
+                    },
+                    "GFurMaterials": {
+                        "1": "/Game/ASS/CRE/Tundra_Monkey/M_CRE_Tundra_Monkey_Rare_VarC_Fur.M_CRE_Tundra_Monkey_Rare_VarC_Fur"
+                    },
+                    "CarcassMeshMaterials": {
+                        "1": "/Game/ASS/CRE/Tundra_Monkey/M_CRE_Tundra_Monkey_Rare_VarC_Carcass.M_CRE_Tundra_Monkey_Rare_VarC_Carcass",
+                        "0": "/Game/ASS/CRE/Tundra_Monkey/M_CRE_Tundra_Monkey_Rare_VarC_FurCards_Carcass.M_CRE_Tundra_Monkey_Rare_VarC_FurCards_Carcass"
+                    },
+                    "CarcassGFurMaterials": {
+                        "1": "/Game/ASS/CRE/Tundra_Monkey/M_CRE_Tundra_Monkey_Rare_VarC_Fur.M_CRE_Tundra_Monkey_Rare_VarC_Fur"
+                    },
+                    "Weighting": 50
+                },
+                {
+                    "MeshMaterials": {
+                        "1": "/Game/ASS/CRE/Tundra_Monkey/M_CRE_Tundra_Monkey_Rare_VarD.M_CRE_Tundra_Monkey_Rare_VarD",
+                        "0": "/Game/ASS/CRE/Tundra_Monkey/M_CRE_Tundra_Monkey_Rare_VarD_FurCards.M_CRE_Tundra_Monkey_Rare_VarD_FurCards"
+                    },
+                    "GFurMaterials": {
+                        "1": "/Game/ASS/CRE/Tundra_Monkey/M_CRE_Tundra_Monkey_Rare_VarD_Fur.M_CRE_Tundra_Monkey_Rare_VarD_Fur"
+                    },
+                    "CarcassMeshMaterials": {
+                        "1": "/Game/ASS/CRE/Tundra_Monkey/M_CRE_Tundra_Monkey_Rare_VarD_Carcass.M_CRE_Tundra_Monkey_Rare_VarD_Carcass",
+                        "0": "/Game/ASS/CRE/Tundra_Monkey/M_CRE_Tundra_Monkey_Rare_VarD_FurCards_Carcass.M_CRE_Tundra_Monkey_Rare_VarD_FurCards_Carcass"
+                    },
+                    "CarcassGFurMaterials": {
+                        "1": "/Game/ASS/CRE/Tundra_Monkey/M_CRE_Tundra_Monkey_Rare_VarD_Fur.M_CRE_Tundra_Monkey_Rare_VarD_Fur"
+                    },
+                    "Weighting": 50
+                },
+                {
+                    "MeshMaterials": {
+                        "1": "/Game/ASS/CRE/Tundra_Monkey/M_CRE_Tundra_Monkey_Rare_VarE.M_CRE_Tundra_Monkey_Rare_VarE",
+                        "0": "/Game/ASS/CRE/Tundra_Monkey/M_CRE_Tundra_Monkey_Rare_VarE_FurCards.M_CRE_Tundra_Monkey_Rare_VarE_FurCards"
+                    },
+                    "GFurMaterials": {
+                        "1": "/Game/ASS/CRE/Tundra_Monkey/M_CRE_Tundra_Monkey_Rare_VarE_Fur.M_CRE_Tundra_Monkey_Rare_VarE_Fur"
+                    },
+                    "CarcassMeshMaterials": {
+                        "1": "/Game/ASS/CRE/Tundra_Monkey/M_CRE_Tundra_Monkey_Rare_VarE_Carcass.M_CRE_Tundra_Monkey_Rare_VarE_Carcass",
+                        "0": "/Game/ASS/CRE/Tundra_Monkey/M_CRE_Tundra_Monkey_Rare_VarE_FurCards_Carcass.M_CRE_Tundra_Monkey_Rare_VarE_FurCards_Carcass"
+                    },
+                    "CarcassGFurMaterials": {
+                        "1": "/Game/ASS/CRE/Tundra_Monkey/M_CRE_Tundra_Monkey_Rare_VarE_Fur.M_CRE_Tundra_Monkey_Rare_VarE_Fur"
+                    },
+                    "Weighting": 50
+                },
+                {
+                    "MeshMaterials": {
+                        "1": "/Game/ASS/CRE/Tundra_Monkey/M_CRE_Tundra_Monkey_Legendary_VarA.M_CRE_Tundra_Monkey_Legendary_VarA",
+                        "0": "/Game/ASS/CRE/Tundra_Monkey/M_CRE_Tundra_Monkey_Legendary_VarA_FurCards.M_CRE_Tundra_Monkey_Legendary_VarA_FurCards"
+                    },
+                    "GFurMaterials": {
+                        "1": "/Game/ASS/CRE/Tundra_Monkey/M_CRE_Tundra_Monkey_Legendary_VarA_Fur.M_CRE_Tundra_Monkey_Legendary_VarA_Fur"
+                    },
+                    "CarcassMeshMaterials": {
+                        "1": "/Game/ASS/CRE/Tundra_Monkey/M_CRE_Tundra_Monkey_Legendary_VarA_Carcass.M_CRE_Tundra_Monkey_Legendary_VarA_Carcass",
+                        "0": "/Game/ASS/CRE/Tundra_Monkey/M_CRE_Tundra_Monkey_Legendary_VarA_FurCards_Carcass.M_CRE_Tundra_Monkey_Legendary_VarA_FurCards_Carcass"
+                    },
+                    "CarcassGFurMaterials": {
+                        "1": "/Game/ASS/CRE/Tundra_Monkey/M_CRE_Tundra_Monkey_Legendary_VarA_Fur.M_CRE_Tundra_Monkey_Legendary_VarA_Fur"
+                    },
+                    "Weighting": 5
+                },
+                {
+                    "MeshMaterials": {
+                        "1": "/Game/ASS/CRE/Tundra_Monkey/M_CRE_Tundra_Monkey_Legendary_VarB.M_CRE_Tundra_Monkey_Legendary_VarB",
+                        "0": "/Game/ASS/CRE/Tundra_Monkey/M_CRE_Tundra_Monkey_Legendary_VarB_FurCards.M_CRE_Tundra_Monkey_Legendary_VarB_FurCards"
+                    },
+                    "GFurMaterials": {
+                        "1": "/Game/ASS/CRE/Tundra_Monkey/M_CRE_Tundra_Monkey_Legendary_VarB_Fur.M_CRE_Tundra_Monkey_Legendary_VarB_Fur"
+                    },
+                    "CarcassMeshMaterials": {
+                        "1": "/Game/ASS/CRE/Tundra_Monkey/M_CRE_Tundra_Monkey_Legendary_VarB_Carcass.M_CRE_Tundra_Monkey_Legendary_VarB_Carcass",
+                        "0": "/Game/ASS/CRE/Tundra_Monkey/M_CRE_Tundra_Monkey_Legendary_VarB_FurCards_Carcass.M_CRE_Tundra_Monkey_Legendary_VarB_FurCards_Carcass"
+                    },
+                    "CarcassGFurMaterials": {
+                        "1": "/Game/ASS/CRE/Tundra_Monkey/M_CRE_Tundra_Monkey_Legendary_VarB_Fur.M_CRE_Tundra_Monkey_Legendary_VarB_Fur"
+                    },
+                    "Weighting": 5
+                }
+            ],
+            "SupportedCombatStates": [
+                "DoNotEngage",
+                "NeutralEngagement",
+                "AggressiveEngagement"
+            ],
+            "SupportedMovementStates": [
+                "Follow",
+                "IdleWander"
+            ],
+            "Animations": {
+                "(TagName=\"BT.Mount.Animation.IdleStanding\")": "/Game/ASS/CRE/Tundra_Monkey/Anim/TundraMonkey_Idle_Grounded_Montage.TundraMonkey_Idle_Grounded_Montage",
+                "(TagName=\"BT.Mount.Animation.Rest\")": "/Game/ASS/CRE/Tundra_Monkey/Anim/TundraMonkey_Sleep_Montage.TundraMonkey_Sleep_Montage",
+                "(TagName=\"BT.Mount.Animation.Eat\")": "/Game/ASS/CRE/Tundra_Monkey/Anim/TundraMonkey_Eat_Montage.TundraMonkey_Eat_Montage",
+                "(TagName=\"BT.Mount.Animation.Jump\")": "/Game/ASS/CRE/Tundra_Monkey/Anim/TundraMonkey_Jump_Montage.TundraMonkey_Jump_Montage",
+                "(TagName=\"BT.Mount.Animation.Attack\")": "/Game/ASS/CRE/Tundra_Monkey/Anim/TundraMonkey_MeleeAttack_Montage.TundraMonkey_MeleeAttack_Montage",
+                "(TagName=\"BT.Mount.Animation.Dodge.Backwards\")": "/Game/ASS/CRE/Tundra_Monkey/Anim/TundraMonkey_Dodge_Montage.TundraMonkey_Dodge_Montage",
+                "(TagName=\"BT.Mount.Animation.Drink\")": "/Game/ASS/CRE/Tundra_Monkey/Anim/TundraMonkey_Drink_Montage.TundraMonkey_Drink_Montage"
+            },
+            "InventoryPreviewCameraSettings": {
+                "RowName": "Mount_Sheep"
+            },
+            "DefaultNames": [
+                "NSLOCTEXT(\"D_Mounts\", \"Tundra_Monkey-DefaultNames-0\", \"Po\")"
+            ],
+            "MapIcon": {
+                "RowName": "Mount"
+            },
+            "RelativeFeetOffset": {
+                "X": -10,
+                "Y": -17.5,
+                "Z": 10
+            },
+            "MountTalentArchetype": {
+                "RowName": "Creature_Tundra_Monkey"
+            },
+            "GrowthCurve": {
+                "RowName": "AI_Pets"
+            },
+            "bUseTemperature": true,
+            "ComfortableTemperatureRange": {
+                "X": -17,
+                "Y": 26
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "WoollyMammoth",
+            "AISetup": {
+                "RowName": "Mount_WoollyMammoth"
+            },
+            "Icon": "/Game/Assets/2DArt/UI/Icons/MapIcons/T_Icon_Map_WoolMammoth.T_Icon_Map_WoolMammoth",
+            "RelevantSaddleQuery": {
+                "RowName": "Any_Saddle"
+            },
+            "SupportedCombatStates": [
+                "DoNotEngage"
+            ],
+            "SupportedMovementStates": [
+                "Follow",
+                "IdleWander",
+                "IdleStanding",
+                "IdleLying"
+            ],
+            "Animations": {
+                "(TagName=\"BT.Mount.Animation.IdleStanding\")": "/Game/ASS/CRE/Mammoth/Animations/Montages/Mammoth_Stand_Idle_Montage.Mammoth_Stand_Idle_Montage",
+                "(TagName=\"BT.Mount.Animation.Rest\")": "/Game/ASS/CRE/Mammoth/Animations/Montages/Mammoth_Rest_Montage.Mammoth_Rest_Montage",
+                "(TagName=\"BT.Mount.Animation.Eat\")": "/Game/ASS/CRE/Mammoth/Animations/Montages/Mammoth_Eating_Montage.Mammoth_Eating_Montage",
+                "(TagName=\"BT.Mount.Animation.Attack\")": "/Game/ASS/CRE/Mammoth/Animations/Montages/Mammoth_Mount_Attack_Montage.Mammoth_Mount_Attack_Montage",
+                "(TagName=\"BT.Mount.Animation.SecondaryAttack\")": "/Game/ASS/CRE/Mammoth/Animations/Montages/Mammoth_Mount_StompAttack_Montage.Mammoth_Mount_StompAttack_Montage"
+            },
+            "InventoryPreviewCameraSettings": {
+                "RowName": "Mount_Mammoth"
+            },
+            "DefaultNames": [
+                "NSLOCTEXT(\"D_Mounts\", \"WoollyMammoth-DefaultNames-0\", \"Dumbo\")",
+                "NSLOCTEXT(\"D_Mounts\", \"WoollyMammoth-DefaultNames-1\", \"Barbar\")",
+                "NSLOCTEXT(\"D_Mounts\", \"WoollyMammoth-DefaultNames-2\", \"Horton\")",
+                "NSLOCTEXT(\"D_Mounts\", \"WoollyMammoth-DefaultNames-3\", \"Elmer\")",
+                "NSLOCTEXT(\"D_Mounts\", \"WoollyMammoth-DefaultNames-4\", \"Stampy\")",
+                "NSLOCTEXT(\"D_Mounts\", \"WoollyMammoth-DefaultNames-5\", \"Snuffles\")"
+            ],
+            "MapIcon": {
+                "RowName": "Mount"
+            },
+            "RelativeFeetOffset": {
+                "Y": 10,
+                "Z": 10
+            },
+            "RelativeLightOffset": {
+                "X": 5.577991962432861,
+                "Y": -33.10087585449219,
+                "Z": 66
+            },
+            "SpringArmTargetDistance": 600,
+            "MountTalentArchetype": {
+                "RowName": "Creature_WoollyMammoth"
+            },
+            "bUseTemperature": true,
+            "ComfortableTemperatureRange": {
+                "X": -20,
+                "Y": 25
+            }
+        },
+        {
+            "Name": "Pig",
+            "AISetup": {
+                "RowName": "Pig"
+            },
+            "Icon": "/Game/Assets/2DArt/UI/Icons/MapIcons/T_Icon_Map_Boar.T_Icon_Map_Boar",
+            "SupportedCombatStates": [
+                "DoNotEngage"
+            ],
+            "SupportedMovementStates": [
+                "Follow",
+                "IdleWander"
+            ],
+            "Animations": {
+                "(TagName=\"BT.Mount.Animation.IdleStanding\")": "/Game/ASS/CRE/Wild_Boar/Animation/Boar_Sit_Idle_Montage.Boar_Sit_Idle_Montage",
+                "(TagName=\"BT.Mount.Animation.Rest\")": "/Game/ASS/CRE/Wild_Boar/Animation/Boar_Rest_Montage.Boar_Rest_Montage",
+                "(TagName=\"BT.Mount.Animation.Eat\")": "/Game/ASS/CRE/Wild_Boar/Animation/Boar_Eating_Montage.Boar_Eating_Montage",
+                "(TagName=\"BT.Mount.Animation.Jump\")": "/Game/ASS/CRE/Wild_Boar/Animation/Boar_Jump_Montage.Boar_Jump_Montage",
+                "(TagName=\"BT.Mount.Animation.Drink\")": "/Game/ASS/CRE/Wild_Boar/Animation/Boar_Eating_Montage.Boar_Eating_Montage"
+            },
+            "InventoryPreviewCameraSettings": {
+                "RowName": "Mount_Sheep"
+            },
+            "DefaultNames": [
+                "NSLOCTEXT(\"D_Mounts\", \"Pig-DefaultNames-0\", \"Babe\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Pig-DefaultNames-1\", \"Porky\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Pig-DefaultNames-2\", \"Peppa\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Pig-DefaultNames-3\", \"Miss\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Pig-DefaultNames-4\", \"Hamm\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Pig-DefaultNames-5\", \"Pumba\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Pig-DefaultNames-6\", \"Wilbur\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Pig-DefaultNames-7\", \"Squealer\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Pig-DefaultNames-8\", \"Napoleon\")"
+            ],
+            "MapIcon": {
+                "RowName": "Mount"
+            },
+            "RelativeFeetOffset": {
+                "X": -10,
+                "Y": -17.5,
+                "Z": 10
+            },
+            "MountTalentArchetype": {
+                "RowName": "Creature_Pig"
+            },
+            "GrowthCurve": {
+                "RowName": "AI_Pets"
+            }
+        },
+        {
+            "Name": "SpeederBike",
+            "AISetup": {
+                "RowName": "SpeederBike"
+            },
+            "Icon": "/Game/Assets/2DArt/UI/Icons/MapIcons/T_Icon_Map_Location3.T_Icon_Map_Location3",
+            "RelevantSaddleQuery": {
+                "RowName": "Any_Saddle_SpeederBike"
+            },
+            "SupportedCombatStates": [
+                "DoNotEngage"
+            ],
+            "SupportedMovementStates": [
+                "IdleStanding"
+            ],
+            "SupportedConsumptionStates": [],
+            "InventoryPreviewCameraSettings": {
+                "RowName": "Mount_SpeederBike"
+            },
+            "DefaultNames": [
+                "NSLOCTEXT(\"D_Mounts\", \"SpeederBike-DefaultNames-0\", \"Speeder Bike\")"
+            ],
+            "MapIcon": {
+                "RowName": "Mount"
+            },
+            "RelativeFeetOffset": {
+                "X": -10,
+                "Y": 15,
+                "Z": 15
+            },
+            "RelativeHandsOffset": {
+                "X": -10,
+                "Y": -15
+            },
+            "RelativeLightOffset": {
+                "X": 5.577991962432861,
+                "Y": -33.10087585449219,
+                "Z": 66
+            },
+            "SpringArmTargetDistance": 400,
+            "MountTalentArchetype": {
+                "RowName": "Creature_Moa"
+            },
+            "ComfortableTemperatureRange": {
+                "X": 12,
+                "Y": 52
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        }
+    ]
+}

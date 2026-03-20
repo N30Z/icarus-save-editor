@@ -1,0 +1,356 @@
+{
+    "RowStruct": "/Script/Icarus.ProspectStat",
+    "Defaults": {
+        "WorldStats": {}
+    },
+    "Rows": [
+        {
+            "Name": "Easy_Creatures",
+            "WorldStats": {
+                "(Value=\"WorldNPCMeleeAttack_+%\")": -50,
+                "(Value=\"WorldNPCMaximumHealth_+%\")": -50,
+                "(Value=\"WorldNPCMovementSpeed_+%\")": -10,
+                "(Value=\"WorldSpawnerBearSpawnRate_+%\")": -50,
+                "(Value=\"WorldSpawnerLionSpawnRate_+%\")": -10,
+                "(Value=\"WorldSpawnerPolarBearSpawnRate_+%\")": -50,
+                "(Value=\"WorldSpawnerWolfSpawnRate_+%\")": -10,
+                "(Value=\"WorldNPCAggressivePerceptionRadius_+%\")": -50,
+                "(Value=\"WorldNPCNeutralPerceptionRadius_+%\")": -50,
+                "(Value=\"WorldNPCPassivePerceptionRadius_+%\")": -50
+            }
+        },
+        {
+            "Name": "NPC_Increase_Easy",
+            "WorldStats": {
+                "(Value=\"WorldNPCMaximumHealth_+%\")": 10,
+                "(Value=\"WorldNPCAggressivePerceptionRadius_+%\")": 20
+            }
+        },
+        {
+            "Name": "NPC_Increase_Medium",
+            "WorldStats": {
+                "(Value=\"WorldNPCMaximumHealth_+%\")": 15,
+                "(Value=\"WorldNPCMovementSpeed_+%\")": 5,
+                "(Value=\"WorldNPCAggressivePerceptionRadius_+%\")": 20
+            }
+        },
+        {
+            "Name": "NPC_Increase_Hard",
+            "WorldStats": {
+                "(Value=\"WorldNPCMaximumHealth_+%\")": 30,
+                "(Value=\"WorldNPCMovementSpeed_+%\")": 10,
+                "(Value=\"WorldNPCAggressivePerceptionRadius_+%\")": 30,
+                "(Value=\"WorldNPCNeutralPerceptionRadius_+%\")": 30,
+                "(Value=\"WorldNPCPassivePerceptionRadius_+%\")": 30,
+                "(Value=\"WorldNPCMeleeAttack_+%\")": 20
+            }
+        },
+        {
+            "Name": "NPC_Increase_Hard_SpawnRates",
+            "WorldStats": {
+                "(Value=\"WorldSpawnerWolfSpawnRate_+%\")": 30,
+                "(Value=\"WorldSpawnerLionSpawnRate_+%\")": 30,
+                "(Value=\"WorldSpawnerScorpionSpawnRate_+%\")": 30
+            }
+        },
+        {
+            "Name": "Respawn_Zero",
+            "WorldStats": {
+                "(Value=\"WorldPlayerRespawnMaximumCount_+\")": 0
+            }
+        },
+        {
+            "Name": "Respawn_One",
+            "WorldStats": {
+                "(Value=\"WorldPlayerRespawnMaximumCount_+\")": 1
+            }
+        },
+        {
+            "Name": "Respawn_Three",
+            "WorldStats": {
+                "(Value=\"WorldPlayerRespawnMaximumCount_+\")": 3
+            }
+        },
+        {
+            "Name": "Player_XP_25%",
+            "WorldStats": {
+                "(Value=\"WorldPlayerExperience_+%\")": -75
+            }
+        },
+        {
+            "Name": "Player_XP_75%",
+            "WorldStats": {
+                "(Value=\"WorldPlayerExperience_+%\")": -25
+            }
+        },
+        {
+            "Name": "Player_XP_125%",
+            "WorldStats": {
+                "(Value=\"WorldPlayerExperience_+%\")": 25
+            }
+        },
+        {
+            "Name": "Player_XP_110%",
+            "WorldStats": {
+                "(Value=\"WorldPlayerExperience_+%\")": 10
+            }
+        },
+        {
+            "Name": "Player_XP_133%",
+            "WorldStats": {
+                "(Value=\"WorldPlayerExperience_+%\")": 33
+            }
+        },
+        {
+            "Name": "Player_XP_150%",
+            "WorldStats": {
+                "(Value=\"WorldPlayerExperience_+%\")": 50
+            }
+        },
+        {
+            "Name": "MapNerf",
+            "WorldStats": {
+                "(Value=\"WorldPlayerCanSeeVisualMap_?\")": -1,
+                "(Value=\"WorldPlayerCanBroadcastToMap_?\")": -1,
+                "(Value=\"WorldPlayerCanSeeOthersOnMap_?\")": -1,
+                "(Value=\"WorldPlayerCanMakeWaypointsOnMap_?\")": -1,
+                "(Value=\"WorldPlayerCanSeeWaypointsOnMap_?\")": -1,
+                "(Value=\"WorldPlayerCanSeeTopographicalMap_?\")": -1
+            }
+        },
+        {
+            "Name": "NoPlayerMarkers",
+            "WorldStats": {
+                "(Value=\"WorldPlayerCanBroadcastToMap_?\")": -1,
+                "(Value=\"WorldPlayerCanSeeOthersOnMap_?\")": -1
+            }
+        },
+        {
+            "Name": "NoCaveCreatures",
+            "WorldStats": {
+                "(Value=\"WorldDisableCaveCreatureSpawning_?\")": 1
+            }
+        },
+        {
+            "Name": "Outpost_Forest_Easy_Creatures",
+            "WorldStats": {
+                "(Value=\"WorldSpawnerBearSpawnRate_+%\")": -100,
+                "(Value=\"WorldSpawnerBoarSpawnRate_+%\")": -100,
+                "(Value=\"WorldSpawnerLionSpawnRate_+%\")": -100,
+                "(Value=\"WorldSpawnerWolfSpawnRate_+%\")": -100
+            }
+        },
+        {
+            "Name": "Outpost_Forest_Medium_Creatures",
+            "WorldStats": {
+                "(Value=\"WorldSpawnerBearSpawnRate_+%\")": 5,
+                "(Value=\"WorldSpawnerBoarSpawnRate_+%\")": 20,
+                "(Value=\"WorldSpawnerBuffaloSpawnRate_+%\")": 30,
+                "(Value=\"WorldSpawnerLionSpawnRate_+%\")": 15,
+                "(Value=\"WorldSpawnerWolfSpawnRate_+%\")": 20
+            }
+        },
+        {
+            "Name": "Outpost_Forest_Hard_Creatures",
+            "WorldStats": {
+                "(Value=\"WorldSpawnerBearSpawnRate_+%\")": 50,
+                "(Value=\"WorldSpawnerBoarSpawnRate_+%\")": 30,
+                "(Value=\"WorldSpawnerBuffaloSpawnRate_+%\")": 10,
+                "(Value=\"WorldSpawnerLionSpawnRate_+%\")": 30,
+                "(Value=\"WorldSpawnerWolfSpawnRate_+%\")": 20
+            }
+        },
+        {
+            "Name": "Outpost_Arctic_Easy_Creatures",
+            "WorldStats": {
+                "(Value=\"WorldSpawnerLionSpawnRate_+%\")": -100,
+                "(Value=\"WorldSpawnerMammothSpawnRate_+%\")": -100,
+                "(Value=\"WorldSpawnerPolarBearSpawnRate_+%\")": -100,
+                "(Value=\"WorldSpawnerWolfSpawnRate_+%\")": -100
+            }
+        },
+        {
+            "Name": "Outpost_Arctic_Medium_Creatures",
+            "WorldStats": {
+                "(Value=\"WorldSpawnerLionSpawnRate_+%\")": 15,
+                "(Value=\"WorldSpawnerMammothSpawnRate_+%\")": 10,
+                "(Value=\"WorldSpawnerPolarBearSpawnRate_+%\")": 5,
+                "(Value=\"WorldSpawnerWolfSpawnRate_+%\")": 20
+            }
+        },
+        {
+            "Name": "Outpost_Arctic_Hard_Creatures",
+            "WorldStats": {
+                "(Value=\"WorldSpawnerLionSpawnRate_+%\")": 30,
+                "(Value=\"WorldSpawnerMammothSpawnRate_+%\")": 10,
+                "(Value=\"WorldSpawnerPolarBearSpawnRate_+%\")": 50,
+                "(Value=\"WorldSpawnerWolfSpawnRate_+%\")": 20
+            }
+        },
+        {
+            "Name": "Outpost_Olympus_Easy_Creatures",
+            "WorldStats": {
+                "(Value=\"WorldSpawnerBearSpawnRate_+%\")": -100,
+                "(Value=\"WorldSpawnerBoarSpawnRate_+%\")": -100,
+                "(Value=\"WorldSpawnerElephantSpawnRate_+%\")": -100,
+                "(Value=\"WorldSpawnerLionSpawnRate_+%\")": -100,
+                "(Value=\"WorldSpawnerMammothSpawnRate_+%\")": -100,
+                "(Value=\"WorldSpawnerPolarBearSpawnRate_+%\")": -100,
+                "(Value=\"WorldSpawnerScorpionSpawnRate_+%\")": -100,
+                "(Value=\"WorldSpawnerWolfSpawnRate_+%\")": -100
+            }
+        },
+        {
+            "Name": "Outpost_Olympus_Medium_Creatures",
+            "WorldStats": {
+                "(Value=\"WorldSpawnerBearSpawnRate_+%\")": 5,
+                "(Value=\"WorldSpawnerBoarSpawnRate_+%\")": 20,
+                "(Value=\"WorldSpawnerBuffaloSpawnRate_+%\")": 30,
+                "(Value=\"WorldSpawnerElephantSpawnRate_+%\")": 5,
+                "(Value=\"WorldSpawnerLionSpawnRate_+%\")": 15,
+                "(Value=\"WorldSpawnerMammothSpawnRate_+%\")": 10,
+                "(Value=\"WorldSpawnerPolarBearSpawnRate_+%\")": 5,
+                "(Value=\"WorldSpawnerScorpionSpawnRate_+%\")": 15,
+                "(Value=\"WorldSpawnerWolfSpawnRate_+%\")": 20
+            }
+        },
+        {
+            "Name": "Outpost_Olympus_Hard_Creatures",
+            "WorldStats": {
+                "(Value=\"WorldSpawnerBearSpawnRate_+%\")": 50,
+                "(Value=\"WorldSpawnerBoarSpawnRate_+%\")": 30,
+                "(Value=\"WorldSpawnerBuffaloSpawnRate_+%\")": 10,
+                "(Value=\"WorldSpawnerElephantSpawnRate_+%\")": 5,
+                "(Value=\"WorldSpawnerLionSpawnRate_+%\")": 30,
+                "(Value=\"WorldSpawnerMammothSpawnRate_+%\")": 10,
+                "(Value=\"WorldSpawnerPolarBearSpawnRate_+%\")": 50,
+                "(Value=\"WorldSpawnerScorpionSpawnRate_+%\")": 30,
+                "(Value=\"WorldSpawnerWolfSpawnRate_+%\")": 20
+            }
+        },
+        {
+            "Name": "Inert_Geysers",
+            "WorldStats": {
+                "(Value=\"WorldGeyersAreInert_?\")": 1
+            }
+        },
+        {
+            "Name": "Recon_Creatures",
+            "WorldStats": {
+                "(Value=\"WorldNPCMeleeAttack_+%\")": -50,
+                "(Value=\"WorldNPCMaximumHealth_+%\")": -50,
+                "(Value=\"WorldNPCMovementSpeed_+%\")": -10,
+                "(Value=\"WorldSpawnerBearSpawnRate_+%\")": -50,
+                "(Value=\"WorldSpawnerLionSpawnRate_+%\")": -10,
+                "(Value=\"WorldSpawnerPolarBearSpawnRate_+%\")": -50,
+                "(Value=\"WorldSpawnerWolfSpawnRate_+%\")": -10,
+                "(Value=\"WorldNPCAggressivePerceptionRadius_+%\")": -50,
+                "(Value=\"WorldNPCNeutralPerceptionRadius_+%\")": -50,
+                "(Value=\"WorldNPCPassivePerceptionRadius_+%\")": -50
+            }
+        },
+        {
+            "Name": "OpenWorld",
+            "WorldStats": {
+                "(Value=\"WorldIsOpenWorldProspect_?\")": 1
+            }
+        },
+        {
+            "Name": "NoJuveniles",
+            "WorldStats": {
+                "(Value=\"WorldDisableJuvenileSpawning_?\")": 1
+            }
+        },
+        {
+            "Name": "Outpost_Desert_Easy_Creatures",
+            "WorldStats": {
+                "(Value=\"WorldSpawnerLionSpawnRate_+%\")": -100,
+                "(Value=\"WorldSpawnerMammothSpawnRate_+%\")": -100,
+                "(Value=\"WorldSpawnerScorpionSpawnRate_+%\")": -100,
+                "(Value=\"WorldSpawnerWolfSpawnRate_+%\")": -100
+            }
+        },
+        {
+            "Name": "Outpost_Desert_Medium_Creatures",
+            "WorldStats": {
+                "(Value=\"WorldSpawnerLionSpawnRate_+%\")": 15,
+                "(Value=\"WorldSpawnerMammothSpawnRate_+%\")": 10,
+                "(Value=\"WorldSpawnerScorpionSpawnRate_+%\")": 5,
+                "(Value=\"WorldSpawnerWolfSpawnRate_+%\")": 20
+            }
+        },
+        {
+            "Name": "Outpost_Desert_Hard_Creatures",
+            "WorldStats": {
+                "(Value=\"WorldSpawnerLionSpawnRate_+%\")": 30,
+                "(Value=\"WorldSpawnerMammothSpawnRate_+%\")": 10,
+                "(Value=\"WorldSpawnerScorpionSpawnRate_+%\")": 50,
+                "(Value=\"WorldSpawnerWolfSpawnRate_+%\")": 20
+            }
+        },
+        {
+            "Name": "Outpost",
+            "WorldStats": {
+                "(Value=\"WorldIsOutpostProspect_?\")": 1
+            }
+        },
+        {
+            "Name": "VisibleApeDens",
+            "WorldStats": {
+                "(Value=\"WorldPlayerCanSeeJuvenileApeDenOnMap_?\")": 1
+            }
+        },
+        {
+            "Name": "Mission_LavaHunterQuestlineActive",
+            "WorldStats": {
+                "(Value=\"WorldIsLavaHunterQuestlineActive_?\")": 1
+            }
+        },
+        {
+            "Name": "Outpost_012_Easy_Creatures",
+            "WorldStats": {
+                "(Value=\"WorldSpawnerBearSpawnRate_+%\")": -100,
+                "(Value=\"WorldSpawnerBoarSpawnRate_+%\")": -100,
+                "(Value=\"WorldSpawnerLionSpawnRate_+%\")": -100,
+                "(Value=\"WorldSpawnerWolfSpawnRate_+%\")": -100,
+                "(Value=\"WorldSpawnerMammothSpawnRate_+%\")": -100,
+                "(Value=\"WorldSpawnerScorpionSpawnRate_+%\")": -100,
+                "(Value=\"WorldSpawnerKomodoSpawnRate_+%\")": -100,
+                "(Value=\"WorldSpawnerCrocodileSpawnRate_+%\")": -100
+            }
+        },
+        {
+            "Name": "Outpost_012_Medium_Creatures",
+            "WorldStats": {
+                "(Value=\"WorldSpawnerBearSpawnRate_+%\")": 5,
+                "(Value=\"WorldSpawnerBoarSpawnRate_+%\")": 20,
+                "(Value=\"WorldSpawnerLionSpawnRate_+%\")": 15,
+                "(Value=\"WorldSpawnerWolfSpawnRate_+%\")": 20,
+                "(Value=\"WorldSpawnerMammothSpawnRate_+%\")": 10,
+                "(Value=\"WorldSpawnerScorpionSpawnRate_+%\")": 5,
+                "(Value=\"WorldSpawnerKomodoSpawnRate_+%\")": 5,
+                "(Value=\"WorldSpawnerCrocodileSpawnRate_+%\")": 5
+            }
+        },
+        {
+            "Name": "Outpost_012_Hard_Creatures",
+            "WorldStats": {
+                "(Value=\"WorldSpawnerBearSpawnRate_+%\")": 50,
+                "(Value=\"WorldSpawnerBoarSpawnRate_+%\")": 30,
+                "(Value=\"WorldSpawnerLionSpawnRate_+%\")": 30,
+                "(Value=\"WorldSpawnerWolfSpawnRate_+%\")": 20,
+                "(Value=\"WorldSpawnerMammothSpawnRate_+%\")": 10,
+                "(Value=\"WorldSpawnerScorpionSpawnRate_+%\")": 50,
+                "(Value=\"WorldSpawnerKomodoSpawnRate_+%\")": 20,
+                "(Value=\"WorldSpawnerCrocodileSpawnRate_+%\")": 20,
+                "(Value=\"WorldSpawnerBuffaloSpawnRate_+%\")": 5
+            }
+        },
+        {
+            "Name": "Mission_SandwyrmQueenQuestlineActive",
+            "WorldStats": {
+                "(Value=\"WorldIsSandwyrmQueenQuestlineActive_?\")": 1
+            }
+        }
+    ]
+}

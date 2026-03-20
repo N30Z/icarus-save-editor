@@ -1,0 +1,537 @@
+{
+    "RowStruct": "/Script/Icarus.MissionNPCData",
+    "Defaults": {
+        "Highlightable": {
+            "RowName": "None",
+            "DataTableName": "D_Highlightable"
+        },
+        "Speaker": {
+            "RowName": "None",
+            "DataTableName": "D_DialogueSpeaker"
+        },
+        "Dialogue": [],
+        "Fallback": {
+            "RowName": "None",
+            "DataTableName": "D_DialoguePool"
+        }
+    },
+    "Rows": [
+        {
+            "Name": "Church",
+            "Highlightable": {
+                "RowName": "NPC_1_Healed"
+            },
+            "Speaker": {
+                "RowName": "Church"
+            },
+            "Dialogue": [
+                {
+                    "Flag": {
+                        "Value": "ELY_SQ_Lifeline_Started"
+                    },
+                    "Dialogue": {
+                        "RowName": "DH_SQ_CHURCH_RETURN_NEEDHELP",
+                        "DataTableName": "D_Dialogue"
+                    }
+                },
+                {
+                    "Flag": {
+                        "Value": "ELY_SQ_Courier_Started"
+                    },
+                    "Dialogue": {
+                        "RowName": "DH_SQ_CHURCH_RETURN_NEEDHELP",
+                        "DataTableName": "D_Dialogue"
+                    }
+                },
+                {
+                    "Flag": {
+                        "Value": "ELY_SQ_Trails_Started"
+                    },
+                    "Dialogue": {
+                        "RowName": "DH_SQ_CHURCH_RETURN_NEEDHELP",
+                        "DataTableName": "D_Dialogue"
+                    }
+                },
+                {
+                    "Flag": {
+                        "Value": "ELY_SQ_Complete"
+                    },
+                    "Dialogue": {
+                        "RowName": "DH_SQ_CHURCH_THANKS",
+                        "DataTableName": "D_Dialogue"
+                    }
+                }
+            ],
+            "Fallback": {
+                "RowName": "Church_DH_Thanks"
+            }
+        },
+        {
+            "Name": "Tucker",
+            "Highlightable": {
+                "RowName": "NPC_2_Healed"
+            },
+            "Speaker": {
+                "RowName": "Tucker"
+            },
+            "Fallback": {
+                "RowName": "Tucker_Healed"
+            }
+        },
+        {
+            "Name": "Griff",
+            "Highlightable": {
+                "RowName": "NPC_3_Healed"
+            },
+            "Speaker": {
+                "RowName": "Griff"
+            },
+            "Fallback": {
+                "RowName": "Griff_DH_Hello"
+            }
+        },
+        {
+            "Name": "Simmons",
+            "Highlightable": {
+                "RowName": "NPC_4_Healed"
+            },
+            "Speaker": {
+                "RowName": "Simmons"
+            },
+            "Dialogue": [
+                {
+                    "Flag": {
+                        "Value": "ELY_SQ_BikeNeedsFuel"
+                    },
+                    "Dialogue": {
+                        "RowName": "DH_SQ_SIMMONS_NEEDOIL",
+                        "DataTableName": "D_Dialogue"
+                    }
+                },
+                {
+                    "Flag": {
+                        "Value": "ELY_SQ_SimmonsThanks"
+                    },
+                    "Dialogue": {
+                        "RowName": "DH_SQ_SIMMONS_THANKS",
+                        "DataTableName": "D_Dialogue"
+                    }
+                }
+            ],
+            "Fallback": {
+                "RowName": "Simmons_DH_Hello"
+            }
+        },
+        {
+            "Name": "Washington",
+            "Highlightable": {
+                "RowName": "NPC_5_Healed"
+            },
+            "Speaker": {
+                "RowName": "Washington"
+            },
+            "Fallback": {
+                "RowName": "Washington_Healed"
+            }
+        },
+        {
+            "Name": "Infant_Ape",
+            "Highlightable": {
+                "RowName": "Ape_Infant"
+            }
+        },
+        {
+            "Name": "Morris",
+            "Highlightable": {
+                "RowName": "APE_Researcher_1"
+            },
+            "Speaker": {
+                "RowName": "APE_Researcher_1"
+            }
+        },
+        {
+            "Name": "Avery",
+            "Highlightable": {
+                "RowName": "IM_Researcher_A"
+            },
+            "Speaker": {
+                "RowName": "IM_Researcher_1"
+            }
+        },
+        {
+            "Name": "Felix",
+            "Highlightable": {
+                "RowName": "IM_Researcher_B"
+            },
+            "Speaker": {
+                "RowName": "IM_Researcher_2"
+            }
+        },
+        {
+            "Name": "Wounded_Vesper",
+            "Highlightable": {
+                "RowName": "IM_ArcticVesper"
+            }
+        },
+        {
+            "Name": "Voss",
+            "Highlightable": {
+                "RowName": "RG_Miner_1"
+            }
+        },
+        {
+            "Name": "Harken",
+            "Highlightable": {
+                "RowName": "RG_Miner_2"
+            }
+        },
+        {
+            "Name": "Biggs",
+            "Highlightable": {
+                "RowName": "RG_Miner_3"
+            }
+        },
+        {
+            "Name": "Wedge",
+            "Highlightable": {
+                "RowName": "RG_Miner_4"
+            }
+        },
+        {
+            "Name": "Mo",
+            "Highlightable": {
+                "RowName": "Mo"
+            },
+            "Speaker": {
+                "RowName": "Mo"
+            },
+            "Dialogue": [
+                {
+                    "Flag": {
+                        "Value": "ELY_Story1_FoundEden"
+                    },
+                    "Dialogue": {
+                        "RowName": "Ely_MissionOne_8",
+                        "DataTableName": "D_Dialogue"
+                    }
+                },
+                {
+                    "Flag": {
+                        "Value": "ELY_Story1_TalkedToMo"
+                    },
+                    "Dialogue": {
+                        "RowName": "None",
+                        "DataTableName": "D_Dialogue"
+                    }
+                },
+                {
+                    "Flag": {
+                        "Value": "ELY_Story3_Started"
+                    },
+                    "Dialogue": {
+                        "RowName": "Ely_MissionThree_Intro",
+                        "DataTableName": "D_Dialogue"
+                    }
+                },
+                {
+                    "Flag": {
+                        "Value": "ELY_Story3_TalkedToMo"
+                    },
+                    "Dialogue": {
+                        "RowName": "None",
+                        "DataTableName": "D_Dialogue"
+                    }
+                }
+            ],
+            "Fallback": {
+                "RowName": "Mo_Idle_Barks"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Iris",
+            "Highlightable": {
+                "RowName": "Iris"
+            },
+            "Speaker": {
+                "RowName": "Iris"
+            },
+            "Dialogue": [
+                {
+                    "Flag": {
+                        "Value": "ELY_Story1_TalkedToMo"
+                    },
+                    "Dialogue": {
+                        "RowName": "Ely_MissionOne_9",
+                        "DataTableName": "D_Dialogue"
+                    }
+                },
+                {
+                    "Flag": {
+                        "Value": "ELY_Story1_TalkedToIris"
+                    },
+                    "Dialogue": {
+                        "RowName": "None",
+                        "DataTableName": "D_Dialogue"
+                    }
+                },
+                {
+                    "Flag": {
+                        "Value": "ELY_Story1_Complete"
+                    },
+                    "Dialogue": {
+                        "RowName": "Ely_MissionOne_End_Iris",
+                        "DataTableName": "D_Dialogue"
+                    }
+                },
+                {
+                    "Flag": {
+                        "Value": "ELY_Story2_Started"
+                    },
+                    "Dialogue": {
+                        "RowName": "Ely_MissionTwo_Intro",
+                        "DataTableName": "D_Dialogue"
+                    }
+                },
+                {
+                    "Flag": {
+                        "Value": "ELY_Story2_TalkedToIris"
+                    },
+                    "Dialogue": {
+                        "RowName": "None",
+                        "DataTableName": "D_Dialogue"
+                    }
+                }
+            ],
+            "Fallback": {
+                "RowName": "Iris_Idle_Barks"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Victor",
+            "Highlightable": {
+                "RowName": "Victor"
+            },
+            "Speaker": {
+                "RowName": "Victor"
+            },
+            "Dialogue": [
+                {
+                    "Flag": {
+                        "Value": "ELY_Story1_TalkedToMo"
+                    },
+                    "Dialogue": {
+                        "RowName": "Ely_MissionOne_10",
+                        "DataTableName": "D_Dialogue"
+                    }
+                },
+                {
+                    "Flag": {
+                        "Value": "ELY_Story1_Complete"
+                    },
+                    "Dialogue": {
+                        "RowName": "Ely_MissionOne_End_Victor",
+                        "DataTableName": "D_Dialogue"
+                    }
+                },
+                {
+                    "Flag": {
+                        "Value": "ELY_Story4_Started"
+                    },
+                    "Dialogue": {
+                        "RowName": "Ely_MissionFour_Intro",
+                        "DataTableName": "D_Dialogue"
+                    }
+                },
+                {
+                    "Flag": {
+                        "Value": "ELY_Story4_TalkedToVictor"
+                    },
+                    "Dialogue": {
+                        "RowName": "None",
+                        "DataTableName": "D_Dialogue"
+                    }
+                },
+                {
+                    "Flag": {
+                        "Value": "ELY_Story5_Started"
+                    },
+                    "Dialogue": {
+                        "RowName": "Ely_MissionFive_Intro",
+                        "DataTableName": "D_Dialogue"
+                    }
+                },
+                {
+                    "Flag": {
+                        "Value": "ELY_Story5_TalkedToVictor"
+                    },
+                    "Dialogue": {
+                        "RowName": "None",
+                        "DataTableName": "D_Dialogue"
+                    }
+                },
+                {
+                    "Flag": {
+                        "Value": "ELY_Story6_Started"
+                    },
+                    "Dialogue": {
+                        "RowName": "Ely_MissionSix_Intro",
+                        "DataTableName": "D_Dialogue"
+                    }
+                },
+                {
+                    "Flag": {
+                        "Value": "ELY_Story6_TalkedToVictor"
+                    },
+                    "Dialogue": {
+                        "RowName": "None",
+                        "DataTableName": "D_Dialogue"
+                    }
+                },
+                {
+                    "Flag": {
+                        "Value": "ELY_SQ_Ambush_Started"
+                    },
+                    "Dialogue": {
+                        "RowName": "AmbushIntro",
+                        "DataTableName": "D_Dialogue"
+                    }
+                },
+                {
+                    "Flag": {
+                        "Value": "ELY_SQ_Ambush_TalkVic"
+                    },
+                    "Dialogue": {
+                        "RowName": "None",
+                        "DataTableName": "D_Dialogue"
+                    }
+                }
+            ],
+            "Fallback": {
+                "RowName": "Victor_Idle_Barks"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Theo",
+            "Highlightable": {
+                "RowName": "Theo"
+            },
+            "Speaker": {
+                "RowName": "Theo"
+            },
+            "Dialogue": [
+                {
+                    "Flag": {
+                        "Value": "ELY_Story1_TalkedToMo"
+                    },
+                    "Dialogue": {
+                        "RowName": "Ely_MissionOne_11",
+                        "DataTableName": "D_Dialogue"
+                    }
+                },
+                {
+                    "Flag": {
+                        "Value": "ELY_Story1_TalkedToTheo"
+                    },
+                    "Dialogue": {
+                        "RowName": "None",
+                        "DataTableName": "D_Dialogue"
+                    }
+                },
+                {
+                    "Flag": {
+                        "Value": "ELY_Story1_Complete"
+                    },
+                    "Dialogue": {
+                        "RowName": "Ely_MissionOne_End_Theo",
+                        "DataTableName": "D_Dialogue"
+                    }
+                }
+            ],
+            "Fallback": {
+                "RowName": "Theo_Idle_Barks"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "EdenNPC",
+            "Highlightable": {
+                "RowName": "NPC_Eden"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "EDEN_Logistics",
+            "Highlightable": {
+                "RowName": "EDEN_Logistics"
+            },
+            "Speaker": {
+                "RowName": "EDEN_Logistics"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "EDEN_Cook",
+            "Highlightable": {
+                "RowName": "EDEN_Cook"
+            },
+            "Speaker": {
+                "RowName": "EDEN_Cook"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "EDEN_Crafter",
+            "Highlightable": {
+                "RowName": "EDEN_Crafter"
+            },
+            "Speaker": {
+                "RowName": "EDEN_Crafter"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "EDEN_FISHER",
+            "Highlightable": {
+                "RowName": "FishOwner_Injured"
+            },
+            "Speaker": {
+                "RowName": "Fisherman"
+            }
+        }
+    ]
+}

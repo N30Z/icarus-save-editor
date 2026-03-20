@@ -1,0 +1,602 @@
+{
+    "RowStruct": "/Script/Icarus.SessionFlag",
+    "Defaults": {},
+    "GenerateEnum": true,
+    "Rows": [
+        {
+            "Name": "Tutorial_BuildingLocked"
+        },
+        {
+            "Name": "Tutorial_BuildingVariationsLocked"
+        },
+        {
+            "Name": "Tutorial_BuildingVariationsRestricted"
+        },
+        {
+            "Name": "Tutorial_DoorLocked"
+        },
+        {
+            "Name": "Tutorial_HuntingLocked"
+        },
+        {
+            "Name": "Tutorial_CampfireLocked"
+        },
+        {
+            "Name": "Tutorial_TalentsLocked"
+        },
+        {
+            "Name": "Tutorial_RepairToolLocked"
+        },
+        {
+            "Name": "Tutorial_Locked"
+        },
+        {
+            "Name": "Tutorial_HighlightTechTreeMenu"
+        },
+        {
+            "Name": "Tutorial_HighlightTalentsMenu"
+        },
+        {
+            "Name": "Tutorial_HighlightCraftingMenu"
+        },
+        {
+            "Name": "Tutorial_HighlightInventoryMenu"
+        },
+        {
+            "Name": "Tutorial_HighlightMapMenu"
+        },
+        {
+            "Name": "Tutorial_HighlightPickaxeRecipe"
+        },
+        {
+            "Name": "Tutorial_HighlightCraftButton"
+        },
+        {
+            "Name": "Tutorial_HighlightBuildingTech"
+        },
+        {
+            "Name": "Tutorial_HighlightAxeRecipe"
+        },
+        {
+            "Name": "Tutorial_HighlightBuildingRecipe"
+        },
+        {
+            "Name": "Tutorial_HighlightDoorTech"
+        },
+        {
+            "Name": "Tutorial_HighlightDoorRecipe"
+        },
+        {
+            "Name": "Tutorial_HighlightOxygenSlot"
+        },
+        {
+            "Name": "Tutorial_HighlightBowTech"
+        },
+        {
+            "Name": "Tutorial_HighlightBowRecipe"
+        },
+        {
+            "Name": "Tutorial_HighlightKnifeTech"
+        },
+        {
+            "Name": "Tutorial_HighlightKnifeRecipe"
+        },
+        {
+            "Name": "Tutorial_HighlightCampfireTech"
+        },
+        {
+            "Name": "Tutorial_HighlightCampfireRecipe"
+        },
+        {
+            "Name": "Tutorial_HighlightFuel"
+        },
+        {
+            "Name": "Tutorial_HighlightFuelActivate"
+        },
+        {
+            "Name": "Tutorial_HighlightDeployableInventory"
+        },
+        {
+            "Name": "Tutorial_HighlightRepairToolTech"
+        },
+        {
+            "Name": "Tutorial_HighlightRepairToolRecipe"
+        },
+        {
+            "Name": "Tutorial_HighlightLeaveButton"
+        },
+        {
+            "Name": "Tutorial_HungerCapped"
+        },
+        {
+            "Name": "Tutorial_ThirstCapped"
+        },
+        {
+            "Name": "Tutorial_OxygenCapped"
+        },
+        {
+            "Name": "Session_SoloPlay"
+        },
+        {
+            "Name": "Faction_SatelliteDefendActive"
+        },
+        {
+            "Name": "DrillReady"
+        },
+        {
+            "Name": "DrillHasBiofuel"
+        },
+        {
+            "Name": "RadarReady"
+        },
+        {
+            "Name": "ScanComplete"
+        },
+        {
+            "Name": "ScanningStarted"
+        },
+        {
+            "Name": "SpawnedBoss"
+        },
+        {
+            "Name": "DroppedSample"
+        },
+        {
+            "Name": "PickedUpSample"
+        },
+        {
+            "Name": "BossItemCrafted"
+        },
+        {
+            "Name": "BW5_KilledWorm"
+        },
+        {
+            "Name": "MissionComplete"
+        },
+        {
+            "Name": "Mission_RecoveredTech"
+        },
+        {
+            "Name": "Mission_Glacier_Expedition_Tech"
+        },
+        {
+            "Name": "Mission_RecoveredHighTech"
+        },
+        {
+            "Name": "Location1Complete"
+        },
+        {
+            "Name": "Location2Complete"
+        },
+        {
+            "Name": "Location3Complete"
+        },
+        {
+            "Name": "SetA"
+        },
+        {
+            "Name": "SetB"
+        },
+        {
+            "Name": "SetC"
+        },
+        {
+            "Name": "Generic_Quest_Event_1"
+        },
+        {
+            "Name": "ExoticVoxelsVisible"
+        },
+        {
+            "Name": "ExoticDepositlsVisible"
+        },
+        {
+            "Name": "ShipPartRecipes"
+        },
+        {
+            "Name": "MissionFailed"
+        },
+        {
+            "Name": "Forest_Defence_Recipes"
+        },
+        {
+            "Name": "Recipe_PrototypeLaser"
+        },
+        {
+            "Name": "Recipe_STYX_D_Research2_Containment"
+        },
+        {
+            "Name": "Recipe_STYX_D_Research2_Catalyst"
+        },
+        {
+            "Name": "Recipe_STYX_D_Research2_Bomb"
+        },
+        {
+            "Name": "Animals_Drop_Enzymes"
+        },
+        {
+            "Name": "Mission_Craft_Enzyme_Containment"
+        },
+        {
+            "Name": "Mission_In_Progress"
+        },
+        {
+            "Name": "Recipe_Layered_Plating"
+        },
+        {
+            "Name": "Mission_Resupply_Available"
+        },
+        {
+            "Name": "Mission_Recipe_Incubator"
+        },
+        {
+            "Name": "Mission_Recipe_Kiwi_Nest"
+        },
+        {
+            "Name": "Mission_Recipe_AerosolEmitter"
+        },
+        {
+            "Name": "Mission_Recipe_LiquidDeployment"
+        },
+        {
+            "Name": "Mission_Recipe_MonitoringPylon"
+        },
+        {
+            "Name": "Mission_Recipe_Medical_Scanner"
+        },
+        {
+            "Name": "Mission_Recipe_Truck_Supplies"
+        },
+        {
+            "Name": "Mission_Aid_Provided"
+        },
+        {
+            "Name": "Mission_Recipe_Stasis_Bag"
+        },
+        {
+            "Name": "Mission_SurveyTransmitter"
+        },
+        {
+            "Name": "Mission_Organic_Analyzer"
+        },
+        {
+            "Name": "Mission_MakeshiftRadio"
+        },
+        {
+            "Name": "Mission_ModifiedEDS"
+        },
+        {
+            "Name": "Mission_TriangulationBeacon"
+        },
+        {
+            "Name": "Mission_MakeshiftExplosive"
+        },
+        {
+            "Name": "Mission_EDSCanister"
+        },
+        {
+            "Name": "Mission_EnzymePropagationUnit"
+        },
+        {
+            "Name": "Mission_Animals_Drop_Biotags"
+        },
+        {
+            "Name": "Mission_SonicDevice"
+        },
+        {
+            "Name": "Mission_DNA_Extraction"
+        },
+        {
+            "Name": "Mission_Lair_Poison_Samples"
+        },
+        {
+            "Name": "Mission_MiningCart"
+        },
+        {
+            "Name": "Mission_Makeshift_Beacon"
+        },
+        {
+            "Name": "ELY_Story1_TalkedToMo",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "ELY_Story1_TalkedToIris",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "ELY_Story1_TalkedToTheo",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "ELY_Story1_TalkedToVictor",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "ELY_Story1_FoundEden",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "ELY_Story1_Complete",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "ELY_Story2_Started",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "ELY_Story2_TalkedToIris",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "ELY_Story2_CollectedLaptop",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "ELY_Story2_Complete",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "ELY_Story3_Started",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "ELY_Story3_TalkedToMo",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "ELY_Story3_Complete",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "ELY_Story4_Started",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "ELY_Story5_TalkedToVictor",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "ELY_Story5_Recipe_Thumper",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "ELY_Eden_OEI_Spawned",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "ELY_Story4_TalkedToVictor",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "ELY_Story5_Started",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "ELY_Story4_Journey",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "ELY_Story6_Started",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "ELY_Story6_TalkedToVictor",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "ELY_Reward_Triggered",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "ELY_Reward_Claimed",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Mission_TraderSetup",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Mission_RouteClear",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Mission_Medic_Returned",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Simple_Talk_NPC",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Mission_Drone_Parts",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "ELY_Story5_Complete",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "ELY_SQ_Ambush_TalkVic",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "ELY_SQ_Ambush_Started",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "ELY_SQ_Lifeline_Started",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "ELY_SQ_Courier_Started",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "ELY_SQ_Trails_Started",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "ELY_SQ_Complete",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "ELY_SQ_BikeNeedsFuel",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "ELY_SQ_SimmonsThanks",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        }
+    ]
+}

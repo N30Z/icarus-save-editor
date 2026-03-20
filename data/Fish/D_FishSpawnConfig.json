@@ -1,0 +1,837 @@
+{
+    "RowStruct": "/Script/Icarus.FishSpawnConfig",
+    "Defaults": {
+        "SpawnMap": "None",
+        "SpawnZones": []
+    },
+    "Rows": [
+        {
+            "Name": "Test_Config",
+            "SpawnMap": "/Game/Heatmaps/Generic/GT_Generic_Bounds_Full.GT_Generic_Bounds_Full",
+            "SpawnZones": [
+                {
+                    "Color": {
+                        "B": 111,
+                        "G": 255,
+                        "R": 0,
+                        "A": 255
+                    },
+                    "SpawnZone": {
+                        "RowName": "Test_Zone",
+                        "DataTableName": "D_FishSpawnZones"
+                    }
+                }
+            ]
+        },
+        {
+            "Name": "Olympus",
+            "SpawnMap": "/Game/Heatmaps/Terrain_016_OLY/GT_Terrain016_Fish.GT_Terrain016_Fish",
+            "SpawnZones": [
+                {
+                    "Color": {
+                        "B": 224,
+                        "G": 142,
+                        "R": 0,
+                        "A": 255
+                    },
+                    "SpawnZone": {
+                        "RowName": "OLY_Conifer_Main",
+                        "DataTableName": "D_FishSpawnZones"
+                    }
+                },
+                {
+                    "Color": {
+                        "B": 225,
+                        "G": 20,
+                        "R": 174,
+                        "A": 255
+                    },
+                    "SpawnZone": {
+                        "RowName": "OLY_Conifer_North",
+                        "DataTableName": "D_FishSpawnZones"
+                    }
+                },
+                {
+                    "Color": {
+                        "B": 0,
+                        "G": 30,
+                        "R": 224,
+                        "A": 255
+                    },
+                    "SpawnZone": {
+                        "RowName": "OLY_Conifer_East",
+                        "DataTableName": "D_FishSpawnZones"
+                    }
+                },
+                {
+                    "Color": {
+                        "B": 20,
+                        "G": 184,
+                        "R": 225,
+                        "A": 255
+                    },
+                    "SpawnZone": {
+                        "RowName": "OLY_Conifer_West",
+                        "DataTableName": "D_FishSpawnZones"
+                    }
+                },
+                {
+                    "Color": {
+                        "B": 0,
+                        "G": 101,
+                        "R": 224,
+                        "A": 255
+                    },
+                    "SpawnZone": {
+                        "RowName": "OLY_Desert_Main",
+                        "DataTableName": "D_FishSpawnZones"
+                    }
+                },
+                {
+                    "Color": {
+                        "B": 123,
+                        "G": 0,
+                        "R": 224,
+                        "A": 255
+                    },
+                    "SpawnZone": {
+                        "RowName": "OLY_Desert_West",
+                        "DataTableName": "D_FishSpawnZones"
+                    }
+                },
+                {
+                    "Color": {
+                        "B": 0,
+                        "G": 224,
+                        "R": 11,
+                        "A": 255
+                    },
+                    "SpawnZone": {
+                        "RowName": "OLY_Canyons_Main",
+                        "DataTableName": "D_FishSpawnZones"
+                    }
+                },
+                {
+                    "Color": {
+                        "B": 0,
+                        "G": 134,
+                        "R": 211,
+                        "A": 255
+                    },
+                    "SpawnZone": {
+                        "RowName": "OLY_Canyons_Central",
+                        "DataTableName": "D_FishSpawnZones"
+                    }
+                },
+                {
+                    "Color": {
+                        "B": 0,
+                        "G": 25,
+                        "R": 211,
+                        "A": 255
+                    },
+                    "SpawnZone": {
+                        "RowName": "OLY_Canyons_North",
+                        "DataTableName": "D_FishSpawnZones"
+                    }
+                },
+                {
+                    "Color": {
+                        "B": 211,
+                        "G": 0,
+                        "R": 35,
+                        "A": 255
+                    },
+                    "SpawnZone": {
+                        "RowName": "OLY_Canyons_South",
+                        "DataTableName": "D_FishSpawnZones"
+                    }
+                },
+                {
+                    "Color": {
+                        "B": 160,
+                        "G": 224,
+                        "R": 0,
+                        "A": 255
+                    },
+                    "SpawnZone": {
+                        "RowName": "OLY_Riverlands_Main",
+                        "DataTableName": "D_FishSpawnZones"
+                    }
+                },
+                {
+                    "Color": {
+                        "B": 224,
+                        "G": 0,
+                        "R": 149,
+                        "A": 255
+                    },
+                    "SpawnZone": {
+                        "RowName": "OLY_Riverlands_North",
+                        "DataTableName": "D_FishSpawnZones"
+                    }
+                },
+                {
+                    "Color": {
+                        "B": 224,
+                        "G": 112,
+                        "R": 0,
+                        "A": 255
+                    },
+                    "SpawnZone": {
+                        "RowName": "OLY_Riverlands_South",
+                        "DataTableName": "D_FishSpawnZones"
+                    }
+                },
+                {
+                    "Color": {
+                        "B": 255,
+                        "G": 225,
+                        "R": 187,
+                        "A": 255
+                    },
+                    "SpawnZone": {
+                        "RowName": "OLY_SouthernGlacier_Main",
+                        "DataTableName": "D_FishSpawnZones"
+                    }
+                },
+                {
+                    "Color": {
+                        "B": 255,
+                        "G": 255,
+                        "R": 255,
+                        "A": 255
+                    },
+                    "SpawnZone": {
+                        "RowName": "OLY_CentralArctic",
+                        "DataTableName": "D_FishSpawnZones"
+                    }
+                }
+            ]
+        },
+        {
+            "Name": "Styx",
+            "SpawnMap": "/Game/Heatmaps/Terrain_017_STYX/GT_Terrain017_Fish.GT_Terrain017_Fish",
+            "SpawnZones": [
+                {
+                    "Color": {
+                        "B": 73,
+                        "G": 167,
+                        "R": 0,
+                        "A": 255
+                    },
+                    "SpawnZone": {
+                        "RowName": "STYX_River_Main",
+                        "DataTableName": "D_FishSpawnZones"
+                    }
+                },
+                {
+                    "Color": {
+                        "B": 146,
+                        "G": 30,
+                        "R": 255,
+                        "A": 255
+                    },
+                    "SpawnZone": {
+                        "RowName": "STYX_River_Central",
+                        "DataTableName": "D_FishSpawnZones"
+                    }
+                },
+                {
+                    "Color": {
+                        "B": 32,
+                        "G": 73,
+                        "R": 0,
+                        "A": 255
+                    },
+                    "SpawnZone": {
+                        "RowName": "STYX_River_North",
+                        "DataTableName": "D_FishSpawnZones"
+                    }
+                },
+                {
+                    "Color": {
+                        "B": 93,
+                        "G": 131,
+                        "R": 63,
+                        "A": 255
+                    },
+                    "SpawnZone": {
+                        "RowName": "STYX_River_South",
+                        "DataTableName": "D_FishSpawnZones"
+                    }
+                },
+                {
+                    "Color": {
+                        "B": 0,
+                        "G": 255,
+                        "R": 38,
+                        "A": 255
+                    },
+                    "SpawnZone": {
+                        "RowName": "STYX_EnclosedWood_Main",
+                        "DataTableName": "D_FishSpawnZones"
+                    }
+                },
+                {
+                    "Color": {
+                        "B": 154,
+                        "G": 202,
+                        "R": 95,
+                        "A": 255
+                    },
+                    "SpawnZone": {
+                        "RowName": "STYX_RingLake_Main",
+                        "DataTableName": "D_FishSpawnZones"
+                    }
+                },
+                {
+                    "Color": {
+                        "B": 141,
+                        "G": 255,
+                        "R": 0,
+                        "A": 255
+                    },
+                    "SpawnZone": {
+                        "RowName": "STYX_RingLake_Ring",
+                        "DataTableName": "D_FishSpawnZones"
+                    }
+                },
+                {
+                    "Color": {
+                        "B": 125,
+                        "G": 212,
+                        "R": 234,
+                        "A": 255
+                    },
+                    "SpawnZone": {
+                        "RowName": "STYX_Oasis_Main",
+                        "DataTableName": "D_FishSpawnZones"
+                    }
+                },
+                {
+                    "Color": {
+                        "B": 0,
+                        "G": 170,
+                        "R": 213,
+                        "A": 255
+                    },
+                    "SpawnZone": {
+                        "RowName": "STYX_Oasis_East",
+                        "DataTableName": "D_FishSpawnZones"
+                    }
+                },
+                {
+                    "Color": {
+                        "B": 1,
+                        "G": 99,
+                        "R": 124,
+                        "A": 255
+                    },
+                    "SpawnZone": {
+                        "RowName": "STYX_Oasis_West",
+                        "DataTableName": "D_FishSpawnZones"
+                    }
+                },
+                {
+                    "Color": {
+                        "B": 33,
+                        "G": 92,
+                        "R": 255,
+                        "A": 255
+                    },
+                    "SpawnZone": {
+                        "RowName": "STYX_DryRidge_Main",
+                        "DataTableName": "D_FishSpawnZones"
+                    }
+                },
+                {
+                    "Color": {
+                        "B": 0,
+                        "G": 35,
+                        "R": 130,
+                        "A": 255
+                    },
+                    "SpawnZone": {
+                        "RowName": "STYX_DryRidge_West",
+                        "DataTableName": "D_FishSpawnZones"
+                    }
+                },
+                {
+                    "Color": {
+                        "B": 163,
+                        "G": 184,
+                        "R": 0,
+                        "A": 255
+                    },
+                    "SpawnZone": {
+                        "RowName": "STYX_Grove_Main",
+                        "DataTableName": "D_FishSpawnZones"
+                    }
+                },
+                {
+                    "Color": {
+                        "B": 251,
+                        "G": 178,
+                        "R": 0,
+                        "A": 255
+                    },
+                    "SpawnZone": {
+                        "RowName": "STYX_FrozenTraverse_Main",
+                        "DataTableName": "D_FishSpawnZones"
+                    }
+                },
+                {
+                    "Color": {
+                        "B": 0,
+                        "G": 255,
+                        "R": 197,
+                        "A": 255
+                    },
+                    "SpawnZone": {
+                        "RowName": "STYX_VerdantTerraces_Main",
+                        "DataTableName": "D_FishSpawnZones"
+                    }
+                },
+                {
+                    "Color": {
+                        "B": 39,
+                        "G": 209,
+                        "R": 255,
+                        "A": 255
+                    },
+                    "SpawnZone": {
+                        "RowName": "STYX_DustyBarrens_Main",
+                        "DataTableName": "D_FishSpawnZones"
+                    }
+                },
+                {
+                    "Color": {
+                        "B": 255,
+                        "G": 255,
+                        "R": 225,
+                        "A": 255
+                    },
+                    "SpawnZone": {
+                        "RowName": "STYX_IceFlats_Main",
+                        "DataTableName": "D_FishSpawnZones"
+                    }
+                },
+                {
+                    "Color": {
+                        "B": 255,
+                        "G": 107,
+                        "R": 0,
+                        "A": 255
+                    },
+                    "SpawnZone": {
+                        "RowName": "STYX_AlpineValley_Main",
+                        "DataTableName": "D_FishSpawnZones"
+                    }
+                },
+                {
+                    "Color": {
+                        "B": 219,
+                        "G": 214,
+                        "R": 175,
+                        "A": 255
+                    },
+                    "SpawnZone": {
+                        "RowName": "STYX_SnowyPlateau_Main",
+                        "DataTableName": "D_FishSpawnZones"
+                    }
+                },
+                {
+                    "Color": {
+                        "B": 255,
+                        "G": 255,
+                        "R": 53,
+                        "A": 255
+                    },
+                    "SpawnZone": {
+                        "RowName": "STYX_TheWall_Main",
+                        "DataTableName": "D_FishSpawnZones"
+                    }
+                }
+            ]
+        },
+        {
+            "Name": "Prometheus",
+            "SpawnMap": "/Game/Heatmaps/Terrain_019_DLC/GT_Terrain019_Fish.GT_Terrain019_Fish",
+            "SpawnZones": [
+                {
+                    "Color": {
+                        "B": 0,
+                        "G": 0,
+                        "R": 0,
+                        "A": 255
+                    },
+                    "SpawnZone": {
+                        "RowName": "PRO_Main",
+                        "DataTableName": "D_FishSpawnZones"
+                    }
+                },
+                {
+                    "Color": {
+                        "B": 242,
+                        "G": 255,
+                        "R": 0,
+                        "A": 255
+                    },
+                    "SpawnZone": {
+                        "RowName": "PRO_GlacialCascade_Main",
+                        "DataTableName": "D_FishSpawnZones"
+                    }
+                },
+                {
+                    "Color": {
+                        "B": 167,
+                        "G": 104,
+                        "R": 27,
+                        "A": 255
+                    },
+                    "SpawnZone": {
+                        "RowName": "PRO_Grasslands_Main",
+                        "DataTableName": "D_FishSpawnZones"
+                    }
+                },
+                {
+                    "Color": {
+                        "B": 48,
+                        "G": 233,
+                        "R": 240,
+                        "A": 255
+                    },
+                    "SpawnZone": {
+                        "RowName": "PRO_BasaltExpansion_Main",
+                        "DataTableName": "D_FishSpawnZones"
+                    }
+                },
+                {
+                    "Color": {
+                        "B": 26,
+                        "G": 136,
+                        "R": 220,
+                        "A": 255
+                    },
+                    "SpawnZone": {
+                        "RowName": "PRO_LavaFlows_Main",
+                        "DataTableName": "D_FishSpawnZones"
+                    }
+                },
+                {
+                    "Color": {
+                        "B": 173,
+                        "G": 242,
+                        "R": 108,
+                        "A": 255
+                    },
+                    "SpawnZone": {
+                        "RowName": "PRO_Wetlands",
+                        "DataTableName": "D_FishSpawnZones"
+                    }
+                },
+                {
+                    "Color": {
+                        "B": 40,
+                        "G": 84,
+                        "R": 0,
+                        "A": 255
+                    },
+                    "SpawnZone": {
+                        "RowName": "PRO_Marshlands_Main",
+                        "DataTableName": "D_FishSpawnZones"
+                    }
+                },
+                {
+                    "Color": {
+                        "B": 24,
+                        "G": 46,
+                        "R": 3,
+                        "A": 255
+                    },
+                    "SpawnZone": {
+                        "RowName": "PRO_ThePillars",
+                        "DataTableName": "D_FishSpawnZones"
+                    }
+                },
+                {
+                    "Color": {
+                        "B": 125,
+                        "G": 242,
+                        "R": 14,
+                        "A": 255
+                    },
+                    "SpawnZone": {
+                        "RowName": "PRO_Stillwater",
+                        "DataTableName": "D_FishSpawnZones"
+                    }
+                },
+                {
+                    "Color": {
+                        "B": 163,
+                        "G": 94,
+                        "R": 10,
+                        "A": 255
+                    },
+                    "SpawnZone": {
+                        "RowName": "PRO_Grasslands_Upper_Stretch",
+                        "DataTableName": "D_FishSpawnZones"
+                    }
+                },
+                {
+                    "Color": {
+                        "B": 62,
+                        "G": 93,
+                        "R": 34,
+                        "A": 255
+                    },
+                    "SpawnZone": {
+                        "RowName": "PRO_Marshlands_Small",
+                        "DataTableName": "D_FishSpawnZones"
+                    }
+                },
+                {
+                    "Color": {
+                        "B": 94,
+                        "G": 26,
+                        "R": 220,
+                        "A": 255
+                    },
+                    "SpawnZone": {
+                        "RowName": "PRO_LavaFlows_Terrace",
+                        "DataTableName": "D_FishSpawnZones"
+                    }
+                },
+                {
+                    "Color": {
+                        "B": 42,
+                        "G": 0,
+                        "R": 255,
+                        "A": 255
+                    },
+                    "SpawnZone": {
+                        "RowName": "PRO_BasaltExpansion_Pools",
+                        "DataTableName": "D_FishSpawnZones"
+                    }
+                },
+                {
+                    "Color": {
+                        "B": 235,
+                        "G": 159,
+                        "R": 66,
+                        "A": 255
+                    },
+                    "SpawnZone": {
+                        "RowName": "PRO_Grasslands_Small_Pools",
+                        "DataTableName": "D_FishSpawnZones"
+                    }
+                },
+                {
+                    "Color": {
+                        "B": 248,
+                        "G": 195,
+                        "R": 131,
+                        "A": 255
+                    },
+                    "SpawnZone": {
+                        "RowName": "PRO_Grasslands_Small_Pools_2",
+                        "DataTableName": "D_FishSpawnZones"
+                    }
+                },
+                {
+                    "Color": {
+                        "B": 96,
+                        "G": 96,
+                        "R": 9,
+                        "A": 255
+                    },
+                    "SpawnZone": {
+                        "RowName": "PRO_GlacialCascade_Pool",
+                        "DataTableName": "D_FishSpawnZones"
+                    }
+                },
+                {
+                    "Color": {
+                        "B": 169,
+                        "G": 0,
+                        "R": 135,
+                        "A": 255
+                    },
+                    "SpawnZone": {
+                        "RowName": "PRO_Ashlands_Main",
+                        "DataTableName": "D_FishSpawnZones"
+                    }
+                },
+                {
+                    "Color": {
+                        "B": 255,
+                        "G": 0,
+                        "R": 24,
+                        "A": 255
+                    },
+                    "SpawnZone": {
+                        "RowName": "PRO_IceSheet_Main",
+                        "DataTableName": "D_FishSpawnZones"
+                    }
+                }
+            ]
+        },
+        {
+            "Name": "Outpost_Forest",
+            "SpawnMap": "/Game/Heatmaps/Generic/GT_Generic_Bounds_Full.GT_Generic_Bounds_Full",
+            "SpawnZones": [
+                {
+                    "Color": {
+                        "B": 111,
+                        "G": 255,
+                        "R": 0,
+                        "A": 255
+                    },
+                    "SpawnZone": {
+                        "RowName": "OP_Forest",
+                        "DataTableName": "D_FishSpawnZones"
+                    }
+                }
+            ]
+        },
+        {
+            "Name": "Outpost_Forest_2",
+            "SpawnMap": "/Game/Heatmaps/Generic/GT_Generic_Bounds_Full.GT_Generic_Bounds_Full",
+            "SpawnZones": [
+                {
+                    "Color": {
+                        "B": 111,
+                        "G": 255,
+                        "R": 0,
+                        "A": 255
+                    },
+                    "SpawnZone": {
+                        "RowName": "OP_Forest2",
+                        "DataTableName": "D_FishSpawnZones"
+                    }
+                }
+            ]
+        },
+        {
+            "Name": "Outpost_Forest_3",
+            "SpawnMap": "/Game/Heatmaps/Generic/GT_Generic_Bounds_Full.GT_Generic_Bounds_Full",
+            "SpawnZones": [
+                {
+                    "Color": {
+                        "B": 111,
+                        "G": 255,
+                        "R": 0,
+                        "A": 255
+                    },
+                    "SpawnZone": {
+                        "RowName": "OP_Forest2",
+                        "DataTableName": "D_FishSpawnZones"
+                    }
+                }
+            ]
+        },
+        {
+            "Name": "Outpost_Arctic",
+            "SpawnMap": "/Game/Heatmaps/Generic/GT_Generic_Bounds_Full.GT_Generic_Bounds_Full",
+            "SpawnZones": [
+                {
+                    "Color": {
+                        "B": 111,
+                        "G": 255,
+                        "R": 0,
+                        "A": 255
+                    },
+                    "SpawnZone": {
+                        "RowName": "OP_Arctic",
+                        "DataTableName": "D_FishSpawnZones"
+                    }
+                }
+            ]
+        },
+        {
+            "Name": "Outpost_Arctic_2",
+            "SpawnMap": "/Game/Heatmaps/Generic/GT_Generic_Bounds_Full.GT_Generic_Bounds_Full",
+            "SpawnZones": [
+                {
+                    "Color": {
+                        "B": 111,
+                        "G": 255,
+                        "R": 0,
+                        "A": 255
+                    },
+                    "SpawnZone": {
+                        "RowName": "OP_Arctic",
+                        "DataTableName": "D_FishSpawnZones"
+                    }
+                }
+            ]
+        },
+        {
+            "Name": "Outpost_Desert",
+            "SpawnMap": "/Game/Heatmaps/Generic/GT_Generic_Bounds_Full.GT_Generic_Bounds_Full",
+            "SpawnZones": [
+                {
+                    "Color": {
+                        "B": 111,
+                        "G": 255,
+                        "R": 0,
+                        "A": 255
+                    },
+                    "SpawnZone": {
+                        "RowName": "OP_Arctic",
+                        "DataTableName": "D_FishSpawnZones"
+                    }
+                }
+            ]
+        },
+        {
+            "Name": "Outpost_Desert_2",
+            "SpawnMap": "/Game/Heatmaps/Generic/GT_Generic_Bounds_Full.GT_Generic_Bounds_Full",
+            "SpawnZones": [
+                {
+                    "Color": {
+                        "B": 111,
+                        "G": 255,
+                        "R": 0,
+                        "A": 255
+                    },
+                    "SpawnZone": {
+                        "RowName": "OP_Arctic",
+                        "DataTableName": "D_FishSpawnZones"
+                    }
+                }
+            ]
+        },
+        {
+            "Name": "Outpost_009",
+            "SpawnMap": "/Game/Heatmaps/Outpost_009/GT_Outpost009_Fish.GT_Outpost009_Fish",
+            "SpawnZones": [
+                {
+                    "Color": {
+                        "B": 254,
+                        "G": 248,
+                        "R": 7,
+                        "A": 255
+                    },
+                    "SpawnZone": {
+                        "RowName": "OP_Arctic",
+                        "DataTableName": "D_FishSpawnZones"
+                    }
+                },
+                {
+                    "Color": {
+                        "B": 38,
+                        "G": 131,
+                        "R": 125,
+                        "A": 255
+                    },
+                    "SpawnZone": {
+                        "RowName": "OP_Geothermal",
+                        "DataTableName": "D_FishSpawnZones"
+                    }
+                }
+            ]
+        }
+    ]
+}

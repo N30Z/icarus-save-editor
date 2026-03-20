@@ -1,0 +1,1279 @@
+{
+    "RowStruct": "/Script/Icarus.FarmingGrowthState",
+    "Defaults": {
+        "TimeToNextState": 0,
+        "StageMesh": "None",
+        "MeshScale": {
+            "X": 1,
+            "Y": 1,
+            "Z": 1
+        }
+    },
+    "Rows": [
+        {
+            "Name": "Fiber_Growth_04_0",
+            "TimeToNextState": 1200,
+            "StageMesh": "/Game/ASS/ENV/HRB/HRB_Crop_Fiber/SM_HRB_Crop_Firber_Stage4_Var1_01.SM_HRB_Crop_Firber_Stage4_Var1_01"
+        },
+        {
+            "Name": "Corn_Growth_01",
+            "TimeToNextState": 300,
+            "StageMesh": "/Game/ASS/ENV/HRB/Crop_Corn/V2/SM_HRB_Crop_Corn_Stage1_Var1.SM_HRB_Crop_Corn_Stage1_Var1"
+        },
+        {
+            "Name": "Corn_Growth_02",
+            "TimeToNextState": 600,
+            "StageMesh": "/Game/ASS/ENV/HRB/Crop_Corn/V2/SM_HRB_Crop_Corn_Stage2_Var1.SM_HRB_Crop_Corn_Stage2_Var1"
+        },
+        {
+            "Name": "Corn_Growth_03",
+            "TimeToNextState": 900,
+            "StageMesh": "/Game/ASS/ENV/HRB/Crop_Corn/V2/SM_HRB_Crop_Corn_Stage3_Var1.SM_HRB_Crop_Corn_Stage3_Var1"
+        },
+        {
+            "Name": "Corn_Growth_04",
+            "TimeToNextState": 1800,
+            "StageMesh": "/Game/ASS/ENV/HRB/Crop_Corn/V2/SM_HRB_Crop_Corn_Stage4_Var1.SM_HRB_Crop_Corn_Stage4_Var1"
+        },
+        {
+            "Name": "Corn_Growth_05",
+            "TimeToNextState": 7200,
+            "StageMesh": "/Game/ASS/ENV/HRB/Crop_Corn/V2/SM_HRB_Crop_Corn_Stage5_Var1.SM_HRB_Crop_Corn_Stage5_Var1"
+        },
+        {
+            "Name": "Corn_Growth_Dead",
+            "TimeToNextState": 1,
+            "StageMesh": "/Game/ASS/ENV/HRB/Crop_Corn/V2/SM_HRB_Crop_Corn_Dead_Var1.SM_HRB_Crop_Corn_Dead_Var1"
+        },
+        {
+            "Name": "Wheat_Growth_01",
+            "TimeToNextState": 150,
+            "StageMesh": "/Game/ASS/ENV/HRB/Crop_Wheat/SM_HRB_Crop_Wheat_01_Stage1_Var2.SM_HRB_Crop_Wheat_01_Stage1_Var2"
+        },
+        {
+            "Name": "Wheat_Growth_02",
+            "TimeToNextState": 300,
+            "StageMesh": "/Game/ASS/ENV/HRB/Crop_Wheat/SM_HRB_Crop_Wheat_01_Stage2_Var2.SM_HRB_Crop_Wheat_01_Stage2_Var2"
+        },
+        {
+            "Name": "Wheat_Growth_03",
+            "TimeToNextState": 450,
+            "StageMesh": "/Game/ASS/ENV/HRB/Crop_Wheat/SM_HRB_Crop_Wheat_01_Stage3_Var2.SM_HRB_Crop_Wheat_01_Stage3_Var2"
+        },
+        {
+            "Name": "Wheat_Growth_04",
+            "TimeToNextState": 900,
+            "StageMesh": "/Game/ASS/ENV/HRB/Crop_Wheat/SM_HRB_Crop_Wheat_01_Stage4_Var2.SM_HRB_Crop_Wheat_01_Stage4_Var2"
+        },
+        {
+            "Name": "Wheat_Growth_05",
+            "TimeToNextState": 3600,
+            "StageMesh": "/Game/ASS/ENV/HRB/Crop_Wheat/SM_HRB_Crop_Wheat_01_Stage5_Var2.SM_HRB_Crop_Wheat_01_Stage5_Var2"
+        },
+        {
+            "Name": "Wheat_Growth_Dead",
+            "TimeToNextState": 1,
+            "StageMesh": "/Game/ASS/ENV/HRB/Crop_Wheat/SM_HRB_Crop_Wheat_01_Dead_Var2.SM_HRB_Crop_Wheat_01_Dead_Var2"
+        },
+        {
+            "Name": "ReedFlower_Growth_01",
+            "TimeToNextState": 200,
+            "StageMesh": "/Game/ASS/ENV/HRB/Crop_ReedFlower/SM_HRB_Crop_ReedFlower_01_Stage1_Var1.SM_HRB_Crop_ReedFlower_01_Stage1_Var1"
+        },
+        {
+            "Name": "ReedFlower_Growth_02",
+            "TimeToNextState": 400,
+            "StageMesh": "/Game/ASS/ENV/HRB/Crop_ReedFlower/SM_HRB_Crop_ReedFlower_01_Stage2_Var1.SM_HRB_Crop_ReedFlower_01_Stage2_Var1"
+        },
+        {
+            "Name": "ReedFlower_Growth_03",
+            "TimeToNextState": 600,
+            "StageMesh": "/Game/ASS/ENV/HRB/Crop_ReedFlower/SM_HRB_Crop_ReedFlower_01_Stage3_Var1.SM_HRB_Crop_ReedFlower_01_Stage3_Var1"
+        },
+        {
+            "Name": "ReedFlower_Growth_04",
+            "TimeToNextState": 1200,
+            "StageMesh": "/Game/ASS/ENV/HRB/Crop_ReedFlower/SM_HRB_Crop_ReedFlower_01_Stage4_Var1.SM_HRB_Crop_ReedFlower_01_Stage4_Var1"
+        },
+        {
+            "Name": "ReedFlower_Growth_05",
+            "TimeToNextState": 4800,
+            "StageMesh": "/Game/ASS/ENV/HRB/Crop_ReedFlower/SM_HRB_Crop_ReedFlower_01_Stage5_Var1.SM_HRB_Crop_ReedFlower_01_Stage5_Var1"
+        },
+        {
+            "Name": "ReedFlower_Growth_Dead",
+            "TimeToNextState": 1,
+            "StageMesh": "/Game/ASS/ENV/HRB/Crop_ReedFlower/SM_HRB_Crop_ReedFlower_01_Dead_Var1.SM_HRB_Crop_ReedFlower_01_Dead_Var1"
+        },
+        {
+            "Name": "Yeast_Growth_01",
+            "TimeToNextState": 300,
+            "StageMesh": "/Game/ASS/ENV/HRB/Crop_Yeast/SM_HRB_Yeast_01_Stage1_Var1.SM_HRB_Yeast_01_Stage1_Var1"
+        },
+        {
+            "Name": "Yeast_Growth_02",
+            "TimeToNextState": 600,
+            "StageMesh": "/Game/ASS/ENV/HRB/Crop_Yeast/SM_HRB_Yeast_01_Stage2_Var1.SM_HRB_Yeast_01_Stage2_Var1"
+        },
+        {
+            "Name": "Yeast_Growth_03",
+            "TimeToNextState": 900,
+            "StageMesh": "/Game/ASS/ENV/HRB/Crop_Yeast/SM_HRB_Yeast_01_Stage3_Var1.SM_HRB_Yeast_01_Stage3_Var1"
+        },
+        {
+            "Name": "Yeast_Growth_04",
+            "TimeToNextState": 1800,
+            "StageMesh": "/Game/ASS/ENV/HRB/Crop_Yeast/SM_HRB_Yeast_01_Stage4_Var1.SM_HRB_Yeast_01_Stage4_Var1"
+        },
+        {
+            "Name": "Yeast_Growth_05",
+            "TimeToNextState": 7200,
+            "StageMesh": "/Game/ASS/ENV/HRB/Crop_Yeast/SM_HRB_Yeast_01_Stage5_Var1.SM_HRB_Yeast_01_Stage5_Var1"
+        },
+        {
+            "Name": "Yeast_Growth_Dead",
+            "TimeToNextState": 1,
+            "StageMesh": "/Game/ASS/ENV/HRB/Crop_Yeast/SM_HRB_Yeast_01_Dead_Var1.SM_HRB_Yeast_01_Dead_Var1"
+        },
+        {
+            "Name": "Lily_Growth_01",
+            "TimeToNextState": 300,
+            "StageMesh": "/Game/ASS/ENV/HRB/Crop_AlpineLily/SM_HRB_Crop_AlpineLily_Stage1_Var1.SM_HRB_Crop_AlpineLily_Stage1_Var1"
+        },
+        {
+            "Name": "Lily_Growth_02",
+            "TimeToNextState": 600,
+            "StageMesh": "/Game/ASS/ENV/HRB/Crop_AlpineLily/SM_HRB_Crop_AlpineLily_Stage2_Var1.SM_HRB_Crop_AlpineLily_Stage2_Var1"
+        },
+        {
+            "Name": "Lily_Growth_03",
+            "TimeToNextState": 900,
+            "StageMesh": "/Game/ASS/ENV/HRB/Crop_AlpineLily/SM_HRB_Crop_AlpineLily_Stage3_Var1.SM_HRB_Crop_AlpineLily_Stage3_Var1"
+        },
+        {
+            "Name": "Lily_Growth_04",
+            "TimeToNextState": 1800,
+            "StageMesh": "/Game/ASS/ENV/HRB/Crop_AlpineLily/SM_HRB_Crop_AlpineLily_Stage4_Var1.SM_HRB_Crop_AlpineLily_Stage4_Var1"
+        },
+        {
+            "Name": "Lily_Growth_05",
+            "TimeToNextState": 7200,
+            "StageMesh": "/Game/ASS/ENV/HRB/Crop_AlpineLily/SM_HRB_Crop_AlpineLily_Stage5_Var1.SM_HRB_Crop_AlpineLily_Stage5_Var1"
+        },
+        {
+            "Name": "Lily_Growth_Dead",
+            "TimeToNextState": 1,
+            "StageMesh": "/Game/ASS/ENV/HRB/Crop_AlpineLily/SM_HRB_Crop_AlpineLily_Dead_Var1.SM_HRB_Crop_AlpineLily_Dead_Var1"
+        },
+        {
+            "Name": "BerryBush_Growth_01",
+            "TimeToNextState": 150,
+            "StageMesh": "/Game/ASS/ENV/HRB/Crop_BerryBush/SM_HRB_Crop_BerryBush_Stage1_Var1.SM_HRB_Crop_BerryBush_Stage1_Var1"
+        },
+        {
+            "Name": "BerryBush_Growth_02",
+            "TimeToNextState": 300,
+            "StageMesh": "/Game/ASS/ENV/HRB/Crop_BerryBush/SM_HRB_Crop_BerryBush_Stage2_Var1.SM_HRB_Crop_BerryBush_Stage2_Var1"
+        },
+        {
+            "Name": "BerryBush_Growth_03",
+            "TimeToNextState": 450,
+            "StageMesh": "/Game/ASS/ENV/HRB/Crop_BerryBush/SM_HRB_Crop_BerryBush_Stage3_Var1.SM_HRB_Crop_BerryBush_Stage3_Var1"
+        },
+        {
+            "Name": "BerryBush_Growth_04",
+            "TimeToNextState": 900,
+            "StageMesh": "/Game/ASS/ENV/HRB/Crop_BerryBush/SM_HRB_Crop_BerryBush_Stage4_Var1.SM_HRB_Crop_BerryBush_Stage4_Var1"
+        },
+        {
+            "Name": "BerryBush_Growth_05",
+            "TimeToNextState": 3600,
+            "StageMesh": "/Game/ASS/ENV/HRB/Crop_BerryBush/SM_HRB_Crop_BerryBush_Stage5_Var1.SM_HRB_Crop_BerryBush_Stage5_Var1"
+        },
+        {
+            "Name": "BerryBush_Growth_Dead",
+            "TimeToNextState": 1,
+            "StageMesh": "/Game/ASS/ENV/HRB/Crop_BerryBush/SM_HRB_Crop_BerryBush_Dead_Var1.SM_HRB_Crop_BerryBush_Dead_Var1"
+        },
+        {
+            "Name": "Pumpkin_Growth_01",
+            "TimeToNextState": 300,
+            "StageMesh": "/Game/ASS/ENV/HRB/Crop_Pumpkin/v02/SM_HRB_Crop_Pumpkin_Stage1_Var1.SM_HRB_Crop_Pumpkin_Stage1_Var1"
+        },
+        {
+            "Name": "Pumpkin_Growth_02",
+            "TimeToNextState": 600,
+            "StageMesh": "/Game/ASS/ENV/HRB/Crop_Pumpkin/v02/SM_HRB_Crop_Pumpkin_Stage2_Var1.SM_HRB_Crop_Pumpkin_Stage2_Var1"
+        },
+        {
+            "Name": "Pumpkin_Growth_03",
+            "TimeToNextState": 900,
+            "StageMesh": "/Game/ASS/ENV/HRB/Crop_Pumpkin/v02/SM_HRB_Crop_Pumpkin_Stage3_Var1.SM_HRB_Crop_Pumpkin_Stage3_Var1"
+        },
+        {
+            "Name": "Pumpkin_Growth_04",
+            "TimeToNextState": 1800,
+            "StageMesh": "/Game/ASS/ENV/HRB/Crop_Pumpkin/v02/SM_HRB_Crop_Pumpkin_Stage4_Var1.SM_HRB_Crop_Pumpkin_Stage4_Var1"
+        },
+        {
+            "Name": "Pumpkin_Growth_05",
+            "TimeToNextState": 7200,
+            "StageMesh": "/Game/ASS/ENV/HRB/Crop_Pumpkin/v02/SM_HRB_Crop_Pumpkin_Stage5_Var1.SM_HRB_Crop_Pumpkin_Stage5_Var1"
+        },
+        {
+            "Name": "Pumpkin_Growth_Dead",
+            "TimeToNextState": 1,
+            "StageMesh": "/Game/ASS/ENV/HRB/Crop_Pumpkin/v02/SM_HRB_Crop_Pumpkin_Dead_Var1.SM_HRB_Crop_Pumpkin_Dead_Var1"
+        },
+        {
+            "Name": "Beans_Growth_01",
+            "TimeToNextState": 150,
+            "StageMesh": "/Game/ASS/ENV/HRB/Crop_Beans/V2/SM_ITM_Crop_Beans_Stage1_Var1.SM_ITM_Crop_Beans_Stage1_Var1"
+        },
+        {
+            "Name": "Beans_Growth_02",
+            "TimeToNextState": 300,
+            "StageMesh": "/Game/ASS/ENV/HRB/Crop_Beans/V2/SM_ITM_Crop_Beans_Stage2_Var1.SM_ITM_Crop_Beans_Stage2_Var1"
+        },
+        {
+            "Name": "Beans_Growth_03",
+            "TimeToNextState": 450,
+            "StageMesh": "/Game/ASS/ENV/HRB/Crop_Beans/V2/SM_ITM_Crop_Beans_Stage3_Var1.SM_ITM_Crop_Beans_Stage3_Var1"
+        },
+        {
+            "Name": "Beans_Growth_04",
+            "TimeToNextState": 900,
+            "StageMesh": "/Game/ASS/ENV/HRB/Crop_Beans/V2/SM_ITM_Crop_Beans_Stage4_Var1.SM_ITM_Crop_Beans_Stage4_Var1"
+        },
+        {
+            "Name": "Beans_Growth_05",
+            "TimeToNextState": 3600,
+            "StageMesh": "/Game/ASS/ENV/HRB/Crop_Beans/V2/SM_ITM_Crop_Beans_Stage5_Var1.SM_ITM_Crop_Beans_Stage5_Var1"
+        },
+        {
+            "Name": "Beans_Growth_Dead",
+            "TimeToNextState": 1,
+            "StageMesh": "/Game/ASS/ENV/HRB/Crop_Beans/V2/SM_ITM_Crop_Beans_Dead_Var1.SM_ITM_Crop_Beans_Dead_Var1"
+        },
+        {
+            "Name": "Squash_Growth_01",
+            "TimeToNextState": 300,
+            "StageMesh": "/Game/ASS/ENV/HRB/Crop_Squash/v02/SM_HRB_Crop_Squash_Stage1_Var1.SM_HRB_Crop_Squash_Stage1_Var1"
+        },
+        {
+            "Name": "Squash_Growth_02",
+            "TimeToNextState": 600,
+            "StageMesh": "/Game/ASS/ENV/HRB/Crop_Squash/v02/SM_HRB_Crop_Squash_Stage2_Var1.SM_HRB_Crop_Squash_Stage2_Var1"
+        },
+        {
+            "Name": "Squash_Growth_03",
+            "TimeToNextState": 900,
+            "StageMesh": "/Game/ASS/ENV/HRB/Crop_Squash/v02/SM_HRB_Crop_Squash_Stage3_Var1.SM_HRB_Crop_Squash_Stage3_Var1"
+        },
+        {
+            "Name": "Squash_Growth_04",
+            "TimeToNextState": 1800,
+            "StageMesh": "/Game/ASS/ENV/HRB/Crop_Squash/v02/SM_HRB_Crop_Squash_Stage4_Var1.SM_HRB_Crop_Squash_Stage4_Var1"
+        },
+        {
+            "Name": "Squash_Growth_05",
+            "TimeToNextState": 7200,
+            "StageMesh": "/Game/ASS/ENV/HRB/Crop_Squash/v02/SM_HRB_Crop_Squash_Stage5_Var1.SM_HRB_Crop_Squash_Stage5_Var1"
+        },
+        {
+            "Name": "Squash_Growth_Dead",
+            "TimeToNextState": 1,
+            "StageMesh": "/Game/ASS/ENV/HRB/Crop_Squash/v02/SM_HRB_Crop_Squash_Dead_Var1.SM_HRB_Crop_Squash_Dead_Var1"
+        },
+        {
+            "Name": "Watermelon_Growth_01",
+            "TimeToNextState": 300,
+            "StageMesh": "/Game/ASS/ENV/HRB/Crop_Watermelon/v02/SM_HRB_Crop_Watermelon_Stage1_Var1.SM_HRB_Crop_Watermelon_Stage1_Var1"
+        },
+        {
+            "Name": "Watermelon_Growth_02",
+            "TimeToNextState": 600,
+            "StageMesh": "/Game/ASS/ENV/HRB/Crop_Watermelon/v02/SM_HRB_Crop_Watermelon_Stage2_Var1.SM_HRB_Crop_Watermelon_Stage2_Var1"
+        },
+        {
+            "Name": "Watermelon_Growth_03",
+            "TimeToNextState": 900,
+            "StageMesh": "/Game/ASS/ENV/HRB/Crop_Watermelon/v02/SM_HRB_Crop_Watermelon_Stage3_Var1.SM_HRB_Crop_Watermelon_Stage3_Var1"
+        },
+        {
+            "Name": "Watermelon_Growth_04",
+            "TimeToNextState": 1800,
+            "StageMesh": "/Game/ASS/ENV/HRB/Crop_Watermelon/v02/SM_HRB_Crop_Watermelon_Stage4_Var1.SM_HRB_Crop_Watermelon_Stage4_Var1"
+        },
+        {
+            "Name": "Watermelon_Growth_05",
+            "TimeToNextState": 7200,
+            "StageMesh": "/Game/ASS/ENV/HRB/Crop_Watermelon/v02/SM_HRB_Crop_Watermelon_Stage5_Var1.SM_HRB_Crop_Watermelon_Stage5_Var1"
+        },
+        {
+            "Name": "Watermelon_Growth_Dead",
+            "TimeToNextState": 1,
+            "StageMesh": "/Game/ASS/ENV/HRB/Crop_Watermelon/v02/SM_HRB_Crop_Watermelon_Dead_Var1.SM_HRB_Crop_Watermelon_Dead_Var1"
+        },
+        {
+            "Name": "Cocoa_Growth_01",
+            "TimeToNextState": 200,
+            "StageMesh": "/Game/ASS/ENV/HRB/HRB_Cocoa/HRB_Crop_Cocoa/SM_HRB_Crop_Cocoa_Stage1_Var1_01.SM_HRB_Crop_Cocoa_Stage1_Var1_01"
+        },
+        {
+            "Name": "Cocoa_Growth_02",
+            "TimeToNextState": 400,
+            "StageMesh": "/Game/ASS/ENV/HRB/HRB_Cocoa/HRB_Crop_Cocoa/SM_HRB_Crop_Cocoa_Stage2_Var1_01.SM_HRB_Crop_Cocoa_Stage2_Var1_01"
+        },
+        {
+            "Name": "Cocoa_Growth_03",
+            "TimeToNextState": 600,
+            "StageMesh": "/Game/ASS/ENV/HRB/HRB_Cocoa/HRB_Crop_Cocoa/SM_HRB_Crop_Cocoa_Stage3_Var1_01.SM_HRB_Crop_Cocoa_Stage3_Var1_01"
+        },
+        {
+            "Name": "Cocoa_Growth_04",
+            "TimeToNextState": 1200,
+            "StageMesh": "/Game/ASS/ENV/HRB/HRB_Cocoa/HRB_Crop_Cocoa/SM_HRB_Crop_Cocoa_Stage4_Var1_01.SM_HRB_Crop_Cocoa_Stage4_Var1_01"
+        },
+        {
+            "Name": "Cocoa_Growth_05",
+            "TimeToNextState": 4800,
+            "StageMesh": "/Game/ASS/ENV/HRB/HRB_Cocoa/HRB_Crop_Cocoa/SM_HRB_Crop_Cocoa_Stage5_Var1_01.SM_HRB_Crop_Cocoa_Stage5_Var1_01"
+        },
+        {
+            "Name": "Cocoa_Growth_Dead",
+            "TimeToNextState": 1,
+            "StageMesh": "/Game/ASS/ENV/HRB/HRB_Cocoa/HRB_Crop_Cocoa/SM_HRB_Crop_Cocoa_Dead_Var1_01.SM_HRB_Crop_Cocoa_Dead_Var1_01"
+        },
+        {
+            "Name": "Coffee_Growth_01",
+            "TimeToNextState": 200,
+            "StageMesh": "/Game/ASS/ENV/HRB/HRB_Coffee/HRB_Crop_Coffee/SM_HRB_Crop_Coffee_Stage1_Var1.SM_HRB_Crop_Coffee_Stage1_Var1"
+        },
+        {
+            "Name": "Coffee_Growth_02",
+            "TimeToNextState": 400,
+            "StageMesh": "/Game/ASS/ENV/HRB/HRB_Coffee/HRB_Crop_Coffee/SM_HRB_Crop_Coffee_Stage2_Var1.SM_HRB_Crop_Coffee_Stage2_Var1"
+        },
+        {
+            "Name": "Coffee_Growth_03",
+            "TimeToNextState": 600,
+            "StageMesh": "/Game/ASS/ENV/HRB/HRB_Coffee/HRB_Crop_Coffee/SM_HRB_Crop_Coffee_Stage3_Var1.SM_HRB_Crop_Coffee_Stage3_Var1"
+        },
+        {
+            "Name": "Coffee_Growth_04",
+            "TimeToNextState": 1200,
+            "StageMesh": "/Game/ASS/ENV/HRB/HRB_Coffee/HRB_Crop_Coffee/SM_HRB_Crop_Coffee_Stage4_Var1.SM_HRB_Crop_Coffee_Stage4_Var1"
+        },
+        {
+            "Name": "Coffee_Growth_05",
+            "TimeToNextState": 4800,
+            "StageMesh": "/Game/ASS/ENV/HRB/HRB_Coffee/HRB_Crop_Coffee/SM_HRB_Crop_Coffee_Stage5_Var1.SM_HRB_Crop_Coffee_Stage5_Var1"
+        },
+        {
+            "Name": "Coffee_Growth_Dead",
+            "TimeToNextState": 1,
+            "StageMesh": "/Game/ASS/ENV/HRB/HRB_Coffee/HRB_Crop_Coffee/SM_HRB_Crop_Coffee_Dead_Var1.SM_HRB_Crop_Coffee_Dead_Var1"
+        },
+        {
+            "Name": "GreenTea_Growth_01",
+            "TimeToNextState": 200,
+            "StageMesh": "/Game/ASS/ENV/HRB/HRB_Tea_Green/HRB_Crop_Tea_Green/SM_HRB_Crop_Tea_Green_Stage1_Var1_01.SM_HRB_Crop_Tea_Green_Stage1_Var1_01"
+        },
+        {
+            "Name": "GreenTea_Growth_02",
+            "TimeToNextState": 400,
+            "StageMesh": "/Game/ASS/ENV/HRB/HRB_Tea_Green/HRB_Crop_Tea_Green/SM_HRB_Crop_Tea_Green_Stage2_Var1_01.SM_HRB_Crop_Tea_Green_Stage2_Var1_01"
+        },
+        {
+            "Name": "GreenTea_Growth_03",
+            "TimeToNextState": 600,
+            "StageMesh": "/Game/ASS/ENV/HRB/HRB_Tea_Green/HRB_Crop_Tea_Green/SM_HRB_Crop_Tea_Green_Stage3_Var1_01.SM_HRB_Crop_Tea_Green_Stage3_Var1_01"
+        },
+        {
+            "Name": "GreenTea_Growth_04",
+            "TimeToNextState": 1200,
+            "StageMesh": "/Game/ASS/ENV/HRB/HRB_Tea_Green/HRB_Crop_Tea_Green/SM_HRB_Crop_Tea_Green_Stage4_Var1_01.SM_HRB_Crop_Tea_Green_Stage4_Var1_01"
+        },
+        {
+            "Name": "GreenTea_Growth_05",
+            "TimeToNextState": 4800,
+            "StageMesh": "/Game/ASS/ENV/HRB/HRB_Tea_Green/HRB_Crop_Tea_Green/SM_HRB_Crop_Tea_Green_Stage5_Var1_01.SM_HRB_Crop_Tea_Green_Stage5_Var1_01"
+        },
+        {
+            "Name": "GreenTea_Growth_Dead",
+            "TimeToNextState": 1,
+            "StageMesh": "/Game/ASS/ENV/HRB/HRB_Tea_Green/HRB_Crop_Tea_Green/SM_HRB_Crop_Tea_Green_Dead_Var1_01.SM_HRB_Crop_Tea_Green_Dead_Var1_01"
+        },
+        {
+            "Name": "WildTea_Growth_01",
+            "TimeToNextState": 200,
+            "StageMesh": "/Game/ASS/ENV/HRB/HRB_Tea_Wild/HRB_Crop_Tea_Wild/SM_HRB_Crop_Tea_Wild_Stage1_Var1.SM_HRB_Crop_Tea_Wild_Stage1_Var1"
+        },
+        {
+            "Name": "WildTea_Growth_02",
+            "TimeToNextState": 400,
+            "StageMesh": "/Game/ASS/ENV/HRB/HRB_Tea_Wild/HRB_Crop_Tea_Wild/SM_HRB_Crop_Tea_Wild_Stage2_Var1.SM_HRB_Crop_Tea_Wild_Stage2_Var1"
+        },
+        {
+            "Name": "WildTea_Growth_03",
+            "TimeToNextState": 600,
+            "StageMesh": "/Game/ASS/ENV/HRB/HRB_Tea_Wild/HRB_Crop_Tea_Wild/SM_HRB_Crop_Tea_Wild_Stage3_Var1.SM_HRB_Crop_Tea_Wild_Stage3_Var1"
+        },
+        {
+            "Name": "WildTea_Growth_04",
+            "TimeToNextState": 1200,
+            "StageMesh": "/Game/ASS/ENV/HRB/HRB_Tea_Wild/HRB_Crop_Tea_Wild/SM_HRB_Crop_Tea_Wild_Stage4_Var1.SM_HRB_Crop_Tea_Wild_Stage4_Var1"
+        },
+        {
+            "Name": "WildTea_Growth_05",
+            "TimeToNextState": 4800,
+            "StageMesh": "/Game/ASS/ENV/HRB/HRB_Tea_Wild/HRB_Crop_Tea_Wild/SM_HRB_Crop_Tea_Wild_Stage5_Var1.SM_HRB_Crop_Tea_Wild_Stage5_Var1"
+        },
+        {
+            "Name": "WildTea_Growth_Dead",
+            "TimeToNextState": 1,
+            "StageMesh": "/Game/ASS/ENV/HRB/HRB_Tea_Wild/HRB_Crop_Tea_Wild/SM_HRB_Crop_Tea_Wild_Dead_Var1.SM_HRB_Crop_Tea_Wild_Dead_Var1"
+        },
+        {
+            "Name": "Carrot_Growth_01",
+            "TimeToNextState": 200,
+            "StageMesh": "/Game/ASS/ENV/HRB/Crop_Carrots/v02/SM_ITM_Crop_Carrots_Stage1_Var1.SM_ITM_Crop_Carrots_Stage1_Var1"
+        },
+        {
+            "Name": "Carrot_Growth_02",
+            "TimeToNextState": 400,
+            "StageMesh": "/Game/ASS/ENV/HRB/Crop_Carrots/v02/SM_ITM_Crop_Carrots_Stage2_Var1.SM_ITM_Crop_Carrots_Stage2_Var1"
+        },
+        {
+            "Name": "Carrot_Growth_03",
+            "TimeToNextState": 600,
+            "StageMesh": "/Game/ASS/ENV/HRB/Crop_Carrots/v02/SM_ITM_Crop_Carrots_Stage3_Var1.SM_ITM_Crop_Carrots_Stage3_Var1"
+        },
+        {
+            "Name": "Carrot_Growth_04",
+            "TimeToNextState": 1200,
+            "StageMesh": "/Game/ASS/ENV/HRB/Crop_Carrots/v02/SM_ITM_Crop_Carrots_Stage4_Var1.SM_ITM_Crop_Carrots_Stage4_Var1"
+        },
+        {
+            "Name": "Carrot_Growth_05",
+            "TimeToNextState": 4800,
+            "StageMesh": "/Game/ASS/ENV/HRB/Crop_Carrots/v02/SM_ITM_Crop_Carrots_Stage5_Var1.SM_ITM_Crop_Carrots_Stage5_Var1"
+        },
+        {
+            "Name": "Carrot_Growth_Dead",
+            "TimeToNextState": 1,
+            "StageMesh": "/Game/ASS/ENV/HRB/Crop_Carrots/v02/SM_ITM_Crop_Carrots_Dead_Var1.SM_ITM_Crop_Carrots_Dead_Var1"
+        },
+        {
+            "Name": "Mushroom_Growth_01",
+            "TimeToNextState": 200,
+            "StageMesh": "/Game/ASS/ENV/HRB/Crop_Musroom_A/SM_ITM_Crop_Musroom_A_Stage1_Var1.SM_ITM_Crop_Musroom_A_Stage1_Var1"
+        },
+        {
+            "Name": "Mushroom_Growth_02",
+            "TimeToNextState": 400,
+            "StageMesh": "/Game/ASS/ENV/HRB/Crop_Musroom_A/SM_ITM_Crop_Musroom_A_Stage2_Var1.SM_ITM_Crop_Musroom_A_Stage2_Var1"
+        },
+        {
+            "Name": "Mushroom_Growth_03",
+            "TimeToNextState": 600,
+            "StageMesh": "/Game/ASS/ENV/HRB/Crop_Musroom_A/SM_ITM_Crop_Musroom_A_Stage3_Var1.SM_ITM_Crop_Musroom_A_Stage3_Var1"
+        },
+        {
+            "Name": "Mushroom_Growth_04",
+            "TimeToNextState": 1200,
+            "StageMesh": "/Game/ASS/ENV/HRB/Crop_Musroom_A/SM_ITM_Crop_Musroom_A_Stage4_Var1.SM_ITM_Crop_Musroom_A_Stage4_Var1"
+        },
+        {
+            "Name": "Mushroom_Growth_05",
+            "TimeToNextState": 4800,
+            "StageMesh": "/Game/ASS/ENV/HRB/Crop_Musroom_A/SM_ITM_Crop_Musroom_A_Stage5_Var1.SM_ITM_Crop_Musroom_A_Stage5_Var1"
+        },
+        {
+            "Name": "Mushroom_Growth_Dead",
+            "TimeToNextState": 1,
+            "StageMesh": "/Game/ASS/ENV/HRB/Crop_Musroom_A/SM_ITM_Crop_Musroom_A_Dead_Var1.SM_ITM_Crop_Musroom_A_Dead_Var1"
+        },
+        {
+            "Name": "Tomato_Growth_01",
+            "TimeToNextState": 200,
+            "StageMesh": "/Game/ASS/ENV/HRB/Crop_Tomatoes/V2/SM_HRB_Crop_Tomatoes_Stage1.SM_HRB_Crop_Tomatoes_Stage1",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "NewFrontiers"
+                }
+            }
+        },
+        {
+            "Name": "Tomato_Growth_02",
+            "TimeToNextState": 400,
+            "StageMesh": "/Game/ASS/ENV/HRB/Crop_Tomatoes/V2/SM_HRB_Crop_Tomatoes_Stage2.SM_HRB_Crop_Tomatoes_Stage2",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "NewFrontiers"
+                }
+            }
+        },
+        {
+            "Name": "Tomato_Growth_03",
+            "TimeToNextState": 600,
+            "StageMesh": "/Game/ASS/ENV/HRB/Crop_Tomatoes/V2/SM_HRB_Crop_Tomatoes_Stage3.SM_HRB_Crop_Tomatoes_Stage3",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "NewFrontiers"
+                }
+            }
+        },
+        {
+            "Name": "Tomato_Growth_04",
+            "TimeToNextState": 1200,
+            "StageMesh": "/Game/ASS/ENV/HRB/Crop_Tomatoes/V2/SM_HRB_Crop_Tomatoes_Stage4.SM_HRB_Crop_Tomatoes_Stage4",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "NewFrontiers"
+                }
+            }
+        },
+        {
+            "Name": "Tomato_Growth_05",
+            "TimeToNextState": 4800,
+            "StageMesh": "/Game/ASS/ENV/HRB/Crop_Tomatoes/V2/SM_HRB_Crop_Tomatoes_Stage5.SM_HRB_Crop_Tomatoes_Stage5",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "NewFrontiers"
+                }
+            }
+        },
+        {
+            "Name": "Tomato_Growth_Dead",
+            "TimeToNextState": 1,
+            "StageMesh": "/Game/ASS/ENV/HRB/Crop_Tomatoes/V2/SM_HRB_Crop_Tomatoes_Dead.SM_HRB_Crop_Tomatoes_Dead",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "NewFrontiers"
+                }
+            }
+        },
+        {
+            "Name": "Potato_Growth_01",
+            "TimeToNextState": 200,
+            "StageMesh": "/Game/ASS/ENV/HRB/Crop_Potato/SM_HRB_Crop_Potato_Stage1.SM_HRB_Crop_Potato_Stage1",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "NewFrontiers"
+                }
+            }
+        },
+        {
+            "Name": "Potato_Growth_02",
+            "TimeToNextState": 400,
+            "StageMesh": "/Game/ASS/ENV/HRB/Crop_Potato/SM_HRB_Crop_Potato_Stage2.SM_HRB_Crop_Potato_Stage2",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "NewFrontiers"
+                }
+            }
+        },
+        {
+            "Name": "Potato_Growth_03",
+            "TimeToNextState": 600,
+            "StageMesh": "/Game/ASS/ENV/HRB/Crop_Potato/SM_HRB_Crop_Potato_Stage3.SM_HRB_Crop_Potato_Stage3",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "NewFrontiers"
+                }
+            }
+        },
+        {
+            "Name": "Potato_Growth_04",
+            "TimeToNextState": 1200,
+            "StageMesh": "/Game/ASS/ENV/HRB/Crop_Potato/SM_HRB_Crop_Potato_Stage4.SM_HRB_Crop_Potato_Stage4",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "NewFrontiers"
+                }
+            }
+        },
+        {
+            "Name": "Potato_Growth_05",
+            "TimeToNextState": 4800,
+            "StageMesh": "/Game/ASS/ENV/HRB/Crop_Potato/SM_HRB_Crop_Potato_Stage5.SM_HRB_Crop_Potato_Stage5",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "NewFrontiers"
+                }
+            }
+        },
+        {
+            "Name": "Potato_Growth_Dead",
+            "TimeToNextState": 1,
+            "StageMesh": "/Game/ASS/ENV/HRB/Crop_Potato/SM_HRB_Crop_Potato_Dead.SM_HRB_Crop_Potato_Dead",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "NewFrontiers"
+                }
+            }
+        },
+        {
+            "Name": "Red_Exotic_Growth_01",
+            "TimeToNextState": 200,
+            "StageMesh": "/Game/ASS/ENV/FOL/ALN/ALN_Exotic_PlantA/SM_HRB_Exotic_PlantA_Stage1_Var1.SM_HRB_Exotic_PlantA_Stage1_Var1",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "NewFrontiers"
+                }
+            }
+        },
+        {
+            "Name": "Red_Exotic_Growth_02",
+            "TimeToNextState": 400,
+            "StageMesh": "/Game/ASS/ENV/FOL/ALN/ALN_Exotic_PlantA/SM_HRB_Exotic_PlantA_Stage2_Var1.SM_HRB_Exotic_PlantA_Stage2_Var1",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "NewFrontiers"
+                }
+            }
+        },
+        {
+            "Name": "Red_Exotic_Growth_03",
+            "TimeToNextState": 600,
+            "StageMesh": "/Game/ASS/ENV/FOL/ALN/ALN_Exotic_PlantA/SM_HRB_Exotic_PlantA_Stage3_Var1.SM_HRB_Exotic_PlantA_Stage3_Var1",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "NewFrontiers"
+                }
+            }
+        },
+        {
+            "Name": "Red_Exotic_Growth_04",
+            "TimeToNextState": 1200,
+            "StageMesh": "/Game/ASS/ENV/FOL/ALN/ALN_Exotic_PlantA/SM_HRB_Exotic_PlantA_Stage4_Var1.SM_HRB_Exotic_PlantA_Stage4_Var1",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "NewFrontiers"
+                }
+            }
+        },
+        {
+            "Name": "Red_Exotic_Growth_05",
+            "TimeToNextState": 4800,
+            "StageMesh": "/Game/ASS/ENV/FOL/ALN/ALN_Exotic_PlantA/SM_HRB_Exotic_PlantA_Stage5_Var1.SM_HRB_Exotic_PlantA_Stage5_Var1",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "NewFrontiers"
+                }
+            }
+        },
+        {
+            "Name": "Red_Exotic_Dead",
+            "TimeToNextState": 1,
+            "StageMesh": "/Game/ASS/ENV/FOL/ALN/ALN_Exotic_PlantA/SM_HRB_Exotic_PlantA_Dead_Var1.SM_HRB_Exotic_PlantA_Dead_Var1",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "NewFrontiers"
+                }
+            }
+        },
+        {
+            "Name": "Rhubarb_Growth_01",
+            "TimeToNextState": 200,
+            "StageMesh": "/Game/ASS/ENV/HRB/Rhubarb/SM_HRB_Rhubarb_Stage1_Var1.SM_HRB_Rhubarb_Stage1_Var1"
+        },
+        {
+            "Name": "Rhubarb_Growth_02",
+            "TimeToNextState": 400,
+            "StageMesh": "/Game/ASS/ENV/HRB/Rhubarb/SM_HRB_Rhubarb_Stage2_Var1.SM_HRB_Rhubarb_Stage2_Var1"
+        },
+        {
+            "Name": "Rhubarb_Growth_03",
+            "TimeToNextState": 600,
+            "StageMesh": "/Game/ASS/ENV/HRB/Rhubarb/SM_HRB_Rhubarb_Stage3_Var1.SM_HRB_Rhubarb_Stage3_Var1"
+        },
+        {
+            "Name": "Rhubarb_Growth_04",
+            "TimeToNextState": 1200,
+            "StageMesh": "/Game/ASS/ENV/HRB/Rhubarb/SM_HRB_Rhubarb_Stage4_Var1.SM_HRB_Rhubarb_Stage4_Var1"
+        },
+        {
+            "Name": "Rhubarb_Growth_05",
+            "TimeToNextState": 7200,
+            "StageMesh": "/Game/ASS/ENV/HRB/Rhubarb/SM_HRB_Rhubarb_Stage5_Var1.SM_HRB_Rhubarb_Stage5_Var1"
+        },
+        {
+            "Name": "Rhubarb_Dead",
+            "TimeToNextState": 1,
+            "StageMesh": "/Game/ASS/ENV/HRB/Rhubarb/SM_HRB_Rhubarb_Dead_Var1.SM_HRB_Rhubarb_Dead_Var1"
+        },
+        {
+            "Name": "Kumara_Growth_01",
+            "TimeToNextState": 200,
+            "StageMesh": "/Game/ASS/ENV/HRB/Kumara/SM_HRB_Kumara_Stage1_Var1.SM_HRB_Kumara_Stage1_Var1"
+        },
+        {
+            "Name": "Kumara_Growth_02",
+            "TimeToNextState": 400,
+            "StageMesh": "/Game/ASS/ENV/HRB/Kumara/SM_HRB_Kumara_Stage2_Var1.SM_HRB_Kumara_Stage2_Var1"
+        },
+        {
+            "Name": "Kumara_Growth_03",
+            "TimeToNextState": 600,
+            "StageMesh": "/Game/ASS/ENV/HRB/Kumara/SM_HRB_Kumara_Stage3_Var1.SM_HRB_Kumara_Stage3_Var1"
+        },
+        {
+            "Name": "Kumara_Growth_04",
+            "TimeToNextState": 1200,
+            "StageMesh": "/Game/ASS/ENV/HRB/Kumara/SM_HRB_Kumara_Stage4_Var1.SM_HRB_Kumara_Stage4_Var1"
+        },
+        {
+            "Name": "Kumara_Growth_05",
+            "TimeToNextState": 7200,
+            "StageMesh": "/Game/ASS/ENV/HRB/Kumara/SM_HRB_Kumara_Stage5_Var1.SM_HRB_Kumara_Stage5_Var1"
+        },
+        {
+            "Name": "Kumara_Dead",
+            "TimeToNextState": 1,
+            "StageMesh": "/Game/ASS/ENV/HRB/Kumara/SM_HRB_Kumara_Dead_Var1.SM_HRB_Kumara_Dead_Var1"
+        },
+        {
+            "Name": "Avocado_Growth_01",
+            "TimeToNextState": 200,
+            "StageMesh": "/Game/ASS/ENV/HRB/Avocado/SM_HRB_Avocado_Stage1_Var1.SM_HRB_Avocado_Stage1_Var1"
+        },
+        {
+            "Name": "Avocado_Growth_02",
+            "TimeToNextState": 400,
+            "StageMesh": "/Game/ASS/ENV/HRB/Avocado/SM_HRB_Avocado_Stage2_Var1.SM_HRB_Avocado_Stage2_Var1"
+        },
+        {
+            "Name": "Avocado_Growth_03",
+            "TimeToNextState": 600,
+            "StageMesh": "/Game/ASS/ENV/HRB/Avocado/SM_HRB_Avocado_Stage3_Var1.SM_HRB_Avocado_Stage3_Var1"
+        },
+        {
+            "Name": "Avocado_Growth_04",
+            "TimeToNextState": 1200,
+            "StageMesh": "/Game/ASS/ENV/HRB/Avocado/SM_HRB_Avocado_Stage4_Var1.SM_HRB_Avocado_Stage4_Var1"
+        },
+        {
+            "Name": "Avocado_Growth_05",
+            "TimeToNextState": 7200,
+            "StageMesh": "/Game/ASS/ENV/HRB/Avocado/SM_HRB_Avocado_Stage5_Var1.SM_HRB_Avocado_Stage5_Var1"
+        },
+        {
+            "Name": "Avocado_Dead",
+            "TimeToNextState": 1,
+            "StageMesh": "/Game/ASS/ENV/HRB/Avocado/SM_HRB_Avocado_Dead_Var1.SM_HRB_Avocado_Dead_Var1"
+        },
+        {
+            "Name": "Stawberry_Growth_01",
+            "TimeToNextState": 200,
+            "StageMesh": "/Game/ASS/ENV/HRB/Strawberry/SM_HRB_Strawberry_Stage1_Var1.SM_HRB_Strawberry_Stage1_Var1"
+        },
+        {
+            "Name": "Stawberry_Growth_02",
+            "TimeToNextState": 400,
+            "StageMesh": "/Game/ASS/ENV/HRB/Strawberry/SM_HRB_Strawberry_Stage2_Var1.SM_HRB_Strawberry_Stage2_Var1"
+        },
+        {
+            "Name": "Stawberry_Growth_03",
+            "TimeToNextState": 600,
+            "StageMesh": "/Game/ASS/ENV/HRB/Strawberry/SM_HRB_Strawberry_Stage3_Var1.SM_HRB_Strawberry_Stage3_Var1"
+        },
+        {
+            "Name": "Stawberry_Growth_04",
+            "TimeToNextState": 1200,
+            "StageMesh": "/Game/ASS/ENV/HRB/Strawberry/SM_HRB_Strawberry_Stage4_Var1.SM_HRB_Strawberry_Stage4_Var1"
+        },
+        {
+            "Name": "Stawberry_Growth_05",
+            "TimeToNextState": 7200,
+            "StageMesh": "/Game/ASS/ENV/HRB/Strawberry/SM_HRB_Strawberry_Stage5_Var1.SM_HRB_Strawberry_Stage5_Var1"
+        },
+        {
+            "Name": "Stawberry_Dead",
+            "TimeToNextState": 1,
+            "StageMesh": "/Game/ASS/ENV/HRB/Strawberry/SM_HRB_Strawberry_Dead_Var1.SM_HRB_Strawberry_Dead_Var1"
+        },
+        {
+            "Name": "Fiber_Growth_01",
+            "TimeToNextState": 200,
+            "StageMesh": "/Game/ASS/ENV/HRB/HRB_Crop_Fiber/SM_HRB_Crop_Firber_Stage1_Var1_01.SM_HRB_Crop_Firber_Stage1_Var1_01"
+        },
+        {
+            "Name": "Fiber_Growth_02",
+            "TimeToNextState": 400,
+            "StageMesh": "/Game/ASS/ENV/HRB/HRB_Crop_Fiber/SM_HRB_Crop_Firber_Stage2_Var1_01.SM_HRB_Crop_Firber_Stage2_Var1_01"
+        },
+        {
+            "Name": "Fiber_Growth_03",
+            "TimeToNextState": 600,
+            "StageMesh": "/Game/ASS/ENV/HRB/HRB_Crop_Fiber/SM_HRB_Crop_Firber_Stage3_Var1_01.SM_HRB_Crop_Firber_Stage3_Var1_01"
+        },
+        {
+            "Name": "Fiber_Growth_04",
+            "TimeToNextState": 1200,
+            "StageMesh": "/Game/ASS/ENV/HRB/HRB_Crop_Fiber/SM_HRB_Crop_Firber_Stage4_Var1_01.SM_HRB_Crop_Firber_Stage4_Var1_01"
+        },
+        {
+            "Name": "Fiber_Growth_05",
+            "TimeToNextState": 7200,
+            "StageMesh": "/Game/ASS/ENV/HRB/HRB_Crop_Fiber/SM_HRB_Crop_Firber_Stage5_Var1_01.SM_HRB_Crop_Firber_Stage5_Var1_01"
+        },
+        {
+            "Name": "Fiber_Dead",
+            "TimeToNextState": 1,
+            "StageMesh": "/Game/ASS/ENV/HRB/HRB_Crop_Fiber/SM_HRB_Crop_Firber_Dead_Var1_01.SM_HRB_Crop_Firber_Dead_Var1_01"
+        },
+        {
+            "Name": "Test_Growth_01",
+            "TimeToNextState": 10,
+            "StageMesh": "/Game/ASS/ENV/HRB/Avocado/SM_HRB_Avocado_Stage1_Var1.SM_HRB_Avocado_Stage1_Var1"
+        },
+        {
+            "Name": "Test_Growth_02",
+            "TimeToNextState": 10,
+            "StageMesh": "/Game/ASS/ENV/HRB/Avocado/SM_HRB_Avocado_Stage2_Var1.SM_HRB_Avocado_Stage2_Var1"
+        },
+        {
+            "Name": "Test_Growth_03",
+            "TimeToNextState": 10,
+            "StageMesh": "/Game/ASS/ENV/HRB/Avocado/SM_HRB_Avocado_Stage3_Var1.SM_HRB_Avocado_Stage3_Var1"
+        },
+        {
+            "Name": "Test_Growth_04",
+            "TimeToNextState": 10,
+            "StageMesh": "/Game/ASS/ENV/HRB/Avocado/SM_HRB_Avocado_Stage4_Var1.SM_HRB_Avocado_Stage4_Var1"
+        },
+        {
+            "Name": "Test_Growth_05",
+            "TimeToNextState": 60,
+            "StageMesh": "/Game/ASS/ENV/HRB/Avocado/SM_HRB_Avocado_Stage5_Var1.SM_HRB_Avocado_Stage5_Var1"
+        },
+        {
+            "Name": "Test_Dead",
+            "TimeToNextState": 1,
+            "StageMesh": "/Game/ASS/ENV/HRB/Avocado/SM_HRB_Avocado_Dead_Var1.SM_HRB_Avocado_Dead_Var1"
+        },
+        {
+            "Name": "Sugar_Growth_01",
+            "TimeToNextState": 200,
+            "StageMesh": "/Game/ASS/ENV/HRB/Sugar_Cane/SM_HRB_Sugar_Cane_Stage1_Var1.SM_HRB_Sugar_Cane_Stage1_Var1"
+        },
+        {
+            "Name": "Sugar_Growth_02",
+            "TimeToNextState": 400,
+            "StageMesh": "/Game/ASS/ENV/HRB/Sugar_Cane/SM_HRB_Sugar_Cane_Stage2_Var1.SM_HRB_Sugar_Cane_Stage2_Var1"
+        },
+        {
+            "Name": "Sugar_Growth_03",
+            "TimeToNextState": 600,
+            "StageMesh": "/Game/ASS/ENV/HRB/Sugar_Cane/SM_HRB_Sugar_Cane_Stage3_Var1.SM_HRB_Sugar_Cane_Stage3_Var1"
+        },
+        {
+            "Name": "Sugar_Growth_04",
+            "TimeToNextState": 1200,
+            "StageMesh": "/Game/ASS/ENV/HRB/Sugar_Cane/SM_HRB_Sugar_Cane_Stage4_Var1.SM_HRB_Sugar_Cane_Stage4_Var1"
+        },
+        {
+            "Name": "Sugar_Growth_05",
+            "TimeToNextState": 7200,
+            "StageMesh": "/Game/ASS/ENV/HRB/Sugar_Cane/SM_HRB_Sugar_Cane_Stage5_Var1.SM_HRB_Sugar_Cane_Stage5_Var1"
+        },
+        {
+            "Name": "Sugar_Dead",
+            "TimeToNextState": 1,
+            "StageMesh": "/Game/ASS/ENV/HRB/Sugar_Cane/SM_HRB_Sugar_Cane_Dead_Var1.SM_HRB_Sugar_Cane_Dead_Var1"
+        },
+        {
+            "Name": "Coconut_Growth_01",
+            "TimeToNextState": 200,
+            "StageMesh": "/Game/ASS/ENV/HRB/CocoPalm/SM_HRB_CocoPalm_Stage1_Var1.SM_HRB_CocoPalm_Stage1_Var1"
+        },
+        {
+            "Name": "Coconut_Growth_02",
+            "TimeToNextState": 400,
+            "StageMesh": "/Game/ASS/ENV/HRB/CocoPalm/SM_HRB_CocoPalm_Stage2_Var1.SM_HRB_CocoPalm_Stage2_Var1"
+        },
+        {
+            "Name": "Coconut_Growth_03",
+            "TimeToNextState": 600,
+            "StageMesh": "/Game/ASS/ENV/HRB/CocoPalm/SM_HRB_CocoPalm_Stage3_Var1.SM_HRB_CocoPalm_Stage3_Var1"
+        },
+        {
+            "Name": "Coconut_Growth_04",
+            "TimeToNextState": 1200,
+            "StageMesh": "/Game/ASS/ENV/HRB/CocoPalm/SM_HRB_CocoPalm_Stage4_Var1.SM_HRB_CocoPalm_Stage4_Var1"
+        },
+        {
+            "Name": "Coconut_Growth_05",
+            "TimeToNextState": 7200,
+            "StageMesh": "/Game/ASS/ENV/HRB/CocoPalm/SM_HRB_CocoPalm_Stage5_Var1.SM_HRB_CocoPalm_Stage5_Var1"
+        },
+        {
+            "Name": "Coconut_Dead",
+            "TimeToNextState": 1,
+            "StageMesh": "/Game/ASS/ENV/HRB/CocoPalm/SM_HRB_CocoPalm_Dead_Var1.SM_HRB_CocoPalm_Dead_Var1"
+        },
+        {
+            "Name": "Bramble_Growth_01",
+            "TimeToNextState": 200,
+            "StageMesh": "/Game/ASS/ENV/HRB/Bramble_Thorns/SM_HRB_Bramble_Thorns_Stage1_Var1.SM_HRB_Bramble_Thorns_Stage1_Var1"
+        },
+        {
+            "Name": "Bramble_Growth_02",
+            "TimeToNextState": 400,
+            "StageMesh": "/Game/ASS/ENV/HRB/Bramble_Thorns/SM_HRB_Bramble_Thorns_Stage2_Var1.SM_HRB_Bramble_Thorns_Stage2_Var1"
+        },
+        {
+            "Name": "Bramble_Growth_03",
+            "TimeToNextState": 600,
+            "StageMesh": "/Game/ASS/ENV/HRB/Bramble_Thorns/SM_HRB_Bramble_Thorns_Stage3_Var1.SM_HRB_Bramble_Thorns_Stage3_Var1"
+        },
+        {
+            "Name": "Bramble_Growth_04",
+            "TimeToNextState": 1200,
+            "StageMesh": "/Game/ASS/ENV/HRB/Bramble_Thorns/SM_HRB_Bramble_Thorns_Stage4_Var1.SM_HRB_Bramble_Thorns_Stage4_Var1"
+        },
+        {
+            "Name": "Bramble_Growth_05",
+            "TimeToNextState": 7200,
+            "StageMesh": "/Game/ASS/ENV/HRB/Bramble_Thorns/SM_HRB_Bramble_Thorns_Stage5_Var1.SM_HRB_Bramble_Thorns_Stage5_Var1"
+        },
+        {
+            "Name": "Bramble_Dead",
+            "TimeToNextState": 1,
+            "StageMesh": "/Game/ASS/ENV/HRB/Bramble_Thorns/SM_HRB_Bramble_Thorns_Dead_Var1.SM_HRB_Bramble_Thorns_Dead_Var1"
+        },
+        {
+            "Name": "Kiwi_Fruit_Growth_01",
+            "TimeToNextState": 250,
+            "StageMesh": "/Game/ASS/ENV/HRB/Crop_Kiwifruit/SM_HRB_KiwiFruit_Stage1.SM_HRB_KiwiFruit_Stage1"
+        },
+        {
+            "Name": "Kiwi_Fruit_Growth_02",
+            "TimeToNextState": 500,
+            "StageMesh": "/Game/ASS/ENV/HRB/Crop_Kiwifruit/SM_HRB_KiwiFruit_Stage2.SM_HRB_KiwiFruit_Stage2"
+        },
+        {
+            "Name": "Kiwi_Fruit_Growth_03",
+            "TimeToNextState": 1000,
+            "StageMesh": "/Game/ASS/ENV/HRB/Crop_Kiwifruit/SM_HRB_KiwiFruit_Stage3.SM_HRB_KiwiFruit_Stage3"
+        },
+        {
+            "Name": "Kiwi_Fruit_Growth_04",
+            "TimeToNextState": 3000,
+            "StageMesh": "/Game/ASS/ENV/HRB/Crop_Kiwifruit/SM_HRB_KiwiFruit_Stage4.SM_HRB_KiwiFruit_Stage4"
+        },
+        {
+            "Name": "Kiwi_Fruit_Growth_05",
+            "TimeToNextState": 8000,
+            "StageMesh": "/Game/ASS/ENV/HRB/Crop_Kiwifruit/SM_HRB_KiwiFruit_Stage5.SM_HRB_KiwiFruit_Stage5"
+        },
+        {
+            "Name": "Kiwi_Fruit_Dead",
+            "TimeToNextState": 1,
+            "StageMesh": "/Game/ASS/ENV/HRB/Crop_Kiwifruit/SM_HRB_KiwiFruit_Dead.SM_HRB_KiwiFruit_Dead"
+        },
+        {
+            "Name": "Banana_Growth_01",
+            "TimeToNextState": 250,
+            "StageMesh": "/Game/ASS/ENV/HRB/Banana/SM_HRB_Banana_Tree_Stage1_Var1.SM_HRB_Banana_Tree_Stage1_Var1"
+        },
+        {
+            "Name": "Banana_Growth_02",
+            "TimeToNextState": 500,
+            "StageMesh": "/Game/ASS/ENV/HRB/Banana/SM_HRB_Banana_Tree_Stage2_Var1.SM_HRB_Banana_Tree_Stage2_Var1"
+        },
+        {
+            "Name": "Banana_Growth_03",
+            "TimeToNextState": 1000,
+            "StageMesh": "/Game/ASS/ENV/HRB/Banana/SM_HRB_Banana_Tree_Stage3_Var1.SM_HRB_Banana_Tree_Stage3_Var1"
+        },
+        {
+            "Name": "Banana_Growth_04",
+            "TimeToNextState": 3000,
+            "StageMesh": "/Game/ASS/ENV/HRB/Banana/SM_HRB_Banana_Tree_Stage4_Var1.SM_HRB_Banana_Tree_Stage4_Var1"
+        },
+        {
+            "Name": "Banana_Growth_05",
+            "TimeToNextState": 8000,
+            "StageMesh": "/Game/ASS/ENV/HRB/Banana/SM_HRB_Banana_Tree_Stage5_Var1.SM_HRB_Banana_Tree_Stage5_Var1"
+        },
+        {
+            "Name": "Banana_Dead",
+            "TimeToNextState": 1,
+            "StageMesh": "/Game/ASS/ENV/HRB/Banana/SM_HRB_Banana_Tree_Dead_Var1.SM_HRB_Banana_Tree_Dead_Var1"
+        },
+        {
+            "Name": "Onion_Growth_01",
+            "TimeToNextState": 200,
+            "StageMesh": "/Game/ASS/ENV/HRB/Onion/SM_HRB_Onion_Stage1_Var1.SM_HRB_Onion_Stage1_Var1",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Onion_Growth_02",
+            "TimeToNextState": 400,
+            "StageMesh": "/Game/ASS/ENV/HRB/Onion/SM_HRB_Onion_Stage2_Var1.SM_HRB_Onion_Stage2_Var1",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Onion_Growth_03",
+            "TimeToNextState": 600,
+            "StageMesh": "/Game/ASS/ENV/HRB/Onion/SM_HRB_Onion_Stage3_Var1.SM_HRB_Onion_Stage3_Var1",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Onion_Growth_04",
+            "TimeToNextState": 1200,
+            "StageMesh": "/Game/ASS/ENV/HRB/Onion/SM_HRB_Onion_Stage4_Var1.SM_HRB_Onion_Stage4_Var1",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Onion_Growth_05",
+            "TimeToNextState": 4800,
+            "StageMesh": "/Game/ASS/ENV/HRB/Onion/SM_HRB_Onion_Stage5_Var1.SM_HRB_Onion_Stage5_Var1",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Onion_Growth_Dead",
+            "TimeToNextState": 1,
+            "StageMesh": "/Game/ASS/ENV/HRB/Onion/SM_HRB_Onion_Dead_Var1.SM_HRB_Onion_Dead_Var1",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Agave_Growth_01",
+            "TimeToNextState": 200,
+            "StageMesh": "/Game/ASS/ENV/FOL/DC/Agave/SM_DC_Agave_Stage1_Var1.SM_DC_Agave_Stage1_Var1",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Agave_Growth_02",
+            "TimeToNextState": 400,
+            "StageMesh": "/Game/ASS/ENV/FOL/DC/Agave/SM_DC_Agave_Stage2_Var1.SM_DC_Agave_Stage2_Var1",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Agave_Growth_03",
+            "TimeToNextState": 600,
+            "StageMesh": "/Game/ASS/ENV/FOL/DC/Agave/SM_DC_Agave_Stage3_Var1.SM_DC_Agave_Stage3_Var1",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Agave_Growth_04",
+            "TimeToNextState": 1200,
+            "StageMesh": "/Game/ASS/ENV/FOL/DC/Agave/SM_DC_Agave_Stage4_Var1.SM_DC_Agave_Stage4_Var1",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Agave_Growth_05",
+            "TimeToNextState": 4800,
+            "StageMesh": "/Game/ASS/ENV/FOL/DC/Agave/SM_DC_Agave_Stage5_Var1.SM_DC_Agave_Stage5_Var1",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Agave_Growth_Dead",
+            "TimeToNextState": 1,
+            "StageMesh": "/Game/ASS/ENV/FOL/DC/Agave/SM_DC_Agave_Dead_Var1.SM_DC_Agave_Dead_Var1",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "PricklyPear_Growth_01",
+            "TimeToNextState": 200,
+            "StageMesh": "/Game/ASS/ENV/HRB/PricklyPear/PricklyPear_Crop/SM_HRB_Crop_PricklyPear_Stage1.SM_HRB_Crop_PricklyPear_Stage1",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "PricklyPear_Growth_02",
+            "TimeToNextState": 400,
+            "StageMesh": "/Game/ASS/ENV/HRB/PricklyPear/PricklyPear_Crop/SM_HRB_Crop_PricklyPear_Stage2.SM_HRB_Crop_PricklyPear_Stage2",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "PricklyPear_Growth_03",
+            "TimeToNextState": 600,
+            "StageMesh": "/Game/ASS/ENV/HRB/PricklyPear/PricklyPear_Crop/SM_HRB_Crop_PricklyPear_Stage3.SM_HRB_Crop_PricklyPear_Stage3",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "PricklyPear_Growth_04",
+            "TimeToNextState": 1200,
+            "StageMesh": "/Game/ASS/ENV/HRB/PricklyPear/PricklyPear_Crop/SM_HRB_Crop_PricklyPear_Stage4.SM_HRB_Crop_PricklyPear_Stage4",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "PricklyPear_Growth_05",
+            "TimeToNextState": 4800,
+            "StageMesh": "/Game/ASS/ENV/HRB/PricklyPear/PricklyPear_Crop/SM_HRB_Crop_PricklyPear_Stage5.SM_HRB_Crop_PricklyPear_Stage5",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "PricklyPear_Growth_Dead",
+            "TimeToNextState": 1,
+            "StageMesh": "/Game/ASS/ENV/HRB/PricklyPear/PricklyPear_Crop/SM_HRB_Crop_PricklyPear_Dead.SM_HRB_Crop_PricklyPear_Dead",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Garlic_Growth_01",
+            "TimeToNextState": 200,
+            "StageMesh": "/Game/ASS/ENV/HRB/Garlic/SM_HRB_Garlic_Stage1_Var1.SM_HRB_Garlic_Stage1_Var1",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Garlic_Growth_02",
+            "TimeToNextState": 400,
+            "StageMesh": "/Game/ASS/ENV/HRB/Garlic/SM_HRB_Garlic_Stage2_Var1.SM_HRB_Garlic_Stage2_Var1",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Garlic_Growth_03",
+            "TimeToNextState": 600,
+            "StageMesh": "/Game/ASS/ENV/HRB/Garlic/SM_HRB_Garlic_Stage3_Var1.SM_HRB_Garlic_Stage3_Var1",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Garlic_Growth_04",
+            "TimeToNextState": 1200,
+            "StageMesh": "/Game/ASS/ENV/HRB/Garlic/SM_HRB_Garlic_Stage4_Var1.SM_HRB_Garlic_Stage4_Var1",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Garlic_Growth_05",
+            "TimeToNextState": 4800,
+            "StageMesh": "/Game/ASS/ENV/HRB/Garlic/SM_HRB_Garlic_Stage5_Var1.SM_HRB_Garlic_Stage5_Var1",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Garlic_Growth_Dead",
+            "TimeToNextState": 1,
+            "StageMesh": "/Game/ASS/ENV/HRB/Garlic/SM_HRB_Garlic_Dead_Var1.SM_HRB_Garlic_Dead_Var1",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Truffle_Growth_01",
+            "TimeToNextState": 200,
+            "StageMesh": "/Game/ASS/ENV/HRB/Truffle_Plant/SM_HRB_Truffle_1_Stage_1.SM_HRB_Truffle_1_Stage_1"
+        },
+        {
+            "Name": "Truffle_Growth_02",
+            "TimeToNextState": 400,
+            "StageMesh": "/Game/ASS/ENV/HRB/Truffle_Plant/SM_HRB_Truffle_1_Stage_2.SM_HRB_Truffle_1_Stage_2"
+        },
+        {
+            "Name": "Truffle_Growth_03",
+            "TimeToNextState": 600,
+            "StageMesh": "/Game/ASS/ENV/HRB/Truffle_Plant/SM_HRB_Truffle_1_Stage_3.SM_HRB_Truffle_1_Stage_3"
+        },
+        {
+            "Name": "Truffle_Growth_04",
+            "TimeToNextState": 1200,
+            "StageMesh": "/Game/ASS/ENV/HRB/Truffle_Plant/SM_HRB_Truffle_1_Stage_4.SM_HRB_Truffle_1_Stage_4"
+        },
+        {
+            "Name": "Truffle_Growth_05",
+            "TimeToNextState": 4800,
+            "StageMesh": "/Game/ASS/ENV/HRB/Truffle_Plant/SM_HRB_Truffle_1_Stage_5.SM_HRB_Truffle_1_Stage_5"
+        },
+        {
+            "Name": "Truffle_Growth_Dead",
+            "TimeToNextState": 1,
+            "StageMesh": "/Game/ASS/ENV/HRB/Truffle_Plant/SM_HRB_Truffle_1_Dead.SM_HRB_Truffle_1_Dead"
+        }
+    ]
+}

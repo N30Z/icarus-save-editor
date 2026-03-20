@@ -1,0 +1,93 @@
+{
+    "RowStruct": "/Script/Icarus.TalentModelView",
+    "Defaults": {
+        "ViewData": {
+            "RowName": "None",
+            "DataTableName": "D_TalentViews"
+        },
+        "ModelData": {
+            "RowName": "None",
+            "DataTableName": "D_TalentModels"
+        }
+    },
+    "GenerateEnum": true,
+    "Rows": [
+        {
+            "Name": "Player",
+            "ViewData": {
+                "RowName": "Player"
+            },
+            "ModelData": {
+                "RowName": "Player"
+            }
+        },
+        {
+            "Name": "Blueprint",
+            "ViewData": {
+                "RowName": "Blueprint"
+            },
+            "ModelData": {
+                "RowName": "Blueprint"
+            }
+        },
+        {
+            "Name": "Prospect",
+            "ViewData": {
+                "RowName": "Prospect"
+            },
+            "ModelData": {
+                "RowName": "Prospect"
+            }
+        },
+        {
+            "Name": "Workshop",
+            "ViewData": {
+                "RowName": "Workshop"
+            },
+            "ModelData": {
+                "RowName": "Workshop"
+            }
+        },
+        {
+            "Name": "Outpost",
+            "ViewData": {
+                "RowName": "Outpost"
+            },
+            "ModelData": {
+                "RowName": "Outpost"
+            }
+        },
+        {
+            "Name": "Solo",
+            "ViewData": {
+                "RowName": "Solo"
+            },
+            "ModelData": {
+                "RowName": "Solo"
+            }
+        },
+        {
+            "Name": "Creature",
+            "ViewData": {
+                "RowName": "Creature"
+            },
+            "ModelData": {
+                "RowName": "Creature"
+            }
+        },
+        {
+            "Name": "Great_Hunt",
+            "ViewData": {
+                "RowName": "Great_Hunt"
+            },
+            "ModelData": {
+                "RowName": "Great_Hunt"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        }
+    ]
+}

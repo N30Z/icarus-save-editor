@@ -1,0 +1,61 @@
+{
+    "RowStruct": "/Script/Icarus.WeightData",
+    "Defaults": {
+        "Behaviour": "None",
+        "Weight": 0,
+        "AddInventoryWeight": false,
+        "InventoryWeightScale": 0.009999999776482582
+    },
+    "Rows": [
+        {
+            "Name": "Weightless",
+            "Behaviour": "/Game/BP/MiscConstructs/BP_Weight.BP_Weight_C"
+        },
+        {
+            "Name": "StandardWeight",
+            "Behaviour": "/Game/BP/MiscConstructs/BP_Weight.BP_Weight_C",
+            "Weight": 0.5
+        },
+        {
+            "Name": "Character",
+            "Behaviour": "/Game/BP/MiscConstructs/BP_Weight.BP_Weight_C",
+            "Weight": 0.75
+        },
+        {
+            "Name": "Vehicle_Medium",
+            "Behaviour": "/Game/BP/MiscConstructs/BP_Weight.BP_Weight_C",
+            "Weight": 15
+        },
+        {
+            "Name": "LightDeployable",
+            "Behaviour": "/Game/BP/MiscConstructs/BP_Weight.BP_Weight_C",
+            "Weight": 0.25
+        },
+        {
+            "Name": "MediumDeployable",
+            "Behaviour": "/Game/BP/MiscConstructs/BP_Weight.BP_Weight_C",
+            "Weight": 2
+        },
+        {
+            "Name": "HeavyDeployable",
+            "Behaviour": "/Game/BP/MiscConstructs/BP_Weight.BP_Weight_C",
+            "Weight": 10
+        },
+        {
+            "Name": "ExtremeDeployable",
+            "Behaviour": "/Game/BP/MiscConstructs/BP_Weight.BP_Weight_C",
+            "Weight": 30
+        },
+        {
+            "Name": "Mount",
+            "Behaviour": "/Game/BP/MiscConstructs/BP_Weight.BP_Weight_C",
+            "Weight": 2,
+            "AddInventoryWeight": true
+        },
+        {
+            "Name": "UnsupportedDeployable",
+            "Behaviour": "/Game/BP/MiscConstructs/BP_Weight.BP_Weight_C",
+            "Weight": 999999
+        }
+    ]
+}

@@ -1,0 +1,149 @@
+{
+    "RowStruct": "/Script/Icarus.ItemWeightStatQueries",
+    "Defaults": {
+        "WeightStatToApply": {
+            "Value": "None"
+        },
+        "ItemTagQuery": {
+            "RowName": "None",
+            "DataTableName": "D_TagQueries"
+        }
+    },
+    "Rows": [
+        {
+            "Name": "Arrow",
+            "WeightStatToApply": {
+                "Value": "ArrowCarryWeight_+%"
+            },
+            "ItemTagQuery": {
+                "RowName": "Projectile_Arrow"
+            }
+        },
+        {
+            "Name": "Any_Building",
+            "WeightStatToApply": {
+                "Value": "BuildableCarryWeight_+%"
+            },
+            "ItemTagQuery": {
+                "RowName": "Any_Building"
+            }
+        },
+        {
+            "Name": "Wood_Building",
+            "WeightStatToApply": {
+                "Value": "WoodBuildableCarryWeight_+%"
+            },
+            "ItemTagQuery": {
+                "RowName": "Building_Wood"
+            }
+        },
+        {
+            "Name": "Stone_Building",
+            "WeightStatToApply": {
+                "Value": "StoneBuildableCarryWeight_+%"
+            },
+            "ItemTagQuery": {
+                "RowName": "Building_Stone"
+            }
+        },
+        {
+            "Name": "Thatch_Building",
+            "WeightStatToApply": {
+                "Value": "ThatchBuildableCarryWeight_+%"
+            },
+            "ItemTagQuery": {
+                "RowName": "Building_Thatch"
+            }
+        },
+        {
+            "Name": "Concrete_Building",
+            "WeightStatToApply": {
+                "Value": "ConcreteBuildableCarryWeight_+%"
+            },
+            "ItemTagQuery": {
+                "RowName": "Building_Concrete"
+            }
+        },
+        {
+            "Name": "Resource_Ore",
+            "WeightStatToApply": {
+                "Value": "OreCarryWeight_+%"
+            },
+            "ItemTagQuery": {
+                "RowName": "Any_Ore"
+            }
+        },
+        {
+            "Name": "Resource_Stone",
+            "WeightStatToApply": {
+                "Value": "StoneCarryWeight_+%"
+            },
+            "ItemTagQuery": {
+                "RowName": "Resource_Stone"
+            }
+        },
+        {
+            "Name": "Resource_Fiber",
+            "WeightStatToApply": {
+                "Value": "FiberCarryWeight_+%"
+            },
+            "ItemTagQuery": {
+                "RowName": "Resource_Fiber"
+            }
+        },
+        {
+            "Name": "Resource_Sticks",
+            "WeightStatToApply": {
+                "Value": "StickCarryWeight_+%"
+            },
+            "ItemTagQuery": {
+                "RowName": "Resource_Sticks"
+            }
+        },
+        {
+            "Name": "Resource_Wood",
+            "WeightStatToApply": {
+                "Value": "WoodCarryWeight_+%"
+            },
+            "ItemTagQuery": {
+                "RowName": "Resource_Wood"
+            }
+        },
+        {
+            "Name": "Resource_Exotic",
+            "WeightStatToApply": {
+                "Value": "ExoticCarryWeight_+%"
+            },
+            "ItemTagQuery": {
+                "RowName": "Any_Exotic"
+            }
+        },
+        {
+            "Name": "Firearm",
+            "WeightStatToApply": {
+                "Value": "FirearmCarryWeight_+%"
+            },
+            "ItemTagQuery": {
+                "RowName": "Any_Firearm"
+            }
+        },
+        {
+            "Name": "CarriedExtractor",
+            "WeightStatToApply": {
+                "Value": "ExtractorCarryWeight_+%"
+            },
+            "ItemTagQuery": {
+                "RowName": "Any_Extractor"
+            }
+        },
+        {
+            "Name": "AnyFish",
+            "WeightStatToApply": {
+                "Value": "FishCarryWeight_+%"
+            },
+            "ItemTagQuery": {
+                "RowName": "Any_Fish"
+            }
+        }
+    ]
+}

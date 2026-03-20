@@ -1,0 +1,2190 @@
+{
+    "RowStruct": "/Script/Icarus.AccountFlag",
+    "Defaults": {
+        "BlueprintUnlocks": [],
+        "WorkshopUnlocks": [],
+        "TalentModifierUnlocks": [],
+        "LegendaryRewards": [],
+        "RewardedFromMissions": []
+    },
+    "GenerateEnum": true,
+    "Rows": [
+        {
+            "Name": "Mission_Communicator_T2_Upgrade",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "NewFrontiers"
+                }
+            }
+        },
+        {
+            "Name": "Mission_Communicator_T3_Upgrade",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "NewFrontiers"
+                }
+            }
+        },
+        {
+            "Name": "Mission_Communicator_T4_Upgrade",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "NewFrontiers"
+                }
+            }
+        },
+        {
+            "Name": "Styx_Level_Boost_Claimed",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "NewFrontiers"
+                }
+            }
+        },
+        {
+            "Name": "Prometheus_Level_Boost_Claimed",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "NewFrontiers"
+                }
+            }
+        },
+        {
+            "Name": "Has_Seen_NewGame_Prompt",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "NewFrontiers"
+                }
+            }
+        },
+        {
+            "Name": "GrantedTalent_Nullsector_Story",
+            "TalentModifierUnlocks": [
+                {
+                    "RowName": "NullsectorStoryTalents",
+                    "DataTableName": "D_PlayerTalentModifiers"
+                }
+            ],
+            "RewardedFromMissions": [
+                {
+                    "RowName": "PRO_Nullsector_Story",
+                    "DataTableName": "D_ProspectList"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "NewFrontiers"
+                }
+            }
+        },
+        {
+            "Name": "GrantedBlueprint_Medical_Device",
+            "BlueprintUnlocks": [
+                {
+                    "RowName": "Mission_Medical_Device",
+                    "DataTableName": "D_ItemTemplate"
+                }
+            ],
+            "RewardedFromMissions": [
+                {
+                    "RowName": "PRO_D_Recovery",
+                    "DataTableName": "D_ProspectList"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "NewFrontiers"
+                }
+            }
+        },
+        {
+            "Name": "GrantedTalent_Olympus_Nightfall",
+            "TalentModifierUnlocks": [
+                {
+                    "RowName": "OlympusNightfallTalents",
+                    "DataTableName": "D_PlayerTalentModifiers"
+                }
+            ],
+            "RewardedFromMissions": [
+                {
+                    "RowName": "Tier5_Omni_Olympus",
+                    "DataTableName": "D_ProspectList"
+                }
+            ]
+        },
+        {
+            "Name": "GrantedTalent_Styx_Ironclad",
+            "TalentModifierUnlocks": [
+                {
+                    "RowName": "StyxIroncladTalents",
+                    "DataTableName": "D_PlayerTalentModifiers"
+                }
+            ],
+            "RewardedFromMissions": [
+                {
+                    "RowName": "STYX_B_Research",
+                    "DataTableName": "D_ProspectList"
+                }
+            ]
+        },
+        {
+            "Name": "GrantedBlueprint_Bait",
+            "BlueprintUnlocks": [
+                {
+                    "RowName": "Bait",
+                    "DataTableName": "D_ItemTemplate"
+                },
+                {
+                    "RowName": "Poisoned_Bait",
+                    "DataTableName": "D_ItemTemplate"
+                }
+            ],
+            "RewardedFromMissions": [
+                {
+                    "RowName": "Tier3_RiverLands_Extermination_0",
+                    "DataTableName": "D_ProspectList"
+                }
+            ]
+        },
+        {
+            "Name": "GrantedBlueprint_CavewormMelee",
+            "BlueprintUnlocks": [
+                {
+                    "RowName": "Caveworm_Knife",
+                    "DataTableName": "D_ItemTemplate"
+                },
+                {
+                    "RowName": "Caveworm_Spear",
+                    "DataTableName": "D_ItemTemplate"
+                },
+                {
+                    "RowName": "Caveworm_Throwing_Knife",
+                    "DataTableName": "D_ItemTemplate"
+                },
+                {
+                    "RowName": "Caveworm_Throwing_Spear",
+                    "DataTableName": "D_ItemTemplate"
+                }
+            ],
+            "RewardedFromMissions": [
+                {
+                    "RowName": "Tier5_Omni_Research",
+                    "DataTableName": "D_ProspectList"
+                }
+            ]
+        },
+        {
+            "Name": "GrantedBlueprint_CavewormRange",
+            "BlueprintUnlocks": [
+                {
+                    "RowName": "Caveworm_Arrow",
+                    "DataTableName": "D_ItemTemplate"
+                },
+                {
+                    "RowName": "Caveworm_Bow",
+                    "DataTableName": "D_ItemTemplate"
+                }
+            ],
+            "RewardedFromMissions": [
+                {
+                    "RowName": "STYX_C_Extermination2",
+                    "DataTableName": "D_ProspectList"
+                }
+            ]
+        },
+        {
+            "Name": "GrantedBlueprint_ScorpionTrap",
+            "BlueprintUnlocks": [
+                {
+                    "RowName": "Scorpion_Hedgehog_Medium",
+                    "DataTableName": "D_ItemTemplate"
+                },
+                {
+                    "RowName": "Scorpion_Trap_Medium",
+                    "DataTableName": "D_ItemTemplate"
+                }
+            ],
+            "RewardedFromMissions": [
+                {
+                    "RowName": "Tier4_Desert_Research_2",
+                    "DataTableName": "D_ProspectList"
+                }
+            ]
+        },
+        {
+            "Name": "GrantedBlueprint_SandwormMelee",
+            "BlueprintUnlocks": [
+                {
+                    "RowName": "Sandworm_Knife",
+                    "DataTableName": "D_ItemTemplate"
+                },
+                {
+                    "RowName": "Sandworm_Spear",
+                    "DataTableName": "D_ItemTemplate"
+                },
+                {
+                    "RowName": "Sandworm_Throwing_Knife",
+                    "DataTableName": "D_ItemTemplate"
+                },
+                {
+                    "RowName": "Sandworm_Throwing_Spear",
+                    "DataTableName": "D_ItemTemplate"
+                }
+            ],
+            "RewardedFromMissions": [
+                {
+                    "RowName": "STYX_E_Survey",
+                    "DataTableName": "D_ProspectList"
+                }
+            ]
+        },
+        {
+            "Name": "GrantedBlueprint_SandwormRange",
+            "BlueprintUnlocks": [
+                {
+                    "RowName": "Sandworm_Arrow",
+                    "DataTableName": "D_ItemTemplate"
+                },
+                {
+                    "RowName": "Sandworm_Bow",
+                    "DataTableName": "D_ItemTemplate"
+                }
+            ],
+            "RewardedFromMissions": [
+                {
+                    "RowName": "Tier4_Desert_Extermination_0",
+                    "DataTableName": "D_ProspectList"
+                }
+            ]
+        },
+        {
+            "Name": "GrantedBlueprint_SandwormArmor",
+            "BlueprintUnlocks": [
+                {
+                    "RowName": "Scale_Head",
+                    "DataTableName": "D_ItemTemplate"
+                },
+                {
+                    "RowName": "Scale_Chest",
+                    "DataTableName": "D_ItemTemplate"
+                },
+                {
+                    "RowName": "Scale_Arms",
+                    "DataTableName": "D_ItemTemplate"
+                },
+                {
+                    "RowName": "Scale_Legs",
+                    "DataTableName": "D_ItemTemplate"
+                },
+                {
+                    "RowName": "Scale_Feet",
+                    "DataTableName": "D_ItemTemplate"
+                }
+            ],
+            "RewardedFromMissions": [
+                {
+                    "RowName": "Tier4_Desert_Survey",
+                    "DataTableName": "D_ProspectList"
+                }
+            ]
+        },
+        {
+            "Name": "GrantedBlueprint_ScorpionArmor",
+            "BlueprintUnlocks": [
+                {
+                    "RowName": "Scorpion_Head_Armor",
+                    "DataTableName": "D_ItemTemplate"
+                },
+                {
+                    "RowName": "Scorpion_Chest_Armor",
+                    "DataTableName": "D_ItemTemplate"
+                },
+                {
+                    "RowName": "Scorpion_Legs_Armor",
+                    "DataTableName": "D_ItemTemplate"
+                },
+                {
+                    "RowName": "Scorpion_Arms_Armor",
+                    "DataTableName": "D_ItemTemplate"
+                },
+                {
+                    "RowName": "Scorpion_Feet_Armor",
+                    "DataTableName": "D_ItemTemplate"
+                }
+            ],
+            "RewardedFromMissions": [
+                {
+                    "RowName": "STYX_A_Extermination",
+                    "DataTableName": "D_ProspectList"
+                }
+            ]
+        },
+        {
+            "Name": "GrantedBlueprint_BlackWolfKnifeArrow",
+            "BlueprintUnlocks": [
+                {
+                    "RowName": "Black_Wolf_Knife",
+                    "DataTableName": "D_ItemTemplate"
+                },
+                {
+                    "RowName": "Black_Wolf_Arrow",
+                    "DataTableName": "D_ItemTemplate"
+                },
+                {
+                    "RowName": "Black_Wolf_Throwing_Knife",
+                    "DataTableName": "D_ItemTemplate"
+                }
+            ],
+            "RewardedFromMissions": [
+                {
+                    "RowName": "STYX_D_Extermination",
+                    "DataTableName": "D_ProspectList"
+                }
+            ]
+        },
+        {
+            "Name": "GrantedBlueprint_AlienDecorations",
+            "BlueprintUnlocks": [
+                {
+                    "RowName": "AlienFossil_Pottery",
+                    "DataTableName": "D_ItemTemplate"
+                },
+                {
+                    "RowName": "AlienFossil_Conch",
+                    "DataTableName": "D_ItemTemplate"
+                }
+            ],
+            "RewardedFromMissions": [
+                {
+                    "RowName": "PRO_Story_6",
+                    "DataTableName": "D_ProspectList"
+                }
+            ]
+        },
+        {
+            "Name": "GrantedBlueprint_TargetDummy",
+            "BlueprintUnlocks": [
+                {
+                    "RowName": "Target_Dummy",
+                    "DataTableName": "D_ItemTemplate"
+                },
+                {
+                    "RowName": "Bullseye_Target",
+                    "DataTableName": "D_ItemTemplate"
+                }
+            ],
+            "RewardedFromMissions": [
+                {
+                    "RowName": "Tier1_Forest_Range",
+                    "DataTableName": "D_ProspectList"
+                }
+            ]
+        },
+        {
+            "Name": "GrantedBlueprint_DrillArrows",
+            "BlueprintUnlocks": [
+                {
+                    "RowName": "Drill_Arrow",
+                    "DataTableName": "D_ItemTemplate"
+                }
+            ],
+            "RewardedFromMissions": [
+                {
+                    "RowName": "GH_RG_O1",
+                    "DataTableName": "D_ProspectList"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "GrantedBlueprint_EDSRounds",
+            "BlueprintUnlocks": [
+                {
+                    "RowName": "Ammo_EDS",
+                    "DataTableName": "D_ItemTemplate"
+                }
+            ],
+            "RewardedFromMissions": [
+                {
+                    "RowName": "GH_IM_C",
+                    "DataTableName": "D_ProspectList"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "GrantedBlueprint_ResearchEquipment",
+            "BlueprintUnlocks": [
+                {
+                    "RowName": "ResearchEquipment_Centrifuge",
+                    "DataTableName": "D_ItemTemplate"
+                },
+                {
+                    "RowName": "ResearchEquipment_Flasks",
+                    "DataTableName": "D_ItemTemplate"
+                },
+                {
+                    "RowName": "ResearchEquipment_Microscope",
+                    "DataTableName": "D_ItemTemplate"
+                },
+                {
+                    "RowName": "ResearchEquipment_TestTubes",
+                    "DataTableName": "D_ItemTemplate"
+                },
+                {
+                    "RowName": "ResearchEquipment_LabDesk",
+                    "DataTableName": "D_ItemTemplate"
+                }
+            ],
+            "RewardedFromMissions": [
+                {
+                    "RowName": "GH_Ape_A",
+                    "DataTableName": "D_ProspectList"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "GrantedBlueprint_Recovery_Beacon_Device",
+            "BlueprintUnlocks": [
+                {
+                    "RowName": "Recovery_Beacon_Tracker",
+                    "DataTableName": "D_ItemTemplate"
+                }
+            ],
+            "RewardedFromMissions": [
+                {
+                    "RowName": "GH_IM_O1",
+                    "DataTableName": "D_ProspectList"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "GrantedBlueprint_EnzymeElixir",
+            "BlueprintUnlocks": [
+                {
+                    "RowName": "Enzyme_Elixir",
+                    "DataTableName": "D_ItemTemplate"
+                }
+            ],
+            "RewardedFromMissions": [
+                {
+                    "RowName": "GH_IM_D2",
+                    "DataTableName": "D_ProspectList"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "Has_Seen_GreatHunts_Prompt",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "GrantedWorkshop_BananaPack",
+            "WorkshopUnlocks": [
+                {
+                    "RowName": "Meta_Banana_Seed",
+                    "DataTableName": "D_WorkshopItems"
+                }
+            ],
+            "RewardedFromMissions": [
+                {
+                    "RowName": "GH_Ape_G",
+                    "DataTableName": "D_ProspectList"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "GrantedTalent_GH_RG",
+            "TalentModifierUnlocks": [
+                {
+                    "RowName": "GH_RG_FINAL",
+                    "DataTableName": "D_PlayerTalentModifiers"
+                }
+            ],
+            "LegendaryRewards": [
+                {
+                    "RowName": "Rock_Golem",
+                    "DataTableName": "D_LivingItemShopItems"
+                }
+            ],
+            "RewardedFromMissions": [
+                {
+                    "RowName": "GH_RG_Final",
+                    "DataTableName": "D_ProspectList"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "GrantedTalent_GH_IM",
+            "TalentModifierUnlocks": [
+                {
+                    "RowName": "GH_IM_FINAL",
+                    "DataTableName": "D_PlayerTalentModifiers"
+                }
+            ],
+            "LegendaryRewards": [
+                {
+                    "RowName": "Legendary_Bow",
+                    "DataTableName": "D_LivingItemShopItems"
+                }
+            ],
+            "RewardedFromMissions": [
+                {
+                    "RowName": "GH_IM_Final",
+                    "DataTableName": "D_ProspectList"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "GrantedTalent_GH_APE",
+            "TalentModifierUnlocks": [
+                {
+                    "RowName": "GH_APE_FINAL",
+                    "DataTableName": "D_PlayerTalentModifiers"
+                }
+            ],
+            "LegendaryRewards": [
+                {
+                    "RowName": "Legendary_Sniper",
+                    "DataTableName": "D_LivingItemShopItems"
+                }
+            ],
+            "RewardedFromMissions": [
+                {
+                    "RowName": "GH_Ape_Final",
+                    "DataTableName": "D_ProspectList"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "GrantedBlueprint_SandArmor",
+            "BlueprintUnlocks": [
+                {
+                    "RowName": "SandArmor_Head",
+                    "DataTableName": "D_ItemTemplate"
+                },
+                {
+                    "RowName": "SandArmor_Chest",
+                    "DataTableName": "D_ItemTemplate"
+                },
+                {
+                    "RowName": "SandArmor_Arms",
+                    "DataTableName": "D_ItemTemplate"
+                },
+                {
+                    "RowName": "SandArmor_Legs",
+                    "DataTableName": "D_ItemTemplate"
+                },
+                {
+                    "RowName": "SandArmor_Feet",
+                    "DataTableName": "D_ItemTemplate"
+                }
+            ],
+            "RewardedFromMissions": [
+                {
+                    "RowName": "GH_RG_C2",
+                    "DataTableName": "D_ProspectList"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "GrantedBlueprint_SandArmor_Backpack",
+            "BlueprintUnlocks": [
+                {
+                    "RowName": "SandArmor_Backpack",
+                    "DataTableName": "D_ItemTemplate"
+                }
+            ],
+            "RewardedFromMissions": [
+                {
+                    "RowName": "GH_RG_O2",
+                    "DataTableName": "D_ProspectList"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "GrantedBlueprint_ArcticArmor",
+            "BlueprintUnlocks": [
+                {
+                    "RowName": "ArcticArmor_Head",
+                    "DataTableName": "D_ItemTemplate"
+                },
+                {
+                    "RowName": "ArcticArmor_Chest",
+                    "DataTableName": "D_ItemTemplate"
+                },
+                {
+                    "RowName": "ArcticArmor_Arms",
+                    "DataTableName": "D_ItemTemplate"
+                },
+                {
+                    "RowName": "ArcticArmor_Legs",
+                    "DataTableName": "D_ItemTemplate"
+                },
+                {
+                    "RowName": "ArcticArmor_Feet",
+                    "DataTableName": "D_ItemTemplate"
+                }
+            ],
+            "RewardedFromMissions": [
+                {
+                    "RowName": "GH_IM_D",
+                    "DataTableName": "D_ProspectList"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "GrantedBlueprint_MinerArmor",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "GrantedBlueprint_MiniThumper",
+            "BlueprintUnlocks": [
+                {
+                    "RowName": "Thumper_Mini",
+                    "DataTableName": "D_ItemTemplate"
+                }
+            ],
+            "RewardedFromMissions": [
+                {
+                    "RowName": "GH_RG_D2",
+                    "DataTableName": "D_ProspectList"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "GrantedBlueprint_Ape_FishingTrap",
+            "BlueprintUnlocks": [
+                {
+                    "RowName": "Ape_Fishing_Trap",
+                    "DataTableName": "D_ItemTemplate"
+                }
+            ],
+            "RewardedFromMissions": [
+                {
+                    "RowName": "GH_Ape_D",
+                    "DataTableName": "D_ProspectList"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "GrantedBlueprint_Ape_Grenade",
+            "BlueprintUnlocks": [
+                {
+                    "RowName": "Ape_Grenade",
+                    "DataTableName": "D_ItemTemplate"
+                }
+            ],
+            "RewardedFromMissions": [
+                {
+                    "RowName": "GH_Ape_F",
+                    "DataTableName": "D_ProspectList"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "GrantedBlueprint_Ape_Tonic",
+            "BlueprintUnlocks": [
+                {
+                    "RowName": "Ape_Tonic",
+                    "DataTableName": "D_ItemTemplate"
+                }
+            ],
+            "RewardedFromMissions": [
+                {
+                    "RowName": "GH_Ape_C",
+                    "DataTableName": "D_ProspectList"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "GrantedBlueprint_Ape_Attractor",
+            "BlueprintUnlocks": [
+                {
+                    "RowName": "Ape_Attractor",
+                    "DataTableName": "D_ItemTemplate"
+                }
+            ],
+            "RewardedFromMissions": [
+                {
+                    "RowName": "GH_Ape_E",
+                    "DataTableName": "D_ProspectList"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "GrantedBlueprint_Ape_Module",
+            "BlueprintUnlocks": [
+                {
+                    "RowName": "Ape_Module",
+                    "DataTableName": "D_ItemTemplate"
+                }
+            ],
+            "RewardedFromMissions": [
+                {
+                    "RowName": "GH_Ape_D2",
+                    "DataTableName": "D_ProspectList"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "GrantedBlueprint_Ape_Attachment",
+            "BlueprintUnlocks": [
+                {
+                    "RowName": "Ape_Attachment",
+                    "DataTableName": "D_ItemTemplate"
+                }
+            ],
+            "RewardedFromMissions": [
+                {
+                    "RowName": "GH_Ape_E2",
+                    "DataTableName": "D_ProspectList"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "GrantedBlueprint_Ape_Armor",
+            "BlueprintUnlocks": [
+                {
+                    "RowName": "Ape_Armor_Head",
+                    "DataTableName": "D_ItemTemplate"
+                },
+                {
+                    "RowName": "Ape_Armor_Chest",
+                    "DataTableName": "D_ItemTemplate"
+                },
+                {
+                    "RowName": "Ape_Armor_Arms",
+                    "DataTableName": "D_ItemTemplate"
+                },
+                {
+                    "RowName": "Ape_Armor_Legs",
+                    "DataTableName": "D_ItemTemplate"
+                },
+                {
+                    "RowName": "Ape_Armor_Feet",
+                    "DataTableName": "D_ItemTemplate"
+                }
+            ],
+            "RewardedFromMissions": [
+                {
+                    "RowName": "GH_Ape_O1",
+                    "DataTableName": "D_ProspectList"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "GrantedBlueprint_Ape_Trophy",
+            "BlueprintUnlocks": [
+                {
+                    "RowName": "Ape_Trophy",
+                    "DataTableName": "D_ItemTemplate"
+                },
+                {
+                    "RowName": "Ape_Rug",
+                    "DataTableName": "D_ItemTemplate"
+                }
+            ],
+            "RewardedFromMissions": [
+                {
+                    "RowName": "GH_Ape_Final",
+                    "DataTableName": "D_ProspectList"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "GrantedBlueprint_IM_Module",
+            "BlueprintUnlocks": [
+                {
+                    "RowName": "IceMammoth_Module",
+                    "DataTableName": "D_ItemTemplate"
+                }
+            ],
+            "RewardedFromMissions": [
+                {
+                    "RowName": "GH_IM_A",
+                    "DataTableName": "D_ProspectList"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "GrantedBlueprint_IM_Attachment",
+            "BlueprintUnlocks": [
+                {
+                    "RowName": "IceMammoth_Attachment_Melee",
+                    "DataTableName": "D_ItemTemplate"
+                }
+            ],
+            "RewardedFromMissions": [
+                {
+                    "RowName": "GH_IM_A2",
+                    "DataTableName": "D_ProspectList"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "GrantedBlueprint_IM_Trap",
+            "BlueprintUnlocks": [
+                {
+                    "RowName": "IceMammoth_Trap",
+                    "DataTableName": "D_ItemTemplate"
+                }
+            ],
+            "RewardedFromMissions": [
+                {
+                    "RowName": "GH_IM_B",
+                    "DataTableName": "D_ProspectList"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "GrantedBlueprint_IM_Spear",
+            "BlueprintUnlocks": [
+                {
+                    "RowName": "IceMammoth_Spear",
+                    "DataTableName": "D_ItemTemplate"
+                },
+                {
+                    "RowName": "IceMammoth_Throwing_Spear",
+                    "DataTableName": "D_ItemTemplate"
+                }
+            ],
+            "RewardedFromMissions": [
+                {
+                    "RowName": "GH_IM_O2",
+                    "DataTableName": "D_ProspectList"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "GrantedBlueprint_IM_Shield",
+            "BlueprintUnlocks": [
+                {
+                    "RowName": "IceMammoth_Shield",
+                    "DataTableName": "D_ItemTemplate"
+                }
+            ],
+            "RewardedFromMissions": [
+                {
+                    "RowName": "GH_IM_O3",
+                    "DataTableName": "D_ProspectList"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "GrantedBlueprint_IM_Armor",
+            "BlueprintUnlocks": [
+                {
+                    "RowName": "IceMammoth_Armor_Head",
+                    "DataTableName": "D_ItemTemplate"
+                },
+                {
+                    "RowName": "IceMammoth_Armor_Chest",
+                    "DataTableName": "D_ItemTemplate"
+                },
+                {
+                    "RowName": "IceMammoth_Armor_Arms",
+                    "DataTableName": "D_ItemTemplate"
+                },
+                {
+                    "RowName": "IceMammoth_Armor_Legs",
+                    "DataTableName": "D_ItemTemplate"
+                },
+                {
+                    "RowName": "IceMammoth_Armor_Feet",
+                    "DataTableName": "D_ItemTemplate"
+                }
+            ],
+            "RewardedFromMissions": [
+                {
+                    "RowName": "GH_IM_C2",
+                    "DataTableName": "D_ProspectList"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "GrantedBlueprint_IM_Trophies",
+            "BlueprintUnlocks": [
+                {
+                    "RowName": "IceMammoth_Trophy_Head",
+                    "DataTableName": "D_ItemTemplate"
+                },
+                {
+                    "RowName": "IceMammoth_Trophy_Feature",
+                    "DataTableName": "D_ItemTemplate"
+                },
+                {
+                    "RowName": "IceMammoth_Trophy_Chandelier",
+                    "DataTableName": "D_ItemTemplate"
+                }
+            ],
+            "RewardedFromMissions": [
+                {
+                    "RowName": "GH_IM_Final",
+                    "DataTableName": "D_ProspectList"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "GrantedBlueprint_RG_Grenade",
+            "BlueprintUnlocks": [
+                {
+                    "RowName": "Rock_Golem_Grenade",
+                    "DataTableName": "D_ItemTemplate"
+                }
+            ],
+            "RewardedFromMissions": [
+                {
+                    "RowName": "GH_RG_C",
+                    "DataTableName": "D_ProspectList"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "GrantedBlueprint_RG_Attachment",
+            "BlueprintUnlocks": [
+                {
+                    "RowName": "Rock_Golem_Attachment",
+                    "DataTableName": "D_ItemTemplate"
+                }
+            ],
+            "RewardedFromMissions": [
+                {
+                    "RowName": "GH_RG_F",
+                    "DataTableName": "D_ProspectList"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "GrantedBlueprint_RG_Module",
+            "BlueprintUnlocks": [
+                {
+                    "RowName": "Rock_Golem_Module",
+                    "DataTableName": "D_ItemTemplate"
+                }
+            ],
+            "RewardedFromMissions": [
+                {
+                    "RowName": "GH_RG_E",
+                    "DataTableName": "D_ProspectList"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "GrantedBlueprint_RG_Gun",
+            "BlueprintUnlocks": [
+                {
+                    "RowName": "Rock_Golem_Gun",
+                    "DataTableName": "D_ItemTemplate"
+                }
+            ],
+            "RewardedFromMissions": [
+                {
+                    "RowName": "GH_RG_C",
+                    "DataTableName": "D_ProspectList"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "GrantedBlueprint_RG_Sledgehammer",
+            "BlueprintUnlocks": [
+                {
+                    "RowName": "Rock_Golem_Sledgehammer",
+                    "DataTableName": "D_ItemTemplate"
+                }
+            ],
+            "RewardedFromMissions": [
+                {
+                    "RowName": "GH_RG_B",
+                    "DataTableName": "D_ProspectList"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "GrantedBlueprint_RG_Trophies",
+            "BlueprintUnlocks": [
+                {
+                    "RowName": "Rock_Golem_Trophy",
+                    "DataTableName": "D_ItemTemplate"
+                },
+                {
+                    "RowName": "Rock_Golem_Trophy_Lamp",
+                    "DataTableName": "D_ItemTemplate"
+                },
+                {
+                    "RowName": "Rock_Golem_Chair",
+                    "DataTableName": "D_ItemTemplate"
+                }
+            ],
+            "RewardedFromMissions": [
+                {
+                    "RowName": "GH_RG_Final",
+                    "DataTableName": "D_ProspectList"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "GrantedBlueprint_LH_Trophies",
+            "BlueprintUnlocks": [
+                {
+                    "RowName": "Lava_Hunter_Trophy_Chair",
+                    "DataTableName": "D_ItemTemplate"
+                },
+                {
+                    "RowName": "Lava_Hunter_Trophy_Feature",
+                    "DataTableName": "D_ItemTemplate"
+                },
+                {
+                    "RowName": "Lava_Hunter_Trophy",
+                    "DataTableName": "D_ItemTemplate"
+                }
+            ],
+            "RewardedFromMissions": [
+                {
+                    "RowName": "PRO_Ashlands_Story",
+                    "DataTableName": "D_ProspectList"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "GrantedBlueprint_LH_Trap",
+            "BlueprintUnlocks": [
+                {
+                    "RowName": "Lava_Hunter_Mine",
+                    "DataTableName": "D_ItemTemplate"
+                }
+            ],
+            "RewardedFromMissions": [
+                {
+                    "RowName": "PRO_Icesheet_Story",
+                    "DataTableName": "D_ProspectList"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "GrantedBlueprint_LH_Backpack",
+            "BlueprintUnlocks": [
+                {
+                    "RowName": "Lava_Hunter_Backpack",
+                    "DataTableName": "D_ItemTemplate"
+                }
+            ],
+            "RewardedFromMissions": [
+                {
+                    "RowName": "PRO_D_Rescue",
+                    "DataTableName": "D_ProspectList"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "GrantedBlueprint_LH_Sickle",
+            "BlueprintUnlocks": [
+                {
+                    "RowName": "Lava_Hunter_Sickle",
+                    "DataTableName": "D_ItemTemplate"
+                }
+            ],
+            "RewardedFromMissions": [
+                {
+                    "RowName": "PRO_Story_4",
+                    "DataTableName": "D_ProspectList"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "GrantedBlueprint_LH_Module",
+            "BlueprintUnlocks": [
+                {
+                    "RowName": "Lava_Hunter_Module",
+                    "DataTableName": "D_ItemTemplate"
+                }
+            ],
+            "RewardedFromMissions": [
+                {
+                    "RowName": "PRO_D_Research",
+                    "DataTableName": "D_ProspectList"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "GrantedBlueprint_LH_Attachment",
+            "BlueprintUnlocks": [
+                {
+                    "RowName": "Lava_Hunter_Attachment",
+                    "DataTableName": "D_ItemTemplate"
+                }
+            ],
+            "RewardedFromMissions": [
+                {
+                    "RowName": "PRO_D_Resupply",
+                    "DataTableName": "D_ProspectList"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "GrantedBlueprint_SL_Axe",
+            "BlueprintUnlocks": [
+                {
+                    "RowName": "Slug_Axe",
+                    "DataTableName": "D_ItemTemplate"
+                }
+            ],
+            "RewardedFromMissions": [
+                {
+                    "RowName": "PRO_Story_3",
+                    "DataTableName": "D_ProspectList"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "GrantedBlueprint_SL_Module",
+            "BlueprintUnlocks": [
+                {
+                    "RowName": "Slug_Module",
+                    "DataTableName": "D_ItemTemplate"
+                }
+            ],
+            "RewardedFromMissions": [
+                {
+                    "RowName": "PRO_E_Research",
+                    "DataTableName": "D_ProspectList"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "GrantedBlueprint_SL_Attachment",
+            "BlueprintUnlocks": [
+                {
+                    "RowName": "Slug_Attachment",
+                    "DataTableName": "D_ItemTemplate"
+                }
+            ],
+            "RewardedFromMissions": [
+                {
+                    "RowName": "PRO_C_Research",
+                    "DataTableName": "D_ProspectList"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "GrantedBlueprint_SL_Grenade",
+            "BlueprintUnlocks": [
+                {
+                    "RowName": "Slug_Grenade",
+                    "DataTableName": "D_ItemTemplate"
+                }
+            ],
+            "RewardedFromMissions": [
+                {
+                    "RowName": "PRO_C_Construction",
+                    "DataTableName": "D_ProspectList"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "GrantedBlueprint_SL_Trophies",
+            "BlueprintUnlocks": [
+                {
+                    "RowName": "Slug_Trophy_Coil",
+                    "DataTableName": "D_ItemTemplate"
+                },
+                {
+                    "RowName": "Slug_Trophy_Habitat",
+                    "DataTableName": "D_ItemTemplate"
+                },
+                {
+                    "RowName": "Slug_Trophy_Vial",
+                    "DataTableName": "D_ItemTemplate"
+                }
+            ],
+            "RewardedFromMissions": [
+                {
+                    "RowName": "PRO_B_Extermination",
+                    "DataTableName": "D_ProspectList"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "GrantedBlueprint_SL_Epoxy",
+            "BlueprintUnlocks": [
+                {
+                    "RowName": "Epoxy",
+                    "DataTableName": "D_ItemTemplate"
+                }
+            ],
+            "RewardedFromMissions": [
+                {
+                    "RowName": "PRO_A_Stockpile",
+                    "DataTableName": "D_ProspectList"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "GrantedBlueprint_SC_Module",
+            "BlueprintUnlocks": [
+                {
+                    "RowName": "Scorpion_Module",
+                    "DataTableName": "D_ItemTemplate"
+                }
+            ],
+            "RewardedFromMissions": [
+                {
+                    "RowName": "STYX_D_Recovery",
+                    "DataTableName": "D_ProspectList"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "GrantedBlueprint_SC_Attachment",
+            "BlueprintUnlocks": [
+                {
+                    "RowName": "Scorpion_Attachment_Armor",
+                    "DataTableName": "D_ItemTemplate"
+                }
+            ],
+            "RewardedFromMissions": [
+                {
+                    "RowName": "STYX_E_Research",
+                    "DataTableName": "D_ProspectList"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "GrantedBlueprint_SC_Rod",
+            "BlueprintUnlocks": [
+                {
+                    "RowName": "Scorpion_FishingRod",
+                    "DataTableName": "D_ItemTemplate"
+                }
+            ],
+            "RewardedFromMissions": [
+                {
+                    "RowName": "STYX_C_Fishing",
+                    "DataTableName": "D_ProspectList"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "GrantedBlueprint_SC_Crossbow",
+            "BlueprintUnlocks": [
+                {
+                    "RowName": "Scorpion_Crossbow",
+                    "DataTableName": "D_ItemTemplate"
+                }
+            ],
+            "RewardedFromMissions": [
+                {
+                    "RowName": "STYX_D_Research",
+                    "DataTableName": "D_ProspectList"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "GrantedBlueprint_SC_Trophies",
+            "BlueprintUnlocks": [
+                {
+                    "RowName": "Scorpion_Boss_Trophy",
+                    "DataTableName": "D_ItemTemplate"
+                },
+                {
+                    "RowName": "Scorpion_Boss_Trophy_Throne",
+                    "DataTableName": "D_ItemTemplate"
+                },
+                {
+                    "RowName": "Scorpion_Boss_Trophy_Hanging",
+                    "DataTableName": "D_ItemTemplate"
+                },
+                {
+                    "RowName": "Scorpion_Boss_Trophy_Tail",
+                    "DataTableName": "D_ItemTemplate"
+                }
+            ],
+            "RewardedFromMissions": [
+                {
+                    "RowName": "STYX_C_Construction",
+                    "DataTableName": "D_ProspectList"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "GrantedBlueprint_BW_Attachment",
+            "BlueprintUnlocks": [
+                {
+                    "RowName": "AlphaWolf_Attachment_Melee",
+                    "DataTableName": "D_ItemTemplate"
+                }
+            ],
+            "RewardedFromMissions": [
+                {
+                    "RowName": "STYX_A_Extermination2",
+                    "DataTableName": "D_ProspectList"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "GrantedBlueprint_BW_Shield",
+            "BlueprintUnlocks": [
+                {
+                    "RowName": "Black_Wolf_Shield",
+                    "DataTableName": "D_ItemTemplate"
+                }
+            ],
+            "RewardedFromMissions": [
+                {
+                    "RowName": "STYX_A_Construction",
+                    "DataTableName": "D_ProspectList"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "GrantedBlueprint_BW_Armor",
+            "BlueprintUnlocks": [
+                {
+                    "RowName": "Black_Wolf_Head",
+                    "DataTableName": "D_ItemTemplate"
+                },
+                {
+                    "RowName": "Black_Wolf_Chest",
+                    "DataTableName": "D_ItemTemplate"
+                },
+                {
+                    "RowName": "Black_Wolf_Feet",
+                    "DataTableName": "D_ItemTemplate"
+                },
+                {
+                    "RowName": "Black_Wolf_Arms",
+                    "DataTableName": "D_ItemTemplate"
+                },
+                {
+                    "RowName": "Black_Wolf_Legs",
+                    "DataTableName": "D_ItemTemplate"
+                }
+            ],
+            "RewardedFromMissions": [
+                {
+                    "RowName": "Tier3_RiverLands_Stockpile_2",
+                    "DataTableName": "D_ProspectList"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "GrantedBlueprint_BW_Trap",
+            "BlueprintUnlocks": [
+                {
+                    "RowName": "Black_Wolf_Trap",
+                    "DataTableName": "D_ItemTemplate"
+                }
+            ],
+            "RewardedFromMissions": [
+                {
+                    "RowName": "Tier3_RiverLands_Expedition_0",
+                    "DataTableName": "D_ProspectList"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "GrantedBlueprint_BW_Module",
+            "BlueprintUnlocks": [
+                {
+                    "RowName": "Black_Wolf_Module",
+                    "DataTableName": "D_ItemTemplate"
+                }
+            ],
+            "RewardedFromMissions": [
+                {
+                    "RowName": "Tier4_Arctic_Expedition_0",
+                    "DataTableName": "D_ProspectList"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "GrantedBlueprint_BW_Trophies",
+            "BlueprintUnlocks": [
+                {
+                    "RowName": "Black_Wolf_Trophy",
+                    "DataTableName": "D_ItemTemplate"
+                },
+                {
+                    "RowName": "Black_Wolf_Trophy_Howl",
+                    "DataTableName": "D_ItemTemplate"
+                },
+                {
+                    "RowName": "Black_Wolf_Trophy_Sit",
+                    "DataTableName": "D_ItemTemplate"
+                }
+            ],
+            "RewardedFromMissions": [
+                {
+                    "RowName": "Tier2_Glacier_Expedition_0",
+                    "DataTableName": "D_ProspectList"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "GrantedBlueprint_SW_Trophies",
+            "BlueprintUnlocks": [
+                {
+                    "RowName": "Sandworm_Trophy",
+                    "DataTableName": "D_ItemTemplate"
+                },
+                {
+                    "RowName": "Sandworm_Trophy_Brazier",
+                    "DataTableName": "D_ItemTemplate"
+                },
+                {
+                    "RowName": "Sandworm_Trophy_Brazier_Large",
+                    "DataTableName": "D_ItemTemplate"
+                },
+                {
+                    "RowName": "Sandworm_Trophy_Head",
+                    "DataTableName": "D_ItemTemplate"
+                }
+            ],
+            "RewardedFromMissions": [
+                {
+                    "RowName": "Tier2_Canyon_Expedition_0",
+                    "DataTableName": "D_ProspectList"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "GrantedBlueprint_SW_Building",
+            "BlueprintUnlocks": [
+                {
+                    "RowName": "Sandworm_Floor",
+                    "DataTableName": "D_ItemTemplate"
+                },
+                {
+                    "RowName": "Sandworm_Wall",
+                    "DataTableName": "D_ItemTemplate"
+                },
+                {
+                    "RowName": "Sandworm_Wall_Angle",
+                    "DataTableName": "D_ItemTemplate"
+                },
+                {
+                    "RowName": "Sandworm_Ramp",
+                    "DataTableName": "D_ItemTemplate"
+                },
+                {
+                    "RowName": "Sandworm_Beam",
+                    "DataTableName": "D_ItemTemplate"
+                }
+            ],
+            "RewardedFromMissions": [
+                {
+                    "RowName": "Tier2_Canyon_Construction_0",
+                    "DataTableName": "D_ProspectList"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "GrantedBlueprint_SW_Building2",
+            "BlueprintUnlocks": [
+                {
+                    "RowName": "Sandworm_Roof_Corner",
+                    "DataTableName": "D_ItemTemplate"
+                },
+                {
+                    "RowName": "Sandworm_Half_Pitch",
+                    "DataTableName": "D_ItemTemplate"
+                },
+                {
+                    "RowName": "Sandworm_Halfpiece",
+                    "DataTableName": "D_ItemTemplate"
+                }
+            ],
+            "RewardedFromMissions": [
+                {
+                    "RowName": "Tier2_Canyon_Survey_0",
+                    "DataTableName": "D_ProspectList"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "GrantedBlueprint_SW_Module",
+            "BlueprintUnlocks": [
+                {
+                    "RowName": "Sandworm_Module",
+                    "DataTableName": "D_ItemTemplate"
+                }
+            ],
+            "RewardedFromMissions": [
+                {
+                    "RowName": "Tier4_Desert_Expedition_0",
+                    "DataTableName": "D_ProspectList"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "GrantedBlueprint_SW_Attachment",
+            "BlueprintUnlocks": [
+                {
+                    "RowName": "Sandworm_Attachment_Armor",
+                    "DataTableName": "D_ItemTemplate"
+                }
+            ],
+            "RewardedFromMissions": [
+                {
+                    "RowName": "Tier5_Omni_Olympus",
+                    "DataTableName": "D_ProspectList"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "GrantedBlueprint_CavewormArmor",
+            "BlueprintUnlocks": [
+                {
+                    "RowName": "CavewormScale_Head",
+                    "DataTableName": "D_ItemTemplate"
+                },
+                {
+                    "RowName": "CavewormScale_Chest",
+                    "DataTableName": "D_ItemTemplate"
+                },
+                {
+                    "RowName": "CavewormScale_Arms",
+                    "DataTableName": "D_ItemTemplate"
+                },
+                {
+                    "RowName": "CavewormScale_Legs",
+                    "DataTableName": "D_ItemTemplate"
+                },
+                {
+                    "RowName": "CavewormScale_Feet",
+                    "DataTableName": "D_ItemTemplate"
+                }
+            ],
+            "RewardedFromMissions": [
+                {
+                    "RowName": "GH_RG_D",
+                    "DataTableName": "D_ProspectList"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "Homestead_Passive_Talent_Refund",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Homestead"
+                }
+            }
+        },
+        {
+            "Name": "GrantedBlueprint_YetiArticArmor",
+            "BlueprintUnlocks": [
+                {
+                    "RowName": "Polarbear_Head_Armor_Yeti",
+                    "DataTableName": "D_ItemTemplate"
+                }
+            ],
+            "RewardedFromMissions": [
+                {
+                    "RowName": "ELY_SQ_Yeti",
+                    "DataTableName": "D_ProspectList"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "GrantedTalent_ELY_SQ",
+            "BlueprintUnlocks": [
+                {
+                    "RowName": "Checkered_Flag",
+                    "DataTableName": "D_ItemTemplate"
+                }
+            ],
+            "TalentModifierUnlocks": [
+                {
+                    "RowName": "Ely_SQ",
+                    "DataTableName": "D_PlayerTalentModifiers"
+                }
+            ],
+            "RewardedFromMissions": [
+                {
+                    "RowName": "ELY_SQ_Trials",
+                    "DataTableName": "D_ProspectList"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "GrantedTalent_ELY_Story_6",
+            "BlueprintUnlocks": [
+                {
+                    "RowName": "Alloy_Armor_Head",
+                    "DataTableName": "D_ItemTemplate"
+                },
+                {
+                    "RowName": "Alloy_Armor_Chest",
+                    "DataTableName": "D_ItemTemplate"
+                },
+                {
+                    "RowName": "Alloy_Armor_Arms",
+                    "DataTableName": "D_ItemTemplate"
+                },
+                {
+                    "RowName": "Alloy_Armor_Legs",
+                    "DataTableName": "D_ItemTemplate"
+                },
+                {
+                    "RowName": "Alloy_Armor_Feet",
+                    "DataTableName": "D_ItemTemplate"
+                }
+            ],
+            "TalentModifierUnlocks": [
+                {
+                    "RowName": "Ely_Story_6",
+                    "DataTableName": "D_PlayerTalentModifiers"
+                }
+            ],
+            "RewardedFromMissions": [
+                {
+                    "RowName": "ELY_Story_6",
+                    "DataTableName": "D_ProspectList"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "GrantedBlueprint_Hasmat",
+            "BlueprintUnlocks": [
+                {
+                    "RowName": "Hazmat_Head",
+                    "DataTableName": "D_ItemTemplate"
+                },
+                {
+                    "RowName": "Hazmat_Chest",
+                    "DataTableName": "D_ItemTemplate"
+                },
+                {
+                    "RowName": "Hazmat_Arms",
+                    "DataTableName": "D_ItemTemplate"
+                },
+                {
+                    "RowName": "Hazmat_Legs",
+                    "DataTableName": "D_ItemTemplate"
+                },
+                {
+                    "RowName": "Hazmat_Feet",
+                    "DataTableName": "D_ItemTemplate"
+                }
+            ],
+            "RewardedFromMissions": [
+                {
+                    "RowName": "ELY_Story_3",
+                    "DataTableName": "D_ProspectList"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "GrantedBlueprint_Sandwyrm",
+            "BlueprintUnlocks": [
+                {
+                    "RowName": "Sandwyrm_Lantern",
+                    "DataTableName": "D_ItemTemplate"
+                },
+                {
+                    "RowName": "Sandwyrm_Backpack",
+                    "DataTableName": "D_ItemTemplate"
+                },
+                {
+                    "RowName": "Sandwyrm_Bow",
+                    "DataTableName": "D_ItemTemplate"
+                }
+            ],
+            "RewardedFromMissions": [
+                {
+                    "RowName": "ELY_Story_5",
+                    "DataTableName": "D_ProspectList"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "GrantedBlueprint_Sandwyrm_Trophies",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "GrantedWorkshop_ELY_Seeds",
+            "WorkshopUnlocks": [
+                {
+                    "RowName": "Meta_Onion_Seed",
+                    "DataTableName": "D_WorkshopItems"
+                },
+                {
+                    "RowName": "Meta_Garlic_Seed",
+                    "DataTableName": "D_WorkshopItems"
+                },
+                {
+                    "RowName": "Meta_Truffle_Seed",
+                    "DataTableName": "D_WorkshopItems"
+                }
+            ],
+            "RewardedFromMissions": [
+                {
+                    "RowName": "ELY_Story_1",
+                    "DataTableName": "D_ProspectList"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "GrantedWorkshop_LandingPads",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Elysium_Level_Boost_Claimed",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "GrantedBlueprint_Speeder",
+            "BlueprintUnlocks": [
+                {
+                    "RowName": "Speeder_Kit",
+                    "DataTableName": "D_ItemTemplate"
+                }
+            ],
+            "RewardedFromMissions": [
+                {
+                    "RowName": "ELY_SQ_Courier",
+                    "DataTableName": "D_ProspectList"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "GrantedBlueprint_ScoutSuit",
+            "WorkshopUnlocks": [
+                {
+                    "RowName": "Meta_Envirosuit_Larkell_White",
+                    "DataTableName": "D_WorkshopItems"
+                }
+            ],
+            "RewardedFromMissions": [
+                {
+                    "RowName": "ELY_SQ_Lifeline",
+                    "DataTableName": "D_ProspectList"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "GrantedBlueprint_ScoutSmg",
+            "BlueprintUnlocks": [
+                {
+                    "RowName": "Submachine_Gun_Scout",
+                    "DataTableName": "D_ItemTemplate"
+                }
+            ],
+            "RewardedFromMissions": [
+                {
+                    "RowName": "ELY_SQ_Ambush",
+                    "DataTableName": "D_ProspectList"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "GrantedBlueprint_UraniumAmmo",
+            "BlueprintUnlocks": [
+                {
+                    "RowName": "Ammo_Pistol_Round_Uranium",
+                    "DataTableName": "D_ItemTemplate"
+                },
+                {
+                    "RowName": "Ammo_Shell_Uranium",
+                    "DataTableName": "D_ItemTemplate"
+                },
+                {
+                    "RowName": "Ammo_Rifle_Round_Uranium",
+                    "DataTableName": "D_ItemTemplate"
+                },
+                {
+                    "RowName": "Ammo_AssaultRifle_Round_Uranium",
+                    "DataTableName": "D_ItemTemplate"
+                }
+            ],
+            "RewardedFromMissions": [
+                {
+                    "RowName": "ELY_Story_4",
+                    "DataTableName": "D_ProspectList"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        }
+    ]
+}

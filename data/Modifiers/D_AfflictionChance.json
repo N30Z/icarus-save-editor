@@ -1,0 +1,562 @@
+{
+    "RowStruct": "/Script/Icarus.AfflictionChance",
+    "Defaults": {
+        "Afflictions": [],
+        "ChanceStat": {
+            "Value": "None"
+        },
+        "ChanceInPercent": 0,
+        "DurationInSeconds": 0
+    },
+    "GenerateEnum": true,
+    "Rows": [
+        {
+            "Name": "Fish_Bite",
+            "Afflictions": [
+                {
+                    "RowName": "Poison",
+                    "DataTableName": "D_ModifierStates"
+                }
+            ],
+            "ChanceStat": {
+                "Value": "PoisonResistance_%"
+            },
+            "ChanceInPercent": 25,
+            "DurationInSeconds": 180
+        },
+        {
+            "Name": "Concussion_Contusion",
+            "Afflictions": [
+                {
+                    "RowName": "Concussion",
+                    "DataTableName": "D_ModifierStates"
+                },
+                {
+                    "RowName": "Contusion",
+                    "DataTableName": "D_ModifierStates"
+                }
+            ],
+            "ChanceInPercent": 25,
+            "DurationInSeconds": 1800
+        },
+        {
+            "Name": "Drink_Water",
+            "Afflictions": [
+                {
+                    "RowName": "Dysentery",
+                    "DataTableName": "D_ModifierStates"
+                }
+            ],
+            "ChanceStat": {
+                "Value": "DysentryResistance_%"
+            },
+            "ChanceInPercent": 15,
+            "DurationInSeconds": 300
+        },
+        {
+            "Name": "Drink_Water_Rain",
+            "Afflictions": [
+                {
+                    "RowName": "Dysentery",
+                    "DataTableName": "D_ModifierStates"
+                }
+            ],
+            "ChanceStat": {
+                "Value": "DysentryResistance_%"
+            },
+            "ChanceInPercent": 5,
+            "DurationInSeconds": 300
+        },
+        {
+            "Name": "Deep_Wound_Escalation",
+            "Afflictions": [
+                {
+                    "RowName": "Festering_Wound",
+                    "DataTableName": "D_ModifierStates"
+                }
+            ],
+            "ChanceInPercent": 5,
+            "DurationInSeconds": 1800
+        },
+        {
+            "Name": "Underground_Escalation",
+            "Afflictions": [
+                {
+                    "RowName": "Pneumonia",
+                    "DataTableName": "D_ModifierStates"
+                }
+            ],
+            "ChanceStat": {
+                "Value": "PneumoniaResistance_%"
+            },
+            "ChanceInPercent": 25,
+            "DurationInSeconds": 600
+        },
+        {
+            "Name": "Wound_Escalation",
+            "Afflictions": [
+                {
+                    "RowName": "Infected_Wound",
+                    "DataTableName": "D_ModifierStates"
+                }
+            ],
+            "ChanceInPercent": 5,
+            "DurationInSeconds": 1800
+        },
+        {
+            "Name": "Hunger_Escalation",
+            "Afflictions": [
+                {
+                    "RowName": "Enfeebled",
+                    "DataTableName": "D_ModifierStates"
+                }
+            ],
+            "ChanceInPercent": 33,
+            "DurationInSeconds": 300
+        },
+        {
+            "Name": "Frostnip_Escalation",
+            "Afflictions": [
+                {
+                    "RowName": "Frostbite",
+                    "DataTableName": "D_ModifierStates"
+                }
+            ],
+            "ChanceStat": {
+                "Value": "FrostbiteResistance_%"
+            },
+            "ChanceInPercent": 33
+        },
+        {
+            "Name": "Cold_Escalation",
+            "Afflictions": [
+                {
+                    "RowName": "Affliction_Hypothermia",
+                    "DataTableName": "D_ModifierStates"
+                }
+            ],
+            "ChanceStat": {
+                "Value": "HypothermiaResistance_%"
+            },
+            "ChanceInPercent": 100
+        },
+        {
+            "Name": "Overheating_Escalation",
+            "Afflictions": [
+                {
+                    "RowName": "Affliction_Heat_Overload",
+                    "DataTableName": "D_ModifierStates"
+                }
+            ],
+            "ChanceStat": {
+                "Value": "HyperthermiaResistance_%"
+            },
+            "ChanceInPercent": 100
+        },
+        {
+            "Name": "Frostnip_Low",
+            "Afflictions": [
+                {
+                    "RowName": "Frostnip",
+                    "DataTableName": "D_ModifierStates"
+                }
+            ],
+            "ChanceInPercent": 10
+        },
+        {
+            "Name": "Frostnip_High",
+            "Afflictions": [
+                {
+                    "RowName": "Frostnip",
+                    "DataTableName": "D_ModifierStates"
+                }
+            ],
+            "ChanceInPercent": 25
+        },
+        {
+            "Name": "Dysentery",
+            "Afflictions": [
+                {
+                    "RowName": "Dysentery",
+                    "DataTableName": "D_ModifierStates"
+                }
+            ],
+            "ChanceStat": {
+                "Value": "DysentryResistance_%"
+            },
+            "ChanceInPercent": 15,
+            "DurationInSeconds": 600
+        },
+        {
+            "Name": "Food_Poisoning",
+            "Afflictions": [
+                {
+                    "RowName": "Food_Poisoning",
+                    "DataTableName": "D_ModifierStates"
+                }
+            ],
+            "ChanceInPercent": 33,
+            "DurationInSeconds": 600
+        },
+        {
+            "Name": "Heatstroke_Esculation",
+            "Afflictions": [
+                {
+                    "RowName": "Heat_Exhaustion",
+                    "DataTableName": "D_ModifierStates"
+                }
+            ],
+            "ChanceStat": {
+                "Value": "HeatstrokeResistance_%"
+            },
+            "ChanceInPercent": 33
+        },
+        {
+            "Name": "Heatstroke_Low",
+            "Afflictions": [
+                {
+                    "RowName": "Heatstroke",
+                    "DataTableName": "D_ModifierStates"
+                }
+            ],
+            "ChanceInPercent": 10
+        },
+        {
+            "Name": "Taming_Sickness",
+            "Afflictions": [
+                {
+                    "RowName": "Taming_Sickness",
+                    "DataTableName": "D_ModifierStates"
+                }
+            ],
+            "ChanceInPercent": 100
+        },
+        {
+            "Name": "SwampParasites",
+            "Afflictions": [
+                {
+                    "RowName": "SwampWater_Parasite",
+                    "DataTableName": "D_ModifierStates"
+                }
+            ],
+            "ChanceStat": {
+                "Value": "SwampParasitesResistance_%"
+            },
+            "ChanceInPercent": 10,
+            "DurationInSeconds": 300
+        },
+        {
+            "Name": "ExoticEscalation_T0",
+            "Afflictions": [
+                {
+                    "RowName": "ExoticDebuff_T1_Food",
+                    "DataTableName": "D_ModifierStates"
+                },
+                {
+                    "RowName": "ExoticDebuff_T1_Oxygen",
+                    "DataTableName": "D_ModifierStates"
+                },
+                {
+                    "RowName": "ExoticDebuff_T1_Water",
+                    "DataTableName": "D_ModifierStates"
+                }
+            ],
+            "ChanceInPercent": 40,
+            "DurationInSeconds": 1200
+        },
+        {
+            "Name": "ExoticEscalation_T1_Food",
+            "Afflictions": [
+                {
+                    "RowName": "ExoticDebuff_T2_Bloodthinner",
+                    "DataTableName": "D_ModifierStates"
+                },
+                {
+                    "RowName": "ExoticDebuff_T2_Antiparasitic",
+                    "DataTableName": "D_ModifierStates"
+                },
+                {
+                    "RowName": "ExoticDebuff_T2_Wound",
+                    "DataTableName": "D_ModifierStates"
+                }
+            ],
+            "ChanceInPercent": 20,
+            "DurationInSeconds": 600
+        },
+        {
+            "Name": "ExoticEscalation_T1_Water",
+            "Afflictions": [
+                {
+                    "RowName": "ExoticDebuff_T2_Antibiotic",
+                    "DataTableName": "D_ModifierStates"
+                },
+                {
+                    "RowName": "ExoticDebuff_T2_Antiparasitic",
+                    "DataTableName": "D_ModifierStates"
+                },
+                {
+                    "RowName": "ExoticDebuff_T2_Wound",
+                    "DataTableName": "D_ModifierStates"
+                }
+            ],
+            "ChanceInPercent": 20,
+            "DurationInSeconds": 600
+        },
+        {
+            "Name": "ExoticEscalation_T1_Oxygen",
+            "Afflictions": [
+                {
+                    "RowName": "ExoticDebuff_T2_Bloodthinner",
+                    "DataTableName": "D_ModifierStates"
+                },
+                {
+                    "RowName": "ExoticDebuff_T2_Poison",
+                    "DataTableName": "D_ModifierStates"
+                },
+                {
+                    "RowName": "ExoticDebuff_T2_Antibiotic",
+                    "DataTableName": "D_ModifierStates"
+                }
+            ],
+            "ChanceInPercent": 20,
+            "DurationInSeconds": 600
+        },
+        {
+            "Name": "ExoticEscalation_T2_Poison",
+            "Afflictions": [
+                {
+                    "RowName": "ExoticDebuff_T3_ReapplyDebuffs",
+                    "DataTableName": "D_ModifierStates"
+                }
+            ],
+            "ChanceInPercent": 20,
+            "DurationInSeconds": 60
+        },
+        {
+            "Name": "ExoticEscalation_T2_Bloodthinner",
+            "Afflictions": [
+                {
+                    "RowName": "ExoticDebuff_T3_DeepWound",
+                    "DataTableName": "D_ModifierStates"
+                },
+                {
+                    "RowName": "ExoticDebuff_T3_Hypothermia",
+                    "DataTableName": "D_ModifierStates"
+                }
+            ],
+            "ChanceInPercent": 20,
+            "DurationInSeconds": 180
+        },
+        {
+            "Name": "ExoticEscalation_T2_Antibiotic",
+            "Afflictions": [
+                {
+                    "RowName": "ExoticDebuff_T3_Hyperthermia",
+                    "DataTableName": "D_ModifierStates"
+                },
+                {
+                    "RowName": "ExoticDebuff_T3_Hypothermia",
+                    "DataTableName": "D_ModifierStates"
+                }
+            ],
+            "ChanceInPercent": 20,
+            "DurationInSeconds": 180
+        },
+        {
+            "Name": "ExoticEscalation_T2_Antiparasitic",
+            "Afflictions": [
+                {
+                    "RowName": "ExoticDebuff_T3_DeepWound",
+                    "DataTableName": "D_ModifierStates"
+                },
+                {
+                    "RowName": "ExoticDebuff_T3_Hyperthermia",
+                    "DataTableName": "D_ModifierStates"
+                }
+            ],
+            "ChanceInPercent": 20,
+            "DurationInSeconds": 180
+        },
+        {
+            "Name": "ExoticEscalation_T2_Wound",
+            "Afflictions": [
+                {
+                    "RowName": "ExoticDebuff_T3_ReapplyDebuffs",
+                    "DataTableName": "D_ModifierStates"
+                },
+                {
+                    "RowName": "ExoticDebuff_T2_Poison",
+                    "DataTableName": "D_ModifierStates"
+                }
+            ],
+            "ChanceInPercent": 20,
+            "DurationInSeconds": 60
+        },
+        {
+            "Name": "ExoticEscalation_T3_DeepWound",
+            "Afflictions": [
+                {
+                    "RowName": "ExoticDebuff_T4_RapidBleed",
+                    "DataTableName": "D_ModifierStates"
+                }
+            ],
+            "ChanceInPercent": 20,
+            "DurationInSeconds": 5
+        },
+        {
+            "Name": "ExoticEscalation_T3_Hypothermia",
+            "Afflictions": [
+                {
+                    "RowName": "ExoticDebuff_T4_RapidFreeze",
+                    "DataTableName": "D_ModifierStates"
+                }
+            ],
+            "ChanceInPercent": 20,
+            "DurationInSeconds": 5
+        },
+        {
+            "Name": "ExoticEscalation_T3_Hyperthermia",
+            "Afflictions": [
+                {
+                    "RowName": "ExoticDebuff_T4_RapidBurn",
+                    "DataTableName": "D_ModifierStates"
+                }
+            ],
+            "ChanceInPercent": 20,
+            "DurationInSeconds": 5
+        },
+        {
+            "Name": "ExoticEscalation_T3_ReapplyDebuffs",
+            "Afflictions": [
+                {
+                    "RowName": "ExoticDebuff_T2_Antibiotic",
+                    "DataTableName": "D_ModifierStates"
+                },
+                {
+                    "RowName": "ExoticDebuff_T2_Antiparasitic",
+                    "DataTableName": "D_ModifierStates"
+                },
+                {
+                    "RowName": "ExoticDebuff_T2_Bloodthinner",
+                    "DataTableName": "D_ModifierStates"
+                },
+                {
+                    "RowName": "ExoticDebuff_T2_Poison",
+                    "DataTableName": "D_ModifierStates"
+                },
+                {
+                    "RowName": "ExoticDebuff_T2_Wound",
+                    "DataTableName": "D_ModifierStates"
+                }
+            ],
+            "ChanceInPercent": 20,
+            "DurationInSeconds": 300
+        },
+        {
+            "Name": "Drink_Water_Lava",
+            "Afflictions": [
+                {
+                    "RowName": "Dysentery",
+                    "DataTableName": "D_ModifierStates"
+                },
+                {
+                    "RowName": "Dysentery_Lava",
+                    "DataTableName": "D_ModifierStates"
+                }
+            ],
+            "ChanceInPercent": 25,
+            "DurationInSeconds": 300
+        },
+        {
+            "Name": "Drink_Water_Swamp",
+            "Afflictions": [
+                {
+                    "RowName": "Dysentery",
+                    "DataTableName": "D_ModifierStates"
+                }
+            ],
+            "ChanceStat": {
+                "Value": "DysentryResistance_%"
+            },
+            "ChanceInPercent": 25,
+            "DurationInSeconds": 300
+        },
+        {
+            "Name": "Animal_Fertilization",
+            "Afflictions": [
+                {
+                    "RowName": "Animal_Fertilized",
+                    "DataTableName": "D_ModifierStates"
+                }
+            ],
+            "ChanceInPercent": 100,
+            "DurationInSeconds": 3600
+        },
+        {
+            "Name": "FrostAura_Escalation",
+            "Afflictions": [
+                {
+                    "RowName": "Frostnip_Escalated",
+                    "DataTableName": "D_ModifierStates"
+                }
+            ],
+            "ChanceInPercent": 100,
+            "DurationInSeconds": 120
+        },
+        {
+            "Name": "IceMammoth_Trap",
+            "Afflictions": [
+                {
+                    "RowName": "IceMammoth_Trap",
+                    "DataTableName": "D_ModifierStates"
+                }
+            ],
+            "ChanceStat": {
+                "Value": "HypothermiaResistance_%"
+            },
+            "ChanceInPercent": 100,
+            "DurationInSeconds": 120
+        },
+        {
+            "Name": "Hemorrhage",
+            "Afflictions": [
+                {
+                    "RowName": "Hemorrage",
+                    "DataTableName": "D_ModifierStates"
+                }
+            ],
+            "ChanceStat": {
+                "Value": "HemorrhageResistance_%"
+            },
+            "ChanceInPercent": 100,
+            "DurationInSeconds": 30
+        },
+        {
+            "Name": "Wound",
+            "Afflictions": [
+                {
+                    "RowName": "Wound",
+                    "DataTableName": "D_ModifierStates"
+                }
+            ],
+            "ChanceStat": {
+                "Value": "WoundResistance_%"
+            },
+            "ChanceInPercent": 100
+        },
+        {
+            "Name": "Caveworm_Poison",
+            "Afflictions": [
+                {
+                    "RowName": "Cave_Worm_Poison",
+                    "DataTableName": "D_ModifierStates"
+                }
+            ],
+            "ChanceStat": {
+                "Value": "PoisonResistance_%"
+            },
+            "ChanceInPercent": 100,
+            "DurationInSeconds": 20
+        }
+    ]
+}

@@ -1,0 +1,114 @@
+{
+    "RowStruct": "/Script/Icarus.PlayerTalentModifier",
+    "Defaults": {
+        "TalentPointModifier": 0,
+        "RequiredFlags": []
+    },
+    "Rows": [
+        {
+            "Name": "NullsectorStoryTalents",
+            "TalentPointModifier": 3,
+            "RequiredFlags": [
+                {
+                    "DataTableName": "D_AccountFlags",
+                    "RowName": "GrantedTalent_Nullsector_Story"
+                }
+            ]
+        },
+        {
+            "Name": "OlympusNightfallTalents",
+            "TalentPointModifier": 2,
+            "RequiredFlags": [
+                {
+                    "DataTableName": "D_AccountFlags",
+                    "RowName": "GrantedTalent_Olympus_Nightfall"
+                }
+            ]
+        },
+        {
+            "Name": "StyxIroncladTalents",
+            "TalentPointModifier": 2,
+            "RequiredFlags": [
+                {
+                    "DataTableName": "D_AccountFlags",
+                    "RowName": "GrantedTalent_Styx_Ironclad"
+                }
+            ]
+        },
+        {
+            "Name": "GH_APE_FINAL",
+            "TalentPointModifier": 2,
+            "RequiredFlags": [
+                {
+                    "DataTableName": "D_AccountFlags",
+                    "RowName": "GrantedTalent_GH_APE"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "GH_IM_FINAL",
+            "TalentPointModifier": 2,
+            "RequiredFlags": [
+                {
+                    "DataTableName": "D_AccountFlags",
+                    "RowName": "GrantedTalent_GH_IM"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "GH_RG_FINAL",
+            "TalentPointModifier": 2,
+            "RequiredFlags": [
+                {
+                    "DataTableName": "D_AccountFlags",
+                    "RowName": "GrantedTalent_GH_RG"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "Ely_SQ",
+            "TalentPointModifier": 2,
+            "RequiredFlags": [
+                {
+                    "DataTableName": "D_AccountFlags",
+                    "RowName": "GrantedTalent_ELY_SQ"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Ely_Story_6",
+            "TalentPointModifier": 3,
+            "RequiredFlags": [
+                {
+                    "DataTableName": "D_AccountFlags",
+                    "RowName": "GrantedTalent_ELY_Story_6"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        }
+    ]
+}

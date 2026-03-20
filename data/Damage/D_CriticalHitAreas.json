@@ -1,0 +1,159 @@
+{
+    "RowStruct": "/Script/Icarus.CriticalHitArea",
+    "Defaults": {
+        "DamageReductionStat": {
+            "Value": "None"
+        },
+        "DamageReductionMitigatingStat": {
+            "Value": "None"
+        },
+        "DamageMultiplierStat": {
+            "Value": "None"
+        },
+        "ReductionStatMultiplier": 1,
+        "MultiplierStatMultiplier": 1,
+        "WhitelistedDamageTypes": [],
+        "ModifiersToApply": [],
+        "Priority": 10,
+        "AudioData": {
+            "RowName": "None",
+            "DataTableName": "D_CriticalHitAreaAudioData"
+        }
+    },
+    "GenerateEnum": true,
+    "Rows": [
+        {
+            "Name": "Crit_None",
+            "Priority": 99
+        },
+        {
+            "Name": "Crit_ExtraWeakPoint",
+            "DamageMultiplierStat": {
+                "Value": "CriticalDamage_+%"
+            },
+            "Priority": 4,
+            "AudioData": {
+                "RowName": "CriticalHit"
+            }
+        },
+        {
+            "Name": "Crit_WeakPoint",
+            "DamageMultiplierStat": {
+                "Value": "CriticalDamage_+%"
+            },
+            "MultiplierStatMultiplier": 0.5,
+            "Priority": 5,
+            "AudioData": {
+                "RowName": "CriticalHit"
+            }
+        },
+        {
+            "Name": "Crit_ExtraStrongPoint",
+            "DamageReductionStat": {
+                "Value": "HardenedPointDamageProtection_%"
+            },
+            "DamageReductionMitigatingStat": {
+                "Value": "HardenedPointPenetration_%"
+            },
+            "DamageMultiplierStat": {
+                "Value": "HardenedPointDamage_+%"
+            },
+            "MultiplierStatMultiplier": 0.5,
+            "Priority": 7,
+            "AudioData": {
+                "RowName": "LowDamageHit"
+            }
+        },
+        {
+            "Name": "Crit_StrongPoint",
+            "DamageReductionStat": {
+                "Value": "HardenedPointDamageProtection_%"
+            },
+            "DamageReductionMitigatingStat": {
+                "Value": "HardenedPointPenetration_%"
+            },
+            "DamageMultiplierStat": {
+                "Value": "HardenedPointDamage_+%"
+            },
+            "ReductionStatMultiplier": 0.5,
+            "Priority": 8,
+            "AudioData": {
+                "RowName": "LowDamageHit"
+            }
+        },
+        {
+            "Name": "Crit_GolemArmour",
+            "DamageReductionStat": {
+                "Value": "HardenedPointDamageProtection_%"
+            },
+            "DamageReductionMitigatingStat": {
+                "Value": "ArmorDamageModifier_+%"
+            },
+            "DamageMultiplierStat": {
+                "Value": "ArmorDamageModifier_+%"
+            },
+            "Priority": 8,
+            "AudioData": {
+                "RowName": "LowDamageHit"
+            }
+        },
+        {
+            "Name": "Crit_NoDamage",
+            "ReductionStatMultiplier": 0,
+            "MultiplierStatMultiplier": 0,
+            "Priority": 0,
+            "AudioData": {
+                "RowName": "LowDamageHit"
+            }
+        },
+        {
+            "Name": "Crit_Ricochet",
+            "WhitelistedDamageTypes": [
+                "Projectile"
+            ],
+            "Priority": -1,
+            "AudioData": {
+                "RowName": "NoDamageRicochet"
+            }
+        },
+        {
+            "Name": "Crit_MiniWeakPoint",
+            "DamageMultiplierStat": {
+                "Value": "CriticalDamage_+%"
+            },
+            "MultiplierStatMultiplier": 0.15000000596046448,
+            "Priority": 6,
+            "AudioData": {
+                "RowName": "CriticalHit"
+            }
+        },
+        {
+            "Name": "Crit_WeakPointMetal",
+            "DamageMultiplierStat": {
+                "Value": "CriticalDamage_+%"
+            },
+            "MultiplierStatMultiplier": 0.5,
+            "Priority": 5,
+            "AudioData": {
+                "RowName": "CriticalHitDrone"
+            }
+        },
+        {
+            "Name": "Crit_ExtraStrongPointMetal",
+            "DamageReductionStat": {
+                "Value": "HardenedPointDamageProtection_%"
+            },
+            "DamageReductionMitigatingStat": {
+                "Value": "HardenedPointPenetration_%"
+            },
+            "DamageMultiplierStat": {
+                "Value": "HardenedPointDamage_+%"
+            },
+            "MultiplierStatMultiplier": 0.5,
+            "Priority": 7,
+            "AudioData": {
+                "RowName": "LowDamageHitDrone"
+            }
+        }
+    ]
+}

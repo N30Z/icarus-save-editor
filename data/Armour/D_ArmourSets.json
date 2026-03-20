@@ -1,0 +1,339 @@
+{
+    "RowStruct": "/Script/Icarus.ArmourSet",
+    "Defaults": {
+        "SetBonus": [],
+        "FMODParam": "None"
+    },
+    "Rows": [
+        {
+            "Name": "Cloth",
+            "SetBonus": [
+                {
+                    "RowName": "Cloth_5",
+                    "DataTableName": "D_ArmourSetBonus"
+                }
+            ],
+            "FMODParam": "Fiber"
+        },
+        {
+            "Name": "Fur",
+            "SetBonus": [
+                {
+                    "RowName": "Fur_5",
+                    "DataTableName": "D_ArmourSetBonus"
+                }
+            ],
+            "FMODParam": "Fur"
+        },
+        {
+            "Name": "Leather",
+            "SetBonus": [
+                {
+                    "RowName": "Leather_5",
+                    "DataTableName": "D_ArmourSetBonus"
+                }
+            ],
+            "FMODParam": "Leather"
+        },
+        {
+            "Name": "Ghillie",
+            "SetBonus": [
+                {
+                    "RowName": "Ghillie_5",
+                    "DataTableName": "D_ArmourSetBonus"
+                }
+            ],
+            "FMODParam": "Ghillie"
+        },
+        {
+            "Name": "Carbon",
+            "SetBonus": [
+                {
+                    "RowName": "Carbon_5",
+                    "DataTableName": "D_ArmourSetBonus"
+                }
+            ],
+            "FMODParam": "Carbon"
+        },
+        {
+            "Name": "Composite",
+            "SetBonus": [
+                {
+                    "RowName": "Composite_5",
+                    "DataTableName": "D_ArmourSetBonus"
+                }
+            ],
+            "FMODParam": "Composite"
+        },
+        {
+            "Name": "Polarbear",
+            "SetBonus": [
+                {
+                    "RowName": "Polarbear_5",
+                    "DataTableName": "D_ArmourSetBonus"
+                }
+            ],
+            "FMODParam": "Polar"
+        },
+        {
+            "Name": "Hunter",
+            "SetBonus": [
+                {
+                    "RowName": "Hunter_5",
+                    "DataTableName": "D_ArmourSetBonus"
+                }
+            ],
+            "FMODParam": "Composite"
+        },
+        {
+            "Name": "Scale",
+            "SetBonus": [
+                {
+                    "RowName": "Scale_5",
+                    "DataTableName": "D_ArmourSetBonus"
+                }
+            ],
+            "FMODParam": "Scale"
+        },
+        {
+            "Name": "Scorpion",
+            "SetBonus": [
+                {
+                    "RowName": "Scorpion_5",
+                    "DataTableName": "D_ArmourSetBonus"
+                }
+            ],
+            "FMODParam": "Scale"
+        },
+        {
+            "Name": "CX-400",
+            "SetBonus": [
+                {
+                    "RowName": "Carbon_Alpha_5",
+                    "DataTableName": "D_ArmourSetBonus"
+                }
+            ],
+            "FMODParam": "Carbon"
+        },
+        {
+            "Name": "ST-700",
+            "SetBonus": [
+                {
+                    "RowName": "Carbon_Beta_5",
+                    "DataTableName": "D_ArmourSetBonus"
+                }
+            ],
+            "FMODParam": "Carbon"
+        },
+        {
+            "Name": "Advanced_Leather",
+            "SetBonus": [
+                {
+                    "RowName": "Advanced_Leather_5",
+                    "DataTableName": "D_ArmourSetBonus"
+                }
+            ],
+            "FMODParam": "Leather"
+        },
+        {
+            "Name": "Advanced_Cloth",
+            "SetBonus": [
+                {
+                    "RowName": "Advanced_Cloth_5",
+                    "DataTableName": "D_ArmourSetBonus"
+                }
+            ],
+            "FMODParam": "Fiber"
+        },
+        {
+            "Name": "Bone",
+            "SetBonus": [
+                {
+                    "RowName": "Bone_5",
+                    "DataTableName": "D_ArmourSetBonus"
+                }
+            ],
+            "FMODParam": "Bone"
+        },
+        {
+            "Name": "Obsidian",
+            "SetBonus": [
+                {
+                    "RowName": "Obsidian_Armor_Set_5",
+                    "DataTableName": "D_ArmourSetBonus"
+                }
+            ],
+            "FMODParam": "Obsidian"
+        },
+        {
+            "Name": "Heavy_Obsidian",
+            "SetBonus": [
+                {
+                    "RowName": "Heavy_Obsidian_Armor_Set_5",
+                    "DataTableName": "D_ArmourSetBonus"
+                }
+            ],
+            "FMODParam": "Obsidian"
+        },
+        {
+            "Name": "Larkwell_Alpha",
+            "SetBonus": [
+                {
+                    "RowName": "Larkwell_Armor_Alpha",
+                    "DataTableName": "D_ArmourSetBonus"
+                }
+            ],
+            "FMODParam": "Carbon"
+        },
+        {
+            "Name": "Brownbear",
+            "SetBonus": [
+                {
+                    "RowName": "Brownbear_5",
+                    "DataTableName": "D_ArmourSetBonus"
+                }
+            ],
+            "FMODParam": "Polar"
+        },
+        {
+            "Name": "Larkwell_Black",
+            "SetBonus": [
+                {
+                    "RowName": "Larkwell_Armor_Black",
+                    "DataTableName": "D_ArmourSetBonus"
+                }
+            ],
+            "FMODParam": "Carbon"
+        },
+        {
+            "Name": "Larkwell_White",
+            "SetBonus": [
+                {
+                    "RowName": "Larkwell_Armor_White",
+                    "DataTableName": "D_ArmourSetBonus"
+                }
+            ],
+            "FMODParam": "Carbon"
+        },
+        {
+            "Name": "Black_Wolf",
+            "SetBonus": [
+                {
+                    "RowName": "Black_Wolf",
+                    "DataTableName": "D_ArmourSetBonus"
+                }
+            ],
+            "FMODParam": "Polar"
+        },
+        {
+            "Name": "Ice_Mammoth",
+            "SetBonus": [
+                {
+                    "RowName": "IceMammoth",
+                    "DataTableName": "D_ArmourSetBonus"
+                }
+            ],
+            "FMODParam": "Obsidian"
+        },
+        {
+            "Name": "Ape",
+            "SetBonus": [
+                {
+                    "RowName": "Ape",
+                    "DataTableName": "D_ArmourSetBonus"
+                }
+            ],
+            "FMODParam": "Fur"
+        },
+        {
+            "Name": "Sand",
+            "SetBonus": [
+                {
+                    "RowName": "Sand",
+                    "DataTableName": "D_ArmourSetBonus"
+                }
+            ],
+            "FMODParam": "Fiber"
+        },
+        {
+            "Name": "ArcticArmor",
+            "SetBonus": [
+                {
+                    "RowName": "ArcticArmor",
+                    "DataTableName": "D_ArmourSetBonus"
+                }
+            ],
+            "FMODParam": "Fiber"
+        },
+        {
+            "Name": "MinerArmor",
+            "SetBonus": [
+                {
+                    "RowName": "MinerArmor",
+                    "DataTableName": "D_ArmourSetBonus"
+                }
+            ],
+            "FMODParam": "Fiber"
+        },
+        {
+            "Name": "CavewormScale",
+            "SetBonus": [
+                {
+                    "RowName": "CavewormScale",
+                    "DataTableName": "D_ArmourSetBonus"
+                }
+            ],
+            "FMODParam": "Scale"
+        },
+        {
+            "Name": "Hazmat",
+            "SetBonus": [
+                {
+                    "RowName": "Hazmat",
+                    "DataTableName": "D_ArmourSetBonus"
+                }
+            ],
+            "FMODParam": "Leather"
+        },
+        {
+            "Name": "Radiation_Protection_Armor",
+            "SetBonus": [
+                {
+                    "RowName": "Radiation_Protection_Armor",
+                    "DataTableName": "D_ArmourSetBonus"
+                }
+            ],
+            "FMODParam": "Composite"
+        },
+        {
+            "Name": "Synthetic_Armor",
+            "SetBonus": [
+                {
+                    "RowName": "Synthetic_Armor",
+                    "DataTableName": "D_ArmourSetBonus"
+                }
+            ],
+            "FMODParam": "Composite"
+        },
+        {
+            "Name": "Bulky_Armor",
+            "SetBonus": [
+                {
+                    "RowName": "Bulky_Armor",
+                    "DataTableName": "D_ArmourSetBonus"
+                }
+            ],
+            "FMODParam": "Metal"
+        },
+        {
+            "Name": "Alloy_Armor",
+            "SetBonus": [
+                {
+                    "RowName": "Alloy_Armor",
+                    "DataTableName": "D_ArmourSetBonus"
+                }
+            ],
+            "FMODParam": "Metal"
+        }
+    ]
+}
