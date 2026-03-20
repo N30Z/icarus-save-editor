@@ -19,8 +19,8 @@ Usage:
 """
 
 import tkinter as tk
-from tkinter import messagebox, simpledialog
-from typing import List, Optional, Tuple
+from tkinter import messagebox, simpledialog, filedialog
+from typing import List, Optional, Tuple, Dict
 import customtkinter as ctk
 
 from save_manager import SaveManager, find_steam_ids
@@ -35,6 +35,8 @@ from game_data import (
     format_stats, rowname_matches_catalog, find_talent_catalog_match,
     get_tech_tier_labels,
 )
+from gd_inventory_editor import GdInventoryEditor, INVENTORY_NAMES, _get_dyn_value, DYN_DURABILITY, DYN_STACK_COUNT
+from game_items import get_catalog, ItemInfo
 
 
 # ── Appearance ──────────────────────────────────────────────────────────────
@@ -1149,11 +1151,659 @@ class ProfileTab(ctk.CTkFrame):
 
 
 # ============================================================================
+# Prospect Inventory Tab  (GD.json — in-session player inventory)
+# ============================================================================
+
+# Inventory slot counts per ID (base game defaults)
+_INV_SLOT_COUNTS = {
+    2: 12,   # Equipment/Hotbar
+    3: 24,   # Backpack (can vary with backpack item)
+    4: 4,    # Belt
+    5: 10,   # Armor/Cosmetics
+    11: 1,
+    12: 1,
+}
+
+# Minimum search length for item dropdown
+_MIN_SEARCH_LEN = 3
+
+
+class _ItemSearchPopup(ctk.CTkToplevel):
+    """Dropdown-style popup with a search bar for selecting items.
+
+    Only shows results when the search bar has >= 3 characters.
+    """
+
+    def __init__(self, parent, catalog: Dict[str, ItemInfo],
+                 callback, x: int, y: int):
+        super().__init__(parent)
+        self.catalog = catalog
+        self.callback = callback
+        self._sorted_names = sorted(catalog.keys())
+
+        self.title("Select Item")
+        self.geometry(f"460x420+{x}+{y}")
+        self.resizable(False, True)
+        self.transient(parent)
+        self.grab_set()
+
+        self.columnconfigure(0, weight=1)
+        self.rowconfigure(1, weight=1)
+
+        # Search entry
+        self._search_var = ctk.StringVar()
+        self._search_var.trace_add("write", lambda *_: self._filter())
+        search = ctk.CTkEntry(self, textvariable=self._search_var,
+                              placeholder_text="Type at least 3 letters to search…",
+                              font=FONT_NORMAL)
+        search.grid(row=0, column=0, sticky="ew", padx=8, pady=(8, 4))
+        search.focus_set()
+
+        # Results listbox
+        lf = ctk.CTkFrame(self)
+        lf.grid(row=1, column=0, sticky="nsew", padx=8, pady=(0, 4))
+        lf.rowconfigure(0, weight=1)
+        lf.columnconfigure(0, weight=1)
+
+        self._listbox = tk.Listbox(
+            lf, bg="#1e1e1e", fg="#d0d0d0", selectbackground="#1f4f8a",
+            selectforeground="white", font=FONT_MONO,
+            bd=0, highlightthickness=0, relief="flat", activestyle="none",
+        )
+        self._listbox.grid(row=0, column=0, sticky="nsew")
+        sb = tk.Scrollbar(lf, orient="vertical", command=self._listbox.yview)
+        sb.grid(row=0, column=1, sticky="ns")
+        self._listbox.configure(yscrollcommand=sb.set)
+        self._listbox.bind("<Double-Button-1>", self._on_select)
+        self._listbox.bind("<Return>", self._on_select)
+
+        # Info label
+        self._info = ctk.CTkLabel(self, text="", font=FONT_SMALL,
+                                   text_color="gray", anchor="w")
+        self._info.grid(row=2, column=0, sticky="ew", padx=8, pady=(0, 4))
+
+        # Select button
+        ctk.CTkButton(self, text="Select", command=self._on_select).grid(
+            row=3, column=0, padx=8, pady=(0, 8), sticky="ew")
+
+        self._visible_names: List[str] = []
+        self._filter()
+
+        # Close on Escape
+        self.bind("<Escape>", lambda _: self.destroy())
+
+    def _filter(self):
+        q = self._search_var.get().strip()
+        self._listbox.delete(0, tk.END)
+        self._visible_names.clear()
+
+        if len(q) < _MIN_SEARCH_LEN:
+            self._info.configure(text=f"Type at least {_MIN_SEARCH_LEN} characters…")
+            return
+
+        q_lower = q.lower()
+        for name in self._sorted_names:
+            info = self.catalog[name]
+            # Search in both row name and display name
+            if q_lower in name.lower() or q_lower in info.display_name.lower():
+                stack_str = f"x{info.max_stack}" if info.max_stack > 1 else ""
+                dur_str = f" Dur:{info.max_durability}" if info.has_durability else ""
+                self._listbox.insert(tk.END,
+                    f"{info.display_name:<30} {stack_str:>6}{dur_str}")
+                self._visible_names.append(name)
+
+        self._info.configure(text=f"{len(self._visible_names)} matches")
+
+    def _on_select(self, _event=None):
+        sel = self._listbox.curselection()
+        if not sel or sel[0] >= len(self._visible_names):
+            return
+        name = self._visible_names[sel[0]]
+        self.callback(name)
+        self.destroy()
+
+
+class ProspectInventoryTab(ctk.CTkFrame):
+    """GUI tab for editing player inventories in a GD.json prospect save."""
+
+    def __init__(self, master, **kwargs):
+        super().__init__(master, **kwargs)
+        self._gd_editor: Optional[GdInventoryEditor] = None
+        self._catalog: Dict[str, ItemInfo] = {}
+        self._current_steam_id: Optional[str] = None
+        self._current_inv_id: Optional[int] = None
+        self._items: List[dict] = []       # items from get_items()
+        self._slot_widgets: list = []      # slot frame widgets for the grid
+        self._selected_slot_idx: Optional[int] = None  # index into _items
+
+        self._build()
+
+    def _build(self):
+        self.columnconfigure(0, weight=1)
+        self.rowconfigure(2, weight=1)
+
+        # ── Top bar: file picker + player/inventory selectors ──
+        top = ctk.CTkFrame(self, fg_color="transparent")
+        top.grid(row=0, column=0, sticky="ew", padx=8, pady=(8, 4))
+        top.columnconfigure(4, weight=1)
+
+        ctk.CTkLabel(top, text="Prospect Inventory", font=FONT_TITLE).grid(
+            row=0, column=0, sticky="w", padx=(0, 12))
+
+        ctk.CTkButton(top, text="Load GD.json", width=120,
+                      command=self._pick_file).grid(row=0, column=1, padx=4)
+
+        self._file_label = ctk.CTkLabel(top, text="No file loaded", font=FONT_SMALL,
+                                         text_color="gray")
+        self._file_label.grid(row=0, column=2, padx=8)
+
+        # Player selector
+        ctk.CTkLabel(top, text="Player:", font=FONT_NORMAL).grid(
+            row=0, column=5, padx=(16, 4))
+        self._player_var = ctk.StringVar(value="–")
+        self._player_menu = ctk.CTkOptionMenu(top, variable=self._player_var,
+                                               values=["–"], font=FONT_SMALL,
+                                               command=self._on_player_change, width=180)
+        self._player_menu.grid(row=0, column=6, padx=4)
+
+        # Inventory selector
+        ctk.CTkLabel(top, text="Inventory:", font=FONT_NORMAL).grid(
+            row=0, column=7, padx=(12, 4))
+        self._inv_var = ctk.StringVar(value="–")
+        self._inv_menu = ctk.CTkOptionMenu(top, variable=self._inv_var,
+                                            values=["–"], font=FONT_SMALL,
+                                            command=self._on_inv_change, width=180)
+        self._inv_menu.grid(row=0, column=8, padx=4)
+
+        # ── Action bar ──
+        actions = ctk.CTkFrame(self, fg_color="transparent")
+        actions.grid(row=1, column=0, sticky="ew", padx=8, pady=4)
+        actions.columnconfigure(5, weight=1)
+
+        ctk.CTkButton(actions, text="Add Item", width=100,
+                      command=self._add_item).grid(row=0, column=0, padx=4)
+        ctk.CTkButton(actions, text="Clear Inventory", width=120,
+                      fg_color="#c0392b", hover_color="#962d22",
+                      command=self._clear_inventory).grid(row=0, column=1, padx=4)
+        ctk.CTkButton(actions, text="Save GD.json", width=110,
+                      fg_color="#1a6a1a", hover_color="#228b22",
+                      command=self._save_gd).grid(row=0, column=2, padx=4)
+        ctk.CTkButton(actions, text="Save + Backup", width=120,
+                      fg_color="#1a6a1a", hover_color="#228b22",
+                      command=self._save_gd_backup).grid(row=0, column=3, padx=4)
+
+        self._status_label = ctk.CTkLabel(actions, text="", font=FONT_SMALL,
+                                           text_color="gray")
+        self._status_label.grid(row=0, column=5, sticky="e", padx=8)
+
+        # ── Inventory grid (scrollable) ──
+        self._grid_frame = ctk.CTkScrollableFrame(self, label_text="Inventory Slots")
+        self._grid_frame.grid(row=2, column=0, sticky="nsew", padx=8, pady=(0, 8))
+        self._grid_frame.columnconfigure(0, weight=1)
+
+    # ── File loading ──────────────────────────────────────────────────
+
+    def _pick_file(self):
+        path = filedialog.askopenfilename(
+            title="Open GD.json (Prospect Save)",
+            filetypes=[("JSON Files", "*.json"), ("All Files", "*.*")],
+        )
+        if not path:
+            return
+        self._load_gd(path)
+
+    def _load_gd(self, path: str):
+        try:
+            editor = GdInventoryEditor(path)
+            editor.load()
+            self._gd_editor = editor
+
+            # Load item catalog (lazy)
+            if not self._catalog:
+                self._catalog = get_catalog()
+
+            # Truncate display path
+            display_path = path
+            if len(display_path) > 60:
+                display_path = "…" + display_path[-57:]
+            self._file_label.configure(text=display_path)
+
+            # Populate player selector
+            players = editor.list_players()
+            if not players:
+                self._status_label.configure(text="No players found in save.",
+                                              text_color="#e09b3d")
+                return
+
+            player_ids = [p['steam_id'] for p in players]
+            self._player_menu.configure(values=player_ids)
+            self._player_var.set(player_ids[0])
+            self._current_steam_id = player_ids[0]
+            self._populate_inventories()
+
+            self._status_label.configure(
+                text=f"Loaded {len(players)} player(s)", text_color="#3bba6b")
+
+        except Exception as e:
+            messagebox.showerror("Load Error", f"Failed to load GD.json:\n{e}")
+
+    def _on_player_change(self, value: str):
+        self._current_steam_id = value
+        self._populate_inventories()
+
+    def _populate_inventories(self):
+        if not self._gd_editor or not self._current_steam_id:
+            return
+        invs = self._gd_editor.get_inventories(self._current_steam_id)
+        if not invs:
+            self._inv_menu.configure(values=["–"])
+            self._inv_var.set("–")
+            self._current_inv_id = None
+            self._render_slots()
+            return
+
+        labels = []
+        for inv in invs:
+            label = f"{inv['id']} - {inv['name']} ({inv['slot_count']} items)"
+            labels.append(label)
+
+        self._inv_menu.configure(values=labels)
+        self._inv_var.set(labels[0])
+        self._current_inv_id = invs[0]['id']
+        self._render_slots()
+
+    def _on_inv_change(self, value: str):
+        # Parse inv ID from label: "3 - Backpack (5 items)"
+        try:
+            self._current_inv_id = int(value.split(" - ")[0])
+        except (ValueError, IndexError):
+            self._current_inv_id = None
+        self._render_slots()
+
+    # ── Slot rendering ────────────────────────────────────────────────
+
+    def _render_slots(self):
+        """Render the inventory slot grid."""
+        # Clear existing
+        for w in self._grid_frame.winfo_children():
+            w.destroy()
+        self._slot_widgets.clear()
+        self._items.clear()
+
+        if not self._gd_editor or not self._current_steam_id or self._current_inv_id is None:
+            ctk.CTkLabel(self._grid_frame, text="Select a GD.json file, player, and inventory.",
+                         font=FONT_NORMAL, text_color="gray").grid(padx=16, pady=16)
+            return
+
+        items = self._gd_editor.get_items(self._current_steam_id, self._current_inv_id)
+        self._items = sorted(items, key=lambda x: x['location'] or 0)
+
+        max_slots = _INV_SLOT_COUNTS.get(self._current_inv_id, 24)
+
+        # Build a location -> item map
+        loc_map = {it['location']: it for it in self._items}
+
+        # Header row
+        header = ctk.CTkFrame(self._grid_frame, fg_color="#1a1a2e")
+        header.grid(row=0, column=0, sticky="ew", padx=2, pady=(0, 4))
+        header.columnconfigure(1, weight=1)
+        for col, (text, w) in enumerate([
+            ("Slot", 50), ("Item", 260), ("Count", 70),
+            ("Durability", 90), ("", 200),
+        ]):
+            ctk.CTkLabel(header, text=text, font=FONT_HEADER, width=w,
+                         anchor="w").grid(row=0, column=col, padx=6, pady=4)
+
+        # Slot rows
+        for slot_idx in range(max_slots):
+            item = loc_map.get(slot_idx)
+            self._build_slot_row(slot_idx, item, row_num=slot_idx + 1)
+
+    def _build_slot_row(self, slot_idx: int, item: Optional[dict], row_num: int):
+        """Build a single slot row widget."""
+        row_frame = ctk.CTkFrame(self._grid_frame,
+                                  fg_color="#2a2a2a" if row_num % 2 == 0 else "#242424")
+        row_frame.grid(row=row_num, column=0, sticky="ew", padx=2, pady=1)
+        row_frame.columnconfigure(1, weight=1)
+
+        # Slot number
+        ctk.CTkLabel(row_frame, text=str(slot_idx), font=FONT_MONO, width=50,
+                     anchor="center").grid(row=0, column=0, padx=4, pady=4)
+
+        if item:
+            item_name = item['item']
+            catalog_info = self._catalog.get(item_name)
+            display_name = catalog_info.display_name if catalog_info else item_name
+
+            # Item name (clickable to change)
+            item_btn = ctk.CTkButton(
+                row_frame, text=f"{display_name}  ({item_name})",
+                font=FONT_MONO, width=260, anchor="w",
+                fg_color="transparent", hover_color="#3a3a4a",
+                text_color="#4da6ff",
+                command=lambda s=slot_idx: self._change_item(s),
+            )
+            item_btn.grid(row=0, column=1, padx=4, pady=4, sticky="w")
+
+            # Count
+            count_val = item.get('count') or 1
+            max_stack = catalog_info.max_stack if catalog_info else 9999
+            count_var = ctk.StringVar(value=str(count_val))
+            count_entry = ctk.CTkEntry(row_frame, textvariable=count_var,
+                                        font=FONT_MONO, width=70)
+            count_entry.grid(row=0, column=2, padx=4, pady=4)
+            count_entry.bind("<FocusOut>",
+                lambda _e, s=slot_idx, v=count_var: self._update_count(s, v))
+            count_entry.bind("<Return>",
+                lambda _e, s=slot_idx, v=count_var: self._update_count(s, v))
+
+            # Durability (number input, not slider)
+            dur_val = item.get('durability')
+            if dur_val is not None:
+                max_dur = catalog_info.max_durability if catalog_info else dur_val
+                dur_var = ctk.StringVar(value=str(dur_val))
+                dur_frame = ctk.CTkFrame(row_frame, fg_color="transparent")
+                dur_frame.grid(row=0, column=3, padx=4, pady=4)
+                dur_entry = ctk.CTkEntry(dur_frame, textvariable=dur_var,
+                                          font=FONT_MONO, width=70)
+                dur_entry.pack(side="left")
+                dur_entry.bind("<FocusOut>",
+                    lambda _e, s=slot_idx, v=dur_var: self._update_durability(s, v))
+                dur_entry.bind("<Return>",
+                    lambda _e, s=slot_idx, v=dur_var: self._update_durability(s, v))
+                if max_dur > 0:
+                    ctk.CTkLabel(dur_frame, text=f"/ {max_dur}",
+                                 font=FONT_SMALL, text_color="gray").pack(side="left", padx=4)
+            else:
+                ctk.CTkLabel(row_frame, text="–", font=FONT_MONO, width=90,
+                             text_color="gray").grid(row=0, column=3, padx=4, pady=4)
+
+            # Action buttons
+            btn_frame = ctk.CTkFrame(row_frame, fg_color="transparent")
+            btn_frame.grid(row=0, column=4, padx=4, pady=4)
+
+            if catalog_info and catalog_info.has_durability and dur_val is not None:
+                ctk.CTkButton(btn_frame, text="Max Dur", width=70,
+                              font=FONT_SMALL, fg_color="#7f6000", hover_color="#5c4700",
+                              command=lambda s=slot_idx: self._max_durability(s)).pack(
+                    side="left", padx=2)
+
+            ctk.CTkButton(btn_frame, text="Remove", width=70,
+                          font=FONT_SMALL, fg_color="#c0392b", hover_color="#962d22",
+                          command=lambda s=slot_idx: self._remove_slot(s)).pack(
+                side="left", padx=2)
+
+            # Show attachment indicator if item has InventoryContainer
+            if catalog_info and catalog_info.has_inventory:
+                ctk.CTkLabel(btn_frame, text="[has attachments]",
+                             font=FONT_SMALL, text_color="#7ecff4").pack(
+                    side="left", padx=6)
+
+            # --- Nested inventory (attachments / LivingItemSlots) ---
+            self._render_nested_inventory(row_frame, slot_idx, item, row_num)
+
+        else:
+            # Empty slot
+            ctk.CTkLabel(row_frame, text="(empty)", font=FONT_MONO, width=260,
+                         text_color="#555555", anchor="w").grid(
+                row=0, column=1, padx=4, pady=4, sticky="w")
+            ctk.CTkButton(row_frame, text="Set Item", width=80, font=FONT_SMALL,
+                          command=lambda s=slot_idx: self._set_new_item(s)).grid(
+                row=0, column=4, padx=4, pady=4)
+
+    def _render_nested_inventory(self, parent_frame, slot_idx: int,
+                                  item: dict, row_num: int):
+        """If the item has LivingItemSlots, render them as nested rows."""
+        if not self._gd_editor or not self._current_steam_id:
+            return
+
+        # Find the actual slot FPropertyTag to inspect LivingItemSlots
+        player = self._gd_editor.players.get(self._current_steam_id)
+        if not player:
+            return
+
+        saved_inv = next((p for p in player.props if p.name == 'SavedInventories'), None)
+        if not saved_inv:
+            return
+
+        slot_prop = None
+        for entry in saved_inv.nested:
+            iid_p = next((p for p in entry.nested if p.name == 'InventoryID'), None)
+            if not iid_p or iid_p.value != self._current_inv_id:
+                continue
+            slots_p = next((p for p in entry.nested if p.name == 'Slots'), None)
+            if not slots_p:
+                continue
+            for s in slots_p.nested:
+                loc_p = next((p for p in s.nested if p.name == 'Location'), None)
+                if loc_p and loc_p.value == slot_idx:
+                    slot_prop = s
+                    break
+            break
+
+        if not slot_prop:
+            return
+
+        # Check LivingItemSlots
+        living = next((p for p in slot_prop.nested if p.name == 'LivingItemSlots'), None)
+        if not living or not living.nested:
+            return
+
+        # Render nested items
+        nested_frame = ctk.CTkFrame(parent_frame, fg_color="#1a2a3a")
+        nested_frame.grid(row=1, column=0, columnspan=5, sticky="ew", padx=(50, 8), pady=(0, 4))
+        nested_frame.columnconfigure(1, weight=1)
+
+        ctk.CTkLabel(nested_frame, text="Attachments:", font=FONT_SMALL,
+                     text_color="#7ecff4").grid(row=0, column=0, columnspan=4,
+                                                 sticky="w", padx=8, pady=(4, 2))
+
+        for i, sub_slot in enumerate(living.nested):
+            sub_item = next((p for p in sub_slot.nested if p.name == 'ItemStaticData'), None)
+            sub_loc = next((p for p in sub_slot.nested if p.name == 'Location'), None)
+
+            if sub_item and sub_item.value:
+                sub_name = sub_item.value
+                sub_info = self._catalog.get(sub_name)
+                sub_display = sub_info.display_name if sub_info else sub_name
+                sub_dur = _get_dyn_value(sub_slot, DYN_DURABILITY)
+                sub_count = _get_dyn_value(sub_slot, DYN_STACK_COUNT)
+
+                loc_str = str(sub_loc.value) if sub_loc else "?"
+                dur_str = f"Dur: {sub_dur}" if sub_dur is not None else ""
+                count_str = f"x{sub_count}" if sub_count and sub_count > 1 else ""
+
+                ctk.CTkLabel(nested_frame,
+                    text=f"  [{loc_str}] {sub_display} ({sub_name}) {count_str} {dur_str}",
+                    font=FONT_SMALL, text_color="#a0c0e0", anchor="w").grid(
+                    row=i + 1, column=0, columnspan=4, sticky="w", padx=12, pady=1)
+
+    # ── Item actions ──────────────────────────────────────────────────
+
+    def _change_item(self, slot_idx: int):
+        """Open item search popup to change the item in a slot."""
+        if not self._catalog:
+            return
+        x = self.winfo_rootx() + 200
+        y = self.winfo_rooty() + 100
+        _ItemSearchPopup(self, self._catalog,
+                         lambda name: self._do_change_item(slot_idx, name), x, y)
+
+    def _do_change_item(self, slot_idx: int, item_name: str):
+        if not self._gd_editor or not self._current_steam_id or self._current_inv_id is None:
+            return
+        catalog_info = self._catalog.get(item_name)
+        dur = catalog_info.max_durability if catalog_info and catalog_info.has_durability else None
+        count = 1
+
+        self._gd_editor.set_item(
+            self._current_steam_id, self._current_inv_id, slot_idx,
+            item_name, count=count, durability=dur)
+        self._status_label.configure(
+            text=f"Changed slot {slot_idx} to {item_name}", text_color="#3bba6b")
+        self._render_slots()
+
+    def _set_new_item(self, slot_idx: int):
+        """Set an item in an empty slot via search popup."""
+        if not self._catalog:
+            return
+        x = self.winfo_rootx() + 200
+        y = self.winfo_rooty() + 100
+        _ItemSearchPopup(self, self._catalog,
+                         lambda name: self._do_set_new_item(slot_idx, name), x, y)
+
+    def _do_set_new_item(self, slot_idx: int, item_name: str):
+        if not self._gd_editor or not self._current_steam_id or self._current_inv_id is None:
+            return
+        catalog_info = self._catalog.get(item_name)
+        dur = catalog_info.max_durability if catalog_info and catalog_info.has_durability else None
+        count = 1
+
+        self._gd_editor.set_item(
+            self._current_steam_id, self._current_inv_id, slot_idx,
+            item_name, count=count, durability=dur)
+        self._status_label.configure(
+            text=f"Set slot {slot_idx} to {item_name}", text_color="#3bba6b")
+        self._render_slots()
+
+    def _update_count(self, slot_idx: int, var: ctk.StringVar):
+        """Update item count from entry field."""
+        if not self._gd_editor or not self._current_steam_id or self._current_inv_id is None:
+            return
+        try:
+            count = int(var.get())
+            if count < 1:
+                count = 1
+        except ValueError:
+            return
+
+        # Find current item at this slot
+        item = next((it for it in self._items if it['location'] == slot_idx), None)
+        if not item:
+            return
+
+        dur = item.get('durability')
+        self._gd_editor.set_item(
+            self._current_steam_id, self._current_inv_id, slot_idx,
+            item['item'], count=count, durability=dur)
+        self._status_label.configure(
+            text=f"Slot {slot_idx}: count = {count}", text_color="#3bba6b")
+
+    def _update_durability(self, slot_idx: int, var: ctk.StringVar):
+        """Update item durability from entry field."""
+        if not self._gd_editor or not self._current_steam_id or self._current_inv_id is None:
+            return
+        try:
+            dur = int(var.get())
+            if dur < 0:
+                dur = 0
+        except ValueError:
+            return
+
+        item = next((it for it in self._items if it['location'] == slot_idx), None)
+        if not item:
+            return
+
+        count = item.get('count') or 1
+        self._gd_editor.set_item(
+            self._current_steam_id, self._current_inv_id, slot_idx,
+            item['item'], count=count, durability=dur)
+        self._status_label.configure(
+            text=f"Slot {slot_idx}: durability = {dur}", text_color="#3bba6b")
+
+    def _max_durability(self, slot_idx: int):
+        """Set durability to max for a slot."""
+        item = next((it for it in self._items if it['location'] == slot_idx), None)
+        if not item:
+            return
+        catalog_info = self._catalog.get(item['item'])
+        if not catalog_info or not catalog_info.has_durability:
+            return
+        max_dur = catalog_info.max_durability
+        count = item.get('count') or 1
+        self._gd_editor.set_item(
+            self._current_steam_id, self._current_inv_id, slot_idx,
+            item['item'], count=count, durability=max_dur)
+        self._status_label.configure(
+            text=f"Slot {slot_idx}: durability set to max ({max_dur})", text_color="#3bba6b")
+        self._render_slots()
+
+    def _remove_slot(self, slot_idx: int):
+        """Remove item from a slot."""
+        if not self._gd_editor or not self._current_steam_id or self._current_inv_id is None:
+            return
+        self._gd_editor.remove_item(self._current_steam_id, self._current_inv_id, slot_idx)
+        self._status_label.configure(
+            text=f"Removed item from slot {slot_idx}", text_color="#e09b3d")
+        self._render_slots()
+
+    def _add_item(self):
+        """Add item to first free slot via search popup."""
+        if not self._gd_editor or not self._current_steam_id or self._current_inv_id is None:
+            self._status_label.configure(text="Load a file first.", text_color="#e09b3d")
+            return
+        if not self._catalog:
+            return
+
+        # Find first free slot
+        items = self._gd_editor.get_items(self._current_steam_id, self._current_inv_id)
+        used = {it['location'] for it in items}
+        max_slots = _INV_SLOT_COUNTS.get(self._current_inv_id, 24)
+        free_slot = None
+        for i in range(max_slots):
+            if i not in used:
+                free_slot = i
+                break
+        if free_slot is None:
+            self._status_label.configure(text="Inventory is full!", text_color="#e09b3d")
+            return
+
+        x = self.winfo_rootx() + 200
+        y = self.winfo_rooty() + 100
+        _ItemSearchPopup(self, self._catalog,
+                         lambda name: self._do_set_new_item(free_slot, name), x, y)
+
+    def _clear_inventory(self):
+        """Clear all items from the current inventory."""
+        if not self._gd_editor or not self._current_steam_id or self._current_inv_id is None:
+            return
+        if not messagebox.askyesno("Clear Inventory",
+                f"Remove ALL items from {INVENTORY_NAMES.get(self._current_inv_id, 'this inventory')}?"):
+            return
+        n = self._gd_editor.clear_inventory(self._current_steam_id, self._current_inv_id)
+        self._status_label.configure(text=f"Cleared {n} items.", text_color="#e09b3d")
+        self._render_slots()
+
+    # ── Save ──────────────────────────────────────────────────────────
+
+    def _save_gd(self):
+        if not self._gd_editor:
+            self._status_label.configure(text="No file loaded.", text_color="#e09b3d")
+            return
+        try:
+            self._gd_editor.save(backup=False)
+            self._status_label.configure(text="Saved GD.json", text_color="#3bba6b")
+        except Exception as e:
+            messagebox.showerror("Save Error", str(e))
+
+    def _save_gd_backup(self):
+        if not self._gd_editor:
+            self._status_label.configure(text="No file loaded.", text_color="#e09b3d")
+            return
+        try:
+            self._gd_editor.save(backup=True)
+            self._status_label.configure(text="Saved GD.json (with backup)",
+                                          text_color="#3bba6b")
+        except Exception as e:
+            messagebox.showerror("Save Error", str(e))
+
+
+# ============================================================================
 # Main Application
 # ============================================================================
 
 _ALL_TABS = ("Mounts", "Character", "Tech Tree", "Talents",
-             "Workshop", "Inventory", "Profile")
+             "Workshop", "Inventory", "Prospect Inventory", "Profile")
 
 
 class IcarusEditorApp(ctk.CTk):
@@ -1175,6 +1825,7 @@ class IcarusEditorApp(ctk.CTk):
         self._talents_tab: Optional[TalentsTab] = None
         self._workshop_tab: Optional[WorkshopTab] = None
         self._inv_tab: Optional[InventoryTab] = None
+        self._prospect_inv_tab: Optional[ProspectInventoryTab] = None
         self._prof_tab: Optional[ProfileTab] = None
 
         self._build_ui()
@@ -1340,6 +1991,11 @@ class IcarusEditorApp(ctk.CTk):
             ctk.CTkLabel(self.tabview.tab("Inventory"),
                          text="MetaInventory.json not found.", font=FONT_NORMAL).grid()
             self._inv_tab = None
+
+        # Prospect Inventory (GD.json — always available, uses file picker)
+        self._prospect_inv_tab = ProspectInventoryTab(
+            self.tabview.tab("Prospect Inventory"))
+        self._prospect_inv_tab.grid(row=0, column=0, sticky="nsew")
 
         # Profile
         if self._prof_editor:
