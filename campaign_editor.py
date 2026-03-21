@@ -21,6 +21,7 @@ import base64
 import zlib
 import struct
 import shutil
+import hashlib
 from typing import List, Dict, Optional, Set
 
 from ue4_properties import PropertySerializer, FPropertyTag
@@ -244,7 +245,11 @@ class CampaignEditor:
 
         with open(self.gd_path, 'r', encoding='utf-8') as f:
             gd_data = json.load(f)
-        gd_data['ProspectBlob']['BinaryBlob'] = b64_blob
+        blob = gd_data['ProspectBlob']
+        blob['BinaryBlob'] = b64_blob
+        blob['Hash'] = hashlib.sha1(new_binary).hexdigest()
+        blob['TotalLength'] = len(compressed)
+        blob['DataLength'] = len(compressed)
         with open(self.gd_path, 'w', encoding='utf-8') as f:
             json.dump(gd_data, f, separators=(',', ':'), ensure_ascii=False)
 
