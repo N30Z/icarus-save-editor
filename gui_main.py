@@ -37,6 +37,7 @@ from game_data import (
 )
 from gd_inventory_editor import GdInventoryEditor, INVENTORY_NAMES, _get_dyn_value, DYN_DURABILITY, DYN_STACK_COUNT
 from game_items import get_catalog, ItemInfo
+from campaign_editor import CampaignEditor, CAMPAIGN_STAGES
 
 
 # ── Appearance ──────────────────────────────────────────────────────────────
@@ -1856,11 +1857,148 @@ class ProspectInventoryTab(ctk.CTkFrame):
 
 
 # ============================================================================
+# Campaign Tab
+# ============================================================================
+
+class CampaignTab(ctk.CTkFrame):
+    """GUI tab for toggling ambient world spawning effects (GD.json campaign stages)."""
+
+    def __init__(self, master, **kwargs):
+        super().__init__(master, **kwargs)
+        self._ce: Optional[CampaignEditor] = None
+        self._switches: Dict[str, ctk.CTkSwitch] = {}   # row_name → switch
+        self._switch_vars: Dict[str, tk.BooleanVar] = {} # row_name → var
+        self._build()
+
+    def _build(self):
+        self.columnconfigure(0, weight=1)
+        self.rowconfigure(2, weight=1)
+
+        # ── Top bar ──────────────────────────────────────────────────────
+        top = ctk.CTkFrame(self, fg_color="transparent")
+        top.grid(row=0, column=0, sticky="ew", padx=8, pady=(8, 4))
+
+        ctk.CTkLabel(top, text="Campaign Spawning", font=FONT_TITLE).pack(side="left", padx=(0, 16))
+
+        ctk.CTkButton(top, text="Load GD.json", width=120,
+                      command=self._pick_file).pack(side="left", padx=4)
+
+        self._file_label = ctk.CTkLabel(top, text="No file loaded", font=FONT_SMALL,
+                                         text_color="gray")
+        self._file_label.pack(side="left", padx=8)
+
+        # ── Action bar ───────────────────────────────────────────────────
+        actions = ctk.CTkFrame(self, fg_color="transparent")
+        actions.grid(row=1, column=0, sticky="ew", padx=8, pady=4)
+
+        ctk.CTkButton(actions, text="Save GD.json", width=110,
+                      fg_color="#1a6a1a", hover_color="#228b22",
+                      command=self._save).pack(side="left", padx=4)
+        ctk.CTkButton(actions, text="Save + Backup", width=120,
+                      fg_color="#1a6a1a", hover_color="#228b22",
+                      command=self._save_backup).pack(side="left", padx=4)
+
+        self._status_label = ctk.CTkLabel(actions, text="", font=FONT_SMALL, text_color="gray")
+        self._status_label.pack(side="right", padx=8)
+
+        # ── Toggle list ──────────────────────────────────────────────────
+        scroll = ctk.CTkScrollableFrame(self, label_text="Ambient World Spawning Effects")
+        scroll.grid(row=2, column=0, sticky="nsew", padx=8, pady=(0, 8))
+        scroll.columnconfigure(1, weight=1)
+
+        note = ("Toggles control whether ambient world spawning is active.\n"
+                "Campaign quest progress is NOT changed.")
+        ctk.CTkLabel(scroll, text=note, font=FONT_SMALL, text_color="#aaa",
+                     justify="left").grid(row=0, column=0, columnspan=3, sticky="w",
+                                          padx=8, pady=(4, 12))
+
+        for i, stage in enumerate(CAMPAIGN_STAGES, start=1):
+            row_name = stage['row']
+
+            var = tk.BooleanVar(value=False)
+            self._switch_vars[row_name] = var
+
+            sw = ctk.CTkSwitch(scroll, text="", variable=var, onvalue=True, offvalue=False,
+                                width=50, state="disabled")
+            sw.grid(row=i, column=0, padx=(8, 4), pady=6, sticky="w")
+            self._switches[row_name] = sw
+
+            # Effect label (bold) + description
+            label_frame = ctk.CTkFrame(scroll, fg_color="transparent")
+            label_frame.grid(row=i, column=1, sticky="w", padx=4)
+
+            ctk.CTkLabel(label_frame,
+                         text=f"{stage['label']}  —  {stage['effect']}",
+                         font=FONT_NORMAL, anchor="w").pack(side="top", anchor="w")
+            ctk.CTkLabel(label_frame, text=stage['description'],
+                         font=FONT_SMALL, text_color="#aaa", anchor="w").pack(side="top", anchor="w")
+
+            # Row name tag on the right
+            ctk.CTkLabel(scroll, text=row_name, font=FONT_MONO,
+                         text_color="#666").grid(row=i, column=2, padx=12, sticky="e")
+
+        scroll.columnconfigure(2, weight=0)
+
+    # ── File loading ──────────────────────────────────────────────────
+
+    def _pick_file(self):
+        path = filedialog.askopenfilename(
+            title="Open GD.json (Prospect Save)",
+            filetypes=[("JSON Files", "*.json"), ("All Files", "*.*")],
+        )
+        if not path:
+            return
+        self._load_gd(path)
+
+    def _load_gd(self, path: str):
+        try:
+            ce = CampaignEditor(path)
+            ce.load()
+            self._ce = ce
+
+            display_path = path if len(path) <= 60 else "…" + path[-57:]
+            self._file_label.configure(text=display_path)
+
+            active = ce.get_active_talents()
+            for row_name, var in self._switch_vars.items():
+                var.set(row_name in active)
+                self._switches[row_name].configure(state="normal")
+
+            self._status_label.configure(
+                text=f"Loaded  ({len(active)} active stage(s))", text_color="#3bba6b")
+
+        except Exception as exc:
+            self._status_label.configure(text=f"Error: {exc}", text_color="#e05252")
+
+    # ── Save ──────────────────────────────────────────────────────────
+
+    def _save(self):
+        self._do_save(backup=False)
+
+    def _save_backup(self):
+        self._do_save(backup=True)
+
+    def _do_save(self, backup: bool):
+        if not self._ce:
+            self._status_label.configure(text="No file loaded.", text_color="#e09b3d")
+            return
+        try:
+            for row_name, var in self._switch_vars.items():
+                self._ce.set_talent(row_name, var.get())
+            self._ce.save(backup=backup)
+            active = self._ce.get_active_talents()
+            self._status_label.configure(
+                text=f"Saved  ({len(active)} active stage(s))", text_color="#3bba6b")
+        except Exception as exc:
+            self._status_label.configure(text=f"Error: {exc}", text_color="#e05252")
+
+
+# ============================================================================
 # Main Application
 # ============================================================================
 
 _ALL_TABS = ("Mounts", "Character", "Tech Tree", "Talents",
-             "Workshop", "Inventory", "Prospect Inventory", "Profile")
+             "Workshop", "Inventory", "Prospect Inventory", "Campaign", "Profile")
 
 
 class IcarusEditorApp(ctk.CTk):
@@ -1883,6 +2021,7 @@ class IcarusEditorApp(ctk.CTk):
         self._workshop_tab: Optional[WorkshopTab] = None
         self._inv_tab: Optional[InventoryTab] = None
         self._prospect_inv_tab: Optional[ProspectInventoryTab] = None
+        self._campaign_tab: Optional[CampaignTab] = None
         self._prof_tab: Optional[ProfileTab] = None
 
         self._build_ui()
@@ -2053,6 +2192,10 @@ class IcarusEditorApp(ctk.CTk):
         self._prospect_inv_tab = ProspectInventoryTab(
             self.tabview.tab("Prospect Inventory"))
         self._prospect_inv_tab.grid(row=0, column=0, sticky="nsew")
+
+        # Campaign (GD.json — always available, uses file picker)
+        self._campaign_tab = CampaignTab(self.tabview.tab("Campaign"))
+        self._campaign_tab.grid(row=0, column=0, sticky="nsew")
 
         # Profile
         if self._prof_editor:
