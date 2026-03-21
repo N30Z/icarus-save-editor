@@ -500,7 +500,7 @@ class GdInventoryEditor:
         total_delta = 0
 
         for player in sorted(dirty, key=lambda p: p.bd_data_pos):
-            new_bd = self._ps.serialize(player.props, add_trailing=False)
+            new_bd = self._ps.serialize(player.props, add_trailing=True)
             new_count = len(new_bd)
             old_count = player.bd_data_len
             delta     = new_count - old_count
@@ -537,6 +537,7 @@ class GdInventoryEditor:
         blob['Hash'] = hashlib.sha1(new_binary).hexdigest()
         blob['TotalLength'] = len(compressed)
         blob['DataLength'] = len(compressed)
+        blob['UncompressedLength'] = len(new_binary)
         with open(self.gd_path, 'w', encoding='utf-8') as f:
             json.dump(gd_data, f, separators=(',', ':'), ensure_ascii=False)
 

@@ -438,7 +438,7 @@ class CampaignEditor:
         if backup:
             shutil.copy2(self.gd_path, self.gd_path + '.backup')
 
-        new_bd    = self._ps.serialize(self._props, add_trailing=False)
+        new_bd    = self._ps.serialize(self._props, add_trailing=True)
         new_count = len(new_bd)
         old_count = self._bd_data_len
         delta     = new_count - old_count
@@ -466,6 +466,7 @@ class CampaignEditor:
         blob['Hash'] = hashlib.sha1(new_binary).hexdigest()
         blob['TotalLength'] = len(compressed)
         blob['DataLength'] = len(compressed)
+        blob['UncompressedLength'] = len(new_binary)
         with open(self.gd_path, 'w', encoding='utf-8') as f:
             json.dump(gd_data, f, separators=(',', ':'), ensure_ascii=False)
 
