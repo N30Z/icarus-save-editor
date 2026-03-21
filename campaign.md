@@ -1,230 +1,322 @@
-# Quarrite Campaign — GD.json Analysis
+# Quarrite Campaign — Full Analysis
 
 ## What Is the Quarrite Campaign?
 
-"Quarrite" is the in-game name for the **Rock Golem** creature (`GH_RG_*` prefix = Great Hunt Rock Golem).
-The campaign is a multi-stage Great Hunt story arc that runs on Olympus (`Terrain_016`).
-
-Available campaign stages (from `D_Quests.json`):
-
-| Stage | Quest Key | Description |
-|-------|-----------|-------------|
-| A | `GH_RG_A` | First contact: miners disappear, find and secure the mining outpost |
-| B | `GH_RG_B` | Cave investigation (caveworms warning) |
-| C | `GH_RG_C` | *(not started in this save)* |
-| C2 | `GH_RG_C2` | *(not started)* |
-| D | `GH_RG_D` | *(not started)* |
-| D2 | `GH_RG_D2` | *(not started)* |
-| E | `GH_RG_E` | *(not started)* |
+"Quarrite" is the in-game name for the **Rock Golem** creature.
+The campaign is the Great Hunt story arc for this creature (`GH_RG_*` prefix = Great Hunt Rock Golem).
+It runs on **Olympus** (`Terrain_016`). The talent tree is named `GreatHunt_RockGolem`.
 
 ---
 
-## Current Campaign State (This Save File)
+## Full Campaign Structure
 
-**Prospect:** `Outpost006_Olympus` — Terrain_016, elapsed ~91 hours.
+### Flow Diagram
 
-### Quest Manager (`IcarusQuestManagerRecorderComponent`, blob index 52)
+```
+GH_RG_A
+  └─ GH_RG_B
+       ├─ [Optional] GH_RG_O1  (after B, Quarrite Dens at GRID M6)
+       └─ [Choice] ──────────────────────────────────────────────
+            ├─ GH_RG_C  (save Mining Outpost Beta, rescue miners)
+            │    ├─ [Optional] GH_RG_O2  (test weapons, GRID B14/C15)
+            │    └─ GH_RG_C2  (observation outpost, collect armor samples)
+            │         └─ [reroute] ──► GH_RG_E  ─┐
+            │                                     ├─► GH_RG_Hunt (Final Boss)
+            └─ GH_RG_D  (arctic exotic cluster)  │
+                 └─ GH_RG_D2  (rebuild outpost)  │
+                      └─ [Choice] ────────────────┤
+                           ├─ GH_RG_F  ──────────►┘
+                           └─ GH_RG_E  ──────────►┘
+```
 
-| Field | Value | Meaning |
-|-------|-------|---------|
-| `QuestActorName` | `BPQ_GH_RG_B_C` | Active quest blueprint: Campaign B |
-| `bMissionComplete` | `True` | B is complete |
-| `bRunQuests` | `True` | Quest system is live |
-| `FactionMissionName` | `None` | No faction mission attached |
-| `DynamicQuestDifficulty` | `2` | Medium |
+**Current save state:** `GH_RG_A` ✅ → `GH_RG_B` ✅ → *next stage not yet started*
 
-### World Talent Manager (`WorldTalentManagerRecorderComponent`, blob index 53)
+### Stage Summary (from `D_GreatHunts.json` + `D_Quests.json`)
 
-Stores which campaign stages are "unlocked" at world level:
+| Stage | Type | Quest Count | WorldStat Set On Completion | Key Activity |
+|-------|------|-------------|----------------------------|--------------|
+| **A** | Main | 10 | `WorldJuvenileRockGolemDesertSpawn` | Investigate miners, secure outpost, collapse burrow |
+| **B** | Main | 22 | `WorldJuvenileRockGolemWorldSpawn` | Scan caves, clear caveworms, collapse 3 cave burrows |
+| **O1** | Optional | 12 | *(none)* | Organic Analyzer, craft Drill Arrows |
+| **C** | Choice | 20 | `WorldLandsharksAppearInCaves` | Rescue Biggs & Wedge from Outpost Beta |
+| **D** | Choice | 14 | `WorldCavewormsSpawnOutsideCaves` | Arctic exotic cluster, kill Exotic Infused Quarrite |
+| **O2** | Optional | 7 | `WorldRockGolemExplosiveWeakness` | Test weapon types on Quarrites |
+| **C2** | Main (after C) | 30 | `WorldJuvenileRockGolemExoticSpawn` | Build obs outpost, collect 4 armor fragment variants |
+| **D2** | Main (after D) | 29 | *(none)* | Rebuild destroyed Outpost Beta, kill Landshark |
+| **E** | Choice | 24 | `WorldJuvenileRockGolemLootIncreased` | Restock outpost, rescue Voss & Harken from caves |
+| **F** | Choice | 18 | `WorldRockGolemMinionsReduced` | ECHO device, track tunnels, scan Quarrites |
+| **Hunt** | Final | 5 | *(none)* | Resonance Surveyor → enter den → kill UNSTABLE QUARRITE |
 
-| Talent Row | Rank |
-|------------|------|
-| `GH_RG_A` | 1 |
-| `GH_RG_B` | 1 |
+> **Choice nodes (MutuallyExclusive):** After B choose C **or** D (mutually exclusive). After D2 choose E **or** F. C2 and E/F all funnel into the final Hunt.
 
-> **Critical:** These world talent records are what drive map changes. When Rank 1 is set for a stage,
-> the game places prebuilt structures and activates spawners for that stage.
+### WorldStats — What They Do
 
-### Per-Player Mission History (in `GameModeStateRecorderComponent`, blob index 45)
+Each completed stage sets a persistent world-level stat flag that changes the game environment. These are stored in the `WorldTalentManager` (per-world) and in each player's Profile (per-player):
 
-Tracked inside `MissionHistory` array, per player:
+| Flag | Effect on the World |
+|------|---------------------|
+| `WorldJuvenileRockGolemDesertSpawn` (after A) | Quarrites start appearing in desert zones |
+| `WorldJuvenileRockGolemWorldSpawn` (after B) | Quarrites spawn across the whole map (current state of this save) |
+| `WorldLandsharksAppearInCaves` (after C) | Landsharks begin appearing in caves |
+| `WorldCavewormsSpawnOutsideCaves` (after D) | Caveworms escape caves and roam outside |
+| `WorldJuvenileRockGolemExoticSpawn` (after C2) | Exotic-infused Quarrites start spawning |
+| `WorldRockGolemExplosiveWeakness` (after O2) | Quarrites gain explosive weakness |
+| `WorldJuvenileRockGolemLootIncreased` (after E) | Quarrite loot table improves |
+| `WorldRockGolemMinionsReduced` (after F) | Fewer Quarrite minions in the boss fight |
 
-| Player (Steam ID) | `bMissionCompleted` | `CurrentMissionIndex` | Missions completed |
-|-------------------|---------------------|-----------------------|--------------------|
-| 76561198119356626 | **True** | 13 | `GH_RG_A`, `GH_RG_B` |
-| 76561198162166460 | **True** | 13 | `GH_RG_A`, `GH_RG_B` |
-| 76561199178830519 | False | 2 | partial |
-| 76561198116205199 | False | 0 | — |
-
-Mission end times (game-seconds):
-- `GH_RG_A`: 292,406 s (~81 hours in)
-- `GH_RG_B`: 296,987 s (~82 hours in)
-
----
-
-## How the Campaign Changes the Map
-
-The campaign affects the world through **three systems**, each stored independently:
-
-### 1. Prebuilt Structures (`PrebuiltStructureRecorderComponent`)
-
-Entire prefab areas placed by quest progression, stored as actor blobs with `OwnerResolvePolicy: FindOrRespawn`.
-
-| Blob # | Structure Name | Contents |
-|--------|----------------|----------|
-| 2177 | `GH_RG_A_MiningOutpost` | Grid floors, notes, mining rails, carts, equipment, furniture, hitching posts |
-| 2468 | `GH_RG_B_Cave` | Cave interior with props |
-| 2513 | `GH_RG_B_Cave2` | Second cave |
-| 2549 | `GH_RG_B_Cave3` | Third cave (furnace, crates, animal beds, hitching posts) |
-
-All four structures use `FindOrRespawn` — if the actor is missing from the map, it gets recreated from the save data.
-
-### 2. Rock Golem Spawners (`ActorStateRecorderComponent`, `FindOrRespawn`)
-
-These actors control where and how many Quarrites spawn:
-
-| Blob # | Actor | Location (UE4 units) | NumSpawned | bGeneratedRewards |
-|--------|-------|----------------------|------------|-------------------|
-| 2149 | `BP_Rock_Golem_Spawner_Drill_C` | (262094, -171599, -30423) | 2 | **True** |
-| 2539 | `BP_Rock_Golem_Spawner_C` | (158151, -255770, -32144) | 2 | False |
-| 2540 | `BP_Rock_Golem_Spawner_C` | (126073, -186515, -34391) | 2 | False |
-| 2541 | `BP_Rock_Golem_Spawner_C` | (153673, -331125, -32341) | 1 | **True** |
-
-Each spawner tracks two state variables:
-- `RecordedNumSpawned` (IntVar) — how many Quarrites this spawner has already created
-- `bGeneratedRewards` (BoolVar) — whether this spawner has paid out its loot
-
-### 3. Den Entrance Teleport (`BaseLevelTeleportRecorderComponent`, blob index 44)
-
-| Field | Value |
-|-------|-------|
-| `ObjectFName` | `BP_GH_DenEntrance_RockGolem_2` |
-| `bTeleportActive` | False |
-| `RemainingCooldown` | 0 |
-| Location | (-238191, 263300, -34458) |
+**These flags drive the ambient world spawning separate from the quest-placed spawner actors.**
 
 ---
 
-## Data Separation: World vs Per-Player
+## Creature Roster (from `D_EpicCreatures.json` + `D_AICreatureType.json`)
 
-| Data | Where stored | Scope |
-|------|-------------|-------|
-| Active quest blueprint | `IcarusQuestManagerRecorderComponent.QuestActorName` | World |
-| `bMissionComplete` | `IcarusQuestManagerRecorderComponent` | World |
-| World talent unlocks | `WorldTalentManagerRecorderComponent.WorldTalentRecords` | World |
-| Spawner state (`RecordedNumSpawned`, `bGeneratedRewards`) | Each spawner actor blob | World |
-| Prebuilt structures | `PrebuiltStructureRecorderComponent` | World |
-| `bMissionCompleted` per player | `GameModeStateRecorderComponent.PlayerRewards[N]` | Per player |
-| `CurrentMissionIndex` per player | `GameModeStateRecorderComponent.PlayerRewards[N]` | Per player |
-| Mission history log | `GameModeStateRecorderComponent.MissionHistory` | World (shared) |
+| Internal Name | In-Game Name | Notes |
+|---------------|--------------|-------|
+| `RockGolem` | **UNSTABLE QUARRITE** | Final boss |
+| `RockGolemJr_A` | **Quarrite** | Standard juvenile |
+| `RockGolemJr_D` | **Exotic Eater** | Arctic variant |
+| `RockGolemJr_E` | **Aggressive Borer** | Appears in Stage E caves |
+| `RockGolemJr_F` | **Quarrite Warden** | Guards tunnels in Stage F |
+| `RockGolemJr_Exotic` | **Exotic Infused Quarrite** | Appears in C2 / D |
+| `CaveWorm_RockGolem` | *(Caveworm variant)* | Displaced caveworms from campaign |
 
-**Campaign progress** lives in three world-level records (`QuestManager`, `WorldTalentManager`, `GameModeState`) and is replicated per-player only in `bMissionCompleted` / `CurrentMissionIndex`.
-**Spawning** lives entirely in the individual spawner actor blobs.
+**Spawn types on Olympus** (from `D_AISpawnConfig.json`):
+- `Juvenile_Rock_Golem` → rules: `Away_From_Dropships` + `Quarrite_Population` (pop limit 1)
+- `Juvenile_Rock_Golem_Arctic` → rules: `Away_From_Dropships` + `QuarriteArctic__Population` (pop limit 1)
 
-These two systems are **independent** — the spawner blobs do not reference the quest/talent records directly.
+Population is controlled by blueprint filters:
+- `BP_SpawnFilter_PopulationCheck_Quarrite_C`
+- `BP_SpawnFilter_PopulationCheck_QuarriteArctic_C`
 
 ---
 
-## How to Remove Spawning Without Changing Campaign Progress
+## Rewards & Unlockable Blueprints
+
+Completing campaign stages grants `AccountFlags` that unlock blueprints in the talent tree:
+
+| Blueprint | Talent Row | Where Crafted | Flag Required |
+|-----------|------------|---------------|---------------|
+| Rock Golem Grenade | `Rock_Golem_Grenade` | T3 Machine | `GrantedBlueprint_RG_Grenade` |
+| Rock Golem Sledgehammer | `Rock_Golem_Sledgehammer` | T4 Fabricator / Anvil | `GrantedBlueprint_RG_Sledgehammer` |
+| Rock Golem Gun | `Rock_Golem_Gun` | T4 Fabricator | `GrantedBlueprint_RG_Gun` |
+| Rock Golem Attachment | `Rock_Golem_Attachment` | T4 / Alt Bench | `GrantedBlueprint_RG_Attachment` |
+| Rock Golem Module | `Rock_Golem_Module` | T4 / Alt Bench | `GrantedBlueprint_RG_Module` |
+| Quarrite Trophies | `Rock_Golem_Trophies` | T2 Crafting | `GrantedBlueprint_RG_Trophies` (level 20+) |
+
+Blueprint flags are stored per-player in **Profile.json**, not in GD.json.
+
+---
+
+## Achievements (from `D_Accolades.json`)
+
+| Achievement | Steam ID | Display Name | Condition |
+|-------------|----------|--------------|-----------|
+| `DefeatQuarrite` | `ACH_KILL_ROCKGOLEM_BOSS` | **Fault Line** | Kill the Quarrite boss once |
+| `DefeatQuarriteHard` | `ACH_KILL_ROCKGOLEM_BOSS_HARD` | **Rock and a Hard Place** | Kill boss on hardest difficulty |
+| `CompleteQuarriteTree` | `ACH_COMPLETE_ROCKGOLEM_CAMPAIGN` | **Hero of the Mines** | Complete the Quarrite Campaign (any path) |
+| `AllQuarriteMissionsDone` | `ACH_FULL_ROCKGOLEM_CAMPAIGN` | **Faultless Victory** | Complete ALL 11 stages (multiple playthroughs) |
+
+`AllQuarriteMissionsDone` requires: A, B, C, C2, D, D2, E, F, Hunt, O1, O2 — all 11 in any run combination.
+
+---
+
+## Current Save State (GD.json)
+
+**Prospect:** `Outpost006_Olympus` (Terrain_016), ~91 hours elapsed.
+**Completed:** Stage A (at ~81h) and Stage B (at ~82h).
+**Active quest actor:** `BPQ_GH_RG_B_C` — `bMissionComplete: True`.
+
+### WorldTalentRecords (active world stat flags in this save)
+
+| Talent | Rank | Means |
+|--------|------|-------|
+| `GH_RG_A` | 1 | Desert Quarrite spawning enabled |
+| `GH_RG_B` | 1 | World-wide Quarrite spawning enabled ← **active** |
+
+C, D, C2, D2, E, F, Hunt, O1, O2 — **not unlocked** in this save.
+
+---
+
+## How Campaign Progress Is Stored
+
+| Data | Location | Scope |
+|------|----------|-------|
+| WorldStat flags (which stages completed) | `WorldTalentManagerRecorderComponent` in GD.json | World/server |
+| Active quest blueprint | `IcarusQuestManagerRecorderComponent` in GD.json | World/server |
+| `bMissionComplete`, `CurrentMissionIndex` | `GameModeStateRecorderComponent.PlayerRewards[]` in GD.json | Per player (partial echo) |
+| Full per-player mission history log | `GameModeStateRecorderComponent.MissionHistory[]` in GD.json | Shared world log |
+| Personal campaign progress, choice history | **Profile.json** per Steam ID | Per player |
+| Blueprint unlock flags (`GrantedBlueprint_RG_*`) | **Profile.json** per Steam ID | Per player |
+| Steam achievements | Steam / Profile.json | Per player |
+
+---
+
+## Spawning System — How It Works
+
+There are **two independent spawning systems** in play:
+
+### 1. Ambient World Spawning (WorldStat-driven)
+
+Triggered by the `WorldStat` flags set on stage completion. These use the `D_AISpawnConfig.json` / `D_AISpawnRules.json` pipeline:
+- Quarrites spawn on the map based on biome heatmap and population limits
+- Population cap: 1 per spawn rule (controlled by blueprint filter)
+- **Not stored as individual actor blobs** — the spawn system recreates them each session from the config
+
+### 2. Quest-Placed Spawner Actors (blob-driven)
+
+Specific `BP_Rock_Golem_Spawner_*` actors placed by quest scripts and persisted in `StateRecorderBlobs`:
+
+| Blob # | Actor | Type | NumSpawned | bGeneratedRewards |
+|--------|-------|------|------------|-------------------|
+| 2149 | `BP_Rock_Golem_Spawner_Drill_C_2147453878` | Drill site (Stage A) | 2 | ✅ True |
+| 2539 | `BP_Rock_Golem_Spawner_C_2147445025` | Cave spawner (Stage B) | 2 | ❌ False |
+| 2540 | `BP_Rock_Golem_Spawner_C_2147445018` | Cave spawner (Stage B) | 2 | ❌ False |
+| 2541 | `BP_Rock_Golem_Spawner_C_2147445011` | Cave spawner (Stage B) | 1 | ✅ True |
+
+All use `OwnerResolvePolicy: FindOrRespawn` — recreated on map load if missing.
+
+### 3. Prebuilt Structure Actors (blob-driven)
+
+Map set-pieces placed by quest progression, also `FindOrRespawn`:
+
+| Blob # | Structure | Stage |
+|--------|-----------|-------|
+| 2177 | `GH_RG_A_MiningOutpost` | A |
+| 2468 | `GH_RG_B_Cave` | B |
+| 2513 | `GH_RG_B_Cave2` | B |
+| 2549 | `GH_RG_B_Cave3` | B |
+
+---
+
+## Removing Spawning Without Changing Campaign Progress
 
 ### The Problem
 
-All four Rock Golem spawner actors use `OwnerResolvePolicy: FindOrRespawn`.
-This means: every time the server loads this prospect, if the spawner actor is not found on the map, the engine re-creates it from the saved blob.
-The spawner blueprint then resumes spawning Quarrites based on its internal logic and `RecordedNumSpawned`.
+- **Ambient spawning** (system 1) is driven by `WorldTalentRecords` → cannot stop it without removing the world talent entries, which would reset campaign progress.
+- **Spawner actors** (system 2) use `FindOrRespawn` → they recreate themselves every map load.
 
-### Option A — Delete the Spawner Blobs (Recommended if game doesn't re-add them)
+### Options
 
-Remove the four spawner actor entries from `StateRecorderBlobs` entirely:
+#### Option A — Delete Spawner Blobs (blob indices 2149, 2539, 2540, 2541)
 
-- Blob index **2149** (`BP_Rock_Golem_Spawner_Drill_C_2147453878`)
-- Blob index **2539** (`BP_Rock_Golem_Spawner_C_2147445025`)
-- Blob index **2540** (`BP_Rock_Golem_Spawner_C_2147445018`)
-- Blob index **2541** (`BP_Rock_Golem_Spawner_C_2147445011`)
+Remove the four actor blobs from `StateRecorderBlobs`. Campaign data (QuestManager, WorldTalentManager, MissionHistory) is untouched.
 
-**Leaves untouched:** QuestManager, WorldTalentManager, all mission history, prebuilt structures.
+**Risk:** If the world talent system re-places spawners dynamically on load, they come back.
 
-**Risk:** If the `WorldTalentManager` triggers the game to re-add spawners dynamically at load time (outside the save file), they will come back. This is the main unknown.
+#### Option B — Change OwnerResolvePolicy: FindOrRespawn → FindOnly
 
-### Option B — Change OwnerResolvePolicy to FindOnly (Safer for persistence)
-
-For each of the four spawner blobs, change:
-
+In each spawner blob, change:
 ```
 OwnerResolvePolicy: FindOrRespawn  →  FindOnly
 ```
+With `FindOnly` the engine skips creating the actor if it's not already in the live level.
+The blob stays in the save file (campaign integrity intact), but no actor is spawned.
 
-With `FindOnly`, if the actor is not found in the live level, the engine **skips** recreating it — the blob record stays in the save file (campaign data intact), but no actor is spawned.
+**Best for:** Stopping blob-driven re-creation while keeping save file coherent.
+**Does not affect:** Ambient world spawning driven by WorldStats.
 
-**Advantage:** The blob entries remain, so the save file still looks "complete" to any campaign-progress checks.
-**Disadvantage:** If the engine spawns these actors from a different code path (e.g., triggered by `WorldTalentRecords`), this won't help.
+#### Option C — Max Out RecordedNumSpawned
 
-### Option C — Max Out RecordedNumSpawned
+Set `RecordedNumSpawned` to a large value (e.g., `9999`) on each spawner blob.
+If the spawner blueprint checks `RecordedNumSpawned >= MaxSpawns` before spawning, this prevents new creatures.
 
-Set `RecordedNumSpawned` to a very large value (e.g., `9999`) on each spawner:
+**Risk:** Unknown whether the spawner blueprint uses this cap or ignores it for continuous population management.
 
-```
-IntVar: RecordedNumSpawned = 9999
-```
+#### Option D — Remove WorldTalentRecords (stops ambient spawning, minor progress impact)
 
-If the spawner blueprint has an internal `MaxSpawns` threshold it checks before spawning, this will prevent any new spawns while keeping the actors present in the world.
-Campaign progress is completely unchanged.
+Remove `GH_RG_B` (and/or `GH_RG_A`) from `WorldTalentManagerRecorderComponent.WorldTalentRecords`.
 
-**Risk:** Unknown whether `MaxSpawns` exists and what the cap is. If the spawner ignores `RecordedNumSpawned` for ongoing population management, this won't work.
+**Effect:** Ambient Quarrite world spawning stops. However, the campaign mission history and quest completion remain intact — only the world-state "which stages are active" resets.
+**Risk:** If the game re-adds the talent records from per-player Profile data on reconnect, they come back.
 
-### Option D — Set bGeneratedRewards + RecordedNumSpawned Together
+### Recommended Combined Approach
 
-Combine C with setting `bGeneratedRewards = True` on all spawners:
+To stop **both** spawning systems with minimal side effects:
 
-```
-BoolVar: bGeneratedRewards = True
-IntVar:  RecordedNumSpawned = 9999
-```
+1. **Option B** on all 4 spawner blobs (change `OwnerResolvePolicy` to `FindOnly`)
+2. **Option C** on all 4 spawner blobs (set `RecordedNumSpawned = 9999`)
+3. Leave `WorldTalentRecords`, `QuestManager`, `MissionHistory` **completely untouched**
 
-Currently two spawners already have `bGeneratedRewards = False` (2539 and 2540). If the reward flag gates spawning activity, enabling it may stop the cycle.
-
----
-
-## Recommended Approach
-
-**Start with Option B (FindOnly)** because:
-- It's fully reversible (just change the string back)
-- The blob stays in the file so campaign validation is unaffected
-- It directly targets the `FindOrRespawn` mechanism that drives actor recreation
-
-**If Option B doesn't work** (game overrides it with dynamic spawning), try **Option C** (max RecordedNumSpawned) on top.
-
-**Do not modify** any of the following — they hold campaign progress:
-- `WorldTalentManagerRecorderComponent.WorldTalentRecords`
-- `IcarusQuestManagerRecorderComponent` (QuestActorName, bMissionComplete)
-- `GameModeStateRecorderComponent` (MissionHistory, PlayerRewards)
+Ambient Quarrite spawning (WorldStat-driven) will continue unless WorldTalentRecords are also cleared. That is a separate decision.
 
 ---
 
-## Field Reference for Spawner Blobs
+## All Quest Descriptions by Stage
 
-Each spawner actor blob (`ActorStateRecorderComponent`) has this structure:
+### Stage A — Investigate the Mining Outpost (10 quests)
 
-```
-ActorStateRecorderVersion: 3
-ActorTransform: { Rotation, Translation, Scale3D }
-SavedInventories: [...]        ← loot contents (drill spawner only)
-FLODComponentData: { ... }
-IcarusActorGUID: <int>
-ObjectFName: BP_Rock_Golem_Spawner_*_C_<id>
-Modifiers: []
-EnergyTraitRecord: { bActive: false }
-WaterTraitRecord:  { bActive: false }
-GeneratorTraitRecord: { bActive: false }
-ResourceComponentRecord: { bDeviceActive: true, ... }
-IntVariables:
-  - VariableName: RecordedNumSpawned
-    iVariable: <int>            ← ★ CONTROL POINT
-BoolVariables:
-  - VariableName: bGeneratedRewards
-    bVariable: <bool>           ← ★ CONTROL POINT
-NameVariables: []
-OwnerResolvePolicy: FindOrRespawn  ← ★ CONTROL POINT
-ActorClassName: BP_Rock_Golem_Spawner_*_C
-ActorPathName: /Game/Maps/Terrain_016_OLY/...
-```
+| Quest | Description |
+|-------|-------------|
+| `GH_RG_A` | *Quarrite Campaign* — starts dialogue `GH_RG_A_INTRO` |
+| `GH_RG_A_Miners` | Investigate the Disappearance of the Miners |
+| `GH_RG_A_Miners_Travel` | Travel to Mining Outpost Alpha — GRID: N5 |
+| `GH_RG_A_Miners_Explore` | Inspect the Drill Site to Find Out What Was Unearthed |
+| `GH_RG_A_Secure` | Secure the Outpost |
+| `GH_RG_A_Secure_Creature` | Defeat the Strange Creature *(Use Pickaxe for bonus damage)* |
+| `GH_RG_A_Secure_Eliminate` | Collapse the Quarrite Burrow in the Center of the Outpost |
+| `GH_RG_A_Secure_Creatures` | Eliminate any remaining Quarrites |
+| `GH_RG_A_Discover` | Uncover the Purpose of the Miners' Operation |
+| `GH_RG_A_Discover_Search` | Search the Outpost for Records *(Notes and Audio Logs)* |
+
+### Stage B — Search the Caves (22 quests)
+
+| Quest | Description |
+|-------|-------------|
+| `GH_RG_B` | *Quarrite Campaign* — ⚠️ Caveworms driven from caves, will appear throughout |
+| `GH_RG_B_Prepare` | Acquire Equipment to Help Locate Nearby Caves |
+| `GH_RG_B_Prepare_Craft` | Unlock, Craft and pick up a Cave Scanner *(T3 Machining Bench)* |
+| `GH_RG_B_Area` | Search Nearby Caves, Close Quarrite Burrows |
+| `GH_RG_B_Area_Cave` | Check Caves in GRID: L4 |
+| `GH_RG_B_Area_Cave_Caveworm` | Clear Caveworms by the Cave Entrance |
+| `GH_RG_B_Area_Cave_Survivors` | Search Miners Cabin for Survivors and Notes |
+| `GH_RG_B_Area_Cave_Spawner` | Block the Quarrite Burrow further in the Cave *(Pickaxe)* |
+| `GH_RG_B_Area_Cave2` | Check Caves in GRID: K5 |
+| `GH_RG_B_Area_Cave2_Spawner` | Block the Quarrite Burrow Near the Cave |
+| `GH_RG_B_Area_Cave2_Salvage` | Salvage Mining Equipment, Deliver to Sinotai Pod |
+| `GH_RG_B_Area_Cave2_Salvage_Cart` | Mining Carts |
+| `GH_RG_B_Area_Cave2_Salvage_Pick` | Pickaxes |
+| `GH_RG_B_Area_Cave2_Salvage_Coal` | Coal |
+| `GH_RG_B_Area_Cave2_Salvage_Light` | Lights |
+| `GH_RG_B_Area_Cave3` | Check Caves in GRID: L2 |
+| `GH_RG_B_Area_Cave3_Worms` | Clear Caveworms by Cave Entrance |
+| `GH_RG_B_Area_Cave3_Shark` | Defeat the Emerged Landshark |
+| `GH_RG_B_Area_Cave3_Spawner` | Block the Quarrite Burrow further in the Cave |
+| `GH_RG_B_Eliminate` | Eliminate Displaced Threats in the Area |
+| `GH_RG_B_Eliminate_Caveworms` | Cull Displaced Caveworms |
+| `GH_RG_B_Eliminate_TeenageCaveworms` | Eliminate Adolescent Caveworms |
+
+### Stage O1 — Optional: Develop Drill Arrows (12 quests, available after B)
+
+Location: GRID M6. Requires Organic Analyzer (Fabricator, needs power). Crafts Drill Arrows (T3 Forge).
+
+### Stage C — Save Outpost Beta [Choice vs D] (20 quests)
+
+Location: GRID F8. Rescue **Drill Chief Biggs** and **Excavator Wedge** using HEAL + Stasis Bags. Defend against Quarrites, Caveworms, Landshark.
+
+### Stage D — Arctic Exotic Cluster [Choice vs C] (14 quests)
+
+Central Arctic. Use Radar to find cluster → fight Exotic Infused Quarrite → find exotic shards → **choice: give to Norex or keep for yourself** (convert via Bio-Cleaner).
+
+### Stage O2 — Optional: Test Weapons (7 quests, available after C)
+
+Location: GRID B14/C15. Test Poison, Explosive, Projectile, and Pickaxe kills on Quarrites.
+
+### Stage C2 — Observation Outpost (30 quests, requires C)
+
+Location: GRID B13. Build T3 outpost → craft Binoculars + Taxidermy Knife + Grenades → collect 4 Quarrite Armor Fragment variants (Oxite, Copper, Gold, Exotic) → defeat **Exotic Infused Quarrite** → convert fragment via Bio-Cleaner.
+
+### Stage D2 — Rebuild Outpost Beta (29 quests, requires D)
+
+Discover Outpost Beta was destroyed. Rebuild Barracks, Storage, Farm (Glasshouse), Workshop. Deploy Mini-Thumper → kill Caveworms to draw out Landshark → defeat Landshark.
+
+### Stage E — Recover Personnel [Choice vs F] (24 quests)
+
+Restock Outpost Beta. Rescue **Foreman Voss** (GRID F7) and **Technician Harken** (GRID B6) from caves. Defeat Aggressive Borer and Stygian Landshark. Use Stasis Bags.
+
+### Stage F — Track the Tunnels [Choice vs E] (18 quests)
+
+Use **BEAST device** to scan Quarrites (GRID F10) → calibrate **ECHO device** → follow tunnels to 4 locations (SD-I10, SD-K14, SD-G13, SD-D14) → defeat **Quarrite Wardens** → cull Caveworms and young Quarrites.
+
+### Final Hunt (5 quests, requires C2 + E or F)
+
+Use **Resonance Surveyor** to find seismic source → enter Quarrite Burrow → defeat **THE UNSTABLE QUARRITE** *(use Pickaxe for bonus damage on armor)*.
