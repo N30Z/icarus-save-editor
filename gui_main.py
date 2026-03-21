@@ -1804,25 +1804,13 @@ class ProspectInventoryTab(ctk.CTkFrame):
 # ============================================================================
 
 class CampaignTab(ctk.CTkFrame):
-    """GUI tab for toggling Rock Golem spawning via Options A-D."""
+    """GUI tab for toggling ambient world spawning effects (GD.json campaign stages)."""
 
     def __init__(self, master, **kwargs):
         super().__init__(master, **kwargs)
         self._ce: Optional[CampaignEditor] = None
-
-        # Option D switches (WorldTalentRecords)
         self._switches: Dict[str, ctk.CTkSwitch] = {}
         self._switch_vars: Dict[str, tk.BooleanVar] = {}
-
-        # Option B/C switch vars
-        self._var_b = tk.BooleanVar(value=False)
-        self._var_c = tk.BooleanVar(value=False)
-        self._sw_b: Optional[ctk.CTkSwitch] = None
-        self._sw_c: Optional[ctk.CTkSwitch] = None
-
-        # Option A label (shows spawner count)
-        self._spawner_count_label: Optional[ctk.CTkLabel] = None
-
         self._build()
 
     def _build(self):
@@ -1854,113 +1842,37 @@ class CampaignTab(ctk.CTkFrame):
         self._status_label = ctk.CTkLabel(actions, text="", font=FONT_SMALL, text_color="gray")
         self._status_label.pack(side="right", padx=8)
 
-        # ── Scroll area ──────────────────────────────────────────────────
-        scroll = ctk.CTkScrollableFrame(self, label_text="Rock Golem Spawner Controls")
+        # ── Toggle list ──────────────────────────────────────────────────
+        scroll = ctk.CTkScrollableFrame(self, label_text="Ambient World Spawning Effects")
         scroll.grid(row=2, column=0, sticky="nsew", padx=8, pady=(0, 8))
         scroll.columnconfigure(1, weight=1)
 
-        row = 0
+        note = ("Each switch controls one WorldTalentRecord entry. "
+                "Removing it stops the corresponding ambient spawn effect.\n"
+                "Campaign quest progress is NOT changed.")
+        ctk.CTkLabel(scroll, text=note, font=FONT_SMALL, text_color="#aaa",
+                     justify="left").grid(row=0, column=0, columnspan=3, sticky="w",
+                                          padx=8, pady=(4, 12))
 
-        # ── Section: Spawner Actor Blobs (Options A / B / C) ────────────
-        ctk.CTkLabel(scroll, text="Spawner Actor Blobs", font=FONT_HEADER,
-                     text_color="#4da6ff").grid(
-            row=row, column=0, columnspan=3, sticky="w", padx=8, pady=(8, 2))
-        row += 1
-
-        blob_note = ("These options target the spawner actor state blobs stored in the save.\n"
-                     "They are independent of campaign quest progress.")
-        ctk.CTkLabel(scroll, text=blob_note, font=FONT_SMALL, text_color="#aaa",
-                     justify="left").grid(row=row, column=0, columnspan=3, sticky="w",
-                                          padx=8, pady=(0, 8))
-        row += 1
-
-        # Option A — Delete blobs
-        del_frame = ctk.CTkFrame(scroll, fg_color="transparent")
-        del_frame.grid(row=row, column=0, columnspan=3, sticky="ew", padx=8, pady=4)
-        del_frame.columnconfigure(2, weight=1)
-
-        ctk.CTkButton(del_frame, text="Option A: Delete Blobs", width=180,
-                      fg_color="#8b2222", hover_color="#a02828",
-                      command=self._confirm_delete_blobs).grid(row=0, column=0, padx=(0, 8))
-        self._spawner_count_label = ctk.CTkLabel(del_frame, text="(load a file first)",
-                                                  font=FONT_SMALL, text_color="#aaa")
-        self._spawner_count_label.grid(row=0, column=1, sticky="w")
-        ctk.CTkLabel(del_frame,
-                     text="Permanently removes spawner entries. Use backup.",
-                     font=FONT_SMALL, text_color="#888").grid(row=0, column=2, sticky="e", padx=8)
-        row += 1
-
-        # Option B — FindOnly switch
-        self._sw_b = ctk.CTkSwitch(scroll, text="", variable=self._var_b,
-                                    onvalue=True, offvalue=False, width=50, state="disabled")
-        self._sw_b.grid(row=row, column=0, padx=(8, 4), pady=6, sticky="w")
-        lf_b = ctk.CTkFrame(scroll, fg_color="transparent")
-        lf_b.grid(row=row, column=1, sticky="w", padx=4)
-        ctk.CTkLabel(lf_b, text="Option B  —  FindOnly (no actor re-creation)",
-                     font=FONT_NORMAL, anchor="w").pack(anchor="w")
-        ctk.CTkLabel(lf_b,
-                     text="Changes OwnerResolvePolicy: FindOrRespawn → FindOnly. "
-                          "Engine skips re-creating the actor if not already in level.",
-                     font=FONT_SMALL, text_color="#aaa", anchor="w", wraplength=520).pack(anchor="w")
-        ctk.CTkLabel(scroll, text="OwnerResolvePolicy", font=FONT_MONO,
-                     text_color="#666").grid(row=row, column=2, padx=12, sticky="e")
-        row += 1
-
-        # Option C — RecordedNumSpawned switch
-        self._sw_c = ctk.CTkSwitch(scroll, text="", variable=self._var_c,
-                                    onvalue=True, offvalue=False, width=50, state="disabled")
-        self._sw_c.grid(row=row, column=0, padx=(8, 4), pady=6, sticky="w")
-        lf_c = ctk.CTkFrame(scroll, fg_color="transparent")
-        lf_c.grid(row=row, column=1, sticky="w", padx=4)
-        ctk.CTkLabel(lf_c, text="Option C  —  Max RecordedNumSpawned (cap counter)",
-                     font=FONT_NORMAL, anchor="w").pack(anchor="w")
-        ctk.CTkLabel(lf_c,
-                     text="Sets RecordedNumSpawned = 9999. If the spawner checks this "
-                          "against a cap before spawning, no new creatures appear.",
-                     font=FONT_SMALL, text_color="#aaa", anchor="w", wraplength=520).pack(anchor="w")
-        ctk.CTkLabel(scroll, text="RecordedNumSpawned", font=FONT_MONO,
-                     text_color="#666").grid(row=row, column=2, padx=12, sticky="e")
-        row += 1
-
-        # ── Separator ────────────────────────────────────────────────────
-        ctk.CTkFrame(scroll, height=2, fg_color="#333").grid(
-            row=row, column=0, columnspan=3, sticky="ew", padx=8, pady=8)
-        row += 1
-
-        # ── Section: Ambient World Spawning (Option D) ───────────────────
-        ctk.CTkLabel(scroll, text="Option D  —  Ambient World Spawning (WorldTalentRecords)",
-                     font=FONT_HEADER, text_color="#4da6ff").grid(
-            row=row, column=0, columnspan=3, sticky="w", padx=8, pady=(4, 2))
-        row += 1
-
-        d_note = ("Each switch controls one WorldTalentRecord entry. "
-                  "Removing it stops the corresponding ambient spawn effect.\n"
-                  "Campaign quest progress is NOT changed.")
-        ctk.CTkLabel(scroll, text=d_note, font=FONT_SMALL, text_color="#aaa",
-                     justify="left").grid(row=row, column=0, columnspan=3, sticky="w",
-                                          padx=8, pady=(0, 8))
-        row += 1
-
-        for stage in CAMPAIGN_STAGES:
+        for i, stage in enumerate(CAMPAIGN_STAGES, start=1):
             rn = stage['row']
             var = tk.BooleanVar(value=False)
             self._switch_vars[rn] = var
 
             sw = ctk.CTkSwitch(scroll, text="", variable=var, onvalue=True, offvalue=False,
                                 width=50, state="disabled")
-            sw.grid(row=row, column=0, padx=(8, 4), pady=6, sticky="w")
+            sw.grid(row=i, column=0, padx=(8, 4), pady=6, sticky="w")
             self._switches[rn] = sw
 
             lf = ctk.CTkFrame(scroll, fg_color="transparent")
-            lf.grid(row=row, column=1, sticky="w", padx=4)
+            lf.grid(row=i, column=1, sticky="w", padx=4)
             ctk.CTkLabel(lf, text=f"{stage['label']}  —  {stage['effect']}",
                          font=FONT_NORMAL, anchor="w").pack(anchor="w")
             ctk.CTkLabel(lf, text=stage['description'],
                          font=FONT_SMALL, text_color="#aaa", anchor="w").pack(anchor="w")
 
             ctk.CTkLabel(scroll, text=rn, font=FONT_MONO,
-                         text_color="#666").grid(row=row, column=2, padx=12, sticky="e")
-            row += 1
+                         text_color="#666").grid(row=i, column=2, padx=12, sticky="e")
 
         scroll.columnconfigure(2, weight=0)
 
@@ -1984,56 +1896,14 @@ class CampaignTab(ctk.CTkFrame):
             display_path = path if len(path) <= 60 else "…" + path[-57:]
             self._file_label.configure(text=display_path)
 
-            # Option D state
             active = ce.get_active_talents()
             for rn, var in self._switch_vars.items():
                 var.set(rn in active)
                 self._switches[rn].configure(state="normal")
 
-            # Option B state
-            self._var_b.set(ce.get_option_b_state())
-            self._sw_b.configure(state="normal")
-
-            # Option C state
-            self._var_c.set(ce.get_option_c_state())
-            self._sw_c.configure(state="normal")
-
-            # Spawner count for Option A
-            n = ce.get_spawner_count()
-            self._spawner_count_label.configure(
-                text=f"{n} spawner blob(s) present" if n else "No spawner blobs found")
-
             self._status_label.configure(
-                text=f"Loaded  ({len(active)} active stage(s), {n} spawner blob(s))",
-                text_color="#3bba6b")
+                text=f"Loaded  ({len(active)} active stage(s))", text_color="#3bba6b")
 
-        except Exception as exc:
-            self._status_label.configure(text=f"Error: {exc}", text_color="#e05252")
-
-    # ── Option A ──────────────────────────────────────────────────────
-
-    def _confirm_delete_blobs(self):
-        if not self._ce:
-            self._status_label.configure(text="No file loaded.", text_color="#e09b3d")
-            return
-        n = self._ce.get_spawner_count()
-        if n == 0:
-            self._status_label.configure(text="No spawner blobs to delete.", text_color="#e09b3d")
-            return
-        if messagebox.askyesno(
-            "Delete Spawner Blobs",
-            f"This will permanently remove {n} spawner actor state blob(s) from the save.\n\n"
-            "A backup will be created automatically.\n\n"
-            "Continue?",
-        ):
-            self._delete_blobs()
-
-    def _delete_blobs(self):
-        try:
-            self._ce.delete_spawner_blobs()
-            self._ce.save(backup=True)
-            self._spawner_count_label.configure(text="0 spawner blobs (deleted)")
-            self._status_label.configure(text="Spawner blobs deleted and saved.", text_color="#3bba6b")
         except Exception as exc:
             self._status_label.configure(text=f"Error: {exc}", text_color="#e05252")
 
@@ -2050,19 +1920,10 @@ class CampaignTab(ctk.CTkFrame):
             self._status_label.configure(text="No file loaded.", text_color="#e09b3d")
             return
         try:
-            # Option B
-            self._ce.set_option_b(self._var_b.get())
-            # Option C
-            self._ce.set_option_c(self._var_c.get())
-            # Option D
             for rn, var in self._switch_vars.items():
                 self._ce.set_talent(rn, var.get())
             self._ce.save(backup=backup)
-
             active = self._ce.get_active_talents()
-            n = self._ce.get_spawner_count()
-            self._spawner_count_label.configure(
-                text=f"{n} spawner blob(s) present" if n else "No spawner blobs found")
             self._status_label.configure(
                 text=f"Saved  ({len(active)} active stage(s))", text_color="#3bba6b")
         except Exception as exc:
