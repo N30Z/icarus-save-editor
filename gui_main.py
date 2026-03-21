@@ -1318,7 +1318,7 @@ class ProspectInventoryTab(ctk.CTkFrame):
         # ── Action bar ──
         actions = ctk.CTkFrame(self, fg_color="transparent")
         actions.grid(row=1, column=0, sticky="ew", padx=8, pady=4)
-        actions.columnconfigure(5, weight=1)
+        actions.columnconfigure(6, weight=1)
 
         ctk.CTkButton(actions, text="Add Item", width=100,
                       command=self._add_item).grid(row=0, column=0, padx=4)
@@ -1332,14 +1332,38 @@ class ProspectInventoryTab(ctk.CTkFrame):
                       fg_color="#1a6a1a", hover_color="#228b22",
                       command=self._save_gd_backup).grid(row=0, column=3, padx=4)
 
+        self._debug_var = ctk.BooleanVar(value=False)
+        ctk.CTkCheckBox(actions, text="Experimental / Debug",
+                        variable=self._debug_var, font=FONT_SMALL,
+                        text_color="#e09b3d",
+                        command=self._on_debug_toggle).grid(row=0, column=4, padx=(16, 4))
+
         self._status_label = ctk.CTkLabel(actions, text="", font=FONT_SMALL,
                                            text_color="gray")
-        self._status_label.grid(row=0, column=5, sticky="e", padx=8)
+        self._status_label.grid(row=0, column=6, sticky="e", padx=8)
 
         # ── Inventory grid (scrollable) ──
         self._grid_frame = ctk.CTkScrollableFrame(self, label_text="Inventory Slots")
         self._grid_frame.grid(row=2, column=0, sticky="nsew", padx=8, pady=(0, 8))
         self._grid_frame.columnconfigure(0, weight=1)
+
+    # ── Debug mode ─────────────────────────────────────────────────
+
+    _DEBUG_COUNT_LIMIT = 999999
+    _DEBUG_DUR_LIMIT   = 9999999
+
+    @property
+    def _debug_mode(self) -> bool:
+        return self._debug_var.get()
+
+    def _on_debug_toggle(self):
+        mode = "ON" if self._debug_mode else "OFF"
+        self._status_label.configure(
+            text=f"Experimental/Debug mode {mode}. "
+                 + ("Count/durability limits raised." if self._debug_mode
+                    else "Normal limits restored."),
+            text_color="#e09b3d" if self._debug_mode else "gray")
+        self._render_slots()
 
     # ── File loading ──────────────────────────────────────────────────
 
@@ -1489,13 +1513,18 @@ class ProspectInventoryTab(ctk.CTkFrame):
             count_val = item.get('count') or 1
             max_stack = catalog_info.max_stack if catalog_info else 9999
             count_var = ctk.StringVar(value=str(count_val))
-            count_entry = ctk.CTkEntry(row_frame, textvariable=count_var,
+            count_frame = ctk.CTkFrame(row_frame, fg_color="transparent")
+            count_frame.grid(row=0, column=2, padx=4, pady=4)
+            count_entry = ctk.CTkEntry(count_frame, textvariable=count_var,
                                         font=FONT_MONO, width=70)
-            count_entry.grid(row=0, column=2, padx=4, pady=4)
+            count_entry.pack(side="left")
             count_entry.bind("<FocusOut>",
                 lambda _e, s=slot_idx, v=count_var: self._update_count(s, v))
             count_entry.bind("<Return>",
                 lambda _e, s=slot_idx, v=count_var: self._update_count(s, v))
+            if self._debug_mode and max_stack > 1:
+                ctk.CTkLabel(count_frame, text=f"/ {self._DEBUG_COUNT_LIMIT}",
+                             font=FONT_SMALL, text_color="#e09b3d").pack(side="left", padx=2)
 
             # Durability (number input, not slider)
             dur_val = item.get('durability')
@@ -1512,8 +1541,12 @@ class ProspectInventoryTab(ctk.CTkFrame):
                 dur_entry.bind("<Return>",
                     lambda _e, s=slot_idx, v=dur_var: self._update_durability(s, v))
                 if max_dur > 0:
-                    ctk.CTkLabel(dur_frame, text=f"/ {max_dur}",
-                                 font=FONT_SMALL, text_color="gray").pack(side="left", padx=4)
+                    if self._debug_mode:
+                        ctk.CTkLabel(dur_frame, text=f"/ {self._DEBUG_DUR_LIMIT}",
+                                     font=FONT_SMALL, text_color="#e09b3d").pack(side="left", padx=4)
+                    else:
+                        ctk.CTkLabel(dur_frame, text=f"/ {max_dur}",
+                                     font=FONT_SMALL, text_color="gray").pack(side="left", padx=4)
             else:
                 ctk.CTkLabel(row_frame, text="–", font=FONT_MONO, width=90,
                              text_color="gray").grid(row=0, column=3, padx=4, pady=4)
@@ -1682,6 +1715,18 @@ class ProspectInventoryTab(ctk.CTkFrame):
         if not item:
             return
 
+        # Enforce limits
+        if not self._debug_mode:
+            catalog_info = self._catalog.get(item['item'])
+            max_stack = catalog_info.max_stack if catalog_info else 9999
+            if max_stack > 0 and count > max_stack:
+                count = max_stack
+                var.set(str(count))
+        else:
+            if count > self._DEBUG_COUNT_LIMIT:
+                count = self._DEBUG_COUNT_LIMIT
+                var.set(str(count))
+
         dur = item.get('durability')
         self._gd_editor.set_item(
             self._current_steam_id, self._current_inv_id, slot_idx,
@@ -1704,6 +1749,18 @@ class ProspectInventoryTab(ctk.CTkFrame):
         if not item:
             return
 
+        # Enforce limits
+        if not self._debug_mode:
+            catalog_info = self._catalog.get(item['item'])
+            max_dur = catalog_info.max_durability if catalog_info and catalog_info.has_durability else dur
+            if max_dur > 0 and dur > max_dur:
+                dur = max_dur
+                var.set(str(dur))
+        else:
+            if dur > self._DEBUG_DUR_LIMIT:
+                dur = self._DEBUG_DUR_LIMIT
+                var.set(str(dur))
+
         count = item.get('count') or 1
         self._gd_editor.set_item(
             self._current_steam_id, self._current_inv_id, slot_idx,
@@ -1712,14 +1769,14 @@ class ProspectInventoryTab(ctk.CTkFrame):
             text=f"Slot {slot_idx}: durability = {dur}", text_color="#3bba6b")
 
     def _max_durability(self, slot_idx: int):
-        """Set durability to max for a slot."""
+        """Set durability to max for a slot (debug mode uses raised limit)."""
         item = next((it for it in self._items if it['location'] == slot_idx), None)
         if not item:
             return
         catalog_info = self._catalog.get(item['item'])
         if not catalog_info or not catalog_info.has_durability:
             return
-        max_dur = catalog_info.max_durability
+        max_dur = self._DEBUG_DUR_LIMIT if self._debug_mode else catalog_info.max_durability
         count = item.get('count') or 1
         self._gd_editor.set_item(
             self._current_steam_id, self._current_inv_id, slot_idx,
