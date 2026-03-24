@@ -8,6 +8,7 @@ Wraps MetaInventory.json data with methods to read/write:
   - Remove items
 """
 
+import uuid
 from dataclasses import dataclass
 from typing import Dict, List, Optional, Tuple
 
@@ -151,3 +152,60 @@ class InventoryEditor:
     @property
     def item_count(self) -> int:
         return len(self._items_raw)
+
+    def export_inventory(self) -> Dict:
+        """Export all items to a portable dict (for saving to a JSON file)."""
+        items = []
+        for item in self._items_raw:
+            static = item.get('ItemStaticData', {})
+            row_name = static.get('RowName', '')
+            quantity = _get_dynamic_prop(item, 'ItemableStack') or 1
+            durability = _get_dynamic_prop(item, 'Durability')
+            items.append({
+                'row_name': row_name,
+                'quantity': quantity,
+                'durability': durability,
+            })
+        return {
+            'type': 'icarus_meta_inventory',
+            'version': 1,
+            'items': items,
+        }
+
+    def import_inventory(self, data: Dict, merge: bool = False) -> int:
+        """
+        Import items from an exported inventory dict.
+
+        Args:
+            data:  Dict produced by export_inventory().
+            merge: If True, append to existing items.
+                   If False, clear all existing items first.
+        Returns:
+            Number of items imported.
+        """
+        items_data = data.get('items', [])
+        if not merge:
+            self._items_raw.clear()
+
+        count = 0
+        for entry in items_data:
+            row_name = entry.get('row_name', '')
+            if not row_name:
+                continue
+            quantity = max(1, entry.get('quantity', 1) or 1)
+            durability = entry.get('durability')
+
+            dyn_data: List[Dict] = [
+                {'PropertyType': 'ItemableStack', 'Value': quantity}
+            ]
+            if durability is not None:
+                dyn_data.append({'PropertyType': 'Durability', 'Value': durability})
+
+            self._items_raw.append({
+                'ItemStaticData': {'RowName': row_name},
+                'ItemDynamicData': dyn_data,
+                'DatabaseGUID': str(uuid.uuid4()).upper(),
+            })
+            count += 1
+
+        return count

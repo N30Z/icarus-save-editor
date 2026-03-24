@@ -18,6 +18,7 @@ Usage:
     python gui_main.py
 """
 
+import json
 import tkinter as tk
 from tkinter import messagebox, simpledialog, filedialog
 from typing import List, Optional, Tuple, Dict
@@ -35,7 +36,9 @@ from game_data import (
     format_stats, rowname_matches_catalog, find_talent_catalog_match,
     get_tech_tier_labels,
 )
-from gd_inventory_editor import GdInventoryEditor, INVENTORY_NAMES, _get_dyn_value, DYN_DURABILITY, DYN_STACK_COUNT
+from gd_inventory_editor import (GdInventoryEditor, INVENTORY_NAMES,
+                                  _get_dyn_value, DYN_DURABILITY, DYN_STACK_COUNT,
+                                  DYN_MAX_STACK, DYN_LINKED_INV, DYN_FILL_AMOUNT)
 from game_items import get_catalog, ItemInfo
 from campaign_editor import CampaignEditor, CAMPAIGN_STAGES
 
@@ -1028,6 +1031,12 @@ class InventoryTab(ctk.CTkFrame):
         ctk.CTkButton(header, text="Remove Selected", width=130,
                       fg_color="#c0392b", hover_color="#962d22",
                       command=self._remove_selected).grid(row=0, column=4, padx=4)
+        ctk.CTkButton(header, text="Export", width=80,
+                      fg_color="#1a5276", hover_color="#1a3a5c",
+                      command=self._export_inventory).grid(row=0, column=5, padx=4)
+        ctk.CTkButton(header, text="Import", width=80,
+                      fg_color="#1a5276", hover_color="#1a3a5c",
+                      command=self._import_inventory).grid(row=0, column=6, padx=4)
 
         cols_frame = ctk.CTkFrame(self, fg_color="#1e1e1e")
         cols_frame.grid(row=1, column=0, sticky="ew", padx=8)
@@ -1085,6 +1094,63 @@ class InventoryTab(ctk.CTkFrame):
         n = self.editor.repair_all()
         self.refresh()
         self.status_label.configure(text=f"Repaired {n} item(s).", text_color="#3bba6b")
+
+    def _export_inventory(self):
+        path = filedialog.asksaveasfilename(
+            title="Export Workshop Inventory",
+            defaultextension=".json",
+            filetypes=[("JSON Files", "*.json"), ("All Files", "*.*")],
+            initialfile="meta_inventory_export.json",
+        )
+        if not path:
+            return
+        try:
+            data = self.editor.export_inventory()
+            with open(path, 'w', encoding='utf-8') as f:
+                json.dump(data, f, indent=2, ensure_ascii=False)
+            self.status_label.configure(
+                text=f"Exported {len(data['items'])} item(s) to file.", text_color="#3bba6b")
+        except Exception as e:
+            messagebox.showerror("Export Error", str(e))
+
+    def _import_inventory(self):
+        path = filedialog.askopenfilename(
+            title="Import Workshop Inventory",
+            filetypes=[("JSON Files", "*.json"), ("All Files", "*.*")],
+        )
+        if not path:
+            return
+        try:
+            with open(path, 'r', encoding='utf-8') as f:
+                data = json.load(f)
+        except Exception as e:
+            messagebox.showerror("Import Error", f"Could not read file:\n{e}")
+            return
+
+        if data.get('type') != 'icarus_meta_inventory':
+            if not messagebox.askyesno(
+                    "Wrong File Type",
+                    "This file does not look like a Workshop Inventory export.\n"
+                    "Import anyway?"):
+                return
+
+        merge = messagebox.askyesnocancel(
+            "Import Mode",
+            "Yes  = Merge  (keep existing items, append new ones)\n"
+            "No   = Replace (clear all existing items first)\n"
+            "Cancel = Abort")
+        if merge is None:
+            return
+
+        try:
+            n = self.editor.import_inventory(data, merge=merge)
+            self.refresh()
+            mode_str = "merged" if merge else "replaced"
+            self.status_label.configure(
+                text=f"Imported {n} item(s) ({mode_str}). Click Save All to persist.",
+                text_color="#3bba6b")
+        except Exception as e:
+            messagebox.showerror("Import Error", str(e))
 
     def _remove_selected(self):
         sel = self.listbox.curselection()
@@ -1319,7 +1385,7 @@ class ProspectInventoryTab(ctk.CTkFrame):
         # ── Action bar ──
         actions = ctk.CTkFrame(self, fg_color="transparent")
         actions.grid(row=1, column=0, sticky="ew", padx=8, pady=4)
-        actions.columnconfigure(6, weight=1)
+        actions.columnconfigure(8, weight=1)
 
         ctk.CTkButton(actions, text="Add Item", width=100,
                       command=self._add_item).grid(row=0, column=0, padx=4)
@@ -1339,9 +1405,16 @@ class ProspectInventoryTab(ctk.CTkFrame):
                         text_color="#e09b3d",
                         command=self._on_debug_toggle).grid(row=0, column=4, padx=(16, 4))
 
+        ctk.CTkButton(actions, text="Export All", width=90,
+                      fg_color="#1a5276", hover_color="#1a3a5c",
+                      command=self._export_inventory).grid(row=0, column=5, padx=(16, 4))
+        ctk.CTkButton(actions, text="Import All", width=90,
+                      fg_color="#1a5276", hover_color="#1a3a5c",
+                      command=self._import_inventory).grid(row=0, column=6, padx=4)
+
         self._status_label = ctk.CTkLabel(actions, text="", font=FONT_SMALL,
                                            text_color="gray")
-        self._status_label.grid(row=0, column=6, sticky="e", padx=8)
+        self._status_label.grid(row=0, column=8, sticky="e", padx=8)
 
         # ── Inventory grid (scrollable) ──
         self._grid_frame = ctk.CTkScrollableFrame(self, label_text="Inventory Slots")
@@ -1474,7 +1547,7 @@ class ProspectInventoryTab(ctk.CTkFrame):
         header.columnconfigure(1, weight=1)
         for col, (text, w) in enumerate([
             ("Slot", 50), ("Item", 260), ("Count", 70),
-            ("Durability", 90), ("", 200),
+            ("Durability", 90), ("", 200), ("Fill", 130),
         ]):
             ctk.CTkLabel(header, text=text, font=FONT_HEADER, width=w,
                          anchor="w").grid(row=0, column=col, padx=6, pady=4)
@@ -1573,6 +1646,36 @@ class ProspectInventoryTab(ctk.CTkFrame):
                              font=FONT_SMALL, text_color="#7ecff4").pack(
                     side="left", padx=6)
 
+            # Fill amount (water, oxygen, biofuel, etc.)
+            fill_val = item.get('fill_amount')
+            if (catalog_info and catalog_info.fill_resource_type
+                    and fill_val is not None):
+                max_fill = catalog_info.max_fill
+                fill_var = ctk.StringVar(value=str(fill_val))
+                fill_frame = ctk.CTkFrame(row_frame, fg_color="transparent")
+                fill_frame.grid(row=0, column=5, padx=4, pady=4)
+                ctk.CTkLabel(fill_frame,
+                             text=f"{catalog_info.fill_resource_type}:",
+                             font=FONT_SMALL, text_color="#7ecff4").pack(side="left")
+                fill_entry = ctk.CTkEntry(fill_frame, textvariable=fill_var,
+                                          font=FONT_MONO, width=70)
+                fill_entry.pack(side="left", padx=(2, 0))
+                fill_entry.bind("<FocusOut>",
+                    lambda _e, s=slot_idx, v=fill_var, mf=max_fill:
+                        self._update_fill_amount(s, v, mf))
+                fill_entry.bind("<Return>",
+                    lambda _e, s=slot_idx, v=fill_var, mf=max_fill:
+                        self._update_fill_amount(s, v, mf))
+                if max_fill > 0:
+                    ctk.CTkLabel(fill_frame, text=f"/ {max_fill}",
+                                 font=FONT_SMALL, text_color="gray").pack(
+                        side="left", padx=(2, 4))
+                    ctk.CTkButton(fill_frame, text="Max", width=45,
+                                  font=FONT_SMALL,
+                                  fg_color="#005f5f", hover_color="#004545",
+                                  command=lambda s=slot_idx, mf=max_fill:
+                                      self._max_fill_amount(s, mf)).pack(side="left")
+
             # --- Nested inventory (attachments / LivingItemSlots) ---
             self._render_nested_inventory(row_frame, slot_idx, item, row_num)
 
@@ -1587,11 +1690,17 @@ class ProspectInventoryTab(ctk.CTkFrame):
 
     def _render_nested_inventory(self, parent_frame, slot_idx: int,
                                   item: dict, row_num: int):
-        """If the item has LivingItemSlots, render them as nested rows."""
+        """
+        Render sub-items for a slot that has attachments or pouch contents.
+
+        Handles two storage mechanisms:
+        - LivingItemSlots: weapon attachments (stored directly on the slot)
+        - Linked inventory: pouch/upgrade-slot contents (separate SavedInventories entry
+          pointed to by DynamicData index 13)
+        """
         if not self._gd_editor or not self._current_steam_id:
             return
 
-        # Find the actual slot FPropertyTag to inspect LivingItemSlots
         player = self._gd_editor.players.get(self._current_steam_id)
         if not player:
             return
@@ -1600,6 +1709,7 @@ class ProspectInventoryTab(ctk.CTkFrame):
         if not saved_inv:
             return
 
+        # Find the slot FPropertyTag in the current inventory
         slot_prop = None
         for entry in saved_inv.nested:
             iid_p = next((p for p in entry.nested if p.name == 'InventoryID'), None)
@@ -1618,39 +1728,377 @@ class ProspectInventoryTab(ctk.CTkFrame):
         if not slot_prop:
             return
 
-        # Check LivingItemSlots
+        # ── Weapon attachments (LivingItemSlots) ──────────────────────────
         living = next((p for p in slot_prop.nested if p.name == 'LivingItemSlots'), None)
-        if not living or not living.nested:
+        living_sub_slots = living.nested if living else []
+
+        # ── Pouch / upgrade-slot contents (ContainerManager by array index) ──
+        linked_inv_id = _get_dyn_value(slot_prop, DYN_LINKED_INV)
+        linked_items: List[Dict] = []
+        if linked_inv_id is not None:
+            linked_items = self._gd_editor.get_container_items(linked_inv_id)
+
+        if not living_sub_slots and not linked_items:
             return
 
-        # Render nested items
-        nested_frame = ctk.CTkFrame(parent_frame, fg_color="#1a2a3a")
-        nested_frame.grid(row=1, column=0, columnspan=5, sticky="ew", padx=(50, 8), pady=(0, 4))
+        # ── Outer container ────────────────────────────────────────────────
+        nested_frame = ctk.CTkFrame(parent_frame, fg_color="#162030")
+        nested_frame.grid(row=1, column=0, columnspan=6, sticky="ew",
+                          padx=(50, 8), pady=(0, 6))
         nested_frame.columnconfigure(1, weight=1)
 
-        ctk.CTkLabel(nested_frame, text="Attachments:", font=FONT_SMALL,
-                     text_color="#7ecff4").grid(row=0, column=0, columnspan=4,
-                                                 sticky="w", padx=8, pady=(4, 2))
+        header_f = ctk.CTkFrame(nested_frame, fg_color="#0d1a2a")
+        header_f.grid(row=0, column=0, columnspan=6, sticky="ew", padx=2, pady=(2, 0))
+        label = "Contents" if linked_items else "Attachments"
+        if living_sub_slots and linked_items:
+            label = "Contents / Attachments"
+        ctk.CTkLabel(header_f, text=label,
+                     font=FONT_SMALL, text_color="#7ecff4").pack(side="left", padx=8, pady=3)
 
-        for i, sub_slot in enumerate(living.nested):
-            sub_item = next((p for p in sub_slot.nested if p.name == 'ItemStaticData'), None)
-            sub_loc = next((p for p in sub_slot.nested if p.name == 'Location'), None)
+        row_offset = 1
 
-            if sub_item and sub_item.value:
-                sub_name = sub_item.value
-                sub_info = self._catalog.get(sub_name)
-                sub_display = sub_info.display_name if sub_info else sub_name
-                sub_dur = _get_dyn_value(sub_slot, DYN_DURABILITY)
-                sub_count = _get_dyn_value(sub_slot, DYN_STACK_COUNT)
+        # ── Render LivingItemSlots (attachments) ──────────────────────────
+        for i, sub_slot in enumerate(living_sub_slots):
+            sub_item_p = next((p for p in sub_slot.nested if p.name == 'ItemStaticData'), None)
+            sub_loc_p  = next((p for p in sub_slot.nested if p.name == 'Location'), None)
+            if not sub_item_p or not sub_item_p.value:
+                continue
 
-                loc_str = str(sub_loc.value) if sub_loc else "?"
-                dur_str = f"Dur: {sub_dur}" if sub_dur is not None else ""
-                count_str = f"x{sub_count}" if sub_count and sub_count > 1 else ""
+            sub_name    = sub_item_p.value
+            sub_loc     = sub_loc_p.value if sub_loc_p else i
+            sub_info    = self._catalog.get(sub_name)
+            sub_display = sub_info.display_name if sub_info else sub_name
+            sub_dur     = _get_dyn_value(sub_slot, DYN_DURABILITY)
+            sub_count   = _get_dyn_value(sub_slot, DYN_STACK_COUNT) or 1
+            max_stack   = (sub_info.max_stack if sub_info else 9999) or 9999
+            max_dur     = (sub_info.max_durability if sub_info and sub_info.has_durability
+                           else 0)
 
-                ctk.CTkLabel(nested_frame,
-                    text=f"  [{loc_str}] {sub_display} ({sub_name}) {count_str} {dur_str}",
-                    font=FONT_SMALL, text_color="#a0c0e0", anchor="w").grid(
-                    row=i + 1, column=0, columnspan=4, sticky="w", padx=12, pady=1)
+            row_f = ctk.CTkFrame(nested_frame,
+                                  fg_color="#1e2e40" if i % 2 == 0 else "#19263a")
+            row_f.grid(row=row_offset + i, column=0, columnspan=6,
+                       sticky="ew", padx=2, pady=1)
+            row_f.columnconfigure(1, weight=1)
+
+            ctk.CTkLabel(row_f, text=str(sub_loc), font=FONT_MONO, width=30,
+                         text_color="#7ecff4", anchor="center").grid(
+                row=0, column=0, padx=(8, 4), pady=3)
+            ctk.CTkLabel(row_f,
+                text=f"{sub_display}  ({sub_name})",
+                font=FONT_SMALL, text_color="#c8e0f4", anchor="w").grid(
+                row=0, column=1, padx=4, pady=3, sticky="w")
+
+            if max_stack > 1:
+                cnt_var = ctk.StringVar(value=str(sub_count))
+                cnt_entry = ctk.CTkEntry(row_f, textvariable=cnt_var,
+                                          font=FONT_MONO, width=60)
+                cnt_entry.grid(row=0, column=2, padx=4, pady=3)
+                cnt_entry.bind("<FocusOut>",
+                    lambda _e, sid=slot_idx, sloc=sub_loc, v=cnt_var, ms=max_stack:
+                        self._update_living_count(sid, sloc, v, ms))
+                cnt_entry.bind("<Return>",
+                    lambda _e, sid=slot_idx, sloc=sub_loc, v=cnt_var, ms=max_stack:
+                        self._update_living_count(sid, sloc, v, ms))
+            else:
+                ctk.CTkLabel(row_f, text="1", font=FONT_MONO, width=60,
+                             text_color="gray").grid(row=0, column=2, padx=4, pady=3)
+
+            if sub_dur is not None and max_dur > 0:
+                dur_var = ctk.StringVar(value=str(sub_dur))
+                dur_frame = ctk.CTkFrame(row_f, fg_color="transparent")
+                dur_frame.grid(row=0, column=3, padx=4, pady=3)
+                dur_entry = ctk.CTkEntry(dur_frame, textvariable=dur_var,
+                                          font=FONT_MONO, width=70)
+                dur_entry.pack(side="left")
+                dur_entry.bind("<FocusOut>",
+                    lambda _e, sid=slot_idx, sloc=sub_loc, v=dur_var, md=max_dur:
+                        self._update_living_dur(sid, sloc, v, md))
+                dur_entry.bind("<Return>",
+                    lambda _e, sid=slot_idx, sloc=sub_loc, v=dur_var, md=max_dur:
+                        self._update_living_dur(sid, sloc, v, md))
+                ctk.CTkLabel(dur_frame, text=f"/ {max_dur}",
+                             font=FONT_SMALL, text_color="gray").pack(
+                    side="left", padx=(2, 0))
+                ctk.CTkButton(row_f, text="Max", width=45, font=FONT_SMALL,
+                              fg_color="#7f6000", hover_color="#5c4700",
+                              command=lambda sid=slot_idx, sloc=sub_loc, md=max_dur:
+                                  self._max_living_dur(sid, sloc, md)).grid(
+                    row=0, column=4, padx=(2, 8), pady=3)
+            else:
+                ctk.CTkLabel(row_f, text="–", font=FONT_MONO, width=70,
+                             text_color="#444").grid(row=0, column=3, padx=4, pady=3)
+
+        row_offset += len(living_sub_slots)
+
+        # ── Render linked inventory items (pouch / upgrade slot) ───────────
+        for i, sub_item in enumerate(linked_items):
+            sub_name  = sub_item.get('item', '')
+            sub_loc   = sub_item.get('location', i)
+            sub_count = sub_item.get('count') or 1
+            sub_dur   = sub_item.get('durability')
+            sub_fill  = sub_item.get('fill_amount')
+            sub_info  = self._catalog.get(sub_name)
+            sub_display = sub_info.display_name if sub_info else sub_name
+            max_stack = (sub_info.max_stack if sub_info else 9999) or 9999
+            max_dur   = (sub_info.max_durability if sub_info and sub_info.has_durability
+                         else 0)
+            fill_type  = sub_info.fill_resource_type if sub_info else ''
+            max_fill   = sub_info.max_fill if sub_info else 0
+
+            row_f = ctk.CTkFrame(nested_frame,
+                                  fg_color="#1e3020" if i % 2 == 0 else "#192a1a")
+            row_f.grid(row=row_offset + i, column=0, columnspan=6,
+                       sticky="ew", padx=2, pady=1)
+            row_f.columnconfigure(1, weight=1)
+
+            ctk.CTkLabel(row_f, text=str(sub_loc), font=FONT_MONO, width=30,
+                         text_color="#7ecff4", anchor="center").grid(
+                row=0, column=0, padx=(8, 4), pady=3)
+            ctk.CTkLabel(row_f,
+                text=f"{sub_display}  ({sub_name})",
+                font=FONT_SMALL, text_color="#c8e0f4", anchor="w").grid(
+                row=0, column=1, padx=4, pady=3, sticky="w")
+
+            if max_stack > 1:
+                cnt_var = ctk.StringVar(value=str(sub_count))
+                cnt_entry = ctk.CTkEntry(row_f, textvariable=cnt_var,
+                                          font=FONT_MONO, width=60)
+                cnt_entry.grid(row=0, column=2, padx=4, pady=3)
+                cnt_entry.bind("<FocusOut>",
+                    lambda _e, lid=linked_inv_id, sloc=sub_loc, v=cnt_var, ms=max_stack:
+                        self._update_linked_count(lid, sloc, v, ms))
+                cnt_entry.bind("<Return>",
+                    lambda _e, lid=linked_inv_id, sloc=sub_loc, v=cnt_var, ms=max_stack:
+                        self._update_linked_count(lid, sloc, v, ms))
+            else:
+                ctk.CTkLabel(row_f, text="1", font=FONT_MONO, width=60,
+                             text_color="gray").grid(row=0, column=2, padx=4, pady=3)
+
+            if sub_dur is not None and max_dur > 0:
+                dur_var = ctk.StringVar(value=str(sub_dur))
+                dur_frame = ctk.CTkFrame(row_f, fg_color="transparent")
+                dur_frame.grid(row=0, column=3, padx=4, pady=3)
+                dur_entry = ctk.CTkEntry(dur_frame, textvariable=dur_var,
+                                          font=FONT_MONO, width=70)
+                dur_entry.pack(side="left")
+                dur_entry.bind("<FocusOut>",
+                    lambda _e, lid=linked_inv_id, sloc=sub_loc, v=dur_var, md=max_dur:
+                        self._update_linked_dur(lid, sloc, v, md))
+                dur_entry.bind("<Return>",
+                    lambda _e, lid=linked_inv_id, sloc=sub_loc, v=dur_var, md=max_dur:
+                        self._update_linked_dur(lid, sloc, v, md))
+                ctk.CTkLabel(dur_frame, text=f"/ {max_dur}",
+                             font=FONT_SMALL, text_color="gray").pack(
+                    side="left", padx=(2, 0))
+                ctk.CTkButton(row_f, text="Max", width=45, font=FONT_SMALL,
+                              fg_color="#7f6000", hover_color="#5c4700",
+                              command=lambda lid=linked_inv_id, sloc=sub_loc, md=max_dur:
+                                  self._max_linked_dur(lid, sloc, md)).grid(
+                    row=0, column=4, padx=(2, 8), pady=3)
+            else:
+                ctk.CTkLabel(row_f, text="–", font=FONT_MONO, width=70,
+                             text_color="#444").grid(row=0, column=3, padx=4, pady=3)
+
+            # Fill amount for fillable sub-items (e.g. canteen in a pouch)
+            if fill_type and sub_fill is not None:
+                fill_var = ctk.StringVar(value=str(sub_fill))
+                fill_frame = ctk.CTkFrame(row_f, fg_color="transparent")
+                fill_frame.grid(row=0, column=5, padx=4, pady=3)
+                ctk.CTkLabel(fill_frame, text=f"{fill_type}:",
+                             font=FONT_SMALL, text_color="#7ecff4").pack(side="left")
+                fill_entry = ctk.CTkEntry(fill_frame, textvariable=fill_var,
+                                           font=FONT_MONO, width=60)
+                fill_entry.pack(side="left", padx=(2, 0))
+                fill_entry.bind("<FocusOut>",
+                    lambda _e, lid=linked_inv_id, sloc=sub_loc, v=fill_var, mf=max_fill:
+                        self._update_linked_fill(lid, sloc, v, mf))
+                fill_entry.bind("<Return>",
+                    lambda _e, lid=linked_inv_id, sloc=sub_loc, v=fill_var, mf=max_fill:
+                        self._update_linked_fill(lid, sloc, v, mf))
+                if max_fill > 0:
+                    ctk.CTkLabel(fill_frame, text=f"/ {max_fill}",
+                                 font=FONT_SMALL, text_color="gray").pack(
+                        side="left", padx=(2, 4))
+                    ctk.CTkButton(fill_frame, text="Max", width=40,
+                                  font=FONT_SMALL,
+                                  fg_color="#005f5f", hover_color="#004545",
+                                  command=lambda lid=linked_inv_id, sloc=sub_loc, mf=max_fill:
+                                      self._max_linked_fill(lid, sloc, mf)).pack(side="left")
+
+    # ── Living slot (pouch / attachment) actions ──────────────────────
+
+    def _update_living_count(self, slot_idx: int, sub_loc: int,
+                             var: ctk.StringVar, max_stack: int):
+        if not self._gd_editor or not self._current_steam_id or self._current_inv_id is None:
+            return
+        try:
+            count = max(1, int(var.get()))
+            if not self._debug_mode and max_stack > 0:
+                count = min(count, max_stack)
+            var.set(str(count))
+        except ValueError:
+            return
+        self._gd_editor.update_living_item(
+            self._current_steam_id, self._current_inv_id,
+            slot_idx, sub_loc, count=count)
+        self._status_label.configure(
+            text=f"Slot {slot_idx} [{sub_loc}]: count = {count}", text_color="#3bba6b")
+
+    def _update_living_dur(self, slot_idx: int, sub_loc: int,
+                           var: ctk.StringVar, max_dur: int):
+        if not self._gd_editor or not self._current_steam_id or self._current_inv_id is None:
+            return
+        try:
+            dur = max(0, int(var.get()))
+            if not self._debug_mode and max_dur > 0:
+                dur = min(dur, max_dur)
+            var.set(str(dur))
+        except ValueError:
+            return
+        self._gd_editor.update_living_item(
+            self._current_steam_id, self._current_inv_id,
+            slot_idx, sub_loc, durability=dur)
+        self._status_label.configure(
+            text=f"Slot {slot_idx} [{sub_loc}]: durability = {dur}", text_color="#3bba6b")
+
+    def _max_living_dur(self, slot_idx: int, sub_loc: int, max_dur: int):
+        if not self._gd_editor or not self._current_steam_id or self._current_inv_id is None:
+            return
+        dur = self._DEBUG_DUR_LIMIT if self._debug_mode else max_dur
+        self._gd_editor.update_living_item(
+            self._current_steam_id, self._current_inv_id,
+            slot_idx, sub_loc, durability=dur)
+        self._status_label.configure(
+            text=f"Slot {slot_idx} [{sub_loc}]: durability set to max ({dur})",
+            text_color="#3bba6b")
+        self._render_slots()
+
+    # ── Linked inventory (pouch / upgrade-slot) actions ───────────────
+
+    def _update_linked_count(self, linked_inv_id: int, sub_loc: int,
+                              var: ctk.StringVar, max_stack: int):
+        if not self._gd_editor:
+            return
+        try:
+            count = max(1, int(var.get()))
+            if not self._debug_mode and max_stack > 0:
+                count = min(count, max_stack)
+            var.set(str(count))
+        except ValueError:
+            return
+        items = self._gd_editor.get_container_items(linked_inv_id)
+        target = next((it for it in items if it['location'] == sub_loc), None)
+        if target:
+            self._gd_editor._restore_container_items(
+                linked_inv_id,
+                [{**it, 'count': count} if it['location'] == sub_loc else it
+                 for it in items])
+        self._status_label.configure(
+            text=f"Container {linked_inv_id} slot {sub_loc}: count = {count}",
+            text_color="#3bba6b")
+
+    def _update_linked_dur(self, linked_inv_id: int, sub_loc: int,
+                            var: ctk.StringVar, max_dur: int):
+        if not self._gd_editor:
+            return
+        try:
+            dur = max(0, int(var.get()))
+            if not self._debug_mode and max_dur > 0:
+                dur = min(dur, max_dur)
+            var.set(str(dur))
+        except ValueError:
+            return
+        items = self._gd_editor.get_container_items(linked_inv_id)
+        self._gd_editor._restore_container_items(
+            linked_inv_id,
+            [{**it, 'durability': dur} if it['location'] == sub_loc else it
+             for it in items])
+        self._status_label.configure(
+            text=f"Container {linked_inv_id} slot {sub_loc}: durability = {dur}",
+            text_color="#3bba6b")
+
+    def _max_linked_dur(self, linked_inv_id: int, sub_loc: int, max_dur: int):
+        if not self._gd_editor:
+            return
+        dur = self._DEBUG_DUR_LIMIT if self._debug_mode else max_dur
+        items = self._gd_editor.get_container_items(linked_inv_id)
+        self._gd_editor._restore_container_items(
+            linked_inv_id,
+            [{**it, 'durability': dur} if it['location'] == sub_loc else it
+             for it in items])
+        self._status_label.configure(
+            text=f"Container {linked_inv_id} slot {sub_loc}: durability = max ({dur})",
+            text_color="#3bba6b")
+        self._render_slots()
+
+    def _update_linked_fill(self, linked_inv_id: int, sub_loc: int,
+                             var: ctk.StringVar, max_fill: int):
+        if not self._gd_editor:
+            return
+        try:
+            fill = max(0, int(var.get()))
+            if max_fill > 0:
+                fill = min(fill, max_fill)
+            var.set(str(fill))
+        except ValueError:
+            return
+        items = self._gd_editor.get_container_items(linked_inv_id)
+        self._gd_editor._restore_container_items(
+            linked_inv_id,
+            [{**it, 'fill_amount': fill} if it['location'] == sub_loc else it
+             for it in items])
+        self._status_label.configure(
+            text=f"Container {linked_inv_id} slot {sub_loc}: fill = {fill}",
+            text_color="#3bba6b")
+
+    def _max_linked_fill(self, linked_inv_id: int, sub_loc: int, max_fill: int):
+        if not self._gd_editor:
+            return
+        items = self._gd_editor.get_container_items(linked_inv_id)
+        self._gd_editor._restore_container_items(
+            linked_inv_id,
+            [{**it, 'fill_amount': max_fill} if it['location'] == sub_loc else it
+             for it in items])
+        self._status_label.configure(
+            text=f"Container {linked_inv_id} slot {sub_loc}: fill = max ({max_fill})",
+            text_color="#3bba6b")
+        self._render_slots()
+
+    def _update_fill_amount(self, slot_idx: int, var: ctk.StringVar, max_fill: int):
+        """Update fill amount for a main inventory slot."""
+        if not self._gd_editor or not self._current_steam_id or self._current_inv_id is None:
+            return
+        try:
+            fill = max(0, int(var.get()))
+            if max_fill > 0:
+                fill = min(fill, max_fill)
+            var.set(str(fill))
+        except ValueError:
+            return
+        item = next((it for it in self._items if it['location'] == slot_idx), None)
+        if item is None:
+            return
+        self._gd_editor.set_item(
+            self._current_steam_id, self._current_inv_id, slot_idx,
+            item['item'], count=item.get('count') or 1,
+            durability=item.get('durability'), fill_amount=fill)
+        self._status_label.configure(
+            text=f"Slot {slot_idx}: fill = {fill}", text_color="#3bba6b")
+
+    def _max_fill_amount(self, slot_idx: int, max_fill: int):
+        """Set fill to max for a main inventory slot."""
+        if not self._gd_editor or not self._current_steam_id or self._current_inv_id is None:
+            return
+        item = next((it for it in self._items if it['location'] == slot_idx), None)
+        if item is None:
+            return
+        self._gd_editor.set_item(
+            self._current_steam_id, self._current_inv_id, slot_idx,
+            item['item'], count=item.get('count') or 1,
+            durability=item.get('durability'), fill_amount=max_fill)
+        self._status_label.configure(
+            text=f"Slot {slot_idx}: fill = max ({max_fill})", text_color="#3bba6b")
+        self._render_slots()
 
     # ── Item actions ──────────────────────────────────────────────────
 
@@ -1831,6 +2279,75 @@ class ProspectInventoryTab(ctk.CTkFrame):
         n = self._gd_editor.clear_inventory(self._current_steam_id, self._current_inv_id)
         self._status_label.configure(text=f"Cleared {n} items.", text_color="#e09b3d")
         self._render_slots()
+
+    # ── Import / Export ───────────────────────────────────────────────
+
+    def _export_inventory(self):
+        if not self._gd_editor or not self._current_steam_id:
+            self._status_label.configure(text="Load a file first.", text_color="#e09b3d")
+            return
+        path = filedialog.asksaveasfilename(
+            title="Export All Inventories",
+            defaultextension=".json",
+            filetypes=[("JSON Files", "*.json"), ("All Files", "*.*")],
+            initialfile=f"inventories_{self._current_steam_id}.json",
+        )
+        if not path:
+            return
+        try:
+            data = self._gd_editor.export_all_inventories(self._current_steam_id)
+            with open(path, 'w', encoding='utf-8') as f:
+                json.dump(data, f, indent=2, ensure_ascii=False)
+            total = sum(len(inv['items']) for inv in data['inventories'])
+            n_invs = len(data['inventories'])
+            self._status_label.configure(
+                text=f"Exported {total} item(s) across {n_invs} inventories.",
+                text_color="#3bba6b")
+        except Exception as e:
+            messagebox.showerror("Export Error", str(e))
+
+    def _import_inventory(self):
+        if not self._gd_editor or not self._current_steam_id:
+            self._status_label.configure(text="Load a file first.", text_color="#e09b3d")
+            return
+        path = filedialog.askopenfilename(
+            title="Import All Inventories",
+            filetypes=[("JSON Files", "*.json"), ("All Files", "*.*")],
+        )
+        if not path:
+            return
+        try:
+            with open(path, 'r', encoding='utf-8') as f:
+                data = json.load(f)
+        except Exception as e:
+            messagebox.showerror("Import Error", f"Could not read file:\n{e}")
+            return
+
+        if data.get('type') != 'icarus_player_inventories':
+            if not messagebox.askyesno(
+                    "Wrong File Type",
+                    "This file does not look like a full player inventories export.\n"
+                    "Import anyway?"):
+                return
+
+        merge = messagebox.askyesnocancel(
+            "Import Mode",
+            "Yes  = Merge  (keep existing items, skip occupied slots)\n"
+            "No   = Replace (clear each inventory first, then import)\n"
+            "Cancel = Abort")
+        if merge is None:
+            return
+
+        try:
+            n = self._gd_editor.import_all_inventories(
+                self._current_steam_id, data, merge=merge)
+            mode_str = "merged" if merge else "replaced"
+            self._status_label.configure(
+                text=f"Imported {n} item(s) across all inventories ({mode_str}). Save GD.json to persist.",
+                text_color="#3bba6b")
+            self._render_slots()
+        except Exception as e:
+            messagebox.showerror("Import Error", str(e))
 
     # ── Save ──────────────────────────────────────────────────────────
 

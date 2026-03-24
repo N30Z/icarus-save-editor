@@ -6,6 +6,7 @@ Loads item metadata from extracted game data tables:
   - data/Traits/D_Itemable.json       (display name, max stack, weight)
   - data/Traits/D_Durable.json        (max durability)
   - data/Items/D_ItemTemplate.json    (override stack sizes from crafting)
+  - data/Traits/D_Fillable.json       (fill resource type + max capacity)
 
 Provides:
   - load_item_catalog()  → dict of ItemInfo by row name
@@ -33,6 +34,8 @@ class ItemInfo:
     inventory_container: str  # InventoryContainer RowName (e.g. 'Knife_Attachment')
     weight: int             # item weight (×10 internal units)
     tags: List[str]         # gameplay tags for categorization
+    fill_resource_type: str # '' if not fillable, else e.g. 'Water', 'Oxygen', 'Biofuel'
+    max_fill: int           # 0 if not fillable, else max capacity in game units
 
 
 def _extract_nsloctext(s: str) -> str:
@@ -66,7 +69,15 @@ def load_item_catalog() -> Dict[str, ItemInfo]:
     durable_lookup: Dict[str, dict] = {r['Name']: r for r in durable_data['Rows']}
     durable_default_max = durable_data.get('Defaults', {}).get('Max_Durability', 100)
 
-    # 4. Load D_ItemTemplate (override stack sizes)
+    # 4. Load D_Fillable (fill resource type + max capacity)
+    fillable_path = os.path.join(_DATA_DIR, 'Traits', 'D_Fillable.json')
+    fillable_lookup: Dict[str, dict] = {}
+    if os.path.exists(fillable_path):
+        with open(fillable_path, 'r', encoding='utf-8') as f:
+            fillable_data = json.load(f)
+        fillable_lookup = {r['Name']: r for r in fillable_data.get('Rows', [])}
+
+    # 5. Load D_ItemTemplate (override stack sizes)
     template_path = os.path.join(_DATA_DIR, 'Items', 'D_ItemTemplate.json')
     template_stacks: Dict[str, int] = {}
     if os.path.exists(template_path):
@@ -117,6 +128,17 @@ def load_item_catalog() -> Dict[str, ItemInfo]:
         for tag_entry in item_row.get('Manual_Tags', {}).get('GameplayTags', []):
             tags.append(tag_entry.get('TagName', ''))
 
+        # Resolve Fillable reference (fill resource type + max capacity)
+        fillable_rn = item_row.get('Fillable', {}).get('RowName', '')
+        fill_resource_type = ''
+        max_fill = 0
+        if fillable_rn and fillable_rn in fillable_lookup:
+            fill_row = fillable_lookup[fillable_rn]
+            resource_types = fill_row.get('ResourceTypes', [])
+            if resource_types:
+                fill_resource_type = resource_types[0].get('Value', '')
+            max_fill = fill_row.get('MaximumStoredUnits', 0)
+
         catalog[row_name] = ItemInfo(
             row_name=row_name,
             display_name=display_name,
@@ -127,6 +149,8 @@ def load_item_catalog() -> Dict[str, ItemInfo]:
             inventory_container=inv_container_rn,
             weight=weight,
             tags=tags,
+            fill_resource_type=fill_resource_type,
+            max_fill=max_fill,
         )
 
     return catalog

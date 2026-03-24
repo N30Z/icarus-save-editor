@@ -48,6 +48,12 @@ from ue4_properties import PropertySerializer, FPropertyTag
 DYN_DURABILITY  = 6   # item durability / health value
 DYN_STACK_COUNT = 7   # stack count (quantity)
 DYN_MAX_STACK   = 9   # max stack size
+DYN_FILL_AMOUNT = 10  # current fill level (water, oxygen, etc.)
+DYN_FILL_TYPE   = 11  # fill type: 2=water, 4=oxygen
+DYN_LINKED_INV  = 13  # linked sub-inventory ID (pouches, armor upgrade slots)
+
+# Fill type labels
+FILL_TYPE_NAMES = {2: 'Water', 4: 'Oxygen'}
 
 # Known inventory IDs
 INVENTORY_NAMES = {
@@ -65,6 +71,7 @@ _DYNDATA_STRUCT       = 'InventorySlotDynamicData'
 _ADDSTATS_STRUCT      = 'InventorySlotStatData'
 _ALTERATIONS_STRUCT   = 'InventorySlotAlterationData'
 _LIVING_STRUCT        = 'LivingItemSlotSaveData'
+_INVSAVE_STRUCT       = 'InventorySaveData'
 
 
 # ---------------------------------------------------------------------------
@@ -84,6 +91,28 @@ class PlayerState:
     bd_data_len:  int   # current byte length of BinaryData content
 
     # Parsed property tree
+    props: List[FPropertyTag] = field(default_factory=list)
+    dirty: bool = False
+
+
+@dataclass
+class ContainerManagerState:
+    """
+    IcarusContainerManagerRecorderComponent blob.
+
+    Stores all sub-inventory contents for items that have container slots:
+    pouches, weapon ammo slots, armor upgrade slots, etc.
+
+    SavedInventoryContainers[i] describes container slot i (type/info).
+    SavedInventories[i] holds the actual items in container slot i.
+
+    Player slots reference this via DynamicData index 13 (DYN_LINKED_INV),
+    which is the array index into SavedInventories.
+    """
+    bd_size_pos:  int
+    bd_count_pos: int
+    bd_data_pos:  int
+    bd_data_len:  int
     props: List[FPropertyTag] = field(default_factory=list)
     dirty: bool = False
 
@@ -136,11 +165,14 @@ def _slot_to_dict(slot: FPropertyTag, inv_id: int) -> Optional[Dict]:
     if not item_prop or not item_prop.value:
         return None
     return {
-        'inv_id':    inv_id,
-        'location':  loc_prop.value if loc_prop else None,
-        'item':      item_prop.value,
-        'count':     _get_dyn_value(slot, DYN_STACK_COUNT),
-        'durability': _get_dyn_value(slot, DYN_DURABILITY),
+        'inv_id':        inv_id,
+        'location':      loc_prop.value if loc_prop else None,
+        'item':          item_prop.value,
+        'count':         _get_dyn_value(slot, DYN_STACK_COUNT),
+        'durability':    _get_dyn_value(slot, DYN_DURABILITY),
+        'fill_amount':   _get_dyn_value(slot, DYN_FILL_AMOUNT),
+        'fill_type':     _get_dyn_value(slot, DYN_FILL_TYPE),
+        'linked_inv_id': _get_dyn_value(slot, DYN_LINKED_INV),
     }
 
 
@@ -211,6 +243,7 @@ class GdInventoryEditor:
         self.gd_path = gd_path
         self.binary:  Optional[bytes] = None
         self.players: Dict[str, PlayerState] = {}
+        self.container_manager: Optional[ContainerManagerState] = None
         self._ps = PropertySerializer()
 
     # ------------------------------------------------------------------
@@ -224,7 +257,9 @@ class GdInventoryEditor:
         compressed = base64.b64decode(raw['ProspectBlob']['BinaryBlob'])
         self.binary = zlib.decompress(compressed)
         self.players = {}
+        self.container_manager = None
         self._find_player_state_blobs()
+        self._find_container_manager_blob()
 
     def _find_player_state_blobs(self) -> None:
         """Scan the binary for PlayerStateRecorderComponent entries."""
@@ -315,9 +350,122 @@ class GdInventoryEditor:
             props=props,
         )
 
+    def _find_container_manager_blob(self) -> None:
+        """
+        Locate and parse the IcarusContainerManagerRecorderComponent binary blob.
+
+        This component stores all sub-inventory contents for portable containers
+        (pouches, weapon ammo slots, armor upgrade slots).  Player slots reference
+        it via DYN_LINKED_INV (DynamicData index 13), which is the ARRAY INDEX
+        into ContainerManager.SavedInventories (not an inventory ID).
+        """
+        d = self.binary
+        pat = b'/Script/Icarus.IcarusContainerManagerRecorderComponent\x00'
+        pos = d.find(pat)
+        if pos == -1:
+            return
+
+        bd_name_pos = d.find(b'BinaryData\x00', pos, pos + 500)
+        if bd_name_pos == -1:
+            return
+
+        p = bd_name_pos - 4
+        try:
+            name_len = struct.unpack_from('<i', d, p)[0]; p += 4
+            p += name_len
+            type_len = struct.unpack_from('<i', d, p)[0]; p += 4
+            p += type_len
+            bd_size_pos = p
+            bd_size = struct.unpack_from('<i', d, p)[0]; p += 4
+            p += 4
+            inner_len = struct.unpack_from('<i', d, p)[0]; p += 4
+            p += inner_len
+            hg = d[p]; p += 1
+            if hg: p += 16
+            bd_count_pos = p
+            bd_count = struct.unpack_from('<i', d, p)[0]; p += 4
+            bd_data_pos = p
+        except Exception:
+            return
+
+        if bd_size != bd_count + 4:
+            return
+        if not (10 < bd_count < 10_000_000):
+            return
+
+        try:
+            props = self._ps.deserialize(d[bd_data_pos:bd_data_pos + bd_count])
+        except Exception:
+            return
+
+        self.container_manager = ContainerManagerState(
+            bd_size_pos=bd_size_pos,
+            bd_count_pos=bd_count_pos,
+            bd_data_pos=bd_data_pos,
+            bd_data_len=bd_count,
+            props=props,
+        )
+
     # ------------------------------------------------------------------
     # Read API
     # ------------------------------------------------------------------
+
+    def _container_array_pos(self, inventory_index: int) -> int:
+        """
+        Find the array position in SavedInventories/SavedInventoryContainers that
+        corresponds to the given InventoryIndex value.
+
+        DYN_LINKED_INV stores an InventoryIndex (logical ID), NOT a direct array
+        position.  The SavedInventoryContainers list can have gaps in InventoryIndex
+        values when containers have been dynamically added across multiple players.
+
+        Returns -1 if not found.
+        """
+        if not self.container_manager:
+            return -1
+        sic = next(
+            (p for p in self.container_manager.props
+             if p.name == 'SavedInventoryContainers'),
+            None)
+        if not sic:
+            return -1
+        for pos, entry in enumerate(sic.nested):
+            ii_p = next((p for p in entry.nested if p.name == 'InventoryIndex'), None)
+            if ii_p and ii_p.value == inventory_index:
+                return pos
+        return -1
+
+    def get_container_items(self, inventory_index: int) -> List[Dict]:
+        """
+        Return items from the container slot with the given InventoryIndex.
+
+        inventory_index is the DYN_LINKED_INV (DynamicData index 13) value from
+        a player's inventory slot — it is the logical InventoryIndex stored in
+        SavedInventoryContainers, NOT a direct array position.
+
+        Returns an empty list if no ContainerManager was found or the index is
+        not registered.
+        """
+        pos = self._container_array_pos(inventory_index)
+        if pos == -1:
+            return []
+        if not self.container_manager:
+            return []
+        saved_inv = next(
+            (p for p in self.container_manager.props if p.name == 'SavedInventories'),
+            None)
+        if not saved_inv or pos >= len(saved_inv.nested):
+            return []
+        entry = saved_inv.nested[pos]
+        slots_p = next((p for p in entry.nested if p.name == 'Slots'), None)
+        if not slots_p:
+            return []
+        result = []
+        for slot in slots_p.nested:
+            d = _slot_to_dict(slot, inventory_index)
+            if d:
+                result.append(d)
+        return result
 
     def list_players(self) -> List[Dict]:
         """Return a list of players found in the save."""
@@ -392,18 +540,20 @@ class GdInventoryEditor:
 
     def set_item(self, steam_id: str, inv_id: int, location: int,
                  item_name: str, count: int = 1,
-                 durability: Optional[int] = None) -> None:
+                 durability: Optional[int] = None,
+                 fill_amount: Optional[int] = None) -> None:
         """
         Place an item at a specific slot location.
         If the slot already exists it is updated; otherwise a new slot is added.
 
         Args:
-            steam_id:   Target player steam ID.
-            inv_id:     Inventory ID (2=hotbar, 3=backpack, 5=armor).
-            location:   Slot index within the inventory.
-            item_name:  Game item row name (e.g. 'Iron_Ingot', 'Assault_Rifle').
-            count:      Stack size / quantity.
-            durability: Item durability value (omit for non-tool items).
+            steam_id:    Target player steam ID.
+            inv_id:      Inventory ID (2=hotbar, 3=backpack, 5=armor).
+            location:    Slot index within the inventory.
+            item_name:   Game item row name (e.g. 'Iron_Ingot', 'Assault_Rifle').
+            count:       Stack size / quantity.
+            durability:  Item durability value (omit for non-tool items).
+            fill_amount: Fill level for fillable items (water, oxygen, etc.).
         """
         player = self.players.get(steam_id)
         if not player:
@@ -419,11 +569,15 @@ class GdInventoryEditor:
             _set_dyn_value(slot, DYN_STACK_COUNT, count)
             if durability is not None:
                 _set_dyn_value(slot, DYN_DURABILITY, durability)
+            if fill_amount is not None:
+                _set_dyn_value(slot, DYN_FILL_AMOUNT, fill_amount)
         else:
             # Create new slot
             if slots_prop is None:
                 raise ValueError(f"Inventory {inv_id} not found for player {steam_id}")
             new_slot = _make_new_slot(location, item_name, count, durability)
+            if fill_amount is not None:
+                _set_dyn_value(new_slot, DYN_FILL_AMOUNT, fill_amount)
             slots_prop.nested.append(new_slot)
 
         player.dirty = True
@@ -483,8 +637,9 @@ class GdInventoryEditor:
         Args:
             backup: If True, copy the original file to GD.json.backup first.
         """
-        dirty = [p for p in self.players.values() if p.dirty]
-        if not dirty:
+        dirty_players = [p for p in self.players.values() if p.dirty]
+        dirty_cm = self.container_manager and self.container_manager.dirty
+        if not dirty_players and not dirty_cm:
             print("No changes to save.")
             return
 
@@ -494,27 +649,34 @@ class GdInventoryEditor:
             print(f"Backup saved to {bak}")
 
         # Build new binary with all changes applied.
-        # Process players sorted by ascending bd_data_pos so position adjustments
-        # accumulate correctly.
+        # Collect all dirty blobs (players + container manager) sorted by position
+        # so that offset adjustments accumulate correctly.
         binary = bytearray(self.binary)
         total_delta = 0
 
-        for player in sorted(dirty, key=lambda p: p.bd_data_pos):
-            new_bd = self._ps.serialize(player.props, add_trailing=True)
+        # Build list of (bd_data_pos, blob_state) for all dirty blobs
+        dirty_blobs = []
+        for player in dirty_players:
+            dirty_blobs.append(player)
+        if dirty_cm:
+            dirty_blobs.append(self.container_manager)
+        dirty_blobs.sort(key=lambda b: b.bd_data_pos)
+
+        for blob in dirty_blobs:
+            if isinstance(blob, ContainerManagerState):
+                new_bd = self._ps.serialize(blob.props, add_trailing=True)
+            else:
+                new_bd = self._ps.serialize(blob.props, add_trailing=True)
             new_count = len(new_bd)
-            old_count = player.bd_data_len
+            old_count = blob.bd_data_len
             delta     = new_count - old_count
 
-            # Adjust for any patches applied before this player.
-            size_pos  = player.bd_size_pos  + total_delta
-            count_pos = player.bd_count_pos + total_delta
-            data_pos  = player.bd_data_pos  + total_delta
+            size_pos  = blob.bd_size_pos  + total_delta
+            count_pos = blob.bd_count_pos + total_delta
+            data_pos  = blob.bd_data_pos  + total_delta
 
-            # Patch size field (payload size = count + 4)
             binary[size_pos:size_pos + 4] = struct.pack('<i', new_count + 4)
-            # Patch count field
             binary[count_pos:count_pos + 4] = struct.pack('<i', new_count)
-            # Replace byte array content
             binary[data_pos:data_pos + old_count] = new_bd
 
             total_delta += delta
@@ -545,10 +707,254 @@ class GdInventoryEditor:
               f"(binary delta: {total_delta:+d} bytes, "
               f"compressed: {len(compressed):,} bytes)")
 
-        # Mark players as clean and update positions for subsequent saves.
-        # (Reload is safest for further edits; warn accordingly.)
-        for player in dirty:
-            player.dirty = False
+        # Mark blobs as clean.
+        for blob in dirty_blobs:
+            blob.dirty = False
+
+    def export_inventory(self, steam_id: str, inv_id: int) -> Dict:
+        """Export a player inventory to a portable dict (for saving to a JSON file)."""
+        inv_name = INVENTORY_NAMES.get(inv_id, f'Inventory-{inv_id}')
+        return {
+            'type': 'icarus_prospect_inventory',
+            'version': 1,
+            'inventory_id': inv_id,
+            'inventory_name': inv_name,
+            'items': self._export_items_with_living(steam_id, inv_id),
+        }
+
+    def _export_items_with_living(self, steam_id: str, inv_id: int) -> List[Dict]:
+        """Return items for an inventory with living_slots_bin / container_items for slots that have them."""
+        player = self.players.get(steam_id)
+        if not player:
+            return []
+        saved_inv = next((pp for pp in player.props if pp.name == 'SavedInventories'), None)
+        if not saved_inv:
+            return []
+        items = []
+        for entry in saved_inv.nested:
+            iid_p = next((pp for pp in entry.nested if pp.name == 'InventoryID'), None)
+            if not iid_p or iid_p.value != inv_id:
+                continue
+            slot_p = next((pp for pp in entry.nested if pp.name == 'Slots'), None)
+            if not slot_p:
+                break
+            for slot in slot_p.nested:
+                d = _slot_to_dict(slot, inv_id)
+                if not d:
+                    continue
+                # Weapon modifications: serialise LivingItemSlots as binary blob
+                living = next((p for p in slot.nested if p.name == 'LivingItemSlots'), None)
+                if living and living.nested:
+                    binary = self._ps.serialize([living], add_trailing=False)
+                    d['living_slots_bin'] = base64.b64encode(binary).decode('ascii')
+                # Pouch / upgrade-slot contents: stored in ContainerManager by array index
+                container_idx = d.get('linked_inv_id')
+                if container_idx is not None:
+                    d['container_items'] = self.get_container_items(container_idx)
+                items.append(d)
+            break
+        return items
+
+    def _get_linked_inventory_items(self, saved_inv: FPropertyTag,
+                                     linked_inv_id: int) -> List[Dict]:
+        """
+        Compatibility shim: look up container items via ContainerManager.
+
+        The linked_inv_id is the DYN_LINKED_INV value (ContainerManager array index).
+        """
+        return self.get_container_items(linked_inv_id)
+
+    def import_inventory(self, steam_id: str, inv_id: int,
+                         data: Dict, merge: bool = False) -> int:
+        """
+        Import items from an exported inventory dict.
+
+        Args:
+            steam_id: Target player steam ID.
+            inv_id:   Target inventory ID.
+            data:     Dict produced by export_inventory().
+            merge:    If True, skip slots that are already occupied.
+                      If False, clear the inventory first.
+        Returns:
+            Number of items imported.
+        """
+        if not merge:
+            self.clear_inventory(steam_id, inv_id)
+
+        used_slots: set = set()
+        if merge:
+            existing = self.get_items(steam_id, inv_id)
+            used_slots = {it['location'] for it in existing}
+
+        items_data = data.get('items', [])
+        count = 0
+        for entry in items_data:
+            location = entry.get('location')
+            item_name = entry.get('item', '')
+            item_count = max(1, entry.get('count', 1) or 1)
+            durability = entry.get('durability')
+
+            if location is None or not item_name:
+                continue
+            if merge and location in used_slots:
+                continue
+
+            try:
+                self.set_item(steam_id, inv_id, location, item_name,
+                              count=item_count, durability=durability)
+            except Exception:
+                pass
+            else:
+                player = self.players[steam_id]
+                living_bin = entry.get('living_slots_bin')
+                if living_bin:
+                    self._restore_living_slots(player, inv_id, location, living_bin)
+                # Container items (pouches, armor upgrade slots) via ContainerManager
+                container_items = entry.get('container_items')
+                container_idx = entry.get('linked_inv_id')
+                if container_items is not None and container_idx is not None:
+                    self._restore_container_items(container_idx, container_items)
+                count += 1
+
+        return count
+
+    def _restore_living_slots(self, player: PlayerState, inv_id: int,
+                               location: int, b64: str) -> None:
+        """Restore LivingItemSlots on a slot from a base64-encoded binary blob."""
+        slot, _, _ = self._find_slot(player, inv_id, location)
+        if not slot:
+            return
+        binary = base64.b64decode(b64)
+        props = self._ps.deserialize(binary)
+        restored = next((p for p in props if p.name == 'LivingItemSlots'), None)
+        if not restored:
+            return
+        living = next((p for p in slot.nested if p.name == 'LivingItemSlots'), None)
+        if living is not None:
+            living.nested = restored.nested
+            if restored.struct_type:
+                living.struct_type = restored.struct_type
+            if restored.elem_name:
+                living.elem_name = restored.elem_name
+        else:
+            slot.nested.append(restored)
+
+    def _restore_container_items(self, inventory_index: int,
+                                  items: List[Dict]) -> None:
+        """
+        Write items to the ContainerManager slot with the given InventoryIndex.
+
+        inventory_index is the DYN_LINKED_INV value (logical InventoryIndex),
+        not a direct array position.  The slot must already exist in the
+        ContainerManager.  Items are replaced (not merged).
+        """
+        if not self.container_manager:
+            return
+        pos = self._container_array_pos(inventory_index)
+        if pos == -1:
+            return
+        saved_inv = next(
+            (p for p in self.container_manager.props if p.name == 'SavedInventories'),
+            None)
+        if not saved_inv or pos >= len(saved_inv.nested):
+            return
+        entry = saved_inv.nested[pos]
+        slots_p = next((p for p in entry.nested if p.name == 'Slots'), None)
+        if slots_p is None:
+            return
+        slots_p.nested.clear()
+        for item_entry in items:
+            loc = item_entry.get('location')
+            iname = item_entry.get('item', '')
+            if loc is None or not iname:
+                continue
+            cnt = max(1, item_entry.get('count', 1) or 1)
+            dur = item_entry.get('durability')
+            fill = item_entry.get('fill_amount')
+            new_slot = _make_new_slot(loc, iname, cnt, dur)
+            if fill is not None:
+                _set_dyn_value(new_slot, DYN_FILL_AMOUNT, fill)
+            slots_p.nested.append(new_slot)
+        self.container_manager.dirty = True
+
+    def export_all_inventories(self, steam_id: str) -> Dict:
+        """Export all inventories for a player to a portable dict."""
+        inventories = []
+        for inv in self.get_inventories(steam_id):
+            inv_id = inv['id']
+            inventories.append({
+                'inventory_id': inv_id,
+                'inventory_name': inv['name'],
+                'items': self._export_items_with_living(steam_id, inv_id),
+            })
+        return {
+            'type': 'icarus_player_inventories',
+            'version': 1,
+            'steam_id': steam_id,
+            'inventories': inventories,
+        }
+
+    def import_all_inventories(self, steam_id: str, data: Dict,
+                               merge: bool = False) -> int:
+        """
+        Import all inventories from an exported player inventories dict.
+
+        Each inventory in the file is matched by inventory_id and imported
+        into the same slot on the target player. Unknown inventory IDs are
+        silently skipped.
+
+        Args:
+            steam_id: Target player steam ID.
+            data:     Dict produced by export_all_inventories().
+            merge:    If True, skip slots that are already occupied.
+                      If False, clear each matching inventory first.
+        Returns:
+            Total number of items imported across all inventories.
+        """
+        known_ids = {inv['id'] for inv in self.get_inventories(steam_id)}
+        total = 0
+        for inv_block in data.get('inventories', []):
+            inv_id = inv_block.get('inventory_id')
+            if inv_id not in known_ids:
+                continue
+            total += self.import_inventory(steam_id, inv_id, inv_block, merge=merge)
+        return total
+
+    def update_living_item(self, steam_id: str, inv_id: int, slot_location: int,
+                           sub_location: int, count: Optional[int] = None,
+                           durability: Optional[int] = None) -> bool:
+        """
+        Update count and/or durability of an item inside a LivingItemSlots container.
+
+        Args:
+            steam_id:      Player steam ID.
+            inv_id:        Inventory ID.
+            slot_location: Location of the parent slot (the pouch/weapon).
+            sub_location:  Location of the item inside the parent's LivingItemSlots.
+            count:         New stack count (or None to leave unchanged).
+            durability:    New durability (or None to leave unchanged).
+        Returns:
+            True if the sub-slot was found and updated.
+        """
+        player = self.players.get(steam_id)
+        if not player:
+            return False
+        slot, _, _ = self._find_slot(player, inv_id, slot_location)
+        if not slot:
+            return False
+        living = next((p for p in slot.nested if p.name == 'LivingItemSlots'), None)
+        if not living:
+            return False
+        for sub in living.nested:
+            loc_p = next((p for p in sub.nested if p.name == 'Location'), None)
+            if loc_p and loc_p.value == sub_location:
+                if count is not None:
+                    _set_dyn_value(sub, DYN_STACK_COUNT, count)
+                if durability is not None:
+                    _set_dyn_value(sub, DYN_DURABILITY, durability)
+                player.dirty = True
+                return True
+        return False
 
     # ------------------------------------------------------------------
     # Internal helpers
