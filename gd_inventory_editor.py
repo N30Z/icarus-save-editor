@@ -158,13 +158,33 @@ def _set_dyn_value(slot: FPropertyTag, index: int, value: int) -> None:
     dd_prop.nested.append(new_entry)
 
 
+_KNOWN_DYN_INDICES = frozenset({
+    DYN_DURABILITY, DYN_STACK_COUNT, DYN_MAX_STACK,
+    DYN_FILL_AMOUNT, DYN_FILL_TYPE, DYN_LINKED_INV,
+})
+
+
+def _get_extra_dyn_values(slot: FPropertyTag) -> Dict[int, int]:
+    """Return all DynamicData entries whose index is not in the known set."""
+    dd_prop = next((p for p in slot.nested if p.name == 'DynamicData'), None)
+    if not dd_prop:
+        return {}
+    result = {}
+    for entry in dd_prop.nested:
+        idx_p = next((p for p in entry.nested if p.name == 'Index'), None)
+        val_p = next((p for p in entry.nested if p.name == 'Value'), None)
+        if idx_p and val_p and idx_p.value not in _KNOWN_DYN_INDICES:
+            result[idx_p.value] = val_p.value
+    return result
+
+
 def _slot_to_dict(slot: FPropertyTag, inv_id: int) -> Optional[Dict]:
     """Convert a slot FPropertyTag to a plain dict for display."""
     item_prop = next((p for p in slot.nested if p.name == 'ItemStaticData'), None)
     loc_prop  = next((p for p in slot.nested if p.name == 'Location'), None)
     if not item_prop or not item_prop.value:
         return None
-    return {
+    d = {
         'inv_id':        inv_id,
         'location':      loc_prop.value if loc_prop else None,
         'item':          item_prop.value,
@@ -174,6 +194,10 @@ def _slot_to_dict(slot: FPropertyTag, inv_id: int) -> Optional[Dict]:
         'fill_type':     _get_dyn_value(slot, DYN_FILL_TYPE),
         'linked_inv_id': _get_dyn_value(slot, DYN_LINKED_INV),
     }
+    extra = _get_extra_dyn_values(slot)
+    if extra:
+        d['dyn_data_extra'] = extra
+    return d
 
 
 def _make_new_slot(location: int, item_name: str, count: int = 1,
@@ -237,7 +261,8 @@ class GdInventoryEditor:
         editor.save(backup=True)
     """
 
-    _TOTAL_SIZE_POS = 41    # offset of StateRecorderBlobs outer 'size' int32
+    _TOTAL_SIZE_POS = 41    # offset of StateRecorderBlobs outer ArrayProperty 'size' int32
+    _PROTO_SIZE_POS = 115   # offset of prototype StructProperty 'size' int32 (= total element data)
 
     def __init__(self, gd_path: str):
         self.gd_path = gd_path
@@ -681,11 +706,13 @@ class GdInventoryEditor:
 
             total_delta += delta
 
-        # Update outer StateRecorderBlobs 'size' field if content length changed.
+        # Update outer StateRecorderBlobs size fields if content length changed.
+        # Both the ArrayProperty 'size' (pos 41) and the prototype tag 'size' (pos 115)
+        # represent the total element data and must be kept in sync.
         if total_delta != 0:
-            tsp = self._TOTAL_SIZE_POS
-            old_total = struct.unpack_from('<i', bytes(binary), tsp)[0]
-            binary[tsp:tsp + 4] = struct.pack('<i', old_total + total_delta)
+            for pos in (self._TOTAL_SIZE_POS, self._PROTO_SIZE_POS):
+                old_val = struct.unpack_from('<i', bytes(binary), pos)[0]
+                binary[pos:pos + 4] = struct.pack('<i', old_val + total_delta)
 
         # Re-compress and update GD.json.
         new_binary = bytes(binary)
@@ -812,7 +839,19 @@ class GdInventoryEditor:
                 # Container items (pouches, armor upgrade slots) via ContainerManager
                 container_items = entry.get('container_items')
                 container_idx = entry.get('linked_inv_id')
+                # Restore extra DynamicData indices not handled by set_item
+                extra_dyn = entry.get('dyn_data_extra')
+                if extra_dyn:
+                    slot, _, _ = self._find_slot(player, inv_id, location)
+                    if slot:
+                        for idx, val in extra_dyn.items():
+                            _set_dyn_value(slot, int(idx), val)
                 if container_items is not None and container_idx is not None:
+                    # Re-stamp DYN_LINKED_INV on the (re-)created slot so the
+                    # game and GUI can find the ContainerManager entry.
+                    slot, _, _ = self._find_slot(player, inv_id, location)
+                    if slot:
+                        _set_dyn_value(slot, DYN_LINKED_INV, container_idx)
                     self._restore_container_items(container_idx, container_items)
                 count += 1
 
@@ -874,6 +913,10 @@ class GdInventoryEditor:
             new_slot = _make_new_slot(loc, iname, cnt, dur)
             if fill is not None:
                 _set_dyn_value(new_slot, DYN_FILL_AMOUNT, fill)
+            extra_dyn = item_entry.get('dyn_data_extra')
+            if extra_dyn:
+                for idx, val in extra_dyn.items():
+                    _set_dyn_value(new_slot, int(idx), val)
             slots_p.nested.append(new_slot)
         self.container_manager.dirty = True
 

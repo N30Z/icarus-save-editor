@@ -1536,7 +1536,10 @@ class ProspectInventoryTab(ctk.CTkFrame):
         items = self._gd_editor.get_items(self._current_steam_id, self._current_inv_id)
         self._items = sorted(items, key=lambda x: x['location'] or 0)
 
-        max_slots = _INV_SLOT_COUNTS.get(self._current_inv_id, 24)
+        default_slots = _INV_SLOT_COUNTS.get(self._current_inv_id, 24)
+        max_used = max((it['location'] for it in self._items if it['location'] is not None),
+                       default=-1)
+        max_slots = max(default_slots, max_used + 1)
 
         # Build a location -> item map
         loc_map = {it['location']: it for it in self._items}
