@@ -1366,7 +1366,7 @@
         {
             "Name": "Sugar_Cane",
             "CropRewards": {
-                "RowName": "Sugar_Cane"
+                "RowName": "Sugar_Cane_Crops"
             },
             "DecayedRewards": {
                 "RowName": "Spoiled_Crops_SugarCane"

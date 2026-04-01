@@ -659,10 +659,10 @@
         },
         {
             "Name": "LegendaryWeapon_Sandwyrm_Chainsaw",
-            "Melee_Damage": 150,
+            "Melee_Damage": 40,
             "DamageVariationPercentage": 5,
-            "Felling_Damage": 100,
-            "Felling_Efficiency": 1.25
+            "Felling_Damage": 75,
+            "Felling_Efficiency": 1.3300000429153442
         }
     ]
 }

@@ -11298,6 +11298,15 @@
             "MaxLevel": 120
         },
         {
+            "Name": "PRO_DummyEntry",
+            "Creatures": {
+                "BiomeSpawnDensity": 0
+            },
+            "MinLevel": 0,
+            "MedianLevel": 0,
+            "MaxLevel": 0
+        },
+        {
             "Name": "Outpost_Tundra",
             "Creatures": {
                 "AISpawnList": [

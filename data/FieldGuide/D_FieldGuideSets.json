@@ -881,7 +881,7 @@
             ]
         },
         {
-            "Name": "Scoria_Brick",
+            "Name": "Scoria_Brick_Buildings",
             "SetItems": [
                 {
                     "RowName": "Scoria_Brick_Floor",
@@ -913,6 +913,91 @@
                 },
                 {
                     "RowName": "Scoria_Brick_Halfpiece",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "ScoriaBrick_Diagonal_Set",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "ScoriaBrick_Curved_Set",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "ScoriaBrick_Diagonal_Curved_Wall_Angles",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "ScoriaBrick_Roof_CurvedAngles",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "ScoriaBrick_Wall_Curved",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "ScoriaBrick_Advanced_Beam_Set",
+                    "DataTableName": "D_ItemsStatic"
+                }
+            ]
+        },
+        {
+            "Name": "Stone_Brick_Buildings",
+            "SetItems": [
+                {
+                    "RowName": "Stone_Brick_Floor",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Stone_Brick_Wall",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Stone_Brick_Wall_Angle",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Stone_Brick_Ramp",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Stone_Brick_Beam",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Stone_Brick_Roof_Corner",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Stone_Brick_Roof_Half_Pitch",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Stone_Brick_Halfpiece",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "StoneBrick_Diagonal_Set",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "StoneBrick_Curved_Set",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "StoneBrick_Diagonal_Curved_Wall_Angles",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "StoneBrick_Roof_CurvedAngles",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "StoneBrick_Wall_Curved",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "StoneBrick_Advanced_Beam_Set",
                     "DataTableName": "D_ItemsStatic"
                 }
             ]
@@ -1761,7 +1846,7 @@
             ]
         },
         {
-            "Name": "Wood_Buildings_Reinfroced",
+            "Name": "ReinforcedWood_Buildings",
             "SetItems": [
                 {
                     "RowName": "ReinforcedWood_Wall",

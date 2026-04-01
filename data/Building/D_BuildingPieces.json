@@ -11364,7 +11364,7 @@
             "Type": {
                 "RowName": "Diagonal_Beam_Curved_Horizontal"
             },
-            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Buildables/T_ITEM_Glass_Advanced_Beam_Set_Tempered_2.T_ITEM_Glass_Advanced_Beam_Set_Tempered_2",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Buildables/T_ITEM_Glass_Advanced_Beam_Set_Tempered_3.T_ITEM_Glass_Advanced_Beam_Set_Tempered_3",
             "Blueprint": "/Game/BP/Building/Glass/BP_Building_Beam_Cross_Horizontal_Curved_Glass.BP_Building_Beam_Cross_Horizontal_Curved_Glass_C",
             "Audio": {
                 "RowName": "Glass"
@@ -11406,7 +11406,7 @@
             "Type": {
                 "RowName": "Diagonal_Beam_Curved_Diagonal_Down_L"
             },
-            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Buildables/T_ITEM_Glass_Advanced_Beam_Set_Tempered_6.T_ITEM_Glass_Advanced_Beam_Set_Tempered_6",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Buildables/T_ITEM_Glass_Advanced_Beam_Set_Tempered_7.T_ITEM_Glass_Advanced_Beam_Set_Tempered_7",
             "Blueprint": "/Game/BP/Building/Glass/BP_Building_Beam_Cross_Diagnal_Curved_Down_L_Glass.BP_Building_Beam_Cross_Diagnal_Curved_Down_L_Glass_C",
             "Audio": {
                 "RowName": "Glass"
@@ -11770,7 +11770,7 @@
             "Type": {
                 "RowName": "Diagonal_Wall_Solid"
             },
-            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Buildables/T_ITEM_Scoria_Diagonal_Set_1.T_ITEM_Scoria_Diagonal_Set_1",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Buildables/T_ITEM_StoneBrick_Diagonal_Set_1.T_ITEM_StoneBrick_Diagonal_Set_1",
             "Blueprint": "/Game/BP/Building/ClayBrick/BP_Building_Wall_Diagonal_Solid_Brick.BP_Building_Wall_Diagonal_Solid_Brick_C",
             "Audio": {
                 "RowName": "Brick"
@@ -11784,7 +11784,7 @@
             "Type": {
                 "RowName": "Diagonal_Wall_Angle_L"
             },
-            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Buildables/T_ITEM_Scoria_Diagonal_Set_2.T_ITEM_Scoria_Diagonal_Set_2",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Buildables/T_ITEM_StoneBrick_Diagonal_Set_2.T_ITEM_StoneBrick_Diagonal_Set_2",
             "Blueprint": "/Game/BP/Building/ClayBrick/BP_Building_Wall_Diagonal_Half_Angle_L_Brick.BP_Building_Wall_Diagonal_Half_Angle_L_Brick_C",
             "Audio": {
                 "RowName": "Brick"
@@ -11798,7 +11798,7 @@
             "Type": {
                 "RowName": "Diagonal_Wall_Angle_L_Invert"
             },
-            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Buildables/T_ITEM_Scoria_Diagonal_Set_3.T_ITEM_Scoria_Diagonal_Set_3",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Buildables/T_ITEM_StoneBrick_Diagonal_Set_3.T_ITEM_StoneBrick_Diagonal_Set_3",
             "Blueprint": "/Game/BP/Building/ClayBrick/BP_Building_Wall_Diagonal_Half_Angle_L_Invert_Brick.BP_Building_Wall_Diagonal_Half_Angle_L_Invert_Brick_C",
             "Audio": {
                 "RowName": "Brick"
@@ -11812,7 +11812,7 @@
             "Type": {
                 "RowName": "Diagonal_Wall_Angle_R"
             },
-            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Buildables/T_ITEM_Scoria_Diagonal_Set_4.T_ITEM_Scoria_Diagonal_Set_4",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Buildables/T_ITEM_StoneBrick_Diagonal_Set_4.T_ITEM_StoneBrick_Diagonal_Set_4",
             "Blueprint": "/Game/BP/Building/ClayBrick/BP_Building_Wall_Diagonal_Half_Angle_R_Brick.BP_Building_Wall_Diagonal_Half_Angle_R_Brick_C",
             "Audio": {
                 "RowName": "Brick"
@@ -11826,7 +11826,7 @@
             "Type": {
                 "RowName": "Diagonal_Wall_Angle_R_Invert"
             },
-            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Buildables/T_ITEM_Scoria_Diagonal_Set_5.T_ITEM_Scoria_Diagonal_Set_5",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Buildables/T_ITEM_StoneBrick_Diagonal_Set_5.T_ITEM_StoneBrick_Diagonal_Set_5",
             "Blueprint": "/Game/BP/Building/ClayBrick/BP_Building_Wall_Diagonal_Half_Angle_R_Invert_Brick.BP_Building_Wall_Diagonal_Half_Angle_R_Invert_Brick_C",
             "Audio": {
                 "RowName": "Brick"
@@ -11854,7 +11854,7 @@
             "Type": {
                 "RowName": "Diagonal_Ramp"
             },
-            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Buildables/T_ITEM_Scoria_Diagonal_Set_6.T_ITEM_Scoria_Diagonal_Set_6",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Buildables/T_ITEM_StoneBrick_Diagonal_Set_6.T_ITEM_StoneBrick_Diagonal_Set_6",
             "Blueprint": "/Game/BP/Building/ClayBrick/BP_Building_Ramp_Diagonal_Brick.BP_Building_Ramp_Diagonal_Brick_C",
             "Audio": {
                 "RowName": "Brick"
@@ -11868,13 +11868,13 @@
             "Type": {
                 "RowName": "Diagonal_Ramp_Invert"
             },
-            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Buildables/T_ITEM_Scoria_Diagonal_Set_7.T_ITEM_Scoria_Diagonal_Set_7",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Buildables/T_ITEM_StoneBrick_Diagonal_Set_7.T_ITEM_StoneBrick_Diagonal_Set_7",
             "Blueprint": "/Game/BP/Building/ClayBrick/BP_Building_Ramp_Diagonal_Invert_Brick.BP_Building_Ramp_Diagonal_Invert_Brick_C",
             "Audio": {
                 "RowName": "Brick"
             },
             "Skin": {
-                "RowName": "StoneBrick_Diagonal_Ramp_Roof"
+                "RowName": "StoneBrick_Diagonal_Ramp_Roof_Inverted"
             }
         },
         {
@@ -11938,7 +11938,7 @@
             "Type": {
                 "RowName": "Diagonal_Beam_Curved_Horizontal"
             },
-            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Buildables/T_ITEM_Scoria_Advanced_Beam_Set_3.T_ITEM_Scoria_Advanced_Beam_Set_3",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Buildables/T_ITEM_StoneBrick_Advanced_Beam_Set_3.T_ITEM_StoneBrick_Advanced_Beam_Set_3",
             "Blueprint": "/Game/BP/Building/ClayBrick/BP_Building_Beam_Cross_Horizontal_Curved_Brick.BP_Building_Beam_Cross_Horizontal_Curved_Brick_C",
             "Audio": {
                 "RowName": "Brick"
@@ -11966,7 +11966,7 @@
             "Type": {
                 "RowName": "Diagonal_Beam_Curved_Diagonal_Up_R"
             },
-            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Buildables/T_ITEM_Scoria_Advanced_Beam_Set_6.T_ITEM_Scoria_Advanced_Beam_Set_6",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Buildables/T_ITEM_StoneBrick_Advanced_Beam_Set_6.T_ITEM_StoneBrick_Advanced_Beam_Set_6",
             "Blueprint": "/Game/BP/Building/ClayBrick/BP_Building_Beam_Cross_Diagnal_Curved_Up_R_Brick.BP_Building_Beam_Cross_Diagnal_Curved_Up_R_Brick_C",
             "Audio": {
                 "RowName": "Brick"
@@ -11980,7 +11980,7 @@
             "Type": {
                 "RowName": "Diagonal_Beam_Curved_Diagonal_Down_L"
             },
-            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Buildables/T_ITEM_Scoria_Advanced_Beam_Set_7.T_ITEM_Scoria_Advanced_Beam_Set_7",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Buildables/T_ITEM_StoneBrick_Advanced_Beam_Set_7.T_ITEM_StoneBrick_Advanced_Beam_Set_7",
             "Blueprint": "/Game/BP/Building/ClayBrick/BP_Building_Beam_Cross_Diagnal_Curved_Down_L_Brick.BP_Building_Beam_Cross_Diagnal_Curved_Down_L_Brick_C",
             "Audio": {
                 "RowName": "Brick"
@@ -11994,7 +11994,7 @@
             "Type": {
                 "RowName": "Diagonal_Beam_Curved_Diagonal_Down_R"
             },
-            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Buildables/T_ITEM_Scoria_Advanced_Beam_Set_8.T_ITEM_Scoria_Advanced_Beam_Set_8",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Buildables/T_ITEM_StoneBrick_Advanced_Beam_Set_8.T_ITEM_StoneBrick_Advanced_Beam_Set_8",
             "Blueprint": "/Game/BP/Building/ClayBrick/BP_Building_Beam_Cross_Diagnal_Curved_Down_R_Brick.BP_Building_Beam_Cross_Diagnal_Curved_Down_R_Brick_C",
             "Audio": {
                 "RowName": "Brick"
@@ -12204,7 +12204,7 @@
             "Type": {
                 "RowName": "Beam_Curved_Diagonal_Down"
             },
-            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Buildables/T_ITEM_Scoria_Advanced_Beam_Set_2.T_ITEM_Scoria_Advanced_Beam_Set_2",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Buildables/T_ITEM_StoneBrick_Advanced_Beam_Set_2.T_ITEM_StoneBrick_Advanced_Beam_Set_2",
             "Blueprint": "/Game/BP/Building/ClayBrick/BP_Building_Beam_Diagnal_Curved_Brick_Down.BP_Building_Beam_Diagnal_Curved_Brick_Down_C",
             "Audio": {
                 "RowName": "Brick"
@@ -12218,7 +12218,7 @@
             "Type": {
                 "RowName": "Beam_Curved_Diagonal_Up"
             },
-            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Buildables/T_ITEM_Scoria_Advanced_Beam_Set_4.T_ITEM_Scoria_Advanced_Beam_Set_4",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Buildables/T_ITEM_StoneBrick_Advanced_Beam_Set_4.T_ITEM_StoneBrick_Advanced_Beam_Set_4",
             "Blueprint": "/Game/BP/Building/ClayBrick/BP_Building_Beam_Diagnal_Curved_Brick_Up.BP_Building_Beam_Diagnal_Curved_Brick_Up_C",
             "Audio": {
                 "RowName": "Brick"
@@ -12344,7 +12344,7 @@
             "Type": {
                 "RowName": "Diagonal_Wall_Solid"
             },
-            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Buildables/T_ITEM_Scoria_Diagonal_Set_1.T_ITEM_Scoria_Diagonal_Set_1",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Buildables/T_ITEM_ScoriaBrick_Diagonal_Set_1.T_ITEM_ScoriaBrick_Diagonal_Set_1",
             "Blueprint": "/Game/BP/Building/ClayBrick/BP_Building_Wall_Diagonal_Solid_Brick.BP_Building_Wall_Diagonal_Solid_Brick_C",
             "Audio": {
                 "RowName": "Brick"
@@ -12358,7 +12358,7 @@
             "Type": {
                 "RowName": "Diagonal_Wall_Angle_L"
             },
-            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Buildables/T_ITEM_Scoria_Diagonal_Set_2.T_ITEM_Scoria_Diagonal_Set_2",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Buildables/T_ITEM_ScoriaBrick_Diagonal_Set_2.T_ITEM_ScoriaBrick_Diagonal_Set_2",
             "Blueprint": "/Game/BP/Building/ClayBrick/BP_Building_Wall_Diagonal_Half_Angle_L_Brick.BP_Building_Wall_Diagonal_Half_Angle_L_Brick_C",
             "Audio": {
                 "RowName": "Brick"
@@ -12372,7 +12372,7 @@
             "Type": {
                 "RowName": "Diagonal_Wall_Angle_L_Invert"
             },
-            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Buildables/T_ITEM_Scoria_Diagonal_Set_3.T_ITEM_Scoria_Diagonal_Set_3",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Buildables/T_ITEM_ScoriaBrick_Diagonal_Set_3.T_ITEM_ScoriaBrick_Diagonal_Set_3",
             "Blueprint": "/Game/BP/Building/ClayBrick/BP_Building_Wall_Diagonal_Half_Angle_L_Invert_Brick.BP_Building_Wall_Diagonal_Half_Angle_L_Invert_Brick_C",
             "Audio": {
                 "RowName": "Brick"
@@ -12386,7 +12386,7 @@
             "Type": {
                 "RowName": "Diagonal_Wall_Angle_R"
             },
-            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Buildables/T_ITEM_Scoria_Diagonal_Set_4.T_ITEM_Scoria_Diagonal_Set_4",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Buildables/T_ITEM_ScoriaBrick_Diagonal_Set_4.T_ITEM_ScoriaBrick_Diagonal_Set_4",
             "Blueprint": "/Game/BP/Building/ClayBrick/BP_Building_Wall_Diagonal_Half_Angle_R_Brick.BP_Building_Wall_Diagonal_Half_Angle_R_Brick_C",
             "Audio": {
                 "RowName": "Brick"
@@ -12400,7 +12400,7 @@
             "Type": {
                 "RowName": "Diagonal_Wall_Angle_R_Invert"
             },
-            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Buildables/T_ITEM_Scoria_Diagonal_Set_5.T_ITEM_Scoria_Diagonal_Set_5",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Buildables/T_ITEM_ScoriaBrick_Diagonal_Set_5.T_ITEM_ScoriaBrick_Diagonal_Set_5",
             "Blueprint": "/Game/BP/Building/ClayBrick/BP_Building_Wall_Diagonal_Half_Angle_R_Invert_Brick.BP_Building_Wall_Diagonal_Half_Angle_R_Invert_Brick_C",
             "Audio": {
                 "RowName": "Brick"
@@ -12428,7 +12428,7 @@
             "Type": {
                 "RowName": "Diagonal_Ramp"
             },
-            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Buildables/T_ITEM_Scoria_Diagonal_Set_6.T_ITEM_Scoria_Diagonal_Set_6",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Buildables/T_ITEM_ScoriaBrick_Diagonal_Set_6.T_ITEM_ScoriaBrick_Diagonal_Set_6",
             "Blueprint": "/Game/BP/Building/ClayBrick/BP_Building_Ramp_Diagonal_Brick.BP_Building_Ramp_Diagonal_Brick_C",
             "Audio": {
                 "RowName": "Brick"
@@ -12442,7 +12442,7 @@
             "Type": {
                 "RowName": "Diagonal_Ramp_Invert"
             },
-            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Buildables/T_ITEM_Scoria_Diagonal_Set_7.T_ITEM_Scoria_Diagonal_Set_7",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Buildables/T_ITEM_ScoriaBrick_Diagonal_Set_7.T_ITEM_ScoriaBrick_Diagonal_Set_7",
             "Blueprint": "/Game/BP/Building/ClayBrick/BP_Building_Ramp_Diagonal_Invert_Brick.BP_Building_Ramp_Diagonal_Invert_Brick_C",
             "Audio": {
                 "RowName": "Brick"
@@ -12512,7 +12512,7 @@
             "Type": {
                 "RowName": "Diagonal_Beam_Curved_Horizontal"
             },
-            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Buildables/T_ITEM_Scoria_Advanced_Beam_Set_3.T_ITEM_Scoria_Advanced_Beam_Set_3",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Buildables/T_ITEM_ScoriaBrick_Advanced_Beam_Set_3.T_ITEM_ScoriaBrick_Advanced_Beam_Set_3",
             "Blueprint": "/Game/BP/Building/ClayBrick/BP_Building_Beam_Cross_Horizontal_Curved_Brick.BP_Building_Beam_Cross_Horizontal_Curved_Brick_C",
             "Audio": {
                 "RowName": "Brick"
@@ -12540,7 +12540,7 @@
             "Type": {
                 "RowName": "Diagonal_Beam_Curved_Diagonal_Up_R"
             },
-            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Buildables/T_ITEM_Scoria_Advanced_Beam_Set_6.T_ITEM_Scoria_Advanced_Beam_Set_6",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Buildables/T_ITEM_ScoriaBrick_Advanced_Beam_Set_6.T_ITEM_ScoriaBrick_Advanced_Beam_Set_6",
             "Blueprint": "/Game/BP/Building/ClayBrick/BP_Building_Beam_Cross_Diagnal_Curved_Up_R_Brick.BP_Building_Beam_Cross_Diagnal_Curved_Up_R_Brick_C",
             "Audio": {
                 "RowName": "Brick"
@@ -12554,7 +12554,7 @@
             "Type": {
                 "RowName": "Diagonal_Beam_Curved_Diagonal_Down_L"
             },
-            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Buildables/T_ITEM_Scoria_Advanced_Beam_Set_7.T_ITEM_Scoria_Advanced_Beam_Set_7",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Buildables/T_ITEM_ScoriaBrick_Advanced_Beam_Set_7.T_ITEM_ScoriaBrick_Advanced_Beam_Set_7",
             "Blueprint": "/Game/BP/Building/ClayBrick/BP_Building_Beam_Cross_Diagnal_Curved_Down_L_Brick.BP_Building_Beam_Cross_Diagnal_Curved_Down_L_Brick_C",
             "Audio": {
                 "RowName": "Brick"
@@ -12568,7 +12568,7 @@
             "Type": {
                 "RowName": "Diagonal_Beam_Curved_Diagonal_Down_R"
             },
-            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Buildables/T_ITEM_Scoria_Advanced_Beam_Set_8.T_ITEM_Scoria_Advanced_Beam_Set_8",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Buildables/T_ITEM_ScoriaBrick_Advanced_Beam_Set_8.T_ITEM_ScoriaBrick_Advanced_Beam_Set_8",
             "Blueprint": "/Game/BP/Building/ClayBrick/BP_Building_Beam_Cross_Diagnal_Curved_Down_R_Brick.BP_Building_Beam_Cross_Diagnal_Curved_Down_R_Brick_C",
             "Audio": {
                 "RowName": "Brick"
@@ -12596,7 +12596,7 @@
             "Type": {
                 "RowName": "Diagonal_Wall_Curved_Angle_Up_L"
             },
-            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Buildables/T_ITEM_Scoria_Diagonal_Curved_Wall_Angles_4.T_ITEM_Scoria_Diagonal_Curved_Wall_Angles_4",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Buildables/T_ITEM_ScoriaBrick_Diagonal_Curved_Wall_Angles_4.T_ITEM_ScoriaBrick_Diagonal_Curved_Wall_Angles_4",
             "Blueprint": "/Game/BP/Building/ClayBrick/BP_Building_Wall_Diagonal_Curved_Half_Angle_Up_L_Brick.BP_Building_Wall_Diagonal_Curved_Half_Angle_Up_L_Brick_C",
             "Audio": {
                 "RowName": "Brick"
@@ -12610,7 +12610,7 @@
             "Type": {
                 "RowName": "Diagonal_Wall_Curved_Angle_Down_L"
             },
-            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Buildables/T_ITEM_Scoria_Diagonal_Curved_Wall_Angles_0.T_ITEM_Scoria_Diagonal_Curved_Wall_Angles_0",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Buildables/T_ITEM_ScoriaBrick_Diagonal_Curved_Wall_Angles_0.T_ITEM_ScoriaBrick_Diagonal_Curved_Wall_Angles_0",
             "Blueprint": "/Game/BP/Building/ClayBrick/BP_Building_Wall_Diagonal_Curved_Half_Angle_Down_L_Brick.BP_Building_Wall_Diagonal_Curved_Half_Angle_Down_L_Brick_C",
             "Audio": {
                 "RowName": "Brick"
@@ -12624,7 +12624,7 @@
             "Type": {
                 "RowName": "Diagonal_Wall_Curved_Angle_Up_L_Invert"
             },
-            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Buildables/T_ITEM_Scoria_Diagonal_Curved_Wall_Angles_5.T_ITEM_Scoria_Diagonal_Curved_Wall_Angles_5",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Buildables/T_ITEM_ScoriaBrick_Diagonal_Curved_Wall_Angles_5.T_ITEM_ScoriaBrick_Diagonal_Curved_Wall_Angles_5",
             "Blueprint": "/Game/BP/Building/ClayBrick/BP_Building_Wall_Diagonal_Curved_Half_Angle_Up_L_Invert_Brick.BP_Building_Wall_Diagonal_Curved_Half_Angle_Up_L_Invert_Brick_C",
             "Audio": {
                 "RowName": "Brick"
@@ -12638,7 +12638,7 @@
             "Type": {
                 "RowName": "Diagonal_Wall_Curved_Angle_Down_L_Invert"
             },
-            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Buildables/T_ITEM_Scoria_Diagonal_Curved_Wall_Angles_1.T_ITEM_Scoria_Diagonal_Curved_Wall_Angles_1",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Buildables/T_ITEM_ScoriaBrick_Diagonal_Curved_Wall_Angles_1.T_ITEM_ScoriaBrick_Diagonal_Curved_Wall_Angles_1",
             "Blueprint": "/Game/BP/Building/ClayBrick/BP_Building_Wall_Diagonal_Curved_Half_Angle_Down_L_Invert_Brick.BP_Building_Wall_Diagonal_Curved_Half_Angle_Down_L_Invert_Brick_C",
             "Audio": {
                 "RowName": "Brick"
@@ -12652,7 +12652,7 @@
             "Type": {
                 "RowName": "Diagonal_Wall_Curved_Angle_Up_R"
             },
-            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Buildables/T_ITEM_Scoria_Diagonal_Curved_Wall_Angles_6.T_ITEM_Scoria_Diagonal_Curved_Wall_Angles_6",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Buildables/T_ITEM_ScoriaBrick_Diagonal_Curved_Wall_Angles_6.T_ITEM_ScoriaBrick_Diagonal_Curved_Wall_Angles_6",
             "Blueprint": "/Game/BP/Building/ClayBrick/BP_Building_Wall_Diagonal_Curved_Half_Angle_Up_R_Brick.BP_Building_Wall_Diagonal_Curved_Half_Angle_Up_R_Brick_C",
             "Audio": {
                 "RowName": "Brick"
@@ -12680,7 +12680,7 @@
             "Type": {
                 "RowName": "Diagonal_Wall_Curved_Angle_Up_R_Invert"
             },
-            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Buildables/T_ITEM_Scoria_Diagonal_Curved_Wall_Angles_7.T_ITEM_Scoria_Diagonal_Curved_Wall_Angles_7",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Buildables/T_ITEM_ScoriaBrick_Diagonal_Curved_Wall_Angles_7.T_ITEM_ScoriaBrick_Diagonal_Curved_Wall_Angles_7",
             "Blueprint": "/Game/BP/Building/ClayBrick/BP_Building_Wall_Diagonal_Curved_Half_Angle_Up_R_Invert_Brick.BP_Building_Wall_Diagonal_Curved_Half_Angle_Up_R_Invert_Brick_C",
             "Audio": {
                 "RowName": "Brick"
@@ -12778,7 +12778,7 @@
             "Type": {
                 "RowName": "Beam_Curved_Diagonal_Down"
             },
-            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Buildables/T_ITEM_Scoria_Advanced_Beam_Set_2.T_ITEM_Scoria_Advanced_Beam_Set_2",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Buildables/T_ITEM_ScoriaBrick_Advanced_Beam_Set_2.T_ITEM_ScoriaBrick_Advanced_Beam_Set_2",
             "Blueprint": "/Game/BP/Building/ClayBrick/BP_Building_Beam_Diagnal_Curved_Brick_Down.BP_Building_Beam_Diagnal_Curved_Brick_Down_C",
             "Audio": {
                 "RowName": "Brick"
@@ -12792,7 +12792,7 @@
             "Type": {
                 "RowName": "Beam_Curved_Diagonal_Up"
             },
-            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Buildables/T_ITEM_Scoria_Advanced_Beam_Set_4.T_ITEM_Scoria_Advanced_Beam_Set_4",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Buildables/T_ITEM_ScoriaBrick_Advanced_Beam_Set_4.T_ITEM_ScoriaBrick_Advanced_Beam_Set_4",
             "Blueprint": "/Game/BP/Building/ClayBrick/BP_Building_Beam_Diagnal_Curved_Brick_Up.BP_Building_Beam_Diagnal_Curved_Brick_Up_C",
             "Audio": {
                 "RowName": "Brick"

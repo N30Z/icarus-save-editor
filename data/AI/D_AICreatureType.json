@@ -303,7 +303,7 @@
                 "Value": "MammothExtraDamageResistance_+%"
             },
             "SkinningXPEvent": {
-                "RowName": "Skin_DesertMammoth"
+                "RowName": "Skin_ColumbianMammoth"
             }
         },
         {
@@ -360,7 +360,7 @@
                 "Value": "RabbitExtraDamageResistance_+%"
             },
             "SkinningXPEvent": {
-                "RowName": "Skin_RabbitVarient"
+                "RowName": "Skin_Rabbit_Variant"
             }
         },
         {
@@ -398,7 +398,7 @@
                 "Value": "JaguarExtraDamageResistance_+%"
             },
             "SkinningXPEvent": {
-                "RowName": "Skin_Black_Jaguar"
+                "RowName": "Skin_Alpha_Jaguar"
             }
         },
         {
@@ -648,7 +648,7 @@
         },
         {
             "Name": "SandWorm_Spitter",
-            "CreatureName": "NSLOCTEXT(\"D_AICreatureType\", \"SandWorm_Spitter-CreatureName\", \"Sand Worm Spitter\")",
+            "CreatureName": "NSLOCTEXT(\"D_AICreatureType\", \"SandWorm_Spitter-CreatureName\", \"Sandworm Spitter\")",
             "Tag": {
                 "TagName": "NPC.SandWormSpitter"
             },
@@ -721,9 +721,6 @@
             },
             "AdditionalResistanceStat": {
                 "Value": "ScorpionBossExtraDamageResistance_+%"
-            },
-            "SkinningXPEvent": {
-                "RowName": "Skin_Giant_Scorpion"
             }
         },
         {
@@ -742,7 +739,7 @@
                 "Value": "ArcticScorpionExtraDamageResistance_+%"
             },
             "SkinningXPEvent": {
-                "RowName": "Skin_ArcticScorpion"
+                "RowName": "Skin_Scorpion_Arctic"
             }
         },
         {
@@ -888,7 +885,7 @@
                 "Value": "MoaExtraDamageResistance_+%"
             },
             "SkinningXPEvent": {
-                "RowName": "Skin_BabyMoa"
+                "RowName": "Skin_JuvenileMoa"
             },
             "ParentCreatureTag": {
                 "TagName": "NPC.Moa"
@@ -907,7 +904,7 @@
                 "Value": "BuffaloExtraDamageResistance_+%"
             },
             "SkinningXPEvent": {
-                "RowName": "Skin_BabyBuffalo"
+                "RowName": "Skin_Buffalo_Juvenile"
             },
             "ParentCreatureTag": {
                 "TagName": "NPC.Buffalo"
@@ -1082,7 +1079,7 @@
                 "Value": "SwampRoatExtraDamageResistance_+%"
             },
             "SkinningXPEvent": {
-                "RowName": "Skin_SwampRoat"
+                "RowName": "Skin_Roat_Swamp"
             }
         },
         {
@@ -1101,7 +1098,7 @@
                 "Value": "SwampRoatExtraDamageResistance_+%"
             },
             "SkinningXPEvent": {
-                "RowName": "Skin_LavaRoat"
+                "RowName": "Skin_Roat_Lava"
             }
         },
         {
@@ -1203,7 +1200,7 @@
                 "Value": "BearCubExtraDamageResistance_+%"
             },
             "SkinningXPEvent": {
-                "RowName": "Skin_JuvenileBearCub"
+                "RowName": "Skin_Juvenile_BearCub"
             },
             "ParentCreatureTag": {
                 "TagName": "NPC.Bear"
@@ -1262,6 +1259,9 @@
             },
             "AdditionalResistanceStat": {
                 "Value": "LavaHunterSpawnExtraDamageResistance_+%"
+            },
+            "SkinningXPEvent": {
+                "RowName": "Skin_LavaBroodling"
             }
         },
         {
@@ -1376,7 +1376,7 @@
                 "Value": "BuffaloExtraDamageResistance_+%"
             },
             "SkinningXPEvent": {
-                "RowName": "Skin_BabyHorse"
+                "RowName": "Skin_Horse_Juvenile"
             },
             "ParentCreatureTag": {
                 "TagName": "NPC.Horse"
@@ -1417,7 +1417,7 @@
                 "Value": "TuskerExtraDamageResistance_+%"
             },
             "SkinningXPEvent": {
-                "RowName": "Skin_BabyTusker"
+                "RowName": "Skin_Tusker_Juvenile"
             },
             "ParentCreatureTag": {
                 "TagName": "NPC.Tusker"
@@ -1468,6 +1468,9 @@
             "CreatureName": "NSLOCTEXT(\"D_AICreatureType\", \"Sheep-CreatureName\", \"Sheep\")",
             "Tag": {
                 "TagName": "NPC.Sheep"
+            },
+            "SkinningXPEvent": {
+                "RowName": "Skin_Sheep"
             }
         },
         {
@@ -1502,7 +1505,7 @@
                 "Value": "WoolyZebraExtraDamageResistance_+%"
             },
             "SkinningXPEvent": {
-                "RowName": "Skin_JuvenileWoolyZebra"
+                "RowName": "Skin_WoolyZebra_Juvenile"
             }
         },
         {
@@ -1540,7 +1543,7 @@
                 "Value": "BluebackExtraDamageResistance_+%"
             },
             "SkinningXPEvent": {
-                "RowName": "Skin_BabyBlueback"
+                "RowName": "Skin_Blueback_Juvenile"
             },
             "ParentCreatureTag": {
                 "TagName": "NPC.Blueback"
@@ -1559,7 +1562,7 @@
                 "Value": "BluebackExtraDamageResistance_+%"
             },
             "SkinningXPEvent": {
-                "RowName": "Skin_BabyLavaBlueback"
+                "RowName": "Skin_LavaBlueback_Juvenile"
             },
             "ParentCreatureTag": {
                 "TagName": "NPC.Blueback"
@@ -1618,7 +1621,7 @@
         },
         {
             "Name": "Ice_Mammoth",
-            "CreatureName": "NSLOCTEXT(\"D_AICreatureType\", \"Ice_Mammoth-CreatureName\", \"Rimetusk\")",
+            "CreatureName": "NSLOCTEXT(\"D_AICreatureType\", \"Ice_Mammoth-CreatureName\", \"Rimetusk Matriarch\")",
             "Tag": {
                 "TagName": "NPC.IceMammoth"
             },
@@ -1630,9 +1633,6 @@
             },
             "AdditionalResistanceStat": {
                 "Value": "IceMammothExtraDamageResistance_+%"
-            },
-            "SkinningXPEvent": {
-                "RowName": "Skin_Rimetusk"
             },
             "Metadata": {
                 "RequiredFeatureLevel": {
@@ -1663,6 +1663,9 @@
             "CreatureName": "NSLOCTEXT(\"D_AICreatureType\", \"Dog-CreatureName\", \"Dog\")",
             "Tag": {
                 "TagName": "NPC.Dog"
+            },
+            "SkinningXPEvent": {
+                "RowName": "Skin_Dog"
             }
         },
         {
@@ -1670,6 +1673,9 @@
             "CreatureName": "NSLOCTEXT(\"D_AICreatureType\", \"Cat-CreatureName\", \"Cat\")",
             "Tag": {
                 "TagName": "NPC.Cat"
+            },
+            "SkinningXPEvent": {
+                "RowName": "Skin_Cat"
             }
         },
         {
@@ -1677,6 +1683,9 @@
             "CreatureName": "NSLOCTEXT(\"D_AICreatureType\", \"Horse_Standard-CreatureName\", \"Horse\")",
             "Tag": {
                 "TagName": "NPC.Horse_Standard"
+            },
+            "SkinningXPEvent": {
+                "RowName": "Kill_Horse_Standard"
             }
         },
         {
@@ -1708,7 +1717,7 @@
                 "Value": "MoaExtraDamageResistance_+%"
             },
             "SkinningXPEvent": {
-                "RowName": "Skin_Arctic_BabyMoa"
+                "RowName": "Skin_Arctic_JuvenileMoa"
             },
             "ParentCreatureTag": {
                 "TagName": "NPC.ArcticMoa"
@@ -1739,7 +1748,7 @@
         },
         {
             "Name": "RockGolem",
-            "CreatureName": "NSLOCTEXT(\"D_AICreatureType\", \"RockGolem-CreatureName\", \"Quarrite\")",
+            "CreatureName": "NSLOCTEXT(\"D_AICreatureType\", \"RockGolem-CreatureName\", \"Unstable Quarrite\")",
             "Tag": {
                 "TagName": "NPC.RockGolem"
             },
@@ -1760,6 +1769,9 @@
             "CreatureName": "NSLOCTEXT(\"D_AICreatureType\", \"Bull-CreatureName\", \"Bull\")",
             "Tag": {
                 "TagName": "NPC.Bull"
+            },
+            "SkinningXPEvent": {
+                "RowName": "Skin_Bull"
             }
         },
         {
@@ -1767,6 +1779,9 @@
             "CreatureName": "NSLOCTEXT(\"D_AICreatureType\", \"Cow-CreatureName\", \"Cow\")",
             "Tag": {
                 "TagName": "NPC.Cow"
+            },
+            "SkinningXPEvent": {
+                "RowName": "Skin_Cow"
             }
         },
         {
@@ -1774,6 +1789,9 @@
             "CreatureName": "NSLOCTEXT(\"D_AICreatureType\", \"Calf-CreatureName\", \"Calf\")",
             "Tag": {
                 "TagName": "NPC.Juvenile.Calf"
+            },
+            "SkinningXPEvent": {
+                "RowName": "Skin_Calf"
             }
         },
         {
@@ -1781,6 +1799,9 @@
             "CreatureName": "NSLOCTEXT(\"D_AICreatureType\", \"Rooster-CreatureName\", \"Rooster\")",
             "Tag": {
                 "TagName": "NPC.Rooster"
+            },
+            "SkinningXPEvent": {
+                "RowName": "Skin_Rooster"
             },
             "Metadata": {
                 "RequiredFeatureLevel": {
@@ -1793,6 +1814,9 @@
             "CreatureName": "NSLOCTEXT(\"D_AICreatureType\", \"Chick-CreatureName\", \"Chick\")",
             "Tag": {
                 "TagName": "NPC.Juvenile.Chick"
+            },
+            "SkinningXPEvent": {
+                "RowName": "Skin_Chick"
             }
         },
         {
@@ -1800,6 +1824,9 @@
             "CreatureName": "NSLOCTEXT(\"D_AICreatureType\", \"Ram-CreatureName\", \"Ram\")",
             "Tag": {
                 "TagName": "NPC.Ram"
+            },
+            "SkinningXPEvent": {
+                "RowName": "Skin_Ram"
             },
             "Metadata": {
                 "RequiredFeatureLevel": {
@@ -1812,6 +1839,9 @@
             "CreatureName": "NSLOCTEXT(\"D_AICreatureType\", \"Lamb-CreatureName\", \"Lamb\")",
             "Tag": {
                 "TagName": "NPC.Juvenile.Lamb"
+            },
+            "SkinningXPEvent": {
+                "RowName": "Skin_Lamb"
             }
         },
         {
@@ -1827,7 +1857,7 @@
                 "Value": "RockGolemJuvenileExtraDamageResistance_+%"
             },
             "SkinningXPEvent": {
-                "RowName": "Skin_BabyRockGolem"
+                "RowName": "Skin_RockGolem_Juvenile"
             },
             "Metadata": {
                 "RequiredFeatureLevel": {
@@ -1848,7 +1878,7 @@
                 "Value": "ApeJuvenileExtraDamageResistance_+%"
             },
             "SkinningXPEvent": {
-                "RowName": "Skin_BabyApe"
+                "RowName": "Skin_Ape_Juvenile"
             },
             "Metadata": {
                 "RequiredFeatureLevel": {
@@ -1970,6 +2000,9 @@
             "AdditionalResistanceStat": {
                 "Value": "IrradiatedProspectorExtraDamageResistance_+%"
             },
+            "SkinningXPEvent": {
+                "RowName": "Skin_Irradiated_Prospector"
+            },
             "Metadata": {
                 "RequiredFeatureLevel": {
                     "RowName": "DangerousHorizons"
@@ -2085,7 +2118,7 @@
                 "Value": "RabbitExtraDamageResistance_+%"
             },
             "SkinningXPEvent": {
-                "RowName": "Skin_SnowPygmyLop"
+                "RowName": "Skin_Rabbit_Variant_Snow"
             },
             "Metadata": {
                 "RequiredFeatureLevel": {
@@ -2106,7 +2139,7 @@
                 "Value": "RaptorExtraDamageResistance_+%"
             },
             "SkinningXPEvent": {
-                "RowName": "Skin_BabyRaptor"
+                "RowName": "Skin_Raptor_Juvenile"
             },
             "ParentCreatureTag": {
                 "TagName": "NPC.Raptor.Geothermal"
@@ -2196,7 +2229,7 @@
                 "Value": "ChewExtraDamageResistance_+%"
             },
             "SkinningXPEvent": {
-                "RowName": "Skin_JuvenileChew"
+                "RowName": "Skin_Chew_Juvenile"
             },
             "ParentCreatureTag": {
                 "TagName": "NPC.Chew"
@@ -2295,7 +2328,7 @@
                 "Value": "StomperExtraDamageResistance_+%"
             },
             "SkinningXPEvent": {
-                "RowName": "Skin_Stomper"
+                "RowName": "Skin_Stomper_Matriarch"
             },
             "Metadata": {
                 "RequiredFeatureLevel": {
@@ -2316,7 +2349,7 @@
                 "Value": "SlinkerExtraDamageResistance_+%"
             },
             "SkinningXPEvent": {
-                "RowName": "Skin_SlinkerJuve"
+                "RowName": "Skin_Slinker_Juvenile"
             },
             "ParentCreatureTag": {
                 "TagName": "NPC.Slinker"
@@ -2390,6 +2423,9 @@
             "AdditionalResistanceStat": {
                 "Value": "DragonFlyExtraDamageResistance_+%"
             },
+            "SkinningXPEvent": {
+                "RowName": "Skin_DragonFly"
+            },
             "Metadata": {
                 "RequiredFeatureLevel": {
                     "RowName": "DangerousHorizons"
@@ -2459,9 +2495,6 @@
             "AdditionalResistanceStat": {
                 "Value": "SandwyrmQueenExtraDamageResistance_+%"
             },
-            "SkinningXPEvent": {
-                "RowName": "Skin_Sandwyrm_Queen"
-            },
             "Metadata": {
                 "RequiredFeatureLevel": {
                     "RowName": "DangerousHorizons"
@@ -2493,7 +2526,7 @@
                 "Value": "SwampBirdExtraDamageResistance_+%"
             },
             "SkinningXPEvent": {
-                "RowName": "Skin_JuvenileSwampBird"
+                "RowName": "Skin_SwampBird_Juvenile"
             },
             "ParentCreatureTag": {
                 "TagName": "NPC.SwampBird"
@@ -2537,6 +2570,9 @@
             },
             "AdditionalResistanceStat": {
                 "Value": "IrradiatedAbominationExtraDamageResistance_+%"
+            },
+            "SkinningXPEvent": {
+                "RowName": "Skin_Irradiated_Abomination"
             },
             "Metadata": {
                 "RequiredFeatureLevel": {
@@ -2659,7 +2695,7 @@
                 "Value": "SpiderExtraDamageResistance_+%"
             },
             "SkinningXPEvent": {
-                "RowName": "Kill_Geothermal_Spider"
+                "RowName": "Skin_Geothermal_Spider"
             },
             "Metadata": {
                 "RequiredFeatureLevel": {
@@ -2703,6 +2739,9 @@
             "AdditionalResistanceStat": {
                 "Value": "IrradiatedMutationExtraDamageResistance_+%"
             },
+            "SkinningXPEvent": {
+                "RowName": "Skin_Irradiated_Mutation"
+            },
             "Metadata": {
                 "RequiredFeatureLevel": {
                     "RowName": "DangerousHorizons"
@@ -2711,7 +2750,7 @@
         },
         {
             "Name": "Juvenile_WoollyMammoth",
-            "CreatureName": "NSLOCTEXT(\"D_AICreatureType\", \"Juvenile_WoollyMammoth-CreatureName\", \"Woolly Mammoth\")",
+            "CreatureName": "NSLOCTEXT(\"D_AICreatureType\", \"Juvenile_WoollyMammoth-CreatureName\", \"Juvenile Woolly Mammoth\")",
             "Tag": {
                 "TagName": "NPC.Mammoth"
             },
@@ -2725,7 +2764,7 @@
                 "Value": "MammothExtraDamageResistance_+%"
             },
             "SkinningXPEvent": {
-                "RowName": "Skin_WoollyMammoth"
+                "RowName": "Skin_WoollyMammoth_Juvenile"
             },
             "Metadata": {
                 "RequiredFeatureLevel": {

@@ -925,7 +925,7 @@
             "GrantedStats": {
                 "(Value=\"BaseMountCargoSlots_+\")": 1,
                 "(Value=\"BaseMountHeavyCargoSlots_+\")": 1,
-                "(Value=\"BaseTamingSpeedSaddleBoost_%\")": 40
+                "(Value=\"GrantedAuraQuickTamer_?\")": 1
             }
         },
         {
@@ -996,7 +996,7 @@
         },
         {
             "Name": "Carrying_Speeder",
-            "EquippableModifier": "/Game/BP/Behaviours/Equippable/BP_EquippableModifier.BP_EquippableModifier_C",
+            "EquippableModifier": "/Game/BP/Behaviours/Equippable/BP_EquippableModifier_SpeederBike.BP_EquippableModifier_SpeederBike_C",
             "GrantedStats": {
                 "(Value=\"CarryingSpeeder_?\")": 1
             },

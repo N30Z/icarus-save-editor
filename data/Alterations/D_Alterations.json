@@ -1683,7 +1683,7 @@
         },
         {
             "Name": "Plough_Platinum",
-            "DisplayName": "NSLOCTEXT(\"D_Alterations\", \"Plough_Platinum-DisplayName\", \"Dug with an Platinum Plow\")",
+            "DisplayName": "NSLOCTEXT(\"D_Alterations\", \"Plough_Platinum-DisplayName\", \"Dug with a Platinum Plow\")",
             "RankIcon": "/Game/Assets/2DArt/UI/Alterations/Icon_Alteration_2.Icon_Alteration_2",
             "Stats": {
                 "(Value=\"BasePlantedCropYield_+%\")": 10,

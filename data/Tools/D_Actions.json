@@ -1595,6 +1595,36 @@
             "Name": "ToggleElectric",
             "Behaviour": "BlueprintGeneratedClass'/Game/BP/Behaviours/Actionable/BP_Actionable_Behaviour_ToggleElectric.BP_Actionable_Behaviour_ToggleElectric_C'",
             "ActionCooldown": 0.5
+        },
+        {
+            "Name": "Chainsaw_SWQ",
+            "Behaviour": "BlueprintGeneratedClass'/Game/BP/Behaviours/Actionable/BP_ActionableBehaviour_Chainsaw.BP_ActionableBehaviour_Chainsaw_C'",
+            "TP_ActionMontage": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_Chainsaw_Attack_Montage.3RD_CHA_Chainsaw_Attack_Montage",
+            "TP_SuccessAnimations": [
+                {
+                    "SuccessType": {
+                        "RowName": "HitSuccess_Tool",
+                        "DataTableName": "D_ValidHitTypes"
+                    },
+                    "SuccessMontageVariations": [
+                        "Default"
+                    ]
+                }
+            ],
+            "FP_ActionMontage": "/Game/ASS/CHA/1ST/1ST_NewRig/1ST_CHA_Chainsaw_Attack_Montage_WyrmQueen.1ST_CHA_Chainsaw_Attack_Montage_WyrmQueen",
+            "FP_SuccessAnimations": [
+                {
+                    "SuccessType": {
+                        "RowName": "HitSuccess_Tool",
+                        "DataTableName": "D_ValidHitTypes"
+                    },
+                    "SuccessMontageVariations": [
+                        "Default"
+                    ]
+                }
+            ],
+            "BeginStaminaActionNotify": "DoHit",
+            "ActionCooldown": 0.10000000149011612
         }
     ]
 }

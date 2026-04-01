@@ -58,6 +58,10 @@
             "RowName": "None",
             "DataTableName": "D_ItemRewards"
         },
+        "Experience": {
+            "RowName": "None",
+            "DataTableName": "D_Experience"
+        },
         "bUseSurvivalCharacterState": false,
         "bStartWithSurvivalTickDisabled": true,
         "BestiaryGroup": {
@@ -324,6 +328,9 @@
             "Hitable": {
                 "RowName": "AnimalBones_Small"
             },
+            "Experience": {
+                "RowName": "Creature_Roat"
+            },
             "BestiaryGroup": {
                 "RowName": "Roat"
             },
@@ -492,6 +499,9 @@
             "Hitable": {
                 "RowName": "AnimalBones_Medium"
             },
+            "Experience": {
+                "RowName": "Creature_Snow_Wolf"
+            },
             "BestiaryGroup": {
                 "RowName": "Snow_Wolf"
             }
@@ -647,6 +657,9 @@
             },
             "Hitable": {
                 "RowName": "AnimalBones_Large"
+            },
+            "Experience": {
+                "RowName": "Creature_Bear"
             },
             "BestiaryGroup": {
                 "RowName": "Bear"
@@ -805,6 +818,9 @@
             "Hitable": {
                 "RowName": "AnimalBones_Medium"
             },
+            "Experience": {
+                "RowName": "Creature_Chamois"
+            },
             "BestiaryGroup": {
                 "RowName": "Chamios"
             }
@@ -959,6 +975,9 @@
             },
             "Hitable": {
                 "RowName": "AnimalBones_Large"
+            },
+            "Experience": {
+                "RowName": "Creature_Elephant"
             },
             "BestiaryGroup": {
                 "RowName": "Elephant"
@@ -1116,6 +1135,9 @@
             "Hitable": {
                 "RowName": "AnimalBones_Large"
             },
+            "Experience": {
+                "RowName": "Creature_PolarBear"
+            },
             "BestiaryGroup": {
                 "RowName": "Polar_Bear"
             }
@@ -1267,6 +1289,9 @@
             },
             "Hitable": {
                 "RowName": "AnimalBones_Small"
+            },
+            "Experience": {
+                "RowName": "Creature_BabyDeer"
             },
             "BestiaryGroup": {
                 "RowName": "Baby_Deer"
@@ -1424,6 +1449,9 @@
             "Hitable": {
                 "RowName": "AnimalBones_Medium"
             },
+            "Experience": {
+                "RowName": "Creature_Cougar"
+            },
             "BestiaryGroup": {
                 "RowName": "Cougar"
             }
@@ -1580,6 +1608,9 @@
             "Hitable": {
                 "RowName": "AnimalBones_Medium"
             },
+            "Experience": {
+                "RowName": "Creature_Cougar_Alpha"
+            },
             "BestiaryGroup": {
                 "RowName": "Cougar"
             }
@@ -1735,6 +1766,9 @@
             "Hitable": {
                 "RowName": "AnimalBones_Large"
             },
+            "Experience": {
+                "RowName": "Creature_WoollyMammoth"
+            },
             "BestiaryGroup": {
                 "RowName": "Mammoth"
             }
@@ -1889,6 +1923,9 @@
             },
             "Hitable": {
                 "RowName": "AnimalBones_Large"
+            },
+            "Experience": {
+                "RowName": "Creature_ColumbianMammoth"
             },
             "BestiaryGroup": {
                 "RowName": "Mammoth"
@@ -2049,6 +2086,9 @@
             "Hitable": {
                 "RowName": "AnimalBones_Medium"
             },
+            "Experience": {
+                "RowName": "Creature_MediumDeer"
+            },
             "BestiaryGroup": {
                 "RowName": "Forest_Deer"
             }
@@ -2207,6 +2247,9 @@
             },
             "Hitable": {
                 "RowName": "AnimalBones_Medium"
+            },
+            "Experience": {
+                "RowName": "Creature_LargeDeer"
             },
             "BestiaryGroup": {
                 "RowName": "Forest_Deer"
@@ -2367,6 +2410,9 @@
             "Hitable": {
                 "RowName": "AnimalBones_Medium"
             },
+            "Experience": {
+                "RowName": "Creature_MediumAntelope"
+            },
             "BestiaryGroup": {
                 "RowName": "Desert_Deer"
             }
@@ -2526,6 +2572,9 @@
             "Hitable": {
                 "RowName": "AnimalBones_Medium"
             },
+            "Experience": {
+                "RowName": "Creature_LargeAntelope"
+            },
             "BestiaryGroup": {
                 "RowName": "Desert_Deer"
             }
@@ -2684,6 +2733,9 @@
             "Hitable": {
                 "RowName": "AnimalBones_Medium"
             },
+            "Experience": {
+                "RowName": "Creature_Alpha_Wolf"
+            },
             "BestiaryGroup": {
                 "RowName": "Alpha_Wolf_Boss"
             }
@@ -2841,6 +2893,9 @@
             },
             "Hitable": {
                 "RowName": "AnimalBones_Medium"
+            },
+            "Experience": {
+                "RowName": "Creature_Alpha_Wolf"
             },
             "BestiaryGroup": {
                 "RowName": "Alpha_Wolf_Boss"
@@ -3004,6 +3059,9 @@
             "Hitable": {
                 "RowName": "AnimalBones_Medium"
             },
+            "Experience": {
+                "RowName": "Creature_Hyena"
+            },
             "BestiaryGroup": {
                 "RowName": "Desert_Wolf"
             }
@@ -3161,6 +3219,9 @@
             },
             "Hitable": {
                 "RowName": "AnimalBones_Medium"
+            },
+            "Experience": {
+                "RowName": "Creature_Alpha_Hyena"
             }
         },
         {
@@ -3313,6 +3374,9 @@
             },
             "Hitable": {
                 "RowName": "AnimalBones_Medium"
+            },
+            "Experience": {
+                "RowName": "Creature_Pack_Wolf"
             }
         },
         {
@@ -3466,6 +3530,9 @@
             },
             "Hitable": {
                 "RowName": "AnimalBones_Medium"
+            },
+            "Experience": {
+                "RowName": "Creature_Jaguar"
             },
             "BestiaryGroup": {
                 "RowName": "Jaguar"
@@ -3622,6 +3689,9 @@
             },
             "Hitable": {
                 "RowName": "AnimalBones_Medium"
+            },
+            "Experience": {
+                "RowName": "Creature_Pronghorn"
             },
             "BestiaryGroup": {
                 "RowName": "Pronghorn"
@@ -3785,6 +3855,9 @@
             "Hitable": {
                 "RowName": "AnimalBones_Medium"
             },
+            "Experience": {
+                "RowName": "Creature_Wolf"
+            },
             "BestiaryGroup": {
                 "RowName": "Forest_Wolf"
             }
@@ -3939,6 +4012,9 @@
             },
             "Hitable": {
                 "RowName": "AnimalBones_Large"
+            },
+            "Experience": {
+                "RowName": "Creature_WoollyMammoth"
             },
             "BestiaryGroup": {
                 "RowName": "Mammoth"
@@ -4096,6 +4172,9 @@
             "Hitable": {
                 "RowName": "AnimalBones_Medium"
             },
+            "Experience": {
+                "RowName": "Creature_SnowLeopard"
+            },
             "BestiaryGroup": {
                 "RowName": "Snow_Leopard"
             }
@@ -4251,6 +4330,9 @@
             },
             "Hitable": {
                 "RowName": "AnimalBones_Medium"
+            },
+            "Experience": {
+                "RowName": "Creature_Alpha_SnowLeopard"
             },
             "BestiaryGroup": {
                 "RowName": "Snow_Leopard"
@@ -4408,6 +4490,9 @@
             "Hitable": {
                 "RowName": "AnimalBones_Medium"
             },
+            "Experience": {
+                "RowName": "Creature_Alpha_Jaguar"
+            },
             "BestiaryGroup": {
                 "RowName": "Jaguar"
             }
@@ -4563,6 +4648,9 @@
             "Hitable": {
                 "RowName": "AnimalBones_Large"
             },
+            "Experience": {
+                "RowName": "Creature_PolarBear"
+            },
             "BestiaryGroup": {
                 "RowName": "Polar_Bear"
             }
@@ -4713,6 +4801,9 @@
             "Hitable": {
                 "RowName": "AnimalBones_Small"
             },
+            "Experience": {
+                "RowName": "Creature_Snow_Rabbit"
+            },
             "BestiaryGroup": {
                 "RowName": "Rabbit"
             }
@@ -4862,6 +4953,9 @@
             },
             "Hitable": {
                 "RowName": "AnimalBones_Small"
+            },
+            "Experience": {
+                "RowName": "Creature_Rabbit"
             },
             "BestiaryGroup": {
                 "RowName": "Rabbit"
@@ -5015,6 +5109,9 @@
             },
             "Hitable": {
                 "RowName": "AnimalBones_Large"
+            },
+            "Experience": {
+                "RowName": "Creature_Buffalo"
             },
             "BestiaryGroup": {
                 "RowName": "Buffalo"
@@ -5173,6 +5270,9 @@
             },
             "Hitable": {
                 "RowName": "AnimalBones_Medium"
+            },
+            "Experience": {
+                "RowName": "Creature_Alpha_Wolf"
             },
             "BestiaryGroup": {
                 "RowName": "Alpha_Wolf_Boss"
@@ -5333,6 +5433,9 @@
             },
             "Hitable": {
                 "RowName": "AnimalBones_Medium"
+            },
+            "Experience": {
+                "RowName": "Creature_WildBoar"
             },
             "BestiaryGroup": {
                 "RowName": "Wild_Boar"
@@ -5495,6 +5598,9 @@
             "Hitable": {
                 "RowName": "AnimalBones_Medium"
             },
+            "Experience": {
+                "RowName": "Creature_Zebra"
+            },
             "BestiaryGroup": {
                 "RowName": "Zebra"
             }
@@ -5539,6 +5645,9 @@
             "Loot": {
                 "RowName": "Sandworm_Loot"
             },
+            "Experience": {
+                "RowName": "Creature_SandWorm"
+            },
             "BestiaryGroup": {
                 "RowName": "SandWorm"
             }
@@ -5576,6 +5685,9 @@
                     0
                 ],
                 "AutoDescription": " ANY( GOAP.Food.Carnivore.Bait )"
+            },
+            "Experience": {
+                "RowName": "Creature_SandWorm_Spitter"
             },
             "BestiaryGroup": {
                 "RowName": "SandWorm"
@@ -5617,6 +5729,9 @@
             },
             "Loot": {
                 "RowName": "Caveworm_Loot"
+            },
+            "Experience": {
+                "RowName": "Creature_Cave_Worm"
             },
             "BestiaryGroup": {
                 "RowName": "CaveWorm"
@@ -5778,6 +5893,9 @@
             "Hitable": {
                 "RowName": "AnimalBones_Small"
             },
+            "Experience": {
+                "RowName": "Creature_Kea"
+            },
             "BestiaryGroup": {
                 "RowName": "Kea"
             }
@@ -5934,6 +6052,9 @@
             "Hitable": {
                 "RowName": "AnimalBones_Medium"
             },
+            "Experience": {
+                "RowName": "Creature_Scorpion"
+            },
             "BestiaryGroup": {
                 "RowName": "Desert_Scorpion"
             }
@@ -6080,6 +6201,9 @@
             },
             "Loot": {
                 "RowName": "Scorpion_Carcass_Loot"
+            },
+            "Experience": {
+                "RowName": "Creature_Scorpion_Summon"
             }
         },
         {
@@ -6224,6 +6348,9 @@
             },
             "Loot": {
                 "RowName": "Scorpion_Carcass_Loot"
+            },
+            "Experience": {
+                "RowName": "Creature_Scorpion_Summon"
             }
         },
         {
@@ -6346,12 +6473,16 @@
                 "RowName": "ScorpionBoss"
             },
             "CollisionHitEventBones": [
-                "RigChest",
-                "RigNeck1",
-                "RigChest",
-                "RigSpine2",
                 "RigPelvis",
-                "RigNeck2"
+                "RigRFrontPlier",
+                "RigRMainPlier5",
+                "RigLFrontPlier2",
+                "RigLMainPlier5",
+                "RigSpine1",
+                "RigSpine3",
+                "RigTail2",
+                "RigTail4",
+                "RigTail6"
             ],
             "ValidBaitTagQuery": {
                 "TagDictionary": [
@@ -6373,6 +6504,9 @@
             },
             "Loot": {
                 "RowName": "ScorpionBoss_Loot"
+            },
+            "Experience": {
+                "RowName": "Creature_Scorpion_Boss"
             },
             "BestiaryGroup": {
                 "RowName": "Scorpion_Boss"
@@ -6531,6 +6665,9 @@
             "Hitable": {
                 "RowName": "AnimalBones_Large"
             },
+            "Experience": {
+                "RowName": "Creature_Crocodile"
+            },
             "BestiaryGroup": {
                 "RowName": "Crocodile"
             }
@@ -6687,6 +6824,9 @@
             },
             "Hitable": {
                 "RowName": "AnimalBones_Large"
+            },
+            "Experience": {
+                "RowName": "Creature_Crocodile"
             },
             "BestiaryGroup": {
                 "RowName": "Crocodile"
@@ -6845,6 +6985,9 @@
             "Hitable": {
                 "RowName": "AnimalBones_Medium"
             },
+            "Experience": {
+                "RowName": "Creature_Komodo"
+            },
             "BestiaryGroup": {
                 "RowName": "Komodo"
             }
@@ -7001,6 +7144,9 @@
             "Hitable": {
                 "RowName": "AnimalBones_Large"
             },
+            "Experience": {
+                "RowName": "Creature_Scorpion_Arctic"
+            },
             "BestiaryGroup": {
                 "RowName": "Arctic_Scorpion"
             }
@@ -7045,6 +7191,9 @@
             "Loot": {
                 "RowName": "Teenage_Caveworm_Loot"
             },
+            "Experience": {
+                "RowName": "Creature_Cave_Worm_Teenage"
+            },
             "BestiaryGroup": {
                 "RowName": "Teenage_Caveworm"
             }
@@ -7085,6 +7234,9 @@
             },
             "Loot": {
                 "RowName": "Landshark_Loot"
+            },
+            "Experience": {
+                "RowName": "Creature_Landshark"
             },
             "BestiaryGroup": {
                 "RowName": "Landshark_Boss"
@@ -7238,6 +7390,9 @@
             },
             "Hitable": {
                 "RowName": "AnimalBones_Medium"
+            },
+            "Experience": {
+                "RowName": "Creature_PolarBearCub"
             },
             "BestiaryGroup": {
                 "RowName": "Polar_Bear_Cub"
@@ -7393,6 +7548,9 @@
             },
             "Hitable": {
                 "RowName": "AnimalBones_Medium"
+            },
+            "Experience": {
+                "RowName": "Creature_BearCub"
             },
             "BestiaryGroup": {
                 "RowName": "Bear_Cub"
@@ -7687,6 +7845,9 @@
             },
             "Hitable": {
                 "RowName": "AnimalBones_Large"
+            },
+            "Experience": {
+                "RowName": "Creature_Scorpion_Armored"
             }
         },
         {
@@ -7840,6 +8001,9 @@
             },
             "Hitable": {
                 "RowName": "AnimalBones_Large"
+            },
+            "Experience": {
+                "RowName": "Creature_Scorpion_Armored"
             }
         },
         {
@@ -7997,6 +8161,9 @@
             },
             "Hitable": {
                 "RowName": "AnimalBones_Medium"
+            },
+            "Experience": {
+                "RowName": "Creature_Moa"
             },
             "BestiaryGroup": {
                 "RowName": "Moa"
@@ -8297,6 +8464,9 @@
             "Hitable": {
                 "RowName": "AnimalBones_Medium"
             },
+            "Experience": {
+                "RowName": "Creature_JuvenileMoa"
+            },
             "bUseSurvivalCharacterState": true,
             "BestiaryGroup": {
                 "RowName": "Moa"
@@ -8449,6 +8619,9 @@
             },
             "Hitable": {
                 "RowName": "AnimalBones_Medium"
+            },
+            "Experience": {
+                "RowName": "Creature_Buffalo_Juvenile"
             },
             "bUseSurvivalCharacterState": true,
             "BestiaryGroup": {
@@ -8609,6 +8782,9 @@
             "Hitable": {
                 "RowName": "AnimalBones_Medium"
             },
+            "Experience": {
+                "RowName": "Creature_Wolf"
+            },
             "BestiaryGroup": {
                 "RowName": "Forest_Wolf"
             }
@@ -8764,6 +8940,9 @@
             },
             "Hitable": {
                 "RowName": "AnimalBones_Medium"
+            },
+            "Experience": {
+                "RowName": "Creature_Jaguar"
             },
             "BestiaryGroup": {
                 "RowName": "Jaguar"
@@ -8921,6 +9100,9 @@
             "Hitable": {
                 "RowName": "AnimalBones_Large"
             },
+            "Experience": {
+                "RowName": "Creature_Bear"
+            },
             "BestiaryGroup": {
                 "RowName": "Bear"
             }
@@ -9076,6 +9258,9 @@
             },
             "Hitable": {
                 "RowName": "AnimalBones_Large"
+            },
+            "Experience": {
+                "RowName": "Creature_ContaminatedBear"
             }
         },
         {
@@ -9233,6 +9418,9 @@
             },
             "Hitable": {
                 "RowName": "AnimalBones_Large"
+            },
+            "Experience": {
+                "RowName": "Creature_RockDog"
             },
             "BestiaryGroup": {
                 "RowName": "RockDog"
@@ -9398,6 +9586,9 @@
             },
             "Hitable": {
                 "RowName": "AnimalBones_Medium"
+            },
+            "Experience": {
+                "RowName": "Creature_BatDog"
             },
             "BestiaryGroup": {
                 "RowName": "BatDog"
@@ -9566,6 +9757,9 @@
             "Hitable": {
                 "RowName": "AnimalBones_Medium"
             },
+            "Experience": {
+                "RowName": "Creature_Needler"
+            },
             "BestiaryGroup": {
                 "RowName": "Needler"
             },
@@ -9727,6 +9921,9 @@
             "Hitable": {
                 "RowName": "AnimalBones_Small"
             },
+            "Experience": {
+                "RowName": "Creature_Predator_Bird"
+            },
             "BestiaryGroup": {
                 "RowName": "Predator_Bird"
             },
@@ -9826,6 +10023,9 @@
             },
             "Loot": {
                 "RowName": "Gas_Flyer_Carcass_Loot"
+            },
+            "Experience": {
+                "RowName": "Creature_Gas_Flyer"
             },
             "BestiaryGroup": {
                 "RowName": "Gas_Flyer"
@@ -10001,6 +10201,9 @@
             "Hitable": {
                 "RowName": "AnimalBones_Medium"
             },
+            "Experience": {
+                "RowName": "Creature_DeerVarient"
+            },
             "BestiaryGroup": {
                 "RowName": "Deer_Variant"
             },
@@ -10164,6 +10367,9 @@
             },
             "Hitable": {
                 "RowName": "AnimalBones_Medium"
+            },
+            "Experience": {
+                "RowName": "Creature_SwampQuadruped"
             },
             "BestiaryGroup": {
                 "RowName": "Swamp_Quadruped"
@@ -10351,6 +10557,9 @@
             },
             "Hitable": {
                 "RowName": "AnimalBones_Medium"
+            },
+            "Experience": {
+                "RowName": "Creature_SwampBird"
             },
             "BestiaryGroup": {
                 "RowName": "Swamp_Bird"
@@ -10658,6 +10867,9 @@
             "Hitable": {
                 "RowName": "AnimalBones_Medium"
             },
+            "Experience": {
+                "RowName": "Creature_ChamoisVarient"
+            },
             "BestiaryGroup": {
                 "RowName": "Chamios_Variant"
             },
@@ -10816,6 +11028,9 @@
             "Hitable": {
                 "RowName": "AnimalBones_Large"
             },
+            "Experience": {
+                "RowName": "Creature_BlueBack"
+            },
             "BestiaryGroup": {
                 "RowName": "BlueBack"
             },
@@ -10970,6 +11185,9 @@
             },
             "Hitable": {
                 "RowName": "AnimalBones_Small"
+            },
+            "Experience": {
+                "RowName": "Creature_Roat_Swamp"
             },
             "BestiaryGroup": {
                 "RowName": "Roat"
@@ -11128,6 +11346,9 @@
             },
             "Hitable": {
                 "RowName": "AnimalBones_Large"
+            },
+            "Experience": {
+                "RowName": "Creature_LavaBlueback"
             },
             "BestiaryGroup": {
                 "RowName": "Lava_Blueback"
@@ -11291,6 +11512,9 @@
             "Hitable": {
                 "RowName": "AnimalBones_Medium"
             },
+            "Experience": {
+                "RowName": "Creature_Spider"
+            },
             "BestiaryGroup": {
                 "RowName": "Spider"
             }
@@ -11449,6 +11673,9 @@
             },
             "Hitable": {
                 "RowName": "AnimalBones_Medium"
+            },
+            "Experience": {
+                "RowName": "Creature_Snow_Striker"
             },
             "BestiaryGroup": {
                 "RowName": "Snow_Striker"
@@ -11615,6 +11842,9 @@
             },
             "Hitable": {
                 "RowName": "AnimalBones_Medium"
+            },
+            "Experience": {
+                "RowName": "Creature_WoolyZebra"
             },
             "BestiaryGroup": {
                 "RowName": "Wooly_Zebra"
@@ -11917,6 +12147,9 @@
             "Hitable": {
                 "RowName": "AnimalBones_Medium"
             },
+            "Experience": {
+                "RowName": "Creature_Juvenile_BearCub"
+            },
             "bUseSurvivalCharacterState": true
         },
         {
@@ -12064,6 +12297,9 @@
             },
             "Hitable": {
                 "RowName": "AnimalBones_Small"
+            },
+            "Experience": {
+                "RowName": "Creature_Rabbit_Variant"
             },
             "BestiaryGroup": {
                 "RowName": "Rabbit_Variant"
@@ -12226,6 +12462,9 @@
             },
             "Hitable": {
                 "RowName": "AnimalBones_Medium"
+            },
+            "Experience": {
+                "RowName": "Creature_LavaKomodo"
             },
             "BestiaryGroup": {
                 "RowName": "Lava_Komodo"
@@ -12391,6 +12630,9 @@
             "Hitable": {
                 "RowName": "AnimalBones_Medium"
             },
+            "Experience": {
+                "RowName": "Creature_Desert_Striker"
+            },
             "BestiaryGroup": {
                 "RowName": "Desert_Striker"
             },
@@ -12521,11 +12763,18 @@
             },
             "CollisionHitEventBones": [
                 "RigChest",
-                "RigNeck1",
-                "RigChest",
-                "RigSpine2",
-                "RigPelvis",
-                "RigNeck2"
+                "RigHead",
+                "RigTail1",
+                "RigTail3",
+                "RigTail5",
+                "RigFinger1_R",
+                "RigFinger1_L",
+                "RigFinger2_R",
+                "RigFinger2_L",
+                "RigHand2_R",
+                "RigHand1_R",
+                "RigHand2_L",
+                "RigHand1_L"
             ],
             "ValidBaitTagQuery": {
                 "TagDictionary": [
@@ -12547,6 +12796,9 @@
             },
             "Loot": {
                 "RowName": "Lavahunter_Loot"
+            },
+            "Experience": {
+                "RowName": "Creature_LavaHunter"
             },
             "BestiaryGroup": {
                 "RowName": "Lava_Hunter"
@@ -12713,6 +12965,9 @@
             "Hitable": {
                 "RowName": "AnimalBones_Large"
             },
+            "Experience": {
+                "RowName": "Creature_SwampSlug"
+            },
             "BestiaryGroup": {
                 "RowName": "Swamp_Slug"
             },
@@ -12877,6 +13132,9 @@
             },
             "Hitable": {
                 "RowName": "AnimalBones_Large"
+            },
+            "Experience": {
+                "RowName": "Creature_SwampSlug"
             },
             "BestiaryGroup": {
                 "RowName": "Swamp_Slug"
@@ -13043,6 +13301,9 @@
             "Hitable": {
                 "RowName": "AnimalBones_Large"
             },
+            "Experience": {
+                "RowName": "Creature_LavaSlug"
+            },
             "BestiaryGroup": {
                 "RowName": "Lava_Slug"
             },
@@ -13192,6 +13453,9 @@
                     0
                 ],
                 "AutoDescription": " ANY( GOAP.Food.Carnivore.Bait )"
+            },
+            "Experience": {
+                "RowName": "Creature_LavaBroodling"
             },
             "BestiaryGroup": {
                 "RowName": "Lava_Hunter_Spawns"
@@ -13449,6 +13713,9 @@
             "Hitable": {
                 "RowName": "AnimalBones_Large"
             },
+            "Experience": {
+                "RowName": "Creature_LavaBroodling"
+            },
             "BestiaryGroup": {
                 "RowName": "Lava_Hunter_Spawns"
             },
@@ -13590,6 +13857,9 @@
             },
             "Loot": {
                 "RowName": "Lava_Flier_Carcass_Loot"
+            },
+            "Experience": {
+                "RowName": "Creature_LavaFlyer"
             },
             "BestiaryGroup": {
                 "RowName": "Lava_Hunter_Spawns"
@@ -13900,6 +14170,9 @@
                 ],
                 "AutoDescription": " ANY( GOAP.Food.Carnivore.Bait )"
             },
+            "Experience": {
+                "RowName": "Creature_LavaBomber"
+            },
             "BestiaryGroup": {
                 "RowName": "Lava_Hunter_Spawns"
             },
@@ -13999,6 +14272,9 @@
             },
             "Loot": {
                 "RowName": "Gas_Flyer_Carcass_Loot"
+            },
+            "Experience": {
+                "RowName": "Creature_Gas_Flyer"
             },
             "BestiaryGroup": {
                 "RowName": "Gas_Flyer"
@@ -14323,6 +14599,9 @@
             "Hitable": {
                 "RowName": "AnimalBones_Medium"
             },
+            "Experience": {
+                "RowName": "Creature_Horse"
+            },
             "BestiaryGroup": {
                 "RowName": "Horse"
             }
@@ -14474,6 +14753,9 @@
             },
             "Hitable": {
                 "RowName": "AnimalBones_Medium"
+            },
+            "Experience": {
+                "RowName": "Creature_Horse_Juvenile"
             },
             "bUseSurvivalCharacterState": true,
             "BestiaryGroup": {
@@ -14628,6 +14910,9 @@
             },
             "Hitable": {
                 "RowName": "AnimalBones_Large"
+            },
+            "Experience": {
+                "RowName": "Creature_Tusker"
             },
             "BestiaryGroup": {
                 "RowName": "Tusker"
@@ -14922,6 +15207,9 @@
             "Hitable": {
                 "RowName": "AnimalBones_Medium"
             },
+            "Experience": {
+                "RowName": "Creature_Tusker_Juvenile"
+            },
             "bUseSurvivalCharacterState": true,
             "BestiaryGroup": {
                 "RowName": "Tusker"
@@ -15080,6 +15368,9 @@
             "Loot": {
                 "RowName": "ArcticBatNest_Loot"
             },
+            "Experience": {
+                "RowName": "Creature_Arctic_Bat"
+            },
             "BestiaryGroup": {
                 "RowName": "Arctic_Bat"
             }
@@ -15229,6 +15520,9 @@
             },
             "Hitable": {
                 "RowName": "AnimalBones_Small"
+            },
+            "Experience": {
+                "RowName": "Creature_Chicken"
             },
             "bUseSurvivalCharacterState": true,
             "bStartWithSurvivalTickDisabled": false,
@@ -15387,6 +15681,9 @@
             "Hitable": {
                 "RowName": "AnimalBones_Small"
             },
+            "Experience": {
+                "RowName": "Creature_Chicken"
+            },
             "bUseSurvivalCharacterState": true,
             "bStartWithSurvivalTickDisabled": false,
             "BestiaryGroup": {
@@ -15544,6 +15841,9 @@
             "Hitable": {
                 "RowName": "AnimalBones_Small"
             },
+            "Experience": {
+                "RowName": "Creature_Chicken"
+            },
             "bUseSurvivalCharacterState": true,
             "bStartWithSurvivalTickDisabled": false,
             "BestiaryGroup": {
@@ -15573,7 +15873,7 @@
                 }
             ],
             "DeadItem": {
-                "RowName": "AnimalCarcass_Conifer_Wolf"
+                "RowName": "AnimalCarcass_Conifer_Wolf_Juvenile"
             },
             "GOAPSetup": {
                 "RowName": "Juvenile_Default"
@@ -15589,7 +15889,7 @@
                 }
             ],
             "AIGrowth": {
-                "RowName": "Conifer_Wolf"
+                "RowName": "Juvenile_Wolf"
             },
             "MovementMapping": {
                 "Stationary": {
@@ -15656,7 +15956,7 @@
                     "MaxSwimSpeed": 1
                 },
                 "Following": {
-                    "MaxWalkSpeed": 3,
+                    "MaxWalkSpeed": 7.690000057220459,
                     "GroundFriction": 8,
                     "BrakingFriction": 2,
                     "MaxAcceleration": 300,
@@ -15675,7 +15975,7 @@
                 }
             },
             "Audio": {
-                "RowName": "Wolf"
+                "RowName": "DogLaika"
             },
             "CollisionHitEventBones": [
                 "RigChest",
@@ -15700,14 +16000,14 @@
                 ],
                 "AutoDescription": " ANY( GOAP.Food.Carnivore.Bait )"
             },
-            "Trophy": {
-                "RowName": "ConiferWolf_Head"
-            },
             "Loot": {
-                "RowName": "Wolf_Carcass_Loot"
+                "RowName": "Juvenile_Wolf_Carcass_Loot"
             },
             "Hitable": {
-                "RowName": "AnimalBones_Medium"
+                "RowName": "AnimalBones_Small"
+            },
+            "Experience": {
+                "RowName": "Creature_Wolf_Juvenile"
             },
             "bUseSurvivalCharacterState": true,
             "BestiaryGroup": {
@@ -16298,6 +16598,9 @@
             "Loot": {
                 "RowName": "WildBeehive_Loot"
             },
+            "Experience": {
+                "RowName": "Creature_Bee"
+            },
             "BestiaryGroup": {
                 "RowName": "Bee"
             }
@@ -16761,6 +17064,9 @@
             "Hitable": {
                 "RowName": "AnimalBones_Medium"
             },
+            "Experience": {
+                "RowName": "Creature_Sheep"
+            },
             "bUseSurvivalCharacterState": true,
             "bStartWithSurvivalTickDisabled": false,
             "BestiaryGroup": {
@@ -16920,6 +17226,9 @@
             "Loot": {
                 "RowName": "SlugBoss_Loot"
             },
+            "Experience": {
+                "RowName": "Creature_Hammerhead_Slug_Medium"
+            },
             "BestiaryGroup": {
                 "RowName": "Hammerhead_Slug"
             }
@@ -17073,6 +17382,9 @@
             },
             "Loot": {
                 "RowName": "SlugBoss_Loot"
+            },
+            "Experience": {
+                "RowName": "Creature_Hammerhead_Slug_Large"
             },
             "BestiaryGroup": {
                 "RowName": "Hammerhead_Slug"
@@ -17231,6 +17543,9 @@
             "Hitable": {
                 "RowName": "AnimalBones_Large"
             },
+            "Experience": {
+                "RowName": "Creature_Hammerhead_Slug_Small"
+            },
             "BestiaryGroup": {
                 "RowName": "Hammerhead_Slug"
             }
@@ -17382,6 +17697,9 @@
             },
             "Hitable": {
                 "RowName": "AnimalBones_Medium"
+            },
+            "Experience": {
+                "RowName": "Creature_WoolyZebra_Juvenile"
             },
             "bUseSurvivalCharacterState": true,
             "BestiaryGroup": {
@@ -17539,6 +17857,9 @@
             },
             "Hitable": {
                 "RowName": "AnimalBones_Medium"
+            },
+            "Experience": {
+                "RowName": "Creature_MiniHippo"
             },
             "BestiaryGroup": {
                 "RowName": "MiniHippo"
@@ -17707,6 +18028,9 @@
             "Hitable": {
                 "RowName": "AnimalBones_Medium"
             },
+            "Experience": {
+                "RowName": "Creature_MiniHippo"
+            },
             "BestiaryGroup": {
                 "RowName": "MiniHippo"
             }
@@ -17862,6 +18186,9 @@
             },
             "Hitable": {
                 "RowName": "AnimalBones_Medium"
+            },
+            "Experience": {
+                "RowName": "Creature_MiniHippo"
             },
             "BestiaryGroup": {
                 "RowName": "MiniHippo"
@@ -18176,6 +18503,9 @@
             "Hitable": {
                 "RowName": "AnimalBones_Small"
             },
+            "Experience": {
+                "RowName": "Creature_Kiwi"
+            },
             "BestiaryGroup": {
                 "RowName": "Kiwi"
             }
@@ -18331,6 +18661,9 @@
             "Loot": {
                 "RowName": "Ape_Loot"
             },
+            "Experience": {
+                "RowName": "Creature_Ape"
+            },
             "BestiaryGroup": {
                 "RowName": "Ape"
             },
@@ -18483,6 +18816,9 @@
             },
             "Hitable": {
                 "RowName": "AnimalBones_Medium"
+            },
+            "Experience": {
+                "RowName": "Creature_Horse_Standard"
             },
             "bUseSurvivalCharacterState": true,
             "bStartWithSurvivalTickDisabled": false,
@@ -18640,6 +18976,9 @@
             "Hitable": {
                 "RowName": "AnimalBones_Medium"
             },
+            "Experience": {
+                "RowName": "Creature_Horse_Standard"
+            },
             "bUseSurvivalCharacterState": true,
             "bStartWithSurvivalTickDisabled": false,
             "BestiaryGroup": {
@@ -18796,6 +19135,9 @@
             "Hitable": {
                 "RowName": "AnimalBones_Medium"
             },
+            "Experience": {
+                "RowName": "Creature_Horse_Standard"
+            },
             "bUseSurvivalCharacterState": true,
             "bStartWithSurvivalTickDisabled": false,
             "BestiaryGroup": {
@@ -18945,6 +19287,9 @@
             "Hitable": {
                 "RowName": "AnimalBones_Medium"
             },
+            "Experience": {
+                "RowName": "Creature_Dog"
+            },
             "bUseSurvivalCharacterState": true,
             "bStartWithSurvivalTickDisabled": false,
             "BestiaryGroup": {
@@ -19092,6 +19437,9 @@
             },
             "Hitable": {
                 "RowName": "AnimalBones_Medium"
+            },
+            "Experience": {
+                "RowName": "Creature_Dog"
             },
             "bUseSurvivalCharacterState": true,
             "bStartWithSurvivalTickDisabled": false,
@@ -19241,6 +19589,9 @@
             "Hitable": {
                 "RowName": "AnimalBones_Medium"
             },
+            "Experience": {
+                "RowName": "Creature_Dog"
+            },
             "bUseSurvivalCharacterState": true,
             "bStartWithSurvivalTickDisabled": false,
             "BestiaryGroup": {
@@ -19388,6 +19739,9 @@
             },
             "Hitable": {
                 "RowName": "AnimalBones_Medium"
+            },
+            "Experience": {
+                "RowName": "Creature_Dog"
             },
             "bUseSurvivalCharacterState": true,
             "bStartWithSurvivalTickDisabled": false,
@@ -20003,6 +20357,9 @@
             "Hitable": {
                 "RowName": "AnimalBones_Large"
             },
+            "Experience": {
+                "RowName": "Creature_SwampSlug"
+            },
             "BestiaryGroup": {
                 "RowName": "Swamp_Slug"
             },
@@ -20297,6 +20654,9 @@
             "Hitable": {
                 "RowName": "AnimalBones_Small"
             },
+            "Experience": {
+                "RowName": "Creature_Dog"
+            },
             "bUseSurvivalCharacterState": true,
             "bStartWithSurvivalTickDisabled": false,
             "BestiaryGroup": {
@@ -20460,6 +20820,9 @@
             },
             "Hitable": {
                 "RowName": "AnimalBones_Medium"
+            },
+            "Experience": {
+                "RowName": "Creature_Arctic_Moa"
             },
             "BestiaryGroup": {
                 "RowName": "Arctic_Moa"
@@ -20757,6 +21120,9 @@
             "Hitable": {
                 "RowName": "AnimalBones_Medium"
             },
+            "Experience": {
+                "RowName": "Creature_JuvenileArcticMoa"
+            },
             "bUseSurvivalCharacterState": true,
             "BestiaryGroup": {
                 "RowName": "Arctic_Moa"
@@ -20898,6 +21264,9 @@
             },
             "Hitable": {
                 "RowName": "AnimalBones_Small"
+            },
+            "Experience": {
+                "RowName": "Creature_Dog"
             },
             "bUseSurvivalCharacterState": true,
             "bStartWithSurvivalTickDisabled": false,
@@ -21046,6 +21415,9 @@
             },
             "Hitable": {
                 "RowName": "AnimalBones_Small"
+            },
+            "Experience": {
+                "RowName": "Creature_Dog"
             },
             "bUseSurvivalCharacterState": true,
             "bStartWithSurvivalTickDisabled": false,
@@ -21205,9 +21577,6 @@
                     "DataTableName": "D_AIDescriptors"
                 }
             ],
-            "DeadItem": {
-                "RowName": "AnimalCarcass_Ice_Mammoth"
-            },
             "GOAPSetup": {
                 "RowName": "Ice_Mammoth_Boss"
             },
@@ -21336,8 +21705,8 @@
             "Loot": {
                 "RowName": "IceMammoth_Loot"
             },
-            "Hitable": {
-                "RowName": "AnimalBones_Large"
+            "Experience": {
+                "RowName": "Creature_Ice_Mammoth_Boss"
             },
             "BestiaryGroup": {
                 "RowName": "IceMammoth"
@@ -21482,6 +21851,9 @@
             },
             "Loot": {
                 "RowName": "RockGolem_Loot"
+            },
+            "Experience": {
+                "RowName": "Creature_RockGolem"
             },
             "BestiaryGroup": {
                 "RowName": "RockGolem"
@@ -21639,6 +22011,9 @@
                 ],
                 "AutoDescription": " ANY( GOAP.Food.Carnivore.Bait )"
             },
+            "Experience": {
+                "RowName": "Creature_Arctic_Bat"
+            },
             "BestiaryGroup": {
                 "RowName": "Arctic_Bat"
             },
@@ -21794,6 +22169,9 @@
             },
             "Loot": {
                 "RowName": "Lava_Flier_Carcass_Loot"
+            },
+            "Experience": {
+                "RowName": "Creature_LavaFlyer"
             },
             "BestiaryGroup": {
                 "RowName": "Lava_Hunter_Spawns"
@@ -21951,6 +22329,9 @@
                 ],
                 "AutoDescription": " ANY( GOAP.Food.Carnivore.Bait )"
             },
+            "Experience": {
+                "RowName": "Creature_Arctic_Bat"
+            },
             "BestiaryGroup": {
                 "RowName": "Arctic_Bat"
             },
@@ -22106,6 +22487,9 @@
             "Hitable": {
                 "RowName": "AnimalBones_Small"
             },
+            "Experience": {
+                "RowName": "Creature_Roat_Lava"
+            },
             "BestiaryGroup": {
                 "RowName": "Roat"
             }
@@ -22244,6 +22628,9 @@
             },
             "Hitable": {
                 "RowName": "AnimalBones_Large"
+            },
+            "Experience": {
+                "RowName": "Creature_Bull"
             },
             "bUseSurvivalCharacterState": true,
             "bStartWithSurvivalTickDisabled": false,
@@ -22414,6 +22801,9 @@
             "Hitable": {
                 "RowName": "AnimalBones_Medium"
             },
+            "Experience": {
+                "RowName": "Creature_Needler"
+            },
             "BestiaryGroup": {
                 "RowName": "Needler"
             },
@@ -22571,6 +22961,9 @@
             },
             "Hitable": {
                 "RowName": "AnimalBones_Large"
+            },
+            "Experience": {
+                "RowName": "Creature_Cow"
             },
             "bUseSurvivalCharacterState": true,
             "bStartWithSurvivalTickDisabled": false,
@@ -22733,6 +23126,9 @@
             "Hitable": {
                 "RowName": "AnimalBones_Medium"
             },
+            "Experience": {
+                "RowName": "Creature_Calf"
+            },
             "bUseSurvivalCharacterState": true,
             "BestiaryGroup": {
                 "RowName": "Cattle"
@@ -22880,6 +23276,9 @@
             },
             "Hitable": {
                 "RowName": "AnimalBones_Small"
+            },
+            "Experience": {
+                "RowName": "Creature_Rooster"
             },
             "bUseSurvivalCharacterState": true,
             "bStartWithSurvivalTickDisabled": false,
@@ -23037,6 +23436,9 @@
             },
             "Hitable": {
                 "RowName": "AnimalBones_Small"
+            },
+            "Experience": {
+                "RowName": "Creature_Chick"
             },
             "bUseSurvivalCharacterState": true,
             "BestiaryGroup": {
@@ -23199,6 +23601,9 @@
             },
             "Hitable": {
                 "RowName": "AnimalBones_Medium"
+            },
+            "Experience": {
+                "RowName": "Creature_Ram"
             },
             "bUseSurvivalCharacterState": true,
             "bStartWithSurvivalTickDisabled": false,
@@ -23363,6 +23768,9 @@
             "Hitable": {
                 "RowName": "AnimalBones_Medium"
             },
+            "Experience": {
+                "RowName": "Creature_Lamb"
+            },
             "bUseSurvivalCharacterState": true,
             "BestiaryGroup": {
                 "RowName": "Sheep"
@@ -23370,7 +23778,7 @@
         },
         {
             "Name": "Juvenile_Rock_Golem",
-            "ActorClass": "/Game/BP/AI/GOAP/AI/BP_NPC_RockGolem_Juvenile.BP_NPC_RockGolem_Juvenile_C",
+            "ActorClass": "/Game/BP/AI/GOAP/AI/BP_NPC_RockGolem_Juvenile_Character.BP_NPC_RockGolem_Juvenile_Character_C",
             "ControllerClass": "/Game/BP/AI/GOAP/AI/BP_NPC_RockGolemJuvenile_Controller.BP_NPC_RockGolemJuvenile_Controller_C",
             "CreatureType": {
                 "RowName": "Juvenile_RockGolem"
@@ -23520,6 +23928,9 @@
             "Hitable": {
                 "RowName": "AnimalCarcass_Rocks"
             },
+            "Experience": {
+                "RowName": "Creature_RockGolem_Juvenile"
+            },
             "BestiaryGroup": {
                 "RowName": "RockGolem_Juvenile"
             },
@@ -23531,7 +23942,7 @@
         },
         {
             "Name": "Juvenile_Rock_Golem_Arctic",
-            "ActorClass": "/Game/BP/AI/GOAP/AI/BP_NPC_RockGolem_Juvenile_Arctic.BP_NPC_RockGolem_Juvenile_Arctic_C",
+            "ActorClass": "/Game/BP/AI/GOAP/AI/BP_NPC_RockGolem_Juvenile_Character_Arctic.BP_NPC_RockGolem_Juvenile_Character_Arctic_C",
             "ControllerClass": "/Game/BP/AI/GOAP/AI/BP_NPC_RockGolemJuvenile_Controller.BP_NPC_RockGolemJuvenile_Controller_C",
             "CreatureType": {
                 "RowName": "Juvenile_RockGolem"
@@ -23677,6 +24088,9 @@
             },
             "Hitable": {
                 "RowName": "AnimalCarcass_Rocks"
+            },
+            "Experience": {
+                "RowName": "Creature_RockGolem_Juvenile"
             },
             "BestiaryGroup": {
                 "RowName": "RockGolem_Juvenile"
@@ -23843,6 +24257,9 @@
             "Hitable": {
                 "RowName": "AnimalBones_Medium"
             },
+            "Experience": {
+                "RowName": "Creature_Ape_Juvenile"
+            },
             "BestiaryGroup": {
                 "RowName": "Ape_Juvenile"
             },
@@ -24007,6 +24424,9 @@
             },
             "Hitable": {
                 "RowName": "AnimalBones_Medium"
+            },
+            "Experience": {
+                "RowName": "Creature_Ape_Juvenile"
             },
             "BestiaryGroup": {
                 "RowName": "Ape_Juvenile"
@@ -24173,6 +24593,9 @@
             "Hitable": {
                 "RowName": "AnimalBones_Medium"
             },
+            "Experience": {
+                "RowName": "Creature_Ape_Juvenile"
+            },
             "BestiaryGroup": {
                 "RowName": "Ape_Juvenile"
             },
@@ -24337,6 +24760,9 @@
             },
             "Hitable": {
                 "RowName": "AnimalBones_Medium"
+            },
+            "Experience": {
+                "RowName": "Creature_Ape_Juvenile"
             },
             "BestiaryGroup": {
                 "RowName": "Ape_Juvenile"
@@ -24503,6 +24929,9 @@
             "Hitable": {
                 "RowName": "AnimalBones_Medium"
             },
+            "Experience": {
+                "RowName": "Creature_Ape_Juvenile"
+            },
             "BestiaryGroup": {
                 "RowName": "Ape"
             },
@@ -24668,6 +25097,9 @@
             "Hitable": {
                 "RowName": "AnimalBones_Medium"
             },
+            "Experience": {
+                "RowName": "Creature_Ape_Juvenile"
+            },
             "BestiaryGroup": {
                 "RowName": "Ape_Juvenile"
             },
@@ -24803,6 +25235,9 @@
             },
             "Loot": {
                 "RowName": "Lava_Flier_Carcass_Loot"
+            },
+            "Experience": {
+                "RowName": "Creature_LavaFlyer"
             },
             "BestiaryGroup": {
                 "RowName": "Lava_Hunter_Spawns"
@@ -24964,6 +25399,9 @@
             "Hitable": {
                 "RowName": "AnimalBones_Large"
             },
+            "Experience": {
+                "RowName": "Creature_IceMammoth"
+            },
             "BestiaryGroup": {
                 "RowName": "IceMammoth_WorldSpawn"
             },
@@ -25124,6 +25562,9 @@
             "Hitable": {
                 "RowName": "AnimalBones_Large"
             },
+            "Experience": {
+                "RowName": "Creature_IceMammoth"
+            },
             "BestiaryGroup": {
                 "RowName": "IceMammoth_WorldSpawn"
             },
@@ -25166,6 +25607,9 @@
                     0
                 ],
                 "AutoDescription": " ANY( GOAP.Food.Carnivore.Bait )"
+            },
+            "Experience": {
+                "RowName": "Creature_Cave_Worm_Teenage"
             },
             "BestiaryGroup": {
                 "RowName": "Teenage_Caveworm"
@@ -25312,6 +25756,9 @@
                     0
                 ],
                 "AutoDescription": " ANY( GOAP.Food.Carnivore.Bait )"
+            },
+            "Experience": {
+                "RowName": "Creature_Wolf"
             },
             "Metadata": {
                 "RequiredFeatureLevel": {
@@ -25475,6 +25922,9 @@
             "Hitable": {
                 "RowName": "AnimalBones_Large"
             },
+            "Experience": {
+                "RowName": "Creature_SnowSlug"
+            },
             "BestiaryGroup": {
                 "RowName": "Snow_Slug"
             },
@@ -25627,6 +26077,9 @@
             },
             "Loot": {
                 "RowName": "Drone_Loot"
+            },
+            "Experience": {
+                "RowName": "Creature_Drone"
             },
             "BestiaryGroup": {
                 "RowName": "Drone"
@@ -25793,6 +26246,9 @@
             "Hitable": {
                 "RowName": "AnimalBones_Large"
             },
+            "Experience": {
+                "RowName": "Creature_IceMammoth"
+            },
             "BestiaryGroup": {
                 "RowName": "IceMammoth_WorldSpawn"
             },
@@ -25838,6 +26294,9 @@
             },
             "Trophy": {
                 "RowName": "Caveworm_Head"
+            },
+            "Experience": {
+                "RowName": "Creature_Cave_Worm"
             },
             "BestiaryGroup": {
                 "RowName": "CaveWorm"
@@ -25995,6 +26454,9 @@
             },
             "Hitable": {
                 "RowName": "AnimalBones_Medium"
+            },
+            "Experience": {
+                "RowName": "Creature_SwampBird_Juvenile"
             },
             "bUseSurvivalCharacterState": true,
             "BestiaryGroup": {
@@ -26154,6 +26616,9 @@
             },
             "Hitable": {
                 "RowName": "AnimalBones_Medium"
+            },
+            "Experience": {
+                "RowName": "Creature_Mange_Wolf"
             },
             "BestiaryGroup": {
                 "RowName": "Mange_Wolf"
@@ -26317,6 +26782,9 @@
             },
             "Hitable": {
                 "RowName": "AnimalBones_Medium"
+            },
+            "Experience": {
+                "RowName": "Creature_Mange_Wolf_Alpha"
             },
             "BestiaryGroup": {
                 "RowName": "Mange_Wolf"
@@ -26495,6 +26963,9 @@
             "Hitable": {
                 "RowName": "AnimalBones_Large"
             },
+            "Experience": {
+                "RowName": "Creature_GhostCrocodile"
+            },
             "BestiaryGroup": {
                 "RowName": "GhostCrocodile"
             },
@@ -26660,6 +27131,9 @@
             "Hitable": {
                 "RowName": "AnimalBones_Medium"
             },
+            "Experience": {
+                "RowName": "Creature_Orka"
+            },
             "BestiaryGroup": {
                 "RowName": "Orka"
             },
@@ -26823,6 +27297,9 @@
             },
             "Hitable": {
                 "RowName": "AnimalBones_Large"
+            },
+            "Experience": {
+                "RowName": "Creature_Raptor"
             },
             "BestiaryGroup": {
                 "RowName": "Raptor"
@@ -27269,6 +27746,9 @@
             "Loot": {
                 "RowName": "Drone_Loot"
             },
+            "Experience": {
+                "RowName": "Creature_Drone_Scout"
+            },
             "BestiaryGroup": {
                 "RowName": "Drone"
             },
@@ -27433,6 +27913,9 @@
             "Loot": {
                 "RowName": "Drone_Loot"
             },
+            "Experience": {
+                "RowName": "Creature_Drone_Hunter"
+            },
             "BestiaryGroup": {
                 "RowName": "Drone"
             },
@@ -27592,6 +28075,9 @@
                     1
                 ],
                 "AutoDescription": " ANY( GOAP.Food.Herbivore.Bait, GOAP.Food.Carnivore.Bait )"
+            },
+            "Experience": {
+                "RowName": "Creature_Drone_Carrier"
             },
             "BestiaryGroup": {
                 "RowName": "Drone"
@@ -27770,6 +28256,9 @@
             "Hitable": {
                 "RowName": "AnimalBones_Medium"
             },
+            "Experience": {
+                "RowName": "Creature_Slinker"
+            },
             "BestiaryGroup": {
                 "RowName": "Slinker"
             },
@@ -27928,6 +28417,9 @@
             },
             "Hitable": {
                 "RowName": "AnimalBones_Medium"
+            },
+            "Experience": {
+                "RowName": "Creature_Irradiated_Prospector"
             },
             "BestiaryGroup": {
                 "RowName": "Irradiated_Prospector"
@@ -28099,6 +28591,9 @@
             "Hitable": {
                 "RowName": "AnimalBones_Medium"
             },
+            "Experience": {
+                "RowName": "Creature_Bounder_Desert"
+            },
             "BestiaryGroup": {
                 "RowName": "Bounder_Desert"
             },
@@ -28262,6 +28757,9 @@
             },
             "Hitable": {
                 "RowName": "AnimalBones_Medium"
+            },
+            "Experience": {
+                "RowName": "Creature_TundraDeer"
             },
             "BestiaryGroup": {
                 "RowName": "Tundra_Deer"
@@ -28439,6 +28937,9 @@
             "Hitable": {
                 "RowName": "AnimalBones_Large"
             },
+            "Experience": {
+                "RowName": "Creature_Chew"
+            },
             "BestiaryGroup": {
                 "RowName": "Chew"
             },
@@ -28602,6 +29103,9 @@
             "Hitable": {
                 "RowName": "AnimalBones_Small"
             },
+            "Experience": {
+                "RowName": "Creature_HoppingCreature"
+            },
             "BestiaryGroup": {
                 "RowName": "Hopping_Creature"
             },
@@ -28756,6 +29260,9 @@
             },
             "Hitable": {
                 "RowName": "AnimalBones_Small"
+            },
+            "Experience": {
+                "RowName": "Creature_Rabbit_Variant_Snow"
             },
             "BestiaryGroup": {
                 "RowName": "Rabbit_Variant"
@@ -28917,6 +29424,9 @@
             },
             "Hitable": {
                 "RowName": "AnimalBones_Medium"
+            },
+            "Experience": {
+                "RowName": "Creature_Raptor_Juvenile"
             },
             "bUseSurvivalCharacterState": true,
             "BestiaryGroup": {
@@ -29080,6 +29590,9 @@
             "Hitable": {
                 "RowName": "AnimalBones_Medium"
             },
+            "Experience": {
+                "RowName": "Creature_Raptor_Juvenile"
+            },
             "bUseSurvivalCharacterState": true,
             "BestiaryGroup": {
                 "RowName": "Raptor_Desert"
@@ -29127,6 +29640,9 @@
             "Loot": {
                 "RowName": "SulfurWorm_Loot"
             },
+            "Experience": {
+                "RowName": "Creature_SulfurWorm"
+            },
             "BestiaryGroup": {
                 "RowName": "SulfurWorm"
             },
@@ -29172,6 +29688,9 @@
             },
             "Loot": {
                 "RowName": "SulfurWorm_Loot"
+            },
+            "Experience": {
+                "RowName": "Creature_SulfurWorm"
             },
             "BestiaryGroup": {
                 "RowName": "SulfurWorm"
@@ -29219,6 +29738,9 @@
             "Loot": {
                 "RowName": "SulfurWorm_Loot"
             },
+            "Experience": {
+                "RowName": "Creature_SulfurWorm"
+            },
             "BestiaryGroup": {
                 "RowName": "SulfurWorm"
             },
@@ -29264,6 +29786,9 @@
             },
             "Loot": {
                 "RowName": "SulfurWorm_Loot"
+            },
+            "Experience": {
+                "RowName": "Creature_SulfurWorm"
             },
             "BestiaryGroup": {
                 "RowName": "SulfurWorm"
@@ -29433,6 +29958,9 @@
             },
             "Hitable": {
                 "RowName": "AnimalBones_Medium"
+            },
+            "Experience": {
+                "RowName": "Creature_Reaver"
             },
             "BestiaryGroup": {
                 "RowName": "Reaver"
@@ -29921,6 +30449,9 @@
             "Hitable": {
                 "RowName": "AnimalBones_Medium"
             },
+            "Experience": {
+                "RowName": "Creature_JuvenileChew"
+            },
             "bUseSurvivalCharacterState": true,
             "BestiaryGroup": {
                 "RowName": "Chew"
@@ -30084,6 +30615,9 @@
             },
             "Hitable": {
                 "RowName": "AnimalBones_Small"
+            },
+            "Experience": {
+                "RowName": "Creature_HoppingCreature_Swamp"
             },
             "BestiaryGroup": {
                 "RowName": "Hopping_Creature_Swamp"
@@ -30249,6 +30783,9 @@
             "Hitable": {
                 "RowName": "AnimalBones_Large"
             },
+            "Experience": {
+                "RowName": "Creature_Raptor_Desert"
+            },
             "BestiaryGroup": {
                 "RowName": "Raptor_Desert"
             },
@@ -30412,6 +30949,9 @@
             },
             "Hitable": {
                 "RowName": "AnimalBones_Large"
+            },
+            "Experience": {
+                "RowName": "Creature_Stomper"
             },
             "BestiaryGroup": {
                 "RowName": "Stomper"
@@ -30577,6 +31117,9 @@
             "Hitable": {
                 "RowName": "AnimalBones_Large"
             },
+            "Experience": {
+                "RowName": "Creature_Stomper_Matriarch"
+            },
             "BestiaryGroup": {
                 "RowName": "Stomper"
             },
@@ -30740,6 +31283,9 @@
             },
             "Hitable": {
                 "RowName": "AnimalBones_Medium"
+            },
+            "Experience": {
+                "RowName": "Creature_Slinker_Juvenile"
             },
             "bUseSurvivalCharacterState": true,
             "BestiaryGroup": {
@@ -30912,6 +31458,9 @@
             },
             "Hitable": {
                 "RowName": "AnimalBones_Small"
+            },
+            "Experience": {
+                "RowName": "Creature_Storca"
             },
             "BestiaryGroup": {
                 "RowName": "Storca"
@@ -31095,6 +31644,9 @@
             "Hitable": {
                 "RowName": "AnimalBones_Small"
             },
+            "Experience": {
+                "RowName": "Creature_Storca"
+            },
             "BestiaryGroup": {
                 "RowName": "Storca"
             },
@@ -31262,6 +31814,9 @@
             "Hitable": {
                 "RowName": "AnimalBones_Medium"
             },
+            "Experience": {
+                "RowName": "Creature_Giant_Roach"
+            },
             "BestiaryGroup": {
                 "RowName": "Giant_Roach"
             },
@@ -31421,6 +31976,9 @@
             },
             "Hitable": {
                 "RowName": "AnimalBones_Medium"
+            },
+            "Experience": {
+                "RowName": "Creature_Dragonfly"
             },
             "BestiaryGroup": {
                 "RowName": "DragonFly"
@@ -31587,6 +32145,9 @@
             "Hitable": {
                 "RowName": "AnimalBones_Large"
             },
+            "Experience": {
+                "RowName": "Creature_Flying_Tank"
+            },
             "BestiaryGroup": {
                 "RowName": "Flying_Tank"
             },
@@ -31748,6 +32309,9 @@
             "Hitable": {
                 "RowName": "AnimalBones_Large"
             },
+            "Experience": {
+                "RowName": "Creature_Flightless_Tank"
+            },
             "BestiaryGroup": {
                 "RowName": "Flightless_Tank"
             },
@@ -31774,9 +32338,6 @@
                     "DataTableName": "D_AIDescriptors"
                 }
             ],
-            "DeadItem": {
-                "RowName": "AnimalCarcass_Sandwyrm_Queen"
-            },
             "GOAPSetup": {
                 "RowName": "Sandwyrm_Queen"
             },
@@ -31913,8 +32474,8 @@
             "Loot": {
                 "RowName": "Sandwyrm_Queen_Carcass_Loot"
             },
-            "Hitable": {
-                "RowName": "AnimalBones_Medium"
+            "Experience": {
+                "RowName": "Creature_Sandwyrm_Queen"
             },
             "BestiaryGroup": {
                 "RowName": "Sandwyrm_Queen"
@@ -32075,6 +32636,9 @@
             "Loot": {
                 "RowName": "SulfurBatNest_Loot"
             },
+            "Experience": {
+                "RowName": "Creature_Geothermal_Bat"
+            },
             "BestiaryGroup": {
                 "RowName": "Geothermal_Bat"
             },
@@ -32101,9 +32665,6 @@
                     "DataTableName": "D_AIDescriptors"
                 }
             ],
-            "DeadItem": {
-                "RowName": "AnimalCarcass_Sandwyrm_Queen"
-            },
             "GOAPSetup": {
                 "RowName": "Sandwyrm_Queen"
             },
@@ -32240,8 +32801,8 @@
             "Loot": {
                 "RowName": "Sandwyrm_Queen_Carcass_Loot"
             },
-            "Hitable": {
-                "RowName": "AnimalBones_Medium"
+            "Experience": {
+                "RowName": "Creature_Sandwyrm_Queen"
             },
             "BestiaryGroup": {
                 "RowName": "Sandwyrm_Queen"
@@ -32249,7 +32810,8 @@
             "Metadata": {
                 "RequiredFeatureLevel": {
                     "RowName": "DangerousHorizons"
-                }
+                },
+                "bIsDeprecated": true
             }
         },
         {
@@ -32408,6 +32970,9 @@
             "Hitable": {
                 "RowName": "AnimalBones_Large"
             },
+            "Experience": {
+                "RowName": "Creature_Yeti"
+            },
             "BestiaryGroup": {
                 "RowName": "Yeti"
             },
@@ -32544,7 +33109,7 @@
                 "RigHumanSpine_L",
                 "RigHumanHead_L",
                 "RigFrontLegR5_R",
-                "RigFrontLegR5_L",
+                "RigFrontLegL5_L",
                 "RigBackLeg4_R",
                 "RigBackLeg4_L"
             ],
@@ -32568,6 +33133,9 @@
             },
             "Hitable": {
                 "RowName": "AnimalBones_Large"
+            },
+            "Experience": {
+                "RowName": "Creature_Irradiated_Abomination"
             },
             "BestiaryGroup": {
                 "RowName": "Irradiated_Abomination"
@@ -32729,6 +33297,9 @@
             },
             "Hitable": {
                 "RowName": "AnimalBones_Small"
+            },
+            "Experience": {
+                "RowName": "Creature_SandScuttle"
             },
             "BestiaryGroup": {
                 "RowName": "SandScuttler"
@@ -32892,6 +33463,9 @@
             },
             "Hitable": {
                 "RowName": "AnimalBones_Small"
+            },
+            "Experience": {
+                "RowName": "Creature_TundraMonkey"
             },
             "BestiaryGroup": {
                 "RowName": "Tundra_Monkey"
@@ -33516,6 +34090,9 @@
             "Hitable": {
                 "RowName": "AnimalBones_Medium"
             },
+            "Experience": {
+                "RowName": "Creature_Spider_Geothermal"
+            },
             "BestiaryGroup": {
                 "RowName": "Geothermal_Spider"
             },
@@ -33615,6 +34192,9 @@
             },
             "Loot": {
                 "RowName": "FleshSac_Floater_Carcass_Loot"
+            },
+            "Experience": {
+                "RowName": "Creature_Fleshsac_Floater"
             },
             "BestiaryGroup": {
                 "RowName": "FleshSac_Floater"
@@ -33782,6 +34362,9 @@
             },
             "Hitable": {
                 "RowName": "AnimalBones_Medium"
+            },
+            "Experience": {
+                "RowName": "Creature_Irradiated_Mutation"
             },
             "BestiaryGroup": {
                 "RowName": "Irradiated_Mutation"
@@ -34082,6 +34665,9 @@
             "Hitable": {
                 "RowName": "AnimalBones_Medium"
             },
+            "Experience": {
+                "RowName": "Creature_WoollyMammoth_Juvenile"
+            },
             "bUseSurvivalCharacterState": true,
             "BestiaryGroup": {
                 "RowName": "Mammoth"
@@ -34120,6 +34706,9 @@
                     0
                 ],
                 "AutoDescription": " ANY( GOAP.Food.Carnivore.Bait )"
+            },
+            "Experience": {
+                "RowName": "Creature_Landshark"
             },
             "Metadata": {
                 "RequiredFeatureLevel": {
@@ -34271,6 +34860,9 @@
             },
             "Loot": {
                 "RowName": "Drone_Loot"
+            },
+            "Experience": {
+                "RowName": "Creature_Drone_Hunter"
             },
             "BestiaryGroup": {
                 "RowName": "Drone"
@@ -34428,6 +35020,9 @@
             "Hitable": {
                 "RowName": "AnimalBones_Small"
             },
+            "Experience": {
+                "RowName": "Creature_Cat"
+            },
             "bUseSurvivalCharacterState": true,
             "bStartWithSurvivalTickDisabled": false,
             "BestiaryGroup": {
@@ -34576,6 +35171,9 @@
             },
             "Hitable": {
                 "RowName": "AnimalBones_Small"
+            },
+            "Experience": {
+                "RowName": "Creature_Cat"
             },
             "bUseSurvivalCharacterState": true,
             "bStartWithSurvivalTickDisabled": false,
@@ -34726,6 +35324,9 @@
             "Hitable": {
                 "RowName": "AnimalBones_Small"
             },
+            "Experience": {
+                "RowName": "Creature_Dog"
+            },
             "bUseSurvivalCharacterState": true,
             "bStartWithSurvivalTickDisabled": false,
             "BestiaryGroup": {
@@ -34874,6 +35475,9 @@
             "Hitable": {
                 "RowName": "AnimalBones_Small"
             },
+            "Experience": {
+                "RowName": "Creature_Dog"
+            },
             "bUseSurvivalCharacterState": true,
             "bStartWithSurvivalTickDisabled": false,
             "BestiaryGroup": {
@@ -35005,6 +35609,9 @@
             },
             "Loot": {
                 "RowName": "NPC_Soldier_Loot"
+            },
+            "Experience": {
+                "RowName": "Creature_Soldier"
             },
             "BlacklistBones": [
                 {
@@ -35159,6 +35766,9 @@
             },
             "Hitable": {
                 "RowName": "AnimalBones_Medium"
+            },
+            "Experience": {
+                "RowName": "Creature_Pig"
             },
             "bUseSurvivalCharacterState": true,
             "bStartWithSurvivalTickDisabled": false,
@@ -35320,7 +35930,10 @@
                 "RowName": "Piglet_Loot"
             },
             "Hitable": {
-                "RowName": "AnimalBones_Medium"
+                "RowName": "AnimalBones_Small"
+            },
+            "Experience": {
+                "RowName": "Creature_Piglet"
             },
             "bUseSurvivalCharacterState": true,
             "BestiaryGroup": {
@@ -35453,9 +36066,6 @@
                 ],
                 "AutoDescription": " ANY( GOAP.Food.NoBait )"
             },
-            "Loot": {
-                "RowName": "Moa_Carcass_Loot"
-            },
             "bUseSurvivalCharacterState": true,
             "bStartWithSurvivalTickDisabled": false,
             "Metadata": {
@@ -35500,6 +36110,168 @@
             },
             "Loot": {
                 "RowName": "Landshark_Norex_Loot"
+            },
+            "Experience": {
+                "RowName": "Creature_Landshark"
+            }
+        },
+        {
+            "Name": "Juvenile_Snow_Wolf",
+            "ActorClass": "/Game/BP/AI/GOAP/AI/BP_NPC_Snow_Wolf_Juvenile.BP_NPC_Snow_Wolf_Juvenile_C",
+            "ControllerClass": "/Game/BP/AI/GOAP/AI/BP_NPC_Juvenile_Controller.BP_NPC_Juvenile_Controller_C",
+            "CreatureType": {
+                "RowName": "Wolf"
+            },
+            "Descriptors": [
+                {
+                    "RowName": "Passive",
+                    "DataTableName": "D_AIDescriptors"
+                },
+                {
+                    "RowName": "Herbivore",
+                    "DataTableName": "D_AIDescriptors"
+                }
+            ],
+            "DeadItem": {
+                "RowName": "AnimalCarcass_Snow_Wolf_Juvenile"
+            },
+            "GOAPSetup": {
+                "RowName": "Juvenile_Default"
+            },
+            "DefaultNavigationFilter": "BlueprintGeneratedClass'/Game/BP/AI/GOAP/Misc/NavFilter_JuvenileAI.NavFilter_JuvenileAI_C'",
+            "Relationships": {
+                "RowName": "DefaultSmallHerbivore"
+            },
+            "NotifiedNPCTypes": [
+                {
+                    "RowName": "NPC_Passive",
+                    "DataTableName": "D_TagQueries"
+                }
+            ],
+            "AIGrowth": {
+                "RowName": "Juvenile_Wolf"
+            },
+            "MovementMapping": {
+                "Stationary": {
+                    "MaxWalkSpeed": 1,
+                    "GroundFriction": 8,
+                    "BrakingFriction": 2,
+                    "MaxAcceleration": 300,
+                    "BrakingDeceleration": 250,
+                    "RotationRate": 100,
+                    "MaxSwimSpeed": 1
+                },
+                "Sneak": {
+                    "MaxWalkSpeed": 0.6499999761581421,
+                    "GroundFriction": 8,
+                    "BrakingFriction": 2,
+                    "MaxAcceleration": 300,
+                    "BrakingDeceleration": 250,
+                    "RotationRate": 100,
+                    "MaxSwimSpeed": 1
+                },
+                "Walk": {
+                    "MaxWalkSpeed": 1,
+                    "GroundFriction": 8,
+                    "BrakingFriction": 2,
+                    "MaxAcceleration": 300,
+                    "BrakingDeceleration": 250,
+                    "RotationRate": 100,
+                    "MaxSwimSpeed": 1
+                },
+                "Jog": {
+                    "MaxWalkSpeed": 3.2300000190734863,
+                    "GroundFriction": 8,
+                    "BrakingFriction": 2,
+                    "MaxAcceleration": 300,
+                    "BrakingDeceleration": 250,
+                    "RotationRate": 100,
+                    "MaxSwimSpeed": 1
+                },
+                "Run": {
+                    "MaxWalkSpeed": 7.690000057220459,
+                    "GroundFriction": 8,
+                    "BrakingFriction": 2,
+                    "MaxAcceleration": 500,
+                    "BrakingDeceleration": 450,
+                    "RotationRate": 125,
+                    "MaxSwimSpeed": 1
+                },
+                "Sprint": {
+                    "MaxWalkSpeed": 7.690000057220459,
+                    "GroundFriction": 8,
+                    "BrakingFriction": 2,
+                    "MaxAcceleration": 1800,
+                    "BrakingDeceleration": 500,
+                    "RotationRate": 150,
+                    "MaxSwimSpeed": 1
+                },
+                "Attacking": {
+                    "MaxWalkSpeed": 7.690000057220459,
+                    "GroundFriction": 8,
+                    "BrakingFriction": 64,
+                    "MaxAcceleration": 450,
+                    "BrakingDeceleration": 50000,
+                    "RotationRate": 150,
+                    "MaxSwimSpeed": 1
+                },
+                "Following": {
+                    "MaxWalkSpeed": 7.690000057220459,
+                    "GroundFriction": 8,
+                    "BrakingFriction": 2,
+                    "MaxAcceleration": 300,
+                    "BrakingDeceleration": 250,
+                    "RotationRate": 100,
+                    "MaxSwimSpeed": 1
+                },
+                "Undefined": {
+                    "MaxWalkSpeed": 3.2300000190734863,
+                    "GroundFriction": 8,
+                    "BrakingFriction": 2,
+                    "MaxAcceleration": 300,
+                    "BrakingDeceleration": 250,
+                    "RotationRate": 100,
+                    "MaxSwimSpeed": 1
+                }
+            },
+            "Audio": {
+                "RowName": "DogLaika"
+            },
+            "CollisionHitEventBones": [
+                "RigChest",
+                "RigNeck1",
+                "RigChest",
+                "RigSpine2",
+                "RigPelvis",
+                "RigNeck2"
+            ],
+            "ValidBaitTagQuery": {
+                "TagDictionary": [
+                    {
+                        "TagName": "GOAP.Food.Carnivore.Bait"
+                    }
+                ],
+                "QueryTokenStream": [
+                    0,
+                    1,
+                    1,
+                    1,
+                    0
+                ],
+                "AutoDescription": " ANY( GOAP.Food.Carnivore.Bait )"
+            },
+            "Loot": {
+                "RowName": "Juvenile_Wolf_Carcass_Loot"
+            },
+            "Hitable": {
+                "RowName": "AnimalBones_Small"
+            },
+            "Experience": {
+                "RowName": "Creature_Snow_Wolf_Juvenile"
+            },
+            "bUseSurvivalCharacterState": true,
+            "BestiaryGroup": {
+                "RowName": "Snow_Wolf"
             }
         }
     ]

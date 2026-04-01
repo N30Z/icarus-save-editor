@@ -1397,6 +1397,23 @@
             "TPFocusedMontage": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_MAL_FlamethrowerEquip_Montage.3RD_CHA_MAL_FlamethrowerEquip_Montage",
             "TPUprightIdle": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_MAL_Flamethrower_Idle.3RD_CHA_MAL_Flamethrower_Idle",
             "TPCrouchedIdle": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_MAL_Flamethrower_CrouchIdle.3RD_CHA_MAL_Flamethrower_CrouchIdle"
+        },
+        {
+            "Name": "Chainsaw_SWQ",
+            "Behaviour": "/Game/BP/Behaviours/Focusable/BP_FocusableBehaviour_Chainsaw.BP_FocusableBehaviour_Chainsaw_C",
+            "AttachmentData": {
+                "RowName": "GeneralBoth"
+            },
+            "AnimOverlayType": "TwoHandedRifle",
+            "AnimationData": {
+                "RowName": "Chainsaw"
+            },
+            "FPFocusedMontage": "/Game/ASS/CHA/1ST/1ST_NewRig/1ST_CHA_Chainsaw_On_Montage_SWQ.1ST_CHA_Chainsaw_On_Montage_SWQ",
+            "FPIdleAnim": "/Game/ASS/CHA/1ST/1ST_NewRig/1ST_CHA_Chainsaw_Idle_On.1ST_CHA_Chainsaw_Idle_On",
+            "TPFocusedMontage": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_MAL_Chainsaw_On_Montage.3RD_CHA_MAL_Chainsaw_On_Montage",
+            "TPUprightIdle": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_MAL_Chainsaw_Idle_On.3RD_CHA_MAL_Chainsaw_Idle_On",
+            "TPCrouchedIdle": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_MAL_Chainsaw_Crouch_Idle.3RD_CHA_MAL_Chainsaw_Crouch_Idle",
+            "ItemFocusedMontage": "/Game/ASS/ITM/ANI_ITM_Chainsaw_Turn_On_Montage.ANI_ITM_Chainsaw_Turn_On_Montage"
         }
     ]
 }

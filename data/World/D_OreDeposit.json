@@ -357,7 +357,7 @@
                 "RowName": "Limestone"
             },
             "HighlightableRow": {
-                "RowName": "Deep_Mining_Ore_Deposit_Obsidian"
+                "RowName": "Deep_Mining_Ore_Deposit_Limestone"
             },
             "RVTNodeMaterial_CF": "/Game/ASS/ENV/LND/DeepMiningOreDeposit/M_RVT_CF_DeepMiningOreDeposit_Limestone_Node.M_RVT_CF_DeepMiningOreDeposit_Limestone_Node",
             "RVTNodeMaterial_DC": "/Game/ASS/ENV/LND/DeepMiningOreDeposit/M_RVT_DC_DeepMiningOreDeposit_Limestone_Node.M_RVT_DC_DeepMiningOreDeposit_Limestone_Node",
@@ -366,8 +366,7 @@
             "RockMaterial": "/Game/ASS/ENV/LND/DeepMiningOreDeposit/M_DeepMiningOreDeposit_Limestone_Rocks.M_DeepMiningOreDeposit_Limestone_Rocks",
             "MinOreAvailable": -1,
             "MaxOreAvailable": -1,
-            "MiningTimeSeconds": 50,
-            "ScannerBlacklist": true,
+            "MiningTimeSeconds": 25,
             "Metadata": {
                 "RequiredFeatureLevel": {
                     "RowName": "DangerousHorizons"

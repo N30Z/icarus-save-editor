@@ -22,7 +22,8 @@
             "Value": "None"
         },
         "bApplyToAttacker": false,
-        "bRequiresDamage": true
+        "bRequiresDamage": true,
+        "bTreatStatAsBoolean": false
     },
     "Rows": [
         {

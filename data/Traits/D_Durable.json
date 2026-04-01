@@ -90,6 +90,19 @@
             ]
         },
         {
+            "Name": "Lithium_Axe",
+            "Max_Durability": 240000,
+            "ItemsForRepair": [
+                {
+                    "Item": {
+                        "RowName": "Lithium_Refined",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Amount": 1
+                }
+            ]
+        },
+        {
             "Name": "Meta_Axe",
             "Max_Durability": 500000,
             "ItemsForRepair": [
@@ -154,6 +167,19 @@
                 {
                     "Item": {
                         "RowName": "Platinum_Ingot",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Amount": 1
+                }
+            ]
+        },
+        {
+            "Name": "Lithium_Pickaxe",
+            "Max_Durability": 240000,
+            "ItemsForRepair": [
+                {
+                    "Item": {
+                        "RowName": "Lithium_Refined",
                         "DataTableName": "D_ItemsStatic"
                     },
                     "Amount": 1
@@ -264,6 +290,19 @@
                 {
                     "Item": {
                         "RowName": "Titanium_Ingot",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Amount": 1
+                }
+            ]
+        },
+        {
+            "Name": "Lithium_Knife",
+            "Max_Durability": 60000,
+            "ItemsForRepair": [
+                {
+                    "Item": {
+                        "RowName": "Lithium_Refined",
                         "DataTableName": "D_ItemsStatic"
                     },
                     "Amount": 1
@@ -400,6 +439,19 @@
                 {
                     "Item": {
                         "RowName": "Composites",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Amount": 1
+                }
+            ]
+        },
+        {
+            "Name": "Lithium_Bow",
+            "Max_Durability": 40000,
+            "ItemsForRepair": [
+                {
+                    "Item": {
+                        "RowName": "Lithium_Refined",
                         "DataTableName": "D_ItemsStatic"
                     },
                     "Amount": 1
@@ -669,6 +721,19 @@
             ]
         },
         {
+            "Name": "Lithium_Spear",
+            "Max_Durability": 100000,
+            "ItemsForRepair": [
+                {
+                    "Item": {
+                        "RowName": "Lithium_Refined",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Amount": 1
+                }
+            ]
+        },
+        {
             "Name": "Meta_Spear",
             "Max_Durability": 50000,
             "ItemsForRepair": [
@@ -892,6 +957,19 @@
             ]
         },
         {
+            "Name": "Lithium_Sickle",
+            "Max_Durability": 60000,
+            "ItemsForRepair": [
+                {
+                    "Item": {
+                        "RowName": "Lithium_Refined",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Amount": 1
+                }
+            ]
+        },
+        {
             "Name": "Wood_Repair_Hammer",
             "Max_Durability": 2000,
             "ItemsForRepair": [
@@ -946,6 +1024,19 @@
         {
             "Name": "Titanium_Hammer",
             "Max_Durability": 40000,
+            "ItemsForRepair": [
+                {
+                    "Item": {
+                        "RowName": "Titanium_Ingot",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Amount": 1
+                }
+            ]
+        },
+        {
+            "Name": "Nailgun",
+            "Max_Durability": 60000,
             "ItemsForRepair": [
                 {
                     "Item": {
@@ -1442,6 +1533,19 @@
             ]
         },
         {
+            "Name": "Lithium_Crossbow",
+            "Max_Durability": 40000,
+            "ItemsForRepair": [
+                {
+                    "Item": {
+                        "RowName": "Lithium_Refined",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Amount": 1
+                }
+            ]
+        },
+        {
             "Name": "Deployable_10000",
             "Max_Durability": 10000,
             "Destroyed_At_Zero": true
@@ -1492,6 +1596,19 @@
                 {
                     "Item": {
                         "RowName": "Composites",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Amount": 1
+                }
+            ]
+        },
+        {
+            "Name": "Lithium_Shield",
+            "Max_Durability": 20000,
+            "ItemsForRepair": [
+                {
+                    "Item": {
+                        "RowName": "Lithium_Refined",
                         "DataTableName": "D_ItemsStatic"
                     },
                     "Amount": 1
@@ -1813,6 +1930,19 @@
             ]
         },
         {
+            "Name": "Lithium_Sledgehammer",
+            "Max_Durability": 240000,
+            "ItemsForRepair": [
+                {
+                    "Item": {
+                        "RowName": "Lithium_Refined",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Amount": 1
+                }
+            ]
+        },
+        {
             "Name": "Rock_Golem_Gun",
             "Max_Durability": 25000,
             "ItemsForRepair": [
@@ -1918,7 +2048,7 @@
         },
         {
             "Name": "Scyther_Pickaxe",
-            "Max_Durability": 500000,
+            "Max_Durability": 120000,
             "ItemsForRepair": [
                 {
                     "Item": {
@@ -2555,7 +2685,7 @@
         },
         {
             "Name": "Speeder_Bike",
-            "Max_Durability": 3050,
+            "Max_Durability": 3000,
             "Destroyed_At_Zero": true,
             "ItemsForRepair": [
                 {
@@ -2570,6 +2700,19 @@
                 {
                     "RowName": "Repair_Bench",
                     "DataTableName": "D_RecipeSets"
+                }
+            ]
+        },
+        {
+            "Name": "Chainsaw",
+            "Max_Durability": 180000,
+            "ItemsForRepair": [
+                {
+                    "Item": {
+                        "RowName": "Titanium_Ingot",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Amount": 1
                 }
             ]
         }

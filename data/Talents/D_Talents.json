@@ -62938,7 +62938,8 @@
                 },
                 {
                     "GrantedStats": {
-                        "(Value=\"BaseFallDamageResistance_%\")": 100
+                        "(Value=\"BaseFallDamageResistance_%\")": 100,
+                        "(Value=\"HasFallDamageImmunity_?\")": 1
                     },
                     "GrantedFlags": []
                 }
@@ -75015,6 +75016,289 @@
                     "RowName": "DangerousHorizons"
                 }
             }
+        },
+        {
+            "Name": "GH_R_C",
+            "ExtraData": {
+                "RowName": "Radiation_C",
+                "DataTableName": "D_GreatHunts"
+            },
+            "TalentTree": {
+                "RowName": "GreatHunt_Radiation"
+            },
+            "Position": {
+                "X": 2250,
+                "Y": 1800
+            },
+            "Size": {
+                "X": 600,
+                "Y": 660
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "GH_R_A_Choice",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "DrawMethodOverride": "XThenY"
+        },
+        {
+            "Name": "GH_R_B",
+            "ExtraData": {
+                "RowName": "Radiation_B",
+                "DataTableName": "D_GreatHunts"
+            },
+            "TalentTree": {
+                "RowName": "GreatHunt_Radiation"
+            },
+            "Position": {
+                "X": 2250,
+                "Y": 3450
+            },
+            "Size": {
+                "X": 600,
+                "Y": 660
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "GH_R_A_Choice",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "DrawMethodOverride": "XThenY"
+        },
+        {
+            "Name": "GH_R_C2",
+            "ExtraData": {
+                "RowName": "Radiation_C2",
+                "DataTableName": "D_GreatHunts"
+            },
+            "TalentTree": {
+                "RowName": "GreatHunt_Radiation"
+            },
+            "Position": {
+                "X": 4200,
+                "Y": 1800
+            },
+            "Size": {
+                "X": 600,
+                "Y": 660
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "GH_R_C",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "DrawMethodOverride": "XThenY"
+        },
+        {
+            "Name": "GH_R_B2",
+            "ExtraData": {
+                "RowName": "Radiation_B2",
+                "DataTableName": "D_GreatHunts"
+            },
+            "TalentTree": {
+                "RowName": "GreatHunt_Radiation"
+            },
+            "Position": {
+                "X": 4200,
+                "Y": 3450
+            },
+            "Size": {
+                "X": 600,
+                "Y": 660
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "GH_R_B",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "DrawMethodOverride": "XThenY"
+        },
+        {
+            "Name": "GH_R_D",
+            "ExtraData": {
+                "RowName": "Radiation_D",
+                "DataTableName": "D_GreatHunts"
+            },
+            "TalentTree": {
+                "RowName": "GreatHunt_Radiation"
+            },
+            "Position": {
+                "X": 5100,
+                "Y": 2650
+            },
+            "Size": {
+                "X": 600,
+                "Y": 660
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "GH_R_C2",
+                    "DataTableName": "D_Talents"
+                },
+                {
+                    "RowName": "GH_R_B2",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "DrawMethodOverride": "XThenY"
+        },
+        {
+            "Name": "GH_R_D2",
+            "ExtraData": {
+                "RowName": "Radiation_D2",
+                "DataTableName": "D_GreatHunts"
+            },
+            "TalentTree": {
+                "RowName": "GreatHunt_Radiation"
+            },
+            "Position": {
+                "X": 7000,
+                "Y": 2650
+            },
+            "Size": {
+                "X": 600,
+                "Y": 660
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "GH_R_D",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "DrawMethodOverride": "XThenY"
+        },
+        {
+            "Name": "GH_R_Final",
+            "ExtraData": {
+                "RowName": "Radiation_Final",
+                "DataTableName": "D_GreatHunts"
+            },
+            "TalentTree": {
+                "RowName": "GreatHunt_Radiation"
+            },
+            "Position": {
+                "X": 8100,
+                "Y": 2650
+            },
+            "Size": {
+                "X": 600,
+                "Y": 660
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "GH_R_D2",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "DrawMethodOverride": "XThenY"
+        },
+        {
+            "Name": "GH_R_O1",
+            "ExtraData": {
+                "RowName": "Radiation_O1",
+                "DataTableName": "D_GreatHunts"
+            },
+            "TalentTree": {
+                "RowName": "GreatHunt_Radiation"
+            },
+            "Position": {
+                "X": 6050,
+                "Y": 3450
+            },
+            "Size": {
+                "X": 600,
+                "Y": 660
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "GH_R_B2",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "DrawMethodOverride": "XThenY"
+        },
+        {
+            "Name": "GH_R_O2",
+            "ExtraData": {
+                "RowName": "Radiation_O2",
+                "DataTableName": "D_GreatHunts"
+            },
+            "TalentTree": {
+                "RowName": "GreatHunt_Radiation"
+            },
+            "Position": {
+                "X": 6050,
+                "Y": 1750
+            },
+            "Size": {
+                "X": 600,
+                "Y": 660
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "GH_R_C2",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "DrawMethodOverride": "XThenY"
+        },
+        {
+            "Name": "GH_R_O3",
+            "ExtraData": {
+                "RowName": "Radiation_O3",
+                "DataTableName": "D_GreatHunts"
+            },
+            "TalentTree": {
+                "RowName": "GreatHunt_Radiation"
+            },
+            "Position": {
+                "X": 3250,
+                "Y": 2650
+            },
+            "Size": {
+                "X": 600,
+                "Y": 660
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "GH_R_B",
+                    "DataTableName": "D_Talents"
+                },
+                {
+                    "RowName": "GH_R_C",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "DrawMethodOverride": "XThenY"
+        },
+        {
+            "Name": "GH_R_A_Choice",
+            "TalentType": "MutuallyExclusive",
+            "ExtraData": {
+                "DataTableName": "D_GreatHunts"
+            },
+            "TalentTree": {
+                "RowName": "GreatHunt_Radiation"
+            },
+            "Position": {
+                "X": 2250,
+                "Y": 2650
+            },
+            "Size": {
+                "X": 185,
+                "Y": 185
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "GH_R_A",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "DrawMethodOverride": "XThenY"
         }
     ]
 }

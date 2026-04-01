@@ -170,16 +170,6 @@
             "Effects": "Juvenile"
         },
         {
-            "Name": "JuvenileTamingDurationDecrease",
-            "StatRequirement": {
-                "Value": "TamingSpeedSaddleBoost_%"
-            },
-            "GrantedStat": {
-                "Value": "BaseTamingSpeedSaddleBoost_%"
-            },
-            "Effects": "Juvenile"
-        },
-        {
             "Name": "Gestation_Speed",
             "StatRequirement": {
                 "Value": "TamedCreatureGestationSpeed_+%"
