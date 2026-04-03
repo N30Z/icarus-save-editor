@@ -7426,7 +7426,7 @@
         {
             "Name": "Mesh_LegendaryWeapon_LavaHunter_Flamethrower",
             "ItemMesh": "/Game/ASS/ITM/WeaponCrate_Norex/SM_ITM_WeaponCrate_Norex.SM_ITM_WeaponCrate_Norex",
-            "EquipHandMesh": "/Game/ASS/WEP/Gun_FlameThrower_LavaHunter/SK_WEP_GUN_FlameThrower_LavaHunter_Core.SK_WEP_GUN_FlameThrower_LavaHunter_Core",
+            "EquipHandMesh": "/Game/ASS/WEP/GUN_Flamethrower_LavaHunter/SK_WEP_GUN_FlameThrower_LavaHunter_Core.SK_WEP_GUN_FlameThrower_LavaHunter_Core",
             "EquipHandActor": "/Game/BP/Objects/World/Items/Weapons/BP_SkeletalItem_FlameThrower_LavaHunter.BP_SkeletalItem_FlameThrower_LavaHunter_C",
             "Metadata": {
                 "RequiredFeatureLevel": {
@@ -8586,6 +8586,20 @@
             "ItemMesh": "/Game/ASS/ITM/WeaponCrate_Norex/SM_ITM_WeaponCrate_Norex.SM_ITM_WeaponCrate_Norex",
             "EquipHandMesh": "/Game/ASS/ITM/Legendary_Chainsaw/SK_ITM_Legendary_Chainsaw_CORE.SK_ITM_Legendary_Chainsaw_CORE",
             "EquipHandActor": "/Game/BP/Objects/World/Items/Weapons/BP_SkeletalItem_Sandwyrm_Chainsaw.BP_SkeletalItem_Sandwyrm_Chainsaw_C"
+        },
+        {
+            "Name": "Mesh_Carcass_Conifer_Wolf_Juvenile",
+            "ItemMesh": "/Game/ASS/CRE/Wolf_Juvie/SK_CRE_Wolf_Juvie.SK_CRE_Wolf_Juvie",
+            "ItemActor": "/Game/BP/Objects/World/Items/Deployables/AI/BP_Conifer_Wolf_Juvenile_Corpse.BP_Conifer_Wolf_Juvenile_Corpse_C",
+            "EquipBackMesh": "/Game/ASS/CRE/Wolf_Juvie/SK_CRE_Wolf_Juvie.SK_CRE_Wolf_Juvie",
+            "EquipBackActor": "/Game/BP/Objects/World/Items/Deployables/AI/BP_Conifer_Wolf_Juvenile_Corpse.BP_Conifer_Wolf_Juvenile_Corpse_C"
+        },
+        {
+            "Name": "Mesh_Carcass_Snow_Wolf_Juvenile",
+            "ItemMesh": "/Game/ASS/CRE/Wolf_Juvie/SK_CRE_Wolf_Juvie.SK_CRE_Wolf_Juvie",
+            "ItemActor": "/Game/BP/Objects/World/Items/Deployables/AI/BP_Snow_Wolf_Juvenile_Corpse.BP_Snow_Wolf_Juvenile_Corpse_C",
+            "EquipBackMesh": "/Game/ASS/CRE/Wolf_Juvie/SK_CRE_Wolf_Juvie.SK_CRE_Wolf_Juvie",
+            "EquipBackActor": "/Game/BP/Objects/World/Items/Deployables/AI/BP_Snow_Wolf_Juvenile_Corpse.BP_Snow_Wolf_Juvenile_Corpse_C"
         }
     ]
 }

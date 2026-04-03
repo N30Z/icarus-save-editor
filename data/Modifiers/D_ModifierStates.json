@@ -11060,7 +11060,7 @@
         {
             "Name": "Dirt_Mound_Ploughed_Platinum",
             "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Items/Item_Icons/Attachments/T_ITEM_Platinum_Plow.T_ITEM_Platinum_Plow'",
-            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Dirt_Mound_Ploughed_Platinum-ModifierName\", \"Dug with an Platinum Plow\")",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Dirt_Mound_Ploughed_Platinum-ModifierName\", \"Dug with a Platinum Plow\")",
             "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Dirt_Mound_Ploughed_Platinum-ModifierDescription\", \"Neat dirt pile made with a Platinum Plow pulled by an Animal.\")",
             "GrantedStats": {
                 "(Value=\"BasePlantedCropYield_+%\")": 10
@@ -11926,7 +11926,7 @@
                 "(Value=\"BaseExperience_+%\")": 25,
                 "(Value=\"BaseStaminaRegen_+%\")": 200,
                 "(Value=\"BaseHealthRegen_+%\")": 200,
-                "(Value=\"BaseFoodConsumption_+%\")": 15
+                "(Value=\"BaseFoodConsumption_+%\")": -15
             },
             "ModifierLifetimeAffectors": [
                 {
@@ -12448,7 +12448,7 @@
                     "Value": "PoisonModifierDuration_+%"
                 }
             ],
-            "MergeType": "Stack",
+            "MergeType": "Replace",
             "MaxStackNum": 4,
             "ModifierTags": {
                 "GameplayTags": [
@@ -13018,7 +13018,7 @@
             "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"HammerheadSlug_Slime-ModifierName\", \"Toxic Slime\")",
             "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"HammerheadSlug_Slime-ModifierDescription\", \"Drastically slows movement and deals damage over time. Alerts the owner of this sticky trail to your presence\")",
             "GrantedStats": {
-                "(Value=\"BaseMovementSpeed_+%\")": -55
+                "(Value=\"BaseMovementSpeed_+%\")": -45
             },
             "MergeType": "Replace",
             "ModifierAllowedQuery": {
@@ -15191,8 +15191,8 @@
             "Name": "GrantedAura_SandCloud",
             "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/T_ICON_MODIFIER_SANDWYRMEGG.T_ICON_MODIFIER_SANDWYRMEGG'",
             "Type": "Debuff",
-            "ModifierName": "INVTEXT(\"[DNT] Sand Cloud\")",
-            "ModifierDescription": "INVTEXT(\"[DNT] Sand Cloud\")",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"GrantedAura_SandCloud-ModifierName\", \"Sand Cloud\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"GrantedAura_SandCloud-ModifierDescription\", \"Sand Cloud\")",
             "bAura": true,
             "AuraRange": 1500,
             "AuraFlags": {
@@ -15213,8 +15213,8 @@
             "Name": "AuraEffect_SandCloud",
             "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/T_ICON_MODIFIER_SANDWYRMEGG.T_ICON_MODIFIER_SANDWYRMEGG'",
             "Type": "Debuff",
-            "ModifierName": "INVTEXT(\"[DNT] Sand Cloud\")",
-            "ModifierDescription": "INVTEXT(\"[DNT] Sand Cloud\")",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"AuraEffect_SandCloud-ModifierName\", \"Sand Cloud\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"AuraEffect_SandCloud-ModifierDescription\", \"Sand Cloud\")",
             "GrantedStats": {
                 "(Value=\"BaseSprintSpeed_+%\")": -50,
                 "(Value=\"BaseStaminaRegen_+%\")": -10,
@@ -15260,10 +15260,10 @@
         },
         {
             "Name": "DamageOverTime_Acid",
-            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_BleedingDebuff.Icon_BleedingDebuff'",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_Corrosive.Icon_Corrosive'",
             "Type": "Debuff",
-            "ModifierName": "INVTEXT(\"[DNT] Acidic\")",
-            "ModifierDescription": "INVTEXT(\"[DNT] Slowly melting.\")",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"DamageOverTime_Acid-ModifierName\", \"Acidic\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"DamageOverTime_Acid-ModifierDescription\", \"Slowly melting.\")",
             "AudioData": {
                 "RowName": "Generic_Negative"
             },
@@ -15765,7 +15765,7 @@
             "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_AggressiveCreature.Icon_AggressiveCreature'",
             "Type": "Aura_Positive",
             "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"GrantedAura_MaternalInstincts-ModifierName\", \"Aura: Maternal Instincts\")",
-            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"GrantedAura_MaternalInstincts-ModifierDescription\", \"Nearby Juveniles Recieve Increased Resistance and Taming Speed\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"GrantedAura_MaternalInstincts-ModifierDescription\", \"Nearby Juveniles Receive Increased Resistance and Taming Speed\")",
             "bAura": true,
             "AuraRange": 2000,
             "AuraFlags": {
@@ -15897,7 +15897,7 @@
                 "EffectsDeployables": true
             },
             "ModifierGrantedByAura": {
-                "RowName": "AuraEffect_Sheltered"
+                "RowName": "AuraEffect_InhibitSlinkerHunting"
             },
             "Behaviour": "/Game/BP/Behaviours/Modifiers/BP_Modifier_Aura_RangeModifiable.BP_Modifier_Aura_RangeModifiable_C",
             "ShouldTick": true,
@@ -16176,6 +16176,49 @@
                 "(Value=\"BaseMovementSpeed_+%\")": -50
             },
             "MergeType": "LongestDuration",
+            "bEffectsNPCs": false,
+            "SaveToDatabase": false
+        },
+        {
+            "Name": "GrantedAura_QuickTamer",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_Right_Double.Icon_Right_Double'",
+            "Type": "Aura_Positive",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"GrantedAura_QuickTamer-ModifierName\", \"Aura: Quick Tamer\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"GrantedAura_QuickTamer-ModifierDescription\", \"Nearby Juveniles Tame Faster\")",
+            "bAura": true,
+            "AuraRange": 1500,
+            "AuraFlags": {
+                "EffectsPlayers": false,
+                "EffectsNPCs": true
+            },
+            "ModifierGrantedByAura": {
+                "RowName": "AuraEffect_QuickTamer"
+            },
+            "Behaviour": "/Game/BP/Behaviours/Modifiers/BP_Modifier_Aura_Base.BP_Modifier_Aura_Base_C",
+            "ShouldTick": true,
+            "ModifierTickRate": 0.5,
+            "RemovedOnDeath": false,
+            "MergeType": "Count",
+            "bEffectsObjects": true,
+            "bEffectsPlayers": false,
+            "SaveToDatabase": false
+        },
+        {
+            "Name": "AuraEffect_QuickTamer",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_Right_Double.Icon_Right_Double'",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"AuraEffect_QuickTamer-ModifierName\", \"Aura Effect: Quick Tamer\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"AuraEffect_QuickTamer-ModifierDescription\", \"Juveniles Tame Faster\")",
+            "GrantedStats": {
+                "(Value=\"BaseTamingSpeed_%\")": 30
+            },
+            "AuraRange": 500,
+            "Behaviour": "/Game/BP/Behaviours/Modifiers/BP_Modifier_Base.BP_Modifier_Base_C",
+            "MergeType": "LongestDuration",
+            "EffectsCustomActor": {
+                "RowName": "Any_Juvenile"
+            },
+            "bEffectsNPCs": false,
+            "bEffectsPlayers": false,
             "SaveToDatabase": false
         }
     ]

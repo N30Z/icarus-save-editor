@@ -1396,15 +1396,15 @@
                     },
                     "AvailableUpgrades": [
                         {
-                            "RowName": "ApeClub_Plate_A",
+                            "RowName": "SandwyrmChainsaw_Drive_A",
                             "DataTableName": "D_LivingItemUpgrades"
                         },
                         {
-                            "RowName": "ApeClub_Plate_B",
+                            "RowName": "SandwyrmChainsaw_Drive_B",
                             "DataTableName": "D_LivingItemUpgrades"
                         },
                         {
-                            "RowName": "ApeClub_Plate_C",
+                            "RowName": "SandwyrmChainsaw_Drive_C",
                             "DataTableName": "D_LivingItemUpgrades"
                         }
                     ],
@@ -1414,7 +1414,7 @@
                     },
                     "DefaultSlotMeshes": [
                         {
-                            "SocketName": "LW_Plate",
+                            "SocketName": "LW_Drive",
                             "StaticMeshToSocket": "/Game/ASS/ITM/Legendary_Chainsaw/SM_ITM_Legendary_Chainsaw_DRIVE_A.SM_ITM_Legendary_Chainsaw_DRIVE_A"
                         }
                     ]
@@ -1434,15 +1434,15 @@
                     },
                     "AvailableUpgrades": [
                         {
-                            "RowName": "ApeClub_Amp_A",
+                            "RowName": "SandwyrmChainsaw_Handle_A",
                             "DataTableName": "D_LivingItemUpgrades"
                         },
                         {
-                            "RowName": "ApeClub_Amp_B",
+                            "RowName": "SandwyrmChainsaw_Handle_B",
                             "DataTableName": "D_LivingItemUpgrades"
                         },
                         {
-                            "RowName": "ApeClub_Amp_C",
+                            "RowName": "SandwyrmChainsaw_Handle_C",
                             "DataTableName": "D_LivingItemUpgrades"
                         }
                     ],
@@ -1452,7 +1452,7 @@
                     },
                     "DefaultSlotMeshes": [
                         {
-                            "SocketName": "LW_Amp",
+                            "SocketName": "LW_Handle",
                             "StaticMeshToSocket": "/Game/ASS/ITM/Legendary_Chainsaw/SM_ITM_Legendary_Chainsaw_HANDLE_A.SM_ITM_Legendary_Chainsaw_HANDLE_A"
                         }
                     ]
@@ -1472,15 +1472,15 @@
                     },
                     "AvailableUpgrades": [
                         {
-                            "RowName": "ApeClub_Dampener_A",
+                            "RowName": "SandwyrmChainsaw_Motor_A",
                             "DataTableName": "D_LivingItemUpgrades"
                         },
                         {
-                            "RowName": "ApeClub_Dampener_B",
+                            "RowName": "SandwyrmChainsaw_Motor_B",
                             "DataTableName": "D_LivingItemUpgrades"
                         },
                         {
-                            "RowName": "ApeClub_Dampener_C",
+                            "RowName": "SandwyrmChainsaw_Motor_C",
                             "DataTableName": "D_LivingItemUpgrades"
                         }
                     ],
@@ -1490,7 +1490,7 @@
                     },
                     "DefaultSlotMeshes": [
                         {
-                            "SocketName": "LW_Damp",
+                            "SocketName": "LW_Motor",
                             "StaticMeshToSocket": "/Game/ASS/ITM/Legendary_Chainsaw/SM_ITM_Legendary_Chainsaw_MOTOR_A.SM_ITM_Legendary_Chainsaw_MOTOR_A"
                         }
                     ]
@@ -1510,15 +1510,15 @@
                     },
                     "AvailableUpgrades": [
                         {
-                            "RowName": "ApeClub_Enhancer_A",
+                            "RowName": "SandwyrmChainsaw_Saw_A",
                             "DataTableName": "D_LivingItemUpgrades"
                         },
                         {
-                            "RowName": "ApeClub_Enhancer_B",
+                            "RowName": "SandwyrmChainsaw_Saw_B",
                             "DataTableName": "D_LivingItemUpgrades"
                         },
                         {
-                            "RowName": "ApeClub_Enhancer_C",
+                            "RowName": "SandwyrmChainsaw_Saw_C",
                             "DataTableName": "D_LivingItemUpgrades"
                         }
                     ],
@@ -1528,8 +1528,8 @@
                     },
                     "DefaultSlotMeshes": [
                         {
-                            "SocketName": "LW_Enhance",
-                            "StaticMeshToSocket": "/Game/ASS/ITM/Legendary_Chainsaw/SM_Legendary_Chainsaw_SAW_A_Blades.SM_Legendary_Chainsaw_SAW_A_Blades"
+                            "SocketName": "LW_Saw",
+                            "StaticMeshToSocket": "/Game/ASS/ITM/Legendary_Chainsaw/SM_Legendary_Chainsaw_SAW_A_Cover.SM_Legendary_Chainsaw_SAW_A_Cover"
                         }
                     ]
                 }

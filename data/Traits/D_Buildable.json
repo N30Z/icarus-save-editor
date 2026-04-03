@@ -1807,38 +1807,6 @@
             ]
         },
         {
-            "Name": "Concrete_Ramp_NoRoof",
-            "Stability": {
-                "RowName": "Concrete_General"
-            },
-            "Type": {
-                "RowName": "Concrete"
-            },
-            "PieceType": "Ramp",
-            "Variations": [
-                {
-                    "Requirement": {
-                        "RowName": "None",
-                        "DataTableName": "D_Talents"
-                    },
-                    "Piece": {
-                        "RowName": "Concrete_Ramp",
-                        "DataTableName": "D_BuildingPieces"
-                    }
-                },
-                {
-                    "Requirement": {
-                        "RowName": "None",
-                        "DataTableName": "D_Talents"
-                    },
-                    "Piece": {
-                        "RowName": "Concrete_Ramp_Stairs",
-                        "DataTableName": "D_BuildingPieces"
-                    }
-                }
-            ]
-        },
-        {
             "Name": "Concrete_Beam",
             "Stability": {
                 "RowName": "Concrete_Beam"
@@ -1875,58 +1843,6 @@
                     },
                     "Piece": {
                         "RowName": "Concrete_Beam_DiagonalBeam",
-                        "DataTableName": "D_BuildingPieces"
-                    }
-                }
-            ]
-        },
-        {
-            "Name": "Concrete_Roof_Corner",
-            "Stability": {
-                "RowName": "Concrete_General"
-            },
-            "Type": {
-                "RowName": "Concrete"
-            },
-            "PieceType": "Ramp",
-            "Variations": [
-                {
-                    "Requirement": {
-                        "RowName": "None",
-                        "DataTableName": "D_Talents"
-                    },
-                    "Piece": {
-                        "RowName": "Concrete_Roof_Corner_Left",
-                        "DataTableName": "D_BuildingPieces"
-                    }
-                },
-                {
-                    "Requirement": {
-                        "RowName": "None",
-                        "DataTableName": "D_Talents"
-                    },
-                    "Piece": {
-                        "RowName": "Concrete_Roof_Corner_Right",
-                        "DataTableName": "D_BuildingPieces"
-                    }
-                },
-                {
-                    "Requirement": {
-                        "RowName": "None",
-                        "DataTableName": "D_Talents"
-                    },
-                    "Piece": {
-                        "RowName": "Concrete_Roof_Corner_InvertedRight",
-                        "DataTableName": "D_BuildingPieces"
-                    }
-                },
-                {
-                    "Requirement": {
-                        "RowName": "None",
-                        "DataTableName": "D_Talents"
-                    },
-                    "Piece": {
-                        "RowName": "Concrete_Roof_Corner_InvertedLeft",
                         "DataTableName": "D_BuildingPieces"
                     }
                 }

@@ -19024,7 +19024,7 @@
             "DesignNotes": "Speeder #1",
             "Description": "NSLOCTEXT(\"D_ProspectList\", \"ELY_SQ_Ambush-Description\", \"Find the Forward Recon Team\")",
             "FlavourText": "NSLOCTEXT(\"D_ProspectList\", \"ELY_SQ_Ambush-FlavourText\", \"//OPERATOR: Lagos // BIOME: Arctic // BACKGROUND: Locate and assist the forward recon team.// MISSION: Orders will be delivered on planet. //TERMS: All actual and conceptual risks and responsibilities are accepted by the Contractor alone.\")",
-            "ProspectImage": "Texture2D'/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Arctic_Recovery01_Large.T_Prospect_Arctic_Recovery01_Large'",
+            "ProspectImage": "Texture2D'/Game/Assets/2DArt/UI/ProspectSelect/Images/T_ELY_SQ_Ambush.T_ELY_SQ_Ambush'",
             "DifficultySetup": {
                 "Easy": {
                     "DifficultyStats": [
@@ -19114,7 +19114,7 @@
             "DesignNotes": "Speeder #2",
             "Description": "NSLOCTEXT(\"D_ProspectList\", \"ELY_SQ_Lifeline-Description\", \"Save the Forward Recon Team\")",
             "FlavourText": "NSLOCTEXT(\"D_ProspectList\", \"ELY_SQ_Lifeline-FlavourText\", \"//OPERATOR: Lagos // BIOME: Arctic // BACKGROUND: Search for and rescue the missing team members.// MISSION: Orders will be delivered on planet. //TERMS: All actual and conceptual risks and responsibilities are accepted by the Contractor alone.\")",
-            "ProspectImage": "Texture2D'/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Arctic_Lantern01_Large.T_Prospect_Arctic_Lantern01_Large'",
+            "ProspectImage": "Texture2D'/Game/Assets/2DArt/UI/ProspectSelect/Images/T_ELY_SQ_Lifeline.T_ELY_SQ_Lifeline'",
             "DifficultySetup": {
                 "Easy": {
                     "DifficultyStats": [
@@ -19206,8 +19206,8 @@
             "DropName": "NSLOCTEXT(\"D_ProspectList\", \"ELY_SQ_Courier-DropName\", \"COURIER\")",
             "DesignNotes": "Speeder #3",
             "Description": "NSLOCTEXT(\"D_ProspectList\", \"ELY_SQ_Courier-Description\", \"Escort the Downed Transport Drone\")",
-            "FlavourText": "NSLOCTEXT(\"D_ProspectList\", \"ELY_SQ_Courier-FlavourText\", \"//OPERATOR: Lagos // BIOME: Arctic // BACKGROUND: Repair and escort the damaged Speeder prototype.// MISSION: Orders will be delivered on planet. //TERMS: All actual and conceptual risks and responsibilities are accepted by the Contractor alone.\")",
-            "ProspectImage": "Texture2D'/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Forest_CrashSatellite01_Large.T_Prospect_Forest_CrashSatellite01_Large'",
+            "FlavourText": "NSLOCTEXT(\"D_ProspectList\", \"ELY_SQ_Courier-FlavourText\", \"//OPERATOR: Lagos // BIOME: Arctic // BACKGROUND: Repair and escort the damaged Hoverframe prototype.// MISSION: Orders will be delivered on planet. //TERMS: All actual and conceptual risks and responsibilities are accepted by the Contractor alone.\")",
+            "ProspectImage": "Texture2D'/Game/Assets/2DArt/UI/ProspectSelect/Images/T_ELY_SQ_Courier.T_ELY_SQ_Courier'",
             "DifficultySetup": {
                 "Easy": {
                     "DifficultyStats": [
@@ -19298,9 +19298,9 @@
             "Name": "ELY_SQ_Trials",
             "DropName": "NSLOCTEXT(\"D_ProspectList\", \"ELY_SQ_Trials-DropName\", \"TRIALS\")",
             "DesignNotes": "Speeder #4",
-            "Description": "NSLOCTEXT(\"D_ProspectList\", \"ELY_SQ_Trials-Description\", \"Test the Prototype Speeder\")",
-            "FlavourText": "NSLOCTEXT(\"D_ProspectList\", \"ELY_SQ_Trials-FlavourText\", \"//OPERATOR: Lagos // BIOME: Arctic // BACKGROUND: Test out the protptype Speeder for safety issues before distribution.// MISSION: Orders will be delivered on planet. //TERMS: All actual and conceptual risks and responsibilities are accepted by the Contractor alone.\")",
-            "ProspectImage": "Texture2D'/Game/Assets/2DArt/UI/ProspectSelect/Images/T_ELY_SPEEDER.T_ELY_SPEEDER'",
+            "Description": "NSLOCTEXT(\"D_ProspectList\", \"ELY_SQ_Trials-Description\", \"Test the Prototype Hoverframe\")",
+            "FlavourText": "NSLOCTEXT(\"D_ProspectList\", \"ELY_SQ_Trials-FlavourText\", \"//OPERATOR: Lagos // BIOME: Arctic // BACKGROUND: Test out the prototype Hoverframe for safety issues before distribution.// MISSION: Orders will be delivered on planet. //TERMS: All actual and conceptual risks and responsibilities are accepted by the Contractor alone.\")",
+            "ProspectImage": "Texture2D'/Game/Assets/2DArt/UI/ProspectSelect/Images/T_ELY_SQ_Trails.T_ELY_SQ_Trails'",
             "DifficultySetup": {
                 "Easy": {
                     "DifficultyStats": [

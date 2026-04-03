@@ -16255,7 +16255,7 @@
         },
         {
             "Name": "BaseAdrenalineChance_%",
-            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseAdrenalineChance_%-PositiveDescription\", \"{0}% Chance on Attack to Add a Adrenaline Modifier to the Player\")",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseAdrenalineChance_%-PositiveDescription\", \"{0}% Chance on Attack to Add an Adrenaline Modifier to the Player\")",
             "StatCategory": {
                 "RowName": "Generic_Damage"
             }
@@ -19494,24 +19494,6 @@
             }
         },
         {
-            "Name": "BaseTamingSpeedSaddleBoost_%",
-            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseTamingSpeedSaddleBoost_%-PositiveDescription\", \"-{0}% Tame Duration\")",
-            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseTamingSpeedSaddleBoost_%-NegativeDescription\", \"+{0}% Tame Duration\")",
-            "StatCategory": {
-                "RowName": "Tames"
-            }
-        },
-        {
-            "Name": "TamingSpeedSaddleBoost_%",
-            "Title": "NSLOCTEXT(\"D_Stats\", \"TamingSpeedSaddleBoost_%-Title\", \"Reduction In Tame Duration\")",
-            "PositiveTitleFormat": "INVTEXT(\"{0}%\")",
-            "NegativeTitleFormat": "INVTEXT(\"-{0}%\")",
-            "bIsReplicated": true,
-            "StatCategory": {
-                "RowName": "Tames"
-            }
-        },
-        {
             "Name": "YetiExtraDamageResistance_+%",
             "Title": "NSLOCTEXT(\"D_Stats\", \"YetiExtraDamageResistance_+%-Title\", \"Resistance vs Frostfoot\")",
             "PositiveTitleFormat": "INVTEXT(\"+{0}%\")",
@@ -20322,8 +20304,8 @@
         },
         {
             "Name": "BaseIndustrialToolActionsPerMinute_+%",
-            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseIndustrialToolActionsPerMinute_+%-PositiveDescription\", \"+%{0} Industrial Tool Actions per Minute\")",
-            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseIndustrialToolActionsPerMinute_+%-NegativeDescription\", \"-%{0} Industrial Tool Actions per Minute\")",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseIndustrialToolActionsPerMinute_+%-PositiveDescription\", \"+{0}% Industrial Tool Actions per Minute\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseIndustrialToolActionsPerMinute_+%-NegativeDescription\", \"-{0}% Industrial Tool Actions per Minute\")",
             "StatCategory": {
                 "RowName": "Melee_Weapon"
             }
@@ -20872,8 +20854,8 @@
         },
         {
             "Name": "IsMountCrouchEnabled_?",
-            "PositiveTitleFormat": "NSLOCTEXT(\"D_Stats\", \"IsMountCrouchEnabled_?-PositiveTitleFormat\", \"Abililty to Sneak While Mounted, Significantly Reducing Threat\")",
-            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"IsMountCrouchEnabled_?-PositiveDescription\", \"Abililty to Sneak While Mounted, Significantly Reducing Threat\")",
+            "PositiveTitleFormat": "NSLOCTEXT(\"D_Stats\", \"IsMountCrouchEnabled_?-PositiveTitleFormat\", \"Ability to Sneak While Mounted, Significantly Reducing Threat\")",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"IsMountCrouchEnabled_?-PositiveDescription\", \"Ability to Sneak While Mounted, Significantly Reducing Threat\")",
             "bIsReplicated": true,
             "StatCategory": {
                 "RowName": "AI"
@@ -21559,8 +21541,11 @@
         },
         {
             "Name": "CarryingSpeeder_?",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"CarryingSpeeder_?-PositiveDescription\", \"Reduced Movement Speed While Carrying Hoverframe\")",
             "bIsReplicated": true,
-            "bHideStatInUserInterface": true
+            "StatCategory": {
+                "RowName": "Movement"
+            }
         },
         {
             "Name": "BaseFuelConsumedDuringBoost_+%",
@@ -21582,6 +21567,113 @@
                 "RowName": "World"
             },
             "bHideStatInUserInterface": true
+        },
+        {
+            "Name": "GrantedAuraQuickTamer_?",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"GrantedAuraQuickTamer_?-PositiveDescription\", \"Nearby Juveniles Grow Faster\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "Modifiers"
+            }
+        },
+        {
+            "Name": "HasFallDamageImmunity_?",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"HasFallDamageImmunity_?-Title\", \"Creature Is Immune To Fall Damage\")",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"HasFallDamageImmunity_?-PositiveDescription\", \"Creature Is Immune To Fall Damage\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "Mounts"
+            }
+        },
+        {
+            "Name": "WorldRadiationNestsSpawnDesertVolcanic_?",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"WorldRadiationNestsSpawnDesertVolcanic_?-Title\", \"Radioactive Creature Nests Will Appear in Desert and Volcanic Regions\")",
+            "PositiveTitleFormat": "INVTEXT(\"{0}\")",
+            "NegativeTitleFormat": "INVTEXT(\"{0}\")",
+            "bIsWorldStat": true,
+            "StatCategory": {
+                "RowName": "World"
+            }
+        },
+        {
+            "Name": "WorldRadiationNestsSpawnSwampGeothermal_?",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"WorldRadiationNestsSpawnSwampGeothermal_?-Title\", \"Radioactive Creature Nests Will Appear in Swamp and Geothermal Regions\")",
+            "PositiveTitleFormat": "INVTEXT(\"{0}\")",
+            "NegativeTitleFormat": "INVTEXT(\"{0}\")",
+            "bIsWorldStat": true,
+            "StatCategory": {
+                "RowName": "World"
+            }
+        },
+        {
+            "Name": "WorldRadiationNestsSpawnLargerCreatures_?",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"WorldRadiationNestsSpawnLargerCreatures_?-Title\", \"Specters and Wraiths will Appear from Radioactive Creature Nests\")",
+            "PositiveTitleFormat": "INVTEXT(\"{0}\")",
+            "NegativeTitleFormat": "INVTEXT(\"{0}\")",
+            "bIsWorldStat": true,
+            "StatCategory": {
+                "RowName": "World"
+            }
+        },
+        {
+            "Name": "WorldRadiationNestsLargerAura_?",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"WorldRadiationNestsLargerAura_?-Title\", \"Radioactive Creature Nests will Irradiate Larger Areas\")",
+            "PositiveTitleFormat": "INVTEXT(\"{0}\")",
+            "NegativeTitleFormat": "INVTEXT(\"{0}\")",
+            "bIsWorldStat": true,
+            "StatCategory": {
+                "RowName": "World"
+            }
+        },
+        {
+            "Name": "WorldRadioactiveFishAppear_?",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"WorldRadioactiveFishAppear_?-Title\", \"3-Eyed Fish can now be caught in Irradiated Zones\")",
+            "PositiveTitleFormat": "INVTEXT(\"{0}\")",
+            "NegativeTitleFormat": "INVTEXT(\"{0}\")",
+            "bIsWorldStat": true,
+            "StatCategory": {
+                "RowName": "World"
+            }
+        },
+        {
+            "Name": "WorldRadBossLessAdds_?",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"WorldRadBossLessAdds_?-Title\", \"Reduced Radioactive Creature Spawns during the Final Hunt\")",
+            "PositiveTitleFormat": "INVTEXT(\"{0}\")",
+            "NegativeTitleFormat": "INVTEXT(\"{0}\")",
+            "bIsWorldStat": true,
+            "StatCategory": {
+                "RowName": "World"
+            }
+        },
+        {
+            "Name": "WorldRadBossDecreasedLaserResistance_?",
+            "Title": "INVTEXT(\"[DNT] Rad Boss will have a Weakness to Lasers.\")",
+            "PositiveTitleFormat": "INVTEXT(\"{0}\")",
+            "NegativeTitleFormat": "INVTEXT(\"{0}\")",
+            "bIsWorldStat": true,
+            "StatCategory": {
+                "RowName": "World"
+            }
+        },
+        {
+            "Name": "WorldRadBossDecreasedElectricResistance_?",
+            "Title": "INVTEXT(\"[DNT] Rad Boss will have a Weakness to Electricity.\")",
+            "PositiveTitleFormat": "INVTEXT(\"{0}\")",
+            "NegativeTitleFormat": "INVTEXT(\"{0}\")",
+            "bIsWorldStat": true,
+            "StatCategory": {
+                "RowName": "World"
+            }
+        },
+        {
+            "Name": "WorldRadioactiveCreaturesPhysicalVulnerability_?",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"WorldRadioactiveCreaturesPhysicalVulnerability_?-Title\", \"3-Eyed Fish can now be caught in Irradiated Zones\")",
+            "PositiveTitleFormat": "INVTEXT(\"{0}\")",
+            "NegativeTitleFormat": "INVTEXT(\"{0}\")",
+            "bIsWorldStat": true,
+            "StatCategory": {
+                "RowName": "World"
+            }
         }
     ]
 }

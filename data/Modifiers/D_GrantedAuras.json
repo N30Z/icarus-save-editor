@@ -272,12 +272,12 @@
             }
         },
         {
-            "Name": "GrantedModifierCarryingSpeeder",
+            "Name": "AuraQuickTamer",
             "Modifier": {
-                "RowName": "CarryingSpeeder"
+                "RowName": "GrantedAura_QuickTamer"
             },
             "Stat": {
-                "Value": "CarryingSpeeder_?"
+                "Value": "GrantedAuraQuickTamer_?"
             }
         }
     ]

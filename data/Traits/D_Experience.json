@@ -211,6 +211,30 @@
             }
         },
         {
+            "Name": "Creature_Roat_Lava",
+            "ExperienceEvents": {
+                "XP_OnDeath": {
+                    "ExperienceEvent": {
+                        "RowName": "Kill_Roat_Lava",
+                        "DataTableName": "D_ExperienceEvents"
+                    },
+                    "GainedExperience": 0
+                }
+            }
+        },
+        {
+            "Name": "Creature_Roat_Swamp",
+            "ExperienceEvents": {
+                "XP_OnDeath": {
+                    "ExperienceEvent": {
+                        "RowName": "Kill_Roat_Swamp",
+                        "DataTableName": "D_ExperienceEvents"
+                    },
+                    "GainedExperience": 0
+                }
+            }
+        },
+        {
             "Name": "Creature_Raccoon",
             "ExperienceEvents": {
                 "XP_OnDeath": {
@@ -295,6 +319,30 @@
             }
         },
         {
+            "Name": "Creature_Snow_Wolf",
+            "ExperienceEvents": {
+                "XP_OnDeath": {
+                    "ExperienceEvent": {
+                        "RowName": "Kill_SnowWolf",
+                        "DataTableName": "D_ExperienceEvents"
+                    },
+                    "GainedExperience": 0
+                }
+            }
+        },
+        {
+            "Name": "Creature_Snow_Wolf_Juvenile",
+            "ExperienceEvents": {
+                "XP_OnDeath": {
+                    "ExperienceEvent": {
+                        "RowName": "Kill_Snow_Wolf_Juvenile",
+                        "DataTableName": "D_ExperienceEvents"
+                    },
+                    "GainedExperience": 0
+                }
+            }
+        },
+        {
             "Name": "Creature_Alpha_Wolf",
             "ExperienceEvents": {
                 "XP_OnDeath": {
@@ -324,6 +372,30 @@
                 "XP_OnDeath": {
                     "ExperienceEvent": {
                         "RowName": "Kill_Alpha_Cat",
+                        "DataTableName": "D_ExperienceEvents"
+                    },
+                    "GainedExperience": 0
+                }
+            }
+        },
+        {
+            "Name": "Creature_Alpha_Jaguar",
+            "ExperienceEvents": {
+                "XP_OnDeath": {
+                    "ExperienceEvent": {
+                        "RowName": "Kill_Alpha_Jaguar",
+                        "DataTableName": "D_ExperienceEvents"
+                    },
+                    "GainedExperience": 0
+                }
+            }
+        },
+        {
+            "Name": "Creature_Alpha_SnowLeopard",
+            "ExperienceEvents": {
+                "XP_OnDeath": {
+                    "ExperienceEvent": {
+                        "RowName": "Kill_Alpha_SnowLeopard",
                         "DataTableName": "D_ExperienceEvents"
                     },
                     "GainedExperience": 0
@@ -403,11 +475,47 @@
             }
         },
         {
-            "Name": "Creature_Mammoth",
+            "Name": "Creature_ContaminatedBear",
             "ExperienceEvents": {
                 "XP_OnDeath": {
                     "ExperienceEvent": {
-                        "RowName": "Kill_Mammoth",
+                        "RowName": "Kill_ContaminatedBear",
+                        "DataTableName": "D_ExperienceEvents"
+                    },
+                    "GainedExperience": 0
+                }
+            }
+        },
+        {
+            "Name": "Creature_WoollyMammoth",
+            "ExperienceEvents": {
+                "XP_OnDeath": {
+                    "ExperienceEvent": {
+                        "RowName": "Kill_WoollyMammoth",
+                        "DataTableName": "D_ExperienceEvents"
+                    },
+                    "GainedExperience": 0
+                }
+            }
+        },
+        {
+            "Name": "Creature_ColumbianMammoth",
+            "ExperienceEvents": {
+                "XP_OnDeath": {
+                    "ExperienceEvent": {
+                        "RowName": "Kill_ColumbianMammoth",
+                        "DataTableName": "D_ExperienceEvents"
+                    },
+                    "GainedExperience": 0
+                }
+            }
+        },
+        {
+            "Name": "Creature_IceMammoth",
+            "ExperienceEvents": {
+                "XP_OnDeath": {
+                    "ExperienceEvent": {
+                        "RowName": "Kill_IceMammoth",
                         "DataTableName": "D_ExperienceEvents"
                     },
                     "GainedExperience": 0
@@ -463,6 +571,42 @@
                 "XP_OnDeath": {
                     "ExperienceEvent": {
                         "RowName": "Kill_Rabbit",
+                        "DataTableName": "D_ExperienceEvents"
+                    },
+                    "GainedExperience": 0
+                }
+            }
+        },
+        {
+            "Name": "Creature_Snow_Rabbit",
+            "ExperienceEvents": {
+                "XP_OnDeath": {
+                    "ExperienceEvent": {
+                        "RowName": "Kill_SnowRabbit",
+                        "DataTableName": "D_ExperienceEvents"
+                    },
+                    "GainedExperience": 0
+                }
+            }
+        },
+        {
+            "Name": "Creature_Rabbit_Variant",
+            "ExperienceEvents": {
+                "XP_OnDeath": {
+                    "ExperienceEvent": {
+                        "RowName": "Kill_Rabbit_Variant",
+                        "DataTableName": "D_ExperienceEvents"
+                    },
+                    "GainedExperience": 0
+                }
+            }
+        },
+        {
+            "Name": "Creature_Rabbit_Variant_Snow",
+            "ExperienceEvents": {
+                "XP_OnDeath": {
+                    "ExperienceEvent": {
+                        "RowName": "Kill_Rabbit_Variant_Snow",
                         "DataTableName": "D_ExperienceEvents"
                     },
                     "GainedExperience": 0
@@ -530,6 +674,18 @@
             }
         },
         {
+            "Name": "Creature_SulfurWorm",
+            "ExperienceEvents": {
+                "XP_OnDeath": {
+                    "ExperienceEvent": {
+                        "RowName": "Kill_SulfurWorm",
+                        "DataTableName": "D_ExperienceEvents"
+                    },
+                    "GainedExperience": 0
+                }
+            }
+        },
+        {
             "Name": "Creature_Zebra",
             "ExperienceEvents": {
                 "XP_OnDeath": {
@@ -559,6 +715,30 @@
                 "XP_OnDeath": {
                     "ExperienceEvent": {
                         "RowName": "Kill_Scorpion",
+                        "DataTableName": "D_ExperienceEvents"
+                    },
+                    "GainedExperience": 0
+                }
+            }
+        },
+        {
+            "Name": "Creature_Scorpion_Armored",
+            "ExperienceEvents": {
+                "XP_OnDeath": {
+                    "ExperienceEvent": {
+                        "RowName": "Kill_Scorpion_Armored",
+                        "DataTableName": "D_ExperienceEvents"
+                    },
+                    "GainedExperience": 0
+                }
+            }
+        },
+        {
+            "Name": "Creature_Scorpion_Arctic",
+            "ExperienceEvents": {
+                "XP_OnDeath": {
+                    "ExperienceEvent": {
+                        "RowName": "Kill_Scorpion_Arctic",
                         "DataTableName": "D_ExperienceEvents"
                     },
                     "GainedExperience": 0
@@ -650,11 +830,35 @@
             }
         },
         {
+            "Name": "Creature_Juvenile_BearCub",
+            "ExperienceEvents": {
+                "XP_OnDeath": {
+                    "ExperienceEvent": {
+                        "RowName": "Kill_Juvenile_BearCub",
+                        "DataTableName": "D_ExperienceEvents"
+                    },
+                    "GainedExperience": 0
+                }
+            }
+        },
+        {
             "Name": "Creature_SandWorm",
             "ExperienceEvents": {
                 "XP_OnDeath": {
                     "ExperienceEvent": {
                         "RowName": "Kill_SandWorm",
+                        "DataTableName": "D_ExperienceEvents"
+                    },
+                    "GainedExperience": 0
+                }
+            }
+        },
+        {
+            "Name": "Creature_SandWorm_Spitter",
+            "ExperienceEvents": {
+                "XP_OnDeath": {
+                    "ExperienceEvent": {
+                        "RowName": "Kill_SandWorm_Spitter",
                         "DataTableName": "D_ExperienceEvents"
                     },
                     "GainedExperience": 0
@@ -686,11 +890,11 @@
             }
         },
         {
-            "Name": "Creature_BabyMoa",
+            "Name": "Creature_JuvenileMoa",
             "ExperienceEvents": {
                 "XP_OnDeath": {
                     "ExperienceEvent": {
-                        "RowName": "Kill_BabyMoa",
+                        "RowName": "Kill_JuvenileMoa",
                         "DataTableName": "D_ExperienceEvents"
                     },
                     "GainedExperience": 0
@@ -698,11 +902,11 @@
             }
         },
         {
-            "Name": "Creature_BabyBuffalo",
+            "Name": "Creature_Buffalo_Juvenile",
             "ExperienceEvents": {
                 "XP_OnDeath": {
                     "ExperienceEvent": {
-                        "RowName": "Kill_BabyBuffalo",
+                        "RowName": "Kill_Buffalo_Juvenile",
                         "DataTableName": "D_ExperienceEvents"
                     },
                     "GainedExperience": 0
@@ -794,11 +998,47 @@
             }
         },
         {
+            "Name": "Creature_Fleshsac_Floater",
+            "ExperienceEvents": {
+                "XP_OnDeath": {
+                    "ExperienceEvent": {
+                        "RowName": "Kill_FleshSac_Floater",
+                        "DataTableName": "D_ExperienceEvents"
+                    },
+                    "GainedExperience": 0
+                }
+            }
+        },
+        {
             "Name": "Creature_LavaSpawns",
             "ExperienceEvents": {
                 "XP_OnDeath": {
                     "ExperienceEvent": {
                         "RowName": "Kill_LavaSpawns",
+                        "DataTableName": "D_ExperienceEvents"
+                    },
+                    "GainedExperience": 0
+                }
+            }
+        },
+        {
+            "Name": "Creature_LavaBomber",
+            "ExperienceEvents": {
+                "XP_OnDeath": {
+                    "ExperienceEvent": {
+                        "RowName": "Kill_LavaBomber",
+                        "DataTableName": "D_ExperienceEvents"
+                    },
+                    "GainedExperience": 0
+                }
+            }
+        },
+        {
+            "Name": "Creature_LavaBroodling",
+            "ExperienceEvents": {
+                "XP_OnDeath": {
+                    "ExperienceEvent": {
+                        "RowName": "Kill_LavaBroodling",
                         "DataTableName": "D_ExperienceEvents"
                     },
                     "GainedExperience": 0
@@ -823,6 +1063,18 @@
                 "XP_OnDeath": {
                     "ExperienceEvent": {
                         "RowName": "Kill_Lava_Slug",
+                        "DataTableName": "D_ExperienceEvents"
+                    },
+                    "GainedExperience": 0
+                }
+            }
+        },
+        {
+            "Name": "Creature_SnowSlug",
+            "ExperienceEvents": {
+                "XP_OnDeath": {
+                    "ExperienceEvent": {
+                        "RowName": "Kill_Snow_Slug",
                         "DataTableName": "D_ExperienceEvents"
                     },
                     "GainedExperience": 0
@@ -914,11 +1166,23 @@
             }
         },
         {
-            "Name": "Creature_BabyHorse",
+            "Name": "Creature_Horse_Standard",
             "ExperienceEvents": {
                 "XP_OnDeath": {
                     "ExperienceEvent": {
-                        "RowName": "Kill_BabyHorse",
+                        "RowName": "Kill_Horse_Standard",
+                        "DataTableName": "D_ExperienceEvents"
+                    },
+                    "GainedExperience": 0
+                }
+            }
+        },
+        {
+            "Name": "Creature_Horse_Juvenile",
+            "ExperienceEvents": {
+                "XP_OnDeath": {
+                    "ExperienceEvent": {
+                        "RowName": "Kill_Horse_Juvenile",
                         "DataTableName": "D_ExperienceEvents"
                     },
                     "GainedExperience": 0
@@ -938,11 +1202,11 @@
             }
         },
         {
-            "Name": "Creature_BabyTusker",
+            "Name": "Creature_Tusker_Juvenile",
             "ExperienceEvents": {
                 "XP_OnDeath": {
                     "ExperienceEvent": {
-                        "RowName": "Kill_BabyTusker",
+                        "RowName": "Kill_Tusker_Juvenile",
                         "DataTableName": "D_ExperienceEvents"
                     },
                     "GainedExperience": 0
@@ -986,6 +1250,18 @@
             }
         },
         {
+            "Name": "Creature_LavaFlyer",
+            "ExperienceEvents": {
+                "XP_OnDeath": {
+                    "ExperienceEvent": {
+                        "RowName": "Kill_LavaFlyer",
+                        "DataTableName": "D_ExperienceEvents"
+                    },
+                    "GainedExperience": 0
+                }
+            }
+        },
+        {
             "Name": "Creature_Hammerhead_Slug_Large",
             "ExperienceEvents": {
                 "XP_OnDeath": {
@@ -1022,11 +1298,11 @@
             }
         },
         {
-            "Name": "Creature_MangeWolf",
+            "Name": "Creature_Mange_Wolf",
             "ExperienceEvents": {
                 "XP_OnDeath": {
                     "ExperienceEvent": {
-                        "RowName": "Kill_MangeWolf",
+                        "RowName": "Kill_Mange_Wolf",
                         "DataTableName": "D_ExperienceEvents"
                     },
                     "GainedExperience": 0
@@ -1106,11 +1382,35 @@
             }
         },
         {
+            "Name": "Creature_JuvenileArcticMoa",
+            "ExperienceEvents": {
+                "XP_OnDeath": {
+                    "ExperienceEvent": {
+                        "RowName": "Kill_Arctic_JuvenileMoa",
+                        "DataTableName": "D_ExperienceEvents"
+                    },
+                    "GainedExperience": 0
+                }
+            }
+        },
+        {
             "Name": "Creature_Spider",
             "ExperienceEvents": {
                 "XP_OnDeath": {
                     "ExperienceEvent": {
                         "RowName": "Kill_Spider",
+                        "DataTableName": "D_ExperienceEvents"
+                    },
+                    "GainedExperience": 0
+                }
+            }
+        },
+        {
+            "Name": "Creature_Spider_Geothermal",
+            "ExperienceEvents": {
+                "XP_OnDeath": {
+                    "ExperienceEvent": {
+                        "RowName": "Kill_Geothermal_Spider",
                         "DataTableName": "D_ExperienceEvents"
                     },
                     "GainedExperience": 0
@@ -1130,11 +1430,11 @@
             }
         },
         {
-            "Name": "Creature_YoungRockGolem",
+            "Name": "Creature_RockGolem_Juvenile",
             "ExperienceEvents": {
                 "XP_OnDeath": {
                     "ExperienceEvent": {
-                        "RowName": "Kill_BabyRockGolem",
+                        "RowName": "Kill_RockGolem_Juvenile",
                         "DataTableName": "D_ExperienceEvents"
                     },
                     "GainedExperience": 0
@@ -1142,11 +1442,11 @@
             }
         },
         {
-            "Name": "Creature_ApeJr",
+            "Name": "Creature_Ape_Juvenile",
             "ExperienceEvents": {
                 "XP_OnDeath": {
                     "ExperienceEvent": {
-                        "RowName": "Kill_BabyApe",
+                        "RowName": "Kill_Ape_Juvenile",
                         "DataTableName": "D_ExperienceEvents"
                     },
                     "GainedExperience": 0
@@ -1202,6 +1502,42 @@
             }
         },
         {
+            "Name": "Creature_Drone_Scout",
+            "ExperienceEvents": {
+                "XP_OnDeath": {
+                    "ExperienceEvent": {
+                        "RowName": "Kill_Drone_Scout",
+                        "DataTableName": "D_ExperienceEvents"
+                    },
+                    "GainedExperience": 0
+                }
+            }
+        },
+        {
+            "Name": "Creature_Drone_Hunter",
+            "ExperienceEvents": {
+                "XP_OnDeath": {
+                    "ExperienceEvent": {
+                        "RowName": "Kill_Drone_Hunter",
+                        "DataTableName": "D_ExperienceEvents"
+                    },
+                    "GainedExperience": 0
+                }
+            }
+        },
+        {
+            "Name": "Creature_Drone_Carrier",
+            "ExperienceEvents": {
+                "XP_OnDeath": {
+                    "ExperienceEvent": {
+                        "RowName": "Kill_Drone_Carrier",
+                        "DataTableName": "D_ExperienceEvents"
+                    },
+                    "GainedExperience": 0
+                }
+            }
+        },
+        {
             "Name": "Creature_Slinker",
             "ExperienceEvents": {
                 "XP_OnDeath": {
@@ -1231,6 +1567,18 @@
                 "XP_OnDeath": {
                     "ExperienceEvent": {
                         "RowName": "Kill_HoppingCreature",
+                        "DataTableName": "D_ExperienceEvents"
+                    },
+                    "GainedExperience": 0
+                }
+            }
+        },
+        {
+            "Name": "Creature_HoppingCreature_Swamp",
+            "ExperienceEvents": {
+                "XP_OnDeath": {
+                    "ExperienceEvent": {
+                        "RowName": "Kill_HoppingCreature_Swamp",
                         "DataTableName": "D_ExperienceEvents"
                     },
                     "GainedExperience": 0
@@ -1374,7 +1722,439 @@
             "ExperienceEvents": {
                 "XP_OnDeath": {
                     "ExperienceEvent": {
+                        "RowName": "Kill_Chick",
+                        "DataTableName": "D_ExperienceEvents"
+                    },
+                    "GainedExperience": 0
+                }
+            }
+        },
+        {
+            "Name": "Creature_Chicken",
+            "ExperienceEvents": {
+                "XP_OnDeath": {
+                    "ExperienceEvent": {
                         "RowName": "Kill_Chicken",
+                        "DataTableName": "D_ExperienceEvents"
+                    },
+                    "GainedExperience": 0
+                }
+            }
+        },
+        {
+            "Name": "Creature_Rooster",
+            "ExperienceEvents": {
+                "XP_OnDeath": {
+                    "ExperienceEvent": {
+                        "RowName": "Kill_Rooster",
+                        "DataTableName": "D_ExperienceEvents"
+                    },
+                    "GainedExperience": 0
+                }
+            }
+        },
+        {
+            "Name": "Creature_Ice_Mammoth_Boss",
+            "ExperienceEvents": {
+                "XP_OnDeath": {
+                    "ExperienceEvent": {
+                        "RowName": "Kill_Ice_Mammoth_Boss",
+                        "DataTableName": "D_ExperienceEvents"
+                    },
+                    "GainedExperience": 0
+                }
+            }
+        },
+        {
+            "Name": "Creature_RockGolem",
+            "ExperienceEvents": {
+                "XP_OnDeath": {
+                    "ExperienceEvent": {
+                        "RowName": "Kill_RockGolem",
+                        "DataTableName": "D_ExperienceEvents"
+                    },
+                    "GainedExperience": 0
+                }
+            }
+        },
+        {
+            "Name": "Creature_Mange_Wolf_Alpha",
+            "ExperienceEvents": {
+                "XP_OnDeath": {
+                    "ExperienceEvent": {
+                        "RowName": "Kill_Mange_Wolf_Alpha",
+                        "DataTableName": "D_ExperienceEvents"
+                    },
+                    "GainedExperience": 0
+                }
+            }
+        },
+        {
+            "Name": "Creature_Chew",
+            "ExperienceEvents": {
+                "XP_OnDeath": {
+                    "ExperienceEvent": {
+                        "RowName": "Kill_Chew",
+                        "DataTableName": "D_ExperienceEvents"
+                    },
+                    "GainedExperience": 0
+                }
+            }
+        },
+        {
+            "Name": "Creature_JuvenileChew",
+            "ExperienceEvents": {
+                "XP_OnDeath": {
+                    "ExperienceEvent": {
+                        "RowName": "Kill_Chew_Juvenile",
+                        "DataTableName": "D_ExperienceEvents"
+                    },
+                    "GainedExperience": 0
+                }
+            }
+        },
+        {
+            "Name": "Creature_Raptor_Juvenile",
+            "ExperienceEvents": {
+                "XP_OnDeath": {
+                    "ExperienceEvent": {
+                        "RowName": "Kill_Raptor_Juvenile",
+                        "DataTableName": "D_ExperienceEvents"
+                    },
+                    "GainedExperience": 0
+                }
+            }
+        },
+        {
+            "Name": "Creature_Reaver",
+            "ExperienceEvents": {
+                "XP_OnDeath": {
+                    "ExperienceEvent": {
+                        "RowName": "Kill_Reaver",
+                        "DataTableName": "D_ExperienceEvents"
+                    },
+                    "GainedExperience": 0
+                }
+            }
+        },
+        {
+            "Name": "Creature_Stomper",
+            "ExperienceEvents": {
+                "XP_OnDeath": {
+                    "ExperienceEvent": {
+                        "RowName": "Kill_Stomper",
+                        "DataTableName": "D_ExperienceEvents"
+                    },
+                    "GainedExperience": 0
+                }
+            }
+        },
+        {
+            "Name": "Creature_Stomper_Matriarch",
+            "ExperienceEvents": {
+                "XP_OnDeath": {
+                    "ExperienceEvent": {
+                        "RowName": "Kill_Stomper_Matriarch",
+                        "DataTableName": "D_ExperienceEvents"
+                    },
+                    "GainedExperience": 0
+                }
+            }
+        },
+        {
+            "Name": "Creature_Slinker_Juvenile",
+            "ExperienceEvents": {
+                "XP_OnDeath": {
+                    "ExperienceEvent": {
+                        "RowName": "Kill_Slinker_Juvenile",
+                        "DataTableName": "D_ExperienceEvents"
+                    },
+                    "GainedExperience": 0
+                }
+            }
+        },
+        {
+            "Name": "Creature_Giant_Roach",
+            "ExperienceEvents": {
+                "XP_OnDeath": {
+                    "ExperienceEvent": {
+                        "RowName": "Kill_Giant_Roach",
+                        "DataTableName": "D_ExperienceEvents"
+                    },
+                    "GainedExperience": 0
+                }
+            }
+        },
+        {
+            "Name": "Creature_Flying_Tank",
+            "ExperienceEvents": {
+                "XP_OnDeath": {
+                    "ExperienceEvent": {
+                        "RowName": "Kill_Flying_Tank",
+                        "DataTableName": "D_ExperienceEvents"
+                    },
+                    "GainedExperience": 0
+                }
+            }
+        },
+        {
+            "Name": "Creature_Flightless_Tank",
+            "ExperienceEvents": {
+                "XP_OnDeath": {
+                    "ExperienceEvent": {
+                        "RowName": "Kill_Flightless_Tank",
+                        "DataTableName": "D_ExperienceEvents"
+                    },
+                    "GainedExperience": 0
+                }
+            }
+        },
+        {
+            "Name": "Creature_Sandwyrm_Queen",
+            "ExperienceEvents": {
+                "XP_OnDeath": {
+                    "ExperienceEvent": {
+                        "RowName": "Kill_Sandwyrm_Queen",
+                        "DataTableName": "D_ExperienceEvents"
+                    },
+                    "GainedExperience": 0
+                }
+            }
+        },
+        {
+            "Name": "Creature_Irradiated_Abomination",
+            "ExperienceEvents": {
+                "XP_OnDeath": {
+                    "ExperienceEvent": {
+                        "RowName": "Kill_Irradiated_Abomination",
+                        "DataTableName": "D_ExperienceEvents"
+                    },
+                    "GainedExperience": 0
+                }
+            }
+        },
+        {
+            "Name": "Creature_Soldier",
+            "ExperienceEvents": {
+                "XP_OnDeath": {
+                    "ExperienceEvent": {
+                        "RowName": "Kill_Soldier",
+                        "DataTableName": "D_ExperienceEvents"
+                    },
+                    "GainedExperience": 0
+                }
+            }
+        },
+        {
+            "Name": "Creature_Wolf_Juvenile",
+            "ExperienceEvents": {
+                "XP_OnDeath": {
+                    "ExperienceEvent": {
+                        "RowName": "Kill_Wolf_Juvenile",
+                        "DataTableName": "D_ExperienceEvents"
+                    },
+                    "GainedExperience": 0
+                }
+            }
+        },
+        {
+            "Name": "Creature_WoolyZebra_Juvenile",
+            "ExperienceEvents": {
+                "XP_OnDeath": {
+                    "ExperienceEvent": {
+                        "RowName": "Kill_WoolyZebra_Juvenile",
+                        "DataTableName": "D_ExperienceEvents"
+                    },
+                    "GainedExperience": 0
+                }
+            }
+        },
+        {
+            "Name": "Creature_BlueBack_Juvenile",
+            "ExperienceEvents": {
+                "XP_OnDeath": {
+                    "ExperienceEvent": {
+                        "RowName": "Kill_BlueBack_Juvenile",
+                        "DataTableName": "D_ExperienceEvents"
+                    },
+                    "GainedExperience": 0
+                }
+            }
+        },
+        {
+            "Name": "Creature_LavaBlueback_Juvenile",
+            "ExperienceEvents": {
+                "XP_OnDeath": {
+                    "ExperienceEvent": {
+                        "RowName": "Kill_LavaBlueBack_Juvenile",
+                        "DataTableName": "D_ExperienceEvents"
+                    },
+                    "GainedExperience": 0
+                }
+            }
+        },
+        {
+            "Name": "Creature_Calf",
+            "ExperienceEvents": {
+                "XP_OnDeath": {
+                    "ExperienceEvent": {
+                        "RowName": "Kill_Calf",
+                        "DataTableName": "D_ExperienceEvents"
+                    },
+                    "GainedExperience": 0
+                }
+            }
+        },
+        {
+            "Name": "Creature_Cow",
+            "ExperienceEvents": {
+                "XP_OnDeath": {
+                    "ExperienceEvent": {
+                        "RowName": "Kill_Cow",
+                        "DataTableName": "D_ExperienceEvents"
+                    },
+                    "GainedExperience": 0
+                }
+            }
+        },
+        {
+            "Name": "Creature_Bull",
+            "ExperienceEvents": {
+                "XP_OnDeath": {
+                    "ExperienceEvent": {
+                        "RowName": "Kill_Bull",
+                        "DataTableName": "D_ExperienceEvents"
+                    },
+                    "GainedExperience": 0
+                }
+            }
+        },
+        {
+            "Name": "Creature_Lamb",
+            "ExperienceEvents": {
+                "XP_OnDeath": {
+                    "ExperienceEvent": {
+                        "RowName": "Kill_Lamb",
+                        "DataTableName": "D_ExperienceEvents"
+                    },
+                    "GainedExperience": 0
+                }
+            }
+        },
+        {
+            "Name": "Creature_Sheep",
+            "ExperienceEvents": {
+                "XP_OnDeath": {
+                    "ExperienceEvent": {
+                        "RowName": "Kill_Sheep",
+                        "DataTableName": "D_ExperienceEvents"
+                    },
+                    "GainedExperience": 0
+                }
+            }
+        },
+        {
+            "Name": "Creature_Ram",
+            "ExperienceEvents": {
+                "XP_OnDeath": {
+                    "ExperienceEvent": {
+                        "RowName": "Kill_Ram",
+                        "DataTableName": "D_ExperienceEvents"
+                    },
+                    "GainedExperience": 0
+                }
+            }
+        },
+        {
+            "Name": "Creature_SwampBird_Juvenile",
+            "ExperienceEvents": {
+                "XP_OnDeath": {
+                    "ExperienceEvent": {
+                        "RowName": "Kill_SwampBird_Juvenile",
+                        "DataTableName": "D_ExperienceEvents"
+                    },
+                    "GainedExperience": 0
+                }
+            }
+        },
+        {
+            "Name": "Creature_WoollyMammoth_Juvenile",
+            "ExperienceEvents": {
+                "XP_OnDeath": {
+                    "ExperienceEvent": {
+                        "RowName": "Kill_WoollyMammoth_Juvenile",
+                        "DataTableName": "D_ExperienceEvents"
+                    },
+                    "GainedExperience": 0
+                }
+            }
+        },
+        {
+            "Name": "Creature_Piglet",
+            "ExperienceEvents": {
+                "XP_OnDeath": {
+                    "ExperienceEvent": {
+                        "RowName": "Kill_Piglet",
+                        "DataTableName": "D_ExperienceEvents"
+                    },
+                    "GainedExperience": 0
+                }
+            }
+        },
+        {
+            "Name": "Creature_Pig",
+            "ExperienceEvents": {
+                "XP_OnDeath": {
+                    "ExperienceEvent": {
+                        "RowName": "Kill_Pig",
+                        "DataTableName": "D_ExperienceEvents"
+                    },
+                    "GainedExperience": 0
+                }
+            }
+        },
+        {
+            "Name": "Creature_Cougar_Alpha",
+            "ExperienceEvents": {
+                "XP_OnDeath": {
+                    "ExperienceEvent": {
+                        "RowName": "Kill_Cougar_Alpha",
+                        "DataTableName": "D_ExperienceEvents"
+                    },
+                    "GainedExperience": 0
+                }
+            }
+        },
+        {
+            "Name": "Creature_RadiationBoss",
+            "ExperienceEvents": {
+                "XP_OnDeath": {
+                    "ExperienceEvent": {
+                        "RowName": "Kill_RadiationBoss",
+                        "DataTableName": "D_ExperienceEvents"
+                    },
+                    "GainedExperience": 0
+                }
+            }
+        },
+        {
+            "Name": "Creature_Dog",
+            "ExperienceEvents": {
+                "XP_OnDeath": {
+                    "ExperienceEvent": {
+                        "RowName": "Kill_Dog",
+                        "DataTableName": "D_ExperienceEvents"
+                    },
+                    "GainedExperience": 0
+                }
+            }
+        },
+        {
+            "Name": "Creature_Cat",
+            "ExperienceEvents": {
+                "XP_OnDeath": {
+                    "ExperienceEvent": {
+                        "RowName": "Kill_Cat",
                         "DataTableName": "D_ExperienceEvents"
                     },
                     "GainedExperience": 0

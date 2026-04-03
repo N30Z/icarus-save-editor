@@ -1973,6 +1973,54 @@
                         "RowName": "PRO_Ashlands_Red_1",
                         "DataTableName": "D_AISpawnZones"
                     }
+                },
+                {
+                    "Color": {
+                        "B": 255,
+                        "G": 181,
+                        "R": 255,
+                        "A": 145
+                    },
+                    "SpawnZone": {
+                        "RowName": "PRO_DummyEntry",
+                        "DataTableName": "D_AISpawnZones"
+                    }
+                },
+                {
+                    "Color": {
+                        "B": 0,
+                        "G": 0,
+                        "R": 0,
+                        "A": 12
+                    },
+                    "SpawnZone": {
+                        "RowName": "PRO_DummyEntry",
+                        "DataTableName": "D_AISpawnZones"
+                    }
+                },
+                {
+                    "Color": {
+                        "B": 255,
+                        "G": 255,
+                        "R": 143,
+                        "A": 23
+                    },
+                    "SpawnZone": {
+                        "RowName": "PRO_DummyEntry",
+                        "DataTableName": "D_AISpawnZones"
+                    }
+                },
+                {
+                    "Color": {
+                        "B": 246,
+                        "G": 168,
+                        "R": 0,
+                        "A": 255
+                    },
+                    "SpawnZone": {
+                        "RowName": "PRO_DummyEntry",
+                        "DataTableName": "D_AISpawnZones"
+                    }
                 }
             ]
         },

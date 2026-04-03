@@ -1482,6 +1482,11 @@
             "Name": "UDA_Transport_Drone",
             "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"UDA_Transport_Drone-DisplayName\", \"UDA Transport Drone\")",
             "Description": "NSLOCTEXT(\"D_Highlightable\", \"UDA_Transport_Drone-Description\", \"Carrying Supplies for the Scouts\\' Forward Base\")"
+        },
+        {
+            "Name": "SugarCane",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"SugarCane-DisplayName\", \"Sugar Cane\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"SugarCane-Description\", \"Harvest for Sugar Cane.\")"
         }
     ]
 }

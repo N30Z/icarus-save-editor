@@ -8801,7 +8801,7 @@
         },
         {
             "Name": "Item_Carcass_Needler_Fire",
-            "DisplayName": "INVTEXT(\"[DNT] Fire Needler Carcass\")",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Carcass_Needler_Fire-DisplayName\", \"Fire Needler Carcass\")",
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Carcasses/T_ITEM_AnimalCarcass_Needler_Fire.T_ITEM_AnimalCarcass_Needler_Fire",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Carcass_Needler_Fire-Description\", \"Genetically divergent reptile.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Carcass_Needler_Fire-FlavorText\", \"Bone-like spines push through the scales of this mutated reptile. This animal led a pain filled existence.\")",
@@ -9313,7 +9313,7 @@
             "Name": "Item_Saddle_Cart_Wood",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Saddle_Cart_Wood-DisplayName\", \"Wooden Cart\")",
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/UseableItems/ICON_Cart_Wood.ICON_Cart_Wood",
-            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Saddle_Cart_Wood-Description\", \"Place this cart inside a tamed Buffalo or Tusker\\'s inventory to greatly increase its carrying capacity.\")",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Saddle_Cart_Wood-Description\", \"Place this cart inside a tamed Buffalo, Tusker, or Bull\\'s inventory to greatly increase its carrying capacity.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Saddle_Cart_Wood-FlavorText\", \"Lending a helping hand, or hoof.\")",
             "Weight": 80000
         },
@@ -15706,7 +15706,7 @@
             "Name": "Item_Saddle_Cart_Plough",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Saddle_Cart_Plough-DisplayName\", \"Seeding Cart\")",
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/UseableItems/T_ITEM_Saddle_Cart_Plough.T_ITEM_Saddle_Cart_Plough",
-            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Saddle_Cart_Plough-Description\", \"A cart which when stocked with seeds, dirt, and pulled by an animal, will create mounds with planted seeds.\")",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Saddle_Cart_Plough-Description\", \"A cart which when stocked with seeds, dirt, and pulled by a Buffalo, Tusker, or Bull, will create mounds with planted seeds.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Saddle_Cart_Plough-FlavorText\", \"Can be pulled by a tamed Buffalo or Tusker.\")",
             "Weight": 80000
         },
@@ -15714,7 +15714,7 @@
             "Name": "Item_Saddle_Cart_Watering",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Saddle_Cart_Watering-DisplayName\", \"Watering Cart\")",
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/UseableItems/T_ITEM_Saddle_Cart_Water.T_ITEM_Saddle_Cart_Water",
-            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Saddle_Cart_Watering-Description\", \"A cart which when stocked with water and pulled by an animal will water nearby crops.\")",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Saddle_Cart_Watering-Description\", \"A cart which when stocked with water and pulled by a Buffalo, Tusker, or Bull, will water nearby crops.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Saddle_Cart_Watering-FlavorText\", \"Can be pulled by a tamed Buffalo or Tusker.\")",
             "Weight": 80000
         },
@@ -15722,7 +15722,7 @@
             "Name": "Item_Saddle_Cart_Harvesting",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Saddle_Cart_Harvesting-DisplayName\", \"Harvesting Cart\")",
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/UseableItems/T_ITEM_Saddle_Cart_Harvest.T_ITEM_Saddle_Cart_Harvest",
-            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Saddle_Cart_Harvesting-Description\", \"A cart when pulled by an animal will attempt to harvest fully grown nearby plants.\")",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Saddle_Cart_Harvesting-Description\", \"A cart when pulled by a Buffalo, Tusker, or Bull, will attempt to harvest fully grown nearby plants.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Saddle_Cart_Harvesting-FlavorText\", \"Can be pulled by a tamed Buffalo or Tusker.\")",
             "Weight": 80000
         },
@@ -19054,7 +19054,7 @@
             "Name": "Item_Oil_Power_Generator",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Oil_Power_Generator-DisplayName\", \"Crude Oil Generator\")",
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Oil_Power_Generator.T_ITEM_Oil_Power_Generator",
-            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Oil_Power_Generator-Description\", \"A combustion-driven generator that converts refined oil into reliable electrical output.\")",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Oil_Power_Generator-Description\", \"A combustion-driven generator that converts crude oil into reliable electrical output.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Oil_Power_Generator-FlavorText\", \"Feed it fuel and it\\'ll keep your entire outpost alive.\")",
             "Weight": 40000
         },
@@ -22128,7 +22128,7 @@
             "Name": "Item_Prop_Scales",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Prop_Scales-DisplayName\", \"Scales\")",
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Props/T_ITEM_Prop_Scales.T_ITEM_Prop_Scales",
-            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Prop_Scales-Description\", \"A deviced that can be used to measure weight.\")",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Prop_Scales-Description\", \"A device that can be used to measure weight.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Prop_Scales-FlavorText\", \"Science!\")",
             "Weight": 1000,
             "MaxStack": 20
@@ -27509,7 +27509,7 @@
         },
         {
             "Name": "Item_Saddle_SpeederBike",
-            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Saddle_SpeederBike-DisplayName\", \"Speeder Bike Harness\")",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Saddle_SpeederBike-DisplayName\", \"Prototype Hoverframe\")",
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Vehicles/T_Speeder_kit.T_Speeder_kit",
             "bAllowZeroWeight": true
         },
@@ -27574,7 +27574,7 @@
             "Name": "Item_Mission_Drone_Navigation",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Mission_Drone_Navigation-DisplayName\", \"Navigation Core Module\")",
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/QuestItems/ITEM_Mission_HighTech_Assembled.ITEM_Mission_HighTech_Assembled",
-            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Mission_Drone_Navigation-Description\", \"A navigation computuer core, custom made for a heavy duty drone.\")",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Mission_Drone_Navigation-Description\", \"A navigation computer core, custom made for a heavy duty drone.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Mission_Drone_Navigation-FlavorText\", \"A drone can\\'t go anywhere without navigation.\")",
             "Weight": 50000
         },
@@ -27607,8 +27607,8 @@
         {
             "Name": "Item_Fertility_Serum_Wolf",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Fertility_Serum_Wolf-DisplayName\", \"Wolf Fertility Serum\")",
-            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Carcasses/T_ITEM_Serum_Slinker.T_ITEM_Serum_Slinker",
-            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Fertility_Serum_Wolf-Description\", \"Primes Male Wolves for mating. Once primed will seek out and fertilize nearby Female Wolf.\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Carcasses/T_ITEM_Serum_Wolf.T_ITEM_Serum_Wolf",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Fertility_Serum_Wolf-Description\", \"Primes Male Wolves for mating. Once primed will seek out and fertilize nearby Female Wolf. Applies to Wolves found in both Forest biomes and Arctic.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Fertility_Serum_Wolf-FlavorText\", \"Husbandry has come to Icarus\")",
             "Weight": 50,
             "MaxStack": 10
@@ -27800,6 +27800,20 @@
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Meta_Resource_Pack_Ren-Description\", \"A collection of 100 Ren collected by another prospector for you. \\'CONSUME\\' to open bundle.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Meta_Resource_Pack_Ren-FlavorText\", \"These supplies are ethically provided by contractors who were found to be in breach of precept 45-379b, this is enforced by Group 15 and its subsidiaries.\")",
             "Weight": 10000
+        },
+        {
+            "Name": "Item_Carcass_Juvenile_Conifer_Wolf",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Carcass_Juvenile_Conifer_Wolf-DisplayName\", \"Juvenile Wolf Carcass\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Carcasses/T_ITEM_AnimalCarcass_Conifer_Wolf_Juvenile.T_ITEM_AnimalCarcass_Conifer_Wolf_Juvenile",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Carcass_Juvenile_Conifer_Wolf-Description\", \"A juvenile Wolf which never quite made it to adulthood.\")",
+            "Weight": 3500
+        },
+        {
+            "Name": "Item_Carcass_Juvenile_Snow_Wolf",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Carcass_Juvenile_Snow_Wolf-DisplayName\", \"Juvenile Snow Wolf Carcass\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Carcasses/T_ITEM_AnimalCarcass_Snow_Wolf_Juvenile.T_ITEM_AnimalCarcass_Snow_Wolf_Juvenile",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Carcass_Juvenile_Snow_Wolf-Description\", \"A juvenile Snow Wolf which never quite made it to adulthood.\")",
+            "Weight": 3500
         }
     ]
 }

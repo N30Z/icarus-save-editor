@@ -4478,7 +4478,7 @@
                 "BounceVelocityStopSimulatingThreshold": 5,
                 "MinFrictionFraction": 0
             },
-            "OverridePhysicsAsset": "/Game/ASS/WEP/SK_KNI_Obsidian_BallisticPhysicsAsset.SK_KNI_Obsidian_BallisticPhysicsAsset",
+            "OverridePhysicsAsset": "/Game/ASS/WEP/KNI_Lithium/SK_KNI_Lithium_BallisticPhysicsAsset.SK_KNI_Lithium_BallisticPhysicsAsset",
             "VelocityRotationOffset": {
                 "Pitch": 90
             },
@@ -4506,7 +4506,7 @@
                 "BounceVelocityStopSimulatingThreshold": 5,
                 "MinFrictionFraction": 0
             },
-            "OverridePhysicsAsset": "/Game/ASS/WEP/SK_SPR_Obsidian_BallisticPhysicsAsset.SK_SPR_Obsidian_BallisticPhysicsAsset",
+            "OverridePhysicsAsset": "/Game/ASS/WEP/SK_SPR_Lithium_BallisticPhysicsAsset.SK_SPR_Lithium_BallisticPhysicsAsset",
             "VelocityRotationOffset": {
                 "Pitch": 90
             },

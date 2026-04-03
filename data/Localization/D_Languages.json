@@ -13,17 +13,17 @@
         {
             "Name": "fr-FR",
             "bEnabled": true,
-            "Coverage": 92
+            "Coverage": 94
         },
         {
             "Name": "es-419",
             "bEnabled": true,
-            "Coverage": 93
+            "Coverage": 94
         },
         {
             "Name": "pt-BR",
             "bEnabled": true,
-            "Coverage": 97
+            "Coverage": 99
         },
         {
             "Name": "de-DE",
@@ -33,7 +33,7 @@
         {
             "Name": "ru-RU",
             "bEnabled": true,
-            "Coverage": 95
+            "Coverage": 96
         },
         {
             "Name": "zh-Hans",

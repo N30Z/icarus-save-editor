@@ -8259,6 +8259,42 @@
                 ],
                 "AutoDescription": " ANY( Item.Consumable.Food.Raw.Prime )"
             }
+        },
+        {
+            "Name": "Resource_Transfer",
+            "Query": {
+                "TagDictionary": [
+                    {
+                        "TagName": "Resource.Transfer"
+                    }
+                ],
+                "QueryTokenStream": [
+                    0,
+                    1,
+                    1,
+                    1,
+                    0
+                ],
+                "AutoDescription": " ANY( Resource.Transfer )"
+            }
+        },
+        {
+            "Name": "Any_Vehicle",
+            "Query": {
+                "TagDictionary": [
+                    {
+                        "TagName": "NPC.Vehicle"
+                    }
+                ],
+                "QueryTokenStream": [
+                    0,
+                    1,
+                    2,
+                    1,
+                    0
+                ],
+                "AutoDescription": " ALL( NPC.Vehicle )"
+            }
         }
     ]
 }

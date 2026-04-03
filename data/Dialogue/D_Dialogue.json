@@ -18522,7 +18522,7 @@
                 "RowName": "Mo"
             },
             "Text": [
-                "NSLOCTEXT(\"D_Dialogue\", \"Ely_MissionOne_Intro-Text-0\", \"Okay, right, I can see your location!.\")",
+                "NSLOCTEXT(\"D_Dialogue\", \"Ely_MissionOne_Intro-Text-0\", \"Okay, right, I can see your location!\")",
                 "NSLOCTEXT(\"D_Dialogue\", \"Ely_MissionOne_Intro-Text-1\", \"Iris is picking up some TPS chatter. They\\'re heading towards you. Stay alive!\")"
             ],
             "Metadata": {

@@ -220,6 +220,19 @@
             "Icon": "/Game/Assets/2DArt/UI/Icons/FeatureLevel/T_FeatureLevel_DH.T_FeatureLevel_DH"
         },
         {
+            "Name": "GreatHunt_Elysium",
+            "DisplayName": "INVTEXT(\"Great Hunt Elysium\")",
+            "ShortName": "INVTEXT(\"GHE\")",
+            "Description": "Feature level for Great Hunt Elysium",
+            "Color": {
+                "R": 0.5,
+                "G": 1,
+                "B": 0.5,
+                "A": 0.5
+            },
+            "Icon": "/Game/Assets/2DArt/UI/Icons/FeatureLevel/T_FeatureLevel_GH.T_FeatureLevel_GH"
+        },
+        {
             "Name": "LiveDemos",
             "DisplayName": "INVTEXT(\"Live Demos\")",
             "ShortName": "INVTEXT(\"LD\")",
@@ -250,6 +263,12 @@
             },
             "Icon": "/Game/Assets/2DArt/UI/Icons/T_Talent_WIP.T_Talent_WIP",
             "bEnableForShip": false
+        },
+        {
+            "Name": "DisabledAll",
+            "DisplayName": "INVTEXT(\"Disabled All\")",
+            "ShortName": "INVTEXT(\"DIS\")",
+            "Description": "Disabled in all environments (for testing)"
         }
     ]
 }

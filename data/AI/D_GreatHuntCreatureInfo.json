@@ -29,7 +29,8 @@
             "RowName": "None",
             "DataTableName": "D_Terrains"
         },
-        "ItemDisplays": []
+        "ItemDisplays": [],
+        "isComingSoon": false
     },
     "GenerateEnum": true,
     "Rows": [

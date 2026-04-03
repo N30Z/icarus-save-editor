@@ -90,7 +90,7 @@
         {
             "Name": "Snow_Wolf",
             "CreatureName": "NSLOCTEXT(\"D_BestiaryData\", \"Snow_Wolf-CreatureName\", \"Snow Wolf\")",
-            "Image": "/Game/Assets/2DArt/UI/FieldGuide/Creatures/Arctic/T_Bestiary_SnowWolf.T_Bestiary_SnowWolf",
+            "Image": "/Game/Assets/2DArt/UI/FieldGuide/Creatures/Arctic/T_Bestiary_Snow_Wolf_Small.T_Bestiary_Snow_Wolf_Small",
             "PopupImageScale": 2.5,
             "PopupImageOffset": {
                 "X": -10
@@ -5247,8 +5247,9 @@
         {
             "Name": "Drone",
             "CreatureName": "NSLOCTEXT(\"D_BestiaryData\", \"Drone-CreatureName\", \"Drone\")",
-            "Image": "/Game/Assets/2DArt/UI/FieldGuide/Creatures/Tundra/T_Bestiary_Drone.T_Bestiary_Drone",
+            "Image": "/Game/Assets/2DArt/UI/FieldGuide/Creatures/Tundra/T_Bestiary_Drones.T_Bestiary_Drones",
             "PopupImageScale": 2.5,
+            "BiomeImageType": "Large",
             "CreatureSound": "/Game/FMOD/Events/UI/Bestiary/CREATURES/UI_BESTIARY_CRE_DRONE.UI_BESTIARY_CRE_DRONE",
             "Biomes": [
                 {
@@ -5986,7 +5987,7 @@
                 }
             ],
             "StatsUnlock1": {
-                "(Value=\"BaseDeepWoundResistance_%\")": -5
+                "(Value=\"BaseDeepWoundResistance_%\")": 5
             },
             "StatsUnlock2": {
                 "(Value=\"BaseDesertHeatResistance_+%\")": 5

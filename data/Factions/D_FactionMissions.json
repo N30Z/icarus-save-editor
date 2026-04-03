@@ -7791,14 +7791,14 @@
             "MissionObjectives": [
                 {
                     "QuestRow": {
-                        "RowName": "GH_Ape_D2_Collect",
+                        "RowName": "GH_Ape_D2_Capture",
                         "DataTableName": "D_Quests"
                     },
                     "Depth": 0
                 },
                 {
                     "QuestRow": {
-                        "RowName": "GH_Ape_D2_Deliver",
+                        "RowName": "GH_Ape_D2_Sell_Deliver",
                         "DataTableName": "D_Quests"
                     },
                     "Depth": 0
@@ -7810,6 +7810,14 @@
             "Types": [
                 {
                     "RowName": "Delivery",
+                    "DataTableName": "D_MissionTypes"
+                },
+                {
+                    "RowName": "Medical",
+                    "DataTableName": "D_MissionTypes"
+                },
+                {
+                    "RowName": "Extermination",
                     "DataTableName": "D_MissionTypes"
                 }
             ],

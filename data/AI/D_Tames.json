@@ -198,6 +198,9 @@
             "MatureCreatureType": {
                 "RowName": "Snow_Wolf"
             },
+            "JuvenileCreatureType": {
+                "RowName": "Juvenile_Snow_Wolf"
+            },
             "PercentChanceToSpawnJuvenile": 0,
             "MaxNearbyAutoSpawnedJuveniles": 0,
             "TrappingSupportedAtmospheres": [

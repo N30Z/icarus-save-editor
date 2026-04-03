@@ -2904,36 +2904,41 @@
         {
             "Name": "StoneBrick_Diagonal_Wall_Solid",
             "BaseMeshMaterialSlotOverrides": {
-                "0": "/Game/ASS/BLD/Glass/Wall_Diagonal_Solid_Glass/M_BLD_Wall_Diagonal_Solid_Tempered_Glass_A.M_BLD_Wall_Diagonal_Solid_Tempered_Glass_A",
-                "1": "/Game/ASS/BLD/Glass/Wall_Diagonal_Solid_Glass/M_BLD_Wall_Diagonal_Solid_Tempered_Glass_B.M_BLD_Wall_Diagonal_Solid_Tempered_Glass_B"
+                "0": "/Game/ASS/BLD/Brick/Wall_Diagonal_Solid_Brick/M_BLD_Brick_1_Stone.M_BLD_Brick_1_Stone",
+                "1": "/Game/ASS/BLD/Brick/Wall_Diagonal_Solid_Brick/M_BLD_Brick_2_Stone.M_BLD_Brick_2_Stone",
+                "2": "/Game/ASS/BLD/Brick/Wall_Diagonal_Solid_Brick/M_BLD_Brick_Cement_1.M_BLD_Brick_Cement_1"
             }
         },
         {
             "Name": "StoneBrick_Diagonal_Wall_Angle_Left",
             "BaseMeshMaterialSlotOverrides": {
-                "0": "/Game/ASS/BLD/Glass/Wall_Diagonal_Angle_Glass_L/M_BLD_Wall_Diagonal_Angle_Tempered_Glass_L_A.M_BLD_Wall_Diagonal_Angle_Tempered_Glass_L_A",
-                "1": "/Game/ASS/BLD/Glass/Wall_Diagonal_Angle_Glass_L/M_BLD_Wall_Diagonal_Angle_Tempered_Glass_L_B.M_BLD_Wall_Diagonal_Angle_Tempered_Glass_L_B"
+                "0": "/Game/ASS/BLD/Brick/Wall_Diagonal_Angle_Brick/M_BLD_Cement_1.M_BLD_Cement_1",
+                "1": "/Game/ASS/BLD/Brick/Wall_Diagonal_Angle_Brick/M_BLD_Brick_1_Stone.M_BLD_Brick_1_Stone",
+                "2": "/Game/ASS/BLD/Brick/Wall_Diagonal_Angle_Brick/M_BLD_Brick_2_Stone.M_BLD_Brick_2_Stone"
             }
         },
         {
             "Name": "StoneBrick_Diagonal_Wall_Angle_Left_Invert",
             "BaseMeshMaterialSlotOverrides": {
-                "0": "/Game/ASS/BLD/Glass/Wall_Diagonal_Angle_Glass_L_Inverted/M_BLD_Wall_Diagonal_Angle_Tempered_Glass_L_Inverted_A.M_BLD_Wall_Diagonal_Angle_Tempered_Glass_L_Inverted_A",
-                "1": "/Game/ASS/BLD/Glass/Wall_Diagonal_Angle_Glass_L_Inverted/M_BLD_Wall_Diagonal_Angle_Tempered_Glass_L_Inverted_B.M_BLD_Wall_Diagonal_Angle_Tempered_Glass_L_Inverted_B"
+                "0": "/Game/ASS/BLD/Brick/Wall_Diagonal_Angle_Brick_Inverted/M_BLD_Cement_1.M_BLD_Cement_1",
+                "1": "/Game/ASS/BLD/Brick/Wall_Diagonal_Angle_Brick_Inverted/M_BLD_Brick_1_Stone.M_BLD_Brick_1_Stone",
+                "2": "/Game/ASS/BLD/Brick/Wall_Diagonal_Angle_Brick_Inverted/M_BLD_Brick_2_Stone.M_BLD_Brick_2_Stone"
             }
         },
         {
             "Name": "StoneBrick_Diagonal_Wall_Angle_Right",
             "BaseMeshMaterialSlotOverrides": {
-                "0": "/Game/ASS/BLD/Glass/Wall_Diagonal_Angle_Glass_R/M_BLD_Wall_Diagonal_Angle_Tempered_Glass_R_A.M_BLD_Wall_Diagonal_Angle_Tempered_Glass_R_A",
-                "1": "/Game/ASS/BLD/Glass/Wall_Diagonal_Angle_Glass_R/M_BLD_Wall_Diagonal_Angle_Tempered_Glass_R_B.M_BLD_Wall_Diagonal_Angle_Tempered_Glass_R_B"
+                "0": "/Game/ASS/BLD/Brick/Wall_Diagonal_Angle_Brick/M_BLD_Cement_1_Right.M_BLD_Cement_1_Right",
+                "1": "/Game/ASS/BLD/Brick/Wall_Diagonal_Angle_Brick/M_BLD_Brick_1_Right_Stone.M_BLD_Brick_1_Right_Stone",
+                "2": "/Game/ASS/BLD/Brick/Wall_Diagonal_Angle_Brick/M_BLD_Brick_2_Right_Stone.M_BLD_Brick_2_Right_Stone"
             }
         },
         {
             "Name": "StoneBrick_Diagonal_Wall_Angle_Right_Invert",
             "BaseMeshMaterialSlotOverrides": {
-                "0": "/Game/ASS/BLD/Glass/Wall_Diagonal_Angle_Glass_R_Inverted/M_BLD_Wall_Diagonal_Angle_Tempered_Glass_R_Inverted_A.M_BLD_Wall_Diagonal_Angle_Tempered_Glass_R_Inverted_A",
-                "1": "/Game/ASS/BLD/Glass/Wall_Diagonal_Angle_Glass_R_Inverted/M_BLD_Wall_Diagonal_Angle_Tempered_Glass_R_Inverted_B.M_BLD_Wall_Diagonal_Angle_Tempered_Glass_R_Inverted_B"
+                "0": "/Game/ASS/BLD/Brick/Wall_Diagonal_Angle_Brick_Inverted/M_BLD_Cement_1.M_BLD_Cement_1",
+                "1": "/Game/ASS/BLD/Brick/Wall_Diagonal_Angle_Brick_Inverted/M_BLD_Brick_1_Stone.M_BLD_Brick_1_Stone",
+                "2": "/Game/ASS/BLD/Brick/Wall_Diagonal_Angle_Brick_Inverted/M_BLD_Brick_2_Stone.M_BLD_Brick_2_Stone"
             }
         },
         {
@@ -2947,8 +2952,13 @@
         {
             "Name": "StoneBrick_Diagonal_Ramp_Roof",
             "BaseMeshMaterialSlotOverrides": {
-                "0": "/Game/ASS/BLD/Glass/Ramp_Diagonal_Glass/M_BLD_Ramp_Diagonal_Glass_Tempered_A.M_BLD_Ramp_Diagonal_Glass_Tempered_A",
-                "1": "/Game/ASS/BLD/Glass/Ramp_Diagonal_Glass/M_BLD_Ramp_Diagonal_Glass_Tempered_B.M_BLD_Ramp_Diagonal_Glass_Tempered_B"
+                "0": "/Game/ASS/BLD/Brick/Roof_Diagonal_Brick/M_BLD_Brick_2_Stone.M_BLD_Brick_2_Stone"
+            }
+        },
+        {
+            "Name": "StoneBrick_Diagonal_Ramp_Roof_Inverted",
+            "BaseMeshMaterialSlotOverrides": {
+                "0": "/Game/ASS/BLD/Brick/Roof_Diagonal_Brick/M_BLD_Brick_2_Inverted_Stone.M_BLD_Brick_2_Inverted_Stone"
             }
         },
         {

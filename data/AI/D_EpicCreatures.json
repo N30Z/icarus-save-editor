@@ -998,6 +998,15 @@
                 "(Value=\"BaseMaximumHealth_+\")": 1000,
                 "(Value=\"BaseFireDamageResistance_%\")": 50
             }
+        },
+        {
+            "Name": "Radiation_Boss",
+            "CreatureNames": [
+                "INVTEXT(\"[DNT] Rad Boss\")"
+            ],
+            "AISetup": {
+                "RowName": "Radiation_Boss"
+            }
         }
     ]
 }

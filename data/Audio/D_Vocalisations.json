@@ -4172,6 +4172,13 @@
             "Setting": {
                 "RowName": "Persistent"
             }
+        },
+        {
+            "Name": "JuviWolfHowl",
+            "Sound": "/Game/FMOD/Events/SFX/Creatures/Vocals/Wolf/SFX_CRE_VOCAL_WOLF_HOWL_JUVI.SFX_CRE_VOCAL_WOLF_HOWL_JUVI",
+            "Setting": {
+                "RowName": "Lowest"
+            }
         }
     ]
 }

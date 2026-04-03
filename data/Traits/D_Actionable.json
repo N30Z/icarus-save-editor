@@ -1796,6 +1796,36 @@
             "bUseClientPrediction": true
         },
         {
+            "Name": "Melee_2HSledge_Electric",
+            "ActionMapping": {
+                "(RowName=\"Melee_2H_Sledge\",DataTableName=\"D_Actions\")": {
+                    "InputTypes": {
+                        "Primary": {
+                            "RowName": "Sledge_Melee",
+                            "DataTableName": "D_StaminaActionCosts"
+                        }
+                    },
+                    "ModifierState": {
+                        "RowName": "None",
+                        "DataTableName": "D_ModifierStates"
+                    }
+                },
+                "(RowName=\"ToggleElectric\",DataTableName=\"D_Actions\")": {
+                    "InputTypes": {
+                        "Reload": {
+                            "RowName": "None",
+                            "DataTableName": "D_StaminaActionCosts"
+                        }
+                    },
+                    "ModifierState": {
+                        "RowName": "None",
+                        "DataTableName": "D_ModifierStates"
+                    }
+                }
+            },
+            "bUseClientPrediction": true
+        },
+        {
             "Name": "Scanner_Fishfinder",
             "ActionMapping": {
                 "(RowName=\"Fishfinder\",DataTableName=\"D_Actions\")": {
@@ -3491,6 +3521,24 @@
                     "InputTypes": {
                         "Reload": {
                             "RowName": "None",
+                            "DataTableName": "D_StaminaActionCosts"
+                        }
+                    },
+                    "ModifierState": {
+                        "RowName": "None",
+                        "DataTableName": "D_ModifierStates"
+                    }
+                }
+            },
+            "bUseClientPrediction": true
+        },
+        {
+            "Name": "Chainsaw_SWQ",
+            "ActionMapping": {
+                "(RowName=\"Chainsaw_SWQ\",DataTableName=\"D_Actions\")": {
+                    "InputTypes": {
+                        "Primary": {
+                            "RowName": "Chainsaw",
                             "DataTableName": "D_StaminaActionCosts"
                         }
                     },

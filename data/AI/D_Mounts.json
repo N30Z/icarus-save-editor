@@ -260,7 +260,7 @@
                         "0": "/Game/ASS/CRE/Moa/M_CRE_Moa_carc.M_CRE_Moa_carc"
                     },
                     "CarcassGFurMaterials": {
-                        "0": "/Game/ASS/CRE/Moa/M_CRE_Moa_fur.M_CRE_Moa_fur"
+                        "0": "/Game/ASS/CRE/Moa/M_CRE_Moa_fur_carc.M_CRE_Moa_fur_carc"
                     },
                     "Weighting": 2000
                 },
@@ -915,7 +915,7 @@
                         "0": "/Game/ASS/CRE/Wolf/Wolf_Variants/M_CRE_Wolf_Rare_VarB_carc.M_CRE_Wolf_Rare_VarB_carc"
                     },
                     "CarcassGFurMaterials": {
-                        "0": "/Game/ASS/CRE/Wolf/Wolf_Variants/M_CRE_Wolf_Rare_VarA_fur_carc.M_CRE_Wolf_Rare_VarA_fur_carc"
+                        "0": "/Game/ASS/CRE/Wolf/Wolf_Variants/M_CRE_Wolf_Rare_VarB_fur_carc.M_CRE_Wolf_Rare_VarB_fur_carc"
                     },
                     "Weighting": 50
                 },
@@ -2362,7 +2362,7 @@
                 "Z": 55
             },
             "MountTalentArchetype": {
-                "RowName": "Creature_Raptor_Desert"
+                "RowName": "Creature_Raptor"
             },
             "bUseTemperature": true,
             "ComfortableTemperatureRange": {
@@ -2724,9 +2724,9 @@
                         "0": "/Game/ASS/CRE/Tundra_Monkey/M_CRE_Tundra_Monkey_FurCards_Carcass.M_CRE_Tundra_Monkey_FurCards_Carcass"
                     },
                     "CarcassGFurMaterials": {
-                        "1": "/Game/ASS/CRE/Tundra_Monkey/M_CRE_Tundra_Monkey_Rare_VarA_Fur.M_CRE_Tundra_Monkey_Rare_VarA_Fur"
+                        "1": "/Game/ASS/CRE/Tundra_Monkey/M_CRE_Tundra_Monkey_Fur.M_CRE_Tundra_Monkey_Fur"
                     },
-                    "Weighting": 50
+                    "Weighting": 2000
                 },
                 {
                     "MeshMaterials": {

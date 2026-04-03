@@ -7850,7 +7850,7 @@
         {
             "Name": "FishRadZone",
             "DisplayName": "NSLOCTEXT(\"D_Accolades\", \"FishRadZone-DisplayName\", \"Gone Fission\")",
-            "Description": "NSLOCTEXT(\"D_Accolades\", \"FishRadZone-Description\", \"Fish in a Radioactive Zone\")",
+            "Description": "NSLOCTEXT(\"D_Accolades\", \"FishRadZone-Description\", \"Catch a Fish While Being Irradiated\")",
             "Icon": "/Game/Assets/2DArt/UI/Accolades/Achievements/T_ACH_GoneFission.T_ACH_GoneFission",
             "AccoladeImpl": "/Script/Icarus.OneOffAccolade",
             "Category": {
