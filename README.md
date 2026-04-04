@@ -4,7 +4,7 @@
 
 A desktop GUI and CLI toolkit for editing [Icarus](https://store.steampowered.com/app/1149460/Icarus/) save files.
 
-![Icarus Mount Editor Architecture](assets/icarus-mount-editor.jpg)
+![Icarus Mount Editor Architecture](assets/ISE.png)
 
 **Features:**
 - Edit character XP, resources, and account data
