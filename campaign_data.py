@@ -58,6 +58,10 @@ CAMPAIGNS: Dict[str, dict] = {
 # Populated by _load_prospects() at import time.
 PROSPECT_DISPLAY_NAMES: Dict[str, str] = {}
 
+# Prospect row_name → short description (e.g. "GH_RG_A" → "INVESTIGATE THE DISTURBANCE...")
+# Populated by _load_prospects() at import time.
+PROSPECT_DESCRIPTIONS: Dict[str, str] = {}
+
 # Regular (non-campaign) prospect missions grouped by map.
 # Each group: {'name': str, 'color': str, 'missions': [{'row_name': str, 'label': str}, ...]}
 # Populated by _load_prospects() at import time.
@@ -118,7 +122,10 @@ def _load_prospects() -> None:
     for row in data['Rows']:
         name: str = row['Name']
         drop_name = _extract_loctext(row.get('DropName', name))
+        description = _extract_loctext(row.get('Description', ''))
         PROSPECT_DISPLAY_NAMES[name] = drop_name
+        if description:
+            PROSPECT_DESCRIPTIONS[name] = description
 
         # Skip excluded prefixes
         if any(name.startswith(p) for p in _EXCLUDE_PREFIXES):
@@ -135,8 +142,9 @@ def _load_prospects() -> None:
             continue  # unknown / don't show
 
         _groups[map_group].append({
-            'row_name': name,
-            'label':    drop_name,
+            'row_name':    name,
+            'label':       drop_name,
+            'description': description,
         })
 
     for map_name in _MAP_GROUPS_ORDER:
@@ -166,13 +174,15 @@ def _load() -> None:
         # the internal name formatted as a readable label.
         display = PROSPECT_DISPLAY_NAMES.get(row_name)
         label = display if display else _format_label(row['Name'])
+        description = PROSPECT_DESCRIPTIONS.get(row_name, '')
 
         CAMPAIGNS[campaign_id]['missions'].append({
-            'row_name': row_name,          # talent key, e.g. GH_RG_A
-            'name':     row['Name'],       # e.g. Rock_Golem_A
-            'label':    label,             # e.g. MISSING MINERS
-            'type':     row.get('Type', 'Standard'),
-            'forbidden': forbidden,
+            'row_name':    row_name,          # talent key, e.g. GH_RG_A
+            'name':        row['Name'],       # e.g. Rock_Golem_A
+            'label':       label,             # e.g. MISSING MINERS
+            'description': description,       # e.g. INVESTIGATE THE DISTURBANCE...
+            'type':        row.get('Type', 'Standard'),
+            'forbidden':   forbidden,
         })
 
 

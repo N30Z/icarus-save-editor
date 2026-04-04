@@ -162,14 +162,21 @@ class CampaignTab(ctk.CTkFrame):
                 ctk.CTkCheckBox(
                     row_f, text="", variable=var, width=36,
                     command=self._update_regular_status,
-                ).grid(row=0, column=0, padx=(8, 4), pady=5, sticky="w")
+                ).grid(row=0, column=0, rowspan=2, padx=(8, 4), pady=5, sticky="nw")
 
-                name_f = ctk.CTkFrame(row_f, fg_color="transparent")
-                name_f.grid(row=0, column=1, sticky="ew", padx=4)
-                ctk.CTkLabel(name_f, text=m['label'], font=FONT_NORMAL,
+                # Top line: name + row_name
+                top_line = ctk.CTkFrame(row_f, fg_color="transparent")
+                top_line.grid(row=0, column=1, sticky="ew", padx=4, pady=(5, 0))
+                ctk.CTkLabel(top_line, text=m['label'], font=FONT_NORMAL,
                              anchor="w").pack(side="left")
-                ctk.CTkLabel(name_f, text=f"  {row_name}", font=FONT_MONO,
+                ctk.CTkLabel(top_line, text=f"  {row_name}", font=FONT_MONO,
                              text_color="#555", anchor="w").pack(side="left")
+
+                # Description line
+                if m.get('description'):
+                    ctk.CTkLabel(row_f, text=m['description'], font=FONT_SMALL,
+                                 text_color="#666", anchor="w").grid(
+                        row=1, column=1, sticky="ew", padx=4, pady=(0, 5))
 
                 row_idx += 1
 
@@ -266,19 +273,26 @@ class CampaignTab(ctk.CTkFrame):
             ctk.CTkCheckBox(
                 row_f, text="", variable=var, width=48,
                 command=lambda rn=row_name: self._on_campaign_toggle(rn),
-            ).grid(row=0, column=0, padx=(8, 4), pady=6, sticky="w")
+            ).grid(row=0, column=0, rowspan=2, padx=(8, 4), pady=6, sticky="nw")
 
-            name_f = ctk.CTkFrame(row_f, fg_color="transparent")
-            name_f.grid(row=0, column=1, sticky="ew", padx=4)
-            ctk.CTkLabel(name_f, text=m['label'], font=FONT_NORMAL,
+            # Top line: name + row_name
+            top_line = ctk.CTkFrame(row_f, fg_color="transparent")
+            top_line.grid(row=0, column=1, sticky="ew", padx=4, pady=(5, 0))
+            ctk.CTkLabel(top_line, text=m['label'], font=FONT_NORMAL,
                          anchor="w").pack(side="left")
-            ctk.CTkLabel(name_f, text=f"  {row_name}", font=FONT_MONO,
+            ctk.CTkLabel(top_line, text=f"  {row_name}", font=FONT_MONO,
                          text_color="#555", anchor="w").pack(side="left")
+
+            # Description line
+            if m.get('description'):
+                ctk.CTkLabel(row_f, text=m['description'], font=FONT_SMALL,
+                             text_color="#666", anchor="w").grid(
+                    row=1, column=1, columnspan=3, sticky="ew", padx=4, pady=(0, 5))
 
             type_color = TYPE_COLORS.get(m['type'], '#888')
             ctk.CTkLabel(row_f, text=m['type'], font=FONT_SMALL, width=82,
                          text_color=type_color, anchor="w").grid(
-                row=0, column=2, padx=4, pady=6, sticky="w")
+                row=0, column=2, padx=4, pady=(5, 0), sticky="nw")
 
             if m['forbidden']:
                 short = []
@@ -287,7 +301,7 @@ class CampaignTab(ctk.CTkFrame):
                     short.append(parts[-1] if len(parts) >= 3 else rn)
                 ctk.CTkLabel(row_f, text="⊗ " + ", ".join(short),
                              font=FONT_SMALL, text_color="#e09b3d", anchor="w").grid(
-                    row=0, column=3, padx=4, pady=6, sticky="w")
+                    row=0, column=3, padx=4, pady=(5, 0), sticky="nw")
 
         self._update_campaign_status()
         self._campaign_scroll.configure(label_text=f"Campaign — {campaign['name']}")
