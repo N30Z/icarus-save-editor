@@ -107,6 +107,10 @@
         "Severity_HailStart": 0,
         "Severity_HailEnd": 0,
         "Curve_HailRain": "None",
+        "bEnableVisuals_Radiation": false,
+        "Severity_RadiationStart": 0,
+        "Severity_RadiationEnd": 0,
+        "Curve_Radiation": "None",
         "bEnableVisuals_FogColor": false,
         "Severity_FogColorStart": 0,
         "Severity_FogColorEnd": 0,
@@ -23849,6 +23853,111 @@
                     "A": 0.20000000298023224
                 }
             }
+        },
+        {
+            "Name": "CosmeticRadiation_Start",
+            "bIsRampingUp": true,
+            "TimelineIcon": "/Game/Assets/2DArt/UI/Icons/T_ICON_Radioactive.T_ICON_Radioactive",
+            "TimelineTailBrush": {
+                "SpecifiedColor": {
+                    "R": 0.6509799957275391,
+                    "G": 0.792156994342804,
+                    "B": 0.4235289990901947,
+                    "A": 0.20000000298023224
+                }
+            },
+            "Severity_RainEnd": 0.4000000059604645,
+            "Curve_Rain": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Rain.C_Weather_Rain",
+            "Rainfall_Millilitre_End": 6,
+            "Severity_CloudsEnd": 0.4000000059604645,
+            "Curve_Clouds": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Cloud.C_Weather_Cloud",
+            "Severity_DebrisEnd": 0.10000000149011612,
+            "Curve_Debris": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Debris.C_Weather_Debris",
+            "bEnableAction_Temperature": true,
+            "Temperature_End": -500,
+            "Perception_Percentage": -25,
+            "Severity_WindEnd": 0.4000000059604645,
+            "Curve_Wind": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Wind.C_Weather_Wind",
+            "FireExtinguish_RollChanceMulti": 0.5,
+            "FireExtinguish_MinInterval": 2,
+            "FireExtinguish_MaxInterval": 4,
+            "bEnableVisuals_Radiation": true,
+            "Severity_RadiationEnd": 0.4000000059604645,
+            "Curve_Radiation": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Rain.C_Weather_Rain"
+        },
+        {
+            "Name": "CosmeticRadiation_Body",
+            "TimelineIcon": "/Game/Assets/2DArt/UI/Icons/T_ICON_Radioactive.T_ICON_Radioactive",
+            "TimelineTailBrush": {
+                "SpecifiedColor": {
+                    "R": 0.992156982421875,
+                    "G": 0.6313729882240295,
+                    "B": 0.137254998087883,
+                    "A": 0.20000000298023224
+                }
+            },
+            "ExposureMultiplier": 1,
+            "ExposureModifiers": {
+                "0.500000": {
+                    "Modifier": {
+                        "RowName": "LightStorm_MediumExposure",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 100
+                },
+                "0.990000": {
+                    "Modifier": {
+                        "RowName": "MediumStorm_LightExposure",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 100
+                }
+            },
+            "Rainfall_Millilitre_Start": 8,
+            "Rainfall_Millilitre_End": 8,
+            "MinLightningInterval": 20,
+            "MaxLightningInterval": 30,
+            "ThunderIntensity": 0.6000000238418579,
+            "bEnableAction_Temperature": true,
+            "Temperature_End": -500,
+            "Perception_Percentage": -25,
+            "StormWindDamagePeriod": 12,
+            "Damage_Deployables_MinInterval": 10,
+            "Damage_Deployables_MaxInterval": 20,
+            "Damage_Deployables_Intensity": 0.125,
+            "FireExtinguish_RollChanceMulti": 1,
+            "FireExtinguish_MinInterval": 2,
+            "FireExtinguish_MaxInterval": 4
+        },
+        {
+            "Name": "CosmeticRadiation_Stop",
+            "TimelineIcon": "/Game/Assets/2DArt/UI/Icons/T_ICON_Radioactive.T_ICON_Radioactive",
+            "TimelineTailBrush": {
+                "SpecifiedColor": {
+                    "R": 0.6509799957275391,
+                    "G": 0.792156994342804,
+                    "B": 0.4235289990901947,
+                    "A": 0.20000000298023224
+                }
+            },
+            "Severity_RainEnd": 0.4000000059604645,
+            "Curve_Rain": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Rain.C_Weather_Rain",
+            "Rainfall_Millilitre_End": 0.6000000238418579,
+            "Severity_CloudsEnd": 0.4000000059604645,
+            "Curve_Clouds": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Cloud.C_Weather_Cloud",
+            "Severity_DebrisEnd": 0.10000000149011612,
+            "Temperature_End": -500,
+            "Perception_Percentage": -25,
+            "Severity_WindEnd": 0.4000000059604645,
+            "Curve_Wind": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Wind.C_Weather_Wind",
+            "bEnableEndAllWindDamageTrigger": true,
+            "Curve_EndAllWindDamageTrigger": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Binary_000010000.C_Weather_Binary_000010000",
+            "FireExtinguish_MinInterval": 2,
+            "bEnableVisuals_Radiation": true,
+            "Severity_RadiationEnd": 0.4000000059604645,
+            "Curve_Radiation": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Rain.C_Weather_Rain"
         }
     ]
 }

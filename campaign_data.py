@@ -67,6 +67,16 @@ PROSPECT_DESCRIPTIONS: Dict[str, str] = {}
 # Populated by _load_prospects() at import time.
 REGULAR_MISSION_GROUPS: List[Dict] = []
 
+# Row name prefix → map name for regular (non-GH) prospects.
+# Used by detect_map() and _load_prospects().
+_PROSPECT_PREFIX_TO_MAP: Dict[str, str] = {
+    'Tier':  'Olympus',
+    'OLY_':  'Olympus',
+    'STYX_': 'Styx',
+    'PRO_':  'Prometheus',
+    'ELY_':  'Elysium',
+}
+
 
 # ---------------------------------------------------------------------------
 # Internal helpers
@@ -108,13 +118,7 @@ def _load_prospects() -> None:
         'Prometheus': '#4da6ff',
         'Elysium':    '#9b59b6',
     }
-    _PREFIX_TO_MAP: Dict[str, str] = {
-        'Tier':     'Olympus',
-        'OLY_':     'Olympus',
-        'STYX_':    'Styx',
-        'PRO_':     'Prometheus',
-        'ELY_':     'Elysium',
-    }
+    _PREFIX_TO_MAP = _PROSPECT_PREFIX_TO_MAP
 
     # Build display name lookup and collect regular missions
     _groups: Dict[str, List[Dict]] = {m: [] for m in _MAP_GROUPS_ORDER}
@@ -194,6 +198,29 @@ _load()
 # ---------------------------------------------------------------------------
 # Public helpers
 # ---------------------------------------------------------------------------
+
+def detect_map(prospect_key: str) -> Optional[str]:
+    """
+    Return the map name ('Olympus', 'Styx', 'Prometheus', 'Elysium') for a
+    ProspectDTKey string, or None if it cannot be determined.
+
+    Works for both campaign (GH_*) and regular prospect keys.
+    """
+    if not prospect_key:
+        return None
+
+    # Campaign keys → map via CAMPAIGNS table
+    campaign_id = detect_campaign(prospect_key)
+    if campaign_id:
+        return CAMPAIGNS[campaign_id]['map']
+
+    # Regular prospect keys → map via prefix table
+    for prefix, map_name in _PROSPECT_PREFIX_TO_MAP.items():
+        if prospect_key.startswith(prefix):
+            return map_name
+
+    return None
+
 
 def detect_campaign(prospect_key: str) -> Optional[str]:
     """

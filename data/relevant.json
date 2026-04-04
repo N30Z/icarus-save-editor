@@ -1,0 +1,14 @@
+[
+  "GreatHunt/D_GreatHunts.json",
+  "Prospects/D_ProspectList.json",
+  "Items/D_ItemsStatic.json",
+  "Items/D_ItemTemplate.json",
+  "Traits/D_Itemable.json",
+  "Traits/D_Durable.json",
+  "Traits/D_Fillable.json",
+  "Talents/D_Talents.json",
+  "Talents/D_TalentTrees.json",
+  "Talents/D_TalentRanks.json",
+  "Talents/D_TalentArchetypes.json",
+  "MetaWorkshop/D_WorkshopItems.json"
+]

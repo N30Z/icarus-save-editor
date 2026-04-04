@@ -63,6 +63,10 @@
                 {
                     "RowName": "Shovel",
                     "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Iron_Hammer",
+                    "DataTableName": "D_ItemsStatic"
                 }
             ]
         },
@@ -1962,6 +1966,65 @@
                 },
                 {
                     "RowName": "Meta_Power_Source",
+                    "DataTableName": "D_ItemsStatic"
+                }
+            ]
+        },
+        {
+            "Name": "Lithium_Tools",
+            "SetItems": [
+                {
+                    "RowName": "Lithium_Axe",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Lithium_Knife",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Lithium_Pickaxe",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Lithium_Sickle",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Lithium_Sledgehammer",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Lithium_Spear",
+                    "DataTableName": "D_ItemsStatic"
+                }
+            ]
+        },
+        {
+            "Name": "Industrial_Tools",
+            "SetItems": [
+                {
+                    "RowName": "Nailgun",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Chainsaw",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Jackhammer",
+                    "DataTableName": "D_ItemsStatic"
+                }
+            ]
+        },
+        {
+            "Name": "Laser_Tools",
+            "SetItems": [
+                {
+                    "RowName": "Laser_Pistol",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Mining_Laser",
                     "DataTableName": "D_ItemsStatic"
                 }
             ]

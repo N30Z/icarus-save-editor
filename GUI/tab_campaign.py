@@ -25,7 +25,8 @@ from typing import Dict, List, Optional
 
 import customtkinter as ctk
 
-from campaign_data import CAMPAIGNS, REGULAR_MISSION_GROUPS, TYPE_COLORS, detect_campaign
+from campaign_data import CAMPAIGNS, REGULAR_MISSION_GROUPS, TYPE_COLORS, detect_campaign, detect_map
+from campaign_editor import CampaignEditor
 from profile_editor import ProfileEditor
 from GUI.constants import FONT_TITLE, FONT_NORMAL, FONT_SMALL, FONT_MONO, FONT_HEADER
 from GUI.prospect_manager import ProspectManager
@@ -42,6 +43,11 @@ class CampaignTab(ctk.CTkFrame):
         self._prof_editor = prof_editor
 
         self._current_campaign_id: Optional[str] = None
+        self._current_map: Optional[str] = None
+        # Completed campaign stages from savegame WorldTalentRecords
+        self._active_world_talents: set = set()
+        # Completed prospect missions from savegame MissionHistory
+        self._completed_missions: set = set()
         # row_name → BooleanVar for campaign missions
         self._campaign_vars: Dict[str, tk.BooleanVar] = {}
         # row_name → BooleanVar for regular missions
@@ -124,15 +130,23 @@ class CampaignTab(ctk.CTkFrame):
         self._regular_scroll.grid(row=1, column=0, sticky="nsew")
         self._regular_scroll.columnconfigure(0, weight=1)
 
-        self._build_regular_missions()
+        ctk.CTkLabel(self._regular_scroll,
+                     text="Load a prospect save (top bar) to see missions for that map.",
+                     font=FONT_NORMAL, text_color="gray").pack(padx=16, pady=16)
 
     # ── Regular missions (right panel) ────────────────────────────────────────
 
     def _build_regular_missions(self):
-        """Populate the regular missions panel from REGULAR_MISSION_GROUPS."""
+        """Populate the regular missions panel, filtered to the current map."""
         for w in self._regular_scroll.winfo_children():
             w.destroy()
         self._regular_vars.clear()
+
+        if not self._current_map:
+            ctk.CTkLabel(self._regular_scroll,
+                         text="Load a prospect save (top bar) to see missions for that map.",
+                         font=FONT_NORMAL, text_color="gray").pack(padx=16, pady=16)
+            return
 
         if not self._prof_editor:
             ctk.CTkLabel(self._regular_scroll,
@@ -140,8 +154,18 @@ class CampaignTab(ctk.CTkFrame):
                          font=FONT_NORMAL, text_color="#e09b3d").pack(padx=16, pady=12)
             return
 
+        groups = [g for g in REGULAR_MISSION_GROUPS if g['name'] == self._current_map]
+        if not groups:
+            ctk.CTkLabel(self._regular_scroll,
+                         text=f"No regular missions found for {self._current_map}.",
+                         font=FONT_NORMAL, text_color="gray").pack(padx=16, pady=16)
+            self._regular_scroll.configure(label_text=f"Prospect Missions — {self._current_map}")
+            return
+
+        self._regular_scroll.configure(label_text=f"Prospect Missions — {self._current_map}")
+
         row_idx = 0
-        for group in REGULAR_MISSION_GROUPS:
+        for group in groups:
             # Group header
             hdr = ctk.CTkFrame(self._regular_scroll, fg_color="#1a1a2e")
             hdr.pack(fill="x", padx=4, pady=(6, 2))
@@ -150,7 +174,8 @@ class CampaignTab(ctk.CTkFrame):
 
             for m in group['missions']:
                 row_name = m['row_name']
-                is_done = self._prof_editor.has_workshop_unlock(row_name)
+                is_done = (row_name.upper() in self._completed_missions
+                           or self._prof_editor.has_workshop_unlock(row_name))
                 var = tk.BooleanVar(value=is_done)
                 self._regular_vars[row_name] = var
 
@@ -183,11 +208,8 @@ class CampaignTab(ctk.CTkFrame):
         self._update_regular_status()
 
     def refresh_regular_missions(self):
-        """Re-read completion state for all regular missions (call after prof_editor swap)."""
-        for row_name, var in self._regular_vars.items():
-            if self._prof_editor:
-                var.set(self._prof_editor.has_workshop_unlock(row_name))
-        self._update_regular_status()
+        """Re-read completion state for regular missions (call after prof_editor swap)."""
+        self._build_regular_missions()
 
     # ── ProspectManager callback ───────────────────────────────────────────────
 
@@ -203,8 +225,22 @@ class CampaignTab(ctk.CTkFrame):
 
             prospect_key = gd_data.get('ProspectInfo', {}).get('ProspectDTKey', '')
             campaign_id = detect_campaign(prospect_key)
+            map_name = detect_map(prospect_key)
             self._current_campaign_id = campaign_id
+            self._current_map = map_name
+
+            # Load completion state from savegame binary
+            try:
+                ce = CampaignEditor(path)
+                ce.load()
+                self._active_world_talents = {r.upper() for r in ce.get_active_talents()}
+                self._completed_missions   = {r.upper() for r in ce.get_completed_missions()}
+            except Exception:
+                self._active_world_talents = set()
+                self._completed_missions   = set()
+
             self._rebuild_campaign_list(campaign_id, prospect_key)
+            self._build_regular_missions()
 
         except Exception as exc:
             self._campaign_status.configure(text=f"Error: {exc}", text_color="#e05252")
@@ -261,7 +297,8 @@ class CampaignTab(ctk.CTkFrame):
         # One row per mission
         for i, m in enumerate(missions):
             row_name = m['row_name']
-            is_done = self._prof_editor.has_workshop_unlock(row_name)
+            is_done = (row_name.upper() in self._active_world_talents
+                       or self._prof_editor.has_workshop_unlock(row_name))
             var = tk.BooleanVar(value=is_done)
             self._campaign_vars[row_name] = var
 

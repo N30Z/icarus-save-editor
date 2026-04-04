@@ -21607,7 +21607,7 @@
         },
         {
             "Name": "WorldRadiationNestsSpawnLargerCreatures_?",
-            "Title": "NSLOCTEXT(\"D_Stats\", \"WorldRadiationNestsSpawnLargerCreatures_?-Title\", \"Specters and Wraiths will Appear from Radioactive Creature Nests\")",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"WorldRadiationNestsSpawnLargerCreatures_?-Title\", \"Spectres and Wraiths will Appear from Radioactive Creature Nests\")",
             "PositiveTitleFormat": "INVTEXT(\"{0}\")",
             "NegativeTitleFormat": "INVTEXT(\"{0}\")",
             "bIsWorldStat": true,

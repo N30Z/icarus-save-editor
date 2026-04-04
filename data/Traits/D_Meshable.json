@@ -1486,79 +1486,79 @@
         },
         {
             "Name": "Mesh_Rug_Deer",
-            "ItemMesh": "/Game/ASS/DEP/SM_DEP_Rug_Deer.SM_DEP_Rug_Deer",
+            "ItemMesh": "/Game/ASS/KIT/SM_KIT_Crafting.SM_KIT_Crafting",
             "EquipHandMesh": "/Game/Assets/3DArt/Interactables/Items/DummyCube/SK_dummy_cube.SK_dummy_cube",
             "DeployableActor": "/Game/BP/Objects/World/Items/Deployables/Furniture/BP_Rug_Deer.BP_Rug_Deer_C"
         },
         {
             "Name": "Mesh_Rug_AlphaWolf",
-            "ItemMesh": "/Game/ASS/DCO/Rug_AlphaWolf/SM_DCO_Rug_AlphaWolf.SM_DCO_Rug_AlphaWolf",
+            "ItemMesh": "/Game/ASS/KIT/SM_KIT_Crafting.SM_KIT_Crafting",
             "EquipHandMesh": "/Game/Assets/3DArt/Interactables/Items/DummyCube/SK_dummy_cube.SK_dummy_cube",
             "DeployableActor": "/Game/BP/Objects/World/Items/Deployables/Furniture/BP_Rug_AlphaWolf.BP_Rug_AlphaWolf_C"
         },
         {
             "Name": "Mesh_Rug_Bear",
-            "ItemMesh": "/Game/ASS/DCO/Rug_GrizzlyBear/SM_DCO_Rug_GrizzlyBear.SM_DCO_Rug_GrizzlyBear",
+            "ItemMesh": "/Game/ASS/KIT/SM_KIT_Crafting.SM_KIT_Crafting",
             "EquipHandMesh": "/Game/Assets/3DArt/Interactables/Items/DummyCube/SK_dummy_cube.SK_dummy_cube",
             "DeployableActor": "/Game/BP/Objects/World/Items/Deployables/Furniture/BP_Rug_Bear.BP_Rug_Bear_C"
         },
         {
             "Name": "Mesh_Rug_Buffalo",
-            "ItemMesh": "/Game/ASS/DCO/Rug_Buffalo/SM_DCO_Rug_Buffalo.SM_DCO_Rug_Buffalo",
+            "ItemMesh": "/Game/ASS/KIT/SM_KIT_Crafting.SM_KIT_Crafting",
             "EquipHandMesh": "/Game/Assets/3DArt/Interactables/Items/DummyCube/SK_dummy_cube.SK_dummy_cube",
             "DeployableActor": "/Game/BP/Objects/World/Items/Deployables/Furniture/BP_Rug_Buffalo.BP_Rug_Buffalo_C"
         },
         {
             "Name": "Mesh_Rug_Conifer_Wolf",
-            "ItemMesh": "/Game/ASS/DCO/Rug_ConiferWolf/SM_DCO_Rug_ConiferWolf.SM_DCO_Rug_ConiferWolf",
+            "ItemMesh": "/Game/ASS/KIT/SM_KIT_Crafting.SM_KIT_Crafting",
             "EquipHandMesh": "/Game/Assets/3DArt/Interactables/Items/DummyCube/SK_dummy_cube.SK_dummy_cube",
             "DeployableActor": "/Game/BP/Objects/World/Items/Deployables/Furniture/BP_Rug_Conifer_Wolf.BP_Rug_Conifer_Wolf_C"
         },
         {
             "Name": "Mesh_Rug_Cougar",
-            "ItemMesh": "/Game/ASS/DCO/Rug_Cougar/SM_DCO_Rug_Cougar.SM_DCO_Rug_Cougar",
+            "ItemMesh": "/Game/ASS/KIT/SM_KIT_Crafting.SM_KIT_Crafting",
             "EquipHandMesh": "/Game/Assets/3DArt/Interactables/Items/DummyCube/SK_dummy_cube.SK_dummy_cube",
             "DeployableActor": "/Game/BP/Objects/World/Items/Deployables/Furniture/BP_Rug_Cougar.BP_Rug_Cougar_C"
         },
         {
             "Name": "Mesh_Rug_Desert_Wolf",
-            "ItemMesh": "/Game/ASS/DCO/Rug_DesertWolf/SM_DCO_Rug_DesertWolf.SM_DCO_Rug_DesertWolf",
+            "ItemMesh": "/Game/ASS/KIT/SM_KIT_Crafting.SM_KIT_Crafting",
             "EquipHandMesh": "/Game/Assets/3DArt/Interactables/Items/DummyCube/SK_dummy_cube.SK_dummy_cube",
             "DeployableActor": "/Game/BP/Objects/World/Items/Deployables/Furniture/BP_Rug_Desert_Wolf.BP_Rug_Desert_Wolf_C"
         },
         {
             "Name": "Mesh_Rug_Jaguar",
-            "ItemMesh": "/Game/ASS/DCO/Rug_Jaguar/SM_DCO_Rug_Jaguar.SM_DCO_Rug_Jaguar",
+            "ItemMesh": "/Game/ASS/KIT/SM_KIT_Crafting.SM_KIT_Crafting",
             "EquipHandMesh": "/Game/Assets/3DArt/Interactables/Items/DummyCube/SK_dummy_cube.SK_dummy_cube",
             "DeployableActor": "/Game/BP/Objects/World/Items/Deployables/Furniture/BP_Rug_Jaguar.BP_Rug_Jaguar_C"
         },
         {
             "Name": "Mesh_Rug_PolarBear",
-            "ItemMesh": "/Game/ASS/DCO/Rug_PolarBear/SM_DCO_Rug_PolarBear.SM_DCO_Rug_PolarBear",
+            "ItemMesh": "/Game/ASS/KIT/SM_KIT_Crafting.SM_KIT_Crafting",
             "EquipHandMesh": "/Game/Assets/3DArt/Interactables/Items/DummyCube/SK_dummy_cube.SK_dummy_cube",
             "DeployableActor": "/Game/BP/Objects/World/Items/Deployables/Furniture/BP_Rug_PolarBear.BP_Rug_PolarBear_C"
         },
         {
             "Name": "Mesh_Rug_Snow_Wolf",
-            "ItemMesh": "/Game/ASS/DCO/Rug_SnowWolf/SM_DCO_Rug_SnowWolf.SM_DCO_Rug_SnowWolf",
+            "ItemMesh": "/Game/ASS/KIT/SM_KIT_Crafting.SM_KIT_Crafting",
             "EquipHandMesh": "/Game/Assets/3DArt/Interactables/Items/DummyCube/SK_dummy_cube.SK_dummy_cube",
             "DeployableActor": "/Game/BP/Objects/World/Items/Deployables/Furniture/BP_Rug_Snow_Wolf.BP_Rug_Snow_Wolf_C"
         },
         {
             "Name": "Mesh_Rug_SnowLeopard",
-            "ItemMesh": "/Game/ASS/DCO/Rug_SnowLeopard/SM_DCO_Rug_SnowLeopard.SM_DCO_Rug_SnowLeopard",
+            "ItemMesh": "/Game/ASS/KIT/SM_KIT_Crafting.SM_KIT_Crafting",
             "EquipHandMesh": "/Game/Assets/3DArt/Interactables/Items/DummyCube/SK_dummy_cube.SK_dummy_cube",
             "DeployableActor": "/Game/BP/Objects/World/Items/Deployables/Furniture/BP_Rug_SnowLeopard.BP_Rug_SnowLeopard_C"
         },
         {
             "Name": "Mesh_Rug_Weave_Thin",
-            "ItemMesh": "/Game/ASS/DEP/SM_DEP_Rug_Woven_ThinWeave.SM_DEP_Rug_Woven_ThinWeave",
+            "ItemMesh": "/Game/ASS/KIT/SM_KIT_Crafting.SM_KIT_Crafting",
             "EquipHandMesh": "/Game/Assets/3DArt/Interactables/Items/DummyCube/SK_dummy_cube.SK_dummy_cube",
             "DeployableActor": "/Game/BP/Objects/World/Items/Deployables/Furniture/BP_Rug_Weave_Thin.BP_Rug_Weave_Thin_C"
         },
         {
             "Name": "Mesh_Rug_Weave_Thick",
-            "ItemMesh": "/Game/ASS/DEP/SM_DEP_Rug_Woven_ThickWeave.SM_DEP_Rug_Woven_ThickWeave",
+            "ItemMesh": "/Game/ASS/KIT/SM_KIT_Crafting.SM_KIT_Crafting",
             "EquipHandMesh": "/Game/Assets/3DArt/Interactables/Items/DummyCube/SK_dummy_cube.SK_dummy_cube",
             "DeployableActor": "/Game/BP/Objects/World/Items/Deployables/Furniture/BP_Rug_Weave_Thick.BP_Rug_Weave_Thick_C"
         },
@@ -4338,134 +4338,112 @@
         {
             "Name": "Mesh_Fiber_Fishing_Lure",
             "ItemMesh": "/Game/ASS/ITM/SK_ITM_Fiber_Lure.SK_ITM_Fiber_Lure",
-            "EquipHandMesh": "/Game/Assets/3DArt/Interactables/Items/DummyCube/SK_dummy_cube.SK_dummy_cube",
-            "DeployableActor": "/Game/BP/Objects/World/Items/Deployables/CraftingBenches/BP_CraftingBench.BP_CraftingBench_C"
+            "EquipHandMesh": "/Game/Assets/3DArt/Interactables/Items/DummyCube/SK_dummy_cube.SK_dummy_cube"
         },
         {
             "Name": "Mesh_Wood_Lure",
             "ItemMesh": "/Game/ASS/ITM/SK_ITM_Basic_Wooden_Lure.SK_ITM_Basic_Wooden_Lure",
-            "EquipHandMesh": "/Game/Assets/3DArt/Interactables/Items/DummyCube/SK_dummy_cube.SK_dummy_cube",
-            "DeployableActor": "/Game/BP/Objects/World/Items/Deployables/CraftingBenches/BP_CraftingBench.BP_CraftingBench_C"
+            "EquipHandMesh": "/Game/Assets/3DArt/Interactables/Items/DummyCube/SK_dummy_cube.SK_dummy_cube"
         },
         {
             "Name": "Mesh_Refined_Wood_Lure",
             "ItemMesh": "/Game/ASS/ITM/SK_ITM_Higher_Tier_Wood_Lure.SK_ITM_Higher_Tier_Wood_Lure",
-            "EquipHandMesh": "/Game/Assets/3DArt/Interactables/Items/DummyCube/SK_dummy_cube.SK_dummy_cube",
-            "DeployableActor": "/Game/BP/Objects/World/Items/Deployables/CraftingBenches/BP_CraftingBench.BP_CraftingBench_C"
+            "EquipHandMesh": "/Game/Assets/3DArt/Interactables/Items/DummyCube/SK_dummy_cube.SK_dummy_cube"
         },
         {
             "Name": "Mesh_Bone_Lure",
             "ItemMesh": "/Game/ASS/ITM/SK_ITM_Bone_Lure.SK_ITM_Bone_Lure",
-            "EquipHandMesh": "/Game/Assets/3DArt/Interactables/Items/DummyCube/SK_dummy_cube.SK_dummy_cube",
-            "DeployableActor": "/Game/BP/Objects/World/Items/Deployables/CraftingBenches/BP_CraftingBench.BP_CraftingBench_C"
+            "EquipHandMesh": "/Game/Assets/3DArt/Interactables/Items/DummyCube/SK_dummy_cube.SK_dummy_cube"
         },
         {
             "Name": "Mesh_Iron_Lure",
             "ItemMesh": "/Game/ASS/ITM/SK_ITM_Iron_Lure.SK_ITM_Iron_Lure",
-            "EquipHandMesh": "/Game/Assets/3DArt/Interactables/Items/DummyCube/SK_dummy_cube.SK_dummy_cube",
-            "DeployableActor": "/Game/BP/Objects/World/Items/Deployables/CraftingBenches/BP_CraftingBench.BP_CraftingBench_C"
+            "EquipHandMesh": "/Game/Assets/3DArt/Interactables/Items/DummyCube/SK_dummy_cube.SK_dummy_cube"
         },
         {
             "Name": "Mesh_Advanced_Iron_Lure",
             "ItemMesh": "/Game/ASS/ITM/SK_ITM_Iron_Ingot_Lure.SK_ITM_Iron_Ingot_Lure",
-            "EquipHandMesh": "/Game/Assets/3DArt/Interactables/Items/DummyCube/SK_dummy_cube.SK_dummy_cube",
-            "DeployableActor": "/Game/BP/Objects/World/Items/Deployables/CraftingBenches/BP_CraftingBench.BP_CraftingBench_C"
+            "EquipHandMesh": "/Game/Assets/3DArt/Interactables/Items/DummyCube/SK_dummy_cube.SK_dummy_cube"
         },
         {
             "Name": "Mesh_Reed_Flower_Lure",
             "ItemMesh": "/Game/ASS/ITM/SM_ITM_Reed_Flower_Lure.SM_ITM_Reed_Flower_Lure",
-            "EquipHandMesh": "/Game/Assets/3DArt/Interactables/Items/DummyCube/SK_dummy_cube.SK_dummy_cube",
-            "DeployableActor": "/Game/BP/Objects/World/Items/Deployables/CraftingBenches/BP_CraftingBench.BP_CraftingBench_C"
+            "EquipHandMesh": "/Game/Assets/3DArt/Interactables/Items/DummyCube/SK_dummy_cube.SK_dummy_cube"
         },
         {
             "Name": "Mesh_Cured_Leather_Lure",
             "ItemMesh": "/Game/ASS/ITM/SM_ITM_Cured_Leather_Lure.SM_ITM_Cured_Leather_Lure",
-            "EquipHandMesh": "/Game/Assets/3DArt/Interactables/Items/DummyCube/SK_dummy_cube.SK_dummy_cube",
-            "DeployableActor": "/Game/BP/Objects/World/Items/Deployables/CraftingBenches/BP_CraftingBench.BP_CraftingBench_C"
+            "EquipHandMesh": "/Game/Assets/3DArt/Interactables/Items/DummyCube/SK_dummy_cube.SK_dummy_cube"
         },
         {
             "Name": "Mesh_Gold_Ore_Lure",
             "ItemMesh": "/Game/ASS/ITM/SK_ITM_Gold_Ore_Lure.SK_ITM_Gold_Ore_Lure",
-            "EquipHandMesh": "/Game/Assets/3DArt/Interactables/Items/DummyCube/SK_dummy_cube.SK_dummy_cube",
-            "DeployableActor": "/Game/BP/Objects/World/Items/Deployables/CraftingBenches/BP_CraftingBench.BP_CraftingBench_C"
+            "EquipHandMesh": "/Game/Assets/3DArt/Interactables/Items/DummyCube/SK_dummy_cube.SK_dummy_cube"
         },
         {
             "Name": "Mesh_Gorse_Glower_Lure",
             "ItemMesh": "/Game/ASS/ITM/SM_ITM_Gorse_Flower_Lure.SM_ITM_Gorse_Flower_Lure",
-            "EquipHandMesh": "/Game/Assets/3DArt/Interactables/Items/DummyCube/SK_dummy_cube.SK_dummy_cube",
-            "DeployableActor": "/Game/BP/Objects/World/Items/Deployables/CraftingBenches/BP_CraftingBench.BP_CraftingBench_C"
+            "EquipHandMesh": "/Game/Assets/3DArt/Interactables/Items/DummyCube/SK_dummy_cube.SK_dummy_cube"
         },
         {
             "Name": "Mesh_Dogtags_Lure",
             "ItemMesh": "/Game/ASS/ITM/SK_ITM_Prospector_Tag_Lure.SK_ITM_Prospector_Tag_Lure",
-            "EquipHandMesh": "/Game/Assets/3DArt/Interactables/Items/DummyCube/SK_dummy_cube.SK_dummy_cube",
-            "DeployableActor": "/Game/BP/Objects/World/Items/Deployables/CraftingBenches/BP_CraftingBench.BP_CraftingBench_C"
+            "EquipHandMesh": "/Game/Assets/3DArt/Interactables/Items/DummyCube/SK_dummy_cube.SK_dummy_cube"
         },
         {
             "Name": "Mesh_Rubber_Lure",
             "ItemMesh": "/Game/ASS/ITM/SK_ITM_Rubbery_Lure.SK_ITM_Rubbery_Lure",
-            "EquipHandMesh": "/Game/Assets/3DArt/Interactables/Items/DummyCube/SK_dummy_cube.SK_dummy_cube",
-            "DeployableActor": "/Game/BP/Objects/World/Items/Deployables/CraftingBenches/BP_CraftingBench.BP_CraftingBench_C"
+            "EquipHandMesh": "/Game/Assets/3DArt/Interactables/Items/DummyCube/SK_dummy_cube.SK_dummy_cube"
         },
         {
             "Name": "Mesh_Wolf_Lure",
             "ItemMesh": "/Game/ASS/ITM/SM_ITM_Grey_Wolf_Lure.SM_ITM_Grey_Wolf_Lure",
-            "EquipHandMesh": "/Game/Assets/3DArt/Interactables/Items/DummyCube/SK_dummy_cube.SK_dummy_cube",
-            "DeployableActor": "/Game/BP/Objects/World/Items/Deployables/CraftingBenches/BP_CraftingBench.BP_CraftingBench_C"
+            "EquipHandMesh": "/Game/Assets/3DArt/Interactables/Items/DummyCube/SK_dummy_cube.SK_dummy_cube"
         },
         {
             "Name": "Mesh_Black_Wolf_Lure",
             "ItemMesh": "/Game/ASS/ITM/SM_ITM_Black_Wolf_Lure.SM_ITM_Black_Wolf_Lure",
-            "EquipHandMesh": "/Game/Assets/3DArt/Interactables/Items/DummyCube/SK_dummy_cube.SK_dummy_cube",
-            "DeployableActor": "/Game/BP/Objects/World/Items/Deployables/CraftingBenches/BP_CraftingBench.BP_CraftingBench_C"
+            "EquipHandMesh": "/Game/Assets/3DArt/Interactables/Items/DummyCube/SK_dummy_cube.SK_dummy_cube"
         },
         {
             "Name": "Mesh_Scorpion_Lure",
             "ItemMesh": "/Game/ASS/ITM/SK_ITM_Scorpion_Tail_Lure.SK_ITM_Scorpion_Tail_Lure",
-            "EquipHandMesh": "/Game/Assets/3DArt/Interactables/Items/DummyCube/SK_dummy_cube.SK_dummy_cube",
-            "DeployableActor": "/Game/BP/Objects/World/Items/Deployables/CraftingBenches/BP_CraftingBench.BP_CraftingBench_C"
+            "EquipHandMesh": "/Game/Assets/3DArt/Interactables/Items/DummyCube/SK_dummy_cube.SK_dummy_cube"
         },
         {
             "Name": "Mesh_Feather_Lure",
             "ItemMesh": "/Game/ASS/ITM/SK_ITM_Painted_Feather_Lure.SK_ITM_Painted_Feather_Lure",
-            "EquipHandMesh": "/Game/Assets/3DArt/Interactables/Items/DummyCube/SK_dummy_cube.SK_dummy_cube",
-            "DeployableActor": "/Game/BP/Objects/World/Items/Deployables/CraftingBenches/BP_CraftingBench.BP_CraftingBench_C"
+            "EquipHandMesh": "/Game/Assets/3DArt/Interactables/Items/DummyCube/SK_dummy_cube.SK_dummy_cube"
         },
         {
             "Name": "Mesh_Bark_Lure",
             "ItemMesh": "/Game/ASS/ITM/SK_ITM_Bark_Bug_Lure.SK_ITM_Bark_Bug_Lure",
-            "EquipHandMesh": "/Game/Assets/3DArt/Interactables/Items/DummyCube/SK_dummy_cube.SK_dummy_cube",
-            "DeployableActor": "/Game/BP/Objects/World/Items/Deployables/CraftingBenches/BP_CraftingBench.BP_CraftingBench_C"
+            "EquipHandMesh": "/Game/Assets/3DArt/Interactables/Items/DummyCube/SK_dummy_cube.SK_dummy_cube"
         },
         {
             "Name": "Mesh_Yeast_Lure",
             "ItemMesh": "/Game/ASS/ITM/SK_ITM_Yeast_Lure.SK_ITM_Yeast_Lure",
-            "EquipHandMesh": "/Game/Assets/3DArt/Interactables/Items/DummyCube/SK_dummy_cube.SK_dummy_cube",
-            "DeployableActor": "/Game/BP/Objects/World/Items/Deployables/CraftingBenches/BP_CraftingBench.BP_CraftingBench_C"
+            "EquipHandMesh": "/Game/Assets/3DArt/Interactables/Items/DummyCube/SK_dummy_cube.SK_dummy_cube"
         },
         {
             "Name": "Mesh_Blue_Reed_Lure",
             "ItemMesh": "/Game/ASS/ITM/SK_ITM_Blue_Reed_Lure.SK_ITM_Blue_Reed_Lure",
-            "EquipHandMesh": "/Game/Assets/3DArt/Interactables/Items/DummyCube/SK_dummy_cube.SK_dummy_cube",
-            "DeployableActor": "/Game/BP/Objects/World/Items/Deployables/CraftingBenches/BP_CraftingBench.BP_CraftingBench_C"
+            "EquipHandMesh": "/Game/Assets/3DArt/Interactables/Items/DummyCube/SK_dummy_cube.SK_dummy_cube"
         },
         {
             "Name": "Mesh_Rotten_Meat_Lure",
             "ItemMesh": "/Game/ASS/ITM/SK_ITM_Rotten_Meat_Lure.SK_ITM_Rotten_Meat_Lure",
-            "EquipHandMesh": "/Game/Assets/3DArt/Interactables/Items/DummyCube/SK_dummy_cube.SK_dummy_cube",
-            "DeployableActor": "/Game/BP/Objects/World/Items/Deployables/CraftingBenches/BP_CraftingBench.BP_CraftingBench_C"
+            "EquipHandMesh": "/Game/Assets/3DArt/Interactables/Items/DummyCube/SK_dummy_cube.SK_dummy_cube"
         },
         {
             "Name": "Mesh_Poison_Sack_Lure",
             "ItemMesh": "/Game/ASS/ITM/SK_ITM_Poison_Sack_Lure.SK_ITM_Poison_Sack_Lure",
-            "EquipHandMesh": "/Game/Assets/3DArt/Interactables/Items/DummyCube/SK_dummy_cube.SK_dummy_cube",
-            "DeployableActor": "/Game/BP/Objects/World/Items/Deployables/CraftingBenches/BP_CraftingBench.BP_CraftingBench_C"
+            "EquipHandMesh": "/Game/Assets/3DArt/Interactables/Items/DummyCube/SK_dummy_cube.SK_dummy_cube"
         },
         {
             "Name": "Mesh_White_Jelly_Lure",
             "ItemMesh": "/Game/ASS/ITM/SK_ITM_White_Jelly_Lure.SK_ITM_White_Jelly_Lure",
-            "EquipHandMesh": "/Game/Assets/3DArt/Interactables/Items/DummyCube/SK_dummy_cube.SK_dummy_cube",
-            "DeployableActor": "/Game/BP/Objects/World/Items/Deployables/CraftingBenches/BP_CraftingBench.BP_CraftingBench_C"
+            "EquipHandMesh": "/Game/Assets/3DArt/Interactables/Items/DummyCube/SK_dummy_cube.SK_dummy_cube"
         },
         {
             "Name": "Mesh_Basic_Fishing_Rod",
@@ -7086,9 +7064,8 @@
         },
         {
             "Name": "Mesh_Cat_Boss_Lure",
-            "ItemMesh": "/Game/ASS/ITM/SK_ITM_Rubbery_Lure.SK_ITM_Rubbery_Lure",
-            "EquipHandMesh": "/Game/Assets/3DArt/Interactables/Items/DummyCube/SK_dummy_cube.SK_dummy_cube",
-            "DeployableActor": "/Game/BP/Objects/World/Items/Deployables/CraftingBenches/BP_CraftingBench.BP_CraftingBench_C"
+            "ItemMesh": "/Game/ASS/ITM/SK_ITM_Giant_Cat_Lure.SK_ITM_Giant_Cat_Lure",
+            "EquipHandMesh": "/Game/Assets/3DArt/Interactables/Items/DummyCube/SK_dummy_cube.SK_dummy_cube"
         },
         {
             "Name": "Mesh_Pistol_T4",
@@ -7426,7 +7403,7 @@
         {
             "Name": "Mesh_LegendaryWeapon_LavaHunter_Flamethrower",
             "ItemMesh": "/Game/ASS/ITM/WeaponCrate_Norex/SM_ITM_WeaponCrate_Norex.SM_ITM_WeaponCrate_Norex",
-            "EquipHandMesh": "/Game/ASS/WEP/GUN_Flamethrower_LavaHunter/SK_WEP_GUN_FlameThrower_LavaHunter_Core.SK_WEP_GUN_FlameThrower_LavaHunter_Core",
+            "EquipHandMesh": "/Game/ASS/WEP/Gun_FlameThrower_LavaHunter/SK_WEP_GUN_FlameThrower_LavaHunter_Core.SK_WEP_GUN_FlameThrower_LavaHunter_Core",
             "EquipHandActor": "/Game/BP/Objects/World/Items/Weapons/BP_SkeletalItem_FlameThrower_LavaHunter.BP_SkeletalItem_FlameThrower_LavaHunter_C",
             "Metadata": {
                 "RequiredFeatureLevel": {
@@ -8486,8 +8463,7 @@
         {
             "Name": "Mesh_Sandwyrm_Lure",
             "ItemMesh": "/Game/ASS/ITM/SK_ITM_Sinew_Lure.SK_ITM_Sinew_Lure",
-            "EquipHandMesh": "/Game/Assets/3DArt/Interactables/Items/DummyCube/SK_dummy_cube.SK_dummy_cube",
-            "DeployableActor": "/Game/BP/Objects/World/Items/Deployables/CraftingBenches/BP_CraftingBench.BP_CraftingBench_C"
+            "EquipHandMesh": "/Game/Assets/3DArt/Interactables/Items/DummyCube/SK_dummy_cube.SK_dummy_cube"
         },
         {
             "Name": "Mesh_Sandwyrm_Backpack",

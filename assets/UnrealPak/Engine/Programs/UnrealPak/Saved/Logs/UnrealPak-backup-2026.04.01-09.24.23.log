@@ -1,0 +1,377 @@
+﻿Log file open, 04/01/26 11:24:22
+LogWindows: Failed to load 'aqProf.dll' (GetLastError=126)
+LogWindows: File 'aqProf.dll' does not exist
+LogWindows: Failed to load 'VtuneApi.dll' (GetLastError=126)
+LogWindows: File 'VtuneApi.dll' does not exist
+LogWindows: Failed to load 'VtuneApi32e.dll' (GetLastError=126)
+LogWindows: File 'VtuneApi32e.dll' does not exist
+LogPlatformFile: Not using cached read wrapper
+LogTaskGraph: Started task graph with 4 named threads and 14 total threads with 1 sets of task threads.
+LogWindows: Failed to load '../../../Engine/Binaries/ThirdParty/DbgHelp/dbghelp.dll' (GetLastError=126)
+LogWindows: File '../../../Engine/Binaries/ThirdParty/DbgHelp/dbghelp.dll' does not exist
+LogInit: Display: Loading text-based GConfig....
+LogPluginManager: Mounting plugin OodleData
+LogInit: Build: ++UE4+Release-4.27-CL-17155196
+LogInit: Engine Version: 4.27.0-17155196+++UE4+Release-4.27
+LogInit: Compatible Engine Version: 4.27.0-17155196+++UE4+Release-4.27
+LogInit: Net CL: 17155196
+LogInit: OS: Windows 10 (Release 2009) (), CPU: 13th Gen Intel(R) Core(TM) i7-1355U, GPU: Intel(R) Iris(R) Xe Graphics
+LogInit: Compiled (64-bit): Aug 13 2021 06:39:45
+LogInit: Compiled with Visual C++: 19.24.28315.00
+LogInit: Build Configuration: Development
+LogInit: Branch Name: ++UE4+Release-4.27
+LogInit: Command Line: "C:\Program Files (x86)\Steam\steamapps\common\Icarus\Icarus\Content\Data\data.pak" -Extract C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data
+LogInit: Base Directory: C:/Users/buttl/Downloads/IcarusModEditorVer4_1/UnrealPak/Engine/Binaries/Win64/
+LogInit: Allocator: TBB
+LogInit: Installed Engine Build: 0
+LogDevObjectVersion: Number of dev versions registered: 29
+LogDevObjectVersion:   Dev-Blueprints (B0D832E4-1F89-4F0D-ACCF-7EB736FD4AA2): 10
+LogDevObjectVersion:   Dev-Build (E1C64328-A22C-4D53-A36C-8E866417BD8C): 0
+LogDevObjectVersion:   Dev-Core (375EC13C-06E4-48FB-B500-84F0262A717E): 4
+LogDevObjectVersion:   Dev-Editor (E4B068ED-F494-42E9-A231-DA0B2E46BB41): 40
+LogDevObjectVersion:   Dev-Framework (CFFC743F-43B0-4480-9391-14DF171D2073): 37
+LogDevObjectVersion:   Dev-Mobile (B02B49B5-BB20-44E9-A304-32B752E40360): 3
+LogDevObjectVersion:   Dev-Networking (A4E4105C-59A1-49B5-A7C5-40C4547EDFEE): 0
+LogDevObjectVersion:   Dev-Online (39C831C9-5AE6-47DC-9A44-9C173E1C8E7C): 0
+LogDevObjectVersion:   Dev-Physics (78F01B33-EBEA-4F98-B9B4-84EACCB95AA2): 14
+LogDevObjectVersion:   Dev-Platform (6631380F-2D4D-43E0-8009-CF276956A95A): 0
+LogDevObjectVersion:   Dev-Rendering (12F88B9F-8875-4AFC-A67C-D90C383ABD29): 45
+LogDevObjectVersion:   Dev-Sequencer (7B5AE74C-D270-4C10-A958-57980B212A5A): 13
+LogDevObjectVersion:   Dev-VR (D7296918-1DD6-4BDD-9DE2-64A83CC13884): 3
+LogDevObjectVersion:   Dev-LoadTimes (C2A15278-BFE7-4AFE-6C17-90FF531DF755): 1
+LogDevObjectVersion:   Private-Geometry (6EACA3D4-40EC-4CC1-B786-8BED09428FC5): 3
+LogDevObjectVersion:   Dev-AnimPhys (29E575DD-E0A3-4627-9D10-D276232CDCEA): 17
+LogDevObjectVersion:   Dev-Anim (AF43A65D-7FD3-4947-9873-3E8ED9C1BB05): 15
+LogDevObjectVersion:   Dev-ReflectionCapture (6B266CEC-1EC7-4B8F-A30B-E4D90942FC07): 1
+LogDevObjectVersion:   Dev-Automation (0DF73D61-A23F-47EA-B727-89E90C41499A): 1
+LogDevObjectVersion:   FortniteMain (601D1886-AC64-4F84-AA16-D3DE0DEAC7D6): 47
+LogDevObjectVersion:   FortniteRelease (E7086368-6B23-4C58-8439-1B7016265E91): 1
+LogDevObjectVersion:   Dev-Enterprise (9DFFBCD6-494F-0158-E221-12823C92A888): 10
+LogDevObjectVersion:   Dev-Niagara (F2AED0AC-9AFE-416F-8664-AA7FFA26D6FC): 1
+LogDevObjectVersion:   Dev-Destruction (174F1F0B-B4C6-45A5-B13F-2EE8D0FB917D): 10
+LogDevObjectVersion:   Dev-Physics-Ext (35F94A83-E258-406C-A318-09F59610247C): 41
+LogDevObjectVersion:   Dev-PhysicsMaterial-Chaos (B68FC16E-8B1B-42E2-B453-215C058844FE): 1
+LogDevObjectVersion:   Dev-CineCamera (B2E18506-4273-CFC2-A54E-F4BB758BBA07): 1
+LogDevObjectVersion:   Dev-VirtualProduction (64F58936-FD1B-42BA-BA96-7289D5D0FA4E): 1
+LogDevObjectVersion:   Dev-MediaFramework (6F0ED827-A609-4895-9C91-998D90180EA4): 2
+LogConfig: Applying CVar settings from Section [Startup] File [../../../Engine/Config/ConsoleVariables.ini]
+LogConfig: Applying CVar settings from Section [ConsoleVariables] File [../../../Engine/Programs/UnrealPak/Saved/Config/Windows/Engine.ini]
+[2026.04.01-09.24.22:829][  0]LogInit: Computer: FEDDERN
+[2026.04.01-09.24.22:829][  0]LogInit: User: buttl
+[2026.04.01-09.24.22:829][  0]LogInit: CPU Page size=4096, Cores=10
+[2026.04.01-09.24.22:829][  0]LogInit: High frequency timer resolution =10.000000 MHz
+[2026.04.01-09.24.22:829][  0]LogMemory: Memory total: Physical=15.7GB (16GB approx)
+[2026.04.01-09.24.22:829][  0]LogMemory: Platform Memory Stats for Windows
+[2026.04.01-09.24.22:829][  0]LogMemory: Process Physical Memory: 22.92 MB used, 22.92 MB peak
+[2026.04.01-09.24.22:829][  0]LogMemory: Process Virtual Memory: 54.37 MB used, 54.37 MB peak
+[2026.04.01-09.24.22:829][  0]LogMemory: Physical Memory: 12645.56 MB used,  3426.43 MB free, 16071.99 MB total
+[2026.04.01-09.24.22:829][  0]LogMemory: Virtual Memory: 134215896.00 MB used,  1828.18 MB free, 134217728.00 MB total
+[2026.04.01-09.24.22:829][  0]LogInit: Using OS detected language ().
+[2026.04.01-09.24.22:829][  0]LogInit: Using OS detected locale ().
+[2026.04.01-09.24.22:829][  0]LogTextLocalizationManager: No localization for '' exists, so 'en' will be used for the language.
+[2026.04.01-09.24.22:829][  0]LogTextLocalizationManager: No localization for '' exists, so 'en' will be used for the locale.
+[2026.04.01-09.24.22:829][  0]LogInit: Using OS detected language ().
+[2026.04.01-09.24.22:829][  0]LogInit: Using OS detected locale ().
+[2026.04.01-09.24.22:829][  0]LogTextLocalizationManager: No localization for '' exists, so 'en' will be used for the language.
+[2026.04.01-09.24.22:829][  0]LogTextLocalizationManager: No localization for '' exists, so 'en' will be used for the locale.
+[2026.04.01-09.24.22:829][  0]LogTextLocalizationManager: Compacting localization data took   0.00ms
+[2026.04.01-09.24.22:829][  0]LogPakFile: Display: Using command line for crypto configuration
+[2026.04.01-09.24.22:830][  0]LogPakFile: PakFile PrimaryIndexSize=7727
+[2026.04.01-09.24.22:830][  0]LogPakFile: PakFile PathHashIndexSize=3452
+[2026.04.01-09.24.22:830][  0]LogPakFile: PakFile FullDirectoryIndexSize=9869
+[2026.04.01-09.24.22:830][  0]LogPakFile: Display: Extracted "DataTableMetadata.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/DataTableMetadata.json" Offset 510221.
+[2026.04.01-09.24.22:831][  0]LogPakFile: Display: Extracted "Accolades/D_Accolades.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/Accolades/D_Accolades.json" Offset 0.
+[2026.04.01-09.24.22:831][  0]LogPakFile: Display: Extracted "AI/D_AICreatureType.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/AI/D_AICreatureType.json" Offset 25978.
+[2026.04.01-09.24.22:832][  0]LogPakFile: Display: Extracted "AI/D_AIDescriptors.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/AI/D_AIDescriptors.json" Offset 32149.
+[2026.04.01-09.24.22:833][  0]LogPakFile: Display: Extracted "AI/D_AIEvents.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/AI/D_AIEvents.json" Offset 32513.
+[2026.04.01-09.24.22:834][  0]LogPakFile: Display: Extracted "AI/D_AIGrowth.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/AI/D_AIGrowth.json" Offset 33476.
+[2026.04.01-09.24.22:834][  0]LogPakFile: Display: Extracted "AI/D_AIRelationships.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/AI/D_AIRelationships.json" Offset 53075.
+[2026.04.01-09.24.22:838][  0]LogPakFile: Display: Extracted "AI/D_AISetup.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/AI/D_AISetup.json" Offset 53938.
+[2026.04.01-09.24.22:840][  0]LogPakFile: Display: Extracted "AI/D_AISpawnConfig.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/AI/D_AISpawnConfig.json" Offset 114795.
+[2026.04.01-09.24.22:841][  0]LogPakFile: Display: Extracted "AI/D_AISpawnRules.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/AI/D_AISpawnRules.json" Offset 119022.
+[2026.04.01-09.24.22:842][  0]LogPakFile: Display: Extracted "AI/D_AISpawnZones.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/AI/D_AISpawnZones.json" Offset 119735.
+[2026.04.01-09.24.22:843][  0]LogPakFile: Display: Extracted "AI/D_AutonomousSpawns.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/AI/D_AutonomousSpawns.json" Offset 133095.
+[2026.04.01-09.24.22:843][  0]LogPakFile: Display: Extracted "AI/D_EpicCreatures.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/AI/D_EpicCreatures.json" Offset 134383.
+[2026.04.01-09.24.22:844][  0]LogPakFile: Display: Extracted "AI/D_GeneticLineages.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/AI/D_GeneticLineages.json" Offset 137714.
+[2026.04.01-09.24.22:845][  0]LogPakFile: Display: Extracted "AI/D_GeneticValues.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/AI/D_GeneticValues.json" Offset 138617.
+[2026.04.01-09.24.22:847][  0]LogPakFile: Display: Extracted "AI/D_GOAPActions.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/AI/D_GOAPActions.json" Offset 139336.
+[2026.04.01-09.24.22:848][  0]LogPakFile: Display: Extracted "AI/D_GOAPGoals.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/AI/D_GOAPGoals.json" Offset 142309.
+[2026.04.01-09.24.22:849][  0]LogPakFile: Display: Extracted "AI/D_GOAPMotivations.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/AI/D_GOAPMotivations.json" Offset 143513.
+[2026.04.01-09.24.22:850][  0]LogPakFile: Display: Extracted "AI/D_GOAPProperties.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/AI/D_GOAPProperties.json" Offset 144867.
+[2026.04.01-09.24.22:851][  0]LogPakFile: Display: Extracted "AI/D_GOAPSetup.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/AI/D_GOAPSetup.json" Offset 145455.
+[2026.04.01-09.24.22:852][  0]LogPakFile: Display: Extracted "AI/D_GreatHuntCreatureInfo.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/AI/D_GreatHuntCreatureInfo.json" Offset 152959.
+[2026.04.01-09.24.22:857][  0]LogPakFile: Display: Extracted "AI/D_HuntingClueSetup.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/AI/D_HuntingClueSetup.json" Offset 154356.
+[2026.04.01-09.24.22:858][  0]LogPakFile: Display: Extracted "AI/D_HuntingSetup.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/AI/D_HuntingSetup.json" Offset 154850.
+[2026.04.01-09.24.22:859][  0]LogPakFile: Display: Extracted "AI/D_MissionNPC.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/AI/D_MissionNPC.json" Offset 155916.
+[2026.04.01-09.24.22:860][  0]LogPakFile: Display: Extracted "AI/D_Mounts.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/AI/D_Mounts.json" Offset 157171.
+[2026.04.01-09.24.22:861][  0]LogPakFile: Display: Extracted "AI/D_Saddles.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/AI/D_Saddles.json" Offset 168587.
+[2026.04.01-09.24.22:862][  0]LogPakFile: Display: Extracted "AI/D_TamedCreatureModifiers.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/AI/D_TamedCreatureModifiers.json" Offset 174222.
+[2026.04.01-09.24.22:863][  0]LogPakFile: Display: Extracted "AI/D_Tames.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/AI/D_Tames.json" Offset 175098.
+[2026.04.01-09.24.22:864][  0]LogPakFile: Display: Extracted "AI/D_WorldBosses.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/AI/D_WorldBosses.json" Offset 176892.
+[2026.04.01-09.24.22:865][  0]LogPakFile: Display: Extracted "Alterations/D_AlterationModifiers.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/Alterations/D_AlterationModifiers.json" Offset 177794.
+[2026.04.01-09.24.22:866][  0]LogPakFile: Display: Extracted "Alterations/D_Alterations.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/Alterations/D_Alterations.json" Offset 178539.
+[2026.04.01-09.24.22:867][  0]LogPakFile: Display: Extracted "Animation/D_ItemAnimations.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/Animation/D_ItemAnimations.json" Offset 196282.
+[2026.04.01-09.24.22:868][  0]LogPakFile: Display: Extracted "Animation/D_ItemAttachment.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/Animation/D_ItemAttachment.json" Offset 198665.
+[2026.04.01-09.24.22:868][  0]LogPakFile: Display: Extracted "Armour/D_ArmourSetBonus.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/Armour/D_ArmourSetBonus.json" Offset 199450.
+[2026.04.01-09.24.22:873][  0]LogPakFile: Display: Extracted "Armour/D_ArmourSets.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/Armour/D_ArmourSets.json" Offset 201209.
+[2026.04.01-09.24.22:874][  0]LogPakFile: Display: Extracted "Assets/D_AssetReferences.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/Assets/D_AssetReferences.json" Offset 201965.
+[2026.04.01-09.24.22:875][  0]LogPakFile: Display: Extracted "Attachments/D_AttachmentIcons.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/Attachments/D_AttachmentIcons.json" Offset 202591.
+[2026.04.01-09.24.22:876][  0]LogPakFile: Display: Extracted "Attachments/D_IcarusAttachments.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/Attachments/D_IcarusAttachments.json" Offset 203286.
+[2026.04.01-09.24.22:877][  0]LogPakFile: Display: Extracted "Attachments/D_ItemAttachments.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/Attachments/D_ItemAttachments.json" Offset 205216.
+[2026.04.01-09.24.22:878][  0]LogPakFile: Display: Extracted "Audio/D_AIAudioData.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/Audio/D_AIAudioData.json" Offset 205488.
+[2026.04.01-09.24.22:879][  0]LogPakFile: Display: Extracted "Audio/D_BiomeAudioData.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/Audio/D_BiomeAudioData.json" Offset 219823.
+[2026.04.01-09.24.22:880][  0]LogPakFile: Display: Extracted "Audio/D_BuildableAudioData.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/Audio/D_BuildableAudioData.json" Offset 220654.
+[2026.04.01-09.24.22:881][  0]LogPakFile: Display: Extracted "Audio/D_CharacterVoices.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/Audio/D_CharacterVoices.json" Offset 221741.
+[2026.04.01-09.24.22:881][  0]LogPakFile: Display: Extracted "Audio/D_CraftingAudioData.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/Audio/D_CraftingAudioData.json" Offset 222588.
+[2026.04.01-09.24.22:882][  0]LogPakFile: Display: Extracted "Audio/D_CreatureAudioThreatData.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/Audio/D_CreatureAudioThreatData.json" Offset 223618.
+[2026.04.01-09.24.22:883][  0]LogPakFile: Display: Extracted "Audio/D_CriticalHitAreaAudioData.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/Audio/D_CriticalHitAreaAudioData.json" Offset 224025.
+[2026.04.01-09.24.22:883][  0]LogPakFile: Display: Extracted "Audio/D_FirearmAudioData.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/Audio/D_FirearmAudioData.json" Offset 225338.
+[2026.04.01-09.24.22:884][  0]LogPakFile: Display: Extracted "Audio/D_ItemAudioData.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/Audio/D_ItemAudioData.json" Offset 227674.
+[2026.04.01-09.24.22:888][  0]LogPakFile: Display: Extracted "Audio/D_ModifierStateAudioData.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/Audio/D_ModifierStateAudioData.json" Offset 234704.
+[2026.04.01-09.24.22:889][  0]LogPakFile: Display: Extracted "Audio/D_MusicTracks.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/Audio/D_MusicTracks.json" Offset 235495.
+[2026.04.01-09.24.22:889][  0]LogPakFile: Display: Extracted "Audio/D_MusicTrackStateGroups.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/Audio/D_MusicTrackStateGroups.json" Offset 237487.
+[2026.04.01-09.24.22:890][  0]LogPakFile: Display: Extracted "Audio/D_PlayerFootstepAudioData.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/Audio/D_PlayerFootstepAudioData.json" Offset 237709.
+[2026.04.01-09.24.22:890][  0]LogPakFile: Display: Extracted "Audio/D_ResourceNodeAudioData.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/Audio/D_ResourceNodeAudioData.json" Offset 238563.
+[2026.04.01-09.24.22:891][  0]LogPakFile: Display: Extracted "Audio/D_RiverAudioData.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/Audio/D_RiverAudioData.json" Offset 239393.
+[2026.04.01-09.24.22:891][  0]LogPakFile: Display: Extracted "Audio/D_TerrainZoneAudioData.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/Audio/D_TerrainZoneAudioData.json" Offset 240181.
+[2026.04.01-09.24.22:892][  0]LogPakFile: Display: Extracted "Audio/D_TreeAudioData.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/Audio/D_TreeAudioData.json" Offset 241223.
+[2026.04.01-09.24.22:893][  0]LogPakFile: Display: Extracted "Audio/D_Vocalisations.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/Audio/D_Vocalisations.json" Offset 242036.
+[2026.04.01-09.24.22:893][  0]LogPakFile: Display: Extracted "Audio/D_VocalisationSettings.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/Audio/D_VocalisationSettings.json" Offset 253022.
+[2026.04.01-09.24.22:894][  0]LogPakFile: Display: Extracted "Audio/MusicConditions/D_MusicLocationConditions.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/Audio/MusicConditions/D_MusicLocationConditions.json" Offset 253924.
+[2026.04.01-09.24.22:894][  0]LogPakFile: Display: Extracted "Audio/MusicConditions/D_MusicQuestConditions.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/Audio/MusicConditions/D_MusicQuestConditions.json" Offset 254794.
+[2026.04.01-09.24.22:896][  0]LogPakFile: Display: Extracted "Bestiary/D_BestiaryData.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/Bestiary/D_BestiaryData.json" Offset 255069.
+[2026.04.01-09.24.22:897][  0]LogPakFile: Display: Extracted "Bestiary/D_BestiaryPoints.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/Bestiary/D_BestiaryPoints.json" Offset 307513.
+[2026.04.01-09.24.22:898][  0]LogPakFile: Display: Extracted "Bestiary/D_BestiaryTraits.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/Bestiary/D_BestiaryTraits.json" Offset 307874.
+[2026.04.01-09.24.22:899][  0]LogPakFile: Display: Extracted "Bestiary/D_BestiaryTraitTypes.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/Bestiary/D_BestiaryTraitTypes.json" Offset 310055.
+[2026.04.01-09.24.22:900][  0]LogPakFile: Display: Extracted "Blueprints/D_BlueprintUnlocks.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/Blueprints/D_BlueprintUnlocks.json" Offset 310620.
+[2026.04.01-09.24.22:904][  0]LogPakFile: Display: Extracted "Building/D_BuildingLookup.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/Building/D_BuildingLookup.json" Offset 311001.
+[2026.04.01-09.24.22:906][  0]LogPakFile: Display: Extracted "Building/D_BuildingPieces.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/Building/D_BuildingPieces.json" Offset 317578.
+[2026.04.01-09.24.22:908][  0]LogPakFile: Display: Extracted "Building/D_BuildingSkins.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/Building/D_BuildingSkins.json" Offset 349221.
+[2026.04.01-09.24.22:908][  0]LogPakFile: Display: Extracted "Building/D_BuildingStability.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/Building/D_BuildingStability.json" Offset 362329.
+[2026.04.01-09.24.22:909][  0]LogPakFile: Display: Extracted "Challenges/D_Challenges.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/Challenges/D_Challenges.json" Offset 363147.
+[2026.04.01-09.24.22:909][  0]LogPakFile: Display: Extracted "Character/D_CharacterCreationData.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/Character/D_CharacterCreationData.json" Offset 363623.
+[2026.04.01-09.24.22:910][  0]LogPakFile: Display: Extracted "Character/D_CharacterGrowth.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/Character/D_CharacterGrowth.json" Offset 367094.
+[2026.04.01-09.24.22:910][  0]LogPakFile: Display: Extracted "Config/D_GameplayConfig.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/Config/D_GameplayConfig.json" Offset 367576.
+[2026.04.01-09.24.22:911][  0]LogPakFile: Display: Extracted "Crafting/D_CraftingModifications.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/Crafting/D_CraftingModifications.json" Offset 368181.
+[2026.04.01-09.24.22:912][  0]LogPakFile: Display: Extracted "Crafting/D_CraftingTags.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/Crafting/D_CraftingTags.json" Offset 369047.
+[2026.04.01-09.24.22:912][  0]LogPakFile: Display: Extracted "Crafting/D_ExtractorRecipes.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/Crafting/D_ExtractorRecipes.json" Offset 369982.
+[2026.04.01-09.24.22:918][  0]LogPakFile: Display: Extracted "Crafting/D_ProcessorRecipes.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/Crafting/D_ProcessorRecipes.json" Offset 370412.
+[2026.04.01-09.24.22:920][  0]LogPakFile: Display: Extracted "Crafting/D_RecipeSets.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/Crafting/D_RecipeSets.json" Offset 503823.
+[2026.04.01-09.24.22:921][  0]LogPakFile: Display: Extracted "CriticalHit/D_CriticalHitSetup.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/CriticalHit/D_CriticalHitSetup.json" Offset 506361.
+[2026.04.01-09.24.22:921][  0]LogPakFile: Display: Extracted "Currency/D_CurrencyConversions.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/Currency/D_CurrencyConversions.json" Offset 507024.
+[2026.04.01-09.24.22:922][  0]LogPakFile: Display: Extracted "Currency/D_MetaCurrency.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/Currency/D_MetaCurrency.json" Offset 507451.
+[2026.04.01-09.24.22:923][  0]LogPakFile: Display: Extracted "Damage/D_CriticalHitAreas.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/Damage/D_CriticalHitAreas.json" Offset 508464.
+[2026.04.01-09.24.22:924][  0]LogPakFile: Display: Extracted "Damage/D_DamageTypeInfo.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/Damage/D_DamageTypeInfo.json" Offset 509120.
+[2026.04.01-09.24.22:927][  0]LogPakFile: Display: Extracted "Deployables/D_DeployableSetup.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/Deployables/D_DeployableSetup.json" Offset 510712.
+[2026.04.01-09.24.22:928][  0]LogPakFile: Display: Extracted "Deployables/D_Turret.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/Deployables/D_Turret.json" Offset 575746.
+[2026.04.01-09.24.22:928][  0]LogPakFile: Display: Extracted "Development/D_FeatureLevels.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/Development/D_FeatureLevels.json" Offset 576605.
+[2026.04.01-09.24.22:929][  0]LogPakFile: Display: Extracted "Development/D_LevelSequences.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/Development/D_LevelSequences.json" Offset 577911.
+[2026.04.01-09.24.22:934][  0]LogPakFile: Display: Extracted "Dialogue/D_Dialogue.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/Dialogue/D_Dialogue.json" Offset 578180.
+[2026.04.01-09.24.22:935][  0]LogPakFile: Display: Extracted "Dialogue/D_DialoguePool.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/Dialogue/D_DialoguePool.json" Offset 765634.
+[2026.04.01-09.24.22:936][  0]LogPakFile: Display: Extracted "Dialogue/D_DialogueSpeaker.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/Dialogue/D_DialogueSpeaker.json" Offset 769558.
+[2026.04.01-09.24.22:937][  0]LogPakFile: Display: Extracted "DLC/D_DLCPackageData.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/DLC/D_DLCPackageData.json" Offset 770175.
+[2026.04.01-09.24.22:938][  0]LogPakFile: Display: Extracted "DropShip/D_DropShipActions.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/DropShip/D_DropShipActions.json" Offset 771615.
+[2026.04.01-09.24.22:939][  0]LogPakFile: Display: Extracted "DropShip/D_DropShipSequences.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/DropShip/D_DropShipSequences.json" Offset 771978.
+[2026.04.01-09.24.22:939][  0]LogPakFile: Display: Extracted "Errors/D_ErrorCodes.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/Errors/D_ErrorCodes.json" Offset 773040.
+[2026.04.01-09.24.22:940][  0]LogPakFile: Display: Extracted "Events/D_ScriptedEvents.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/Events/D_ScriptedEvents.json" Offset 776472.
+[2026.04.01-09.24.22:941][  0]LogPakFile: Display: Extracted "Experience/D_ExperienceEvents.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/Experience/D_ExperienceEvents.json" Offset 777247.
+[2026.04.01-09.24.22:941][  0]LogPakFile: Display: Extracted "Factions/D_FactionInfo.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/Factions/D_FactionInfo.json" Offset 783794.
+[2026.04.01-09.24.22:943][  0]LogPakFile: Display: Extracted "Factions/D_FactionMissions.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/Factions/D_FactionMissions.json" Offset 784346.
+[2026.04.01-09.24.22:943][  0]LogPakFile: Display: Extracted "Factions/D_Factions.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/Factions/D_Factions.json" Offset 798403.
+[2026.04.01-09.24.22:944][  0]LogPakFile: Display: Extracted "Factions/D_MissionTypes.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/Factions/D_MissionTypes.json" Offset 798569.
+[2026.04.01-09.24.22:945][  0]LogPakFile: Display: Extracted "Farming/D_DirtMoundModifications.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/Farming/D_DirtMoundModifications.json" Offset 799716.
+[2026.04.01-09.24.22:946][  0]LogPakFile: Display: Extracted "Farming/D_Farmable.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/Farming/D_Farmable.json" Offset 800128.
+[2026.04.01-09.24.22:950][  0]LogPakFile: Display: Extracted "Farming/D_FarmingGrowthStates.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/Farming/D_FarmingGrowthStates.json" Offset 800693.
+[2026.04.01-09.24.22:951][  0]LogPakFile: Display: Extracted "Farming/D_FarmingSeeds.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/Farming/D_FarmingSeeds.json" Offset 804053.
+[2026.04.01-09.24.22:952][  0]LogPakFile: Display: Extracted "Farming/D_SeedModifications.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/Farming/D_SeedModifications.json" Offset 807200.
+[2026.04.01-09.24.22:953][  0]LogPakFile: Display: Extracted "FieldGuide/D_FieldGuideCategories.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/FieldGuide/D_FieldGuideCategories.json" Offset 807745.
+[2026.04.01-09.24.22:954][  0]LogPakFile: Display: Extracted "FieldGuide/D_FieldGuideMetaData.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/FieldGuide/D_FieldGuideMetaData.json" Offset 809590.
+[2026.04.01-09.24.22:955][  0]LogPakFile: Display: Extracted "FieldGuide/D_FieldGuideRedirect.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/FieldGuide/D_FieldGuideRedirect.json" Offset 812057.
+[2026.04.01-09.24.22:956][  0]LogPakFile: Display: Extracted "FieldGuide/D_FieldGuideSets.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/FieldGuide/D_FieldGuideSets.json" Offset 812492.
+[2026.04.01-09.24.22:957][  0]LogPakFile: Display: Extracted "Fish/D_FishData.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/Fish/D_FishData.json" Offset 815812.
+[2026.04.01-09.24.22:958][  0]LogPakFile: Display: Extracted "Fish/D_FishSpawnConfig.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/Fish/D_FishSpawnConfig.json" Offset 820746.
+[2026.04.01-09.24.22:958][  0]LogPakFile: Display: Extracted "Fish/D_FishSpawnZones.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/Fish/D_FishSpawnZones.json" Offset 822343.
+[2026.04.01-09.24.22:959][  0]LogPakFile: Display: Extracted "Flags/D_AccountFlags.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/Flags/D_AccountFlags.json" Offset 823822.
+[2026.04.01-09.24.22:960][  0]LogPakFile: Display: Extracted "Flags/D_CharacterFlags.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/Flags/D_CharacterFlags.json" Offset 827655.
+[2026.04.01-09.24.22:961][  0]LogPakFile: Display: Extracted "Flags/D_SessionFlags.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/Flags/D_SessionFlags.json" Offset 828977.
+[2026.04.01-09.24.22:963][  0]LogPakFile: Display: Extracted "FLOD/D_FLODDescriptions.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/FLOD/D_FLODDescriptions.json" Offset 830421.
+[2026.04.01-09.24.22:967][  0]LogPakFile: Display: Extracted "GreatHunt/D_GreatHunts.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/GreatHunt/D_GreatHunts.json" Offset 846888.
+[2026.04.01-09.24.22:968][  0]LogPakFile: Display: Extracted "Hints/D_Hints.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/Hints/D_Hints.json" Offset 848009.
+[2026.04.01-09.24.22:969][  0]LogPakFile: Display: Extracted "Horde/D_Horde.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/Horde/D_Horde.json" Offset 849003.
+[2026.04.01-09.24.22:970][  0]LogPakFile: Display: Extracted "Horde/D_HordeWave.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/Horde/D_HordeWave.json" Offset 849608.
+[2026.04.01-09.24.22:970][  0]LogPakFile: Display: Extracted "Input/D_KeybindContexts.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/Input/D_KeybindContexts.json" Offset 850988.
+[2026.04.01-09.24.22:971][  0]LogPakFile: Display: Extracted "Input/D_Keybindings.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/Input/D_Keybindings.json" Offset 851450.
+[2026.04.01-09.24.22:973][  0]LogPakFile: Display: Extracted "Input/D_KeyIcons.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/Input/D_KeyIcons.json" Offset 854729.
+[2026.04.01-09.24.22:973][  0]LogPakFile: Display: Extracted "Input/D_Keys.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/Input/D_Keys.json" Offset 856396.
+[2026.04.01-09.24.22:974][  0]LogPakFile: Display: Extracted "InstancedMap/D_GroupedInstancedMapData.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/InstancedMap/D_GroupedInstancedMapData.json" Offset 857184.
+[2026.04.01-09.24.22:975][  0]LogPakFile: Display: Extracted "InstancedMap/D_InstancedMapData.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/InstancedMap/D_InstancedMapData.json" Offset 857542.
+[2026.04.01-09.24.22:976][  0]LogPakFile: Display: Extracted "Interactions/D_Interactions.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/Interactions/D_Interactions.json" Offset 858503.
+[2026.04.01-09.24.22:977][  0]LogPakFile: Display: Extracted "Interactions/D_RadialMenuData.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/Interactions/D_RadialMenuData.json" Offset 863640.
+[2026.04.01-09.24.22:977][  0]LogPakFile: Display: Extracted "Interactions/D_RadialOptions.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/Interactions/D_RadialOptions.json" Offset 864376.
+[2026.04.01-09.24.22:978][  0]LogPakFile: Display: Extracted "Inventory/D_BagPriority.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/Inventory/D_BagPriority.json" Offset 865107.
+[2026.04.01-09.24.22:983][  0]LogPakFile: Display: Extracted "Inventory/D_InventoryContainer.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/Inventory/D_InventoryContainer.json" Offset 866194.
+[2026.04.01-09.24.22:983][  0]LogPakFile: Display: Extracted "Inventory/D_InventoryID.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/Inventory/D_InventoryID.json" Offset 866904.
+[2026.04.01-09.24.22:984][  0]LogPakFile: Display: Extracted "Inventory/D_InventoryInfo.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/Inventory/D_InventoryInfo.json" Offset 867324.
+[2026.04.01-09.24.22:985][  0]LogPakFile: Display: Extracted "Inventory/D_ItemWeightStatQueries.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/Inventory/D_ItemWeightStatQueries.json" Offset 871478.
+[2026.04.01-09.24.22:986][  0]LogPakFile: Display: Extracted "Inventory/D_QuickMove.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/Inventory/D_QuickMove.json" Offset 872009.
+[2026.04.01-09.24.22:987][  0]LogPakFile: Display: Extracted "Items/D_ItemClassificationsIcons.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/Items/D_ItemClassificationsIcons.json" Offset 872702.
+[2026.04.01-09.24.22:987][  0]LogPakFile: Display: Extracted "Items/D_ItemRanks.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/Items/D_ItemRanks.json" Offset 874160.
+[2026.04.01-09.24.22:990][  0]LogPakFile: Display: Extracted "Items/D_ItemRewards.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/Items/D_ItemRewards.json" Offset 874565.
+[2026.04.01-09.24.22:999][  0]LogPakFile: Display: Extracted "Items/D_ItemsStatic.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/Items/D_ItemsStatic.json" Offset 907379.
+[2026.04.01-09.24.23:001][  0]LogPakFile: Display: Extracted "Items/D_ItemTemplate.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/Items/D_ItemTemplate.json" Offset 1160907.
+[2026.04.01-09.24.23:001][  0]LogPakFile: Display: Extracted "Items/D_ItemTraitMasks.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/Items/D_ItemTraitMasks.json" Offset 1200323.
+[2026.04.01-09.24.23:002][  0]LogPakFile: Display: Extracted "Items/Types/D_BuildingTypes.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/Items/Types/D_BuildingTypes.json" Offset 1201064.
+[2026.04.01-09.24.23:002][  0]LogPakFile: Display: Extracted "Items/Types/D_DeployableTypes.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/Items/Types/D_DeployableTypes.json" Offset 1201738.
+[2026.04.01-09.24.23:003][  0]LogPakFile: Display: Extracted "Items/Types/D_FoodTypes.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/Items/Types/D_FoodTypes.json" Offset 1202291.
+[2026.04.01-09.24.23:004][  0]LogPakFile: Display: Extracted "Items/Types/D_ProjectileTypes.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/Items/Types/D_ProjectileTypes.json" Offset 1202995.
+[2026.04.01-09.24.23:004][  0]LogPakFile: Display: Extracted "Items/Types/D_ToolTypes.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/Items/Types/D_ToolTypes.json" Offset 1204184.
+[2026.04.01-09.24.23:005][  0]LogPakFile: Display: Extracted "LivingItems/D_LivingItemShopItems.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/LivingItems/D_LivingItemShopItems.json" Offset 1204612.
+[2026.04.01-09.24.23:006][  0]LogPakFile: Display: Extracted "LivingItems/D_LivingItemUpgrades.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/LivingItems/D_LivingItemUpgrades.json" Offset 1205661.
+[2026.04.01-09.24.23:006][  0]LogPakFile: Display: Extracted "Localization/D_Languages.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/Localization/D_Languages.json" Offset 1209250.
+[2026.04.01-09.24.23:007][  0]LogPakFile: Display: Extracted "Logging/D_LogCategories.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/Logging/D_LogCategories.json" Offset 1209556.
+[2026.04.01-09.24.23:007][  0]LogPakFile: Display: Extracted "MetaResource/D_MetaResourceNodes.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/MetaResource/D_MetaResourceNodes.json" Offset 1210343.
+[2026.04.01-09.24.23:008][  0]LogPakFile: Display: Extracted "MetaWorkshop/D_WorkshopItems.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/MetaWorkshop/D_WorkshopItems.json" Offset 1210782.
+[2026.04.01-09.24.23:009][  0]LogPakFile: Display: Extracted "Modifiers/D_AfflictionChance.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/Modifiers/D_AfflictionChance.json" Offset 1219385.
+[2026.04.01-09.24.23:009][  0]LogPakFile: Display: Extracted "Modifiers/D_ChargedModifiers.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/Modifiers/D_ChargedModifiers.json" Offset 1220636.
+[2026.04.01-09.24.23:013][  0]LogPakFile: Display: Extracted "Modifiers/D_GrantedAuras.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/Modifiers/D_GrantedAuras.json" Offset 1220990.
+[2026.04.01-09.24.23:018][  0]LogPakFile: Display: Extracted "Modifiers/D_ModifierStates.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/Modifiers/D_ModifierStates.json" Offset 1221874.
+[2026.04.01-09.24.23:018][  0]LogPakFile: Display: Extracted "Modifiers/D_StatAfflictions.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/Modifiers/D_StatAfflictions.json" Offset 1293656.
+[2026.04.01-09.24.23:019][  0]LogPakFile: Display: Extracted "Modifiers/D_SurvivalTriggers.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/Modifiers/D_SurvivalTriggers.json" Offset 1295085.
+[2026.04.01-09.24.23:020][  0]LogPakFile: Display: Extracted "NationalFlags/D_NationalFlags.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/NationalFlags/D_NationalFlags.json" Offset 1295866.
+[2026.04.01-09.24.23:021][  0]LogPakFile: Display: Extracted "Notes/D_CollectableNotes.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/Notes/D_CollectableNotes.json" Offset 1296663.
+[2026.04.01-09.24.23:021][  0]LogPakFile: Display: Extracted "Online/D_RCONCommand.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/Online/D_RCONCommand.json" Offset 1311886.
+[2026.04.01-09.24.23:022][  0]LogPakFile: Display: Extracted "Online/D_RepGraphClassPolicies.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/Online/D_RepGraphClassPolicies.json" Offset 1312550.
+[2026.04.01-09.24.23:023][  0]LogPakFile: Display: Extracted "Online/D_RepGraphClassSettings.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/Online/D_RepGraphClassSettings.json" Offset 1315542.
+[2026.04.01-09.24.23:024][  0]LogPakFile: Display: Extracted "Orchestration/D_OrchestrationEvents.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/Orchestration/D_OrchestrationEvents.json" Offset 1316229.
+[2026.04.01-09.24.23:024][  0]LogPakFile: Display: Extracted "Orchestration/D_OrchestrationStateFlags.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/Orchestration/D_OrchestrationStateFlags.json" Offset 1316841.
+[2026.04.01-09.24.23:025][  0]LogPakFile: Display: Extracted "Outpost/D_Outposts.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/Outpost/D_Outposts.json" Offset 1317578.
+[2026.04.01-09.24.23:028][  0]LogPakFile: Display: Extracted "Paintings/D_Paintings.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/Paintings/D_Paintings.json" Offset 1318139.
+[2026.04.01-09.24.23:029][  0]LogPakFile: Display: Extracted "Perks/D_CharacterPerks.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/Perks/D_CharacterPerks.json" Offset 1320179.
+[2026.04.01-09.24.23:030][  0]LogPakFile: Display: Extracted "PlayerTracker/D_PlayerAccoladeCategories.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/PlayerTracker/D_PlayerAccoladeCategories.json" Offset 1320516.
+[2026.04.01-09.24.23:031][  0]LogPakFile: Display: Extracted "PlayerTracker/D_PlayerTrackerCategories.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/PlayerTracker/D_PlayerTrackerCategories.json" Offset 1321093.
+[2026.04.01-09.24.23:032][  0]LogPakFile: Display: Extracted "PlayerTracker/D_PlayerTrackers.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/PlayerTracker/D_PlayerTrackers.json" Offset 1321967.
+[2026.04.01-09.24.23:033][  0]LogPakFile: Display: Extracted "Prebuilt/D_PrebuiltStructures.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/Prebuilt/D_PrebuiltStructures.json" Offset 1325812.
+[2026.04.01-09.24.23:034][  0]LogPakFile: Display: Extracted "Prospects/D_Atmospheres.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/Prospects/D_Atmospheres.json" Offset 1326905.
+[2026.04.01-09.24.23:035][  0]LogPakFile: Display: Extracted "Prospects/D_Biomes.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/Prospects/D_Biomes.json" Offset 1328994.
+[2026.04.01-09.24.23:037][  0]LogPakFile: Display: Extracted "Prospects/D_ProspectList.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/Prospects/D_ProspectList.json" Offset 1332982.
+[2026.04.01-09.24.23:037][  0]LogPakFile: Display: Extracted "Prospects/D_Terrains.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/Prospects/D_Terrains.json" Offset 1393391.
+[2026.04.01-09.24.23:038][  0]LogPakFile: Display: Extracted "Quests/D_DynamicQuestRewardItems.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/Quests/D_DynamicQuestRewardItems.json" Offset 1394678.
+[2026.04.01-09.24.23:040][  0]LogPakFile: Display: Extracted "Quests/D_DynamicQuestRewards.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/Quests/D_DynamicQuestRewards.json" Offset 1401276.
+[2026.04.01-09.24.23:041][  0]LogPakFile: Display: Extracted "Quests/D_DynamicQuests.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/Quests/D_DynamicQuests.json" Offset 1407578.
+[2026.04.01-09.24.23:041][  0]LogPakFile: Display: Extracted "Quests/D_QuestEvents.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/Quests/D_QuestEvents.json" Offset 1408817.
+[2026.04.01-09.24.23:045][  0]LogPakFile: Display: Extracted "Quests/D_QuestQueries.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/Quests/D_QuestQueries.json" Offset 1409676.
+[2026.04.01-09.24.23:048][  0]LogPakFile: Display: Extracted "Quests/D_Quests.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/Quests/D_Quests.json" Offset 1425495.
+[2026.04.01-09.24.23:049][  0]LogPakFile: Display: Extracted "Quests/D_StasisBag.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/Quests/D_StasisBag.json" Offset 1527958.
+[2026.04.01-09.24.23:049][  0]LogPakFile: Display: Extracted "Quests/Modifiers/D_QuestEnemyModifiers.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/Quests/Modifiers/D_QuestEnemyModifiers.json" Offset 1528530.
+[2026.04.01-09.24.23:050][  0]LogPakFile: Display: Extracted "Quests/Modifiers/D_QuestVocalisationModifiers.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/Quests/Modifiers/D_QuestVocalisationModifiers.json" Offset 1529548.
+[2026.04.01-09.24.23:051][  0]LogPakFile: Display: Extracted "Quests/Modifiers/D_QuestWeatherModifiers.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/Quests/Modifiers/D_QuestWeatherModifiers.json" Offset 1529976.
+[2026.04.01-09.24.23:051][  0]LogPakFile: Display: Extracted "Resources/D_IcarusResources.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/Resources/D_IcarusResources.json" Offset 1530242.
+[2026.04.01-09.24.23:052][  0]LogPakFile: Display: Extracted "Resources/D_OptionalResourceFlows.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/Resources/D_OptionalResourceFlows.json" Offset 1531115.
+[2026.04.01-09.24.23:052][  0]LogPakFile: Display: Extracted "RTXGI/D_RTXGIVolumes.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/RTXGI/D_RTXGIVolumes.json" Offset 1531691.
+[2026.04.01-09.24.23:053][  0]LogPakFile: Display: Extracted "Rulesets/D_Rulesets.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/Rulesets/D_Rulesets.json" Offset 1532499.
+[2026.04.01-09.24.23:054][  0]LogPakFile: Display: Extracted "Scaling/D_ScalingRules.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/Scaling/D_ScalingRules.json" Offset 1533062.
+[2026.04.01-09.24.23:054][  0]LogPakFile: Display: Extracted "Settings/D_GraphicsTierDescription.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/Settings/D_GraphicsTierDescription.json" Offset 1533590.
+[2026.04.01-09.24.23:055][  0]LogPakFile: Display: Extracted "Settings/D_GraphicsTierDescriptionMods.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/Settings/D_GraphicsTierDescriptionMods.json" Offset 1534367.
+[2026.04.01-09.24.23:056][  0]LogPakFile: Display: Extracted "Sorting/D_SortTypePriority.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/Sorting/D_SortTypePriority.json" Offset 1534774.
+[2026.04.01-09.24.23:056][  0]LogPakFile: Display: Extracted "Spawn/D_ExoticSpawn.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/Spawn/D_ExoticSpawn.json" Offset 1535546.
+[2026.04.01-09.24.23:057][  0]LogPakFile: Display: Extracted "Statistics/D_Statistics.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/Statistics/D_Statistics.json" Offset 1536845.
+[2026.04.01-09.24.23:057][  0]LogPakFile: Display: Extracted "Stats/D_CharacterStartingStats.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/Stats/D_CharacterStartingStats.json" Offset 1537369.
+[2026.04.01-09.24.23:057][  0]LogPakFile: Display: Extracted "Stats/D_CustomGameStats.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/Stats/D_CustomGameStats.json" Offset 1538423.
+[2026.04.01-09.24.23:061][  0]LogPakFile: Display: Extracted "Stats/D_ProspectStats.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/Stats/D_ProspectStats.json" Offset 1539162.
+[2026.04.01-09.24.23:062][  0]LogPakFile: Display: Extracted "Stats/D_StatCategories.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/Stats/D_StatCategories.json" Offset 1540320.
+[2026.04.01-09.24.23:064][  0]LogPakFile: Display: Extracted "Stats/D_Stats.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/Stats/D_Stats.json" Offset 1541314.
+[2026.04.01-09.24.23:065][  0]LogPakFile: Display: Extracted "Tags/D_StatGameplayTags.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/Tags/D_StatGameplayTags.json" Offset 1613174.
+[2026.04.01-09.24.23:066][  0]LogPakFile: Display: Extracted "Tags/D_TagQueries.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/Tags/D_TagQueries.json" Offset 1613734.
+[2026.04.01-09.24.23:067][  0]LogPakFile: Display: Extracted "Talents/D_PlayerTalentModifiers.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/Talents/D_PlayerTalentModifiers.json" Offset 1626701.
+[2026.04.01-09.24.23:067][  0]LogPakFile: Display: Extracted "Talents/D_TalentArchetypes.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/Talents/D_TalentArchetypes.json" Offset 1627166.
+[2026.04.01-09.24.23:068][  0]LogPakFile: Display: Extracted "Talents/D_TalentModels.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/Talents/D_TalentModels.json" Offset 1629841.
+[2026.04.01-09.24.23:069][  0]LogPakFile: Display: Extracted "Talents/D_TalentModelViews.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/Talents/D_TalentModelViews.json" Offset 1631152.
+[2026.04.01-09.24.23:069][  0]LogPakFile: Display: Extracted "Talents/D_TalentRanks.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/Talents/D_TalentRanks.json" Offset 1631573.
+[2026.04.01-09.24.23:073][  0]LogPakFile: Display: Extracted "Talents/D_Talents.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/Talents/D_Talents.json" Offset 1631991.
+[2026.04.01-09.24.23:076][  0]LogPakFile: Display: Extracted "Talents/D_TalentTrees.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/Talents/D_TalentTrees.json" Offset 1785556.
+[2026.04.01-09.24.23:077][  0]LogPakFile: Display: Extracted "Talents/D_TalentViews.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/Talents/D_TalentViews.json" Offset 1788170.
+[2026.04.01-09.24.23:078][  0]LogPakFile: Display: Extracted "TimeOfDay/D_TimeOfDay.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/TimeOfDay/D_TimeOfDay.json" Offset 1801047.
+[2026.04.01-09.24.23:078][  0]LogPakFile: Display: Extracted "Tools/D_Actions.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/Tools/D_Actions.json" Offset 1801828.
+[2026.04.01-09.24.23:079][  0]LogPakFile: Display: Extracted "Tools/D_AmmoTypes.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/Tools/D_AmmoTypes.json" Offset 1807351.
+[2026.04.01-09.24.23:080][  0]LogPakFile: Display: Extracted "Tools/D_FirearmData.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/Tools/D_FirearmData.json" Offset 1808424.
+[2026.04.01-09.24.23:080][  0]LogPakFile: Display: Extracted "Tools/D_FirearmScopeData.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/Tools/D_FirearmScopeData.json" Offset 1818639.
+[2026.04.01-09.24.23:081][  0]LogPakFile: Display: Extracted "Tools/D_RangedWeaponData.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/Tools/D_RangedWeaponData.json" Offset 1819154.
+[2026.04.01-09.24.23:082][  0]LogPakFile: Display: Extracted "Tools/D_StaminaActionCosts.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/Tools/D_StaminaActionCosts.json" Offset 1819889.
+[2026.04.01-09.24.23:083][  0]LogPakFile: Display: Extracted "Tools/D_ToolDamage.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/Tools/D_ToolDamage.json" Offset 1820640.
+[2026.04.01-09.24.23:083][  0]LogPakFile: Display: Extracted "Tools/D_Uses.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/Tools/D_Uses.json" Offset 1822242.
+[2026.04.01-09.24.23:084][  0]LogPakFile: Display: Extracted "Tools/D_ValidAmmoTypes.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/Tools/D_ValidAmmoTypes.json" Offset 1822816.
+[2026.04.01-09.24.23:085][  0]LogPakFile: Display: Extracted "Traits/D_Actionable.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/Traits/D_Actionable.json" Offset 1824836.
+[2026.04.01-09.24.23:086][  0]LogPakFile: Display: Extracted "Traits/D_Armour.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/Traits/D_Armour.json" Offset 1829697.
+[2026.04.01-09.24.23:088][  0]LogPakFile: Display: Extracted "Traits/D_Ballistic.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/Traits/D_Ballistic.json" Offset 1841689.
+[2026.04.01-09.24.23:092][  0]LogPakFile: Display: Extracted "Traits/D_Buildable.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/Traits/D_Buildable.json" Offset 1854860.
+[2026.04.01-09.24.23:093][  0]LogPakFile: Display: Extracted "Traits/D_Combustible.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/Traits/D_Combustible.json" Offset 1866585.
+[2026.04.01-09.24.23:094][  0]LogPakFile: Display: Extracted "Traits/D_Consumable.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/Traits/D_Consumable.json" Offset 1867763.
+[2026.04.01-09.24.23:095][  0]LogPakFile: Display: Extracted "Traits/D_CrudeOil.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/Traits/D_CrudeOil.json" Offset 1875042.
+[2026.04.01-09.24.23:095][  0]LogPakFile: Display: Extracted "Traits/D_Decayable.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/Traits/D_Decayable.json" Offset 1876117.
+[2026.04.01-09.24.23:097][  0]LogPakFile: Display: Extracted "Traits/D_Deployable.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/Traits/D_Deployable.json" Offset 1876850.
+[2026.04.01-09.24.23:098][  0]LogPakFile: Display: Extracted "Traits/D_Durable.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/Traits/D_Durable.json" Offset 1893865.
+[2026.04.01-09.24.23:099][  0]LogPakFile: Display: Extracted "Traits/D_Energy.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/Traits/D_Energy.json" Offset 1897732.
+[2026.04.01-09.24.23:100][  0]LogPakFile: Display: Extracted "Traits/D_Equippable.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/Traits/D_Equippable.json" Offset 1899227.
+[2026.04.01-09.24.23:101][  0]LogPakFile: Display: Extracted "Traits/D_Experience.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/Traits/D_Experience.json" Offset 1902546.
+[2026.04.01-09.24.23:101][  0]LogPakFile: Display: Extracted "Traits/D_Fillable.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/Traits/D_Fillable.json" Offset 1905483.
+[2026.04.01-09.24.23:102][  0]LogPakFile: Display: Extracted "Traits/D_Flammable.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/Traits/D_Flammable.json" Offset 1906523.
+[2026.04.01-09.24.23:103][  0]LogPakFile: Display: Extracted "Traits/D_Floatable.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/Traits/D_Floatable.json" Offset 1907638.
+[2026.04.01-09.24.23:104][  0]LogPakFile: Display: Extracted "Traits/D_Focusable.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/Traits/D_Focusable.json" Offset 1908086.
+[2026.04.01-09.24.23:106][  0]LogPakFile: Display: Extracted "Traits/D_Fuel.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/Traits/D_Fuel.json" Offset 1913271.
+[2026.04.01-09.24.23:109][  0]LogPakFile: Display: Extracted "Traits/D_Generator.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/Traits/D_Generator.json" Offset 1913797.
+[2026.04.01-09.24.23:110][  0]LogPakFile: Display: Extracted "Traits/D_Highlightable.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/Traits/D_Highlightable.json" Offset 1915307.
+[2026.04.01-09.24.23:111][  0]LogPakFile: Display: Extracted "Traits/D_Hitable.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/Traits/D_Hitable.json" Offset 1928163.
+[2026.04.01-09.24.23:112][  0]LogPakFile: Display: Extracted "Traits/D_Interactable.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/Traits/D_Interactable.json" Offset 1929502.
+[2026.04.01-09.24.23:112][  0]LogPakFile: Display: Extracted "Traits/D_Inventory.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/Traits/D_Inventory.json" Offset 1934216.
+[2026.04.01-09.24.23:117][  0]LogPakFile: Display: Extracted "Traits/D_Itemable.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/Traits/D_Itemable.json" Offset 1937065.
+[2026.04.01-09.24.23:118][  0]LogPakFile: Display: Extracted "Traits/D_LivingItem.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/Traits/D_LivingItem.json" Offset 2186554.
+[2026.04.01-09.24.23:121][  0]LogPakFile: Display: Extracted "Traits/D_Meshable.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/Traits/D_Meshable.json" Offset 2189564.
+[2026.04.01-09.24.23:122][  0]LogPakFile: Display: Extracted "Traits/D_Oxygen.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/Traits/D_Oxygen.json" Offset 2228052.
+[2026.04.01-09.24.23:123][  0]LogPakFile: Display: Extracted "Traits/D_Processing.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/Traits/D_Processing.json" Offset 2229029.
+[2026.04.01-09.24.23:123][  0]LogPakFile: Display: Extracted "Traits/D_RefinedOil.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/Traits/D_RefinedOil.json" Offset 2230765.
+[2026.04.01-09.24.23:124][  0]LogPakFile: Display: Extracted "Traits/D_Resource.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/Traits/D_Resource.json" Offset 2231717.
+[2026.04.01-09.24.23:124][  0]LogPakFile: Display: Extracted "Traits/D_Rocketable.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/Traits/D_Rocketable.json" Offset 2233506.
+[2026.04.01-09.24.23:125][  0]LogPakFile: Display: Extracted "Traits/D_Slotable.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/Traits/D_Slotable.json" Offset 2233928.
+[2026.04.01-09.24.23:125][  0]LogPakFile: Display: Extracted "Traits/D_Thermal.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/Traits/D_Thermal.json" Offset 2234576.
+[2026.04.01-09.24.23:126][  0]LogPakFile: Display: Extracted "Traits/D_Transmutable.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/Traits/D_Transmutable.json" Offset 2235413.
+[2026.04.01-09.24.23:126][  0]LogPakFile: Display: Extracted "Traits/D_Usable.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/Traits/D_Usable.json" Offset 2236015.
+[2026.04.01-09.24.23:127][  0]LogPakFile: Display: Extracted "Traits/D_Vehicular.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/Traits/D_Vehicular.json" Offset 2236807.
+[2026.04.01-09.24.23:127][  0]LogPakFile: Display: Extracted "Traits/D_Water.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/Traits/D_Water.json" Offset 2239441.
+[2026.04.01-09.24.23:128][  0]LogPakFile: Display: Extracted "Traits/D_Weight.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/Traits/D_Weight.json" Offset 2240326.
+[2026.04.01-09.24.23:129][  0]LogPakFile: Display: Extracted "UI/D_CharacterTimeline.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/UI/D_CharacterTimeline.json" Offset 2240741.
+[2026.04.01-09.24.23:129][  0]LogPakFile: Display: Extracted "UI/D_ContextMenuGroupTypes.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/UI/D_ContextMenuGroupTypes.json" Offset 2241187.
+[2026.04.01-09.24.23:130][  0]LogPakFile: Display: Extracted "UI/D_MapIcons.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/UI/D_MapIcons.json" Offset 2241687.
+[2026.04.01-09.24.23:131][  0]LogPakFile: Display: Extracted "UI/D_MapSearchArea.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/UI/D_MapSearchArea.json" Offset 2245314.
+[2026.04.01-09.24.23:132][  0]LogPakFile: Display: Extracted "UI/D_PlayerIdentity.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/UI/D_PlayerIdentity.json" Offset 2245915.
+[2026.04.01-09.24.23:133][  0]LogPakFile: Display: Extracted "UI/D_PreviewCameraSettings.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/UI/D_PreviewCameraSettings.json" Offset 2246374.
+[2026.04.01-09.24.23:134][  0]LogPakFile: Display: Extracted "UI/D_RecoveryBeacons.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/UI/D_RecoveryBeacons.json" Offset 2247356.
+[2026.04.01-09.24.23:135][  0]LogPakFile: Display: Extracted "UI/D_TimelineRanks.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/UI/D_TimelineRanks.json" Offset 2248565.
+[2026.04.01-09.24.23:138][  0]LogPakFile: Display: Extracted "ValidHits/D_ValidHitQueries.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/ValidHits/D_ValidHitQueries.json" Offset 2249688.
+[2026.04.01-09.24.23:139][  0]LogPakFile: Display: Extracted "ValidHits/D_ValidHitTypes.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/ValidHits/D_ValidHitTypes.json" Offset 2250278.
+[2026.04.01-09.24.23:140][  0]LogPakFile: Display: Extracted "ValidHits/D_ValidInteractQueries.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/ValidHits/D_ValidInteractQueries.json" Offset 2250552.
+[2026.04.01-09.24.23:141][  0]LogPakFile: Display: Extracted "Vehicles/D_VehicleSetups.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/Vehicles/D_VehicleSetups.json" Offset 2251097.
+[2026.04.01-09.24.23:141][  0]LogPakFile: Display: Extracted "Weather/D_ProspectForecast.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/Weather/D_ProspectForecast.json" Offset 2253268.
+[2026.04.01-09.24.23:143][  0]LogPakFile: Display: Extracted "Weather/D_WeatherActions.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/Weather/D_WeatherActions.json" Offset 2254073.
+[2026.04.01-09.24.23:144][  0]LogPakFile: Display: Extracted "Weather/D_WeatherBiomeGroups.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/Weather/D_WeatherBiomeGroups.json" Offset 2299201.
+[2026.04.01-09.24.23:145][  0]LogPakFile: Display: Extracted "Weather/D_WeatherEvents.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/Weather/D_WeatherEvents.json" Offset 2300356.
+[2026.04.01-09.24.23:146][  0]LogPakFile: Display: Extracted "Weather/D_WeatherPools.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/Weather/D_WeatherPools.json" Offset 2314016.
+[2026.04.01-09.24.23:147][  0]LogPakFile: Display: Extracted "Weather/D_WeatherTierIcon.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/Weather/D_WeatherTierIcon.json" Offset 2316498.
+[2026.04.01-09.24.23:148][  0]LogPakFile: Display: Extracted "World/D_BreakableRockData.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/World/D_BreakableRockData.json" Offset 2317080.
+[2026.04.01-09.24.23:149][  0]LogPakFile: Display: Extracted "World/D_DropGroups.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/World/D_DropGroups.json" Offset 2317701.
+[2026.04.01-09.24.23:150][  0]LogPakFile: Display: Extracted "World/D_FishSetup.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/World/D_FishSetup.json" Offset 2319040.
+[2026.04.01-09.24.23:150][  0]LogPakFile: Display: Extracted "World/D_OreDeposit.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/World/D_OreDeposit.json" Offset 2319884.
+[2026.04.01-09.24.23:155][  0]LogPakFile: Display: Extracted "World/D_Surfaces.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/World/D_Surfaces.json" Offset 2321659.
+[2026.04.01-09.24.23:156][  0]LogPakFile: Display: Extracted "World/D_VoxelDistributionRegion.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/World/D_VoxelDistributionRegion.json" Offset 2323457.
+[2026.04.01-09.24.23:157][  0]LogPakFile: Display: Extracted "World/D_VoxelMaterialMap.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/World/D_VoxelMaterialMap.json" Offset 2325719.
+[2026.04.01-09.24.23:158][  0]LogPakFile: Display: Extracted "World/D_VoxelSetupData.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/World/D_VoxelSetupData.json" Offset 2326655.
+[2026.04.01-09.24.23:158][  0]LogPakFile: Display: Extracted "World/D_WaterSetup.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/World/D_WaterSetup.json" Offset 2327968.
+[2026.04.01-09.24.23:160][  0]LogPakFile: Display: Extracted "World/D_WorldData.json" to "C:\Users\buttl\Downloads\IcarusModEditorVer4_1\data/World/D_WorldData.json" Offset 2328997.
+[2026.04.01-09.24.23:161][  0]LogPakFile: Finished extracting 287 (including 0 errors).
+[2026.04.01-09.24.23:161][  0]LogPakFile: Display: Unreal pak executed in 0.331479 seconds
+[2026.04.01-09.24.23:171][  0]LogCore: Engine exit requested (reason: UnrealPak Exiting)
+[2026.04.01-09.24.23:171][  0]LogExit: Preparing to exit.
+[2026.04.01-09.24.23:172][  0]LogModuleManager: Shutting down and abandoning module OodleDataCompressionFormat (6)
+[2026.04.01-09.24.23:172][  0]LogModuleManager: Shutting down and abandoning module PakFile (4)
+[2026.04.01-09.24.23:172][  0]LogModuleManager: Shutting down and abandoning module RSA (3)
+[2026.04.01-09.24.23:172][  0]LogExit: Exiting.
+[2026.04.01-09.24.23:182][  0]Log file closed, 04/01/26 11:24:23

@@ -104,6 +104,7 @@ CAMPAIGN_STAGES: List[Dict] = [
 # ---------------------------------------------------------------------------
 
 _WTML_COMPONENT      = b'/Script/Icarus.WorldTalentManagerRecorderComponent\x00'
+_GAME_MODE_COMPONENT = b'/Script/Icarus.GameModeStateRecorderComponent\x00'
 _WORLD_TALENT_STRUCT = 'WorldTalentRecord'
 _TOTAL_SIZE_POS      = 41   # offset of StateRecorderBlobs outer 'size' int32
 _ARRAY_COUNT_POS     = 69   # offset of StateRecorderBlobs element count int32
@@ -204,6 +205,65 @@ class CampaignEditor:
 
         bd_bytes = d[self._bd_data_pos:self._bd_data_pos + bd_count]
         self._props = self._ps.deserialize(bd_bytes)
+
+    def get_completed_missions(self) -> Set[str]:
+        """
+        Return row names of missions recorded in GameModeStateRecorderComponent.MissionHistory
+        whose Status > 0 (started or completed in this prospect save).
+
+        Uses a byte-scan rather than the generic PropertySerializer because the outer
+        GameModeRecord StructProperty has a format that the generic parser does not handle.
+        """
+        # Locate the component's BinaryData slice
+        pos = self.binary.find(_GAME_MODE_COMPONENT)
+        if pos == -1:
+            return set()
+        bd_pos = self.binary.find(b'BinaryData\x00', pos, pos + 500)
+        if bd_pos == -1:
+            return set()
+
+        p = bd_pos - 4
+        name_len = struct.unpack_from('<i', self.binary, p)[0]; p += 4 + name_len
+        type_len = struct.unpack_from('<i', self.binary, p)[0]; p += 4 + type_len
+        p += 4  # outer size field
+        p += 4  # array index
+        inner_len = struct.unpack_from('<i', self.binary, p)[0]; p += 4 + inner_len
+        hg = self.binary[p]; p += 1
+        if hg:
+            p += 16
+        bd_count = struct.unpack_from('<i', self.binary, p)[0]; p += 4
+        segment = self.binary[p:p + bd_count]
+
+        # Scan for Mission/Status property pairs
+        _MISSION_TAG = b'Mission\x00\x0c\x00\x00\x00StrProperty\x00'
+        _STATUS_TAG  = b'Status\x00\x0c\x00\x00\x00IntProperty\x00'
+
+        result: Set[str] = set()
+        idx = 0
+        while True:
+            m = segment.find(_MISSION_TAG, idx)
+            if m == -1:
+                break
+            # Read mission name FString
+            p2 = m + len(_MISSION_TAG)
+            p2 += 8  # skip size (4) + array_idx (4)
+            if segment[p2]: p2 += 16  # optional GUID
+            p2 += 1
+            slen = struct.unpack_from('<i', segment, p2)[0]; p2 += 4
+            if slen > 0:
+                mission_name = segment[p2:p2 + slen - 1].decode('utf-8', errors='replace')
+                # Find Status within the next 200 bytes
+                sp = segment.find(_STATUS_TAG, m + len(_MISSION_TAG))
+                if sp != -1 and sp < m + 200:
+                    sp2 = sp + len(_STATUS_TAG)
+                    sp2 += 8  # skip size + array_idx
+                    if segment[sp2]: sp2 += 16  # optional GUID
+                    sp2 += 1
+                    status = struct.unpack_from('<i', segment, sp2)[0]
+                    if status > 0:
+                        result.add(mission_name)
+            idx = m + 1
+        return result
 
     def _find_spawner_blobs(self) -> None:
         """Locate all Rock Golem spawner actor state blobs by scanning ORP property starts."""

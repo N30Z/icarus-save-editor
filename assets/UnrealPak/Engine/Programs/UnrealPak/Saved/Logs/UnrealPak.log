@@ -1,0 +1,377 @@
+﻿Log file open, 04/04/26 20:20:23
+LogWindows: Failed to load 'aqProf.dll' (GetLastError=126)
+LogWindows: File 'aqProf.dll' does not exist
+LogWindows: Failed to load 'VtuneApi.dll' (GetLastError=126)
+LogWindows: File 'VtuneApi.dll' does not exist
+LogWindows: Failed to load 'VtuneApi32e.dll' (GetLastError=126)
+LogWindows: File 'VtuneApi32e.dll' does not exist
+LogPlatformFile: Not using cached read wrapper
+LogTaskGraph: Started task graph with 4 named threads and 14 total threads with 1 sets of task threads.
+LogWindows: Failed to load '../../../Engine/Binaries/ThirdParty/DbgHelp/dbghelp.dll' (GetLastError=126)
+LogWindows: File '../../../Engine/Binaries/ThirdParty/DbgHelp/dbghelp.dll' does not exist
+LogInit: Display: Loading text-based GConfig....
+LogPluginManager: Mounting plugin OodleData
+LogInit: Build: ++UE4+Release-4.27-CL-17155196
+LogInit: Engine Version: 4.27.0-17155196+++UE4+Release-4.27
+LogInit: Compatible Engine Version: 4.27.0-17155196+++UE4+Release-4.27
+LogInit: Net CL: 17155196
+LogInit: OS: Windows 10 (Release 2009) (), CPU: 13th Gen Intel(R) Core(TM) i7-1355U, GPU: Intel(R) Iris(R) Xe Graphics
+LogInit: Compiled (64-bit): Aug 13 2021 06:39:45
+LogInit: Compiled with Visual C++: 19.24.28315.00
+LogInit: Build Configuration: Development
+LogInit: Branch Name: ++UE4+Release-4.27
+LogInit: Command Line: "C:\Program Files (x86)\Steam\steamapps\common\Icarus\Icarus\Content\Data\data.pak" -Extract C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm
+LogInit: Base Directory: C:/Users/buttl/Projects/icarus-save-editor/assets/UnrealPak/Engine/Binaries/Win64/
+LogInit: Allocator: TBB
+LogInit: Installed Engine Build: 0
+LogDevObjectVersion: Number of dev versions registered: 29
+LogDevObjectVersion:   Dev-Blueprints (B0D832E4-1F89-4F0D-ACCF-7EB736FD4AA2): 10
+LogDevObjectVersion:   Dev-Build (E1C64328-A22C-4D53-A36C-8E866417BD8C): 0
+LogDevObjectVersion:   Dev-Core (375EC13C-06E4-48FB-B500-84F0262A717E): 4
+LogDevObjectVersion:   Dev-Editor (E4B068ED-F494-42E9-A231-DA0B2E46BB41): 40
+LogDevObjectVersion:   Dev-Framework (CFFC743F-43B0-4480-9391-14DF171D2073): 37
+LogDevObjectVersion:   Dev-Mobile (B02B49B5-BB20-44E9-A304-32B752E40360): 3
+LogDevObjectVersion:   Dev-Networking (A4E4105C-59A1-49B5-A7C5-40C4547EDFEE): 0
+LogDevObjectVersion:   Dev-Online (39C831C9-5AE6-47DC-9A44-9C173E1C8E7C): 0
+LogDevObjectVersion:   Dev-Physics (78F01B33-EBEA-4F98-B9B4-84EACCB95AA2): 14
+LogDevObjectVersion:   Dev-Platform (6631380F-2D4D-43E0-8009-CF276956A95A): 0
+LogDevObjectVersion:   Dev-Rendering (12F88B9F-8875-4AFC-A67C-D90C383ABD29): 45
+LogDevObjectVersion:   Dev-Sequencer (7B5AE74C-D270-4C10-A958-57980B212A5A): 13
+LogDevObjectVersion:   Dev-VR (D7296918-1DD6-4BDD-9DE2-64A83CC13884): 3
+LogDevObjectVersion:   Dev-LoadTimes (C2A15278-BFE7-4AFE-6C17-90FF531DF755): 1
+LogDevObjectVersion:   Private-Geometry (6EACA3D4-40EC-4CC1-B786-8BED09428FC5): 3
+LogDevObjectVersion:   Dev-AnimPhys (29E575DD-E0A3-4627-9D10-D276232CDCEA): 17
+LogDevObjectVersion:   Dev-Anim (AF43A65D-7FD3-4947-9873-3E8ED9C1BB05): 15
+LogDevObjectVersion:   Dev-ReflectionCapture (6B266CEC-1EC7-4B8F-A30B-E4D90942FC07): 1
+LogDevObjectVersion:   Dev-Automation (0DF73D61-A23F-47EA-B727-89E90C41499A): 1
+LogDevObjectVersion:   FortniteMain (601D1886-AC64-4F84-AA16-D3DE0DEAC7D6): 47
+LogDevObjectVersion:   FortniteRelease (E7086368-6B23-4C58-8439-1B7016265E91): 1
+LogDevObjectVersion:   Dev-Enterprise (9DFFBCD6-494F-0158-E221-12823C92A888): 10
+LogDevObjectVersion:   Dev-Niagara (F2AED0AC-9AFE-416F-8664-AA7FFA26D6FC): 1
+LogDevObjectVersion:   Dev-Destruction (174F1F0B-B4C6-45A5-B13F-2EE8D0FB917D): 10
+LogDevObjectVersion:   Dev-Physics-Ext (35F94A83-E258-406C-A318-09F59610247C): 41
+LogDevObjectVersion:   Dev-PhysicsMaterial-Chaos (B68FC16E-8B1B-42E2-B453-215C058844FE): 1
+LogDevObjectVersion:   Dev-CineCamera (B2E18506-4273-CFC2-A54E-F4BB758BBA07): 1
+LogDevObjectVersion:   Dev-VirtualProduction (64F58936-FD1B-42BA-BA96-7289D5D0FA4E): 1
+LogDevObjectVersion:   Dev-MediaFramework (6F0ED827-A609-4895-9C91-998D90180EA4): 2
+LogConfig: Applying CVar settings from Section [Startup] File [../../../Engine/Config/ConsoleVariables.ini]
+LogConfig: Applying CVar settings from Section [ConsoleVariables] File [../../../Engine/Programs/UnrealPak/Saved/Config/Windows/Engine.ini]
+[2026.04.04-18.20.23:361][  0]LogInit: Computer: FEDDERN
+[2026.04.04-18.20.23:361][  0]LogInit: User: buttl
+[2026.04.04-18.20.23:361][  0]LogInit: CPU Page size=4096, Cores=10
+[2026.04.04-18.20.23:361][  0]LogInit: High frequency timer resolution =10.000000 MHz
+[2026.04.04-18.20.23:361][  0]LogMemory: Memory total: Physical=15.7GB (16GB approx)
+[2026.04.04-18.20.23:361][  0]LogMemory: Platform Memory Stats for Windows
+[2026.04.04-18.20.23:361][  0]LogMemory: Process Physical Memory: 21.75 MB used, 21.75 MB peak
+[2026.04.04-18.20.23:361][  0]LogMemory: Process Virtual Memory: 54.36 MB used, 54.36 MB peak
+[2026.04.04-18.20.23:361][  0]LogMemory: Physical Memory: 10986.70 MB used,  5085.29 MB free, 16071.99 MB total
+[2026.04.04-18.20.23:361][  0]LogMemory: Virtual Memory: 134215016.00 MB used,  2714.34 MB free, 134217728.00 MB total
+[2026.04.04-18.20.23:361][  0]LogInit: Using OS detected language ().
+[2026.04.04-18.20.23:361][  0]LogInit: Using OS detected locale ().
+[2026.04.04-18.20.23:361][  0]LogTextLocalizationManager: No localization for '' exists, so 'en' will be used for the language.
+[2026.04.04-18.20.23:361][  0]LogTextLocalizationManager: No localization for '' exists, so 'en' will be used for the locale.
+[2026.04.04-18.20.23:361][  0]LogInit: Using OS detected language ().
+[2026.04.04-18.20.23:361][  0]LogInit: Using OS detected locale ().
+[2026.04.04-18.20.23:361][  0]LogTextLocalizationManager: No localization for '' exists, so 'en' will be used for the language.
+[2026.04.04-18.20.23:361][  0]LogTextLocalizationManager: No localization for '' exists, so 'en' will be used for the locale.
+[2026.04.04-18.20.23:361][  0]LogTextLocalizationManager: Compacting localization data took   0.00ms
+[2026.04.04-18.20.23:361][  0]LogPakFile: Display: Using command line for crypto configuration
+[2026.04.04-18.20.23:362][  0]LogPakFile: PakFile PrimaryIndexSize=7731
+[2026.04.04-18.20.23:362][  0]LogPakFile: PakFile PathHashIndexSize=3452
+[2026.04.04-18.20.23:362][  0]LogPakFile: PakFile FullDirectoryIndexSize=9869
+[2026.04.04-18.20.23:362][  0]LogPakFile: Display: Extracted "DataTableMetadata.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/DataTableMetadata.json" Offset 510426.
+[2026.04.04-18.20.23:363][  0]LogPakFile: Display: Extracted "Accolades/D_Accolades.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/Accolades/D_Accolades.json" Offset 0.
+[2026.04.04-18.20.23:364][  0]LogPakFile: Display: Extracted "AI/D_AICreatureType.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/AI/D_AICreatureType.json" Offset 25978.
+[2026.04.04-18.20.23:364][  0]LogPakFile: Display: Extracted "AI/D_AIDescriptors.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/AI/D_AIDescriptors.json" Offset 32149.
+[2026.04.04-18.20.23:365][  0]LogPakFile: Display: Extracted "AI/D_AIEvents.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/AI/D_AIEvents.json" Offset 32513.
+[2026.04.04-18.20.23:365][  0]LogPakFile: Display: Extracted "AI/D_AIGrowth.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/AI/D_AIGrowth.json" Offset 33476.
+[2026.04.04-18.20.23:366][  0]LogPakFile: Display: Extracted "AI/D_AIRelationships.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/AI/D_AIRelationships.json" Offset 53075.
+[2026.04.04-18.20.23:368][  0]LogPakFile: Display: Extracted "AI/D_AISetup.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/AI/D_AISetup.json" Offset 53938.
+[2026.04.04-18.20.23:369][  0]LogPakFile: Display: Extracted "AI/D_AISpawnConfig.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/AI/D_AISpawnConfig.json" Offset 114795.
+[2026.04.04-18.20.23:369][  0]LogPakFile: Display: Extracted "AI/D_AISpawnRules.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/AI/D_AISpawnRules.json" Offset 119022.
+[2026.04.04-18.20.23:370][  0]LogPakFile: Display: Extracted "AI/D_AISpawnZones.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/AI/D_AISpawnZones.json" Offset 119735.
+[2026.04.04-18.20.23:371][  0]LogPakFile: Display: Extracted "AI/D_AutonomousSpawns.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/AI/D_AutonomousSpawns.json" Offset 133095.
+[2026.04.04-18.20.23:371][  0]LogPakFile: Display: Extracted "AI/D_EpicCreatures.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/AI/D_EpicCreatures.json" Offset 134383.
+[2026.04.04-18.20.23:372][  0]LogPakFile: Display: Extracted "AI/D_GeneticLineages.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/AI/D_GeneticLineages.json" Offset 137714.
+[2026.04.04-18.20.23:372][  0]LogPakFile: Display: Extracted "AI/D_GeneticValues.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/AI/D_GeneticValues.json" Offset 138617.
+[2026.04.04-18.20.23:372][  0]LogPakFile: Display: Extracted "AI/D_GOAPActions.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/AI/D_GOAPActions.json" Offset 139336.
+[2026.04.04-18.20.23:372][  0]LogPakFile: Display: Extracted "AI/D_GOAPGoals.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/AI/D_GOAPGoals.json" Offset 142309.
+[2026.04.04-18.20.23:373][  0]LogPakFile: Display: Extracted "AI/D_GOAPMotivations.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/AI/D_GOAPMotivations.json" Offset 143513.
+[2026.04.04-18.20.23:373][  0]LogPakFile: Display: Extracted "AI/D_GOAPProperties.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/AI/D_GOAPProperties.json" Offset 144867.
+[2026.04.04-18.20.23:374][  0]LogPakFile: Display: Extracted "AI/D_GOAPSetup.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/AI/D_GOAPSetup.json" Offset 145455.
+[2026.04.04-18.20.23:374][  0]LogPakFile: Display: Extracted "AI/D_GreatHuntCreatureInfo.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/AI/D_GreatHuntCreatureInfo.json" Offset 152959.
+[2026.04.04-18.20.23:375][  0]LogPakFile: Display: Extracted "AI/D_HuntingClueSetup.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/AI/D_HuntingClueSetup.json" Offset 154356.
+[2026.04.04-18.20.23:375][  0]LogPakFile: Display: Extracted "AI/D_HuntingSetup.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/AI/D_HuntingSetup.json" Offset 154850.
+[2026.04.04-18.20.23:375][  0]LogPakFile: Display: Extracted "AI/D_MissionNPC.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/AI/D_MissionNPC.json" Offset 155916.
+[2026.04.04-18.20.23:376][  0]LogPakFile: Display: Extracted "AI/D_Mounts.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/AI/D_Mounts.json" Offset 157171.
+[2026.04.04-18.20.23:377][  0]LogPakFile: Display: Extracted "AI/D_Saddles.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/AI/D_Saddles.json" Offset 168587.
+[2026.04.04-18.20.23:377][  0]LogPakFile: Display: Extracted "AI/D_TamedCreatureModifiers.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/AI/D_TamedCreatureModifiers.json" Offset 174222.
+[2026.04.04-18.20.23:378][  0]LogPakFile: Display: Extracted "AI/D_Tames.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/AI/D_Tames.json" Offset 175098.
+[2026.04.04-18.20.23:378][  0]LogPakFile: Display: Extracted "AI/D_WorldBosses.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/AI/D_WorldBosses.json" Offset 176892.
+[2026.04.04-18.20.23:379][  0]LogPakFile: Display: Extracted "Alterations/D_AlterationModifiers.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/Alterations/D_AlterationModifiers.json" Offset 177794.
+[2026.04.04-18.20.23:380][  0]LogPakFile: Display: Extracted "Alterations/D_Alterations.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/Alterations/D_Alterations.json" Offset 178539.
+[2026.04.04-18.20.23:381][  0]LogPakFile: Display: Extracted "Animation/D_ItemAnimations.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/Animation/D_ItemAnimations.json" Offset 196340.
+[2026.04.04-18.20.23:382][  0]LogPakFile: Display: Extracted "Animation/D_ItemAttachment.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/Animation/D_ItemAttachment.json" Offset 198723.
+[2026.04.04-18.20.23:383][  0]LogPakFile: Display: Extracted "Armour/D_ArmourSetBonus.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/Armour/D_ArmourSetBonus.json" Offset 199508.
+[2026.04.04-18.20.23:384][  0]LogPakFile: Display: Extracted "Armour/D_ArmourSets.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/Armour/D_ArmourSets.json" Offset 201267.
+[2026.04.04-18.20.23:385][  0]LogPakFile: Display: Extracted "Assets/D_AssetReferences.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/Assets/D_AssetReferences.json" Offset 202023.
+[2026.04.04-18.20.23:385][  0]LogPakFile: Display: Extracted "Attachments/D_AttachmentIcons.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/Attachments/D_AttachmentIcons.json" Offset 202649.
+[2026.04.04-18.20.23:388][  0]LogPakFile: Display: Extracted "Attachments/D_IcarusAttachments.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/Attachments/D_IcarusAttachments.json" Offset 203344.
+[2026.04.04-18.20.23:390][  0]LogPakFile: Display: Extracted "Attachments/D_ItemAttachments.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/Attachments/D_ItemAttachments.json" Offset 205274.
+[2026.04.04-18.20.23:392][  0]LogPakFile: Display: Extracted "Audio/D_AIAudioData.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/Audio/D_AIAudioData.json" Offset 205546.
+[2026.04.04-18.20.23:393][  0]LogPakFile: Display: Extracted "Audio/D_BiomeAudioData.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/Audio/D_BiomeAudioData.json" Offset 219881.
+[2026.04.04-18.20.23:395][  0]LogPakFile: Display: Extracted "Audio/D_BuildableAudioData.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/Audio/D_BuildableAudioData.json" Offset 220712.
+[2026.04.04-18.20.23:395][  0]LogPakFile: Display: Extracted "Audio/D_CharacterVoices.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/Audio/D_CharacterVoices.json" Offset 221799.
+[2026.04.04-18.20.23:396][  0]LogPakFile: Display: Extracted "Audio/D_CraftingAudioData.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/Audio/D_CraftingAudioData.json" Offset 222646.
+[2026.04.04-18.20.23:396][  0]LogPakFile: Display: Extracted "Audio/D_CreatureAudioThreatData.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/Audio/D_CreatureAudioThreatData.json" Offset 223676.
+[2026.04.04-18.20.23:396][  0]LogPakFile: Display: Extracted "Audio/D_CriticalHitAreaAudioData.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/Audio/D_CriticalHitAreaAudioData.json" Offset 224083.
+[2026.04.04-18.20.23:397][  0]LogPakFile: Display: Extracted "Audio/D_FirearmAudioData.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/Audio/D_FirearmAudioData.json" Offset 225396.
+[2026.04.04-18.20.23:398][  0]LogPakFile: Display: Extracted "Audio/D_ItemAudioData.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/Audio/D_ItemAudioData.json" Offset 227732.
+[2026.04.04-18.20.23:398][  0]LogPakFile: Display: Extracted "Audio/D_ModifierStateAudioData.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/Audio/D_ModifierStateAudioData.json" Offset 234827.
+[2026.04.04-18.20.23:399][  0]LogPakFile: Display: Extracted "Audio/D_MusicTracks.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/Audio/D_MusicTracks.json" Offset 235618.
+[2026.04.04-18.20.23:399][  0]LogPakFile: Display: Extracted "Audio/D_MusicTrackStateGroups.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/Audio/D_MusicTrackStateGroups.json" Offset 237610.
+[2026.04.04-18.20.23:399][  0]LogPakFile: Display: Extracted "Audio/D_PlayerFootstepAudioData.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/Audio/D_PlayerFootstepAudioData.json" Offset 237832.
+[2026.04.04-18.20.23:400][  0]LogPakFile: Display: Extracted "Audio/D_ResourceNodeAudioData.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/Audio/D_ResourceNodeAudioData.json" Offset 238686.
+[2026.04.04-18.20.23:400][  0]LogPakFile: Display: Extracted "Audio/D_RiverAudioData.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/Audio/D_RiverAudioData.json" Offset 239516.
+[2026.04.04-18.20.23:401][  0]LogPakFile: Display: Extracted "Audio/D_TerrainZoneAudioData.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/Audio/D_TerrainZoneAudioData.json" Offset 240304.
+[2026.04.04-18.20.23:403][  0]LogPakFile: Display: Extracted "Audio/D_TreeAudioData.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/Audio/D_TreeAudioData.json" Offset 241346.
+[2026.04.04-18.20.23:404][  0]LogPakFile: Display: Extracted "Audio/D_Vocalisations.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/Audio/D_Vocalisations.json" Offset 242159.
+[2026.04.04-18.20.23:405][  0]LogPakFile: Display: Extracted "Audio/D_VocalisationSettings.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/Audio/D_VocalisationSettings.json" Offset 253145.
+[2026.04.04-18.20.23:406][  0]LogPakFile: Display: Extracted "Audio/MusicConditions/D_MusicLocationConditions.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/Audio/MusicConditions/D_MusicLocationConditions.json" Offset 254047.
+[2026.04.04-18.20.23:406][  0]LogPakFile: Display: Extracted "Audio/MusicConditions/D_MusicQuestConditions.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/Audio/MusicConditions/D_MusicQuestConditions.json" Offset 254917.
+[2026.04.04-18.20.23:409][  0]LogPakFile: Display: Extracted "Bestiary/D_BestiaryData.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/Bestiary/D_BestiaryData.json" Offset 255192.
+[2026.04.04-18.20.23:409][  0]LogPakFile: Display: Extracted "Bestiary/D_BestiaryPoints.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/Bestiary/D_BestiaryPoints.json" Offset 307718.
+[2026.04.04-18.20.23:410][  0]LogPakFile: Display: Extracted "Bestiary/D_BestiaryTraits.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/Bestiary/D_BestiaryTraits.json" Offset 308079.
+[2026.04.04-18.20.23:411][  0]LogPakFile: Display: Extracted "Bestiary/D_BestiaryTraitTypes.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/Bestiary/D_BestiaryTraitTypes.json" Offset 310260.
+[2026.04.04-18.20.23:412][  0]LogPakFile: Display: Extracted "Blueprints/D_BlueprintUnlocks.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/Blueprints/D_BlueprintUnlocks.json" Offset 310825.
+[2026.04.04-18.20.23:413][  0]LogPakFile: Display: Extracted "Building/D_BuildingLookup.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/Building/D_BuildingLookup.json" Offset 311206.
+[2026.04.04-18.20.23:414][  0]LogPakFile: Display: Extracted "Building/D_BuildingPieces.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/Building/D_BuildingPieces.json" Offset 317783.
+[2026.04.04-18.20.23:416][  0]LogPakFile: Display: Extracted "Building/D_BuildingSkins.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/Building/D_BuildingSkins.json" Offset 349426.
+[2026.04.04-18.20.23:417][  0]LogPakFile: Display: Extracted "Building/D_BuildingStability.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/Building/D_BuildingStability.json" Offset 362534.
+[2026.04.04-18.20.23:418][  0]LogPakFile: Display: Extracted "Challenges/D_Challenges.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/Challenges/D_Challenges.json" Offset 363352.
+[2026.04.04-18.20.23:419][  0]LogPakFile: Display: Extracted "Character/D_CharacterCreationData.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/Character/D_CharacterCreationData.json" Offset 363828.
+[2026.04.04-18.20.23:419][  0]LogPakFile: Display: Extracted "Character/D_CharacterGrowth.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/Character/D_CharacterGrowth.json" Offset 367299.
+[2026.04.04-18.20.23:420][  0]LogPakFile: Display: Extracted "Config/D_GameplayConfig.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/Config/D_GameplayConfig.json" Offset 367781.
+[2026.04.04-18.20.23:421][  0]LogPakFile: Display: Extracted "Crafting/D_CraftingModifications.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/Crafting/D_CraftingModifications.json" Offset 368386.
+[2026.04.04-18.20.23:422][  0]LogPakFile: Display: Extracted "Crafting/D_CraftingTags.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/Crafting/D_CraftingTags.json" Offset 369252.
+[2026.04.04-18.20.23:423][  0]LogPakFile: Display: Extracted "Crafting/D_ExtractorRecipes.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/Crafting/D_ExtractorRecipes.json" Offset 370187.
+[2026.04.04-18.20.23:430][  0]LogPakFile: Display: Extracted "Crafting/D_ProcessorRecipes.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/Crafting/D_ProcessorRecipes.json" Offset 370617.
+[2026.04.04-18.20.23:431][  0]LogPakFile: Display: Extracted "Crafting/D_RecipeSets.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/Crafting/D_RecipeSets.json" Offset 504028.
+[2026.04.04-18.20.23:432][  0]LogPakFile: Display: Extracted "CriticalHit/D_CriticalHitSetup.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/CriticalHit/D_CriticalHitSetup.json" Offset 506566.
+[2026.04.04-18.20.23:432][  0]LogPakFile: Display: Extracted "Currency/D_CurrencyConversions.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/Currency/D_CurrencyConversions.json" Offset 507229.
+[2026.04.04-18.20.23:433][  0]LogPakFile: Display: Extracted "Currency/D_MetaCurrency.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/Currency/D_MetaCurrency.json" Offset 507656.
+[2026.04.04-18.20.23:433][  0]LogPakFile: Display: Extracted "Damage/D_CriticalHitAreas.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/Damage/D_CriticalHitAreas.json" Offset 508669.
+[2026.04.04-18.20.23:434][  0]LogPakFile: Display: Extracted "Damage/D_DamageTypeInfo.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/Damage/D_DamageTypeInfo.json" Offset 509325.
+[2026.04.04-18.20.23:437][  0]LogPakFile: Display: Extracted "Deployables/D_DeployableSetup.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/Deployables/D_DeployableSetup.json" Offset 510917.
+[2026.04.04-18.20.23:438][  0]LogPakFile: Display: Extracted "Deployables/D_Turret.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/Deployables/D_Turret.json" Offset 575951.
+[2026.04.04-18.20.23:439][  0]LogPakFile: Display: Extracted "Development/D_FeatureLevels.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/Development/D_FeatureLevels.json" Offset 576810.
+[2026.04.04-18.20.23:439][  0]LogPakFile: Display: Extracted "Development/D_LevelSequences.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/Development/D_LevelSequences.json" Offset 578116.
+[2026.04.04-18.20.23:443][  0]LogPakFile: Display: Extracted "Dialogue/D_Dialogue.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/Dialogue/D_Dialogue.json" Offset 578385.
+[2026.04.04-18.20.23:444][  0]LogPakFile: Display: Extracted "Dialogue/D_DialoguePool.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/Dialogue/D_DialoguePool.json" Offset 765836.
+[2026.04.04-18.20.23:444][  0]LogPakFile: Display: Extracted "Dialogue/D_DialogueSpeaker.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/Dialogue/D_DialogueSpeaker.json" Offset 769760.
+[2026.04.04-18.20.23:445][  0]LogPakFile: Display: Extracted "DLC/D_DLCPackageData.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/DLC/D_DLCPackageData.json" Offset 770377.
+[2026.04.04-18.20.23:445][  0]LogPakFile: Display: Extracted "DropShip/D_DropShipActions.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/DropShip/D_DropShipActions.json" Offset 771817.
+[2026.04.04-18.20.23:446][  0]LogPakFile: Display: Extracted "DropShip/D_DropShipSequences.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/DropShip/D_DropShipSequences.json" Offset 772180.
+[2026.04.04-18.20.23:446][  0]LogPakFile: Display: Extracted "Errors/D_ErrorCodes.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/Errors/D_ErrorCodes.json" Offset 773242.
+[2026.04.04-18.20.23:447][  0]LogPakFile: Display: Extracted "Events/D_ScriptedEvents.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/Events/D_ScriptedEvents.json" Offset 776674.
+[2026.04.04-18.20.23:449][  0]LogPakFile: Display: Extracted "Experience/D_ExperienceEvents.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/Experience/D_ExperienceEvents.json" Offset 777449.
+[2026.04.04-18.20.23:450][  0]LogPakFile: Display: Extracted "Factions/D_FactionInfo.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/Factions/D_FactionInfo.json" Offset 783996.
+[2026.04.04-18.20.23:451][  0]LogPakFile: Display: Extracted "Factions/D_FactionMissions.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/Factions/D_FactionMissions.json" Offset 784548.
+[2026.04.04-18.20.23:452][  0]LogPakFile: Display: Extracted "Factions/D_Factions.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/Factions/D_Factions.json" Offset 798605.
+[2026.04.04-18.20.23:453][  0]LogPakFile: Display: Extracted "Factions/D_MissionTypes.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/Factions/D_MissionTypes.json" Offset 798771.
+[2026.04.04-18.20.23:454][  0]LogPakFile: Display: Extracted "Farming/D_DirtMoundModifications.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/Farming/D_DirtMoundModifications.json" Offset 799918.
+[2026.04.04-18.20.23:455][  0]LogPakFile: Display: Extracted "Farming/D_Farmable.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/Farming/D_Farmable.json" Offset 800330.
+[2026.04.04-18.20.23:456][  0]LogPakFile: Display: Extracted "Farming/D_FarmingGrowthStates.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/Farming/D_FarmingGrowthStates.json" Offset 800895.
+[2026.04.04-18.20.23:457][  0]LogPakFile: Display: Extracted "Farming/D_FarmingSeeds.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/Farming/D_FarmingSeeds.json" Offset 804255.
+[2026.04.04-18.20.23:457][  0]LogPakFile: Display: Extracted "Farming/D_SeedModifications.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/Farming/D_SeedModifications.json" Offset 807402.
+[2026.04.04-18.20.23:458][  0]LogPakFile: Display: Extracted "FieldGuide/D_FieldGuideCategories.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/FieldGuide/D_FieldGuideCategories.json" Offset 807947.
+[2026.04.04-18.20.23:459][  0]LogPakFile: Display: Extracted "FieldGuide/D_FieldGuideMetaData.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/FieldGuide/D_FieldGuideMetaData.json" Offset 809792.
+[2026.04.04-18.20.23:460][  0]LogPakFile: Display: Extracted "FieldGuide/D_FieldGuideRedirect.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/FieldGuide/D_FieldGuideRedirect.json" Offset 812259.
+[2026.04.04-18.20.23:461][  0]LogPakFile: Display: Extracted "FieldGuide/D_FieldGuideSets.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/FieldGuide/D_FieldGuideSets.json" Offset 812694.
+[2026.04.04-18.20.23:462][  0]LogPakFile: Display: Extracted "Fish/D_FishData.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/Fish/D_FishData.json" Offset 816138.
+[2026.04.04-18.20.23:463][  0]LogPakFile: Display: Extracted "Fish/D_FishSpawnConfig.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/Fish/D_FishSpawnConfig.json" Offset 821072.
+[2026.04.04-18.20.23:464][  0]LogPakFile: Display: Extracted "Fish/D_FishSpawnZones.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/Fish/D_FishSpawnZones.json" Offset 822669.
+[2026.04.04-18.20.23:465][  0]LogPakFile: Display: Extracted "Flags/D_AccountFlags.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/Flags/D_AccountFlags.json" Offset 824148.
+[2026.04.04-18.20.23:465][  0]LogPakFile: Display: Extracted "Flags/D_CharacterFlags.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/Flags/D_CharacterFlags.json" Offset 827981.
+[2026.04.04-18.20.23:466][  0]LogPakFile: Display: Extracted "Flags/D_SessionFlags.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/Flags/D_SessionFlags.json" Offset 829303.
+[2026.04.04-18.20.23:468][  0]LogPakFile: Display: Extracted "FLOD/D_FLODDescriptions.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/FLOD/D_FLODDescriptions.json" Offset 830747.
+[2026.04.04-18.20.23:470][  0]LogPakFile: Display: Extracted "GreatHunt/D_GreatHunts.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/GreatHunt/D_GreatHunts.json" Offset 847214.
+[2026.04.04-18.20.23:471][  0]LogPakFile: Display: Extracted "Hints/D_Hints.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/Hints/D_Hints.json" Offset 848335.
+[2026.04.04-18.20.23:472][  0]LogPakFile: Display: Extracted "Horde/D_Horde.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/Horde/D_Horde.json" Offset 849329.
+[2026.04.04-18.20.23:473][  0]LogPakFile: Display: Extracted "Horde/D_HordeWave.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/Horde/D_HordeWave.json" Offset 849934.
+[2026.04.04-18.20.23:473][  0]LogPakFile: Display: Extracted "Input/D_KeybindContexts.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/Input/D_KeybindContexts.json" Offset 851314.
+[2026.04.04-18.20.23:475][  0]LogPakFile: Display: Extracted "Input/D_Keybindings.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/Input/D_Keybindings.json" Offset 851776.
+[2026.04.04-18.20.23:476][  0]LogPakFile: Display: Extracted "Input/D_KeyIcons.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/Input/D_KeyIcons.json" Offset 855055.
+[2026.04.04-18.20.23:477][  0]LogPakFile: Display: Extracted "Input/D_Keys.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/Input/D_Keys.json" Offset 856722.
+[2026.04.04-18.20.23:478][  0]LogPakFile: Display: Extracted "InstancedMap/D_GroupedInstancedMapData.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/InstancedMap/D_GroupedInstancedMapData.json" Offset 857510.
+[2026.04.04-18.20.23:479][  0]LogPakFile: Display: Extracted "InstancedMap/D_InstancedMapData.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/InstancedMap/D_InstancedMapData.json" Offset 857868.
+[2026.04.04-18.20.23:480][  0]LogPakFile: Display: Extracted "Interactions/D_Interactions.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/Interactions/D_Interactions.json" Offset 858829.
+[2026.04.04-18.20.23:481][  0]LogPakFile: Display: Extracted "Interactions/D_RadialMenuData.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/Interactions/D_RadialMenuData.json" Offset 863966.
+[2026.04.04-18.20.23:482][  0]LogPakFile: Display: Extracted "Interactions/D_RadialOptions.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/Interactions/D_RadialOptions.json" Offset 864702.
+[2026.04.04-18.20.23:483][  0]LogPakFile: Display: Extracted "Inventory/D_BagPriority.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/Inventory/D_BagPriority.json" Offset 865433.
+[2026.04.04-18.20.23:483][  0]LogPakFile: Display: Extracted "Inventory/D_InventoryContainer.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/Inventory/D_InventoryContainer.json" Offset 866520.
+[2026.04.04-18.20.23:484][  0]LogPakFile: Display: Extracted "Inventory/D_InventoryID.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/Inventory/D_InventoryID.json" Offset 867230.
+[2026.04.04-18.20.23:485][  0]LogPakFile: Display: Extracted "Inventory/D_InventoryInfo.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/Inventory/D_InventoryInfo.json" Offset 867650.
+[2026.04.04-18.20.23:485][  0]LogPakFile: Display: Extracted "Inventory/D_ItemWeightStatQueries.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/Inventory/D_ItemWeightStatQueries.json" Offset 871804.
+[2026.04.04-18.20.23:486][  0]LogPakFile: Display: Extracted "Inventory/D_QuickMove.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/Inventory/D_QuickMove.json" Offset 872335.
+[2026.04.04-18.20.23:487][  0]LogPakFile: Display: Extracted "Items/D_ItemClassificationsIcons.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/Items/D_ItemClassificationsIcons.json" Offset 873028.
+[2026.04.04-18.20.23:487][  0]LogPakFile: Display: Extracted "Items/D_ItemRanks.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/Items/D_ItemRanks.json" Offset 874518.
+[2026.04.04-18.20.23:491][  0]LogPakFile: Display: Extracted "Items/D_ItemRewards.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/Items/D_ItemRewards.json" Offset 874923.
+[2026.04.04-18.20.23:500][  0]LogPakFile: Display: Extracted "Items/D_ItemsStatic.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/Items/D_ItemsStatic.json" Offset 907737.
+[2026.04.04-18.20.23:502][  0]LogPakFile: Display: Extracted "Items/D_ItemTemplate.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/Items/D_ItemTemplate.json" Offset 1161456.
+[2026.04.04-18.20.23:502][  0]LogPakFile: Display: Extracted "Items/D_ItemTraitMasks.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/Items/D_ItemTraitMasks.json" Offset 1200872.
+[2026.04.04-18.20.23:503][  0]LogPakFile: Display: Extracted "Items/Types/D_BuildingTypes.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/Items/Types/D_BuildingTypes.json" Offset 1201613.
+[2026.04.04-18.20.23:503][  0]LogPakFile: Display: Extracted "Items/Types/D_DeployableTypes.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/Items/Types/D_DeployableTypes.json" Offset 1202287.
+[2026.04.04-18.20.23:503][  0]LogPakFile: Display: Extracted "Items/Types/D_FoodTypes.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/Items/Types/D_FoodTypes.json" Offset 1202840.
+[2026.04.04-18.20.23:504][  0]LogPakFile: Display: Extracted "Items/Types/D_ProjectileTypes.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/Items/Types/D_ProjectileTypes.json" Offset 1203544.
+[2026.04.04-18.20.23:504][  0]LogPakFile: Display: Extracted "Items/Types/D_ToolTypes.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/Items/Types/D_ToolTypes.json" Offset 1204733.
+[2026.04.04-18.20.23:505][  0]LogPakFile: Display: Extracted "LivingItems/D_LivingItemShopItems.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/LivingItems/D_LivingItemShopItems.json" Offset 1205161.
+[2026.04.04-18.20.23:505][  0]LogPakFile: Display: Extracted "LivingItems/D_LivingItemUpgrades.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/LivingItems/D_LivingItemUpgrades.json" Offset 1206210.
+[2026.04.04-18.20.23:506][  0]LogPakFile: Display: Extracted "Localization/D_Languages.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/Localization/D_Languages.json" Offset 1209799.
+[2026.04.04-18.20.23:506][  0]LogPakFile: Display: Extracted "Logging/D_LogCategories.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/Logging/D_LogCategories.json" Offset 1210105.
+[2026.04.04-18.20.23:507][  0]LogPakFile: Display: Extracted "MetaResource/D_MetaResourceNodes.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/MetaResource/D_MetaResourceNodes.json" Offset 1210892.
+[2026.04.04-18.20.23:508][  0]LogPakFile: Display: Extracted "MetaWorkshop/D_WorkshopItems.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/MetaWorkshop/D_WorkshopItems.json" Offset 1211331.
+[2026.04.04-18.20.23:508][  0]LogPakFile: Display: Extracted "Modifiers/D_AfflictionChance.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/Modifiers/D_AfflictionChance.json" Offset 1219934.
+[2026.04.04-18.20.23:508][  0]LogPakFile: Display: Extracted "Modifiers/D_ChargedModifiers.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/Modifiers/D_ChargedModifiers.json" Offset 1221185.
+[2026.04.04-18.20.23:509][  0]LogPakFile: Display: Extracted "Modifiers/D_GrantedAuras.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/Modifiers/D_GrantedAuras.json" Offset 1221539.
+[2026.04.04-18.20.23:512][  0]LogPakFile: Display: Extracted "Modifiers/D_ModifierStates.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/Modifiers/D_ModifierStates.json" Offset 1222423.
+[2026.04.04-18.20.23:513][  0]LogPakFile: Display: Extracted "Modifiers/D_StatAfflictions.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/Modifiers/D_StatAfflictions.json" Offset 1294206.
+[2026.04.04-18.20.23:514][  0]LogPakFile: Display: Extracted "Modifiers/D_SurvivalTriggers.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/Modifiers/D_SurvivalTriggers.json" Offset 1295635.
+[2026.04.04-18.20.23:515][  0]LogPakFile: Display: Extracted "NationalFlags/D_NationalFlags.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/NationalFlags/D_NationalFlags.json" Offset 1296416.
+[2026.04.04-18.20.23:516][  0]LogPakFile: Display: Extracted "Notes/D_CollectableNotes.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/Notes/D_CollectableNotes.json" Offset 1297213.
+[2026.04.04-18.20.23:517][  0]LogPakFile: Display: Extracted "Online/D_RCONCommand.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/Online/D_RCONCommand.json" Offset 1312436.
+[2026.04.04-18.20.23:518][  0]LogPakFile: Display: Extracted "Online/D_RepGraphClassPolicies.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/Online/D_RepGraphClassPolicies.json" Offset 1313100.
+[2026.04.04-18.20.23:519][  0]LogPakFile: Display: Extracted "Online/D_RepGraphClassSettings.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/Online/D_RepGraphClassSettings.json" Offset 1316092.
+[2026.04.04-18.20.23:520][  0]LogPakFile: Display: Extracted "Orchestration/D_OrchestrationEvents.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/Orchestration/D_OrchestrationEvents.json" Offset 1316779.
+[2026.04.04-18.20.23:520][  0]LogPakFile: Display: Extracted "Orchestration/D_OrchestrationStateFlags.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/Orchestration/D_OrchestrationStateFlags.json" Offset 1317391.
+[2026.04.04-18.20.23:521][  0]LogPakFile: Display: Extracted "Outpost/D_Outposts.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/Outpost/D_Outposts.json" Offset 1318128.
+[2026.04.04-18.20.23:522][  0]LogPakFile: Display: Extracted "Paintings/D_Paintings.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/Paintings/D_Paintings.json" Offset 1318689.
+[2026.04.04-18.20.23:522][  0]LogPakFile: Display: Extracted "Perks/D_CharacterPerks.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/Perks/D_CharacterPerks.json" Offset 1320729.
+[2026.04.04-18.20.23:523][  0]LogPakFile: Display: Extracted "PlayerTracker/D_PlayerAccoladeCategories.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/PlayerTracker/D_PlayerAccoladeCategories.json" Offset 1321066.
+[2026.04.04-18.20.23:524][  0]LogPakFile: Display: Extracted "PlayerTracker/D_PlayerTrackerCategories.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/PlayerTracker/D_PlayerTrackerCategories.json" Offset 1321643.
+[2026.04.04-18.20.23:525][  0]LogPakFile: Display: Extracted "PlayerTracker/D_PlayerTrackers.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/PlayerTracker/D_PlayerTrackers.json" Offset 1322517.
+[2026.04.04-18.20.23:526][  0]LogPakFile: Display: Extracted "Prebuilt/D_PrebuiltStructures.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/Prebuilt/D_PrebuiltStructures.json" Offset 1326362.
+[2026.04.04-18.20.23:527][  0]LogPakFile: Display: Extracted "Prospects/D_Atmospheres.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/Prospects/D_Atmospheres.json" Offset 1327455.
+[2026.04.04-18.20.23:527][  0]LogPakFile: Display: Extracted "Prospects/D_Biomes.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/Prospects/D_Biomes.json" Offset 1329569.
+[2026.04.04-18.20.23:530][  0]LogPakFile: Display: Extracted "Prospects/D_ProspectList.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/Prospects/D_ProspectList.json" Offset 1333557.
+[2026.04.04-18.20.23:531][  0]LogPakFile: Display: Extracted "Prospects/D_Terrains.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/Prospects/D_Terrains.json" Offset 1393966.
+[2026.04.04-18.20.23:532][  0]LogPakFile: Display: Extracted "Quests/D_DynamicQuestRewardItems.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/Quests/D_DynamicQuestRewardItems.json" Offset 1395253.
+[2026.04.04-18.20.23:533][  0]LogPakFile: Display: Extracted "Quests/D_DynamicQuestRewards.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/Quests/D_DynamicQuestRewards.json" Offset 1401851.
+[2026.04.04-18.20.23:534][  0]LogPakFile: Display: Extracted "Quests/D_DynamicQuests.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/Quests/D_DynamicQuests.json" Offset 1408153.
+[2026.04.04-18.20.23:534][  0]LogPakFile: Display: Extracted "Quests/D_QuestEvents.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/Quests/D_QuestEvents.json" Offset 1409392.
+[2026.04.04-18.20.23:536][  0]LogPakFile: Display: Extracted "Quests/D_QuestQueries.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/Quests/D_QuestQueries.json" Offset 1410251.
+[2026.04.04-18.20.23:539][  0]LogPakFile: Display: Extracted "Quests/D_Quests.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/Quests/D_Quests.json" Offset 1426070.
+[2026.04.04-18.20.23:540][  0]LogPakFile: Display: Extracted "Quests/D_StasisBag.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/Quests/D_StasisBag.json" Offset 1528533.
+[2026.04.04-18.20.23:540][  0]LogPakFile: Display: Extracted "Quests/Modifiers/D_QuestEnemyModifiers.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/Quests/Modifiers/D_QuestEnemyModifiers.json" Offset 1529105.
+[2026.04.04-18.20.23:541][  0]LogPakFile: Display: Extracted "Quests/Modifiers/D_QuestVocalisationModifiers.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/Quests/Modifiers/D_QuestVocalisationModifiers.json" Offset 1530123.
+[2026.04.04-18.20.23:541][  0]LogPakFile: Display: Extracted "Quests/Modifiers/D_QuestWeatherModifiers.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/Quests/Modifiers/D_QuestWeatherModifiers.json" Offset 1530551.
+[2026.04.04-18.20.23:543][  0]LogPakFile: Display: Extracted "Resources/D_IcarusResources.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/Resources/D_IcarusResources.json" Offset 1530817.
+[2026.04.04-18.20.23:543][  0]LogPakFile: Display: Extracted "Resources/D_OptionalResourceFlows.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/Resources/D_OptionalResourceFlows.json" Offset 1531690.
+[2026.04.04-18.20.23:544][  0]LogPakFile: Display: Extracted "RTXGI/D_RTXGIVolumes.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/RTXGI/D_RTXGIVolumes.json" Offset 1532266.
+[2026.04.04-18.20.23:545][  0]LogPakFile: Display: Extracted "Rulesets/D_Rulesets.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/Rulesets/D_Rulesets.json" Offset 1533074.
+[2026.04.04-18.20.23:545][  0]LogPakFile: Display: Extracted "Scaling/D_ScalingRules.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/Scaling/D_ScalingRules.json" Offset 1533637.
+[2026.04.04-18.20.23:546][  0]LogPakFile: Display: Extracted "Settings/D_GraphicsTierDescription.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/Settings/D_GraphicsTierDescription.json" Offset 1534165.
+[2026.04.04-18.20.23:546][  0]LogPakFile: Display: Extracted "Settings/D_GraphicsTierDescriptionMods.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/Settings/D_GraphicsTierDescriptionMods.json" Offset 1534942.
+[2026.04.04-18.20.23:546][  0]LogPakFile: Display: Extracted "Sorting/D_SortTypePriority.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/Sorting/D_SortTypePriority.json" Offset 1535349.
+[2026.04.04-18.20.23:547][  0]LogPakFile: Display: Extracted "Spawn/D_ExoticSpawn.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/Spawn/D_ExoticSpawn.json" Offset 1536121.
+[2026.04.04-18.20.23:548][  0]LogPakFile: Display: Extracted "Statistics/D_Statistics.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/Statistics/D_Statistics.json" Offset 1537420.
+[2026.04.04-18.20.23:549][  0]LogPakFile: Display: Extracted "Stats/D_CharacterStartingStats.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/Stats/D_CharacterStartingStats.json" Offset 1537944.
+[2026.04.04-18.20.23:550][  0]LogPakFile: Display: Extracted "Stats/D_CustomGameStats.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/Stats/D_CustomGameStats.json" Offset 1538998.
+[2026.04.04-18.20.23:552][  0]LogPakFile: Display: Extracted "Stats/D_ProspectStats.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/Stats/D_ProspectStats.json" Offset 1539737.
+[2026.04.04-18.20.23:552][  0]LogPakFile: Display: Extracted "Stats/D_StatCategories.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/Stats/D_StatCategories.json" Offset 1540895.
+[2026.04.04-18.20.23:556][  0]LogPakFile: Display: Extracted "Stats/D_Stats.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/Stats/D_Stats.json" Offset 1541889.
+[2026.04.04-18.20.23:556][  0]LogPakFile: Display: Extracted "Tags/D_StatGameplayTags.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/Tags/D_StatGameplayTags.json" Offset 1613750.
+[2026.04.04-18.20.23:557][  0]LogPakFile: Display: Extracted "Tags/D_TagQueries.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/Tags/D_TagQueries.json" Offset 1614310.
+[2026.04.04-18.20.23:558][  0]LogPakFile: Display: Extracted "Talents/D_PlayerTalentModifiers.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/Talents/D_PlayerTalentModifiers.json" Offset 1627329.
+[2026.04.04-18.20.23:559][  0]LogPakFile: Display: Extracted "Talents/D_TalentArchetypes.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/Talents/D_TalentArchetypes.json" Offset 1627794.
+[2026.04.04-18.20.23:560][  0]LogPakFile: Display: Extracted "Talents/D_TalentModels.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/Talents/D_TalentModels.json" Offset 1630469.
+[2026.04.04-18.20.23:561][  0]LogPakFile: Display: Extracted "Talents/D_TalentModelViews.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/Talents/D_TalentModelViews.json" Offset 1631780.
+[2026.04.04-18.20.23:561][  0]LogPakFile: Display: Extracted "Talents/D_TalentRanks.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/Talents/D_TalentRanks.json" Offset 1632201.
+[2026.04.04-18.20.23:568][  0]LogPakFile: Display: Extracted "Talents/D_Talents.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/Talents/D_Talents.json" Offset 1632619.
+[2026.04.04-18.20.23:568][  0]LogPakFile: Display: Extracted "Talents/D_TalentTrees.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/Talents/D_TalentTrees.json" Offset 1786442.
+[2026.04.04-18.20.23:570][  0]LogPakFile: Display: Extracted "Talents/D_TalentViews.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/Talents/D_TalentViews.json" Offset 1789056.
+[2026.04.04-18.20.23:571][  0]LogPakFile: Display: Extracted "TimeOfDay/D_TimeOfDay.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/TimeOfDay/D_TimeOfDay.json" Offset 1801933.
+[2026.04.04-18.20.23:572][  0]LogPakFile: Display: Extracted "Tools/D_Actions.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/Tools/D_Actions.json" Offset 1802714.
+[2026.04.04-18.20.23:572][  0]LogPakFile: Display: Extracted "Tools/D_AmmoTypes.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/Tools/D_AmmoTypes.json" Offset 1808237.
+[2026.04.04-18.20.23:573][  0]LogPakFile: Display: Extracted "Tools/D_FirearmData.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/Tools/D_FirearmData.json" Offset 1809310.
+[2026.04.04-18.20.23:574][  0]LogPakFile: Display: Extracted "Tools/D_FirearmScopeData.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/Tools/D_FirearmScopeData.json" Offset 1819525.
+[2026.04.04-18.20.23:575][  0]LogPakFile: Display: Extracted "Tools/D_RangedWeaponData.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/Tools/D_RangedWeaponData.json" Offset 1820040.
+[2026.04.04-18.20.23:576][  0]LogPakFile: Display: Extracted "Tools/D_StaminaActionCosts.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/Tools/D_StaminaActionCosts.json" Offset 1820775.
+[2026.04.04-18.20.23:576][  0]LogPakFile: Display: Extracted "Tools/D_ToolDamage.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/Tools/D_ToolDamage.json" Offset 1821526.
+[2026.04.04-18.20.23:577][  0]LogPakFile: Display: Extracted "Tools/D_Uses.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/Tools/D_Uses.json" Offset 1823128.
+[2026.04.04-18.20.23:578][  0]LogPakFile: Display: Extracted "Tools/D_ValidAmmoTypes.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/Tools/D_ValidAmmoTypes.json" Offset 1823702.
+[2026.04.04-18.20.23:579][  0]LogPakFile: Display: Extracted "Traits/D_Actionable.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/Traits/D_Actionable.json" Offset 1825722.
+[2026.04.04-18.20.23:580][  0]LogPakFile: Display: Extracted "Traits/D_Armour.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/Traits/D_Armour.json" Offset 1830583.
+[2026.04.04-18.20.23:582][  0]LogPakFile: Display: Extracted "Traits/D_Ballistic.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/Traits/D_Ballistic.json" Offset 1842575.
+[2026.04.04-18.20.23:584][  0]LogPakFile: Display: Extracted "Traits/D_Buildable.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/Traits/D_Buildable.json" Offset 1855746.
+[2026.04.04-18.20.23:585][  0]LogPakFile: Display: Extracted "Traits/D_Combustible.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/Traits/D_Combustible.json" Offset 1867471.
+[2026.04.04-18.20.23:586][  0]LogPakFile: Display: Extracted "Traits/D_Consumable.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/Traits/D_Consumable.json" Offset 1868649.
+[2026.04.04-18.20.23:587][  0]LogPakFile: Display: Extracted "Traits/D_CrudeOil.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/Traits/D_CrudeOil.json" Offset 1875928.
+[2026.04.04-18.20.23:588][  0]LogPakFile: Display: Extracted "Traits/D_Decayable.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/Traits/D_Decayable.json" Offset 1877003.
+[2026.04.04-18.20.23:589][  0]LogPakFile: Display: Extracted "Traits/D_Deployable.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/Traits/D_Deployable.json" Offset 1877736.
+[2026.04.04-18.20.23:590][  0]LogPakFile: Display: Extracted "Traits/D_Durable.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/Traits/D_Durable.json" Offset 1894751.
+[2026.04.04-18.20.23:591][  0]LogPakFile: Display: Extracted "Traits/D_Energy.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/Traits/D_Energy.json" Offset 1898618.
+[2026.04.04-18.20.23:592][  0]LogPakFile: Display: Extracted "Traits/D_Equippable.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/Traits/D_Equippable.json" Offset 1900113.
+[2026.04.04-18.20.23:593][  0]LogPakFile: Display: Extracted "Traits/D_Experience.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/Traits/D_Experience.json" Offset 1903431.
+[2026.04.04-18.20.23:593][  0]LogPakFile: Display: Extracted "Traits/D_Fillable.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/Traits/D_Fillable.json" Offset 1906368.
+[2026.04.04-18.20.23:594][  0]LogPakFile: Display: Extracted "Traits/D_Flammable.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/Traits/D_Flammable.json" Offset 1907408.
+[2026.04.04-18.20.23:595][  0]LogPakFile: Display: Extracted "Traits/D_Floatable.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/Traits/D_Floatable.json" Offset 1908523.
+[2026.04.04-18.20.23:596][  0]LogPakFile: Display: Extracted "Traits/D_Focusable.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/Traits/D_Focusable.json" Offset 1908971.
+[2026.04.04-18.20.23:597][  0]LogPakFile: Display: Extracted "Traits/D_Fuel.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/Traits/D_Fuel.json" Offset 1914156.
+[2026.04.04-18.20.23:599][  0]LogPakFile: Display: Extracted "Traits/D_Generator.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/Traits/D_Generator.json" Offset 1914682.
+[2026.04.04-18.20.23:600][  0]LogPakFile: Display: Extracted "Traits/D_Highlightable.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/Traits/D_Highlightable.json" Offset 1916192.
+[2026.04.04-18.20.23:601][  0]LogPakFile: Display: Extracted "Traits/D_Hitable.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/Traits/D_Hitable.json" Offset 1929048.
+[2026.04.04-18.20.23:602][  0]LogPakFile: Display: Extracted "Traits/D_Interactable.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/Traits/D_Interactable.json" Offset 1930387.
+[2026.04.04-18.20.23:603][  0]LogPakFile: Display: Extracted "Traits/D_Inventory.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/Traits/D_Inventory.json" Offset 1935101.
+[2026.04.04-18.20.23:609][  0]LogPakFile: Display: Extracted "Traits/D_Itemable.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/Traits/D_Itemable.json" Offset 1937950.
+[2026.04.04-18.20.23:609][  0]LogPakFile: Display: Extracted "Traits/D_LivingItem.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/Traits/D_LivingItem.json" Offset 2187390.
+[2026.04.04-18.20.23:611][  0]LogPakFile: Display: Extracted "Traits/D_Meshable.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/Traits/D_Meshable.json" Offset 2190400.
+[2026.04.04-18.20.23:611][  0]LogPakFile: Display: Extracted "Traits/D_Oxygen.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/Traits/D_Oxygen.json" Offset 2228688.
+[2026.04.04-18.20.23:612][  0]LogPakFile: Display: Extracted "Traits/D_Processing.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/Traits/D_Processing.json" Offset 2229665.
+[2026.04.04-18.20.23:613][  0]LogPakFile: Display: Extracted "Traits/D_RefinedOil.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/Traits/D_RefinedOil.json" Offset 2231401.
+[2026.04.04-18.20.23:613][  0]LogPakFile: Display: Extracted "Traits/D_Resource.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/Traits/D_Resource.json" Offset 2232353.
+[2026.04.04-18.20.23:614][  0]LogPakFile: Display: Extracted "Traits/D_Rocketable.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/Traits/D_Rocketable.json" Offset 2234142.
+[2026.04.04-18.20.23:615][  0]LogPakFile: Display: Extracted "Traits/D_Slotable.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/Traits/D_Slotable.json" Offset 2234564.
+[2026.04.04-18.20.23:616][  0]LogPakFile: Display: Extracted "Traits/D_Thermal.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/Traits/D_Thermal.json" Offset 2235212.
+[2026.04.04-18.20.23:617][  0]LogPakFile: Display: Extracted "Traits/D_Transmutable.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/Traits/D_Transmutable.json" Offset 2236049.
+[2026.04.04-18.20.23:618][  0]LogPakFile: Display: Extracted "Traits/D_Usable.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/Traits/D_Usable.json" Offset 2236651.
+[2026.04.04-18.20.23:618][  0]LogPakFile: Display: Extracted "Traits/D_Vehicular.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/Traits/D_Vehicular.json" Offset 2237443.
+[2026.04.04-18.20.23:619][  0]LogPakFile: Display: Extracted "Traits/D_Water.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/Traits/D_Water.json" Offset 2240077.
+[2026.04.04-18.20.23:620][  0]LogPakFile: Display: Extracted "Traits/D_Weight.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/Traits/D_Weight.json" Offset 2240962.
+[2026.04.04-18.20.23:621][  0]LogPakFile: Display: Extracted "UI/D_CharacterTimeline.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/UI/D_CharacterTimeline.json" Offset 2241377.
+[2026.04.04-18.20.23:621][  0]LogPakFile: Display: Extracted "UI/D_ContextMenuGroupTypes.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/UI/D_ContextMenuGroupTypes.json" Offset 2241823.
+[2026.04.04-18.20.23:622][  0]LogPakFile: Display: Extracted "UI/D_MapIcons.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/UI/D_MapIcons.json" Offset 2242323.
+[2026.04.04-18.20.23:623][  0]LogPakFile: Display: Extracted "UI/D_MapSearchArea.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/UI/D_MapSearchArea.json" Offset 2245950.
+[2026.04.04-18.20.23:623][  0]LogPakFile: Display: Extracted "UI/D_PlayerIdentity.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/UI/D_PlayerIdentity.json" Offset 2246551.
+[2026.04.04-18.20.23:624][  0]LogPakFile: Display: Extracted "UI/D_PreviewCameraSettings.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/UI/D_PreviewCameraSettings.json" Offset 2247010.
+[2026.04.04-18.20.23:625][  0]LogPakFile: Display: Extracted "UI/D_RecoveryBeacons.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/UI/D_RecoveryBeacons.json" Offset 2247992.
+[2026.04.04-18.20.23:626][  0]LogPakFile: Display: Extracted "UI/D_TimelineRanks.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/UI/D_TimelineRanks.json" Offset 2249201.
+[2026.04.04-18.20.23:627][  0]LogPakFile: Display: Extracted "ValidHits/D_ValidHitQueries.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/ValidHits/D_ValidHitQueries.json" Offset 2250324.
+[2026.04.04-18.20.23:627][  0]LogPakFile: Display: Extracted "ValidHits/D_ValidHitTypes.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/ValidHits/D_ValidHitTypes.json" Offset 2250914.
+[2026.04.04-18.20.23:628][  0]LogPakFile: Display: Extracted "ValidHits/D_ValidInteractQueries.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/ValidHits/D_ValidInteractQueries.json" Offset 2251188.
+[2026.04.04-18.20.23:629][  0]LogPakFile: Display: Extracted "Vehicles/D_VehicleSetups.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/Vehicles/D_VehicleSetups.json" Offset 2251733.
+[2026.04.04-18.20.23:631][  0]LogPakFile: Display: Extracted "Weather/D_ProspectForecast.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/Weather/D_ProspectForecast.json" Offset 2253904.
+[2026.04.04-18.20.23:634][  0]LogPakFile: Display: Extracted "Weather/D_WeatherActions.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/Weather/D_WeatherActions.json" Offset 2254709.
+[2026.04.04-18.20.23:635][  0]LogPakFile: Display: Extracted "Weather/D_WeatherBiomeGroups.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/Weather/D_WeatherBiomeGroups.json" Offset 2300160.
+[2026.04.04-18.20.23:636][  0]LogPakFile: Display: Extracted "Weather/D_WeatherEvents.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/Weather/D_WeatherEvents.json" Offset 2301315.
+[2026.04.04-18.20.23:638][  0]LogPakFile: Display: Extracted "Weather/D_WeatherPools.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/Weather/D_WeatherPools.json" Offset 2315062.
+[2026.04.04-18.20.23:638][  0]LogPakFile: Display: Extracted "Weather/D_WeatherTierIcon.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/Weather/D_WeatherTierIcon.json" Offset 2317544.
+[2026.04.04-18.20.23:639][  0]LogPakFile: Display: Extracted "World/D_BreakableRockData.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/World/D_BreakableRockData.json" Offset 2318126.
+[2026.04.04-18.20.23:640][  0]LogPakFile: Display: Extracted "World/D_DropGroups.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/World/D_DropGroups.json" Offset 2318747.
+[2026.04.04-18.20.23:641][  0]LogPakFile: Display: Extracted "World/D_FishSetup.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/World/D_FishSetup.json" Offset 2320086.
+[2026.04.04-18.20.23:642][  0]LogPakFile: Display: Extracted "World/D_OreDeposit.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/World/D_OreDeposit.json" Offset 2320930.
+[2026.04.04-18.20.23:642][  0]LogPakFile: Display: Extracted "World/D_Surfaces.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/World/D_Surfaces.json" Offset 2322705.
+[2026.04.04-18.20.23:643][  0]LogPakFile: Display: Extracted "World/D_VoxelDistributionRegion.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/World/D_VoxelDistributionRegion.json" Offset 2324503.
+[2026.04.04-18.20.23:644][  0]LogPakFile: Display: Extracted "World/D_VoxelMaterialMap.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/World/D_VoxelMaterialMap.json" Offset 2326765.
+[2026.04.04-18.20.23:645][  0]LogPakFile: Display: Extracted "World/D_VoxelSetupData.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/World/D_VoxelSetupData.json" Offset 2327701.
+[2026.04.04-18.20.23:645][  0]LogPakFile: Display: Extracted "World/D_WaterSetup.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/World/D_WaterSetup.json" Offset 2329014.
+[2026.04.04-18.20.23:647][  0]LogPakFile: Display: Extracted "World/D_WorldData.json" to "C:\Users\buttl\AppData\Local\Temp\icarus_data_vzd81zdm/World/D_WorldData.json" Offset 2330043.
+[2026.04.04-18.20.23:647][  0]LogPakFile: Finished extracting 287 (including 0 errors).
+[2026.04.04-18.20.23:648][  0]LogPakFile: Display: Unreal pak executed in 0.286531 seconds
+[2026.04.04-18.20.23:654][  0]LogCore: Engine exit requested (reason: UnrealPak Exiting)
+[2026.04.04-18.20.23:654][  0]LogExit: Preparing to exit.
+[2026.04.04-18.20.23:655][  0]LogModuleManager: Shutting down and abandoning module OodleDataCompressionFormat (6)
+[2026.04.04-18.20.23:655][  0]LogModuleManager: Shutting down and abandoning module PakFile (4)
+[2026.04.04-18.20.23:656][  0]LogModuleManager: Shutting down and abandoning module RSA (3)
+[2026.04.04-18.20.23:656][  0]LogExit: Exiting.
+[2026.04.04-18.20.23:665][  0]Log file closed, 04/04/26 20:20:23
