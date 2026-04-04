@@ -8295,6 +8295,42 @@
                 ],
                 "AutoDescription": " ALL( NPC.Vehicle )"
             }
+        },
+        {
+            "Name": "Any_Flamethrower",
+            "Query": {
+                "TagDictionary": [
+                    {
+                        "TagName": "Item.Weapon.Flamethrower"
+                    }
+                ],
+                "QueryTokenStream": [
+                    0,
+                    1,
+                    1,
+                    1,
+                    0
+                ],
+                "AutoDescription": " ANY( Item.Weapon.Flamethrower )"
+            }
+        },
+        {
+            "Name": "Any_Homestead",
+            "Query": {
+                "TagDictionary": [
+                    {
+                        "TagName": "Item.Decoration.Homestead"
+                    }
+                ],
+                "QueryTokenStream": [
+                    0,
+                    1,
+                    1,
+                    1,
+                    0
+                ],
+                "AutoDescription": " ANY( Item.Decoration.Homestead )"
+            }
         }
     ]
 }

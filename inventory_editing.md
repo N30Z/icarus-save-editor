@@ -1,25 +1,25 @@
 ---
-name: Inventory Editing — GD.json Deep Knowledge
-description: Everything learned about Icarus player inventory binary format, structure, and editing in GD.json
+name: Inventory Editing — savegame.json Deep Knowledge
+description: Everything learned about Icarus player inventory binary format, structure, and editing in savegame.json
 type: project
 ---
 
-# Inventory Editing — GD.json
+# Inventory Editing — savegame.json
 
 ## File Location
 
 ```
-GD.json   — prospect / session save (NOT the same as Mounts.json)
+savegame.json   — prospect / session save (NOT the same as Mounts.json)
 ```
 
-GD.json lives in a different directory from Mounts.json. The user picks any path; the CLI accepts it as a first argument.
+savegame.json lives in a different directory from Mounts.json. The user picks any path; the CLI accepts it as a first argument.
 
 ---
 
 ## Binary Decoding Chain
 
 ```
-GD.json
+savegame.json
   └─ ProspectBlob.BinaryBlob
        └─ base64 decode
             └─ zlib decompress
@@ -222,4 +222,4 @@ For the full item list, browse game PAK files or look up `ItemDTKey` row names.
 | `gd_inventory_editor.py` | `GdInventoryEditor` class — load / modify / save |
 | `gd_inventory_cli.py` | CLI: list, inventory, items, set, add, remove, clear, fill |
 
-Both files are fully independent from the mount editor and accept any GD.json path.
+Both files are fully independent from the mount editor and accept any savegame.json path.

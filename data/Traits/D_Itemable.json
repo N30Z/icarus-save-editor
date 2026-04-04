@@ -15707,7 +15707,7 @@
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Saddle_Cart_Plough-DisplayName\", \"Seeding Cart\")",
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/UseableItems/T_ITEM_Saddle_Cart_Plough.T_ITEM_Saddle_Cart_Plough",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Saddle_Cart_Plough-Description\", \"A cart which when stocked with seeds, dirt, and pulled by a Buffalo, Tusker, or Bull, will create mounds with planted seeds.\")",
-            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Saddle_Cart_Plough-FlavorText\", \"Can be pulled by a tamed Buffalo or Tusker.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Saddle_Cart_Plough-FlavorText\", \"Excellent for farming.\")",
             "Weight": 80000
         },
         {
@@ -15715,7 +15715,7 @@
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Saddle_Cart_Watering-DisplayName\", \"Watering Cart\")",
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/UseableItems/T_ITEM_Saddle_Cart_Water.T_ITEM_Saddle_Cart_Water",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Saddle_Cart_Watering-Description\", \"A cart which when stocked with water and pulled by a Buffalo, Tusker, or Bull, will water nearby crops.\")",
-            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Saddle_Cart_Watering-FlavorText\", \"Can be pulled by a tamed Buffalo or Tusker.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Saddle_Cart_Watering-FlavorText\", \"Excellent for farming.\")",
             "Weight": 80000
         },
         {
@@ -15723,7 +15723,7 @@
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Saddle_Cart_Harvesting-DisplayName\", \"Harvesting Cart\")",
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/UseableItems/T_ITEM_Saddle_Cart_Harvest.T_ITEM_Saddle_Cart_Harvest",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Saddle_Cart_Harvesting-Description\", \"A cart when pulled by a Buffalo, Tusker, or Bull, will attempt to harvest fully grown nearby plants.\")",
-            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Saddle_Cart_Harvesting-FlavorText\", \"Can be pulled by a tamed Buffalo or Tusker.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Saddle_Cart_Harvesting-FlavorText\", \"Excellent for farming.\")",
             "Weight": 80000
         },
         {
@@ -18613,6 +18613,7 @@
         {
             "Name": "Item_Cat_Boss_Lure",
             "DisplayName": "INVTEXT(\"[DNT] Cat Boss Lure\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Fishing/T_ITEM_Cat_Boss_Lure.T_ITEM_Cat_Boss_Lure",
             "Weight": 250
         },
         {
@@ -18879,7 +18880,7 @@
         },
         {
             "Name": "Item_Module_Hightlight",
-            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Module_Hightlight-DisplayName\", \"Highlight Module\")",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Module_Hightlight-DisplayName\", \"Projectile Highlight Module\")",
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Modules/T_ITEM_MODULE_ADV_Highlight.T_ITEM_MODULE_ADV_Highlight",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Module_Hightlight-Description\", \"A Module for highlighting any projectile\")",
             "Weight": 100
@@ -26995,7 +26996,7 @@
         },
         {
             "Name": "Item_Homestead_Flower_Pot_C",
-            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Homestead_Flower_Pot_C-DisplayName\", \"Flower Pot Round\")",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Homestead_Flower_Pot_C-DisplayName\", \"Flower Pot Round Large\")",
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Homestead_Flower_Pot_C_1.T_ITEM_Homestead_Flower_Pot_C_1",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Homestead_Flower_Pot_C-Description\", \"Can be filled with flowers to help decorate.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Homestead_Flower_Pot_C-FlavorText\", \"Home Sweet Home\")",

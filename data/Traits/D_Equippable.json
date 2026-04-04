@@ -806,7 +806,7 @@
             "Name": "Module_StaminaRegen",
             "EquippableModifier": "/Game/BP/Behaviours/Equippable/BP_EquippableModifier.BP_EquippableModifier_C",
             "GrantedStats": {
-                "(Value=\"BaseStaminaRegen_+%\")": 10
+                "(Value=\"BaseStaminaRegen_+%\")": 25
             },
             "bStackedModifiersGiveDiminishingReturns": true
         },

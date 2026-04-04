@@ -1,0 +1,3 @@
+Assets/2DArt/UI/Icons/FactionMissionTypes/icon-factionmission-recovery.icon-factionmission-recovery	Try "umodel -help" for more information.
+Assets/2DArt/UI/Icons/FactionMissionTypes/icon-factionmission-recoveryalt.icon-factionmission-recoveryalt	Try "umodel -help" for more information.
+Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Homestead_Shutter-2.T_ITEM_Homestead_Shutter-2	Try "umodel -help" for more information.

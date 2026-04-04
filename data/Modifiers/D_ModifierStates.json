@@ -5281,7 +5281,6 @@
             "AuraRange": 3500,
             "AuraFlags": {
                 "EffectsSelf": false,
-                "EffectsPlayers": false,
                 "EffectsNPCs": true
             },
             "ModifierGrantedByAura": {
@@ -5294,15 +5293,18 @@
         },
         {
             "Name": "AuraEffect_TamingSpeed",
-            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_Speed.Icon_Speed'",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_Right_Double.Icon_Right_Double'",
             "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"AuraEffect_TamingSpeed-ModifierName\", \"Aura Effect: Taming Speed Increase\")",
             "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"AuraEffect_TamingSpeed-ModifierDescription\", \"Being Tamed Faster\")",
-            "VisibleToPlayer": false,
             "GrantedStats": {
                 "(Value=\"BaseTamingSpeed_%\")": 25
             },
             "ShouldTick": true,
             "MergeType": "LongestDuration",
+            "EffectsCustomActor": {
+                "RowName": "Any_Juvenile"
+            },
+            "bEffectsNPCs": false,
             "bEffectsPlayers": false,
             "SaveToDatabase": false
         },
@@ -15891,7 +15893,7 @@
             "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"GrantedAura_InhibitSlinkerHunting-ModifierName\", \"Aura: Slinker Hunt Protection\")",
             "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"GrantedAura_InhibitSlinkerHunting-ModifierDescription\", \"Prevents Hostile Slinkers From Hunting Affected Targets\")",
             "bAura": true,
-            "AuraRange": 1,
+            "AuraRange": 3000,
             "AuraFlags": {
                 "EffectsNPCs": true,
                 "EffectsDeployables": true
@@ -15917,7 +15919,6 @@
             "AuraRange": 500,
             "Behaviour": "/Game/BP/Behaviours/Modifiers/BP_Modifier_Base.BP_Modifier_Base_C",
             "MergeType": "LongestDuration",
-            "bEffectsObjects": true,
             "SaveToDatabase": false
         },
         {

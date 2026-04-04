@@ -1648,6 +1648,7 @@
         {
             "Name": "Cat_Boss_Lure",
             "DisplayName": "INVTEXT(\"[DNT] Cat Boss Lure\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Fishing/T_ITEM_Cat_Boss_Lure.T_ITEM_Cat_Boss_Lure",
             "RankIcon": "/Game/Assets/2DArt/UI/Alterations/Icon_Alteration_2.Icon_Alteration_2",
             "Stats": {
                 "(Value=\"BaseChanceToCatchRareFish_+%\")": 200,
@@ -1675,6 +1676,7 @@
         {
             "Name": "Plough_Steel",
             "DisplayName": "NSLOCTEXT(\"D_Alterations\", \"Plough_Steel-DisplayName\", \"Dug with a Steel Plow\")",
+            "Icon": "/Game/Assets/2DArt/UI/Icons/T_Icon_Attachment_Plough.T_Icon_Attachment_Plough",
             "RankIcon": "/Game/Assets/2DArt/UI/Alterations/Icon_Alteration_1.Icon_Alteration_1",
             "Stats": {
                 "(Value=\"BaseCreatesCropPlotTier_+\")": 2,
@@ -1684,6 +1686,7 @@
         {
             "Name": "Plough_Platinum",
             "DisplayName": "NSLOCTEXT(\"D_Alterations\", \"Plough_Platinum-DisplayName\", \"Dug with a Platinum Plow\")",
+            "Icon": "/Game/Assets/2DArt/UI/Icons/T_Icon_Attachment_Plough.T_Icon_Attachment_Plough",
             "RankIcon": "/Game/Assets/2DArt/UI/Alterations/Icon_Alteration_2.Icon_Alteration_2",
             "Stats": {
                 "(Value=\"BasePlantedCropYield_+%\")": 10,
@@ -1693,6 +1696,7 @@
         {
             "Name": "Plough_Titanium",
             "DisplayName": "NSLOCTEXT(\"D_Alterations\", \"Plough_Titanium-DisplayName\", \"Dug with a Titanium Plow\")",
+            "Icon": "/Game/Assets/2DArt/UI/Icons/T_Icon_Attachment_Plough.T_Icon_Attachment_Plough",
             "RankIcon": "/Game/Assets/2DArt/UI/Alterations/Icon_Alteration_3.Icon_Alteration_3",
             "Stats": {
                 "(Value=\"BasePlantedCropYield_+%\")": 20,

@@ -7,7 +7,7 @@ from save_manager import get_save_dir
 
 
 class ProspectManager:
-    """Manages the currently-loaded GD.json path shared between tabs.
+    """Manages the currently-loaded savegame.json path shared between tabs.
 
     Both ProspectInventoryTab and CampaignTab hold a reference to the same
     instance.  When either tab loads a file (via dropdown or Browse), it

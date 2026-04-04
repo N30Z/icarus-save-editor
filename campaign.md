@@ -103,7 +103,7 @@ Completing campaign stages grants `AccountFlags` that unlock blueprints in the t
 | Rock Golem Module | `Rock_Golem_Module` | T4 / Alt Bench | `GrantedBlueprint_RG_Module` |
 | Quarrite Trophies | `Rock_Golem_Trophies` | T2 Crafting | `GrantedBlueprint_RG_Trophies` (level 20+) |
 
-Blueprint flags are stored per-player in **Profile.json**, not in GD.json.
+Blueprint flags are stored per-player in **Profile.json**, not in savegame.json.
 
 ---
 
@@ -120,7 +120,7 @@ Blueprint flags are stored per-player in **Profile.json**, not in GD.json.
 
 ---
 
-## Current Save State (GD.json)
+## Current Save State (savegame.json)
 
 **Prospect:** `Outpost006_Olympus` (Terrain_016), ~91 hours elapsed.
 **Completed:** Stage A (at ~81h) and Stage B (at ~82h).
@@ -141,13 +141,52 @@ C, D, C2, D2, E, F, Hunt, O1, O2 — **not unlocked** in this save.
 
 | Data | Location | Scope |
 |------|----------|-------|
-| WorldStat flags (which stages completed) | `WorldTalentManagerRecorderComponent` in GD.json | World/server |
-| Active quest blueprint | `IcarusQuestManagerRecorderComponent` in GD.json | World/server |
-| `bMissionComplete`, `CurrentMissionIndex` | `GameModeStateRecorderComponent.PlayerRewards[]` in GD.json | Per player (partial echo) |
-| Full per-player mission history log | `GameModeStateRecorderComponent.MissionHistory[]` in GD.json | Shared world log |
+| WorldStat flags (which stages completed) | `WorldTalentManagerRecorderComponent` in savegame.json | World/server |
+| Active quest blueprint | `IcarusQuestManagerRecorderComponent` in savegame.json | World/server |
+| `bMissionComplete`, `CurrentMissionIndex` | `GameModeStateRecorderComponent.PlayerRewards[]` in savegame.json | Per player (partial echo) |
+| Full mission history (campaign + regular) | `GameModeStateRecorderComponent.MissionHistory[]` in savegame.json | Shared world log |
 | Personal campaign progress, choice history | **Profile.json** per Steam ID | Per player |
 | Blueprint unlock flags (`GrantedBlueprint_RG_*`) | **Profile.json** per Steam ID | Per player |
 | Steam achievements | Steam / Profile.json | Per player |
+
+### WorldTalentManagerRecorderComponent — WorldTalentRecords
+
+Parsed via `CampaignEditor.get_active_talents()`. Stored as `StructProperty` array inside a
+`BinaryData` ArrayProperty. Deserialized with the generic `PropertySerializer`.
+
+**Key detail:** Row names in the binary are **ALL UPPERCASE** (e.g. `GH_APE_A`, `GH_APE_B`),
+whereas `D_GreatHunts.json` stores them as mixed-case (`GH_Ape_A`). Always compare
+case-insensitively (normalise both sides to `.upper()`).
+
+### GameModeStateRecorderComponent — MissionHistory
+
+The `MissionHistory` field stores completed missions for **all mission types** — both GH campaign
+stages and regular prospect missions (STYX_*, OLY_*, etc.).
+
+**Binary structure** — each array entry is a struct with three FPropertyTag fields:
+
+| Field | Type | Notes |
+|-------|------|-------|
+| `Mission` | StrProperty | Row name, e.g. `STYX_A_Expedition` (stored uppercase) |
+| `Status` | IntProperty | 1 = completed |
+| `MissionEndTime` | IntProperty | Elapsed game time at completion |
+
+**Parsing caveat:** The outer wrapper is a `GameModeRecord` StructProperty whose format is not
+handled by the generic `PropertySerializer`. Instead, `CampaignEditor.get_completed_missions()`
+uses a **byte-scan** approach: it locates the `BinaryData` slice for the component and directly
+searches for the `Mission\x00\x0c\x00\x00\x00StrProperty\x00` / `Status\x00\x0c\x00\x00\x00IntProperty\x00`
+tag patterns to extract row names with `Status > 0`.
+
+Example entries found in `GD Styx.json` (Gargantuan campaign, OpenWorld_Styx):
+
+```
+GH_APE_A          status=1   (campaign stage A)
+GH_APE_B          status=1   (campaign stage B)
+GH_APE_E          status=1   (campaign stage E)
+STYX_A_Expedition status=1   (regular prospect mission)
+STYX_E_Expedition status=1   (regular prospect mission)
+STYX_Open_World   status=1   (open-world session — filtered out by REGULAR_MISSION_GROUPS)
+```
 
 ---
 

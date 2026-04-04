@@ -301,6 +301,14 @@
             },
             "Icon": "Texture2D'/Game/Assets/2DArt/UI/Icons/MountTameIcons/ICON_Bed.ICON_Bed'",
             "Tooltip": "NSLOCTEXT(\"D_ItemClassificationsIcons\", \"Tame_Beds-Tooltip\", \"Tame Beds\")"
+        },
+        {
+            "Name": "Homestead",
+            "TagQuery": {
+                "RowName": "Any_Homestead"
+            },
+            "Icon": "Texture2D'/Game/Assets/2DArt/UI/Icons/T_Icon_Homestead.T_Icon_Homestead'",
+            "Tooltip": "NSLOCTEXT(\"D_ItemClassificationsIcons\", \"Homestead-Tooltip\", \"Homestead Decorations\")"
         }
     ]
 }
