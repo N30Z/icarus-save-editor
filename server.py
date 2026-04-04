@@ -4,7 +4,7 @@ Icarus Live Map — combined HTTP server + save parser.
 Start:  python server.py
 Opens:  http://localhost:8080
 
-GD.json is parsed on startup and re-parsed automatically whenever the file
+savegame.json is parsed on startup and re-parsed automatically whenever the file
 changes (mtime-based).  No separate parse step needed.
 Endpoint  GET /api/state  returns JSON with players, geysers, caves, deposits.
 All other paths are served as static files from the same directory.
@@ -19,7 +19,7 @@ import webbrowser
 import parse_players as pp
 
 PORT    = 8080
-GD_FILE = "GD.json"
+GD_FILE = "savegame.json"
 
 os.chdir(os.path.dirname(os.path.abspath(__file__)))
 
@@ -30,7 +30,7 @@ _cached = {"data": None, "mtime": 0.0, "version": 0}
 
 
 def _do_parse(path, mtime):
-    """Parse GD.json and update the cache.  Called while _parse_lock is held."""
+    """Parse savegame.json and update the cache.  Called while _parse_lock is held."""
     binary = pp.load_binary(path)
 
     blobs, _ = pp.parse_state_recorder_blobs(binary)
@@ -66,7 +66,7 @@ def _do_parse(path, mtime):
 
 
 def reparse_if_stale(path=GD_FILE):
-    """Check mtime and reparse if GD.json has changed since last parse."""
+    """Check mtime and reparse if savegame.json has changed since last parse."""
     try:
         mtime = os.path.getmtime(path)
     except OSError:

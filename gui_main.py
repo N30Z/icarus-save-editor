@@ -12,8 +12,8 @@ Tabs:
   - Workshop         : Workshop unlocks (Profile.json Talents)
   - Inventory        : MetaInventory items (repair, remove)
   - Mounts           : List / edit all mounts (name, level, type, skin, clone, delete)
-  - Prospect Inventory : In-session player inventory editor (GD.json, shared save)
-  - Campaign         : Rock Golem spawning controls (GD.json, shared save)
+  - Prospect Inventory : In-session player inventory editor (savegame.json, shared save)
+  - Campaign         : Rock Golem spawning controls (savegame.json, shared save)
   - Profile          : (merged into Character tab)
 
 Usage:
@@ -301,7 +301,7 @@ class IcarusEditorApp(ctk.CTk):
 
     def _browse_prospect(self):
         path = filedialog.askopenfilename(
-            title="Open GD.json (Prospect Save)",
+            title="Open savegame.json (Prospect Save)",
             filetypes=[("JSON Files", "*.json"), ("All Files", "*.*")],
         )
         if path and self._prospect_manager:

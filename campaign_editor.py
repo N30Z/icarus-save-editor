@@ -1,5 +1,5 @@
 """
-Campaign Editor for Icarus GD.json prospect saves.
+Campaign Editor for Icarus savegame.json prospect saves.
 
 Reads and modifies WorldTalentRecords and Rock Golem spawner actor blobs.
 
@@ -18,7 +18,7 @@ Option A — Delete spawner blobs (removes actor state entries entirely):
 Usage:
     from campaign_editor import CampaignEditor, CAMPAIGN_STAGES
 
-    editor = CampaignEditor('path/to/GD.json')
+    editor = CampaignEditor('path/to/savegame.json')
     editor.load()
     editor.set_option_b(True)
     editor.set_talent('GH_RG_B', False)
@@ -139,7 +139,7 @@ _C_VAL_OFFSET  = 58
 
 class CampaignEditor:
     """
-    Read and modify campaign-related data in a GD.json prospect save.
+    Read and modify campaign-related data in a savegame.json prospect save.
 
     Supports:
       Option A — Delete spawner actor blobs entirely
@@ -182,7 +182,7 @@ class CampaignEditor:
         d = self.binary
         pos = d.find(_WTML_COMPONENT)
         if pos == -1:
-            raise ValueError("WorldTalentManagerRecorderComponent not found in GD.json")
+            raise ValueError("WorldTalentManagerRecorderComponent not found in savegame.json")
 
         bd_name_pos = d.find(b'BinaryData\x00', pos, pos + 500)
         if bd_name_pos == -1:
@@ -431,7 +431,7 @@ class CampaignEditor:
 
     def save(self, backup: bool = True) -> None:
         """
-        Re-serialize WorldTalentRecords into BinaryData, compress, and write GD.json.
+        Re-serialize WorldTalentRecords into BinaryData, compress, and write savegame.json.
         Options A/B/C changes are applied directly to self.binary before this call
         via their respective set_* methods.
         """

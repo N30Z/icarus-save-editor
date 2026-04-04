@@ -12,7 +12,7 @@ A desktop GUI and CLI toolkit for editing [Icarus](https://store.steampowered.co
 - Manage workshop unlocks
 - Edit MetaInventory items
 - Transform, clone, level, and skin mounts
-- Browse and edit in-session player inventories (GD.json)
+- Browse and edit in-session player inventories (savegame.json)
 - Toggle campaign mission and prospect mission completion
 
 **Why I Made This** My woolly mammoth refused to fight in the desert. Just stood there,
@@ -57,7 +57,7 @@ The GUI auto-detects your Steam ID(s) and loads all save files on startup.
 ```
 
 - **Steam ID** — switch between accounts; all tabs reload automatically.
-- **Prospect save** — select a `GD.json` from your Prospects folder; updates both the
+- **Prospect save** — select a `savegame.json` from your Prospects folder; updates both the
   Prospect Inventory and Campaign tabs simultaneously.
 - **Save + Backup** — writes all modified files and creates timestamped backups.
 - **Save All** — writes without backup.
@@ -72,7 +72,7 @@ The GUI auto-detects your Steam ID(s) and loads all save files on startup.
 | **Workshop** | Workshop item unlocks (Profile.json Talents) |
 | **Inventory** | MetaInventory items (repair, remove) |
 | **Mounts** | List, edit, clone, delete mounts (name, level, type, skin) |
-| **Prospect Inventory** | Player inventory slots inside the loaded GD.json |
+| **Prospect Inventory** | Player inventory slots inside the loaded savegame.json |
 | **Campaign** | Campaign mission and prospect mission completion toggles |
 
 ### Campaign Tab
@@ -250,7 +250,7 @@ Stats: HP 1440, Stamina 373, Speed 805, Sprint 1518, Carry 220 kg.
 ├── Characters.json
 ├── MetaInventory.json
 └── Prospects\
-    └── {ProspectName}.json    ← GD.json prospect saves
+    └── {ProspectName}.json    ← savegame.json prospect saves
 ```
 
 On Windows this is `C:\Users\{Username}\AppData\Local\Icarus\Saved\`.
@@ -265,7 +265,7 @@ On Windows this is `C:\Users\{Username}\AppData\Local\Icarus\Saved\`.
 
 1. `SaveManager` loads Characters.json (double-wrapped), Profile.json, MetaInventory.json.
 2. Editor objects wrap the raw JSON and expose typed read/write methods.
-3. Prospect saves (GD.json) are loaded on-demand when selected in the top bar; a shared
+3. Prospect saves (savegame.json) are loaded on-demand when selected in the top bar; a shared
    `ProspectManager` notifies both the Prospect Inventory and Campaign tabs via callbacks.
 4. **Save All / Save + Backup** writes all modified files; backups use timestamps
    (`.backup_YYYYMMDD_HHMMSS.json`).

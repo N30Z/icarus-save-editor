@@ -16,7 +16,7 @@ character_editor.py       # CharacterEditor: XP, debt, account resources
 profile_editor.py         # ProfileEditor: workshop unlocks + meta-resources (Profile.json Talents)
 inventory_editor.py       # InventoryEditor: MetaInventory items
 campaign_data.py          # Campaign + prospect mission defs (D_GreatHunts + D_ProspectList)
-gd_inventory_editor.py    # GdInventoryEditor: player inventory inside a GD.json prospect save
+gd_inventory_editor.py    # GdInventoryEditor: player inventory inside a savegame.json prospect save
 game_items.py             # Item catalog for inventory tab
 
 mount_cli.py              # Legacy CLI interface
@@ -27,7 +27,7 @@ test_cli.py               # Test suite
 
 GUI/
   constants.py                  # Shared fonts (FONT_TITLE, FONT_NORMAL, FONT_SMALL, FONT_MONO, FONT_HEADER)
-  prospect_manager.py           # ProspectManager: shared GD.json state (observer pattern)
+  prospect_manager.py           # ProspectManager: shared savegame.json state (observer pattern)
   tab_character.py              # Character + Profile tab
   tab_techtree.py               # Tech Tree tab
   tab_talents.py                # Talents tab
@@ -75,7 +75,7 @@ manager.current_path        # last-loaded path
 The Campaign tab (`GUI/tab_campaign.py`) is a 50/50 vertical split:
 
 **Left panel — Campaign Missions**
-- Detects the active Great Hunt campaign from the loaded GD.json `ProspectDTKey`.
+- Detects the active Great Hunt campaign from the loaded savegame.json `ProspectDTKey`.
 - Shows a checklist of campaign missions with: display name, internal row_name, type
   badge (Standard / Choice / Optional / Final), conflict indicators, and a description.
 - Choice missions auto-uncheck their mutually-exclusive peers on toggle.
@@ -112,7 +112,7 @@ Regular missions excluded: `Outpost*`, `OpenWorld*`, `GreatHunt_*`, `GH_*`.
 1. **Load**: `SaveManager(steam_id).load_all()` reads Characters.json, Profile.json, MetaInventory.json.
 2. **Editors** created: `CharacterEditor`, `ProfileEditor`, `InventoryEditor`, `MountEditor`, `ProspectManager`.
 3. **Tabs** rebuilt: each tab receives the relevant editor(s) and renders current state.
-4. **Prospect save**: user selects GD.json via topbar dropdown or Browse; `ProspectManager.notify()`
+4. **Prospect save**: user selects savegame.json via topbar dropdown or Browse; `ProspectManager.notify()`
    fires `ProspectInventoryTab._on_manager_load()` and `CampaignTab._on_manager_load()`.
 5. **Save**: `SaveManager.save_all(backup=)` writes back JSON files; `MountEditor.save()` handles Mounts.json.
 
@@ -267,7 +267,7 @@ Workshop horses use A1/A2/A3 variants via `AISetupRowName` instead.
 ├── Characters.json          (double-wrapped JSON — outer shell is a JSON string)
 ├── MetaInventory.json
 └── Prospects\
-    └── {ProspectName}.json  (GD.json prospect saves)
+    └── {ProspectName}.json  (savegame.json prospect saves)
 ```
 
 ## Complete Schema

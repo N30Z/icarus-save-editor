@@ -3,7 +3,7 @@ Campaign mission definitions loaded from data/GreatHunt/D_GreatHunts.json.
 Regular prospect mission definitions loaded from data/Prospects/D_ProspectList.json.
 
 Provides the three Great Hunt campaigns, a helper to detect which campaign
-a GD.json prospect save belongs to, and grouped regular prospect missions.
+a savegame.json prospect save belongs to, and grouped regular prospect missions.
 """
 
 import json

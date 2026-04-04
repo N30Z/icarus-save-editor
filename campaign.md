@@ -103,7 +103,7 @@ Completing campaign stages grants `AccountFlags` that unlock blueprints in the t
 | Rock Golem Module | `Rock_Golem_Module` | T4 / Alt Bench | `GrantedBlueprint_RG_Module` |
 | Quarrite Trophies | `Rock_Golem_Trophies` | T2 Crafting | `GrantedBlueprint_RG_Trophies` (level 20+) |
 
-Blueprint flags are stored per-player in **Profile.json**, not in GD.json.
+Blueprint flags are stored per-player in **Profile.json**, not in savegame.json.
 
 ---
 
@@ -120,7 +120,7 @@ Blueprint flags are stored per-player in **Profile.json**, not in GD.json.
 
 ---
 
-## Current Save State (GD.json)
+## Current Save State (savegame.json)
 
 **Prospect:** `Outpost006_Olympus` (Terrain_016), ~91 hours elapsed.
 **Completed:** Stage A (at ~81h) and Stage B (at ~82h).
@@ -141,10 +141,10 @@ C, D, C2, D2, E, F, Hunt, O1, O2 — **not unlocked** in this save.
 
 | Data | Location | Scope |
 |------|----------|-------|
-| WorldStat flags (which stages completed) | `WorldTalentManagerRecorderComponent` in GD.json | World/server |
-| Active quest blueprint | `IcarusQuestManagerRecorderComponent` in GD.json | World/server |
-| `bMissionComplete`, `CurrentMissionIndex` | `GameModeStateRecorderComponent.PlayerRewards[]` in GD.json | Per player (partial echo) |
-| Full per-player mission history log | `GameModeStateRecorderComponent.MissionHistory[]` in GD.json | Shared world log |
+| WorldStat flags (which stages completed) | `WorldTalentManagerRecorderComponent` in savegame.json | World/server |
+| Active quest blueprint | `IcarusQuestManagerRecorderComponent` in savegame.json | World/server |
+| `bMissionComplete`, `CurrentMissionIndex` | `GameModeStateRecorderComponent.PlayerRewards[]` in savegame.json | Per player (partial echo) |
+| Full per-player mission history log | `GameModeStateRecorderComponent.MissionHistory[]` in savegame.json | Shared world log |
 | Personal campaign progress, choice history | **Profile.json** per Steam ID | Per player |
 | Blueprint unlock flags (`GrantedBlueprint_RG_*`) | **Profile.json** per Steam ID | Per player |
 | Steam achievements | Steam / Profile.json | Per player |

@@ -1,12 +1,12 @@
 #!/usr/bin/env python3
 """
-GD.json Inventory Editor — Command-Line Interface
+savegame.json Inventory Editor — Command-Line Interface
 
-An independent editor for player inventories stored in a GD.json prospect save.
-GD.json is located separately from Mounts.json and contains the full world state.
+An independent editor for player inventories stored in a savegame.json prospect save.
+savegame.json is located separately from Mounts.json and contains the full world state.
 
 Usage:
-    python gd_inventory_cli.py <GD.json> <command> [options]
+    python gd_inventory_cli.py <savegame.json> <command> [options]
 
 Commands:
     list                         List all players and their item counts
@@ -29,22 +29,22 @@ Commands:
 
 Examples:
     # List all players
-    python gd_inventory_cli.py GD.json list
+    python gd_inventory_cli.py savegame.json list
 
     # Show backpack items for a player
-    python gd_inventory_cli.py GD.json items 76561198116205199 3
+    python gd_inventory_cli.py savegame.json items 76561198116205199 3
 
     # Add 500 iron ingots to backpack slot 10
-    python gd_inventory_cli.py GD.json set 76561198116205199 3 10 Iron_Ingot 500
+    python gd_inventory_cli.py savegame.json set 76561198116205199 3 10 Iron_Ingot 500
 
     # Add item to first available slot
-    python gd_inventory_cli.py GD.json add 76561198116205199 3 Iron_Ingot 200
+    python gd_inventory_cli.py savegame.json add 76561198116205199 3 Iron_Ingot 200
 
     # Remove item from slot 10
-    python gd_inventory_cli.py GD.json remove 76561198116205199 3 10
+    python gd_inventory_cli.py savegame.json remove 76561198116205199 3 10
 
     # Clear the entire backpack
-    python gd_inventory_cli.py GD.json clear 76561198116205199 3
+    python gd_inventory_cli.py savegame.json clear 76561198116205199 3
 
 Inventory IDs:
     2  = Equipment / Hotbar
@@ -195,11 +195,11 @@ def cmd_fill(editor: GdInventoryEditor, args) -> None:
 def build_parser() -> argparse.ArgumentParser:
     p = argparse.ArgumentParser(
         prog='gd_inventory_cli.py',
-        description='Icarus GD.json inventory editor',
+        description='Icarus savegame.json inventory editor',
         formatter_class=argparse.RawDescriptionHelpFormatter,
         epilog=__doc__,
     )
-    p.add_argument('gd_file', help='Path to GD.json')
+    p.add_argument('gd_file', help='Path to savegame.json')
     p.add_argument('--no-backup', action='store_true',
                    help='Skip creating a .backup file before saving')
 

@@ -2,7 +2,7 @@
 
 Left panel
 ----------
-Detects the active campaign from the loaded GD.json (via ProspectManager) and
+Detects the active campaign from the loaded savegame.json (via ProspectManager) and
 shows a completion checklist.  Campaign detection relies on the ProspectDTKey
 stored inside the file.
 
@@ -220,7 +220,7 @@ class CampaignTab(ctk.CTkFrame):
             ctk.CTkLabel(
                 self._campaign_scroll,
                 text=(f"Could not determine campaign for prospect '{prospect_key}'.\n\n"
-                      "Only GD.json files for the three Great Hunt campaigns\n"
+                      "Only savegame.json files for the three Great Hunt campaigns\n"
                       "(Olympus / Styx / Prometheus) are supported."),
                 font=FONT_NORMAL, text_color="#e09b3d", justify="left",
             ).pack(padx=16, pady=16)

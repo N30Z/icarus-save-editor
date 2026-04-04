@@ -10,7 +10,7 @@ Tkinter. The root window is `IcarusEditorApp` in `gui_main.py`.
 | File | Class | Purpose |
 |------|-------|---------|
 | `constants.py` | — | Shared fonts, padding, sort helpers |
-| `prospect_manager.py` | `ProspectManager` | Shared GD.json state (observer pattern) |
+| `prospect_manager.py` | `ProspectManager` | Shared savegame.json state (observer pattern) |
 | `tab_catalog_base.py` | `_CatalogTab` | Abstract 3-panel catalog base (Tech Tree, Talents) |
 | `tab_character.py` | `CharacterTab` | Character stats + account resources |
 | `tab_techtree.py` | `TechTreeTab` | Blueprint / crafting unlock browser |
@@ -208,13 +208,13 @@ Apply calls the relevant `MountEditor` setters; changes are in-memory until
 **Constructor:** `ProspectInventoryTab(master, prospect_manager)`
 
 The most complex tab (~350 lines). Edits player inventories inside the active
-`GD.json` prospect save via `GdInventoryEditor`.
+`savegame.json` prospect save via `GdInventoryEditor`.
 
 **Registers with `ProspectManager`** → reloads when any component selects a new file.
 
 **Top bar:** Player selector → Inventory selector.
 
-**Action bar:** Add Item, Clear Inventory, Save GD.json, Save + Backup, Debug toggle,
+**Action bar:** Add Item, Clear Inventory, Save savegame.json, Save + Backup, Debug toggle,
 Export All, Import All.
 
 **Slot grid** (scrollable):
@@ -240,7 +240,7 @@ Enabled via the "Experimental / Debug" checkbox; affects all validation in
 - Searches both display name and RowName.
 - Single-click selection calls callback and closes popup.
 
-**Save flow:** "Save GD.json" and "Save + Backup" write only the prospect file;
+**Save flow:** "Save savegame.json" and "Save + Backup" write only the prospect file;
 they are independent of the main **Save All** in the top bar.
 
 ---
@@ -249,12 +249,12 @@ they are independent of the main **Save All** in the top bar.
 
 **Constructor:** `CampaignTab(master, prospect_manager, prof_editor)`
 
-**Registers with `ProspectManager`** → rebuilds left panel when a GD.json is loaded.
+**Registers with `ProspectManager`** → rebuilds left panel when a savegame.json is loaded.
 
 **Two-column layout (50/50):**
 
 *Left — Campaign Missions:*
-- Detects active campaign from `ProspectInfo.ProspectDTKey` in loaded GD.json.
+- Detects active campaign from `ProspectInfo.ProspectDTKey` in loaded savegame.json.
 - Renders missions from `campaign_data.CAMPAIGNS[id]['missions']`.
 - Each row: checkbox, display name, internal RowName (gray), type badge (coloured),
   conflict indicator (`⊗ X`), description (second line, dim gray).
@@ -312,7 +312,7 @@ after a steam ID change. Individual tabs handle their own partial refreshes inte
 
 ### Apply → Save All
 Tabs write to in-memory editor objects on Apply. Nothing is written to disk until
-**Save All** or **Save + Backup** in the top bar (or "Save GD.json" in
+**Save All** or **Save + Backup** in the top bar (or "Save savegame.json" in
 ProspectInventoryTab for the prospect save specifically).
 
 ### Status labels

@@ -125,7 +125,7 @@ class _ItemSearchPopup(ctk.CTkToplevel):
 
 
 class ProspectInventoryTab(ctk.CTkFrame):
-    """GUI tab for editing player inventories in a GD.json prospect save."""
+    """GUI tab for editing player inventories in a savegame.json prospect save."""
 
     def __init__(self, master, prospect_manager: ProspectManager, **kwargs):
         super().__init__(master, **kwargs)
@@ -182,7 +182,7 @@ class ProspectInventoryTab(ctk.CTkFrame):
         ctk.CTkButton(actions, text="Clear Inventory", width=120,
                       fg_color="#c0392b", hover_color="#962d22",
                       command=self._clear_inventory).grid(row=0, column=1, padx=4)
-        ctk.CTkButton(actions, text="Save GD.json", width=110,
+        ctk.CTkButton(actions, text="Save savegame.json", width=110,
                       fg_color="#1a6a1a", hover_color="#228b22",
                       command=self._save_gd).grid(row=0, column=2, padx=4)
         ctk.CTkButton(actions, text="Save + Backup", width=120,
@@ -262,7 +262,7 @@ class ProspectInventoryTab(ctk.CTkFrame):
                 text=f"Loaded {len(players)} player(s)", text_color="#3bba6b")
 
         except Exception as e:
-            messagebox.showerror("Load Error", f"Failed to load GD.json:\n{e}")
+            messagebox.showerror("Load Error", f"Failed to load savegame.json:\n{e}")
 
     def _on_player_change(self, value: str):
         self._current_steam_id = value
@@ -308,7 +308,7 @@ class ProspectInventoryTab(ctk.CTkFrame):
         self._items.clear()
 
         if not self._gd_editor or not self._current_steam_id or self._current_inv_id is None:
-            ctk.CTkLabel(self._grid_frame, text="Select a GD.json file, player, and inventory.",
+            ctk.CTkLabel(self._grid_frame, text="Select a savegame.json file, player, and inventory.",
                          font=FONT_NORMAL, text_color="gray").grid(padx=16, pady=16)
             return
 
@@ -1122,7 +1122,7 @@ class ProspectInventoryTab(ctk.CTkFrame):
                 self._current_steam_id, data, merge=merge)
             mode_str = "merged" if merge else "replaced"
             self._status_label.configure(
-                text=f"Imported {n} item(s) across all inventories ({mode_str}). Save GD.json to persist.",
+                text=f"Imported {n} item(s) across all inventories ({mode_str}). Save savegame.json to persist.",
                 text_color="#3bba6b")
             self._render_slots()
         except Exception as e:
@@ -1136,7 +1136,7 @@ class ProspectInventoryTab(ctk.CTkFrame):
             return
         try:
             self._gd_editor.save(backup=False)
-            self._status_label.configure(text="Saved GD.json", text_color="#3bba6b")
+            self._status_label.configure(text="Saved savegame.json", text_color="#3bba6b")
         except Exception as e:
             messagebox.showerror("Save Error", str(e))
 
@@ -1146,7 +1146,7 @@ class ProspectInventoryTab(ctk.CTkFrame):
             return
         try:
             self._gd_editor.save(backup=True)
-            self._status_label.configure(text="Saved GD.json (with backup)",
+            self._status_label.configure(text="Saved savegame.json (with backup)",
                                           text_color="#3bba6b")
         except Exception as e:
             messagebox.showerror("Save Error", str(e))
