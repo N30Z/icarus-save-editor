@@ -135,10 +135,13 @@ class ProspectInventoryTab(ctk.CTkFrame):
         self._gd_editor: Optional[GdInventoryEditor] = None
         self._catalog: Dict[str, ItemInfo] = {}
         self._current_steam_id: Optional[str] = None
+        self._current_char_slot: int = 0
         self._current_inv_id: Optional[int] = None
         self._items: List[dict] = []       # items from get_items()
         self._slot_widgets: list = []      # slot frame widgets for the grid
         self._selected_slot_idx: Optional[int] = None  # index into _items
+        # Maps player dropdown label → (steam_id, char_slot)
+        self._player_map: Dict[str, tuple] = {}
 
         self._build()
 
@@ -252,10 +255,19 @@ class ProspectInventoryTab(ctk.CTkFrame):
                                               text_color="#e09b3d")
                 return
 
-            player_ids = [p['steam_id'] for p in players]
-            self._player_menu.configure(values=player_ids)
-            self._player_var.set(player_ids[0])
-            self._current_steam_id = player_ids[0]
+            # Build labels: include Slot number so multiple chars of the same
+            # player are shown distinctly.
+            self._player_map = {}
+            for p in players:
+                label = f"{p['steam_id']} [Slot {p['char_slot']}]"
+                self._player_map[label] = (p['steam_id'], p['char_slot'])
+
+            player_labels = list(self._player_map.keys())
+            self._player_menu.configure(values=player_labels)
+            self._player_var.set(player_labels[0])
+            first = self._player_map[player_labels[0]]
+            self._current_steam_id = first[0]
+            self._current_char_slot = first[1]
             self._populate_inventories()
 
             self._status_label.configure(
@@ -265,13 +277,15 @@ class ProspectInventoryTab(ctk.CTkFrame):
             messagebox.showerror("Load Error", f"Failed to load savegame.json:\n{e}")
 
     def _on_player_change(self, value: str):
-        self._current_steam_id = value
+        entry = self._player_map.get(value)
+        if entry:
+            self._current_steam_id, self._current_char_slot = entry
         self._populate_inventories()
 
     def _populate_inventories(self):
         if not self._gd_editor or not self._current_steam_id:
             return
-        invs = self._gd_editor.get_inventories(self._current_steam_id)
+        invs = self._gd_editor.get_inventories(self._current_steam_id, char_slot=self._current_char_slot)
         if not invs:
             self._inv_menu.configure(values=["–"])
             self._inv_var.set("–")
@@ -312,7 +326,7 @@ class ProspectInventoryTab(ctk.CTkFrame):
                          font=FONT_NORMAL, text_color="gray").grid(padx=16, pady=16)
             return
 
-        items = self._gd_editor.get_items(self._current_steam_id, self._current_inv_id)
+        items = self._gd_editor.get_items(self._current_steam_id, self._current_inv_id, char_slot=self._current_char_slot)
         self._items = sorted(items, key=lambda x: x['location'] or 0)
 
         max_slots = _INV_SLOT_COUNTS.get(self._current_inv_id, 24)
@@ -719,7 +733,8 @@ class ProspectInventoryTab(ctk.CTkFrame):
             return
         self._gd_editor.update_living_item(
             self._current_steam_id, self._current_inv_id,
-            slot_idx, sub_loc, count=count)
+            slot_idx, sub_loc, count=count,
+            char_slot=self._current_char_slot)
         self._status_label.configure(
             text=f"Slot {slot_idx} [{sub_loc}]: count = {count}", text_color="#3bba6b")
 
@@ -736,7 +751,8 @@ class ProspectInventoryTab(ctk.CTkFrame):
             return
         self._gd_editor.update_living_item(
             self._current_steam_id, self._current_inv_id,
-            slot_idx, sub_loc, durability=dur)
+            slot_idx, sub_loc, durability=dur,
+            char_slot=self._current_char_slot)
         self._status_label.configure(
             text=f"Slot {slot_idx} [{sub_loc}]: durability = {dur}", text_color="#3bba6b")
 
@@ -746,7 +762,8 @@ class ProspectInventoryTab(ctk.CTkFrame):
         dur = self._DEBUG_DUR_LIMIT if self._debug_mode else max_dur
         self._gd_editor.update_living_item(
             self._current_steam_id, self._current_inv_id,
-            slot_idx, sub_loc, durability=dur)
+            slot_idx, sub_loc, durability=dur,
+            char_slot=self._current_char_slot)
         self._status_label.configure(
             text=f"Slot {slot_idx} [{sub_loc}]: durability set to max ({dur})",
             text_color="#3bba6b")
@@ -860,7 +877,8 @@ class ProspectInventoryTab(ctk.CTkFrame):
         self._gd_editor.set_item(
             self._current_steam_id, self._current_inv_id, slot_idx,
             item['item'], count=item.get('count') or 1,
-            durability=item.get('durability'), fill_amount=fill)
+            durability=item.get('durability'), fill_amount=fill,
+            char_slot=self._current_char_slot)
         self._status_label.configure(
             text=f"Slot {slot_idx}: fill = {fill}", text_color="#3bba6b")
 
@@ -874,7 +892,8 @@ class ProspectInventoryTab(ctk.CTkFrame):
         self._gd_editor.set_item(
             self._current_steam_id, self._current_inv_id, slot_idx,
             item['item'], count=item.get('count') or 1,
-            durability=item.get('durability'), fill_amount=max_fill)
+            durability=item.get('durability'), fill_amount=max_fill,
+            char_slot=self._current_char_slot)
         self._status_label.configure(
             text=f"Slot {slot_idx}: fill = max ({max_fill})", text_color="#3bba6b")
         self._render_slots()
@@ -899,7 +918,8 @@ class ProspectInventoryTab(ctk.CTkFrame):
 
         self._gd_editor.set_item(
             self._current_steam_id, self._current_inv_id, slot_idx,
-            item_name, count=count, durability=dur)
+            item_name, count=count, durability=dur,
+            char_slot=self._current_char_slot)
         self._status_label.configure(
             text=f"Changed slot {slot_idx} to {item_name}", text_color="#3bba6b")
         self._render_slots()
@@ -922,7 +942,8 @@ class ProspectInventoryTab(ctk.CTkFrame):
 
         self._gd_editor.set_item(
             self._current_steam_id, self._current_inv_id, slot_idx,
-            item_name, count=count, durability=dur)
+            item_name, count=count, durability=dur,
+            char_slot=self._current_char_slot)
         self._status_label.configure(
             text=f"Set slot {slot_idx} to {item_name}", text_color="#3bba6b")
         self._render_slots()
@@ -958,7 +979,8 @@ class ProspectInventoryTab(ctk.CTkFrame):
         dur = item.get('durability')
         self._gd_editor.set_item(
             self._current_steam_id, self._current_inv_id, slot_idx,
-            item['item'], count=count, durability=dur)
+            item['item'], count=count, durability=dur,
+            char_slot=self._current_char_slot)
         self._status_label.configure(
             text=f"Slot {slot_idx}: count = {count}", text_color="#3bba6b")
 
@@ -992,7 +1014,8 @@ class ProspectInventoryTab(ctk.CTkFrame):
         count = item.get('count') or 1
         self._gd_editor.set_item(
             self._current_steam_id, self._current_inv_id, slot_idx,
-            item['item'], count=count, durability=dur)
+            item['item'], count=count, durability=dur,
+            char_slot=self._current_char_slot)
         self._status_label.configure(
             text=f"Slot {slot_idx}: durability = {dur}", text_color="#3bba6b")
 
@@ -1008,7 +1031,8 @@ class ProspectInventoryTab(ctk.CTkFrame):
         count = item.get('count') or 1
         self._gd_editor.set_item(
             self._current_steam_id, self._current_inv_id, slot_idx,
-            item['item'], count=count, durability=max_dur)
+            item['item'], count=count, durability=max_dur,
+            char_slot=self._current_char_slot)
         self._status_label.configure(
             text=f"Slot {slot_idx}: durability set to max ({max_dur})", text_color="#3bba6b")
         self._render_slots()
@@ -1017,7 +1041,8 @@ class ProspectInventoryTab(ctk.CTkFrame):
         """Remove item from a slot."""
         if not self._gd_editor or not self._current_steam_id or self._current_inv_id is None:
             return
-        self._gd_editor.remove_item(self._current_steam_id, self._current_inv_id, slot_idx)
+        self._gd_editor.remove_item(self._current_steam_id, self._current_inv_id, slot_idx,
+                                    char_slot=self._current_char_slot)
         self._status_label.configure(
             text=f"Removed item from slot {slot_idx}", text_color="#e09b3d")
         self._render_slots()
@@ -1031,7 +1056,7 @@ class ProspectInventoryTab(ctk.CTkFrame):
             return
 
         # Find first free slot
-        items = self._gd_editor.get_items(self._current_steam_id, self._current_inv_id)
+        items = self._gd_editor.get_items(self._current_steam_id, self._current_inv_id, char_slot=self._current_char_slot)
         used = {it['location'] for it in items}
         max_slots = _INV_SLOT_COUNTS.get(self._current_inv_id, 24)
         free_slot = None
@@ -1055,7 +1080,8 @@ class ProspectInventoryTab(ctk.CTkFrame):
         if not messagebox.askyesno("Clear Inventory",
                 f"Remove ALL items from {INVENTORY_NAMES.get(self._current_inv_id, 'this inventory')}?"):
             return
-        n = self._gd_editor.clear_inventory(self._current_steam_id, self._current_inv_id)
+        n = self._gd_editor.clear_inventory(self._current_steam_id, self._current_inv_id,
+                                            char_slot=self._current_char_slot)
         self._status_label.configure(text=f"Cleared {n} items.", text_color="#e09b3d")
         self._render_slots()
 
@@ -1074,7 +1100,8 @@ class ProspectInventoryTab(ctk.CTkFrame):
         if not path:
             return
         try:
-            data = self._gd_editor.export_all_inventories(self._current_steam_id)
+            data = self._gd_editor.export_all_inventories(self._current_steam_id,
+                                                          char_slot=self._current_char_slot)
             with open(path, 'w', encoding='utf-8') as f:
                 json.dump(data, f, indent=2, ensure_ascii=False)
             total = sum(len(inv['items']) for inv in data['inventories'])
