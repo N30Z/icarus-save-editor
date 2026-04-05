@@ -125,7 +125,7 @@ class _ItemSearchPopup(ctk.CTkToplevel):
 
 
 class ProspectInventoryTab(ctk.CTkFrame):
-    """GUI tab for editing player inventories in a GD.json prospect save."""
+    """GUI tab for editing player inventories in a savegame.json prospect save."""
 
     def __init__(self, master, prospect_manager: ProspectManager, **kwargs):
         super().__init__(master, **kwargs)
@@ -141,52 +141,36 @@ class ProspectInventoryTab(ctk.CTkFrame):
         self._selected_slot_idx: Optional[int] = None  # index into _items
 
         self._build()
-        self._refresh_prospect_list()
 
     def _build(self):
         self.columnconfigure(0, weight=1)
         self.rowconfigure(2, weight=1)
 
-        # ── Top bar: prospect selector + player/inventory selectors ──
+        # ── Top bar: player/inventory selectors ──
         top = ctk.CTkFrame(self, fg_color="transparent")
         top.grid(row=0, column=0, sticky="ew", padx=8, pady=(8, 4))
-        top.columnconfigure(4, weight=1)
+        top.columnconfigure(3, weight=1)
 
         ctk.CTkLabel(top, text="Prospect Inventory", font=FONT_TITLE).grid(
             row=0, column=0, sticky="w", padx=(0, 12))
 
-        # Prospect file dropdown
-        self._prospect_var = ctk.StringVar(value="– select save –")
-        self._prospect_menu = ctk.CTkOptionMenu(
-            top, variable=self._prospect_var,
-            values=["– select save –"], font=FONT_SMALL,
-            command=self._on_prospect_change, width=220)
-        self._prospect_menu.grid(row=0, column=1, padx=4)
-
-        ctk.CTkButton(top, text="Browse…", width=80,
-                      command=self._browse_file).grid(row=0, column=2, padx=4)
-
-        self._file_label = ctk.CTkLabel(top, text="No file loaded", font=FONT_SMALL,
-                                         text_color="gray")
-        self._file_label.grid(row=0, column=3, padx=8)
-
         # Player selector
         ctk.CTkLabel(top, text="Player:", font=FONT_NORMAL).grid(
-            row=0, column=5, padx=(16, 4))
+            row=0, column=1, padx=(16, 4))
         self._player_var = ctk.StringVar(value="–")
         self._player_menu = ctk.CTkOptionMenu(top, variable=self._player_var,
                                                values=["–"], font=FONT_SMALL,
                                                command=self._on_player_change, width=180)
-        self._player_menu.grid(row=0, column=6, padx=4)
+        self._player_menu.grid(row=0, column=2, padx=4)
 
         # Inventory selector
         ctk.CTkLabel(top, text="Inventory:", font=FONT_NORMAL).grid(
-            row=0, column=7, padx=(12, 4))
+            row=0, column=4, padx=(12, 4))
         self._inv_var = ctk.StringVar(value="–")
         self._inv_menu = ctk.CTkOptionMenu(top, variable=self._inv_var,
                                             values=["–"], font=FONT_SMALL,
                                             command=self._on_inv_change, width=180)
-        self._inv_menu.grid(row=0, column=8, padx=4)
+        self._inv_menu.grid(row=0, column=5, padx=4)
 
         # ── Action bar ──
         actions = ctk.CTkFrame(self, fg_color="transparent")
@@ -198,7 +182,7 @@ class ProspectInventoryTab(ctk.CTkFrame):
         ctk.CTkButton(actions, text="Clear Inventory", width=120,
                       fg_color="#c0392b", hover_color="#962d22",
                       command=self._clear_inventory).grid(row=0, column=1, padx=4)
-        ctk.CTkButton(actions, text="Save GD.json", width=110,
+        ctk.CTkButton(actions, text="Save savegame.json", width=110,
                       fg_color="#1a6a1a", hover_color="#228b22",
                       command=self._save_gd).grid(row=0, column=2, padx=4)
         ctk.CTkButton(actions, text="Save + Backup", width=120,
@@ -245,35 +229,6 @@ class ProspectInventoryTab(ctk.CTkFrame):
             text_color="#e09b3d" if self._debug_mode else "gray")
         self._render_slots()
 
-    # ── Prospect list helpers ──────────────────────────────────────────
-
-    def _refresh_prospect_list(self):
-        """Populate the prospect dropdown from the Prospects folder."""
-        prospects = self._manager.list_prospects()
-        if prospects:
-            self._prospect_menu.configure(values=prospects)
-            # If manager already has a loaded path, reflect it
-            if self._manager.current_path:
-                from pathlib import Path
-                self._prospect_var.set(Path(self._manager.current_path).name)
-        else:
-            self._prospect_menu.configure(values=["– no saves found –"])
-            self._prospect_var.set("– no saves found –")
-
-    def _on_prospect_change(self, filename: str):
-        if filename.startswith("–"):
-            return
-        path = self._manager.get_prospect_path(filename)
-        self._manager.notify(path)
-
-    def _browse_file(self):
-        path = filedialog.askopenfilename(
-            title="Open GD.json (Prospect Save)",
-            filetypes=[("JSON Files", "*.json"), ("All Files", "*.*")],
-        )
-        if path:
-            self._manager.notify(path)
-
     def _on_manager_load(self, path: str):
         """Called by ProspectManager when any tab loads a file."""
         self._load_gd(path)
@@ -289,19 +244,6 @@ class ProspectInventoryTab(ctk.CTkFrame):
             # Load item catalog (lazy)
             if not self._catalog:
                 self._catalog = get_catalog()
-
-            # Sync dropdown to loaded filename (handles Browse case)
-            from pathlib import Path as _Path
-            fname = _Path(path).name
-            known = self._prospect_menu.cget("values")
-            if fname in known:
-                self._prospect_var.set(fname)
-
-            # Truncate display path
-            display_path = path
-            if len(display_path) > 60:
-                display_path = "…" + display_path[-57:]
-            self._file_label.configure(text=display_path)
 
             # Populate player selector
             players = editor.list_players()
@@ -320,7 +262,7 @@ class ProspectInventoryTab(ctk.CTkFrame):
                 text=f"Loaded {len(players)} player(s)", text_color="#3bba6b")
 
         except Exception as e:
-            messagebox.showerror("Load Error", f"Failed to load GD.json:\n{e}")
+            messagebox.showerror("Load Error", f"Failed to load savegame.json:\n{e}")
 
     def _on_player_change(self, value: str):
         self._current_steam_id = value
@@ -366,7 +308,7 @@ class ProspectInventoryTab(ctk.CTkFrame):
         self._items.clear()
 
         if not self._gd_editor or not self._current_steam_id or self._current_inv_id is None:
-            ctk.CTkLabel(self._grid_frame, text="Select a GD.json file, player, and inventory.",
+            ctk.CTkLabel(self._grid_frame, text="Select a savegame.json file, player, and inventory.",
                          font=FONT_NORMAL, text_color="gray").grid(padx=16, pady=16)
             return
 
@@ -1180,7 +1122,7 @@ class ProspectInventoryTab(ctk.CTkFrame):
                 self._current_steam_id, data, merge=merge)
             mode_str = "merged" if merge else "replaced"
             self._status_label.configure(
-                text=f"Imported {n} item(s) across all inventories ({mode_str}). Save GD.json to persist.",
+                text=f"Imported {n} item(s) across all inventories ({mode_str}). Save savegame.json to persist.",
                 text_color="#3bba6b")
             self._render_slots()
         except Exception as e:
@@ -1194,7 +1136,7 @@ class ProspectInventoryTab(ctk.CTkFrame):
             return
         try:
             self._gd_editor.save(backup=False)
-            self._status_label.configure(text="Saved GD.json", text_color="#3bba6b")
+            self._status_label.configure(text="Saved savegame.json", text_color="#3bba6b")
         except Exception as e:
             messagebox.showerror("Save Error", str(e))
 
@@ -1204,7 +1146,7 @@ class ProspectInventoryTab(ctk.CTkFrame):
             return
         try:
             self._gd_editor.save(backup=True)
-            self._status_label.configure(text="Saved GD.json (with backup)",
+            self._status_label.configure(text="Saved savegame.json (with backup)",
                                           text_color="#3bba6b")
         except Exception as e:
             messagebox.showerror("Save Error", str(e))

@@ -13,7 +13,7 @@ import zlib
 import struct
 import sys
 
-INPUT_FILE  = "GD.json"
+INPUT_FILE  = "savegame.json"
 OUT_ALL     = "savegame.json"
 OUT_PLAYERS = "players.json"
 
@@ -730,7 +730,7 @@ def extract_players_compat(binary):
 # ---------------------------------------------------------------------------
 
 def load_binary(path=None):
-    """Decompress the ProspectBlob from GD.json and return raw bytes."""
+    """Decompress the ProspectBlob from savegame.json and return raw bytes."""
     if path is None:
         path = INPUT_FILE
     with open(path, "r", encoding="utf-8") as f:

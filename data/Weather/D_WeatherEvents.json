@@ -9725,6 +9725,62 @@
                     "TriggerTime": 90
                 }
             ]
+        },
+        {
+            "Name": "Cosmetic_Radiation",
+            "Difficulty": "Heavy",
+            "DurationSeconds": 340,
+            "DurationMinutes": 6,
+            "BiomeGroups": [],
+            "WeatherName": "NSLOCTEXT(\"D_WeatherEvents\", \"Cosmetic_Radiation-WeatherName\", \"Radiation\")",
+            "WeatherActions": [
+                {
+                    "Action": {
+                        "RowName": "CosmeticRadiation_Start",
+                        "DataTableName": "D_WeatherActions"
+                    },
+                    "TimeInSeconds": 90
+                },
+                {
+                    "Action": {
+                        "RowName": "CosmeticRadiation_Body",
+                        "DataTableName": "D_WeatherActions"
+                    },
+                    "TimeInSeconds": 180
+                },
+                {
+                    "Action": {
+                        "RowName": "CosmeticRadiation_Stop",
+                        "DataTableName": "D_WeatherActions"
+                    },
+                    "TimeInSeconds": 60
+                },
+                {
+                    "Action": {
+                        "RowName": "GenericStormEnd",
+                        "DataTableName": "D_WeatherActions"
+                    },
+                    "TimeInSeconds": 10
+                }
+            ],
+            "MusicCues": [
+                {
+                    "MusicCondition": "Storm_Ramp",
+                    "TriggerTime": 0
+                },
+                {
+                    "MusicCondition": "Storm_Damage",
+                    "TriggerTime": 3
+                },
+                {
+                    "MusicCondition": "Storm_Chaos",
+                    "TriggerTime": 70
+                },
+                {
+                    "MusicCondition": "Normal",
+                    "TriggerTime": 340
+                }
+            ]
         }
     ]
 }

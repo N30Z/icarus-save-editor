@@ -12,8 +12,8 @@ Tabs:
   - Workshop         : Workshop unlocks (Profile.json Talents)
   - Inventory        : MetaInventory items (repair, remove)
   - Mounts           : List / edit all mounts (name, level, type, skin, clone, delete)
-  - Prospect Inventory : In-session player inventory editor (GD.json, shared save)
-  - Campaign         : Rock Golem spawning controls (GD.json, shared save)
+  - Prospect Inventory : In-session player inventory editor (savegame.json, shared save)
+  - Campaign         : Rock Golem spawning controls (savegame.json, shared save)
   - Profile          : (merged into Character tab)
 
 Usage:
@@ -22,6 +22,10 @@ Usage:
 
 from tkinter import messagebox
 from typing import Optional
+import tkinter as tk
+from pathlib import Path
+from tkinter import filedialog
+
 import customtkinter as ctk
 
 from save_manager import SaveManager, find_steam_ids
@@ -97,6 +101,21 @@ class IcarusEditorApp(ctk.CTk):
                                              command=self._on_steam_change, width=160)
         self.steam_menu.pack(side="left", padx=8, pady=8)
 
+        # Separator
+        ctk.CTkLabel(top, text="|", text_color="#444", font=FONT_SMALL).pack(
+            side="left", padx=2)
+
+        # Prospect save selector (shared by Prospect Inventory + Campaign tabs)
+        self._prospect_var = tk.StringVar(value="– select save –")
+        self._prospect_menu = ctk.CTkOptionMenu(
+            top, variable=self._prospect_var,
+            values=["– select save –"], font=FONT_SMALL,
+            command=self._on_prospect_change, width=200)
+        self._prospect_menu.pack(side="left", padx=4, pady=8)
+
+        ctk.CTkButton(top, text="Browse…", width=72,
+                      command=self._browse_prospect).pack(side="left", padx=2, pady=8)
+
         ctk.CTkButton(top, text="Save All", width=90, command=self._save_all).pack(
             side="right", padx=8, pady=8)
         ctk.CTkButton(top, text="Save + Backup", width=120,
@@ -161,6 +180,7 @@ class IcarusEditorApp(ctk.CTk):
 
             # Shared prospect save manager (Prospects subfolder)
             self._prospect_manager = ProspectManager(steam_id)
+            self._refresh_prospect_menu()
 
             self._build_tabs()
             self._refresh_all()
@@ -254,6 +274,42 @@ class IcarusEditorApp(ctk.CTk):
             prospect_manager=self._prospect_manager,
             prof_editor=self._prof_editor)
         self._campaign_tab.grid(row=0, column=0, sticky="nsew")
+
+    # ------------------------------------------------------------------
+    # Prospect save (topbar)
+    # ------------------------------------------------------------------
+
+    def _refresh_prospect_menu(self):
+        if not self._prospect_manager:
+            return
+        prospects = self._prospect_manager.list_prospects()
+        if prospects:
+            self._prospect_menu.configure(values=prospects)
+            if self._prospect_manager.current_path:
+                self._prospect_var.set(Path(self._prospect_manager.current_path).name)
+            else:
+                self._prospect_var.set(prospects[0])
+        else:
+            self._prospect_menu.configure(values=["– no saves found –"])
+            self._prospect_var.set("– no saves found –")
+
+    def _on_prospect_change(self, filename: str):
+        if filename.startswith("–") or not self._prospect_manager:
+            return
+        path = self._prospect_manager.get_prospect_path(filename)
+        self._prospect_manager.notify(path)
+
+    def _browse_prospect(self):
+        path = filedialog.askopenfilename(
+            title="Open savegame.json (Prospect Save)",
+            filetypes=[("JSON Files", "*.json"), ("All Files", "*.*")],
+        )
+        if path and self._prospect_manager:
+            self._prospect_manager.notify(path)
+            fname = Path(path).name
+            known = self._prospect_menu.cget("values")
+            if fname in known:
+                self._prospect_var.set(fname)
 
     def _on_char_change(self):
         """Called when Character tab changes the selected character."""

@@ -91,10 +91,11 @@
             "Name": "Snow_Wolf",
             "CreatureName": "NSLOCTEXT(\"D_BestiaryData\", \"Snow_Wolf-CreatureName\", \"Snow Wolf\")",
             "Image": "/Game/Assets/2DArt/UI/FieldGuide/Creatures/Arctic/T_Bestiary_Snow_Wolf_Small.T_Bestiary_Snow_Wolf_Small",
-            "PopupImageScale": 2.5,
+            "PopupImageScale": 1.5,
             "PopupImageOffset": {
                 "X": -10
             },
+            "BiomeImageType": "Small",
             "CreatureSound": "/Game/FMOD/Events/UI/Bestiary/CREATURES/UI_BESTIARY_CRE_WOLF.UI_BESTIARY_CRE_WOLF",
             "Biomes": [
                 {
@@ -215,6 +216,7 @@
             "CreatureName": "NSLOCTEXT(\"D_BestiaryData\", \"Bear-CreatureName\", \"Bear\")",
             "Image": "/Game/Assets/2DArt/UI/FieldGuide/Creatures/Conifer/T_Bestiary_Bear.T_Bestiary_Bear",
             "PopupImageScale": 1.25,
+            "BiomeImageType": "Large",
             "CreatureSound": "/Game/FMOD/Events/UI/Bestiary/CREATURES/UI_BESTIARY_CRE_BEAR.UI_BESTIARY_CRE_BEAR",
             "Biomes": [
                 {
@@ -335,7 +337,6 @@
             "PopupImageOffset": {
                 "Y": -5
             },
-            "BiomeImageType": "Large",
             "CreatureSound": "/Game/FMOD/Events/UI/Bestiary/CREATURES/UI_BESTIARY_CRE_DEER_ELEPHANT.UI_BESTIARY_CRE_DEER_ELEPHANT",
             "Biomes": [
                 {
@@ -459,6 +460,7 @@
             "PopupImageOffset": {
                 "Y": -5
             },
+            "BiomeImageType": "Large",
             "CreatureSound": "/Game/FMOD/Events/UI/Bestiary/CREATURES/UI_BESTIARY_CRE_POLAR_BEAR.UI_BESTIARY_CRE_POLAR_BEAR",
             "Biomes": [
                 {
@@ -659,6 +661,7 @@
             "CreatureName": "NSLOCTEXT(\"D_BestiaryData\", \"Desert_Deer-CreatureName\", \"Antelope\")",
             "Image": "/Game/Assets/2DArt/UI/FieldGuide/Creatures/Desert/T_Bestiary_DeerDesert.T_Bestiary_DeerDesert",
             "PopupImageScale": 1.25,
+            "BiomeImageType": "Small",
             "CreatureSound": "/Game/FMOD/Events/UI/Bestiary/CREATURES/UI_BESTIARY_CRE_DEER_DESERT.UI_BESTIARY_CRE_DEER_DESERT",
             "Biomes": [
                 {
@@ -721,6 +724,7 @@
             "PopupImageOffset": {
                 "Y": -30
             },
+            "BiomeImageType": "Small",
             "CreatureSound": "/Game/FMOD/Events/UI/Bestiary/CREATURES/UI_BESTIARY_CRE_COUGAR.UI_BESTIARY_CRE_COUGAR",
             "Biomes": [
                 {
@@ -783,6 +787,7 @@
             "PopupImageOffset": {
                 "X": -5
             },
+            "BiomeImageType": "Large",
             "CreatureSound": "/Game/FMOD/Events/UI/Bestiary/CREATURES/UI_BESTIARY_CRE_MAMMOTH.UI_BESTIARY_CRE_MAMMOTH",
             "Biomes": [
                 {
@@ -920,9 +925,6 @@
             "CreatureName": "NSLOCTEXT(\"D_BestiaryData\", \"Pronghorn-CreatureName\", \"Pronghorn\")",
             "Image": "/Game/Assets/2DArt/UI/FieldGuide/Creatures/Desert/T_Bestiary_Pronghorn.T_Bestiary_Pronghorn",
             "PopupImageScale": 1.3300000429153442,
-            "PopupImageOffset": {
-                "Y": 10
-            },
             "CreatureSound": "/Game/FMOD/Events/UI/Bestiary/CREATURES/UI_BESTIARY_CRE_PRONGHORN.UI_BESTIARY_CRE_PRONGHORN",
             "Biomes": [
                 {
@@ -973,10 +975,9 @@
             "Name": "Snow_Leopard",
             "CreatureName": "NSLOCTEXT(\"D_BestiaryData\", \"Snow_Leopard-CreatureName\", \"Snow Leopard\")",
             "Image": "/Game/Assets/2DArt/UI/FieldGuide/Creatures/Arctic/T_Bestiary_SnowLeopard.T_Bestiary_SnowLeopard",
-            "PopupImageScale": 2,
+            "PopupImageScale": 1.5,
             "PopupImageOffset": {
-                "X": -10,
-                "Y": 15
+                "X": -10
             },
             "CreatureSound": "/Game/FMOD/Events/UI/Bestiary/CREATURES/UI_BESTIARY_CRE_SNOW_LEOPARD.UI_BESTIARY_CRE_SNOW_LEOPARD",
             "Biomes": [
@@ -1048,6 +1049,7 @@
             "PopupImageOffset": {
                 "Y": -10
             },
+            "BiomeImageType": "Small",
             "CreatureSound": "/Game/FMOD/Events/UI/Bestiary/CREATURES/UI_BESTIARY_CRE_RABBIT.UI_BESTIARY_CRE_RABBIT",
             "Biomes": [
                 {
@@ -1118,6 +1120,7 @@
             "PopupImageOffset": {
                 "Y": -30
             },
+            "BiomeImageType": "Small",
             "CreatureSound": "/Game/FMOD/Events/UI/Bestiary/CREATURES/UI_BESTIARY_CRE_HYENA.UI_BESTIARY_CRE_HYENA",
             "Biomes": [
                 {
@@ -1184,6 +1187,7 @@
             "PopupImageOffset": {
                 "Y": -10
             },
+            "BiomeImageType": "Large",
             "CreatureSound": "/Game/FMOD/Events/UI/Bestiary/CREATURES/UI_BESTIARY_CRE_BUFFALO.UI_BESTIARY_CRE_BUFFALO",
             "Biomes": [
                 {
@@ -1254,6 +1258,7 @@
             "PopupImageOffset": {
                 "Y": -15
             },
+            "BiomeImageType": "Small",
             "CreatureSound": "/Game/FMOD/Events/UI/Bestiary/CREATURES/UI_BESTIARY_CRE_BOAR.UI_BESTIARY_CRE_BOAR",
             "Biomes": [
                 {
@@ -1333,6 +1338,7 @@
                 "X": -5,
                 "Y": -20
             },
+            "BiomeImageType": "Small",
             "CreatureSound": "/Game/FMOD/Events/UI/Bestiary/CREATURES/UI_BESTIARY_CRE_ZEBRA.UI_BESTIARY_CRE_ZEBRA",
             "Biomes": [
                 {
@@ -1395,6 +1401,7 @@
             "PopupImageOffset": {
                 "Y": 20
             },
+            "BiomeImageType": "Small",
             "CreatureSound": "/Game/FMOD/Events/UI/Bestiary/CREATURES/UI_BESTIARY_CRE_KEA.UI_BESTIARY_CRE_KEA",
             "Biomes": [
                 {
@@ -2021,6 +2028,7 @@
             "PopupImageOffset": {
                 "Y": 5
             },
+            "BiomeImageType": "Large",
             "CreatureSound": "/Game/FMOD/Events/UI/Bestiary/CREATURES/UI_BESTIARY_CRE_SANDWORM.UI_BESTIARY_CRE_SANDWORM",
             "Biomes": [
                 {
@@ -2301,6 +2309,7 @@
             "CreatureName": "NSLOCTEXT(\"D_BestiaryData\", \"BatDog-CreatureName\", \"Drac\")",
             "Image": "/Game/Assets/2DArt/UI/FieldGuide/Creatures/Grasslands/T_Bestiary_BatDog.T_Bestiary_BatDog",
             "PopupImageScale": 1.75,
+            "BiomeImageType": "Small",
             "CreatureSound": "/Game/FMOD/Events/UI/Bestiary/CREATURES/UI_BESTIARY_CRE_BATDOG.UI_BESTIARY_CRE_BATDOG",
             "Biomes": [
                 {
@@ -2439,10 +2448,9 @@
             "Name": "Predator_Bird",
             "CreatureName": "NSLOCTEXT(\"D_BestiaryData\", \"Predator_Bird-CreatureName\", \"Dreadwing\")",
             "Image": "/Game/Assets/2DArt/UI/FieldGuide/Creatures/Swamp/T_Bestiary_PredatorBird.T_Bestiary_PredatorBird",
-            "PopupImageScale": 1.75,
+            "PopupImageScale": 1.2999999523162842,
             "PopupImageOffset": {
-                "X": -10,
-                "Y": 30
+                "X": -10
             },
             "CreatureSound": "/Game/FMOD/Events/UI/Bestiary/CREATURES/UI_BESTIARY_CRE_PREDATOR_BIRD.UI_BESTIARY_CRE_PREDATOR_BIRD",
             "Biomes": [
@@ -2641,6 +2649,7 @@
             "PopupImageOffset": {
                 "X": -5
             },
+            "BiomeImageType": "Small",
             "CreatureSound": "/Game/FMOD/Events/UI/Bestiary/CREATURES/UI_BESTIARY_CRE_SWAMP_QUAD.UI_BESTIARY_CRE_SWAMP_QUAD",
             "Biomes": [
                 {
@@ -2769,6 +2778,7 @@
             "CreatureName": "NSLOCTEXT(\"D_BestiaryData\", \"Chamios_Variant-CreatureName\", \"Chala\")",
             "Image": "/Game/Assets/2DArt/UI/FieldGuide/Creatures/Swamp/T_Bestiary_ChamoisVar.T_Bestiary_ChamoisVar",
             "PopupImageScale": 1.5,
+            "BiomeImageType": "Small",
             "CreatureSound": "/Game/FMOD/Events/UI/Bestiary/CREATURES/UI_BESTIARY_CRE_CHAMOIS.UI_BESTIARY_CRE_CHAMOIS",
             "Biomes": [
                 {
@@ -2973,10 +2983,7 @@
             "Name": "Snow_Striker",
             "CreatureName": "NSLOCTEXT(\"D_BestiaryData\", \"Snow_Striker-CreatureName\", \"Snow Stalker\")",
             "Image": "/Game/Assets/2DArt/UI/FieldGuide/Creatures/Arctic/T_Bestiary_SnowStriker.T_Bestiary_SnowStriker",
-            "PopupImageScale": 2,
-            "PopupImageOffset": {
-                "Y": -30
-            },
+            "PopupImageScale": 1.5,
             "CreatureSound": "/Game/FMOD/Events/UI/Bestiary/CREATURES/UI_BESTIARY_CRE_STRIKER.UI_BESTIARY_CRE_STRIKER",
             "Biomes": [
                 {
@@ -3203,6 +3210,7 @@
             "CreatureName": "NSLOCTEXT(\"D_BestiaryData\", \"Wooly_Zebra-CreatureName\", \"Shaggy Zebra\")",
             "Image": "/Game/Assets/2DArt/UI/FieldGuide/Creatures/Arctic/T_Bestiary_WoolyZebra.T_Bestiary_WoolyZebra",
             "PopupImageScale": 1.3300000429153442,
+            "BiomeImageType": "Large",
             "CreatureSound": "/Game/FMOD/Events/UI/Bestiary/CREATURES/UI_BESTIARY_CRE_WOOLY_ZEBRA.UI_BESTIARY_CRE_WOOLY_ZEBRA",
             "Biomes": [
                 {
@@ -3269,11 +3277,12 @@
         {
             "Name": "Roat",
             "CreatureName": "NSLOCTEXT(\"D_BestiaryData\", \"Roat-CreatureName\", \"Roat\")",
-            "Image": "/Game/Assets/2DArt/UI/FieldGuide/Creatures/Grasslands/T_Bestiary_Roat.T_Bestiary_Roat",
+            "Image": "/Game/Assets/2DArt/UI/FieldGuide/Creatures/Swamp/T_Bestiary_Roat_Swamp.T_Bestiary_Roat_Swamp",
             "PopupImageScale": 1.75,
             "PopupImageOffset": {
                 "Y": -10
             },
+            "BiomeImageType": "Small",
             "CreatureSound": "/Game/FMOD/Events/UI/Bestiary/CREATURES/UI_BESTIARY_CRE_ROAT.UI_BESTIARY_CRE_ROAT",
             "Biomes": [
                 {
@@ -3535,6 +3544,7 @@
             "PopupImageOffset": {
                 "Y": -10
             },
+            "BiomeImageType": "Small",
             "CreatureSound": "/Game/FMOD/Events/UI/Bestiary/CREATURES/UI_BESTIARY_CRE_KOMODO.UI_BESTIARY_CRE_KOMODO",
             "Biomes": [
                 {
@@ -3656,8 +3666,8 @@
         {
             "Name": "Rabbit_Variant",
             "CreatureName": "NSLOCTEXT(\"D_BestiaryData\", \"Rabbit_Variant-CreatureName\", \"Pygmy Lop\")",
-            "Image": "/Game/Assets/2DArt/UI/FieldGuide/Creatures/Conifer/T_Bestiary_Rabbit.T_Bestiary_Rabbit",
-            "PopupImageScale": 2.5,
+            "Image": "/Game/Assets/2DArt/UI/FieldGuide/Creatures/Grasslands/T_Bestiary_PygmyLop.T_Bestiary_PygmyLop",
+            "PopupImageScale": 2,
             "PopupImageOffset": {
                 "Y": -10
             },
@@ -3796,6 +3806,7 @@
             "CreatureName": "NSLOCTEXT(\"D_BestiaryData\", \"Tusker-CreatureName\", \"Tusker\")",
             "Image": "/Game/Assets/2DArt/UI/FieldGuide/Creatures/Arctic/T_Bestiary_Tusker.T_Bestiary_Tusker",
             "PopupImageScale": 1.5,
+            "BiomeImageType": "Large",
             "CreatureSound": "/Game/FMOD/Events/UI/Bestiary/CREATURES/UI_BESTIARY_CRE_TUSK.UI_BESTIARY_CRE_TUSK",
             "Biomes": [
                 {
@@ -3914,7 +3925,6 @@
             "CreatureName": "NSLOCTEXT(\"D_BestiaryData\", \"Bee-CreatureName\", \"Bee\")",
             "Image": "/Game/Assets/2DArt/UI/FieldGuide/Creatures/Conifer/T_Bestiary_Bees.T_Bestiary_Bees",
             "PopupImageScale": 1.25,
-            "BiomeImageType": "Small",
             "CreatureSound": "/Game/FMOD/Events/UI/Bestiary/CREATURES/UI_BESTIARY_CRE_BEES.UI_BESTIARY_CRE_BEES",
             "Biomes": [
                 {
@@ -4066,6 +4076,7 @@
                 "X": -10,
                 "Y": -5
             },
+            "BiomeImageType": "Small",
             "CreatureSound": "/Game/FMOD/Events/UI/Bestiary/CREATURES/UI_BESTIARY_CRE_MINIHIPPO.UI_BESTIARY_CRE_MINIHIPPO",
             "Biomes": [
                 {
@@ -4127,7 +4138,7 @@
             "Name": "Sheep",
             "CreatureName": "NSLOCTEXT(\"D_BestiaryData\", \"Sheep-CreatureName\", \"Sheep\")",
             "Image": "/Game/Assets/2DArt/UI/FieldGuide/Creatures/Workshop/T_Bestiary_Sheep.T_Bestiary_Sheep",
-            "PopupImageScale": 1.75,
+            "PopupImageScale": 1.2000000476837158,
             "CreatureSound": "/Game/FMOD/Events/UI/Bestiary/CREATURES/UI_BESTIARY_CRE_SHEEP.UI_BESTIARY_CRE_SHEEP",
             "Biomes": [
                 {
@@ -4564,6 +4575,7 @@
             "PopupImageOffset": {
                 "Y": -5
             },
+            "BiomeImageType": "Large",
             "CreatureSound": "/Game/FMOD/Events/UI/Bestiary/CREATURES/UI_BESTIARY_CRE_MOA.UI_BESTIARY_CRE_MOA",
             "Biomes": [
                 {
@@ -5044,7 +5056,8 @@
             "Name": "Mange_Wolf",
             "CreatureName": "NSLOCTEXT(\"D_BestiaryData\", \"Mange_Wolf-CreatureName\", \"Skulmutt\")",
             "Image": "/Game/Assets/2DArt/UI/FieldGuide/Creatures/Radiation/T_Bestiary_Sculmutt.T_Bestiary_Sculmutt",
-            "PopupImageScale": 2.75,
+            "PopupImageScale": 1.2000000476837158,
+            "BiomeImageType": "Small",
             "CreatureSound": "/Game/FMOD/Events/UI/Bestiary/CREATURES/UI_BESTIARY_CRE_MANGEWOLF.UI_BESTIARY_CRE_MANGEWOLF",
             "Biomes": [
                 {
@@ -5634,7 +5647,7 @@
             "Name": "Slinker",
             "CreatureName": "NSLOCTEXT(\"D_BestiaryData\", \"Slinker-CreatureName\", \"Slinker\")",
             "Image": "/Game/Assets/2DArt/UI/FieldGuide/Creatures/Tundra/T_Bestiary_Slinker.T_Bestiary_Slinker",
-            "PopupImageScale": 1.5,
+            "PopupImageScale": 1.2999999523162842,
             "CreatureSound": "/Game/FMOD/Events/UI/Bestiary/CREATURES/UI_BESTIARY_CRE_SLINKER.UI_BESTIARY_CRE_SLINKER",
             "Biomes": [
                 {
@@ -5947,6 +5960,7 @@
             "PopupImageOffset": {
                 "Y": -10
             },
+            "BiomeImageType": "Small",
             "CreatureSound": "/Game/FMOD/Events/UI/Bestiary/CREATURES/UI_BESTIARY_CRE_RAPTOR.UI_BESTIARY_CRE_RAPTOR",
             "Biomes": [
                 {
@@ -6009,7 +6023,7 @@
         {
             "Name": "Stomper",
             "CreatureName": "NSLOCTEXT(\"D_BestiaryData\", \"Stomper-CreatureName\", \"Stomper\")",
-            "Image": "/Game/Assets/2DArt/UI/FieldGuide/Creatures/Volcanic/T_Bestiary_Stomper.T_Bestiary_Stomper",
+            "Image": "/Game/Assets/2DArt/UI/FieldGuide/Creatures/Volcanic/T_Bestiary_Stompers.T_Bestiary_Stompers",
             "PopupImageScale": 1.350000023841858,
             "BiomeImageType": "Large",
             "CreatureSound": "/Game/FMOD/Events/UI/Bestiary/CREATURES/UI_BESTIARY_CRE_STOMPER.UI_BESTIARY_CRE_STOMPER",
@@ -6205,6 +6219,7 @@
             "CreatureName": "NSLOCTEXT(\"D_BestiaryData\", \"DragonFly-CreatureName\", \"Venomfly\")",
             "Image": "/Game/Assets/2DArt/UI/FieldGuide/Creatures/Swamp/T_Bestiary_Dragonfly.T_Bestiary_Dragonfly",
             "PopupImageScale": 1.5,
+            "BiomeImageType": "Small",
             "CreatureSound": "/Game/FMOD/Events/UI/Bestiary/CREATURES/UI_BESTIARY_CRE_DRAGONFLY.UI_BESTIARY_CRE_DRAGONFLY",
             "Biomes": [
                 {
@@ -6264,7 +6279,8 @@
             "Name": "Flying_Tank",
             "CreatureName": "NSLOCTEXT(\"D_BestiaryData\", \"Flying_Tank-CreatureName\", \"Ravager\")",
             "Image": "/Game/Assets/2DArt/UI/FieldGuide/Creatures/Volcanic/T_Bestiary_FlyingTank.T_Bestiary_FlyingTank",
-            "PopupImageScale": 1.25,
+            "PopupImageScale": 1.2000000476837158,
+            "BiomeImageType": "Large",
             "CreatureSound": "/Game/FMOD/Events/UI/Bestiary/CREATURES/UI_BESTIARY_CRE_FLYINGTANK.UI_BESTIARY_CRE_FLYINGTANK",
             "Biomes": [
                 {
@@ -6590,6 +6606,7 @@
             "PopupImageOffset": {
                 "X": -10
             },
+            "BiomeImageType": "Large",
             "CreatureSound": "/Game/FMOD/Events/UI/Bestiary/CREATURES/UI_BESTIARY_CRE_ABOMINATION.UI_BESTIARY_CRE_ABOMINATION",
             "Biomes": [
                 {

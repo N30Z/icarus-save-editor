@@ -13219,7 +13219,7 @@
                 "RowName": "Workshop_Modules"
             },
             "Position": {
-                "X": 1500,
+                "X": 1350,
                 "Y": 500
             },
             "Size": {
@@ -13244,7 +13244,7 @@
                 "RowName": "Workshop_Modules"
             },
             "Position": {
-                "X": 2000,
+                "X": 1950,
                 "Y": 500
             },
             "Size": {
@@ -17287,7 +17287,7 @@
                 "RowName": "Workshop_Modules"
             },
             "Position": {
-                "X": 3500,
+                "X": 3950,
                 "Y": 500
             },
             "Size": {
@@ -18039,7 +18039,7 @@
                 "RowName": "Workshop_Modules"
             },
             "Position": {
-                "X": 3250,
+                "X": 3550,
                 "Y": 1100
             },
             "Size": {
@@ -18064,7 +18064,7 @@
                 "RowName": "Workshop_Modules"
             },
             "Position": {
-                "X": 3650,
+                "X": 3900,
                 "Y": 1100
             },
             "Size": {
@@ -20397,7 +20397,7 @@
                 "RowName": "Workshop_Modules"
             },
             "Position": {
-                "X": 2500,
+                "X": 2550,
                 "Y": 500
             },
             "Size": {
@@ -20422,7 +20422,7 @@
                 "RowName": "Workshop_Modules"
             },
             "Position": {
-                "X": 3000,
+                "X": 3250,
                 "Y": 500
             },
             "Size": {
@@ -21191,7 +21191,7 @@
                 "RowName": "Workshop_Modules"
             },
             "Position": {
-                "X": 3650,
+                "X": 3900,
                 "Y": 1450
             },
             "Size": {
@@ -28345,7 +28345,7 @@
                 "RowName": "Workshop_Modules"
             },
             "Position": {
-                "X": 4000,
+                "X": 4450,
                 "Y": 500
             },
             "Size": {
@@ -28354,7 +28354,7 @@
             },
             "RequiredTalents": [
                 {
-                    "RowName": "Workshop_Module_Reroute",
+                    "RowName": "Workshop_Module_Movement",
                     "DataTableName": "D_Talents"
                 }
             ],
@@ -28375,7 +28375,7 @@
                 "RowName": "Workshop_Modules"
             },
             "Position": {
-                "X": 5500,
+                "X": 5450,
                 "Y": 1100
             },
             "Size": {
@@ -28384,7 +28384,7 @@
             },
             "RequiredTalents": [
                 {
-                    "RowName": "Workshop_Module_Reroute",
+                    "RowName": "Workshop_Module_Movement",
                     "DataTableName": "D_Talents"
                 }
             ],
@@ -28405,7 +28405,7 @@
                 "RowName": "Workshop_Modules"
             },
             "Position": {
-                "X": 4500,
+                "X": 4950,
                 "Y": 500
             },
             "Size": {
@@ -28414,7 +28414,7 @@
             },
             "RequiredTalents": [
                 {
-                    "RowName": "Workshop_Module_Reroute",
+                    "RowName": "Workshop_Module_Movement",
                     "DataTableName": "D_Talents"
                 }
             ],
@@ -28435,7 +28435,7 @@
                 "RowName": "Workshop_Modules"
             },
             "Position": {
-                "X": 4500,
+                "X": 4650,
                 "Y": 1100
             },
             "Size": {
@@ -28444,7 +28444,7 @@
             },
             "RequiredTalents": [
                 {
-                    "RowName": "Workshop_Module_Reroute",
+                    "RowName": "Workshop_Module_Movement",
                     "DataTableName": "D_Talents"
                 }
             ],
@@ -28465,7 +28465,7 @@
                 "RowName": "Workshop_Modules"
             },
             "Position": {
-                "X": 5000,
+                "X": 5300,
                 "Y": 500
             },
             "Size": {
@@ -28474,7 +28474,7 @@
             },
             "RequiredTalents": [
                 {
-                    "RowName": "Workshop_Module_Reroute",
+                    "RowName": "Workshop_Module_Movement",
                     "DataTableName": "D_Talents"
                 }
             ],
@@ -28495,7 +28495,7 @@
                 "RowName": "Workshop_Modules"
             },
             "Position": {
-                "X": 5000,
+                "X": 5050,
                 "Y": 1100
             },
             "Size": {
@@ -28504,7 +28504,7 @@
             },
             "RequiredTalents": [
                 {
-                    "RowName": "Workshop_Module_Reroute",
+                    "RowName": "Workshop_Module_Movement",
                     "DataTableName": "D_Talents"
                 }
             ],
@@ -28514,30 +28514,6 @@
                     "RowName": "NewFrontiers"
                 }
             }
-        },
-        {
-            "Name": "Workshop_Module_Reroute",
-            "TalentType": "Reroute",
-            "TalentTree": {
-                "RowName": "Workshop_Modules"
-            },
-            "Position": {
-                "X": 5000,
-                "Y": 800
-            },
-            "Size": {
-                "X": 0,
-                "Y": 0
-            },
-            "Rewards": [],
-            "RequiredTalents": [
-                {
-                    "RowName": "Workshop_Module_Movement",
-                    "DataTableName": "D_Talents"
-                }
-            ],
-            "bDefaultUnlocked": true,
-            "DrawMethodOverride": "XThenY"
         },
         {
             "Name": "Workshop_Heated_Canteen_Larkwell",
@@ -53486,13 +53462,103 @@
             }
         },
         {
+            "Name": "Workshop_Module_Food",
+            "ExtraData": {
+                "RowName": "Meta_Module_Food",
+                "DataTableName": "D_WorkshopItems"
+            },
+            "TalentTree": {
+                "RowName": "Workshop_Modules"
+            },
+            "Position": {
+                "X": 1950,
+                "Y": 150
+            },
+            "Size": {
+                "X": 250,
+                "Y": 250
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Workshop_Module_ConsumptionReroute",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "DrawMethodOverride": "XThenY",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Workshop_Module_Oxygen",
+            "ExtraData": {
+                "RowName": "Meta_Module_Oxygen",
+                "DataTableName": "D_WorkshopItems"
+            },
+            "TalentTree": {
+                "RowName": "Workshop_Modules"
+            },
+            "Position": {
+                "X": 1600,
+                "Y": 150
+            },
+            "Size": {
+                "X": 250,
+                "Y": 250
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Workshop_Module_ConsumptionReroute",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "DrawMethodOverride": "XThenY",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Workshop_Module_Water",
+            "ExtraData": {
+                "RowName": "Meta_Module_Water",
+                "DataTableName": "D_WorkshopItems"
+            },
+            "TalentTree": {
+                "RowName": "Workshop_Modules"
+            },
+            "Position": {
+                "X": 2300,
+                "Y": 150
+            },
+            "Size": {
+                "X": 250,
+                "Y": 250
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Workshop_Module_ConsumptionReroute",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "DrawMethodOverride": "XThenY",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
             "Name": "Workshop_Module_ConsumptionReroute",
             "TalentType": "Reroute",
             "TalentTree": {
                 "RowName": "Workshop_Modules"
             },
             "Position": {
-                "X": 2000,
+                "X": 1950,
                 "Y": 300
             },
             "Size": {
@@ -53508,6 +53574,276 @@
             ],
             "bDefaultUnlocked": true,
             "DrawMethodOverride": "XThenY"
+        },
+        {
+            "Name": "Workshop_Module_TamedDamage",
+            "ExtraData": {
+                "RowName": "Meta_Module_TamedDamage",
+                "DataTableName": "D_WorkshopItems"
+            },
+            "TalentTree": {
+                "RowName": "Workshop_Modules"
+            },
+            "Position": {
+                "X": 5050,
+                "Y": 1450
+            },
+            "Size": {
+                "X": 250,
+                "Y": 250
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Workshop_Module_Taming",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "DrawMethodOverride": "XThenY",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Workshop_Module_Melee",
+            "ExtraData": {
+                "RowName": "Meta_Module_Melee",
+                "DataTableName": "D_WorkshopItems"
+            },
+            "TalentTree": {
+                "RowName": "Workshop_Modules"
+            },
+            "Position": {
+                "X": 3600,
+                "Y": 500
+            },
+            "Size": {
+                "X": 250,
+                "Y": 250
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Workshop_Module_Movement",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "DrawMethodOverride": "XThenY",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Workshop_Module_HeatResist",
+            "ExtraData": {
+                "RowName": "Meta_Module_HeatResist",
+                "DataTableName": "D_WorkshopItems"
+            },
+            "TalentTree": {
+                "RowName": "Workshop_Modules"
+            },
+            "Position": {
+                "X": 4200,
+                "Y": 150
+            },
+            "Size": {
+                "X": 250,
+                "Y": 250
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Workshop_Module_Temp",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "DrawMethodOverride": "YThenX",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Workshop_Module_ColdResist",
+            "ExtraData": {
+                "RowName": "Meta_Module_ColdResist",
+                "DataTableName": "D_WorkshopItems"
+            },
+            "TalentTree": {
+                "RowName": "Workshop_Modules"
+            },
+            "Position": {
+                "X": 4700,
+                "Y": 150
+            },
+            "Size": {
+                "X": 250,
+                "Y": 250
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Workshop_Module_Temp",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "DrawMethodOverride": "YThenX",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Workshop_Module_ExposureResist",
+            "ExtraData": {
+                "RowName": "Meta_Module_ExposureResist",
+                "DataTableName": "D_WorkshopItems"
+            },
+            "TalentTree": {
+                "RowName": "Workshop_Modules"
+            },
+            "Position": {
+                "X": 2900,
+                "Y": 500
+            },
+            "Size": {
+                "X": 250,
+                "Y": 250
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Workshop_Module_Movement",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "DrawMethodOverride": "XThenY",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Workshop_Module_ItemWear",
+            "ExtraData": {
+                "RowName": "Meta_Module_ItemWear",
+                "DataTableName": "D_WorkshopItems"
+            },
+            "TalentTree": {
+                "RowName": "Workshop_Modules"
+            },
+            "Position": {
+                "X": 3150,
+                "Y": 1100
+            },
+            "Size": {
+                "X": 250,
+                "Y": 250
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Workshop_Module_Movement",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "DrawMethodOverride": "XThenY",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Workshop_Module_Night",
+            "ExtraData": {
+                "RowName": "Meta_Module_Night",
+                "DataTableName": "D_WorkshopItems"
+            },
+            "TalentTree": {
+                "RowName": "Workshop_Modules"
+            },
+            "Position": {
+                "X": 2450,
+                "Y": 1100
+            },
+            "Size": {
+                "X": 250,
+                "Y": 250
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Workshop_Module_Movement",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "DrawMethodOverride": "XThenY",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Workshop_Module_Highlight",
+            "ExtraData": {
+                "RowName": "Meta_Module_Highlight",
+                "DataTableName": "D_WorkshopItems"
+            },
+            "TalentTree": {
+                "RowName": "Workshop_Modules"
+            },
+            "Position": {
+                "X": 2100,
+                "Y": 1100
+            },
+            "Size": {
+                "X": 250,
+                "Y": 250
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Workshop_Module_Movement",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "DrawMethodOverride": "XThenY",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Workshop_Module_StaminaRegen",
+            "ExtraData": {
+                "RowName": "Meta_Module_StaminaRegen",
+                "DataTableName": "D_WorkshopItems"
+            },
+            "TalentTree": {
+                "RowName": "Workshop_Modules"
+            },
+            "Position": {
+                "X": 2800,
+                "Y": 1100
+            },
+            "Size": {
+                "X": 250,
+                "Y": 250
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Workshop_Module_Movement",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "DrawMethodOverride": "XThenY",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
         },
         {
             "Name": "Icebox_Backpack",
@@ -60259,7 +60595,7 @@
                 "RowName": "Workshop_Modules"
             },
             "Position": {
-                "X": 5950,
+                "X": 5650,
                 "Y": 500
             },
             "Size": {
@@ -60268,7 +60604,7 @@
             },
             "RequiredTalents": [
                 {
-                    "RowName": "Workshop_Module_Reroute",
+                    "RowName": "Workshop_Module_Movement",
                     "DataTableName": "D_Talents"
                 }
             ],

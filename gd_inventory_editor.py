@@ -1,12 +1,12 @@
 """
-GD.json Player Inventory Editor for Icarus.
+savegame.json Player Inventory Editor for Icarus.
 
 Parses and modifies player inventories stored in the ProspectBlob binary stream.
 
 Usage:
     from gd_inventory_editor import GdInventoryEditor
 
-    editor = GdInventoryEditor('path/to/GD.json')
+    editor = GdInventoryEditor('path/to/savegame.json')
     editor.load()
 
     # List players
@@ -80,7 +80,7 @@ _INVSAVE_STRUCT       = 'InventorySaveData'
 
 @dataclass
 class PlayerState:
-    """Player state blob loaded from the GD.json binary stream."""
+    """Player state blob loaded from the savegame.json binary stream."""
     steam_id:    str
     char_slot:   int
 
@@ -252,10 +252,10 @@ def _make_new_slot(location: int, item_name: str, count: int = 1,
 
 class GdInventoryEditor:
     """
-    Read and modify player inventories stored in a GD.json prospect save.
+    Read and modify player inventories stored in a savegame.json prospect save.
 
     Workflow:
-        editor = GdInventoryEditor('/path/to/GD.json')
+        editor = GdInventoryEditor('/path/to/savegame.json')
         editor.load()
         # ... make changes ...
         editor.save(backup=True)
@@ -276,7 +276,7 @@ class GdInventoryEditor:
     # ------------------------------------------------------------------
 
     def load(self) -> None:
-        """Load GD.json, decompress the prospect blob, and parse player states."""
+        """Load savegame.json, decompress the prospect blob, and parse player states."""
         with open(self.gd_path, 'r', encoding='utf-8') as f:
             raw = json.load(f)
         compressed = base64.b64decode(raw['ProspectBlob']['BinaryBlob'])
@@ -655,12 +655,12 @@ class GdInventoryEditor:
 
     def save(self, backup: bool = True) -> None:
         """
-        Re-serialize dirty players and write changes back to GD.json.
+        Re-serialize dirty players and write changes back to savegame.json.
         Patches the binary stream in-memory, updates size fields, and
         re-compresses the ProspectBlob.
 
         Args:
-            backup: If True, copy the original file to GD.json.backup first.
+            backup: If True, copy the original file to savegame.json.backup first.
         """
         dirty_players = [p for p in self.players.values() if p.dirty]
         dirty_cm = self.container_manager and self.container_manager.dirty
@@ -714,7 +714,7 @@ class GdInventoryEditor:
                 old_val = struct.unpack_from('<i', bytes(binary), pos)[0]
                 binary[pos:pos + 4] = struct.pack('<i', old_val + total_delta)
 
-        # Re-compress and update GD.json.
+        # Re-compress and update savegame.json.
         new_binary = bytes(binary)
         compressed = zlib.compress(new_binary, level=6)
         b64_blob   = base64.b64encode(compressed).decode('ascii')
