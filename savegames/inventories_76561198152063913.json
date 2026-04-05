@@ -1,7 +1,7 @@
 {
   "type": "icarus_player_inventories",
   "version": 1,
-  "steam_id": "76561198162166460",
+  "steam_id": "76561198152063913",
   "inventories": [
     {
       "inventory_id": 2,
@@ -10,11 +10,11 @@
         {
           "inv_id": 2,
           "location": 0,
-          "item": "Canteen",
+          "item": "Stone_Axe",
           "count": 1,
-          "durability": null,
-          "fill_amount": 5000,
-          "fill_type": 2,
+          "durability": 20000,
+          "fill_amount": null,
+          "fill_type": null,
           "linked_inv_id": null,
           "dyn_data_extra": {
             "0": 0,
@@ -28,9 +28,9 @@
         {
           "inv_id": 2,
           "location": 1,
-          "item": "Dried_Meat_Generic",
-          "count": 5,
-          "durability": null,
+          "item": "Stone_Pickaxe",
+          "count": 1,
+          "durability": 20000,
           "fill_amount": null,
           "fill_type": null,
           "linked_inv_id": null,
@@ -40,19 +40,18 @@
             "2": 0,
             "3": 0,
             "4": 0,
-            "5": 0,
-            "12": 3972
+            "5": 0
           }
         },
         {
           "inv_id": 2,
           "location": 2,
-          "item": "Compound_Bow",
+          "item": "Shotgun_T4",
           "count": 1,
-          "durability": 18700,
+          "durability": 10700,
           "fill_amount": null,
           "fill_type": null,
-          "linked_inv_id": 36,
+          "linked_inv_id": 54,
           "dyn_data_extra": {
             "0": 0,
             "1": 0,
@@ -67,61 +66,51 @@
         {
           "inv_id": 2,
           "location": 3,
-          "item": "Platinum_Knife",
+          "item": "Rifle_Hunting",
           "count": 1,
-          "durability": 17700,
+          "durability": 4200,
           "fill_amount": null,
           "fill_type": null,
-          "linked_inv_id": 28,
+          "linked_inv_id": 53,
           "dyn_data_extra": {
             "0": 0,
             "1": 0,
             "2": 0,
             "3": 0,
             "4": 0,
-            "5": 0
+            "5": 0,
+            "12": 0
           },
           "container_items": []
         },
         {
           "inv_id": 2,
           "location": 4,
-          "item": "Taxidermy_Knife",
+          "item": "Meta_Pickaxe_Shengong_Charlie",
           "count": 1,
-          "durability": 14200,
+          "durability": 37500,
           "fill_amount": null,
           "fill_type": null,
-          "linked_inv_id": 23,
+          "linked_inv_id": null,
           "dyn_data_extra": {
             "0": 0,
             "1": 0,
             "2": 0,
             "3": 0,
             "4": 0,
-            "5": 0
-          },
-          "container_items": [
-            {
-              "inv_id": 23,
-              "location": 0,
-              "item": "Ammo_Rifle_Round",
-              "count": 6,
-              "durability": null,
-              "fill_amount": null,
-              "fill_type": null,
-              "linked_inv_id": null
-            }
-          ]
+            "5": 0,
+            "12": 0
+          }
         },
         {
           "inv_id": 2,
           "location": 5,
-          "item": "Titanium_Axe",
-          "count": 1,
-          "durability": 92000,
+          "item": "Bone_Throwing_Knife",
+          "count": 21,
+          "durability": null,
           "fill_amount": null,
           "fill_type": null,
-          "linked_inv_id": 27,
+          "linked_inv_id": null,
           "dyn_data_extra": {
             "0": 0,
             "1": 0,
@@ -129,18 +118,17 @@
             "3": 0,
             "4": 0,
             "5": 0
-          },
-          "container_items": []
+          }
         },
         {
           "inv_id": 2,
           "location": 6,
-          "item": "Titanium_Pickaxe",
+          "item": "Bone_Knife",
           "count": 1,
-          "durability": 75115,
+          "durability": 500,
           "fill_amount": null,
           "fill_type": null,
-          "linked_inv_id": 19,
+          "linked_inv_id": null,
           "dyn_data_extra": {
             "0": 0,
             "1": 0,
@@ -148,51 +136,14 @@
             "3": 0,
             "4": 0,
             "5": 0
-          },
-          "container_items": []
+          }
         },
         {
           "inv_id": 2,
           "location": 7,
-          "item": "Building_RepairTool",
+          "item": "Crafting_Bench",
           "count": 1,
-          "durability": 900,
-          "fill_amount": null,
-          "fill_type": null,
-          "linked_inv_id": null,
-          "dyn_data_extra": {
-            "0": 0,
-            "1": 0,
-            "2": 0,
-            "3": 0,
-            "4": 0,
-            "5": 0
-          }
-        },
-        {
-          "inv_id": 2,
-          "location": 8,
-          "item": "Canteen",
-          "count": 1,
-          "durability": null,
-          "fill_amount": 3864,
-          "fill_type": 2,
-          "linked_inv_id": null,
-          "dyn_data_extra": {
-            "0": 0,
-            "1": 0,
-            "2": 0,
-            "3": 0,
-            "4": 0,
-            "5": 0
-          }
-        },
-        {
-          "inv_id": 2,
-          "location": 9,
-          "item": "Mission_Medical_Device",
-          "count": 1,
-          "durability": null,
+          "durability": 500,
           "fill_amount": null,
           "fill_type": null,
           "linked_inv_id": null,
@@ -232,172 +183,8 @@
         {
           "inv_id": 3,
           "location": 0,
-          "item": "Bandage_Basic",
-          "count": 9,
-          "durability": null,
-          "fill_amount": null,
-          "fill_type": null,
-          "linked_inv_id": null,
-          "dyn_data_extra": {
-            "0": 0,
-            "1": 0,
-            "2": 0,
-            "3": 0,
-            "4": 0,
-            "5": 0
-          }
-        },
-        {
-          "inv_id": 3,
-          "location": 1,
-          "item": "Bandage_Cooling",
-          "count": 10,
-          "durability": null,
-          "fill_amount": null,
-          "fill_type": null,
-          "linked_inv_id": null,
-          "dyn_data_extra": {
-            "0": 0,
-            "1": 0,
-            "2": 0,
-            "3": 0,
-            "4": 0,
-            "5": 0
-          }
-        },
-        {
-          "inv_id": 3,
-          "location": 2,
-          "item": "Suture_Kit",
-          "count": 5,
-          "durability": null,
-          "fill_amount": null,
-          "fill_type": null,
-          "linked_inv_id": null,
-          "dyn_data_extra": {
-            "0": 0,
-            "1": 0,
-            "2": 0,
-            "3": 0,
-            "4": 0,
-            "5": 0
-          }
-        },
-        {
-          "inv_id": 3,
-          "location": 3,
-          "item": "Splint",
+          "item": "Ammo_Rifle_Round",
           "count": 4,
-          "durability": null,
-          "fill_amount": null,
-          "fill_type": null,
-          "linked_inv_id": null,
-          "dyn_data_extra": {
-            "0": 0,
-            "1": 0,
-            "2": 0,
-            "3": 0,
-            "4": 0,
-            "5": 0
-          }
-        },
-        {
-          "inv_id": 3,
-          "location": 4,
-          "item": "Bandage_Heat",
-          "count": 8,
-          "durability": null,
-          "fill_amount": null,
-          "fill_type": null,
-          "linked_inv_id": null,
-          "dyn_data_extra": {
-            "0": 0,
-            "1": 0,
-            "2": 0,
-            "3": 0,
-            "4": 0,
-            "5": 0
-          }
-        },
-        {
-          "inv_id": 3,
-          "location": 5,
-          "item": "Blood_Thinning_Paste",
-          "count": 10,
-          "durability": null,
-          "fill_amount": null,
-          "fill_type": null,
-          "linked_inv_id": null,
-          "dyn_data_extra": {
-            "0": 0,
-            "1": 0,
-            "2": 0,
-            "3": 0,
-            "4": 0,
-            "5": 0
-          }
-        },
-        {
-          "inv_id": 3,
-          "location": 6,
-          "item": "Antibiotic_Tonic",
-          "count": 1,
-          "durability": null,
-          "fill_amount": null,
-          "fill_type": null,
-          "linked_inv_id": null,
-          "dyn_data_extra": {
-            "0": 0,
-            "1": 0,
-            "2": 0,
-            "3": 0,
-            "4": 0,
-            "5": 0
-          }
-        },
-        {
-          "inv_id": 3,
-          "location": 7,
-          "item": "AntiPoison_Tonic",
-          "count": 7,
-          "durability": null,
-          "fill_amount": null,
-          "fill_type": null,
-          "linked_inv_id": null,
-          "dyn_data_extra": {
-            "0": 0,
-            "1": 0,
-            "2": 0,
-            "3": 0,
-            "4": 0,
-            "5": 0
-          }
-        },
-        {
-          "inv_id": 3,
-          "location": 8,
-          "item": "Titanium_Ingot",
-          "count": 5,
-          "durability": null,
-          "fill_amount": null,
-          "fill_type": null,
-          "linked_inv_id": null
-        },
-        {
-          "inv_id": 3,
-          "location": 9,
-          "item": "Titanium_Ore",
-          "count": 4,
-          "durability": null,
-          "fill_amount": null,
-          "fill_type": null,
-          "linked_inv_id": null
-        },
-        {
-          "inv_id": 3,
-          "location": 10,
-          "item": "Carbon_Arrow",
-          "count": 90,
           "durability": null,
           "fill_amount": null,
           "fill_type": null,
@@ -408,9 +195,9 @@
         },
         {
           "inv_id": 3,
-          "location": 11,
-          "item": "Meta_Arrow_Larkwell_Standard",
-          "count": 56,
+          "location": 1,
+          "item": "Ammo_Shell_Buckshot",
+          "count": 64,
           "durability": null,
           "fill_amount": null,
           "fill_type": null,
@@ -418,9 +205,9 @@
         },
         {
           "inv_id": 3,
-          "location": 12,
-          "item": "Ammo_Rifle_Round",
-          "count": 50,
+          "location": 2,
+          "item": "bone",
+          "count": 43,
           "durability": null,
           "fill_amount": null,
           "fill_type": null,
@@ -428,52 +215,12 @@
         },
         {
           "inv_id": 3,
-          "location": 13,
-          "item": "Meta_Module_Inventory_Slots_2",
+          "location": 3,
+          "item": "Health_Remedy",
           "count": 1,
           "durability": null,
           "fill_amount": null,
           "fill_type": null,
-          "linked_inv_id": null
-        },
-        {
-          "inv_id": 3,
-          "location": 14,
-          "item": "Refined_Metal",
-          "count": 12,
-          "durability": null,
-          "fill_amount": null,
-          "fill_type": null,
-          "linked_inv_id": null
-        },
-        {
-          "inv_id": 3,
-          "location": 15,
-          "item": "Ammo_Casing",
-          "count": 200,
-          "durability": null,
-          "fill_amount": null,
-          "fill_type": null,
-          "linked_inv_id": null
-        },
-        {
-          "inv_id": 3,
-          "location": 16,
-          "item": "Ammo_Casing",
-          "count": 200,
-          "durability": null,
-          "fill_amount": null,
-          "fill_type": null,
-          "linked_inv_id": null
-        },
-        {
-          "inv_id": 3,
-          "location": 17,
-          "item": "Oxygen_Tank",
-          "count": 1,
-          "durability": null,
-          "fill_amount": 4356,
-          "fill_type": 4,
           "linked_inv_id": null,
           "dyn_data_extra": {
             "0": 0,
@@ -487,38 +234,64 @@
         },
         {
           "inv_id": 3,
-          "location": 18,
-          "item": "Ammo_Casing",
-          "count": 65,
+          "location": 4,
+          "item": "Antibiotic_Paste",
+          "count": 1,
           "durability": null,
           "fill_amount": null,
           "fill_type": null,
-          "linked_inv_id": null
+          "linked_inv_id": null,
+          "dyn_data_extra": {
+            "0": 0,
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "12": 0
+          }
         },
         {
           "inv_id": 3,
-          "location": 19,
-          "item": "Aluminium",
-          "count": 20,
+          "location": 5,
+          "item": "Gamey_Meat_Cooked",
+          "count": 9,
           "durability": null,
           "fill_amount": null,
           "fill_type": null,
-          "linked_inv_id": null
+          "linked_inv_id": null,
+          "dyn_data_extra": {
+            "0": 0,
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "12": 786
+          }
         },
         {
           "inv_id": 3,
-          "location": 20,
-          "item": "Aluminium",
-          "count": 20,
-          "durability": null,
+          "location": 6,
+          "item": "Bed_Bedroll",
+          "count": 1,
+          "durability": 100,
           "fill_amount": null,
           "fill_type": null,
-          "linked_inv_id": null
+          "linked_inv_id": null,
+          "dyn_data_extra": {
+            "0": 0,
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 0
+          }
         },
         {
           "inv_id": 3,
-          "location": 21,
-          "item": "Aluminium",
+          "location": 7,
+          "item": "Tree_Sap",
           "count": 12,
           "durability": null,
           "fill_amount": null,
@@ -527,9 +300,9 @@
         },
         {
           "inv_id": 3,
-          "location": 22,
-          "item": "Steel_Ingot",
-          "count": 8,
+          "location": 8,
+          "item": "Fur",
+          "count": 62,
           "durability": null,
           "fill_amount": null,
           "fill_type": null,
@@ -537,9 +310,145 @@
         },
         {
           "inv_id": 3,
-          "location": 23,
-          "item": "Platinum_Ingot",
-          "count": 20,
+          "location": 9,
+          "item": "Campfire",
+          "count": 1,
+          "durability": 1000,
+          "fill_amount": null,
+          "fill_type": null,
+          "linked_inv_id": null,
+          "dyn_data_extra": {
+            "0": 0,
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 0
+          }
+        },
+        {
+          "inv_id": 3,
+          "location": 10,
+          "item": "Gamey_Meat",
+          "count": 4,
+          "durability": null,
+          "fill_amount": null,
+          "fill_type": null,
+          "linked_inv_id": null,
+          "dyn_data_extra": {
+            "0": 0,
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "12": 27
+          }
+        },
+        {
+          "inv_id": 3,
+          "location": 11,
+          "item": "raw_meat",
+          "count": 17,
+          "durability": null,
+          "fill_amount": null,
+          "fill_type": null,
+          "linked_inv_id": null,
+          "dyn_data_extra": {
+            "0": 0,
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "12": 346
+          }
+        },
+        {
+          "inv_id": 3,
+          "location": 12,
+          "item": "Leather",
+          "count": 65,
+          "durability": null,
+          "fill_amount": null,
+          "fill_type": null,
+          "linked_inv_id": null
+        },
+        {
+          "inv_id": 3,
+          "location": 13,
+          "item": "Wood",
+          "count": 10,
+          "durability": null,
+          "fill_amount": null,
+          "fill_type": null,
+          "linked_inv_id": null,
+          "dyn_data_extra": {
+            "12": 0
+          }
+        },
+        {
+          "inv_id": 3,
+          "location": 14,
+          "item": "Fiber",
+          "count": 33,
+          "durability": null,
+          "fill_amount": null,
+          "fill_type": null,
+          "linked_inv_id": null
+        },
+        {
+          "inv_id": 3,
+          "location": 15,
+          "item": "Stick",
+          "count": 61,
+          "durability": null,
+          "fill_amount": null,
+          "fill_type": null,
+          "linked_inv_id": null,
+          "dyn_data_extra": {
+            "0": 0,
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 0
+          }
+        },
+        {
+          "inv_id": 3,
+          "location": 16,
+          "item": "Stone_Floor",
+          "count": 3,
+          "durability": 2500,
+          "fill_amount": null,
+          "fill_type": null,
+          "linked_inv_id": null,
+          "dyn_data_extra": {
+            "0": 0,
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "12": 0
+          }
+        },
+        {
+          "inv_id": 3,
+          "location": 17,
+          "item": "Spoiled_Meat",
+          "count": 1,
+          "durability": null,
+          "fill_amount": null,
+          "fill_type": null,
+          "linked_inv_id": null
+        },
+        {
+          "inv_id": 3,
+          "location": 28,
+          "item": "Coal_Ore",
+          "count": 50,
           "durability": null,
           "fill_amount": null,
           "fill_type": null,
@@ -553,18 +462,119 @@
       "items": [
         {
           "inv_id": 5,
+          "location": 0,
+          "item": "MinerArmor_Head",
+          "count": 1,
+          "durability": 3008,
+          "fill_amount": null,
+          "fill_type": null,
+          "linked_inv_id": 17,
+          "dyn_data_extra": {
+            "12": 0
+          },
+          "container_items": []
+        },
+        {
+          "inv_id": 5,
+          "location": 1,
+          "item": "MinerArmor_Chest",
+          "count": 1,
+          "durability": 3008,
+          "fill_amount": null,
+          "fill_type": null,
+          "linked_inv_id": 49,
+          "dyn_data_extra": {
+            "12": 0
+          },
+          "container_items": []
+        },
+        {
+          "inv_id": 5,
+          "location": 2,
+          "item": "MinerArmor_Arms",
+          "count": 1,
+          "durability": 3008,
+          "fill_amount": null,
+          "fill_type": null,
+          "linked_inv_id": 50,
+          "dyn_data_extra": {
+            "12": 0
+          },
+          "container_items": []
+        },
+        {
+          "inv_id": 5,
+          "location": 3,
+          "item": "MinerArmor_Legs",
+          "count": 1,
+          "durability": 3008,
+          "fill_amount": null,
+          "fill_type": null,
+          "linked_inv_id": 51,
+          "dyn_data_extra": {
+            "12": 0
+          },
+          "container_items": [
+            {
+              "inv_id": 51,
+              "location": 0,
+              "item": "Ammo_Rifle_Round",
+              "count": 6,
+              "durability": null,
+              "fill_amount": null,
+              "fill_type": null,
+              "linked_inv_id": null,
+              "dyn_data_extra": {
+                "12": 0
+              }
+            }
+          ]
+        },
+        {
+          "inv_id": 5,
+          "location": 4,
+          "item": "MinerArmor_Feet",
+          "count": 1,
+          "durability": 3008,
+          "fill_amount": null,
+          "fill_type": null,
+          "linked_inv_id": 52,
+          "dyn_data_extra": {
+            "12": 0
+          },
+          "container_items": [
+            {
+              "inv_id": 52,
+              "location": 0,
+              "item": "Ammo_Shell_Slug",
+              "count": 6,
+              "durability": null,
+              "fill_amount": null,
+              "fill_type": null,
+              "linked_inv_id": null,
+              "dyn_data_extra": {
+                "12": 0
+              }
+            }
+          ]
+        },
+        {
+          "inv_id": 5,
           "location": 5,
-          "item": "EnviroSuit",
+          "item": "Envirosuit_Shengong_2",
           "count": 1,
           "durability": null,
           "fill_amount": null,
           "fill_type": null,
-          "linked_inv_id": null
+          "linked_inv_id": null,
+          "dyn_data_extra": {
+            "12": 0
+          }
         },
         {
           "inv_id": 5,
           "location": 6,
-          "item": "Skin_Head_Male_05",
+          "item": "Skin_Head_Female_02",
           "count": null,
           "durability": null,
           "fill_amount": null,
@@ -574,12 +584,25 @@
         {
           "inv_id": 5,
           "location": 7,
-          "item": "Spacesuit_Cap_Male",
+          "item": "Spacesuit_Cap_Female_03",
           "count": null,
           "durability": null,
           "fill_amount": null,
           "fill_type": null,
           "linked_inv_id": null
+        },
+        {
+          "inv_id": 5,
+          "location": 8,
+          "item": "Meta_Backpack_Larkwell_Beta",
+          "count": 1,
+          "durability": 5500,
+          "fill_amount": null,
+          "fill_type": null,
+          "linked_inv_id": null,
+          "dyn_data_extra": {
+            "12": 0
+          }
         }
       ]
     },
@@ -593,7 +616,7 @@
           "item": "Oxygen_Tank",
           "count": 1,
           "durability": null,
-          "fill_amount": 4639,
+          "fill_amount": 4956,
           "fill_type": 4,
           "linked_inv_id": null,
           "dyn_data_extra": {
@@ -602,28 +625,18 @@
             "2": 0,
             "3": 0,
             "4": 0,
-            "5": 0
+            "5": 0,
+            "12": 0
           }
-        }
-      ]
-    },
-    {
-      "inventory_id": 11,
-      "inventory_name": "Inventory-11",
-      "items": []
-    },
-    {
-      "inventory_id": 12,
-      "inventory_name": "Inventory-12",
-      "items": [
+        },
         {
-          "inv_id": 12,
-          "location": 0,
-          "item": "Flashlight",
-          "count": 1,
+          "inv_id": 4,
+          "location": 1,
+          "item": "Fatty_TBone_Dried",
+          "count": 5,
           "durability": null,
-          "fill_amount": 6255,
-          "fill_type": 1,
+          "fill_amount": null,
+          "fill_type": null,
           "linked_inv_id": null,
           "dyn_data_extra": {
             "0": 0,
@@ -631,10 +644,54 @@
             "2": 0,
             "3": 0,
             "4": 0,
-            "5": 0
+            "5": 0,
+            "12": 2983
+          }
+        },
+        {
+          "inv_id": 4,
+          "location": 2,
+          "item": "Canteen",
+          "count": 1,
+          "durability": null,
+          "fill_amount": 4937,
+          "fill_type": 2,
+          "linked_inv_id": null,
+          "dyn_data_extra": {
+            "0": 0,
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "12": 0
           }
         }
       ]
+    },
+    {
+      "inventory_id": 11,
+      "inventory_name": "Inventory-11",
+      "items": [
+        {
+          "inv_id": 11,
+          "location": 0,
+          "item": "Meta_Module_Animal_Healthbar",
+          "count": 1,
+          "durability": null,
+          "fill_amount": null,
+          "fill_type": null,
+          "linked_inv_id": null,
+          "dyn_data_extra": {
+            "12": 0
+          }
+        }
+      ]
+    },
+    {
+      "inventory_id": 12,
+      "inventory_name": "Inventory-12",
+      "items": []
     }
   ]
 }

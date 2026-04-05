@@ -13,6 +13,12 @@ from typing import Dict, List, Optional
 
 _DATA_PATH = Path(__file__).parent / "data" / "GreatHunt" / "D_GreatHunts.json"
 _PROSPECT_LIST_PATH = Path(__file__).parent / "data" / "Prospects" / "D_ProspectList.json"
+_TALENTS_PATH = Path(__file__).parent / "data" / "Talents" / "D_Talents.json"
+
+# D_ProspectList row_name → D_Talents row_name (for Profile.json writes).
+# e.g. "STYX_D_Expedition" → "Prospect_Styx_D_Expedition"
+# Populated by _load_talent_keys() at import time.
+PROSPECT_TALENT_KEYS: Dict[str, str] = {}
 
 # Hunt archetype RowName  →  campaign id
 _HUNT_TO_CAMPAIGN: Dict[str, str] = {
@@ -97,6 +103,49 @@ def _format_label(name: str) -> str:
 # Loaders
 # ---------------------------------------------------------------------------
 
+def _load_talent_keys() -> None:
+    """Build PROSPECT_TALENT_KEYS from D_Talents.json.
+
+    Two passes:
+    1. ExtraData.RowName → Name  (authoritative, where present)
+    2. Pattern derivation for talents with no/wrong ExtraData:
+       Prospect_OLY_X  → OLY_X
+       Prospect_Styx_X → STYX_X
+       Prospect_Pro_X  → PRO_X
+       Prospect_ELY_X  → ELY_X
+    """
+    try:
+        with open(_TALENTS_PATH, 'r', encoding='utf-8') as f:
+            data = json.load(f)
+    except (OSError, json.JSONDecodeError):
+        return
+
+    # Pass 1: ExtraData-based mapping (most reliable)
+    for row in data['Rows']:
+        extra = row.get('ExtraData') or {}
+        if extra.get('DataTableName') == 'D_ProspectList':
+            prospect_key = extra.get('RowName', '')
+            talent_key = row.get('Name', '')
+            if prospect_key and talent_key:
+                PROSPECT_TALENT_KEYS[prospect_key] = talent_key
+
+    # Pass 2: Pattern-based fallback for missing entries
+    _TALENT_PREFIX_TO_PROSPECT: Dict[str, str] = {
+        'Prospect_OLY_':  'OLY_',
+        'Prospect_Styx_': 'STYX_',
+        'Prospect_Pro_':  'PRO_',
+        'Prospect_ELY_':  'ELY_',
+    }
+    for row in data['Rows']:
+        talent_key = row.get('Name', '')
+        for t_prefix, p_prefix in _TALENT_PREFIX_TO_PROSPECT.items():
+            if talent_key.startswith(t_prefix):
+                prospect_key = p_prefix + talent_key[len(t_prefix):]
+                if prospect_key not in PROSPECT_TALENT_KEYS:
+                    PROSPECT_TALENT_KEYS[prospect_key] = talent_key
+                break
+
+
 def _load_prospects() -> None:
     """Load D_ProspectList.json to build display names and regular mission groups."""
     with open(_PROSPECT_LIST_PATH, 'r', encoding='utf-8') as f:
@@ -146,9 +195,10 @@ def _load_prospects() -> None:
             continue  # unknown / don't show
 
         _groups[map_group].append({
-            'row_name':    name,
-            'label':       drop_name,
-            'description': description,
+            'row_name':        name,
+            'talent_row_name': PROSPECT_TALENT_KEYS.get(name, name),
+            'label':           drop_name,
+            'description':     description,
         })
 
     for map_name in _MAP_GROUPS_ORDER:
@@ -190,7 +240,8 @@ def _load() -> None:
         })
 
 
-# Run at import time — prospect list first so campaign labels can use it.
+# Run at import time — talent keys first, then prospect list, then campaigns.
+_load_talent_keys()
 _load_prospects()
 _load()
 

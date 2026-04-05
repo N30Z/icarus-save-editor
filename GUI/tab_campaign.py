@@ -174,8 +174,9 @@ class CampaignTab(ctk.CTkFrame):
 
             for m in group['missions']:
                 row_name = m['row_name']
+                talent_key = m.get('talent_row_name', row_name)
                 is_done = (row_name.upper() in self._completed_missions
-                           or self._prof_editor.has_workshop_unlock(row_name))
+                           or self._prof_editor.has_workshop_unlock(talent_key))
                 var = tk.BooleanVar(value=is_done)
                 self._regular_vars[row_name] = var
 
@@ -441,15 +442,22 @@ class CampaignTab(ctk.CTkFrame):
         if not self._regular_vars:
             self._regular_status.configure(text="No missions.", text_color="#e09b3d")
             return
+        # Build row_name → talent_key lookup from REGULAR_MISSION_GROUPS
+        from campaign_data import REGULAR_MISSION_GROUPS
+        _talent_keys = {
+            m['row_name']: m.get('talent_row_name', m['row_name'])
+            for g in REGULAR_MISSION_GROUPS for m in g['missions']
+        }
         added = removed = 0
         for row_name, var in self._regular_vars.items():
+            talent_key = _talent_keys.get(row_name, row_name)
             want = var.get()
-            have = self._prof_editor.has_workshop_unlock(row_name)
+            have = self._prof_editor.has_workshop_unlock(talent_key)
             if want and not have:
-                self._prof_editor.add_workshop_unlock(row_name, rank=1)
+                self._prof_editor.add_workshop_unlock(talent_key, rank=1)
                 added += 1
             elif not want and have:
-                self._prof_editor.remove_workshop_unlock(row_name)
+                self._prof_editor.remove_workshop_unlock(talent_key)
                 removed += 1
         self._regular_status.configure(
             text=f"+{added} / -{removed}  — Save All to persist",

@@ -1,0 +1,549 @@
+{
+  "type": "icarus_player_inventories",
+  "version": 1,
+  "steam_id": "76561198155046517",
+  "inventories": [
+    {
+      "inventory_id": 2,
+      "inventory_name": "Equipment/Hotbar",
+      "items": [
+        {
+          "inv_id": 2,
+          "location": 0,
+          "item": "Shotgun_T4",
+          "count": 1,
+          "durability": 8240,
+          "fill_amount": null,
+          "fill_type": null,
+          "linked_inv_id": 46,
+          "dyn_data_extra": {
+            "0": 0,
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "12": 0
+          },
+          "container_items": [
+            {
+              "inv_id": 46,
+              "location": 0,
+              "item": "Suture_Kit",
+              "count": 2,
+              "durability": null,
+              "fill_amount": null,
+              "fill_type": null,
+              "linked_inv_id": null,
+              "dyn_data_extra": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0
+              }
+            },
+            {
+              "inv_id": 46,
+              "location": 2,
+              "item": "Bandage_Basic",
+              "count": 1,
+              "durability": null,
+              "fill_amount": null,
+              "fill_type": null,
+              "linked_inv_id": null,
+              "dyn_data_extra": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0
+              }
+            },
+            {
+              "inv_id": 46,
+              "location": 3,
+              "item": "Antibiotic_Paste",
+              "count": 10,
+              "durability": null,
+              "fill_amount": null,
+              "fill_type": null,
+              "linked_inv_id": null,
+              "dyn_data_extra": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0
+              }
+            },
+            {
+              "inv_id": 46,
+              "location": 4,
+              "item": "Antibiotic_Paste",
+              "count": 3,
+              "durability": null,
+              "fill_amount": null,
+              "fill_type": null,
+              "linked_inv_id": null,
+              "dyn_data_extra": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0
+              }
+            },
+            {
+              "inv_id": 46,
+              "location": 5,
+              "item": "Meta_Blood_Thinning_Vaccine_Alpha",
+              "count": 1,
+              "durability": null,
+              "fill_amount": null,
+              "fill_type": null,
+              "linked_inv_id": null,
+              "dyn_data_extra": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0
+              }
+            },
+            {
+              "inv_id": 46,
+              "location": 6,
+              "item": "Meta_Antibiotic_Vaccine_Charlie",
+              "count": 1,
+              "durability": null,
+              "fill_amount": null,
+              "fill_type": null,
+              "linked_inv_id": null,
+              "dyn_data_extra": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0
+              }
+            }
+          ]
+        },
+        {
+          "inv_id": 2,
+          "location": 1,
+          "item": "Pistol_T3",
+          "count": 1,
+          "durability": 0,
+          "fill_amount": null,
+          "fill_type": null,
+          "linked_inv_id": 63,
+          "dyn_data_extra": {
+            "0": 0,
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 0
+          },
+          "container_items": [
+            {
+              "inv_id": 63,
+              "location": 0,
+              "item": "Ammo_Pistol_Round",
+              "count": 5,
+              "durability": null,
+              "fill_amount": null,
+              "fill_type": null,
+              "linked_inv_id": null
+            }
+          ]
+        },
+        {
+          "inv_id": 2,
+          "location": 3,
+          "item": "Meta_Hammer_Printed",
+          "count": 1,
+          "durability": 30000,
+          "fill_amount": null,
+          "fill_type": null,
+          "linked_inv_id": null,
+          "dyn_data_extra": {
+            "0": 0,
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 0
+          }
+        },
+        {
+          "inv_id": 2,
+          "location": 4,
+          "item": "Meta_Spear_Printed",
+          "count": 1,
+          "durability": 29200,
+          "fill_amount": 0,
+          "fill_type": -1,
+          "linked_inv_id": null,
+          "dyn_data_extra": {
+            "0": 0,
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 0
+          }
+        },
+        {
+          "inv_id": 2,
+          "location": 5,
+          "item": "Meta_Axe_Printed",
+          "count": 1,
+          "durability": 23500,
+          "fill_amount": 0,
+          "fill_type": -1,
+          "linked_inv_id": null,
+          "dyn_data_extra": {
+            "0": 0,
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 0
+          }
+        },
+        {
+          "inv_id": 2,
+          "location": 6,
+          "item": "Meta_Sickle_Printed",
+          "count": 1,
+          "durability": 30000,
+          "fill_amount": null,
+          "fill_type": null,
+          "linked_inv_id": null,
+          "dyn_data_extra": {
+            "0": 0,
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 0
+          }
+        },
+        {
+          "inv_id": 2,
+          "location": 7,
+          "item": "Meta_Knife_Printed",
+          "count": 1,
+          "durability": 27100,
+          "fill_amount": 0,
+          "fill_type": -1,
+          "linked_inv_id": null,
+          "dyn_data_extra": {
+            "0": 0,
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 0
+          }
+        },
+        {
+          "inv_id": 2,
+          "location": 8,
+          "item": "Platinum_Pickaxe",
+          "count": 1,
+          "durability": 85100,
+          "fill_amount": null,
+          "fill_type": null,
+          "linked_inv_id": 43,
+          "dyn_data_extra": {
+            "0": 0,
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 0
+          },
+          "container_items": [
+            {
+              "inv_id": 43,
+              "location": 0,
+              "item": "Ammo_Shell_Slug",
+              "count": 3,
+              "durability": null,
+              "fill_amount": null,
+              "fill_type": null,
+              "linked_inv_id": null
+            }
+          ]
+        },
+        {
+          "inv_id": 2,
+          "location": 11,
+          "item": "Player_Fist",
+          "count": 1,
+          "durability": null,
+          "fill_amount": null,
+          "fill_type": null,
+          "linked_inv_id": null,
+          "dyn_data_extra": {
+            "0": 0,
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 0
+          }
+        }
+      ]
+    },
+    {
+      "inventory_id": 3,
+      "inventory_name": "Backpack",
+      "items": [
+        {
+          "inv_id": 3,
+          "location": 0,
+          "item": "Spoiled_Meat",
+          "count": 18,
+          "durability": null,
+          "fill_amount": null,
+          "fill_type": null,
+          "linked_inv_id": null
+        },
+        {
+          "inv_id": 3,
+          "location": 4,
+          "item": "Stringy_Meat_Cooked",
+          "count": 5,
+          "durability": null,
+          "fill_amount": null,
+          "fill_type": null,
+          "linked_inv_id": null,
+          "dyn_data_extra": {
+            "0": 0,
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "12": 364
+          }
+        },
+        {
+          "inv_id": 3,
+          "location": 5,
+          "item": "Fur",
+          "count": 3,
+          "durability": null,
+          "fill_amount": null,
+          "fill_type": null,
+          "linked_inv_id": null
+        },
+        {
+          "inv_id": 3,
+          "location": 6,
+          "item": "Tree_Sap",
+          "count": 11,
+          "durability": null,
+          "fill_amount": null,
+          "fill_type": null,
+          "linked_inv_id": null
+        }
+      ]
+    },
+    {
+      "inventory_id": 5,
+      "inventory_name": "Armor/Cosmetics",
+      "items": [
+        {
+          "inv_id": 5,
+          "location": 0,
+          "item": "MinerArmor_Head",
+          "count": 1,
+          "durability": 2641,
+          "fill_amount": null,
+          "fill_type": null,
+          "linked_inv_id": 6,
+          "dyn_data_extra": {
+            "12": 0
+          },
+          "container_items": []
+        },
+        {
+          "inv_id": 5,
+          "location": 1,
+          "item": "MinerArmor_Chest",
+          "count": 1,
+          "durability": 2641,
+          "fill_amount": null,
+          "fill_type": null,
+          "linked_inv_id": 14,
+          "dyn_data_extra": {
+            "12": 0
+          },
+          "container_items": []
+        },
+        {
+          "inv_id": 5,
+          "location": 2,
+          "item": "Advanced_Cloth_Arms",
+          "count": 1,
+          "durability": 3161,
+          "fill_amount": 0,
+          "fill_type": -1,
+          "linked_inv_id": 61,
+          "dyn_data_extra": {
+            "12": 0
+          },
+          "container_items": []
+        },
+        {
+          "inv_id": 5,
+          "location": 3,
+          "item": "Advanced_Cloth_Legs",
+          "count": 1,
+          "durability": 3161,
+          "fill_amount": 0,
+          "fill_type": -1,
+          "linked_inv_id": 60,
+          "dyn_data_extra": {
+            "12": 0
+          },
+          "container_items": []
+        },
+        {
+          "inv_id": 5,
+          "location": 4,
+          "item": "Advanced_Cloth_Feet",
+          "count": 1,
+          "durability": 3161,
+          "fill_amount": 0,
+          "fill_type": -1,
+          "linked_inv_id": 62,
+          "dyn_data_extra": {
+            "12": 0
+          },
+          "container_items": []
+        },
+        {
+          "inv_id": 5,
+          "location": 5,
+          "item": "Envirosuit_Tier6",
+          "count": 1,
+          "durability": null,
+          "fill_amount": null,
+          "fill_type": null,
+          "linked_inv_id": null,
+          "dyn_data_extra": {
+            "12": 0
+          }
+        },
+        {
+          "inv_id": 5,
+          "location": 6,
+          "item": "Skin_Head_Male_06",
+          "count": null,
+          "durability": null,
+          "fill_amount": null,
+          "fill_type": null,
+          "linked_inv_id": null
+        },
+        {
+          "inv_id": 5,
+          "location": 7,
+          "item": "Spacesuit_Cap_Male_03",
+          "count": null,
+          "durability": null,
+          "fill_amount": null,
+          "fill_type": null,
+          "linked_inv_id": null
+        },
+        {
+          "inv_id": 5,
+          "location": 8,
+          "item": "Survival_Backpack",
+          "count": 1,
+          "durability": 5500,
+          "fill_amount": null,
+          "fill_type": null,
+          "linked_inv_id": null,
+          "dyn_data_extra": {
+            "12": 0
+          }
+        }
+      ]
+    },
+    {
+      "inventory_id": 4,
+      "inventory_name": "Belt",
+      "items": []
+    },
+    {
+      "inventory_id": 11,
+      "inventory_name": "Inventory-11",
+      "items": [
+        {
+          "inv_id": 11,
+          "location": 0,
+          "item": "Meta_Module_Inventory_Slots_2",
+          "count": 1,
+          "durability": null,
+          "fill_amount": null,
+          "fill_type": null,
+          "linked_inv_id": null,
+          "dyn_data_extra": {
+            "12": 0
+          }
+        },
+        {
+          "inv_id": 11,
+          "location": 1,
+          "item": "Meta_Module_Movement",
+          "count": 1,
+          "durability": null,
+          "fill_amount": null,
+          "fill_type": null,
+          "linked_inv_id": null,
+          "dyn_data_extra": {
+            "12": 0
+          }
+        }
+      ]
+    },
+    {
+      "inventory_id": 12,
+      "inventory_name": "Inventory-12",
+      "items": [
+        {
+          "inv_id": 12,
+          "location": 0,
+          "item": "Flashlight",
+          "count": 1,
+          "durability": null,
+          "fill_amount": 3440,
+          "fill_type": 1,
+          "linked_inv_id": null,
+          "dyn_data_extra": {
+            "0": 0,
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "12": 0
+          }
+        }
+      ]
+    }
+  ]
+}
