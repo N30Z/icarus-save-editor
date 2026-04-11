@@ -33,7 +33,7 @@ import struct
 import shutil
 import os
 import hashlib
-from typing import List, Optional, Dict, Any
+from typing import List, Optional, Dict, Any, Tuple
 from dataclasses import dataclass, field
 from copy import deepcopy
 
@@ -267,7 +267,7 @@ class GdInventoryEditor:
     def __init__(self, gd_path: str):
         self.gd_path = gd_path
         self.binary:  Optional[bytes] = None
-        self.players: Dict[str, PlayerState] = {}
+        self.players: Dict[Tuple[str, int], PlayerState] = {}
         self.container_manager: Optional[ContainerManagerState] = None
         self._ps = PropertySerializer()
 
@@ -281,7 +281,7 @@ class GdInventoryEditor:
             raw = json.load(f)
         compressed = base64.b64decode(raw['ProspectBlob']['BinaryBlob'])
         self.binary = zlib.decompress(compressed)
-        self.players = {}
+        self.players: Dict[Tuple[str, int], PlayerState] = {}
         self.container_manager = None
         self._find_player_state_blobs()
         self._find_container_manager_blob()
@@ -297,7 +297,7 @@ class GdInventoryEditor:
                 break
             state = self._parse_blob_at(d, pos)
             if state:
-                self.players[state.steam_id] = state
+                self.players[(state.steam_id, state.char_slot)] = state
             pos += len(pat)
 
     def _parse_blob_at(self, d: bytes, pat_pos: int) -> Optional[PlayerState]:
@@ -495,7 +495,7 @@ class GdInventoryEditor:
     def list_players(self) -> List[Dict]:
         """Return a list of players found in the save."""
         result = []
-        for steam_id, p in self.players.items():
+        for (steam_id, char_slot), p in self.players.items():
             inv_summary = {}
             saved_inv = next((pp for pp in p.props if pp.name == 'SavedInventories'), None)
             if saved_inv:
@@ -509,14 +509,14 @@ class GdInventoryEditor:
                         inv_summary[iid_p.value] = items
             result.append({
                 'steam_id':       steam_id,
-                'char_slot':      p.char_slot,
+                'char_slot':      char_slot,
                 'inventories':    inv_summary,
             })
         return result
 
-    def get_inventories(self, steam_id: str) -> List[Dict]:
+    def get_inventories(self, steam_id: str, char_slot: int = 0) -> List[Dict]:
         """Return metadata for each inventory of a player."""
-        player = self.players.get(steam_id)
+        player = self.players.get((steam_id, char_slot))
         if not player:
             return []
         saved_inv = next((pp for pp in player.props if pp.name == 'SavedInventories'), None)
@@ -534,9 +534,9 @@ class GdInventoryEditor:
             })
         return result
 
-    def get_items(self, steam_id: str, inv_id: Optional[int] = None) -> List[Dict]:
+    def get_items(self, steam_id: str, inv_id: Optional[int] = None, char_slot: int = 0) -> List[Dict]:
         """Return all items for a player (optionally filtered by inventory ID)."""
-        player = self.players.get(steam_id)
+        player = self.players.get((steam_id, char_slot))
         if not player:
             return []
         saved_inv = next((pp for pp in player.props if pp.name == 'SavedInventories'), None)
@@ -566,7 +566,8 @@ class GdInventoryEditor:
     def set_item(self, steam_id: str, inv_id: int, location: int,
                  item_name: str, count: int = 1,
                  durability: Optional[int] = None,
-                 fill_amount: Optional[int] = None) -> None:
+                 fill_amount: Optional[int] = None,
+                 char_slot: int = 0) -> None:
         """
         Place an item at a specific slot location.
         If the slot already exists it is updated; otherwise a new slot is added.
@@ -579,10 +580,11 @@ class GdInventoryEditor:
             count:       Stack size / quantity.
             durability:  Item durability value (omit for non-tool items).
             fill_amount: Fill level for fillable items (water, oxygen, etc.).
+            char_slot:   Character slot index (default 0).
         """
-        player = self.players.get(steam_id)
+        player = self.players.get((steam_id, char_slot))
         if not player:
-            raise KeyError(f"Player {steam_id!r} not found")
+            raise KeyError(f"Player {steam_id!r} slot {char_slot} not found")
 
         slot, slots_prop, _ = self._find_slot(player, inv_id, location)
 
@@ -607,14 +609,15 @@ class GdInventoryEditor:
 
         player.dirty = True
 
-    def remove_item(self, steam_id: str, inv_id: int, location: int) -> bool:
+    def remove_item(self, steam_id: str, inv_id: int, location: int,
+                    char_slot: int = 0) -> bool:
         """
         Remove an item from the given slot.
         Returns True if found and removed, False if slot was already empty.
         """
-        player = self.players.get(steam_id)
+        player = self.players.get((steam_id, char_slot))
         if not player:
-            raise KeyError(f"Player {steam_id!r} not found")
+            raise KeyError(f"Player {steam_id!r} slot {char_slot} not found")
 
         slot, slots_prop, _ = self._find_slot(player, inv_id, location)
         if slot is None:
@@ -624,14 +627,14 @@ class GdInventoryEditor:
         player.dirty = True
         return True
 
-    def clear_inventory(self, steam_id: str, inv_id: int) -> int:
+    def clear_inventory(self, steam_id: str, inv_id: int, char_slot: int = 0) -> int:
         """
         Remove ALL items from an inventory.
         Returns the number of slots removed.
         """
-        player = self.players.get(steam_id)
+        player = self.players.get((steam_id, char_slot))
         if not player:
-            raise KeyError(f"Player {steam_id!r} not found")
+            raise KeyError(f"Player {steam_id!r} slot {char_slot} not found")
 
         saved_inv = next((pp for pp in player.props if pp.name == 'SavedInventories'), None)
         if not saved_inv:
@@ -738,7 +741,7 @@ class GdInventoryEditor:
         for blob in dirty_blobs:
             blob.dirty = False
 
-    def export_inventory(self, steam_id: str, inv_id: int) -> Dict:
+    def export_inventory(self, steam_id: str, inv_id: int, char_slot: int = 0) -> Dict:
         """Export a player inventory to a portable dict (for saving to a JSON file)."""
         inv_name = INVENTORY_NAMES.get(inv_id, f'Inventory-{inv_id}')
         return {
@@ -746,12 +749,12 @@ class GdInventoryEditor:
             'version': 1,
             'inventory_id': inv_id,
             'inventory_name': inv_name,
-            'items': self._export_items_with_living(steam_id, inv_id),
+            'items': self._export_items_with_living(steam_id, inv_id, char_slot=char_slot),
         }
 
-    def _export_items_with_living(self, steam_id: str, inv_id: int) -> List[Dict]:
+    def _export_items_with_living(self, steam_id: str, inv_id: int, char_slot: int = 0) -> List[Dict]:
         """Return items for an inventory with living_slots_bin / container_items for slots that have them."""
-        player = self.players.get(steam_id)
+        player = self.players.get((steam_id, char_slot))
         if not player:
             return []
         saved_inv = next((pp for pp in player.props if pp.name == 'SavedInventories'), None)
@@ -792,25 +795,27 @@ class GdInventoryEditor:
         return self.get_container_items(linked_inv_id)
 
     def import_inventory(self, steam_id: str, inv_id: int,
-                         data: Dict, merge: bool = False) -> int:
+                         data: Dict, merge: bool = False,
+                         char_slot: int = 0) -> int:
         """
         Import items from an exported inventory dict.
 
         Args:
-            steam_id: Target player steam ID.
-            inv_id:   Target inventory ID.
-            data:     Dict produced by export_inventory().
-            merge:    If True, skip slots that are already occupied.
-                      If False, clear the inventory first.
+            steam_id:  Target player steam ID.
+            inv_id:    Target inventory ID.
+            data:      Dict produced by export_inventory().
+            merge:     If True, skip slots that are already occupied.
+                       If False, clear the inventory first.
+            char_slot: Character slot index (default 0).
         Returns:
             Number of items imported.
         """
         if not merge:
-            self.clear_inventory(steam_id, inv_id)
+            self.clear_inventory(steam_id, inv_id, char_slot=char_slot)
 
         used_slots: set = set()
         if merge:
-            existing = self.get_items(steam_id, inv_id)
+            existing = self.get_items(steam_id, inv_id, char_slot=char_slot)
             used_slots = {it['location'] for it in existing}
 
         items_data = data.get('items', [])
@@ -828,11 +833,12 @@ class GdInventoryEditor:
 
             try:
                 self.set_item(steam_id, inv_id, location, item_name,
-                              count=item_count, durability=durability)
+                              count=item_count, durability=durability,
+                              char_slot=char_slot)
             except Exception:
                 pass
             else:
-                player = self.players[steam_id]
+                player = self.players[(steam_id, char_slot)]
                 living_bin = entry.get('living_slots_bin')
                 if living_bin:
                     self._restore_living_slots(player, inv_id, location, living_bin)
@@ -920,52 +926,61 @@ class GdInventoryEditor:
             slots_p.nested.append(new_slot)
         self.container_manager.dirty = True
 
-    def export_all_inventories(self, steam_id: str) -> Dict:
+    def export_all_inventories(self, steam_id: str, char_slot: int = 0) -> Dict:
         """Export all inventories for a player to a portable dict."""
         inventories = []
-        for inv in self.get_inventories(steam_id):
+        for inv in self.get_inventories(steam_id, char_slot=char_slot):
             inv_id = inv['id']
             inventories.append({
                 'inventory_id': inv_id,
                 'inventory_name': inv['name'],
-                'items': self._export_items_with_living(steam_id, inv_id),
+                'items': self._export_items_with_living(steam_id, inv_id, char_slot=char_slot),
             })
         return {
             'type': 'icarus_player_inventories',
             'version': 1,
             'steam_id': steam_id,
+            'char_slot': char_slot,
             'inventories': inventories,
         }
 
     def import_all_inventories(self, steam_id: str, data: Dict,
-                               merge: bool = False) -> int:
+                               merge: bool = False,
+                               char_slot: Optional[int] = None) -> int:
         """
         Import all inventories from an exported player inventories dict.
 
         Each inventory in the file is matched by inventory_id and imported
-        into the same slot on the target player. Unknown inventory IDs are
-        silently skipped.
+        into the same character slot on the target player. Unknown inventory
+        IDs are silently skipped.
 
         Args:
-            steam_id: Target player steam ID.
-            data:     Dict produced by export_all_inventories().
-            merge:    If True, skip slots that are already occupied.
-                      If False, clear each matching inventory first.
+            steam_id:  Target player steam ID.
+            data:      Dict produced by export_all_inventories().
+            merge:     If True, skip slots that are already occupied.
+                       If False, clear each matching inventory first.
+            char_slot: Character slot to import into. If None, reads from the
+                       exported data's 'char_slot' field (default 0 for old
+                       exports without that field).
         Returns:
             Total number of items imported across all inventories.
         """
-        known_ids = {inv['id'] for inv in self.get_inventories(steam_id)}
+        if char_slot is None:
+            char_slot = data.get('char_slot', 0)
+        known_ids = {inv['id'] for inv in self.get_inventories(steam_id, char_slot=char_slot)}
         total = 0
         for inv_block in data.get('inventories', []):
             inv_id = inv_block.get('inventory_id')
             if inv_id not in known_ids:
                 continue
-            total += self.import_inventory(steam_id, inv_id, inv_block, merge=merge)
+            total += self.import_inventory(steam_id, inv_id, inv_block,
+                                           merge=merge, char_slot=char_slot)
         return total
 
     def update_living_item(self, steam_id: str, inv_id: int, slot_location: int,
                            sub_location: int, count: Optional[int] = None,
-                           durability: Optional[int] = None) -> bool:
+                           durability: Optional[int] = None,
+                           char_slot: int = 0) -> bool:
         """
         Update count and/or durability of an item inside a LivingItemSlots container.
 
@@ -976,10 +991,11 @@ class GdInventoryEditor:
             sub_location:  Location of the item inside the parent's LivingItemSlots.
             count:         New stack count (or None to leave unchanged).
             durability:    New durability (or None to leave unchanged).
+            char_slot:     Character slot index (default 0).
         Returns:
             True if the sub-slot was found and updated.
         """
-        player = self.players.get(steam_id)
+        player = self.players.get((steam_id, char_slot))
         if not player:
             return False
         slot, _, _ = self._find_slot(player, inv_id, slot_location)
